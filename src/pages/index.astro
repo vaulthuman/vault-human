@@ -1,0 +1,75 @@
+---
+import '../styles/global.css';
+import { firm, hero, pillars, turn, why, closing, footerLine } from '../data/site.js';
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{firm.name} — Law · Life · Legacy</title>
+  <meta name="description" content="Vault Human — law, life, and legacy evaluated as one connected system, in one relationship." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site">
+    <div class="wrap bar">
+      <a class="brand" href="/">{firm.wordmark}</a>
+      <a class="navbtn" href={firm.bookingUrl}>Begin</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <p class="kicker">{firm.kicker}</p>
+        <h1>{hero.h1}</h1>
+        <p class="subline serif">{hero.subline}</p>
+      </section>
+
+      <div class="lede">
+        {hero.lede.map((p) => <p>{p}</p>)}
+      </div>
+
+      <div class="cta"><a class="btn-fill" href={firm.bookingUrl}>{hero.cta}</a></div>
+
+      <hr class="rule" />
+
+      <section class="cols">
+        {pillars.map((c) => (
+          <div><h3>{c.title}</h3><p>{c.body}</p></div>
+        ))}
+      </section>
+
+      <hr class="rule" />
+
+      <p class="turn">{turn}</p>
+
+      <hr class="rule" />
+
+      <h2 class="sec">Why Vault Human</h2>
+      <div class="prose">
+        {why.map((p) => <p>{p}</p>)}
+      </div>
+
+      <hr class="rule" />
+
+      <p class="closing">{closing}</p>
+
+      <div class="ctarow" id="begin">
+        <a class="btn-fill" href={`mailto:${firm.email}`}>Begin a conversation</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p class="sig">{firm.name.toUpperCase()}</p>
+      <p class="meta">{footerLine} &middot; <a href={`mailto:${firm.email}`}>{firm.email}</a> &middot; &copy; {year}</p>
+    </div>
+  </footer>
+</body>
+</html>
