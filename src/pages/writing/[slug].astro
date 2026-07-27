@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import { articles } from '../../data/writing.js';
+export function getStaticPaths() {
+  return articles.map((a) => ({ params: { slug: a.slug }, props: { a } }));
+}
+const { a } = Astro.props;
+---
+<Base title={`${a.title} — Vault Human`} description={a.dek}>
+  <div class="wrap">
+    <article class="article">
+      <p class="amx"><a href="/writing" class="backlink" style="margin:0;opacity:.7">Writing</a> &middot; {a.date} &middot; {a.read}</p>
+      <h1>{a.title}</h1>
+      <p class="adek">{a.dek}</p>
+      <div class="abody">
+        {a.body.map((b) => <p class={b.k} set:html={b.t}></p>)}
+      </div>
+      <div class="article-cta">
+        <p class="closing" style="font-size:22px">The world helps you in fragments. We hold you whole.</p>
+        <div class="ctarow">
+          <a class="btn-fill" href="/#begin">Begin a conversation</a>
+          <a class="btn-line" href="/writing">More writing</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</Base>

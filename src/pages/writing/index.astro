@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import { articles } from '../../data/writing.js';
+---
+<Base title="Writing — Vault Human" description="Essays from Vault Human on wholeness, authorship, and what to keep in human hands.">
+  <div class="wrap">
+    <div class="pagehead">
+      <p class="eyebrow">Writing</p>
+      <h1>On being whole in a world of pieces.</h1>
+      <p class="dek">Essays on authorship, wholeness, and which decisions belong in human hands.</p>
+    </div>
+
+    <div class="wlist">
+      {articles.map((a) => (
+        <a class="witem" href={`/writing/${a.slug}`}>
+          <p class="wm">{a.date} &middot; {a.read}</p>
+          <p class="wt">{a.title}</p>
+          <p class="wd">{a.dek}</p>
+        </a>
+      ))}
+    </div>
+
+    <hr class="rule" />
+    <p class="closing" style="font-size:24px">Perfect pitch is cheap now. We protect your range.</p>
+    <div class="ctarow"><a class="btn-fill" href="/#begin">Begin a conversation</a></div>
+  </div>
+</Base>
