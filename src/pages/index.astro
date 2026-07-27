@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { firm, hero, pillars, turn, why, closing, footerLine } from '../data/site.js';
+import { firm, hero, pillars, turn, paradox, why, about, speaking, closing, footerLine } from '../data/site.js';
 const year = new Date().getFullYear();
 ---
 <!doctype html>
@@ -9,7 +9,7 @@ const year = new Date().getFullYear();
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{firm.name} — Law · Life · Legacy</title>
-  <meta name="description" content="Vault Human — law, life, and legacy evaluated as one connected system, in one relationship." />
+  <meta name="description" content="Vault Human — law, life, and legacy evaluated as one connected system, in one relationship. In the age of a perfect advisor, we keep you the author of your own decisions." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -50,10 +50,46 @@ const year = new Date().getFullYear();
 
       <hr class="rule" />
 
+      <section class="paradox">
+        <h2 class="sec">{paradox.eyebrow}</h2>
+        <p class="turn" style="margin-bottom:26px">{paradox.line}</p>
+        <div class="prose">
+          {paradox.body.map((p) => <p>{p}</p>)}
+        </div>
+        <p class="closing" style="margin-top:34px">{paradox.pull}</p>
+      </section>
+
+      <hr class="rule" />
+
       <h2 class="sec">Why Vault Human</h2>
       <div class="prose">
         {why.map((p) => <p>{p}</p>)}
       </div>
+
+      <hr class="rule" />
+
+      <section class="about">
+        <h2 class="sec">{about.eyebrow}</h2>
+        <img class="portrait" src={about.image} alt={`${about.name}, Founder of Vault Human`} width="230" height="288" />
+        <p class="person-name">{about.name}</p>
+        <div class="prose">
+          {about.body.map((p) => <p>{p}</p>)}
+        </div>
+      </section>
+
+      <hr class="rule" />
+
+      <section class="speaking">
+        <h2 class="sec">{speaking.eyebrow}</h2>
+        <p class="turn" style="margin-bottom:20px">{speaking.heading}</p>
+        <p class="talk-meta">{speaking.talkMeta}</p>
+        <p class="talk-title">{speaking.talkTitle}</p>
+        <div class="prose"><p>{speaking.blurb}</p></div>
+        <ul class="steps" style="margin-top:8px">
+          {speaking.topics.map((t) => <li>{t}</li>)}
+        </ul>
+        <div class="cta" style="margin-top:36px"><a class="btn-line" href={`mailto:${firm.email}`}>{speaking.cta}</a></div>
+      </section>
 
       <hr class="rule" />
 
