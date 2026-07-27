@@ -18,7 +18,11 @@ const year = new Date().getFullYear();
   <header class="site">
     <div class="wrap bar">
       <a class="brand" href="/">{firm.wordmark}</a>
-      <a class="navbtn" href={firm.bookingUrl}>Begin</a>
+      <nav class="navlinks">
+        <a href="/writing">Writing</a>
+        <a href="/speaking">Speaking</a>
+        <a class="navbtn" href={firm.bookingUrl}>Begin</a>
+      </nav>
     </div>
   </header>
 
