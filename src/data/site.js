@@ -19,6 +19,16 @@ export const pillars = [
   { title: "Life", body: "The day-to-day human reality — the decisions, transitions, and the wishes that never fit neatly on a form." },
   { title: "Legacy", body: "What outlasts you — designed on purpose, written down, and built to carry the meaning, not just the assets." },
 ];
+export const family = {
+  label: "How we help — four ways, one seat",
+  items: [
+    { name: "Triplicity", tag: "People", body: "Coaching and leadership for those in transition — leaders, couples, and partnerships navigating what comes next.", href: "#begin", external: false },
+    { name: "Tercet", tag: "Law & Legacy", body: "Estate and legacy planning that protects the people and the things that matter, and outlasts you on purpose.", href: "https://www.tercetlaw.com", external: true },
+    { name: "CSH", tag: "Projects & Property", body: "Development advisory for what you're building — housing, ventures, and the capital behind them.", href: "https://www.csh-vault.com", external: true },
+    { name: "Fretwork", tag: "Technology", body: "Practical AI and systems that modernize how the work gets done — without anyone losing themselves in the machinery.", href: "#begin", external: false },
+  ],
+  close: "Four ways to be held whole — under one roof, in one relationship.",
+};
 export const turn = "The industry fragments because the providers are fragmented — not because the human is. Vault Human is the deliberate refusal of that fragmentation.";
 
 export const paradox = {
