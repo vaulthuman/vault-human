@@ -22,10 +22,10 @@ export const pillars = [
 export const family = {
   label: "How we help — four ways, one seat",
   items: [
-    { name: "Triplicity", tag: "People", body: "Coaching and leadership for those in transition — leaders, couples, and partnerships navigating what comes next.", href: "https://www.triplicityadvisory.com", external: true },
-    { name: "Tercet", tag: "Law & Legacy", body: "Estate and legacy planning that protects the people and the things that matter, and outlasts you on purpose.", href: "https://www.tercetlaw.com", external: true },
-    { name: "CSH", tag: "Projects & Property", body: "Development advisory for what you're building — housing, ventures, and the capital behind them.", href: "https://www.csh-vault.com", external: true },
-    { name: "Fretwork", tag: "Technology", body: "Practical AI and systems that modernize how the work gets done — without anyone losing themselves in the machinery.", href: "https://www.fretworksystems.com", external: true },
+    { name: "Triplicity", tag: "People", body: "Coaching and leadership for those in transition — leaders, couples, and partnerships navigating what comes next.", href: "https://www.triplicityadvisory.com", external: true, color: "#42945F" },
+    { name: "Tercet", tag: "Law & Legacy", body: "Estate and legacy planning that protects the people and the things that matter, and outlasts you on purpose.", href: "https://www.tercetlaw.com", external: true, color: "#C8813E" },
+    { name: "CSH", tag: "Projects & Property", body: "Development advisory for what you're building — housing, ventures, and the capital behind them.", href: "https://www.csh-vault.com", external: true, color: "#4573E0" },
+    { name: "Fretwork", tag: "Technology", body: "Practical AI and systems that modernize how the work gets done — without anyone losing themselves in the machinery.", href: "https://www.fretworksystems.com", external: true, color: "#C85A2B" },
   ],
   close: "Four ways to be held whole — under one roof, in one relationship.",
 };
