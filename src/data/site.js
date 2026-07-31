@@ -22,10 +22,10 @@ export const pillars = [
 export const family = {
   label: "How we help — four ways, one seat",
   items: [
-    { name: "Triplicity", tag: "People", body: "Coaching and leadership for those in transition — leaders, couples, and partnerships navigating what comes next.", href: "#begin", external: false },
+    { name: "Triplicity", tag: "People", body: "Coaching and leadership for those in transition — leaders, couples, and partnerships navigating what comes next.", href: "/triplicity", external: false },
     { name: "Tercet", tag: "Law & Legacy", body: "Estate and legacy planning that protects the people and the things that matter, and outlasts you on purpose.", href: "https://www.tercetlaw.com", external: true },
     { name: "CSH", tag: "Projects & Property", body: "Development advisory for what you're building — housing, ventures, and the capital behind them.", href: "https://www.csh-vault.com", external: true },
-    { name: "Fretwork", tag: "Technology", body: "Practical AI and systems that modernize how the work gets done — without anyone losing themselves in the machinery.", href: "#begin", external: false },
+    { name: "Fretwork", tag: "Technology", body: "Practical AI and systems that modernize how the work gets done — without anyone losing themselves in the machinery.", href: "/fretwork", external: false },
   ],
   close: "Four ways to be held whole — under one roof, in one relationship.",
 };
