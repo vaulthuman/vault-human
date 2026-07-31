@@ -153,3 +153,15 @@ h2.sec{ color:var(--gold); }
 .reveal{ opacity:0; transform:translateY(22px); transition:opacity .7s cubic-bezier(.2,.6,.2,1), transform .7s cubic-bezier(.2,.6,.2,1); }
 .reveal.in{ opacity:1; transform:none; }
 @media (prefers-reduced-motion:reduce){ .reveal{ opacity:1 !important; transform:none !important; } }
+
+/* ── batch-2 (2026-07-31, Russ-directed): bold element wordmark, +hero font, stronger movement ── */
+:root{ --brand:#c9a86a; }
+.brand{ font-size:30px; font-weight:600; letter-spacing:3px; color:var(--brand); }
+h1{ font-size:clamp(37px,5.8vw,62px); }
+.reveal{ opacity:0; transform:translateY(40px) scale(.99); filter:blur(3px); transition:opacity .8s ease, transform .95s cubic-bezier(.16,.7,.2,1), filter .8s ease; }
+.reveal.in{ opacity:1; transform:none; filter:none; }
+@media(prefers-reduced-motion:reduce){ .reveal{ opacity:1!important; transform:none!important; filter:none!important; } }
+@keyframes heroRise{ from{ opacity:0; transform:translateY(28px); } to{ opacity:1; transform:none; } }
+.hero .kicker{ animation:heroRise .9s .05s both cubic-bezier(.16,.7,.2,1); }
+.hero h1{ animation:heroRise 1s .18s both cubic-bezier(.16,.7,.2,1); }
+.hero .subline{ animation:heroRise 1s .34s both cubic-bezier(.16,.7,.2,1); }
