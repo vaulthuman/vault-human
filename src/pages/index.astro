@@ -127,5 +127,16 @@ const year = new Date().getFullYear();
       <p class="meta">{footerLine} &middot; <a href={`mailto:${firm.email}`}>{firm.email}</a> &middot; &copy; {year}</p>
     </div>
   </footer>
+<script>
+addEventListener('DOMContentLoaded',function(){
+ if(!('IntersectionObserver'in window))return;
+ var s='main .wrap>section:not(.hero),main .wrap>h2,main .wrap>.prose,main .wrap>.lede,main .wrap>.cta,main .wrap>.ctarow,main .wrap>.turn,main .wrap>.closing,main .wrap>.why,main .wrap>.tags,main .wrap>.markets,main .wrap>.pkgs,main .wrap>.areas,main .wrap>.steps,main .wrap>.cols,main .wrap>.pagehead';
+ var e=[].slice.call(document.querySelectorAll(s));
+ e.forEach(function(x){x.classList.add('reveal')});
+ var o=new IntersectionObserver(function(t){t.forEach(function(y){if(y.isIntersecting){y.target.classList.add('in');o.unobserve(y.target)}})},{threshold:0.06,rootMargin:'0px 0px -30px 0px'});
+ e.forEach(function(x){o.observe(x)});
+});
+</script>
+
 </body>
 </html>
