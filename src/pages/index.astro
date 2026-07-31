@@ -77,7 +77,7 @@ const year = new Date().getFullYear();
         <div class="cols two">
           {family.items.map((it) => (
             <div>
-              <h3><a class="fam-link" href={it.href} target={it.external ? "_blank" : undefined} rel={it.external ? "noopener" : undefined}>{it.name}{it.external ? " ↗" : ""}</a></h3>
+              <h3><a class="fam-link" style={it.color ? `color:${it.color}` : undefined} href={it.href} target={it.external ? "_blank" : undefined} rel={it.external ? "noopener" : undefined}>{it.name}{it.external ? " ↗" : ""}</a></h3>
               <p class="fam-tag">{it.tag}</p>
               <p>{it.body}</p>
             </div>
