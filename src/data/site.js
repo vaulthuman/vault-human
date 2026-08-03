@@ -1,4 +1,4 @@
-// VAULT HUMAN — content. Edit values; layout stays put.
+// VAULT HUMAN — content. Edit values; layout stays put. (rev 2026-08-03 build-bump: speaking meta pending-selection)
 export const firm = {
   name: "Vault Human", wordmark: "Vault Human",
   email: "vault@vaulthuman.com",
