@@ -61,7 +61,7 @@ export const speaking = {
   eyebrow: "Speaking",
   heading: "A human on the podium.",
   blurb: "Russ speaks on AI, authorship, and self-government — which decisions belong in human hands, and why.",
-  talkMeta: "SXSW 2027 · Austin · Tech & AI",
+  talkMeta: "SXSW 2027 PanelPicker submission, pending selection",
   talkTitle: "Who Sings the “We”? Optimized Out of Your Own World",
   topics: [
     "The undue-influence test — run live on your own AI-assisted decisions.",
