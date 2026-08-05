@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-const { title = "Vault Human — Law · Life · Legacy", description = "Vault Human — law, life, and legacy held as one connected whole." } = Astro.props;
+const { title = "Vault Human — Law · Life · Legacy", description = "Vault Human — law, life, and legacy held as one connected whole.", beginHref = "/#begin" } = Astro.props;
 const year = new Date().getFullYear();
 ---
 <!doctype html>
@@ -21,7 +21,7 @@ const year = new Date().getFullYear();
       <nav class="navlinks">
         <a href="/writing">Writing</a>
         <a href="/speaking">Speaking</a>
-        <a class="navbtn" href="/#begin">Begin</a>
+        <a class="navbtn" href={beginHref}>Begin</a>
       </nav>
     </div>
   </header>
