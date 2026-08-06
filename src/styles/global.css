@@ -165,3 +165,17 @@ h1{ font-size:clamp(37px,5.8vw,62px); }
 .hero .kicker{ animation:heroRise .9s .05s both cubic-bezier(.16,.7,.2,1); }
 .hero h1{ animation:heroRise 1s .18s both cubic-bezier(.16,.7,.2,1); }
 .hero .subline{ animation:heroRise 1s .34s both cubic-bezier(.16,.7,.2,1); }
+
+/* --- Start-a-conversation modal (Vault Human) --- */
+.vh-modal{position:fixed;inset:0;z-index:2147483000;display:none}
+.vh-modal.is-open{display:block}
+.vh-modal__bg{position:absolute;inset:0;background:rgba(0,0,0,.74)}
+.vh-modal__card{position:relative;width:min(520px,92vw);margin:6.5vh auto;background:#f7f5f0;color:#14161c;border-radius:14px;padding:34px 30px 26px;max-height:86vh;overflow:auto;box-shadow:0 30px 90px rgba(0,0,0,.55);font-family:Inter,system-ui,sans-serif}
+.vh-modal__x{position:absolute;top:8px;right:14px;background:none;border:0;font-size:30px;line-height:1;color:#8a8a8a;cursor:pointer;padding:2px 8px}
+.vh-modal__x:hover{color:#14161c}
+.vh-modal__title{margin:0 0 6px;font-family:Fraunces,Georgia,serif;font-weight:400;font-size:26px;color:#14161c}
+.vh-modal__sub{margin:0 0 18px;color:#565656;font-size:15px;line-height:1.45}
+.vh-modal .hs-form-frame{color:#14161c}
+.vh-modal .hs-form-frame label,.vh-modal .hs-form-frame legend,.vh-modal .hs-form-frame p,.vh-modal .hs-form-frame span,.vh-modal .hs-form-frame h1,.vh-modal .hs-form-frame h2,.vh-modal .hs-form-frame h3{color:#14161c !important}
+.vh-modal .hs-form-frame input,.vh-modal .hs-form-frame textarea,.vh-modal .hs-form-frame select{color:#14161c !important;background:#fff !important;border:1px solid #c9c4bb !important}
+@media(max-width:560px){.vh-modal__card{width:100vw;min-height:100vh;margin:0;border-radius:0}}
