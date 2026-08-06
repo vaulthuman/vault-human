@@ -28,7 +28,7 @@ const year = new Date().getFullYear();
       <nav class="navlinks">
         <a href="/writing">Writing</a>
         <a href="/speaking">Speaking</a>
-        <a class="navbtn" href={beginHref}>Begin</a>
+        <a class="navbtn" href="#" data-open-form>Begin</a>
       </nav>
     </div>
   </header>
@@ -40,9 +40,28 @@ const year = new Date().getFullYear();
   <footer class="site">
     <div class="wrap">
       <p class="sig">VAULT HUMAN</p>
-      <p class="meta">An integrated practice across law, life &amp; legacy &middot; <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> &middot; &copy; {year}</p>
+      <p class="meta">An integrated practice across law, life &amp; legacy &middot; <a href="tel:+18888332510">(888)&nbsp;833-2510</a> &middot; &copy; {year}</p>
     </div>
   </footer>
+
+  <!-- Start-a-conversation modal -->
+  <div id="vh-modal" class="vh-modal" aria-hidden="true">
+    <div class="vh-modal__bg" data-close-form></div>
+    <div class="vh-modal__card" role="dialog" aria-modal="true" aria-label="Begin a conversation">
+      <button class="vh-modal__x" type="button" data-close-form aria-label="Close">&times;</button>
+      <h2 class="vh-modal__title">Begin a conversation</h2>
+      <p class="vh-modal__sub">Share a few details and we&rsquo;ll be in touch &mdash; one relationship, one memory.</p>
+      <div class="hs-form-frame" data-region="na2" data-form-id="3f225ab5-5a70-46d9-a497-29e6256b1e52" data-portal-id="246947446"></div>
+    </div>
+  </div>
+  <script is:inline src="https://js-na2.hsforms.net/forms/embed/246947446.js" defer></script>
+  <script is:inline>
+  (function(){var m=document.getElementById('vh-modal');if(!m)return;
+  function o(e){if(e)e.preventDefault();m.classList.add('is-open');m.setAttribute('aria-hidden','false');document.documentElement.style.overflow='hidden';}
+  function c(){m.classList.remove('is-open');m.setAttribute('aria-hidden','true');document.documentElement.style.overflow='';}
+  document.addEventListener('click',function(e){var t=e.target.closest('[data-open-form]');if(t){o(e);return;}if(e.target.closest('[data-close-form]'))c();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});})();
+  </script>
 <script>
 addEventListener('DOMContentLoaded',function(){
  if(!('IntersectionObserver'in window))return;
