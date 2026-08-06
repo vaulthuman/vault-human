@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="Triplicity — Coaching & Leadership · Vault Human" description="Triplicity is presence-led coaching and leadership development for leaders, founders, and partners in transition. A Vault Human company." beginHref="#begin">
+<Base title="Triplicity — Coaching & Leadership · Vault Human" description="Triplicity is presence-led coaching and leadership development for leaders, founders, and partners in transition. A Vault Human company.">
 <div class="wrap">
 <div class="pagehead">
 <p class="eyebrow">Triplicity &middot; Private coaching &amp; leadership</p>
@@ -9,7 +9,7 @@ import Base from '../layouts/Base.astro';
 <p class="dek">Coaching and leadership for leaders, founders, and partners in transition &mdash; held, not handled.</p>
 </div>
 
-<div class="cta"><a class="btn-fill" href="#begin">Apply for a Conversation</a></div>
+<div class="cta"><a class="btn-fill" href="#" data-open-form>Apply for a Conversation</a></div>
 
 <hr class="rule" />
 
@@ -24,7 +24,7 @@ import Base from '../layouts/Base.astro';
 <h2 class="sec">How Triplicity helps</h2>
 <p class="turn" style="margin-bottom:26px">You are not a problem to be solved. You are a whole to be held.</p>
 <div class="coachcard">
-<img src="/russ-michaels.jpg" alt="Russ Michaels, founder of Vault Human" width="96" height="120" />
+<img src="/russ-michaels.jpg" alt="Russ Michaels, founder of Vault Human" width="120" height="150" />
 <div><p class="coachname">Russ Michaels</p><p class="coachrole">Founder &middot; Vault Human</p></div>
 </div>
 <div class="prose">
@@ -42,19 +42,15 @@ import Base from '../layouts/Base.astro';
 <li><span class="rn">II</span><strong>The work.</strong> A focused season together, in a rhythm that fits your life, holding the whole as it moves.</li>
 <li><span class="rn">III</span><strong>You move whole.</strong> You leave with your own clarity and nerve &mdash; not a dependency, an integrity.</li>
 </ul>
-<div class="formwrap" style="margin-top:36px">
-<script is:inline src="https://js-na2.hsforms.net/forms/embed/246947446.js" defer></script>
-<div class="hs-form-frame" data-region="na2" data-form-id="3f225ab5-5a70-46d9-a497-29e6256b1e52" data-portal-id="246947446"></div>
-</div>
+<div class="cta" style="margin-top:34px"><a class="btn-fill" href="#" data-open-form>Apply for a Conversation</a></div>
 <p class="note">A short application &mdash; a few lines about where you are and what&rsquo;s shifting. If it&rsquo;s a fit, we start with an unhurried first conversation.</p>
 </section>
 
 </div>
 </Base>
 <style>
-.formwrap{background:#0D0D0D;border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:26px 22px;margin:10px 0 20px;min-height:360px;box-shadow:0 20px 40px rgba(0,0,0,.55)}
-.coachcard{display:flex;align-items:center;gap:16px;margin:0 0 22px}
-.coachcard img{width:96px;height:120px;object-fit:cover;border-radius:10px;flex:0 0 auto}
+.coachcard{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;margin:0 auto 22px}
+.coachcard img{width:120px;height:150px;object-fit:cover;border-radius:12px}
 .coachname{font-weight:600;margin:0}
 .coachrole{opacity:.7;margin:2px 0 0;font-size:14px}
 .note{max-width:660px;margin:18px auto 0;text-align:center;opacity:.8;font-size:14px}
