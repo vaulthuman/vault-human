@@ -101,7 +101,7 @@ const year = new Date().getFullYear();
 
       <section class="about">
         <h2 class="sec">{about.eyebrow}</h2>
-        <img class="portrait" src={about.image} alt={`${about.name}, Founder of Vault Human`} width="230" height="288" />
+        <img class="portrait" src={about.image} alt={`${about.name}, Founder of Vault Human`} width="120" height="150" style="width:120px;height:150px;object-fit:cover" />
         <p class="person-name">{about.name}</p>
         <div class="prose">
           {about.body.map((p) => <p>{p}</p>)}
