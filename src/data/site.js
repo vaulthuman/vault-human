@@ -1,50 +1,53 @@
-// VAULT HUMAN — content. Edit values; layout stays put. (rev 2026-08-03 build-bump: speaking meta pending-selection)
+// VAULT HUMAN — content. (rev 2026-08-06c: hub + four C-roles + StoryBrand spine; L's moved to Triplicity)
 export const firm = {
   name: "Vault Human", wordmark: "Vault Human",
   email: "vault@vaulthuman.com",
-  kicker: "Law · Life · Legacy",
+  kicker: "One seat. Your whole life.",
   bookingUrl: "#begin",
 };
 export const hero = {
-  h1: "Being human is one thing. The help almost never is.",
-  subline: "Law, life, and legacy — evaluated as one system, the way you actually live them.",
+  h1: "One relationship, built to hold a whole life.",
+  subline: "Vault Human is one trusted relationship — and a family of practices — that hold the whole of your life and work, so nothing falls through the cracks.",
   lede: [
-    "Most people are handed their life in pieces: a lawyer here, an advisor there, a plan that never quite speaks to the others. The seams are where things fall through — at the exact moments they matter most.",
-    "Vault Human is built on the opposite premise. We look at the real situation — the legal, the personal, and the lasting — as a single, connected whole, held in one relationship with one memory. Not three services stapled together. One.",
+    "Most people are handed their life in pieces — a lawyer here, an advisor there, a coach who never speaks to either. The parts don't add up to a person, and the gaps between them are where things quietly go wrong.",
+    "Vault Human is built the other way. One relationship keeps your whole picture and brings in the right practice for each part — so your law, your work, your money, and your growth finally move together.",
   ],
-  cta: "Begin",
+  cta: "Start a conversation",
 };
-export const pillars = [
-  { title: "Law", body: "The structure that holds — counsel, entities, estates, and the agreements that protect the people and the things that matter." },
-  { title: "Life", body: "The day-to-day human reality — the decisions, transitions, and the wishes that never fit neatly on a form." },
-  { title: "Legacy", body: "What outlasts you — designed on purpose, written down, and built to carry the meaning, not just the assets." },
-];
+export const plan = {
+  eyebrow: "How it works",
+  steps: [
+    { n: "1", title: "Start a conversation", body: "One conversation to get the whole picture — no forms to survive, no commitment." },
+    { n: "2", title: "We map your whole", body: "Where you are, what matters most, and which parts of life and work need a hand." },
+    { n: "3", title: "We hold it together", body: "The right practice steps in for each part, and one relationship keeps it all connected." },
+  ],
+};
 export const family = {
-  label: "How we help — four ways, one seat",
+  label: "Four practices. One relationship.",
+  intro: "Each does one thing well. Together — with Russ in every seat — they hold the whole picture.",
   items: [
-    { name: "Triplicity", tag: "People", body: "Coaching and leadership for those in transition — leaders, couples, and partnerships navigating what comes next.", href: "https://www.triplicityadvisory.com", external: true, color: "#8B9299" },
-    { name: "Tercet", tag: "Law & Legacy", body: "Estate and legacy planning that protects the people and the things that matter, and outlasts you on purpose.", href: "https://www.tercetlaw.com", external: true, color: "#8B9299" },
-    { name: "CSH", tag: "Projects & Property", body: "Development advisory for what you're building — housing, ventures, and the capital behind them.", href: "https://www.csh-vault.com", external: true, color: "#8B9299" },
-    { name: "Fretwork", tag: "Technology", body: "Practical AI and systems that modernize how the work gets done — without anyone losing themselves in the machinery.", href: "https://www.fretworksystems.com", external: true, color: "#8B9299" },
+    { name: "Triplicity", tag: "The Coach", body: "Coaching for people and businesses in transition — life, leadership, and communication, seen as one whole picture.", href: "https://www.triplicityadvisory.com", external: true, color: "#8B9299" },
+    { name: "Tercet", tag: "The Counselor", body: "Life Law — family, business, money, and legacy. Wills, trusts, estates, mediation, and new-era business law.", href: "https://www.tercetlaw.com", external: true, color: "#8B9299" },
+    { name: "Fretwork", tag: "The Connector", body: "The systems, workflows, and AI that blend it all together and make it run — the connective tissue.", href: "https://www.fretworksystems.com", external: true, color: "#8B9299" },
+    { name: "CSH", tag: "The Consultant", body: "Strategy for your assets — real estate, ventures, and money — from an operator who's built and run them.", href: "https://www.csh-vault.com", external: true, color: "#8B9299" },
   ],
-  close: "Four ways to be held whole — under one roof, in one relationship.",
+  close: "Four practices. One relationship. Your whole life.",
 };
-export const turn = "The industry fragments because the providers are fragmented — not because the human is. Vault Human is the deliberate refusal of that fragmentation.";
+export const turn = "The industry fragments because the providers are fragmented — not because the human is. Vault Human is predicated on the opposite: a life is whole, and the help should be too.";
 
 export const paradox = {
-  eyebrow: "The Paradox",
-  line: "A body doesn’t compete with itself.",
+  eyebrow: "Whole, not fragmented",
+  line: "Fragmented help fails at the seams. Whole help holds.",
   body: [
-    "Consider what it means to be one. A body is a system in unison — every part serving a single life, none of it perfecting itself at the expense of the whole. That is what being human is: not a collection of parts, but an integrity.",
-    "New tools are astonishing at making each fragment better — the sharper brief, the faster plan, the more precise scan. But a tool that only perfects the pieces perfects the divide. You do not arrive at wholeness. You arrive at fragmentation, optimized — a more excellent way of coming apart.",
-    "So we point this force at the harder, better thing. We do not use it to perfect the fragments. We use it to hold you together.",
+    "When your advisors don't speak, you repeat your story, decisions get made in a rush, and the important things slip between the cracks. That is the quiet cost of a fragmented life.",
+    "Held whole, it's the opposite: one relationship that remembers everything, one connected system underneath it, and the confidence that nothing is falling through. Technology in service of the human at the center — never the other way around.",
   ],
-  pull: "“Perfect pitch is cheap now. We protect your range.”",
+  pull: "The integrity of being whole — kept by real conversations and one connected system.",
 };
 
 export const why = [
-  "One relationship. One memory. We don't make you re-explain your life to a new face every time a question crosses a line between law, money, and meaning — because in your life, those lines were never really there.",
-  "It is a quieter, more serious way of being looked after: unhurried, discreet, and whole. The kind of counsel that remembers, that connects, and that is still standing when it's finally needed.",
+  "One relationship. One memory. You never re-explain your life to a new face every time a question crosses a line between law, money, and meaning — because in your life, those lines were never really there.",
+  "It's a quieter, more serious way of being looked after: unhurried, discreet, and whole. Counsel that remembers, that connects, and that is still standing when it's finally needed.",
 ];
 
 export const about = {
@@ -52,25 +55,19 @@ export const about = {
   name: "Russ Michaels",
   image: "/russ-michaels.jpg",
   body: [
-    "Founder of Vault Human. For over twenty years Russ has led organizations — as a CEO, Executive Director, and Board President, and as an attorney, still practicing — developing people and the processes around them without letting anyone lose themselves in the machinery.",
-    "He is an operator and a builder first, law-trained, building the legal architecture of a firm designed around a single idea: that one accountable human should be able to hold a whole life instead of handing it out in pieces.",
+    "Founder of Vault Human. For over twenty years Russ has led organizations — as a CEO, Executive Director, and Board President, and as an attorney, still practicing — developing people and the systems around them without letting anyone lose themselves in the machinery.",
+    "Vault Human is his hub: the writing, the talks, and the four practices all run through one accountable human — so a whole life can be held by a person, not handed out in pieces.",
   ],
 };
 
+// SXSW demoted to a one-line footer credit (see footer). Kept for the /speaking page.
 export const speaking = {
-  eyebrow: "Speaking",
-  heading: "A human on the podium.",
+  eyebrow: "Speaking", heading: "A human on the podium.",
   blurb: "Russ speaks on AI, authorship, and self-government — which decisions belong in human hands, and why.",
-  talkMeta: "SXSW 2027 PanelPicker submission, pending selection",
-  talkTitle: "Who Sings the “We”? Optimized Out of Your Own World",
-  topics: [
-    "The undue-influence test — run live on your own AI-assisted decisions.",
-    "Silent Deferral — how authorship transfers with no alarm, no villain, no bad result.",
-    "Autotune for your judgment — perfect pitch, no range, and why range is the point.",
-    "Self-government — what to hand off, and what stays in human hands.",
-  ],
-  cta: "Invite Russ to your stage",
+  talkMeta: "SXSW 2027 PanelPicker submission, community voting open",
+  talkTitle: "Who Sings the “We”?", topics: [], cta: "Invite Russ to your stage",
 };
+export const speakingCredit = { text: "Russ Michaels speaks at SXSW 2027 — “Who Sings the ‘We.’”", href: "/speaking" };
 
-export const closing = "You were never a set of separate problems. You shouldn't be handed separate answers.";
-export const footerLine = "An integrated practice across law, life & legacy";
+export const closing = "You were never a set of separate problems, so you shouldn't be handed separate answers. One human. One relationship. Your whole life — held whole.";
+export const footerLine = "One seat. Your whole life.";
