@@ -7,7 +7,7 @@ export const firm = {
 };
 export const hero = {
   h1: "One relationship, built to hold a whole life.",
-  subline: "Vault Human is one trusted relationship — and a family of practices — that hold the whole of your life and work, so nothing falls through the cracks.",
+  subline: "Vault Human is a family of companies that hold the whole of your life and work as one — so nothing falls through the cracks.",
   lede: [
     "Most people are handed their life in pieces — a lawyer here, an advisor there, a coach who never speaks to either. The parts don't add up to a person, and the gaps between them are where things quietly go wrong.",
     "Vault Human is built the other way. One relationship keeps your whole picture and brings in the right practice for each part — so your law, your work, your money, and your growth finally move together.",
@@ -24,7 +24,7 @@ export const plan = {
 };
 export const family = {
   label: "Four practices. One relationship.",
-  intro: "Each does one thing well. Together — with Russ in every seat — they hold the whole picture.",
+  intro: "Each does one thing well. Together, they hold the whole picture.",
   items: [
     { name: "Triplicity", tag: "The Coach", body: "Coaching for people and businesses in transition — life, leadership, and communication, seen as one whole picture.", href: "https://www.triplicityadvisory.com", external: true, color: "#8B9299" },
     { name: "Tercet", tag: "The Counselor", body: "Life Law — family, business, money, and legacy. Wills, trusts, estates, mediation, and new-era business law.", href: "https://www.tercetlaw.com", external: true, color: "#8B9299" },
@@ -52,7 +52,7 @@ export const why = [
 
 export const about = {
   eyebrow: "The Person in the Seat",
-  name: "Russ Michaels",
+  name: "Russ Michaels, Esq.",
   image: "/russ-michaels.jpg",
   body: [
     "Founder of Vault Human. For over twenty years Russ has led organizations — as a CEO, Executive Director, and Board President, and as an attorney, still practicing — developing people and the systems around them without letting anyone lose themselves in the machinery.",
