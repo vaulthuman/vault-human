@@ -67,7 +67,7 @@ export const speaking = {
   talkMeta: "SXSW 2027 PanelPicker submission, community voting open",
   talkTitle: "Who Sings the “We”?", topics: [], cta: "Invite Russ to your stage",
 };
-export const speakingCredit = { text: "Russ Michaels speaks at SXSW 2027 — “Who Sings the ‘We.’”", href: "/speaking" };
+export const speakingCredit = { text: "Russ Michaels — SXSW 2027 PanelPicker proposal · community voting open", href: "/speaking" };
 
 export const closing = "You were never a set of separate problems, so you shouldn't be handed separate answers. One human. One relationship. Your whole life — held whole.";
 export const footerLine = "One seat. Your whole life.";
