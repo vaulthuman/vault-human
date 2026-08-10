@@ -1,0 +1,113 @@
+---
+import Base from '../layouts/Base.astro';
+
+// ─── EDIT THESE THREE, THEN REDEPLOY ─────────────────────────────────
+// 1. Public PanelPicker URL (the page people vote on). Until set, the
+//    vote button renders as "link coming" instead of a broken link.
+const PANELPICKER_URL = "";
+// 2. The keystone clip. Paste a YouTube/Vimeo EMBED url (…/embed/ID) or a
+//    direct .mp4 url. Until set, a tasteful "recording in progress" slot shows.
+const CLIP_URL = "";
+const CLIP_IS_MP4 = false; // true if CLIP_URL is a direct .mp4 file
+// 3. Free tracking pixels (optional). Paste the numeric IDs only; empty = off.
+const META_PIXEL_ID = "";        // Meta/Facebook Pixel ID
+const LINKEDIN_PARTNER_ID = "";  // LinkedIn Insight Tag partner ID
+// ─────────────────────────────────────────────────────────────────────
+
+const hasVote = PANELPICKER_URL.trim().length > 0;
+const hasClip = CLIP_URL.trim().length > 0;
+---
+<Base
+  title="Who Sings the 'We'? — Vault Human at SXSW 2027"
+  description="A PanelPicker proposal in community voting for SXSW 2027 — not a selected session. AI perfected the parts; who holds the whole? Read the idea and, if it speaks to you, vote."
+>
+{META_PIXEL_ID && (
+  <script type="text/javascript" set:html={`
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','${META_PIXEL_ID}');fbq('track','PageView');
+  `} />
+)}
+{LINKEDIN_PARTNER_ID && (
+  <script type="text/javascript" set:html={`
+    _linkedin_partner_id="${LINKEDIN_PARTNER_ID}";window._linkedin_data_partner_ids=window._linkedin_data_partner_ids||[];window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    (function(l){if(!l){window.lintrk=function(a,b){window.lintrk.q.push([a,b])};window.lintrk.q=[]}var s=document.getElementsByTagName("script")[0];var b=document.createElement("script");b.type="text/javascript";b.async=true;b.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";s.parentNode.insertBefore(b,s)})(window.lintrk);
+  `} />
+)}
+
+<div class="wrap">
+  <div class="pagehead">
+    <p class="eyebrow">SXSW 2027 &middot; Community voting open</p>
+    <h1>Who Sings the &ldquo;We&rdquo;?</h1>
+    <p class="dek">AI perfected the parts. Who holds the whole? This is a SXSW 2027 PanelPicker proposal &mdash; <strong>in community voting, not a selected session.</strong> Read the idea below, and if it speaks to your own work, add your vote and a specific comment.</p>
+  </div>
+
+  <hr class="rule" />
+
+  <!-- Keystone clip slot -->
+  <section class="speaking">
+    <h2 class="sec">The idea, in ninety seconds</h2>
+    {hasClip ? (
+      CLIP_IS_MP4 ? (
+        <video controls preload="metadata" style="width:100%;max-width:720px;border:1px solid var(--line);border-radius:8px;display:block;margin:8px auto 0">
+          <source src={CLIP_URL} type="video/mp4" />
+        </video>
+      ) : (
+        <div style="position:relative;width:100%;max-width:720px;margin:8px auto 0;aspect-ratio:16/9;border:1px solid var(--line);border-radius:8px;overflow:hidden">
+          <iframe src={CLIP_URL} title="Who Sings the We — 90 second clip" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
+        </div>
+      )
+    ) : (
+      <div style="max-width:720px;margin:8px auto 0;padding:44px 28px;border:1px dashed var(--line);border-radius:8px;text-align:center;background:rgba(0,0,0,0.015)">
+        <p class="talk-meta" style="margin:0">Russ&rsquo;s 90-second clip lands here.</p>
+        <p style="margin:8px 0 0;opacity:.7">Recording in progress &mdash; the idea below stands on its own in the meantime.</p>
+      </div>
+    )}
+  </section>
+
+  <hr class="rule" />
+
+  <section class="speaking">
+    <h2 class="sec">The proposal</h2>
+    <p class="talk-meta">SXSW 2027 PanelPicker proposal &middot; in community voting &middot; Austin &middot; Tech &amp; AI</p>
+    <p class="talk-title">Who Sings the &ldquo;We&rdquo;? — AI Perfected the Parts. Who Holds the Whole?</p>
+    <div class="prose">
+      <p>AI is making every specialist sharper &mdash; the lawyer sees more law, the coach sees more behavior, the model sees more variables, the system sees more work. But when every part is improved separately, who is left holding the whole person, family, or organization those decisions create?</p>
+      <p>This session names that failure <strong>perfected fragmentation</strong>, and its quiet mechanism <strong>Silent Deferral</strong>: each capable person or system makes a locally reasonable decision while assuming someone else holds the larger picture. No one is negligent. The whole still disappears.</p>
+      <p>Drawing on 20+ years across organizational leadership, law, affordable-housing development, and coaching, Russ Michaels introduces the <strong>Whole-First</strong> method: a practical way to find who owns the whole, expose decisions being optimized in isolation, and reconnect specialist intelligence to a shared human intention.</p>
+    </div>
+    <ul class="steps" style="margin-top:8px">
+      <li>A clear line between useful specialization and perfected fragmentation.</li>
+      <li>A Silent Deferral map for one of your own AI-assisted decisions.</li>
+      <li>Three Whole-First questions for restoring human ownership &mdash; without rejecting specialist or machine intelligence.</li>
+    </ul>
+    <p class="prose" style="margin-top:18px">This is not an argument against AI. It&rsquo;s an argument that better parts don&rsquo;t automatically make a coherent whole &mdash; and that the next frontier of responsible AI is deciding <em>which human</em> is responsible for the world the loop produces.</p>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- Vote CTA — never gated behind a form -->
+  <section class="speaking" style="text-align:center">
+    <h2 class="sec">Add your voice</h2>
+    <p class="prose" style="max-width:620px;margin:0 auto 6px">Voting is open to anyone with a free SXSW PanelPicker account and closes <strong>Sunday, August 23, 11:59 PM PT</strong>. A specific, personal comment counts for more than a vote alone.</p>
+    {hasVote ? (
+      <div class="ctarow" style="margin-top:22px">
+        <a class="btn-fill" href={PANELPICKER_URL} target="_blank" rel="noopener">Read &amp; vote on the PanelPicker &#8599;</a>
+      </div>
+    ) : (
+      <div class="ctarow" style="margin-top:22px">
+        <span class="btn-line" style="opacity:.55;cursor:default">Vote link goes live once the public PanelPicker URL is confirmed</span>
+      </div>
+    )}
+    <p class="note" style="margin-top:14px">No account or email is required to read the idea. The vote is never gated behind a form.</p>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- Optional opt-in — clearly secondary -->
+  <section class="speaking" style="text-align:center">
+    <h2 class="sec">Want the field note?</h2>
+    <p class="prose" style="max-width:600px;margin:0 auto 4px">Optional: if the idea touched something in your own work, we&rsquo;ll send you the one-page <em>Whole-First</em> field note &mdash; the three questions, and the Silent Deferral map. No pitch, one relationship.</p>
+    <div class="cta" style="margin-top:20px"><a class="btn-line" href="#" data-open-form>Send me the Whole-First field note</a></div>
+  </section>
+</div>
+</Base>
