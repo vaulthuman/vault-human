@@ -13,11 +13,13 @@ import Base from '../layouts/Base.astro';
     <p style="margin-top:28px"><a class="btn-fill" href="/">Back to Vault Human</a></p>
   </div>
   <script is:inline>
-    (function(){
-      if (typeof window.gtag === 'function') {
-        window.gtag('event','conversion',{send_to:'AW-18371546487/r4eECOKGw9wcEPeanrhE'});
-        window.gtag('event','generate_lead');
-      }
-    })();
+    // Order-independent: queue straight onto dataLayer. gtag.js drains the queue
+    // when it loads, so this works even though Astro defers the head module that
+    // defines window.gtag. (A `typeof window.gtag === "function"` guard here
+    // silently no-ops, because this body script parses BEFORE that module runs.)
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('event','conversion',{ send_to:'AW-18371546487/r4eECOKGw9wcEPeanrhE' });
+    gtag('event','generate_lead');
   </script>
 </Base>
