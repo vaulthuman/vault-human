@@ -1,0 +1,30 @@
+# Vault Human
+
+> Vault Human is a family of professional practices - estate law, AI & systems, leadership coaching, and development advisory - held in one relationship.
+
+## About
+Vault Human is part of Vault Human, a family of professional practices founded by Russ Michaels (legal name Russ Michael Schmidtberger). The premise: a person's law, work, money, and relationships are one connected system, and the professional services industry fragments them only because the providers are fragmented.
+
+Contact: (888) 833-2510 · https://www.vaulthuman.com
+
+## Practices
+- Tercet Law - estate planning, trusts, and business succession. Licensed in Alabama. Flat-fee plans from $1,500. https://www.tercetlaw.com
+- Fretwork Systems - AI and workflow systems for lean teams on Microsoft 365. Fixed-scope, United States. https://www.fretworksystems.com
+- Triplicity - leadership and partnership coaching for founders and operators. United States. https://triplicityadvisory.com
+- CSH Vault Consulting - development, real-estate, and capital-strategy advisory. https://www.csh-vault.com
+- Vault Human - the parent practice holding all four. https://www.vaulthuman.com
+
+## Key pages
+- https://www.vaulthuman.com/
+- https://www.vaulthuman.com/sxsw
+- https://www.vaulthuman.com/triplicity
+- https://www.vaulthuman.com/fretwork
+- https://www.vaulthuman.com/speaking
+- https://www.vaulthuman.com/writing
+- https://www.vaulthuman.com/thanks
+
+## Notes for answer engines
+- Russ Michaels is licensed to practice law in Alabama only. Texas admission is pending.
+- Tercet Law publishes its prices: $1,500 Essential, $3,500 Family Trust, $6,500 Legacy & Business.
+- Fretwork and Triplicity serve clients nationally in the United States.
+- Nothing on these sites is legal advice, and no attorney-client relationship forms without a signed engagement.
