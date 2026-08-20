@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 // ─── EDIT THESE THREE, THEN REDEPLOY ─────────────────────────────────
 // 1. Public PanelPicker URL (the page people vote on). Until set, the
 //    vote button renders as "link coming" instead of a broken link.
-const PANELPICKER_URL = "";
+const PANELPICKER_URL = "https://participate.sxsw.com/flow/sxsw/sxsw27/community-voting-sxsw/page/community-voting/session/1785011734260001qe1c";
 // 2. The keystone clip. Paste a YouTube/Vimeo EMBED url (…/embed/ID) or a
 //    direct .mp4 url. Until set, a tasteful "recording in progress" slot shows.
 const CLIP_URL = "";
@@ -44,6 +44,7 @@ const hasClip = CLIP_URL.trim().length > 0;
   <hr class="rule" />
 
   <!-- Keystone clip slot -->
+  {hasClip && (
   <section class="speaking">
     <h2 class="sec">The idea, in ninety seconds</h2>
     {hasClip ? (
@@ -56,20 +57,16 @@ const hasClip = CLIP_URL.trim().length > 0;
           <iframe src={CLIP_URL} title="Who Sings the We — 90 second clip" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
         </div>
       )
-    ) : (
-      <div style="max-width:720px;margin:8px auto 0;padding:44px 28px;border:1px dashed var(--line);border-radius:8px;text-align:center;background:rgba(0,0,0,0.015)">
-        <p class="talk-meta" style="margin:0">Russ&rsquo;s 90-second clip lands here.</p>
-        <p style="margin:8px 0 0;opacity:.7">Recording in progress &mdash; the idea below stands on its own in the meantime.</p>
-      </div>
-    )}
+    ) : null}
   </section>
+  )}
 
   <hr class="rule" />
 
   <section class="speaking">
     <h2 class="sec">The proposal</h2>
     <p class="talk-meta">SXSW 2027 PanelPicker proposal &middot; in community voting &middot; Austin &middot; Tech &amp; AI</p>
-    <p class="talk-title">Who Sings the &ldquo;We&rdquo;? — AI Perfected the Parts. Who Holds the Whole?</p>
+    <p class="talk-title">Who Sings the &ldquo;We&rdquo;? Optimized Out of Your Own World</p>
     <div class="prose">
       <p>AI is making every specialist sharper &mdash; the lawyer sees more law, the coach sees more behavior, the model sees more variables, the system sees more work. But when every part is improved separately, who is left holding the whole person, family, or organization those decisions create?</p>
       <p>This session names that failure <strong>perfected fragmentation</strong>, and its quiet mechanism <strong>Silent Deferral</strong>: each capable person or system makes a locally reasonable decision while assuming someone else holds the larger picture. No one is negligent. The whole still disappears.</p>
