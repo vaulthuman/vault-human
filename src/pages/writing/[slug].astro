@@ -13,7 +13,7 @@ const { a } = Astro.props;
       <h1>{a.title}</h1>
       <p class="adek">{a.dek}</p>
       <div class="abody">
-        {a.body.map((b) => <p class={b.k} set:html={b.t}></p>)}
+        {a.body.map((b) => b.k === "h" ? <h3 class="ah" set:html={b.t}></h3> : <p class={b.k} set:html={b.t}></p>)}
       </div>
       <div class="article-cta">
         <p class="closing" style="font-size:22px">The world helps you in fragments. We hold you whole.</p>
