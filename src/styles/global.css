@@ -179,3 +179,18 @@ h1{ font-size:clamp(37px,5.8vw,62px); }
 .vh-modal .hs-form-frame label,.vh-modal .hs-form-frame legend,.vh-modal .hs-form-frame p,.vh-modal .hs-form-frame span,.vh-modal .hs-form-frame h1,.vh-modal .hs-form-frame h2,.vh-modal .hs-form-frame h3{color:#14161c !important}
 .vh-modal .hs-form-frame input,.vh-modal .hs-form-frame textarea,.vh-modal .hs-form-frame select{color:#14161c !important;background:#fff !important;border:1px solid #c9c4bb !important}
 @media(max-width:560px){.vh-modal__card{width:100vw;min-height:100vh;margin:0;border-radius:0}}
+
+/* article subheads + The Fracture essay modal */
+.abody h3.ah{font-family:Inter,system-ui,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin:34px 0 12px;font-weight:600}
+.fracture{max-width:720px;margin:0 auto;text-align:center}
+.fracture .fx{font-family:var(--serif);font-weight:300;font-size:19px;line-height:1.7;text-align:left;opacity:.95}
+.fracture .fx p{margin:0 0 14px}
+.vh-modal__card--essay{width:min(760px,94vw);background:#14161c;color:#f3efe6;border:1px solid #2c303a;padding:40px 44px 34px;font-family:var(--serif)}
+.vh-modal__card--essay h2{font-family:var(--serif);font-weight:500;font-size:38px;margin:0 0 6px;color:#f3efe6}
+.vh-modal__card--essay .edek{font-style:italic;color:#cfc9bd;margin:0 0 26px;font-size:17px}
+.vh-modal__card--essay .ebody p{font-size:17px;line-height:1.72;margin:0 0 16px;font-weight:300}
+.vh-modal__card--essay .ebody p.lead{font-size:19px}
+.vh-modal__card--essay .ebody p.pull{font-style:italic;font-size:20px;border-top:1px solid #2c303a;border-bottom:1px solid #2c303a;padding:18px 6px;margin:24px 0;text-align:center}
+.vh-modal__card--essay .ebody h3{font-family:Inter,system-ui,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin:28px 0 10px}
+.vh-modal__card--essay .vh-modal__x{color:#a9adb6}
+.vh-modal__card--essay .eactions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:26px}
