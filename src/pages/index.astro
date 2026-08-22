@@ -1,5 +1,8 @@
 ---
 import '../styles/global.css';
+import { articles } from '../data/writing.js';
+const fracture = articles.find((a) => a.slug === 'the-fracture');
+const fxExcerpt = fracture.body.filter((b) => b.k !== 'h').slice(0, 5);
 import { firm, hero, plan, family, turn, paradox, why, about, speaking, speakingCredit, closing, footerLine } from '../data/site.js';
 const year = new Date().getFullYear();
 ---
@@ -81,6 +84,21 @@ const year = new Date().getFullYear();
 
       <hr class="rule" />
 
+      <section class="fracture" id="the-fracture">
+        <h2 class="sec">Where this came from</h2>
+        <p class="turn" style="margin-bottom:22px">The Fracture &mdash; the essay Vault Human was built on.</p>
+        <div class="fx">
+          {fxExcerpt.map((b) => <p class={b.k} set:html={b.t}></p>)}
+          <p style="opacity:.6">&hellip;</p>
+        </div>
+        <div class="ctarow" style="margin-top:18px">
+          <a class="btn-fill" href="#" data-open-essay>Read the essay (4 min)</a>
+          <a class="btn-line" href="/the-fracture.pdf" target="_blank" rel="noopener">Download the PDF</a>
+        </div>
+      </section>
+
+      <hr class="rule" />
+
       <section class="paradox">
         <h2 class="sec">{paradox.eyebrow}</h2>
         <p class="turn" style="margin-bottom:26px">{paradox.line}</p>
@@ -142,6 +160,34 @@ const year = new Date().getFullYear();
       <p class="meta"><a href={speakingCredit.href}>{speakingCredit.text}</a></p>
     </div>
   </footer>
+
+  <!-- The Fracture essay modal -->
+  <div id="vh-essay" class="vh-modal" aria-hidden="true">
+    <div class="vh-modal__bg" data-close-essay></div>
+    <div class="vh-modal__card vh-modal__card--essay" role="dialog" aria-modal="true" aria-label="The Fracture">
+      <button class="vh-modal__x" type="button" data-close-essay aria-label="Close">&times;</button>
+      <p class="eyebrow" style="margin:0 0 10px">Vault Human &middot; Writing &middot; {fracture.date}</p>
+      <h2>{fracture.title}</h2>
+      <p class="edek">{fracture.dek}</p>
+      <div class="ebody">
+        {fracture.body.map((b) => b.k === 'h' ? <h3 set:html={b.t}></h3> : <p class={b.k} set:html={b.t}></p>)}
+        <p style="margin-top:22px">&mdash; Russ Michaels</p>
+      </div>
+      <div class="eactions">
+        <a class="btn-fill" href="#" data-open-form data-close-essay>Begin a conversation</a>
+        <a class="btn-line" href="/the-fracture.pdf" target="_blank" rel="noopener">Download the PDF</a>
+        <a class="btn-line" href="/writing">More writing</a>
+      </div>
+    </div>
+  </div>
+  <script is:inline>
+  (function(){var m=document.getElementById('vh-essay');if(!m)return;
+  function o(e){if(e)e.preventDefault();m.classList.add('is-open');m.setAttribute('aria-hidden','false');document.documentElement.style.overflow='hidden';}
+  function c(){m.classList.remove('is-open');m.setAttribute('aria-hidden','true');if(!document.querySelector('.vh-modal.is-open'))document.documentElement.style.overflow='';}
+  document.addEventListener('click',function(e){var t=e.target.closest('[data-open-essay]');if(t){o(e);return;}if(e.target.closest('[data-close-essay]'))c();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});
+  if(location.hash==='#the-fracture-essay')o();})();
+  </script>
 
   <!-- Start-a-conversation modal -->
   <div id="vh-modal" class="vh-modal" aria-hidden="true">
