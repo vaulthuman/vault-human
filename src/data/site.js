@@ -64,10 +64,10 @@ export const about = {
 export const speaking = {
   eyebrow: "Speaking", heading: "A human on the podium.",
   blurb: "Russ speaks on AI, authorship, and self-government — which decisions belong in human hands, and why.",
-  talkMeta: "SXSW 2027 PanelPicker submission, community voting open",
+  talkMeta: "SXSW 2027 PanelPicker proposal — community voting open through Aug 23",
   talkTitle: "Who Sings the “We”?", topics: [], cta: "Invite Russ to your stage",
 };
-export const speakingCredit = { text: "Russ Michaels — SXSW 2027 PanelPicker proposal · community voting open", href: "/speaking" };
+export const speakingCredit = { text: "Russ Michaels — SXSW 2027 PanelPicker proposal · community voting open through Aug 23 · read it & vote", href: "/sxsw" };
 
 export const closing = "You were never a set of separate problems, so you shouldn't be handed separate answers. One human. One relationship. Your whole life — held whole.";
 export const footerLine = "One seat. Your whole life.";
