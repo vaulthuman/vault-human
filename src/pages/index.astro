@@ -2,8 +2,8 @@
 import '../styles/global.css';
 import { articles } from '../data/writing.js';
 const fracture = articles.find((a) => a.slug === 'the-fracture');
-const fxExcerpt = fracture.body.filter((b) => b.k !== 'h').slice(0, 5);
-import { firm, hero, plan, family, turn, paradox, why, about, speaking, speakingCredit, closing, footerLine } from '../data/site.js';
+const fxExcerpt = fracture.body.filter((b) => b.k !== 'h').slice(0, 1);
+import { firm, hero, plan, family, turn, paradox, why, about, speaking, closing, footerLine } from '../data/site.js';
 const year = new Date().getFullYear();
 ---
 <!doctype html>
@@ -69,6 +69,23 @@ const year = new Date().getFullYear();
 
       <hr class="rule" />
 
+      <section class="famwrap">
+        <h2 class="sec">{family.label}</h2>
+        <p class="turn" style="margin-bottom:12px">{family.intro}</p>
+        <div class="cols two">
+          {family.items.map((it) => (
+            <div>
+              <h3><a class="fam-link" style={it.color ? `color:${it.color}` : undefined} href={it.href} target={it.external ? "_blank" : undefined} rel={it.external ? "noopener" : undefined}>{it.name}{it.external ? " ↗" : ""}</a></h3>
+              <p class="fam-tag">{it.tag}</p>
+              <p>{it.body}</p>
+            </div>
+          ))}
+        </div>
+        <p class="closing" style="margin-top:34px">{family.close}</p>
+      </section>
+
+      <hr class="rule" />
+
       <section class="plan">
         <h2 class="sec">{plan.eyebrow}</h2>
         <div class="cols three">
@@ -80,10 +97,6 @@ const year = new Date().getFullYear();
 
       <hr class="rule" />
 
-      <p class="turn">{turn}</p>
-
-      <hr class="rule" />
-
       <section class="fracture" id="the-fracture">
         <h2 class="sec">Where this came from</h2>
         <p class="turn" style="margin-bottom:22px">The Fracture &mdash; the essay Vault Human was built on.</p>
@@ -92,10 +105,29 @@ const year = new Date().getFullYear();
           <p style="opacity:.6">&hellip;</p>
         </div>
         <div class="ctarow" style="margin-top:18px">
-          <a class="btn-fill" href="#" data-open-essay>Read the essay (4 min)</a>
+          <a class="btn-fill" href="#" data-open-essay>Read the essay</a>
           <a class="btn-line" href="/the-fracture.pdf" target="_blank" rel="noopener">Download the PDF</a>
         </div>
       </section>
+
+      <hr class="rule" />
+
+      <section class="about">
+        <h2 class="sec">{about.eyebrow}</h2>
+        <img class="portrait" src={about.image} alt={`${about.name}, Founder of Vault Human`} width="340" height="425" />
+        <p class="person-name">{about.name}</p>
+        <div class="prose">
+          {about.body.map((p) => <p>{p}</p>)}
+        </div>
+        <div class="ctarow" style="margin-top:32px">
+          <a class="btn-fill" href="/writing">Writing</a>
+          <a class="btn-line" href="/speaking">Speaking</a>
+        </div>
+      </section>
+
+      <hr class="rule" />
+
+      <p class="turn">{turn}</p>
 
       <hr class="rule" />
 
@@ -117,34 +149,6 @@ const year = new Date().getFullYear();
 
       <hr class="rule" />
 
-      <section class="famwrap">
-        <h2 class="sec">{family.label}</h2>
-        <p class="turn" style="margin-bottom:12px">{family.intro}</p>
-        <div class="cols two">
-          {family.items.map((it) => (
-            <div>
-              <h3><a class="fam-link" style={it.color ? `color:${it.color}` : undefined} href={it.href} target={it.external ? "_blank" : undefined} rel={it.external ? "noopener" : undefined}>{it.name}{it.external ? " ↗" : ""}</a></h3>
-              <p class="fam-tag">{it.tag}</p>
-              <p>{it.body}</p>
-            </div>
-          ))}
-        </div>
-        <p class="closing" style="margin-top:34px">{family.close}</p>
-      </section>
-
-      <hr class="rule" />
-
-      <section class="about">
-        <h2 class="sec">{about.eyebrow}</h2>
-        <img class="portrait" src={about.image} alt={`${about.name}, Founder of Vault Human`} width="340" height="425" />
-        <p class="person-name">{about.name}</p>
-        <div class="prose">
-          {about.body.map((p) => <p>{p}</p>)}
-        </div>
-      </section>
-
-      <hr class="rule" />
-
       <p class="closing">{closing}</p>
 
       <div class="ctarow" id="begin">
@@ -157,7 +161,7 @@ const year = new Date().getFullYear();
     <div class="wrap">
       <p class="sig">{firm.name.toUpperCase()}</p>
       <p class="meta">{footerLine} &middot; <a href="tel:+18888332510">(888)&nbsp;833-2510</a> &middot; &copy; {year}</p>
-      <p class="meta"><a href={speakingCredit.href}>{speakingCredit.text}</a></p>
+      <p class="meta"><a href="/writing">Writing</a> &middot; <a href="/speaking">Speaking</a></p>
     </div>
   </footer>
 
