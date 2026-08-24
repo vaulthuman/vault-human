@@ -60,14 +60,14 @@ export const about = {
   ],
 };
 
-// SXSW demoted to a one-line footer credit (see footer). Kept for the /speaking page.
+// SXSW footer credit removed 2026-08-24 (community voting closed Aug 23). Kept for the /speaking page.
 export const speaking = {
   eyebrow: "Speaking", heading: "A human on the podium.",
   blurb: "Russ speaks on AI, authorship, and self-government — which decisions belong in human hands, and why.",
-  talkMeta: "SXSW 2027 PanelPicker proposal — community voting open through Aug 23",
+  talkMeta: "SXSW 2027 PanelPicker proposal — community voting closed Aug 23; results from SXSW later this fall",
   talkTitle: "Who Sings the “We”?", topics: [], cta: "Invite Russ to your stage",
 };
-export const speakingCredit = { text: "Russ Michaels — SXSW 2027 PanelPicker proposal · community voting open through Aug 23 · read it & vote", href: "/sxsw" };
+export const speakingEmail = "russ@vaulthuman.com";
 
 export const closing = "You were never a set of separate problems, so you shouldn't be handed separate answers. One human. One relationship. Your whole life — held whole.";
 export const footerLine = "One seat. Your whole life.";
