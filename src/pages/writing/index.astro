@@ -13,7 +13,7 @@ import { articles } from '../../data/writing.js';
     <div class="wlist">
       {articles.map((a) => (
         <a class="witem" href={`/writing/${a.slug}`}>
-          <p class="wm">{a.date} &middot; {a.read}</p>
+          <p class="wm">{a.date}</p>
           <p class="wt">{a.title}</p>
           <p class="wd">{a.dek}</p>
         </a>

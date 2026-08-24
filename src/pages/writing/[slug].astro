@@ -5,11 +5,13 @@ export function getStaticPaths() {
   return articles.map((a) => ({ params: { slug: a.slug }, props: { a } }));
 }
 const { a } = Astro.props;
+const WITH_PDF = ['the-fracture', 'the-warmer-intelligence', 'the-mirror', 'decision-points', 'how-do-we-grow-leaders-now'];
+const pdf = WITH_PDF.includes(a.slug) ? `/${a.slug}.pdf` : null;
 ---
 <Base title={`${a.title} — Vault Human`} description={a.dek}>
   <div class="wrap">
     <article class="article">
-      <p class="amx"><a href="/writing" class="backlink" style="margin:0;opacity:.7">Writing</a> &middot; {a.date} &middot; {a.read}</p>
+      <p class="amx"><a href="/writing" class="backlink" style="margin:0;opacity:.7">Writing</a> &middot; {a.date}</p>
       <h1>{a.title}</h1>
       <p class="adek">{a.dek}</p>
       <div class="abody">
@@ -19,6 +21,7 @@ const { a } = Astro.props;
         <p class="closing" style="font-size:22px">The world helps you in fragments. We hold you whole.</p>
         <div class="ctarow">
           <a class="btn-fill" href="#" data-open-form>Begin a conversation</a>
+          {pdf && <a class="btn-line" href={pdf} target="_blank" rel="noopener">Download the PDF</a>}
           <a class="btn-line" href="/writing">More writing</a>
         </div>
       </div>
