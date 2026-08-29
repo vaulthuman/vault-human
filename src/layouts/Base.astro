@@ -86,9 +86,10 @@ addEventListener('DOMContentLoaded',function(){
  if(!('IntersectionObserver'in window))return;
  var s='main .wrap>section:not(.hero),main .wrap>h2,main .wrap>.prose,main .wrap>.lede,main .wrap>.cta,main .wrap>.ctarow,main .wrap>.turn,main .wrap>.closing,main .wrap>.why,main .wrap>.tags,main .wrap>.markets,main .wrap>.pkgs,main .wrap>.areas,main .wrap>.steps,main .wrap>.cols,main .wrap>.pagehead';
  var e=[].slice.call(document.querySelectorAll(s));
- e.forEach(function(x){x.classList.add('reveal')});
+ var vh=window.innerHeight||800;
  var o=new IntersectionObserver(function(t){t.forEach(function(y){if(y.isIntersecting){y.target.classList.add('in');o.unobserve(y.target)}})},{threshold:0.06,rootMargin:'0px 0px -30px 0px'});
- e.forEach(function(x){o.observe(x)});
+ e.forEach(function(x){if(x.getBoundingClientRect().top<vh*0.9)return;x.classList.add('reveal');o.observe(x)});
+ setTimeout(function(){e.forEach(function(x){x.classList.add('in')})},1500);
 });
 </script>
 
