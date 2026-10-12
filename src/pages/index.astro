@@ -1,9 +1,6 @@
 ---
 import '../styles/global.css';
-import { articles } from '../data/writing.js';
-const fracture = articles.find((a) => a.slug === 'the-fracture');
-const fxExcerpt = fracture.body.filter((b) => b.k !== 'h').slice(0, 1);
-import { firm, hero, plan, family, turn, paradox, why, about, speaking, closing, footerLine } from '../data/site.js';
+import { firm, hero, timeline, gates, keys, coached, intake, about, turn, closing, footerLine } from '../data/site.js';
 const year = new Date().getFullYear();
 ---
 <!doctype html>
@@ -11,20 +8,20 @@ const year = new Date().getFullYear();
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{firm.name} — Law · Life · Legacy</title>
+  <title>{firm.name} — An integrated holistic coaching platform</title>
 <link rel="canonical" href="https://www.vaulthuman.com/">
-<meta name="description" content="Law, life, and legacy evaluated as one connected system, in one relationship.">
+<meta name="description" content="Vault Human is an integrated holistic coaching platform that boosts how you learn, love, live and listen. Two vaults, eleven chambers, nine gates. The keys come to you one a day.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Vault Human">
-<meta property="og:title" content="Vault Human — Law · Life · Legacy">
-<meta property="og:description" content="Law, life, and legacy evaluated as one connected system, in one relationship.">
+<meta property="og:title" content="Vault Human — An integrated holistic coaching platform">
+<meta property="og:description" content="Vault Human is an integrated holistic coaching platform that boosts how you learn, love, live and listen. Two vaults, eleven chambers, nine gates. The keys come to you one a day.">
 <meta property="og:image" content="https://www.vaulthuman.com/og-vaulthuman.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://www.vaulthuman.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Vault Human — Law · Life · Legacy">
-<meta name="twitter:description" content="Law, life, and legacy evaluated as one connected system, in one relationship.">
+<meta name="twitter:title" content="Vault Human — An integrated holistic coaching platform">
+<meta name="twitter:description" content="Vault Human is an integrated holistic coaching platform that boosts how you learn, love, live and listen. Two vaults, eleven chambers, nine gates. The keys come to you one a day.">
 <meta name="twitter:image" content="https://www.vaulthuman.com/og-vaulthuman.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,12 +30,12 @@ const year = new Date().getFullYear();
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18371546487"></script>
   <script>
     window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};var gtag=window.gtag;
-    gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD',{linker:{domains:['vaulthuman.com','tercetlaw.com','fretworksystems.com','triplicityadvisory.com','csh-vault.com']}});
+    gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD',{linker:{domains:['vaulthuman.com','tercetlaw.com','fretworksystems.com','triplicityadvisory.com']}});
     (function(){var fired=false;function fire(){if(fired)return;fired=true;gtag('event','conversion',{send_to:'AW-18371546487/r4eECOKGw9wcEPeanrhE'});gtag('event','generate_lead');}
     window.addEventListener('message',function(e){var d=e&&e.data;if(!d)return;if(typeof d==='string'){try{d=JSON.parse(d);}catch(_){return;}}if(!d||typeof d!=='object')return;var t=d.type||d.messageType||'',n=d.eventName||d.event||'';if(t==='hsFormCallback'&&(n==='onFormSubmitted'||n==='onFormSubmit'))fire();else if(n==='onFormSubmitted')fire();else if(d.accepted===true&&d.formGuid)fire();});
     window.addEventListener('hsFormCallback',function(e){if(e&&e.detail&&e.detail.eventName==='onFormSubmitted')fire();});})();
   </script>
-<script type="application/ld+json" is:inline>{"@context":"https://schema.org","@type":"Organization","@id":"https://www.vaulthuman.com/#org","name":"Vault Human","url":"https://www.vaulthuman.com","telephone":"+1-888-833-2510","logo":"https://www.vaulthuman.com/og-vaulthuman.png","image":"https://www.vaulthuman.com/og-vaulthuman.png","description":"Vault Human is a family of professional practices - estate law, AI & systems, leadership coaching, and development advisory - held in one relationship.","founder":{"@type":"Person","@id":"https://www.vaulthuman.com/#russ","name":"Russ Michaels","alternateName":"Russ Michael Schmidtberger","jobTitle":"Founder","telephone":"+1-888-833-2510","worksFor":{"@id":"https://www.vaulthuman.com/#org"}},"sameAs":["https://www.linkedin.com/in/russ-michaels/"],"subOrganization":[{"@type":"LegalService","name":"Tercet Law","url":"https://www.tercetlaw.com"},{"@type":"ProfessionalService","name":"Fretwork Systems","url":"https://www.fretworksystems.com"},{"@type":"ProfessionalService","name":"Triplicity","url":"https://triplicityadvisory.com"},{"@type":"ProfessionalService","name":"CSH Vault Consulting","url":"https://www.csh-vault.com"}]}</script>
+<script type="application/ld+json" is:inline>{"@context":"https://schema.org","@type":"Organization","@id":"https://www.vaulthuman.com/#org","name":"Vault Human","url":"https://www.vaulthuman.com","telephone":"+1-888-833-2510","logo":"https://www.vaulthuman.com/og-vaulthuman.png","image":"https://www.vaulthuman.com/og-vaulthuman.png","description":"Vault Human is an integrated holistic coaching platform that boosts how you learn, love, live and listen. Three companies on one timeline: Fretwork (the past), Triplicity (the present), Tercet Law (the future). The method is The Game of Gates.","founder":{"@type":"Person","@id":"https://www.vaulthuman.com/#russ","name":"Russ Michaels","alternateName":"Russ Michael Schmidtberger","jobTitle":"Founder","telephone":"+1-888-833-2510","worksFor":{"@id":"https://www.vaulthuman.com/#org"}},"sameAs":["https://www.linkedin.com/in/russ-michaels/"],"subOrganization":[{"@type":"LegalService","name":"Tercet Law","url":"https://www.tercetlaw.com"},{"@type":"ProfessionalService","name":"Fretwork Systems","url":"https://www.fretworksystems.com"},{"@type":"ProfessionalService","name":"Triplicity","url":"https://triplicityadvisory.com"}]}</script>
 <script type="application/ld+json" is:inline>{"@context":"https://schema.org","@type":"Person","@id":"https://www.vaulthuman.com/#russ","name":"Russ Michaels","alternateName":"Russ Michael Schmidtberger","jobTitle":"Founder","telephone":"+1-888-833-2510","sameAs":["https://www.linkedin.com/in/russ-michaels/"],"worksFor":{"@id":"https://www.vaulthuman.com/#org"}}</script>
 </head>
 <body>
@@ -46,8 +43,9 @@ const year = new Date().getFullYear();
     <div class="wrap bar">
       <a class="brand" href="/">{firm.wordmark}</a>
       <nav class="navlinks">
+        <a href="#gates">The Gates</a>
+        <a href="#keys">The Keys</a>
         <a href="/writing">Writing</a>
-        <a href="/speaking">Speaking</a>
         <a class="navbtn" href="#" data-open-form>Start</a>
       </nav>
     </div>
@@ -65,48 +63,98 @@ const year = new Date().getFullYear();
         {hero.lede.map((p) => <p>{p}</p>)}
       </div>
 
-      <div class="cta"><a class="btn-fill" href="#" data-open-form>{hero.cta}</a></div>
+      <div class="ctarow">
+        <a class="btn-fill" href="#" data-open-form>{hero.cta}</a>
+        <a class="btn-line" href="#coached">{hero.cta2}</a>
+      </div>
 
       <hr class="rule" />
 
-      <section class="famwrap">
-        <h2 class="sec">{family.label}</h2>
-        <p class="turn" style="margin-bottom:12px">{family.intro}</p>
-        <div class="cols two">
-          {family.items.map((it) => (
-            <div>
-              <h3><a class="fam-link" style={it.color ? `color:${it.color}` : undefined} href={it.href} target={it.external ? "_blank" : undefined} rel={it.external ? "noopener" : undefined}>{it.name}{it.external ? " ↗" : ""}</a></h3>
-              <p class="fam-tag">{it.tag}</p>
-              <p>{it.body}</p>
+      <!-- THE TIMELINE -->
+      <section class="timeline" id="timeline">
+        <h2 class="sec">{timeline.eyebrow}</h2>
+        <p class="turn" style="margin-bottom:46px">{timeline.line}</p>
+        <div class="tl">
+          <div class="tl-rail" aria-hidden="true"><span class="tl-arrow"></span></div>
+          <div class="tl-doors">
+            {timeline.doors.map((d) => (
+              <a class="door" href={d.href} target="_blank" rel="noopener">
+                <span class="door-dot" aria-hidden="true"></span>
+                <p class="door-when">{d.when} · {d.as}</p>
+                <h3 class="door-name">{d.name}</h3>
+                <p class="door-role">{d.role}</p>
+                <p class="door-cap">{d.caption}</p>
+                <p class="door-body">{d.body}</p>
+                <span class="door-cta">{d.cta} ↗</span>
+              </a>
+            ))}
+          </div>
+          <div class="tl-method"><span>{timeline.method}</span></div>
+        </div>
+        <p class="closing tl-under">{timeline.under}</p>
+      </section>
+
+      <hr class="rule" />
+
+      <!-- THE GAME OF GATES -->
+      <section class="gates" id="gates">
+        <h2 class="sec">{gates.eyebrow}</h2>
+        <p class="turn" style="margin-bottom:22px">{gates.heading}</p>
+        <div class="prose"><p>{gates.intro}</p></div>
+        <div class="chambers">
+          {gates.chambers.map((c) => (
+            <div class={`chamber${c.verb ? '' : ' nogate'}`}>
+              <p class="ch-n">Chamber {c.n}</p>
+              <h3 class="ch-noun">{c.noun}</h3>
+              {c.verb ? <p class="ch-verb">by {c.verb}</p> : <p class="ch-verb ch-verb--none">&nbsp;</p>}
+              <p class="ch-line">{c.line}</p>
             </div>
           ))}
         </div>
-        <p class="closing" style="margin-top:34px">{family.close}</p>
+        <div class="cols three" style="margin-top:56px">
+          {gates.year.map((y) => (
+            <div><h3>{y.title}</h3><p>{y.body}</p></div>
+          ))}
+        </div>
+        <p class="closing" style="margin-top:46px">{gates.predicate}</p>
+        <p class="turn" style="margin-top:22px;font-size:19px;opacity:.75">{gates.dayOne}</p>
+      </section>
+
+      <hr class="rule" />
+
+      <!-- THE FIRST DOOR — THE KEYS -->
+      <section class="keys" id="keys">
+        <h2 class="sec">{keys.eyebrow}</h2>
+        <p class="turn" style="margin-bottom:26px">{keys.heading}</p>
+        <div class="prose"><p>{keys.body}</p></div>
+        <ul class="keylist">
+          {keys.points.map((p) => <li>{p}</li>)}
+        </ul>
+        <p class="subline" style="font-size:22px;margin-top:26px">{keys.price}</p>
+        <div class="ctarow" style="margin-top:30px">
+          <a class="btn-fill" href="#" data-open-form>{keys.cta}</a>
+        </div>
+      </section>
+
+      <hr class="rule" />
+
+      <section class="coached" id="coached">
+        <h2 class="sec">{coached.eyebrow}</h2>
+        <p class="turn" style="margin-bottom:26px">{coached.heading}</p>
+        <div class="prose"><p>{coached.body}</p></div>
+        <div class="ctarow" style="margin-top:30px">
+          <a class="btn-line" href={coached.href} target="_blank" rel="noopener">{coached.cta} ↗</a>
+        </div>
       </section>
 
       <hr class="rule" />
 
       <section class="plan">
-        <h2 class="sec">{plan.eyebrow}</h2>
+        <h2 class="sec">{intake.eyebrow}</h2>
         <div class="cols three">
-          {plan.steps.map((s) => (
+          {intake.steps.map((s) => (
             <div><h3><span class="stepnum">{s.n}</span> {s.title}</h3><p>{s.body}</p></div>
           ))}
-        </div>
-      </section>
-
-      <hr class="rule" />
-
-      <section class="fracture" id="the-fracture">
-        <h2 class="sec">Where this came from</h2>
-        <p class="turn" style="margin-bottom:22px">The Fracture &mdash; the essay Vault Human was built on.</p>
-        <div class="fx">
-          {fxExcerpt.map((b) => <p class={b.k} set:html={b.t}></p>)}
-          <p style="opacity:.6">&hellip;</p>
-        </div>
-        <div class="ctarow" style="margin-top:18px">
-          <a class="btn-fill" href="#" data-open-essay>Read the essay</a>
-          <a class="btn-line" href="/the-fracture.pdf" target="_blank" rel="noopener">Download the PDF</a>
         </div>
       </section>
 
@@ -120,7 +168,7 @@ const year = new Date().getFullYear();
           {about.body.map((p) => <p>{p}</p>)}
         </div>
         <div class="ctarow" style="margin-top:32px">
-          <a class="btn-fill" href="/writing">Writing</a>
+          <a class="btn-line" href="/writing">Writing</a>
           <a class="btn-line" href="/speaking">Speaking</a>
         </div>
       </section>
@@ -131,28 +179,10 @@ const year = new Date().getFullYear();
 
       <hr class="rule" />
 
-      <section class="paradox">
-        <h2 class="sec">{paradox.eyebrow}</h2>
-        <p class="turn" style="margin-bottom:26px">{paradox.line}</p>
-        <div class="prose">
-          {paradox.body.map((p) => <p>{p}</p>)}
-        </div>
-        <p class="closing" style="margin-top:34px">{paradox.pull}</p>
-      </section>
-
-      <hr class="rule" />
-
-      <h2 class="sec">Why Vault Human</h2>
-      <div class="prose">
-        {why.map((p) => <p>{p}</p>)}
-      </div>
-
-      <hr class="rule" />
-
       <p class="closing">{closing}</p>
 
       <div class="ctarow" id="begin">
-        <a class="btn-fill" href="#" data-open-form>Start a conversation</a>
+        <a class="btn-fill" href="#" data-open-form>{keys.cta}</a>
       </div>
     </div>
   </main>
@@ -161,45 +191,17 @@ const year = new Date().getFullYear();
     <div class="wrap">
       <p class="sig">{firm.name.toUpperCase()}</p>
       <p class="meta">{footerLine} &middot; <a href="tel:+18888332510">(888)&nbsp;833-2510</a> &middot; &copy; {year}</p>
-      <p class="meta"><a href="/writing">Writing</a> &middot; <a href="/speaking">Speaking</a> &middot; <a href="https://www.linkedin.com/in/russ-michaels/" target="_blank" rel="noopener" aria-label="Russ Michaels on LinkedIn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false" style="vertical-align:-3px"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg><span style="margin-left:7px">LinkedIn</span></a></p>
+      <p class="meta"><a href="https://www.fretworksystems.com" target="_blank" rel="noopener">Fretwork</a> &middot; <a href="https://triplicityadvisory.com" target="_blank" rel="noopener">Triplicity</a> &middot; <a href="https://www.tercetlaw.com" target="_blank" rel="noopener">Tercet Law</a> &middot; <a href="/writing">Writing</a> &middot; <a href="/speaking">Speaking</a> &middot; <a href="https://www.linkedin.com/in/russ-michaels/" target="_blank" rel="noopener" aria-label="Russ Michaels on LinkedIn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false" style="vertical-align:-3px"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg><span style="margin-left:7px">LinkedIn</span></a></p>
     </div>
   </footer>
 
-  <!-- The Fracture essay modal -->
-  <div id="vh-essay" class="vh-modal" aria-hidden="true">
-    <div class="vh-modal__bg" data-close-essay></div>
-    <div class="vh-modal__card vh-modal__card--essay" role="dialog" aria-modal="true" aria-label="The Fracture">
-      <button class="vh-modal__x" type="button" data-close-essay aria-label="Close">&times;</button>
-      <p class="eyebrow" style="margin:0 0 10px">Vault Human &middot; Writing &middot; {fracture.date}</p>
-      <h2>{fracture.title}</h2>
-      <p class="edek">{fracture.dek}</p>
-      <div class="ebody">
-        {fracture.body.map((b) => b.k === 'h' ? <h3 set:html={b.t}></h3> : <p class={b.k} set:html={b.t}></p>)}
-        <p style="margin-top:22px">&mdash; Russ Michaels</p>
-      </div>
-      <div class="eactions">
-        <a class="btn-fill" href="#" data-open-form data-close-essay>Begin a conversation</a>
-        <a class="btn-line" href="/the-fracture.pdf" target="_blank" rel="noopener">Download the PDF</a>
-        <a class="btn-line" href="/writing">More writing</a>
-      </div>
-    </div>
-  </div>
-  <script is:inline>
-  (function(){var m=document.getElementById('vh-essay');if(!m)return;
-  function o(e){if(e)e.preventDefault();m.classList.add('is-open');m.setAttribute('aria-hidden','false');document.documentElement.style.overflow='hidden';}
-  function c(){m.classList.remove('is-open');m.setAttribute('aria-hidden','true');if(!document.querySelector('.vh-modal.is-open'))document.documentElement.style.overflow='';}
-  document.addEventListener('click',function(e){var t=e.target.closest('[data-open-essay]');if(t){o(e);return;}if(e.target.closest('[data-close-essay]'))c();});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});
-  if(location.hash==='#the-fracture-essay')o();})();
-  </script>
-
-  <!-- Start-a-conversation modal -->
+  <!-- Start with the Keys — sign-up modal (HubSpot form; one form for the whole hub) -->
   <div id="vh-modal" class="vh-modal" aria-hidden="true">
     <div class="vh-modal__bg" data-close-form></div>
-    <div class="vh-modal__card" role="dialog" aria-modal="true" aria-label="Begin a conversation">
+    <div class="vh-modal__card" role="dialog" aria-modal="true" aria-label="Start with the Keys">
       <button class="vh-modal__x" type="button" data-close-form aria-label="Close">&times;</button>
-      <h2 class="vh-modal__title">Begin a conversation</h2>
-      <p class="vh-modal__sub">Share a few details and we&rsquo;ll be in touch &mdash; one relationship, one memory.</p>
+      <h2 class="vh-modal__title">Start with the Keys</h2>
+      <p class="vh-modal__sub">Name, email, phone, which door brought you, and one line on why now. You are held within the minute, and the first key comes with the reply.</p>
       <div class="hs-form-frame" data-region="na2" data-form-id="3f225ab5-5a70-46d9-a497-29e6256b1e52" data-portal-id="246947446"></div>
     </div>
   </div>
@@ -209,12 +211,13 @@ const year = new Date().getFullYear();
   function o(e){if(e)e.preventDefault();m.classList.add('is-open');m.setAttribute('aria-hidden','false');document.documentElement.style.overflow='hidden';}
   function c(){m.classList.remove('is-open');m.setAttribute('aria-hidden','true');document.documentElement.style.overflow='';}
   document.addEventListener('click',function(e){var t=e.target.closest('[data-open-form]');if(t){o(e);return;}if(e.target.closest('[data-close-form]'))c();});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});})();
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});
+  if(location.hash==='#start'||location.hash==='#begin-keys')o();})();
   </script>
 <script>
 addEventListener('DOMContentLoaded',function(){
  if(!('IntersectionObserver'in window))return;
- var s='main .wrap>section:not(.hero),main .wrap>h2,main .wrap>.prose,main .wrap>.lede,main .wrap>.cta,main .wrap>.ctarow,main .wrap>.turn,main .wrap>.closing,main .wrap>.why,main .wrap>.tags,main .wrap>.markets,main .wrap>.pkgs,main .wrap>.areas,main .wrap>.steps,main .wrap>.cols,main .wrap>.pagehead';
+ var s='main .wrap>section:not(.hero),main .wrap>h2,main .wrap>.prose,main .wrap>.lede,main .wrap>.cta,main .wrap>.ctarow,main .wrap>.turn,main .wrap>.closing,main .wrap>.cols';
  var e=[].slice.call(document.querySelectorAll(s));
  e.forEach(function(x){x.classList.add('reveal')});
  var o=new IntersectionObserver(function(t){t.forEach(function(y){if(y.isIntersecting){y.target.classList.add('in');o.unobserve(y.target)}})},{threshold:0.06,rootMargin:'0px 0px -30px 0px'});
