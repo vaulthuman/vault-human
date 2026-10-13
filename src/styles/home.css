@@ -155,3 +155,8 @@ footer.site{padding:50px 0 32px;background:var(--dark);color:rgba(255,255,255,.7
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal,.hero h1{opacity:1!important;transform:none!important}}
+
+/* hero photo (2026-10-13) */
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.hero-photo img{width:100%;height:520px;object-fit:cover;border-radius:10px;box-shadow:0 30px 60px -40px rgba(11,13,16,.5)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-photo img{height:340px}}
