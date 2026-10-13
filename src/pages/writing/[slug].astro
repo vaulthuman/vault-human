@@ -18,11 +18,11 @@ const pdf = WITH_PDF.includes(a.slug) ? `/${a.slug}.pdf` : null;
         {a.body.map((b) => b.k === "h" ? <h3 class="ah" set:html={b.t}></h3> : <p class={b.k} set:html={b.t}></p>)}
       </div>
       <div class="article-cta">
-        <p class="closing" style="font-size:22px">The world helps you in fragments. We hold you whole.</p>
+        <p class="closing" style="font-size:22px">You were never a set of separate problems. One coach. One method. Your whole life.</p>
         <div class="ctarow">
-          <a class="btn-fill" href="#" data-open-form>Begin a conversation</a>
-          {pdf && <a class="btn-line" href={pdf} target="_blank" rel="noopener">Download the PDF</a>}
-          <a class="btn-line" href="/writing">More writing</a>
+          <a class="btn btn-acc" href="#" data-open-form>Start — $97/mo</a>
+          {pdf && <a class="btn btn-line" href={pdf} target="_blank" rel="noopener">Download the PDF</a>}
+          <a class="btn btn-line" href="/writing">More writing</a>
         </div>
       </div>
     </article>
