@@ -169,3 +169,39 @@ footer.site{padding:50px 0 32px;background:var(--dark);color:rgba(255,255,255,.7
 .gallery figure:hover img{transform:scale(1.04)}
 .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;color:#fff;font-family:var(--disp);font-size:24px;letter-spacing:1px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.75))}
 @media(max-width:760px){.gallery{grid-template-columns:1fr}.gallery figure{height:220px}}
+
+/* secondary pages — writing, speaking, lane pages (2026-10-13) */
+.pagehead{text-align:center;padding:88px 0 12px;max-width:860px;margin:0 auto}
+.pagehead h1{margin:14px 0 0}
+.pagehead .dek,.dek{font-size:clamp(18px,1.6vw,22px);color:var(--muted);margin:18px auto 0;max-width:620px;line-height:1.5}
+.wlist{max-width:780px;margin:48px auto 0}
+.witem{display:block;text-decoration:none;border-top:1px solid var(--line);padding:26px 4px}
+.wlist .witem:last-child{border-bottom:1px solid var(--line)}
+.witem .wm{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0}
+.witem .wt{font-family:var(--disp);font-size:34px;line-height:1;margin:8px 0 6px}
+.witem .wd{font-size:16px;color:var(--muted);margin:0}
+.witem:hover .wt{color:var(--acc-ink)}
+.rule{border:0;border-top:1px solid var(--line);margin:56px 0}
+.closing{font-family:var(--disp);font-size:clamp(26px,3vw,38px);text-align:center;line-height:1;margin:0 0 20px}
+.wrap>.ctarow{justify-content:center;margin-bottom:80px}
+.article{max-width:680px;margin:0 auto;padding:64px 0 10px}
+.article .amx{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0 0 16px}
+.article h1{font-size:clamp(44px,6vw,72px);margin:0 0 14px}
+.article .adek{font-size:21px;color:var(--muted);margin:0 0 30px;line-height:1.45}
+.abody p{font-size:18px;line-height:1.75;margin:0 0 20px}
+.abody p.lead{font-size:20px}
+.abody p.pull{font-family:var(--disp);font-size:30px;line-height:1.1;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 8px;margin:30px 0;color:var(--acc-ink)}
+.abody h3.ah{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--acc-ink);margin:34px 0 12px;font-weight:700;font-family:var(--sans)}
+.backlink{display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:700;color:var(--acc-ink)}
+.article-cta{margin:44px 0 60px;border-top:1px solid var(--line);padding-top:30px;text-align:center}
+.article-cta .ctarow{justify-content:center}
+.sec .prose{max-width:720px;margin:0 auto;font-size:18px;line-height:1.7}
+.sec .prose p{margin:0 0 18px}
+h2.sec{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--acc-ink);font-weight:700;font-family:var(--sans);text-align:center;margin:0 0 18px}
+.talk-meta{font-size:11px;letter-spacing:2px;text-transform:uppercase;text-align:center;color:var(--muted);font-weight:700;margin:0 0 12px}
+.talk-title{font-family:var(--disp);font-size:clamp(30px,4vw,48px);line-height:1;text-align:center;max-width:820px;margin:0 auto 22px}
+.cta,.turn,.note{text-align:center;max-width:760px;margin:24px auto;font-size:18px;color:var(--muted)}
+.coachcard{max-width:720px;margin:0 auto;text-align:center}
+.coachname{font-family:var(--disp);font-size:36px}
+.coachrole{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--acc-ink);font-weight:700}
+.steps li,.rn{font-size:17px;line-height:1.6}
