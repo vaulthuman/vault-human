@@ -1,6 +1,6 @@
 ---
-import '../styles/global.css';
-import { firm, hero, timeline, gates, keys, coached, intake, about, turn, closing, footerLine } from '../data/site.js';
+import '../styles/home.css';
+import { gates } from '../data/site.js';
 const year = new Date().getFullYear();
 ---
 <!doctype html>
@@ -8,7 +8,7 @@ const year = new Date().getFullYear();
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{firm.name} — An integrated holistic coaching platform</title>
+  <title>Vault Human — An integrated holistic coaching platform</title>
 <link rel="canonical" href="https://www.vaulthuman.com/">
 <meta name="description" content="Vault Human is an integrated holistic coaching platform that boosts how you learn, love, live and listen. Two vaults, eleven chambers, nine gates. The keys come to you one a day.">
 <meta property="og:type" content="website">
@@ -41,157 +41,258 @@ const year = new Date().getFullYear();
 <body>
   <header class="site">
     <div class="wrap bar">
-      <a class="brand" href="/">{firm.wordmark}</a>
+      <a class="brand" href="/">Vault <b>Human</b></a>
       <nav class="navlinks">
+        <a href="#how">How it works</a>
         <a href="#gates">The Gates</a>
-        <a href="#keys">The Keys</a>
+        <a href="#years">The Years</a>
         <a href="/writing">Writing</a>
-        <a class="navbtn" href="#" data-open-form>Start</a>
+        <a class="btn btn-ochre" href="#" data-open-form>Start with the Keys</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="wrap">
-      <section class="hero">
-        <p class="kicker">{firm.kicker}</p>
-        <h1>{hero.h1}</h1>
-        <p class="subline serif">{hero.subline}</p>
-      </section>
-
-      <div class="lede">
-        {hero.lede.map((p) => <p>{p}</p>)}
-      </div>
-
-      <div class="ctarow">
-        <a class="btn-fill" href="#" data-open-form>{hero.cta}</a>
-        <a class="btn-line" href="#coached">{hero.cta2}</a>
-      </div>
-
-      <hr class="rule" />
-
-      <!-- THE TIMELINE -->
-      <section class="timeline" id="timeline">
-        <h2 class="sec">{timeline.eyebrow}</h2>
-        <p class="turn" style="margin-bottom:46px">{timeline.line}</p>
-        <div class="tl">
-          <div class="tl-rail" aria-hidden="true"><span class="tl-arrow"></span></div>
-          <div class="tl-doors">
-            {timeline.doors.map((d) => (
-              <a class="door" href={d.href} target="_blank" rel="noopener">
-                <span class="door-dot" aria-hidden="true"></span>
-                <p class="door-when">{d.when} · {d.as}</p>
-                <h3 class="door-name">{d.name}</h3>
-                <p class="door-role">{d.role}</p>
-                <p class="door-cap">{d.caption}</p>
-                <p class="door-body">{d.body}</p>
-                <span class="door-cta">{d.cta} ↗</span>
-              </a>
-            ))}
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">An integrated holistic coaching platform</p>
+          <h1>One key a day. A coach who reads the log. <em>A year long enough for it to hold.</em></h1>
+          <p class="lede">Vault Human boosts how you learn, love, live and listen. Not another app, not another weekend: a sourced teaching every morning, one action, three lines at night, and a person on the other end of it.</p>
+          <div class="ctarow">
+            <a class="btn btn-ochre" href="#" data-open-form>Start with the Keys — $97/mo</a>
+            <a class="btn btn-line" href="#years">Apply for the Coached Year</a>
           </div>
-          <div class="tl-method"><span>{timeline.method}</span></div>
+          <div class="hero-trust"><span>Starts tomorrow at 7a Central</span><span>Held by a person within the minute</span><span>Pause any time</span></div>
         </div>
-        <p class="closing tl-under">{timeline.under}</p>
-      </section>
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=72&auto=format&fit=crop" alt="A forest path in morning light" width="1600" height="1067" fetchpriority="high" />
+          <div class="hero-note"><b>Day one</b>Og Mandino, read aloud. Then a walk outside. Nobody opens with a personality test.</div>
+        </div>
+      </div>
+    </section>
 
-      <hr class="rule" />
+    <!-- PROBLEM -->
+    <section class="sec alt" id="why">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Sound familiar?</p>
+          <h2>You've read the books. You did the weekend. By Tuesday it was gone.</h2>
+        </div>
+        <div class="pains">
+          <div class="pain"><h3>Too many teachers, no order</h3><p>Stoics on Monday, breathwork on Wednesday, a podcast on the drive. Good ideas with nothing holding them in sequence, so none of them turn into a habit.</p></div>
+          <div class="pain"><h3>Nobody reads the log</h3><p>The app counts streaks. It doesn't notice that the thing you wrote on night nine is the thing that matters. A person would.</p></div>
+          <div class="pain"><h3>Help in pieces</h3><p>A coach who never speaks to the lawyer, a lawyer who never asks about your sleep. Your life is one line, past to future. The help should be too.</p></div>
+        </div>
+        <p class="turn">The field sells a weekend. Nobody walks eleven chambers in a weekend. Vault Human sells a year, one key a day, with a person on the other end of the log.</p>
+      </div>
+    </section>
 
-      <!-- THE GAME OF GATES -->
-      <section class="gates" id="gates">
-        <h2 class="sec">{gates.eyebrow}</h2>
-        <p class="turn" style="margin-bottom:22px">{gates.heading}</p>
-        <div class="prose"><p>{gates.intro}</p></div>
+    <!-- GUIDE -->
+    <section class="sec" id="russ">
+      <div class="wrap guide-grid">
+        <img src="/russ-michaels.jpg" alt="Russ Michaels, founder of Vault Human" width="340" height="425" />
+        <div>
+          <p class="eyebrow">The person in the seat</p>
+          <h2>Russ Michaels walks it on the same schedule you do.</h2>
+          <blockquote>Sometimes we meet life where it is, not where we are. We hold that together.</blockquote>
+          <p class="lede">For over twenty years Russ has led organizations as a CEO, Executive Director and Board President, and as an attorney, still practicing. He built Vault Human because the people he led kept being handed their lives in pieces. He and Jasmine take the keys on the same calendar the members do, with the log and the numbers visible. The platform runs on them first, in public.</p>
+          <div class="ctarow"><a class="btn btn-line" href="/writing">Read his writing</a><a class="btn btn-line" href="/speaking">Speaking</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAN -->
+    <section class="sec alt" id="how">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps. The first one takes a minute.</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="n">1</div><h3>Start with the Keys</h3><p>Name, email, phone, which door brought you, one line on why now. You're held within the minute, in Russ's voice, with the first key attached. The daily key starts tomorrow at 7a Central.</p></div>
+          <div class="step"><div class="n">2</div><h3>The first touch</h3><p>Thirty minutes with Russ or Jasmine inside 48 hours. Never a bot. Your story in three parts begins; the log is handed over. The Coached Year is offered if it fits; the Keys continue either way.</p></div>
+          <div class="step"><div class="n">3</div><h3>The year</h3><p>Fourteen days of the log, then session one on day fifteen. A key a day, a session a week, a circle of six on a fixed hour. The gates open on turned keys, not finished cards.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT A DAY LOOKS LIKE -->
+    <section class="sec">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">What a day looks like</p>
+          <h2>A key, a walk, a table, a log.</h2>
+          <p class="lede">The Mind Vault holds 360 keys, the Body Vault 180. A key is one sourced teaching: who began it, when, and what it asks of you. Mind keys give you 24 hours. Body keys give you 48.</p>
+        </div>
+        <div class="strip">
+          <figure><img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=1600&q=72&auto=format&fit=crop" alt="Running shoes on stone steps at sunrise" loading="lazy" /><figcaption><b>7:00 — the key</b><span>200 words in your inbox. One action. The clock starts.</span></figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&q=72&auto=format&fit=crop" alt="An open road into the hills" loading="lazy" /><figcaption><b>The walk</b><span>Outside, every day in Chamber One. The Body Vault starts on your feet.</span></figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1600&q=72&auto=format&fit=crop" alt="Fresh food laid out on a table" loading="lazy" /><figcaption><b>The table</b><span>Body keys come with the dose and the number. Nothing invented, everything sourced.</span></figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1600&q=72&auto=format&fit=crop" alt="A hand writing in a notebook" loading="lazy" /><figcaption><b>Night — the log</b><span>Three lines. A human reads them before your session, not after.</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHOD -->
+    <section class="sec alt" id="gates">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">The method</p>
+          <h2>The Game of Gates</h2>
+          <p class="lede">Eleven chambers, nine gates. Chambers are nouns, the place you live. Gates are verbs, what you do to get in. A key turns when the habit holds; a gate opens on turned keys.</p>
+        </div>
         <div class="chambers">
           {gates.chambers.map((c) => (
             <div class={`chamber${c.verb ? '' : ' nogate'}`}>
               <p class="ch-n">Chamber {c.n}</p>
               <h3 class="ch-noun">{c.noun}</h3>
-              {c.verb ? <p class="ch-verb">by {c.verb}</p> : <p class="ch-verb ch-verb--none">&nbsp;</p>}
+              {c.verb ? <p class="ch-verb">by {c.verb}</p> : <p class="ch-verb" style="opacity:0">&nbsp;</p>}
               <p class="ch-line">{c.line}</p>
             </div>
           ))}
         </div>
-        <div class="cols three" style="margin-top:56px">
-          {gates.year.map((y) => (
-            <div><h3>{y.title}</h3><p>{y.body}</p></div>
-          ))}
+        <div class="year">
+          {gates.year.map((y) => (<div><h3>{y.title}</h3><p>{y.body}</p></div>))}
         </div>
-        <p class="closing" style="margin-top:46px">{gates.predicate}</p>
-        <p class="turn" style="margin-top:22px;font-size:19px;opacity:.75">{gates.dayOne}</p>
-      </section>
-
-      <hr class="rule" />
-
-      <!-- THE FIRST DOOR — THE KEYS -->
-      <section class="keys" id="keys">
-        <h2 class="sec">{keys.eyebrow}</h2>
-        <p class="turn" style="margin-bottom:26px">{keys.heading}</p>
-        <div class="prose"><p>{keys.body}</p></div>
-        <ul class="keylist">
-          {keys.points.map((p) => <li>{p}</li>)}
-        </ul>
-        <p class="subline" style="font-size:22px;margin-top:26px">{keys.price}</p>
-        <div class="ctarow" style="margin-top:30px">
-          <a class="btn-fill" href="#" data-open-form>{keys.cta}</a>
-        </div>
-      </section>
-
-      <hr class="rule" />
-
-      <section class="coached" id="coached">
-        <h2 class="sec">{coached.eyebrow}</h2>
-        <p class="turn" style="margin-bottom:26px">{coached.heading}</p>
-        <div class="prose"><p>{coached.body}</p></div>
-        <div class="ctarow" style="margin-top:30px">
-          <a class="btn-line" href={coached.href} target="_blank" rel="noopener">{coached.cta} ↗</a>
-        </div>
-      </section>
-
-      <hr class="rule" />
-
-      <section class="plan">
-        <h2 class="sec">{intake.eyebrow}</h2>
-        <div class="cols three">
-          {intake.steps.map((s) => (
-            <div><h3><span class="stepnum">{s.n}</span> {s.title}</h3><p>{s.body}</p></div>
-          ))}
-        </div>
-      </section>
-
-      <hr class="rule" />
-
-      <section class="about">
-        <h2 class="sec">{about.eyebrow}</h2>
-        <img class="portrait" src={about.image} alt={`${about.name}, Founder of Vault Human`} width="340" height="425" />
-        <p class="person-name">{about.name}</p>
-        <div class="prose">
-          {about.body.map((p) => <p>{p}</p>)}
-        </div>
-        <div class="ctarow" style="margin-top:32px">
-          <a class="btn-line" href="/writing">Writing</a>
-          <a class="btn-line" href="/speaking">Speaking</a>
-        </div>
-      </section>
-
-      <hr class="rule" />
-
-      <p class="turn">{turn}</p>
-
-      <hr class="rule" />
-
-      <p class="closing">{closing}</p>
-
-      <div class="ctarow" id="begin">
-        <a class="btn-fill" href="#" data-open-form>{keys.cta}</a>
+        <p class="predicate">{gates.predicate}</p>
       </div>
-    </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section class="sec" id="years">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">The offer</p>
+          <h2>A year, not a weekend.</h2>
+          <p class="lede">The Keys are open to anyone, today. The three Years are by application, after a first touch with a person.</p>
+        </div>
+        <div class="offers">
+          <div class="offer feat">
+            <div class="tag">Start here</div>
+            <h3>The Keys</h3>
+            <div class="price">$97<span style="font-size:15px;font-family:var(--sans)">/month</span></div>
+            <div class="meta">or $970 a year · no coach yet · pause any time</div>
+            <p>The daily Mind key and the every-other-day Body key in the Progression's order, the log, the score, the monthly chamber explainer and a monthly open circle online.</p>
+            <a class="btn" href="#" data-open-form>Start with the Keys</a>
+          </div>
+          <div class="offer">
+            <div class="tag">The core product</div>
+            <h3>The Coached Year</h3>
+            <div class="meta">Twelve months · by application</div>
+            <p>Everything in the Keys plus a Vault Human coach: a weekly session, a weekly circle of six, the gates confirmed, the doors walked to. Months one to five in our order, month six the Rest, seven to twelve in yours.</p>
+            <a class="btn btn-line" href="#" data-open-form>Apply</a>
+          </div>
+          <div class="offer">
+            <div class="tag">For a household</div>
+            <h3>The Family Year</h3>
+            <div class="meta">Two to four people · one coach · one circle</div>
+            <p>The Coached Year for a couple, parents or a household that wants one rhythm. Shared Body keys; the kitchen and the gym are shared; the documents in the room at Tomorrow.</p>
+            <a class="btn btn-line" href="#" data-open-form>Ask about it</a>
+          </div>
+          <div class="offer">
+            <div class="tag">For a leader and a team</div>
+            <h3>Executive and Team</h3>
+            <div class="meta">One leader · a team circle of up to eight</div>
+            <p>The Coached Year for a leader plus a team circle, the gates taught as a shared language, and a read of the systems underneath so the coaching lands on how the work actually flows.</p>
+            <a class="btn btn-line" href="#" data-open-form>Ask about it</a>
+          </div>
+        </div>
+        <p class="offers-note">Coaching is delivered by Triplicity Advisory, the present on the Vault Human timeline. Prices shown are proposed for the 2027 pilot and confirmed on the first touch.</p>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="sec ink" id="timeline">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Where this comes from</p>
+          <h2>One life. One line. Past, present, future.</h2>
+          <p class="lede">Most help only looks at one stretch of a life. Vault Human holds the whole line, and three companies stand on it, one for each stretch. You don't have to visit them to be coached; they're the reason the coaching holds.</p>
+        </div>
+        <div class="tl">
+          <div class="tl-rail"></div>
+          <div class="tl-cards">
+            <div class="tlc past">
+              <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1600&q=72&auto=format&fit=crop" alt="A footbridge through a forest" loading="lazy" />
+              <div class="body"><div class="when">The past</div><h3>Fretwork</h3><div class="as">As Learned · The Connector</div><p>Your framing, your foundation, your structure. Systems read, then rebuilt for the present. The first five chambers, read as wiring.</p><div class="firm">For teams and their systems: <a href="https://www.fretworksystems.com" target="_blank" rel="noopener">Fretwork Systems ↗</a></div></div>
+            </div>
+            <div class="tlc present">
+              <img src="https://images.unsplash.com/photo-1510797215324-95aa89f43c33?w=1600&q=72&auto=format&fit=crop" alt="A path across a green hillside" loading="lazy" />
+              <div class="body"><div class="when">The present</div><h3>Triplicity</h3><div class="as">As Loved · The Coach</div><p>Mindfulness and coaching for executives, businesses, families and individuals. Every coached product lives here. The work happens now.</p><div class="firm">The coaching company: <a href="https://triplicityadvisory.com" target="_blank" rel="noopener">Triplicity Advisory ↗</a></div></div>
+            </div>
+            <div class="tlc future">
+              <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1600&q=72&auto=format&fit=crop" alt="A lone tree in an open field" loading="lazy" />
+              <div class="body"><div class="when">The future</div><h3>Tercet</h3><div class="as">As Lived · The Counselor</div><p>Legacy, law, life law. The health directive, the will and the trust as a client's first documents. The Tomorrow chamber and the Serving gate.</p><div class="firm">For the documents: <a href="https://www.tercetlaw.com" target="_blank" rel="noopener">Tercet Law ↗</a></div></div>
+            </div>
+          </div>
+          <p class="tl-method">The Game of Gates is the method across all three. Vault Human is As Listened For In The World.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAKES -->
+    <section class="sec">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Six months from now</p>
+          <h2>Two ways this goes.</h2>
+        </div>
+        <div class="stakes">
+          <div class="stake"><h3>Without a structure</h3><ul><li>Another stack of good books, half-read.</li><li>The walk that lasted nine days.</li><li>A will you keep meaning to sign; a team that still doesn't share a language.</li><li>Advisors who have never met each other, and a story you re-tell every time.</li></ul></div>
+          <div class="stake good"><h3>With the Keys and a coach</h3><ul><li>Chambers One through Five turned, in order, grounded as yourself.</li><li>One hundred and eighty mornings outside; the numbers that moved, written down.</li><li>A circle of six who know your sentence.</li><li>One line from past to future, and a person who remembers all of it.</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="sec alt" id="faq">
+      <div class="wrap">
+        <div class="sec-head"><p class="eyebrow">Questions</p><h2>The ones people ask first.</h2></div>
+        <div class="faq">
+          <details><summary>Is this therapy, religion, or a course?</summary><p>None of those. It's coaching built on a library of sourced teachings. Where a key is someone else's door (a therapist, a tradition, a program), we point to it and keep coaching. Your own tradition returns in months seven to twelve as your choice.</p></details>
+          <details><summary>What if I only want the Keys and never a coach?</summary><p>That's a full membership: the daily key, the log, the score, the monthly chamber explainer and the open circle. The first touch is still a person, and the Coached Year is only offered if it fits.</p></details>
+          <details><summary>How much time does it take?</summary><p>A Mind key is a 200-word read and one action inside 24 hours. A Body key is a dose with a number inside 48. The log is three lines at night. The Coached Year adds a 50-minute session and a one-hour circle each week.</p></details>
+          <details><summary>Can I pause?</summary><p>Yes. You see the whole shelf on day one, you agree to the order, and you can pause. Month six is the Rest for everyone: no new keys, the turned ones get to hold.</p></details>
+          <details><summary>Who actually coaches?</summary><p>In 2027, Russ, with a cap of eighteen coached clients in three circles of six. A trainer cohort begins mid-2027 and coaches from 2028. Nobody coaches here who hasn't walked the chambers.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="sec final" id="begin">
+      <div class="wrap">
+        <p class="eyebrow">The first door</p>
+        <h2>Start with the Keys. Tomorrow at seven, the first one is in your inbox.</h2>
+        <p class="lede" style="margin:0 auto 28px;text-align:center">$97 a month. Held by a person within the minute. A 30-minute first touch inside 48 hours.</p>
+        <div class="ctarow" style="justify-content:center"><a class="btn btn-ochre" href="#" data-open-form>Start with the Keys</a><a class="btn btn-line" href="tel:+18888332510">(888) 833-2510</a></div>
+      </div>
+    </section>
   </main>
 
   <footer class="site">
     <div class="wrap">
-      <p class="sig">{firm.name.toUpperCase()}</p>
-      <p class="meta">{footerLine} &middot; <a href="tel:+18888332510">(888)&nbsp;833-2510</a> &middot; &copy; {year}</p>
-      <p class="meta"><a href="https://www.fretworksystems.com" target="_blank" rel="noopener">Fretwork</a> &middot; <a href="https://triplicityadvisory.com" target="_blank" rel="noopener">Triplicity</a> &middot; <a href="https://www.tercetlaw.com" target="_blank" rel="noopener">Tercet Law</a> &middot; <a href="/writing">Writing</a> &middot; <a href="/speaking">Speaking</a> &middot; <a href="https://www.linkedin.com/in/russ-michaels/" target="_blank" rel="noopener" aria-label="Russ Michaels on LinkedIn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false" style="vertical-align:-3px"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg><span style="margin-left:7px">LinkedIn</span></a></p>
+      <div class="foot">
+        <div>
+          <a class="brand" href="/">Vault <b>Human</b></a>
+          <p style="margin:12px 0 0;max-width:40ch">An integrated holistic coaching platform that boosts how you learn, love, live and listen. Learn · Love · Live · Listen.</p>
+          <p style="margin-top:10px"><a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a></p>
+        </div>
+        <div>
+          <h4>Vault Human</h4>
+          <ul><li><a href="#how">How it works</a></li><li><a href="#gates">The Game of Gates</a></li><li><a href="#years">The Keys and the Years</a></li><li><a href="/writing">Writing</a></li><li><a href="/speaking">Speaking</a></li><li><a href="https://www.linkedin.com/in/russ-michaels/" target="_blank" rel="noopener">Russ on LinkedIn</a></li></ul>
+        </div>
+        <div>
+          <h4>The family, on the timeline</h4>
+          <ul class="fam">
+            <li><span style="background:var(--slate)"></span><a href="https://www.fretworksystems.com" target="_blank" rel="noopener">Fretwork Systems</a> — the past · for teams</li>
+            <li><span style="background:var(--sage)"></span><a href="https://triplicityadvisory.com" target="_blank" rel="noopener">Triplicity Advisory</a> — the present · coaching</li>
+            <li><span style="background:var(--forest)"></span><a href="https://www.tercetlaw.com" target="_blank" rel="noopener">Tercet Law</a> — the future · legal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal"><span>&copy; {year} Vault Human, LLC. Coaching is not legal, medical, financial or therapeutic advice.</span><span>Photos: Unsplash.</span></div>
     </div>
   </footer>
 
@@ -201,7 +302,7 @@ const year = new Date().getFullYear();
     <div class="vh-modal__card" role="dialog" aria-modal="true" aria-label="Start with the Keys">
       <button class="vh-modal__x" type="button" data-close-form aria-label="Close">&times;</button>
       <h2 class="vh-modal__title">Start with the Keys</h2>
-      <p class="vh-modal__sub">Name, email, phone, which door brought you, and one line on why now. You are held within the minute, and the first key comes with the reply.</p>
+      <p class="vh-modal__sub">Name, email, phone, which door brought you, and one line on why now. You're held within the minute, and the first key comes with the reply.</p>
       <div class="hs-form-frame" data-region="na2" data-form-id="3f225ab5-5a70-46d9-a497-29e6256b1e52" data-portal-id="246947446"></div>
     </div>
   </div>
@@ -217,13 +318,11 @@ const year = new Date().getFullYear();
 <script>
 addEventListener('DOMContentLoaded',function(){
  if(!('IntersectionObserver'in window))return;
- var s='main .wrap>section:not(.hero),main .wrap>h2,main .wrap>.prose,main .wrap>.lede,main .wrap>.cta,main .wrap>.ctarow,main .wrap>.turn,main .wrap>.closing,main .wrap>.cols';
- var e=[].slice.call(document.querySelectorAll(s));
+ var e=[].slice.call(document.querySelectorAll('main section:not(.hero) .wrap > *'));
  e.forEach(function(x){x.classList.add('reveal')});
  var o=new IntersectionObserver(function(t){t.forEach(function(y){if(y.isIntersecting){y.target.classList.add('in');o.unobserve(y.target)}})},{threshold:0.06,rootMargin:'0px 0px -30px 0px'});
  e.forEach(function(x){o.observe(x)});
 });
 </script>
-
 </body>
 </html>
