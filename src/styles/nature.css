@@ -59,3 +59,14 @@ footer,.foot{color:var(--muted)}
 .hero:not(.hero-video){padding-top:150px}
 .gallery-sec.faces{padding:36px 0 0}
 .gallery figure{height:260px}
+
+/* doc pages: darkened nature behind everything */
+.offer{display:flex;flex-direction:column}
+.offer .btn{margin-top:auto;align-self:flex-start}
+.offer .guarantee{margin:0 0 14px}
+body{background:#141A16}
+body:has(.hero:not(.hero-video))::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(18,23,21,.72),rgba(18,23,21,.84)),var(--pagebg,none) center/cover no-repeat;pointer-events:none}
+body:has(.hero:not(.hero-video)) .sec,body:has(.hero:not(.hero-video)) .sec.alt,body:has(.hero:not(.hero-video)) .hero,body:has(.hero:not(.hero-video)) main{background:transparent}
+body:has(.hero:not(.hero-video)) .sec.dark{background:rgba(18,23,21,.55)}
+body:has(.hero:not(.hero-video)) header.site{position:sticky;background:rgba(18,23,21,.75);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+body:has(.hero:not(.hero-video)) .hero{padding-top:90px}
