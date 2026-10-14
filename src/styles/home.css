@@ -57,7 +57,7 @@ body[data-time=all] .timeword .tw:after{content:"";position:absolute;left:0;righ
 body.ready[data-time=all] .timeword .tw:after{transform:scaleX(1)}
 .timeword .tw.on:after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:3px;background:var(--acc);transform:scaleX(0);transform-origin:left;transition:transform .7s cubic-bezier(.2,.8,.2,1) .35s}
 body.ready .timeword .tw.on:after{transform:scaleX(1)}
-.hero h1{max-width:12ch;opacity:0;transform:translateY(18px);transition:opacity .7s ease .15s,transform .7s cubic-bezier(.2,.8,.2,1) .15s}
+.hero h1{max-width:15ch;font-size:clamp(52px,6.6vw,96px);opacity:0;transform:translateY(18px);transition:opacity .7s ease .15s,transform .7s cubic-bezier(.2,.8,.2,1) .15s}
 body.ready .hero h1{opacity:1;transform:none}
 .hero h1 em{font-style:normal;color:var(--acc)}
 .hero .lede{margin:24px 0 30px}
@@ -78,7 +78,7 @@ body.ready .hero h1{opacity:1;transform:none}
 @media(max-width:760px){.pains{grid-template-columns:1fr}}
 
 .guide-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
-.guide-grid img{width:100%;height:520px;object-fit:cover;object-position:top;border-radius:8px;filter:grayscale(1) contrast(1.1)}
+.guide-grid img{width:100%;height:520px;object-fit:cover;object-position:top;border-radius:8px;}
 .guide-grid h2{color:#fff}
 .guide-grid blockquote{font-size:clamp(20px,2vw,26px);line-height:1.35;margin:24px 0;padding-left:18px;border-left:3px solid var(--acc-soft);color:#fff;font-weight:500}
 @media(max-width:900px){.guide-grid{grid-template-columns:1fr;gap:32px}.guide-grid img{height:400px}}
@@ -157,8 +157,8 @@ footer.site{padding:50px 0 32px;background:var(--dark);color:rgba(255,255,255,.7
 @media(prefers-reduced-motion:reduce){.reveal,.hero h1{opacity:1!important;transform:none!important}}
 
 /* hero photo (2026-10-13) */
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
-.hero-photo img{width:100%;height:520px;object-fit:cover;border-radius:10px;box-shadow:0 30px 60px -40px rgba(11,13,16,.5)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}
+.hero-photo img{width:100%;height:100%;min-height:520px;max-height:640px;object-fit:cover;border-radius:10px;box-shadow:0 30px 60px -40px rgba(11,13,16,.5)}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-photo img{height:340px}}
 
 /* gallery (2026-10-13) */
