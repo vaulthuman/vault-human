@@ -1,5 +1,6 @@
 ---
 import '../styles/home.css';
+import '../styles/nature.css';
 const year = new Date().getFullYear();
 ---
 <!doctype html>
@@ -27,7 +28,7 @@ const year = new Date().getFullYear();
     <nav class="navlinks"><a href="/#how">How it works</a><a href="/method/">The method</a><a href="/#pricing">Pricing</a><a href="/#russ">About Russ</a><a class="btn btn-acc" href="#" data-open-form>Start free</a></nav>
   </div></header>
   <main>
-    <section class="hero">
+    <section class="hero hero-video"><video class="bgvid" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=1600&q=60&auto=format&fit=crop"><source src="https://assets.mixkit.co/videos/11022/11022-720.mp4" type="video/mp4"></video><div class="veil"></div>
       <div class="wrap hero-grid"><div class="hero-copy">
         <div class="timeword"><span class="tw past on">Past</span><span class="tw present">Present</span><span class="tw future">Future</span></div>
         <p class="eyebrow">Life, as learned</p>
@@ -35,8 +36,9 @@ const year = new Date().getFullYear();
         <p class="lede">Everything you do today runs on something you learned before. Like the frets on a guitar, your wiring decides where the notes can fall. We look at the wiring first.</p>
         <div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Start free — 7 days of lessons</a><a class="btn btn-line" href="#who">Who this is for</a></div>
         <p class="guarantee">Seven free days from this part of the year. Then $97 a month. Cancel any time.</p>
-      </div><div class="hero-photo"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1400&q=72&auto=format&fit=crop" alt="Two women talking across a table" width="1400" height="933" fetchpriority="high" /></div></div>
+      </div></div>
     </section>
+    <section class="sec gallery-sec faces"><div class="wrap gallery"><figure><img src="https://images.unsplash.com/photo-1484665754804-74b091211472?w=1000&q=72&auto=format&fit=crop" alt="A grandmother and grandchild reading together" loading="lazy" /><figcaption>Where it started</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1000&q=72&auto=format&fit=crop" alt="Three friends laughing on a walk" loading="lazy" /><figcaption>The people who made you</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=1000&q=72&auto=format&fit=crop" alt="A mother holding her child" loading="lazy" /><figcaption>The first room</figcaption></figure></div></section>
 
     <section class="sec" id="what"><div class="wrap">
       <div class="sec-head"><p class="eyebrow">What we look at</p><h2>The things you didn't choose.</h2><p class="lede">Family, money, habits, work: the patterns that were set before you could say no.</p></div>
@@ -56,7 +58,7 @@ const year = new Date().getFullYear();
       <div class="ctarow" style="justify-content:center"><a class="btn btn-acc" href="https://www.fretworksystems.com" target="_blank" rel="noopener">Yes, my business needs automation ↗</a><a class="btn btn-ghost" href="#" data-open-form>No, I want coaching</a></div>
     </div></section>
 
-    <section class="sec final" id="begin"><div class="wrap">
+    <section class="sec final vid-sec" id="begin"><video class="bgvid" autoplay muted loop playsinline><source src="https://assets.mixkit.co/videos/47818/47818-720.mp4" type="video/mp4"></video><div class="veil"></div><div class="wrap">
       <h2>Start with the past.</h2><p class="lede">Sign up tonight. Your first lesson is in your inbox at 7 a.m.</p>
       <div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Start free — 7 days</a><a class="btn btn-line" href="/#pricing">See pricing</a></div>
     </div></section>
@@ -80,4 +82,5 @@ const year = new Date().getFullYear();
   document.addEventListener('mouseout',function(e){if(!e.relatedTarget&&e.clientY<=0)pop();});
   if(matchMedia('(max-width:760px)').matches)setTimeout(pop,45000);})();
   </script>
+  <script is:inline>document.querySelectorAll("video.bgvid").forEach(function(v){v.playbackRate=0.6;v.addEventListener("loadedmetadata",function(){v.playbackRate=0.6;});});</script>
 </body></html>
