@@ -1,5 +1,6 @@
 ---
 import '../styles/home.css';
+import '../styles/nature.css';
 import raw from '../data/the180.txt?raw';
 const year = new Date().getFullYear();
 const secs=[];let cur=null;for(const l of raw.split('\n')){if(l.startsWith('@ TIER')){secs.push({tier:l.split(':').slice(1).join(':').trim(),cats:[]});continue;}if(l.startsWith('## ')){cur={name:l.slice(3),items:[]};secs[secs.length-1].cats.push(cur);continue;}if(!l.trim()||!cur)continue;const i=l.indexOf(' — ');cur.items.push({name:i>0?l.slice(0,i):l,desc:i>0?l.slice(i+3):''});}

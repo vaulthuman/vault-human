@@ -1,5 +1,6 @@
 ---
 import '../styles/home.css';
+import '../styles/nature.css';
 import raw from '../data/the360.txt?raw';
 const year = new Date().getFullYear();
 const rows = raw.trim().split('\n').map(l=>{const [cat,verb,text]=l.split('\t');const i=text.indexOf(' — ');return {cat,verb,name:i>0?text.slice(0,i):text,desc:i>0?text.slice(i+3):''};});
