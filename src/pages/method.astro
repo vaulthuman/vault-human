@@ -21,6 +21,7 @@ const year = new Date().getFullYear();
     window.addEventListener('message',function(e){var d=e&&e.data;if(!d)return;if(typeof d==='string'){try{d=JSON.parse(d);}catch(_){return;}}if(!d||typeof d!=='object')return;var t=d.type||d.messageType||'',n=d.eventName||d.event||'';if(t==='hsFormCallback'&&(n==='onFormSubmitted'||n==='onFormSubmit'))fire();else if(n==='onFormSubmitted')fire();else if(d.accepted===true&&d.formGuid)fire();});
     window.addEventListener('hsFormCallback',function(e){if(e&&e.detail&&e.detail.eventName==='onFormSubmitted')fire();});})();
   </script>
+  <style is:inline>:root{--pagebg:url("https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=55&auto=format&fit=crop")}</style>
 </head>
 <body data-time="all">
   <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks"><a href="/#how">How it works</a><a href="/method/">The method</a><a href="/#pricing">Pricing</a><a href="/#russ">About Russ</a><a class="btn btn-acc" href="#" data-open-form>Start free</a></nav></div></header>
