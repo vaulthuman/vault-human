@@ -81,4 +81,5 @@ const year = new Date().getFullYear();
   document.addEventListener('mouseout',function(e){if(!e.relatedTarget&&e.clientY<=0)pop();});
   if(matchMedia('(max-width:760px)').matches)setTimeout(pop,45000);})();
   </script>
+  <script is:inline>document.querySelectorAll("video.bgvid").forEach(function(v){v.playbackRate=0.6;v.addEventListener("loadedmetadata",function(){v.playbackRate=0.6;});});</script>
 </body></html>

@@ -28,7 +28,7 @@ const year = new Date().getFullYear();
     <nav class="navlinks"><a href="/#how">How it works</a><a href="/method/">The method</a><a href="/#pricing">Pricing</a><a href="/#russ">About Russ</a><a class="btn btn-acc" href="#" data-open-form>Start free</a></nav>
   </div></header>
   <main>
-    <section class="hero hero-video"><video class="bgvid" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=1600&q=60&auto=format&fit=crop"><source src="https://assets.mixkit.co/videos/10993/10993-720.mp4" type="video/mp4"></video><div class="veil"></div>
+    <section class="hero hero-video"><video class="bgvid" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1600&q=60&auto=format&fit=crop"><source src="https://assets.mixkit.co/videos/1218/1218-720.mp4" type="video/mp4"></video><div class="veil"></div>
       <div class="wrap hero-grid"><div class="hero-copy">
         <div class="timeword"><span class="tw past">Past</span><span class="tw present on">Present</span><span class="tw future">Future</span></div>
         <p class="eyebrow">Life, as loved</p>
@@ -81,4 +81,5 @@ const year = new Date().getFullYear();
   document.addEventListener('mouseout',function(e){if(!e.relatedTarget&&e.clientY<=0)pop();});
   if(matchMedia('(max-width:760px)').matches)setTimeout(pop,45000);})();
   </script>
+  <script is:inline>document.querySelectorAll("video.bgvid").forEach(function(v){v.playbackRate=0.6;v.addEventListener("loadedmetadata",function(){v.playbackRate=0.6;});});</script>
 </body></html>
