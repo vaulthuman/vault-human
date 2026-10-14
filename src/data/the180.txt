@@ -1,0 +1,219 @@
+@ TIER 111: MODERN METHODS AND PROTOCOLS
+
+## Nutrition patterns
+The Mediterranean pattern (Ancel Keys, Seven Countries Study 1958; PREDIMED trial 2013, republished 2018) — Olive oil, vegetables, legumes, fish and wine with meals as the daily table tied to low heart disease.
+The Lifestyle Heart Trial (Dean Ornish, 1990) — Very-low-fat plant food, walking, stress management and a weekly group shown to reverse coronary narrowing; all four daily, the group weekly.
+Pritikin Program (Nathan Pritikin, 1976) — Low-fat, high-fiber whole food plus 45 minutes of walking daily, run as a residential program.
+Whole-food plant-based (T. Colin Campbell 1980s; Caldwell Esselstyn 2007) — Vegetables, fruit, whole grains and legumes with no oil or animal products at every meal, studied for heart disease and metabolic disease.
+Nutritarian eating (Joel Fuhrman, 2003) — Rank food by micronutrients per calorie; greens, beans, onions, mushrooms, berries and seeds daily.
+The Daily Dozen (Michael Greger, How Not to Die 2015) — Twelve plant food groups checked off each day.
+Eat food, not too much, mostly plants (Michael Pollan, In Defense of Food 2008) — Seven words as the whole diet: real food, modest portions, plants first.
+DASH (National Heart, Lung, and Blood Institute, 1997) — Fruit, vegetables, low-fat dairy and reduced sodium shown in trial to lower blood pressure; the trial's arms at 2,300 and 1,500 mg of sodium a day.
+MIND diet (Martha Clare Morris, 2015) — Mediterranean and DASH combined for brain aging: leafy greens six days a week, berries twice a week.
+The Portfolio diet (David Jenkins, 2003) — Plant sterols, viscous fiber, soy protein and nuts eaten together daily, shown in trial to lower LDL.
+Volumetrics (Barbara Rolls, 2000) — Water-rich, low-calorie-density foods first so a full plate carries fewer calories.
+Intuitive Eating (Evelyn Tribole and Elyse Resch, 1995) — Hunger and fullness as the guide, with no forbidden foods.
+Low-carbohydrate eating (William Banting, Letter on Corpulence 1863; Robert Atkins 1972 as the popular form) — Cut sugar and starch so the body runs on fat; 50–100 g carbohydrate daily.
+The ketogenic diet (Russell Wilder, Mayo Clinic, 1921) — Very low carbohydrate and high fat so the brain runs on ketones, first prescribed for epilepsy; under 20–50 g carbohydrate daily.
+Paleolithic eating (Boyd Eaton and Melvin Konner, 1985) — Meat, fish, vegetables, fruit and nuts without grain, dairy or legumes, modeled on pre-agricultural diets.
+Carnivore eating (Vilhjalmur Stefansson's Bellevue year, 1928; the online revival of the 2010s) — Meat, organs and fat alone, as an elimination pattern; ruminant meat as the staple.
+Protein-forward eating (Donald Layman 2000s; Stuart Phillips; Gabrielle Lyon 2022) — 1.2–1.6 g protein per kilogram daily, 25–40 g per meal, to hold muscle across a life.
+Glycemic index and load (David Jenkins, Toronto 1981) — Carbohydrates ranked by their blood-sugar rise; low-GI choices at each meal.
+Set point and metabolic adaptation (Gordon Kennedy 1953; Rudolph Leibel, Michael Rosenbaum and Jules Hirsch 1995) — The body defends its weight by lowering expenditure after loss; the reason most diets on this list fade by year three.
+Eat Right for Your Type (Peter D'Adamo, 1996) — Food lists matched to the four blood groups.
+Eating by Human Design type (Ra Uru Hu, 1987; cf. 360 #151) — Diet keyed to the chart's "determination," one of twelve digestion modes.
+Sports nutrition and hand-portion coaching (ACSM and the Academy of Nutrition and Dietetics position stand 2016; John Berardi 2005) — Carbohydrate periodized to the session, 30–60 g per hour in long efforts; portions measured by the hand.
+Hydration by thirst (Tim Noakes, Waterlogged 2012; ACSM position stand 2007) — Drink to thirst; 400–800 ml per hour in heat with sodium in long efforts.
+Traditional-food nutrition (Weston A. Price, Nutrition and Physical Degeneration 1939) — Price's record of pre-industrial diets: organ meats, fermented food and bone broth; the seat is the 1939 book, not the foundation that carries his name.
+Free sugars (John Yudkin, Pure, White and Deadly 1972; Robert Lustig 2012; WHO 2015) — Sugar as the suspect before fat; WHO's line at under 10% of calories, with 5% as the conditional suggestion.
+
+## Fasting and timing
+Time-restricted eating (Satchin Panda, 2012; cf. 360 chronobiology) — All food inside an 8–12-hour window, the same hours daily.
+Intermittent fasting, 5:2 and alternate-day (Mark Mattson 2000s; Krista Varady 2009; Michael Mosley 2012) — Two days a week at 500–600 calories, or every other day.
+Prolonged therapeutic fasting (Otto Buchinger, 1935; Alan Goldhamer's TrueNorth 1984) — Supervised fasts of 3–21 days: Buchinger's on broth and juice, Goldhamer's on water.
+Fasting-mimicking diet (Valter Longo, 2015) — Five days of plant fat and fiber, about 1,100 calories the first day and 725 after, three cycles in the trial that shifted metabolic markers.
+Caloric restriction (Clive McCay, 1935; CALERIE trial 2015) — McCay's rats lived longer on less; CALERIE aimed at 25% below maintenance in humans and held about 12% over two years, with improved markers.
+Fasting for insulin resistance (Jason Fung, The Obesity Code 2016) — 16–36-hour fasts as used in his clinic for type 2 diabetes; the evidence is case series.
+Chrononutrition (Franz Halberg, 1970s; Marta Garaulet 2013) — Front-load calories: large breakfast and lunch, small early dinner.
+
+## Metabolic and clinical models
+Functional Medicine (the matrix model; Institute for Functional Medicine, 1991) — Systems medicine that organizes a person's history, exposures and markers on a timeline and a matrix, and treats the body as one connected system.
+Lifestyle Medicine (American College of Lifestyle Medicine, 2004; Ornish as source) — Six pillars: whole food, movement, sleep, stress, connection, and avoiding risky substances.
+Integrative Medicine (University of Arizona Center, 1994; the Academic Consortium for Integrative Medicine and Health) — Conventional care joined with nutrition, mind-body and botanical practice.
+Insulin resistance and metabolic syndrome (Gerald Reaven, 1988) — Fasting insulin, triglyceride-to-HDL ratio and waist as Reaven's markers.
+The Diabetes Prevention Program (NIH, 2002) — 7% weight loss and 150 minutes of walking weekly cut diabetes by 58% in trial; sixteen sessions over six months.
+ApoB and Lp(a) lipidology (Allan Sniderman 1980; Thomas Dayspring) — Particle count over cholesterol; Dayspring's cadence of ApoB yearly and Lp(a) once in life.
+Homocysteine, "the H factor" (Kilmer McCully, 1969; Hordaland Homocysteine Study, Norway 1992; Korean Genome and Epidemiology Study, 2001) — Homocysteine as an observed heart and stroke marker, lowered by folate, B6 and B12; the cohorts are observational.
+Coronary calcium scoring (Arthur Agatston, 1990) — A CT count of arterial calcium as a risk marker, read in middle age.
+Geroscience and healthspan (Linda Fried; Luigi Ferrucci; Steven Austad, 2000s–) — Aging itself as the field's target; grip strength, gait speed and VO2max as the clinic's vital signs.
+Hormesis (Hugo Schulz, 1888; Edward Calabrese 2000s) — Small stresses, exercise, heat, cold, fasting, that make the body stronger; the principle under most of this tier.
+
+## Gut, microbiome and genes
+The Human Microbiome Project (NIH, 2007) — The gut's microbes mapped as an organ; 30 g of fiber daily as its feed.
+The gut as second brain (Michael Gershon, 1998) — The enteric nervous system and the vagal gut-brain axis.
+Personalized nutrition by measured response (Eran Segal and Eran Elinav, Weizmann 2015; Tim Spector's PREDICT 2020) — Same food, different responses; eat by your own curve.
+Microbiome testing (Human Microbiome Project methods; Viome 2017 as the popular form) — Stool sequencing returned as a personal food list.
+Fermented food and probiotics (Élie Metchnikoff, 1907; Stanford FeF trial 2021) — Yogurt, kefir, kimchi, sauerkraut daily; six servings a day raised microbial diversity in trial.
+Elimination and reintroduction (Albert Rowe, 1926; low-FODMAP, Monash 2005) — Remove suspect foods for two to six weeks, return them one at a time.
+Nutrigenomics (José Ordovás; Jim Kaput, 2004) — Food and supplement choices keyed to one's variants, MTHFR and APOE first.
+Continuous glucose monitoring for the well (sensor science 1999–2017; Segal and Elinav 2015 on the healthy) — A 14-day sensor worn to learn one's own glucose responses.
+
+## Endurance and the heart
+Aerobics (Kenneth Cooper, 1968) — Points for sustained effort and the 12-minute run test; 30 minutes most days.
+Jogging and base mileage (Arthur Lydiard, New Zealand 1960; Bill Bowerman 1966) — Easy-pace volume for everyone, not only athletes.
+Zone 2 training (Phil Maffetone, 1980s; Iñigo San Millán 2010s) — 150–180 minutes a week at a pace where you can speak in sentences, for mitochondrial health.
+Heart-rate zones (Martti Karvonen, 1957) — Target zones from resting and maximum heart rate.
+VO2max as the vital sign (A. V. Hill, 1923; Cooper Institute data 1970–) — Peak oxygen use as one of the strongest predictors of lifespan in the Cooper cohorts.
+High-intensity intervals (Izumi Tabata, 1996; Martin Gibala 2006) — Twenty seconds on, ten off, eight rounds; Tabata's trial ran it five days a week, the popular form two or three.
+The Norwegian 4x4 (Ulrik Wisløff, 2007) — Four four-minute intervals at 85–95% of maximum heart rate, weekly, shown to raise VO2max in trial.
+Walking as medicine (Hippocrates; Manpo-kei campaign, Japan 1965; I-Min Lee 2019) — Lee's cohort of older women leveled off near 7,500 steps; the 10,000 was a slogan.
+Rucking (military tradition; Michael Easter, The Comfort Crisis 2021) — Walking under 10–30 pounds, two or three times a week.
+Swimming and aquatic therapy (Bad Ragaz Ring Method, Switzerland 1950s) — Low-impact cardio and joint relief; 30 minutes three times weekly.
+Couch to 5K (Josh Clark, 1996) — Walk-run intervals three times a week for nine weeks; the on-ramp a non-runner finishes.
+Polarized training (Stephen Seiler and Kjerland, 2006) — 80% easy, 20% hard, the distribution elite endurance athletes actually use.
+
+## Strength and muscle
+Progressive overload (Thomas DeLorme, 1945) — Weight or reps rising week by week; DeLorme's three sets of ten as the first prescription.
+Barbell strength standards (Mark Rippetoe, Starting Strength 2005) — Squat, press, deadlift and bench three times weekly, adding weight each session.
+Percentage programming (Jim Wendler, 5/3/1 2009) — Four-week waves at 65–95% of a training max.
+Kettlebell practice (Pavel Tsatsouline, 2001) — Swings, get-ups and "grease the groove": frequent sub-maximal sets.
+Hypertrophy science (Brad Schoenfeld, 2010) — 10–20 hard sets per muscle per week, near failure, for growth.
+High-intensity training (Arthur Jones, 1970) — One set to failure per exercise, once or twice weekly.
+Blood-flow restriction training (Yoshiaki Sato, Kaatsu 1966) — Light loads under a cuff that stimulate growth as if heavy; Sato's protocol at 20–30% of maximum, four sets, used in rehabilitation and aging.
+Calisthenics (Eugen Sandow, 1897 as source; Paul Wade's Convict Conditioning 2009) — Push-up, pull-up, squat and bridge progressions, bodyweight only.
+Periodization (Lev Matveyev, 1960s; Tudor Bompa 1983) — Planned cycles of volume and intensity across a year.
+Olympic weightlifting (Bob Hoffman, York Barbell 1930s; the Soviet system 1960s) — Clean, snatch and jerk for whole-body power.
+High-intensity functional training (Greg Glassman, 2000; Hébert's natural method as root) — Constantly varied functional movement at high intensity, scaled; the three-on, one-off week.
+Muscle as the organ of longevity (Bente Pedersen's myokines, 2003; Gabrielle Lyon 2022) — Two to three resistance sessions weekly, a guideline since 2008, for metabolic health.
+Grip, balance and fall-proofing (Maria Fiatarone's nonagenarian trial 1990; Otago Exercise Programme, New Zealand 1997; Rachel Cooper 2010) — Strength at ninety; Otago's balance program three times weekly past 65; grip as the marker.
+Jack LaLanne (Oakland gym 1936; television 1951–85) — Daily calisthenics, weights for everyone and no processed food, shown on air for 34 years.
+
+## Mobility, posture and pain
+Mobility and tissue work (Kelly Starrett, Becoming a Supple Leopard 2013) — Ten to fifteen minutes daily of joint and tissue maintenance.
+Spine hygiene (Stuart McGill, 2002) — The Big Three, curl-up, side plank, bird dog, daily, and McGill's rule against loaded spine flexion.
+Functional Movement Screen (Gray Cook and Lee Burton, 1997) — Seven movement patterns scored to find asymmetry before training.
+Natural movement (Georges Hébert, méthode naturelle 1905; Erwan Le Corre 2008) — Walk, run, jump, climb, crawl, carry and swim outdoors.
+The movement diet (Katy Bowman, Move Your DNA 2014) — Varied positions all day instead of one workout; floor sitting, squatting, hanging.
+Exercise rehabilitation (Mary McMillan, 1921; Robin McKenzie 1981) — Graded movement as the treatment for pain; McKenzie extensions ten times, several times daily.
+Yin and long-hold stretching (Paulie Zink, 1970s; Paul Grilley; cf. 360 Hatha Yoga) — Three-to-five-minute passive holds for fascia and joints.
+Pain science and reprocessing (Lorimer Moseley and David Butler, 2003; Alan Gordon 2021) — Pain as the brain's protective judgment, retrained by graded exposure and safety.
+
+## Sleep and rest
+Sleep science (Nathaniel Kleitman, 1939; William Dement's Stanford sleep clinic 1970) — Sleep stages, REM and the first sleep medicine; seven to nine hours.
+Sleep hygiene (Peter Hauri, 1977; Matthew Walker's Why We Sleep 2017 as the popular form) — Regular hours, a cool dark room, alcohol and screens kept away from bedtime.
+CBT-I (Richard Bootzin, stimulus control 1972; Charles Morin 1993) — Fixed wake time, bed only for sleep, sleep restriction; the first-line insomnia treatment by guideline.
+Light and the clock (Charles Czeisler, 1980s) — Daylight within an hour of waking, dim light after dark; five to ten minutes outdoors, more on cloudy days.
+The NASA nap (Mark Rosekind, 1995) — A 40-minute nap opportunity, 26 minutes of sleep on average, raised pilot alertness in the study; early afternoon.
+Yoga nidra and non-sleep deep rest (Swami Satyananda, 1976 as source) — Ten to twenty minutes of guided stillness to recover.
+Recovery and deload (Hans Selye, 1936; HRV-guided readiness, cf. 360 HeartMath) — Deload every fourth week; train by readiness.
+Oxygen Advantage and nasal breathing (Patrick McKeown, Galway 2015; Christian Guilleminault on apnea 1976; James Nestor, Breath 2020; cf. 360 Buteyko) — Light, slow, deep: the BOLT score, nasal-only breathing in training and sleep, breath holds for CO2 tolerance; Guilleminault's apnea screen.
+
+## Heat, cold, light and air
+Sauna science (Jari Laukkanen, Kuopio study 2015) — Four to seven sessions a week at 80–100 °C, 15–20 minutes, tied to lower cardiac death.
+Cold immersion, the ice bath and the plunge (Hippocrates on cold water, c. 400 BCE; the Roman frigidarium; Finnish avanto, the ice-hole swim; Vincenz Priessnitz's water cure 1820s; Susanna Søberg 2021; cf. 360 Wim Hof) — The oldest recovery practice on the list; Søberg's dose of eleven minutes a week in cold water over two to four sessions.
+Contrast therapy (Finnish and Russian bath tradition) — Heat then cold in rounds, two to three times weekly.
+Sunlight and vitamin D (Endocrine Society guideline 2011; the VITAL trial 2019) — Midday sun several times a week, or 1,000–2,000 IU daily as the guideline range; the trial found no mortality benefit in the already-replete.
+Clean air (Harvard Six Cities Study, 1993) — Particulate matter as cardiac risk; filters, ventilation, indoor CO2 under 1,000 ppm.
+Time in nature (Roger Ulrich, 1984; Mathew White 2019; cf. 360 Shinrin-yoku) — 120 minutes a week outdoors as the threshold where wellbeing rises.
+
+## Women's and men's physiology
+Female physiology in training (Stacy Sims, ROAR 2016) — Train and fuel by cycle phase; more protein and heavy strength after 40.
+Menopause medicine (Mary Claire Haver, The New Menopause 2024; Women's Health Initiative reread 2017) — Strength, protein, fiber and hormone therapy as Haver presents them through the transition.
+Cycle awareness (John and Evelyn Billings, 1953; Alisa Vitti 2013) — Cervical signs and temperature tracked; eating and training by phase.
+Pelvic floor (Arnold Kegel, 1948) — Three sets of ten contractions daily; graded return to load after birth.
+Men's hormonal health (Abraham Morgentaler, 2008) — Morgentaler's order: sleep, strength and body fat before testosterone, and testosterone measured before it is treated.
+Bone loading (Belinda Beck, LIFTMOR trial 2018) — Heavy resistance and impact twice weekly raised bone density in postmenopausal women.
+Physical literacy (Margaret Whitehead, 2001) — Sixty minutes of varied play daily for children, the Canadian and UK school standard.
+
+## Substances and sobriety
+Easyway (Allen Carr, 1985) — Quitting smoking by removing the belief that it helps; one reading, one last cigarette.
+This Naked Mind (Annie Grace, 2015) — Dismantling the beliefs around alcohol over thirty days; the Alcohol Experiment.
+The Sinclair Method (John David Sinclair, 1990s) — Naltrexone an hour before drinking to extinguish craving over months.
+SMART Recovery (Joe Gerstein, 1994; cf. 360 Twelve Steps) — Four-point, CBT-based peer meetings weekly as the secular alternative.
+Sacramental cannabis and psilocybin (Rastafari ganja, cf. 360 #332; Mazatec psilocybin, María Sabina; cf. 360 #85 and #88) — Cannabis and mushrooms used in ceremony, on the calendar each tradition keeps, as the traditions' answer to synthetic substitutes.
+Caffeine and alcohol guidance (FDA and the Dietary Guidelines 2020; Canada's Guidance on Alcohol 2023; Global Burden of Disease 2018) — 400 mg of caffeine a day as the FDA line; two drinks a week as Canada's low-risk line, after the 2018 finding that no level is safest.
+
+@ TIER 44: ANCIENT AND INTERNATIONAL ANCHORS
+
+## Ancient and classical medicine
+The Edwin Smith and Ebers papyri (Egypt, c. 1600 BCE) — The oldest surviving surgical text and the great medical compendium; honey, willow and diet as medicine.
+Hippocrates and the regimen (Cos, c. 400 BCE) — Diet, exercise, sleep and bathing set to the person and the season; food as the first medicine.
+Galen and the six non-naturals (Rome, 2nd c.) — Air, food, movement, sleep, excretion and emotion as the whole of hygiene; the first lifestyle medicine.
+Nixtamalization (Mesoamerica, c. 1500 BCE; cf. 360 #314) — Corn soaked in lime to release its niacin; the oldest food-processing science still in daily use.
+Charaka Samhita (India, c. 300 BCE–200 CE; cf. 360 Ayurveda) — Daily routine, seasonal routine and food by constitution.
+Sushruta Samhita (India, c. 600 BCE) — Surgery, wound care and exercise to half of one's strength.
+Huangdi Neijing (China, c. 300 BCE) — Eat with the seasons, rise with the sun, keep the qi moving; the root of Chinese dietary therapy.
+Daoyin and the Five Animal Frolics (Hua Tuo, 2nd c.; cf. 360 Tai Chi and Qigong) — One of the oldest recorded exercise prescriptions: stretching and animal forms for health.
+Māori mahinga kai (Aotearoa) — The customary food places and their reciprocal harvest and stewardship.
+Ibn Sina's Canon of Medicine (Persia, 1025) — Exercise before food, bathing, sleep and diet as the preserving of health; Europe's textbook for 600 years.
+Maimonides' regimen of health (Cairo, 1198) — Eat only when hungry, stop before full, move before meals, sleep eight hours.
+The Salerno regimen (Regimen Sanitatis Salernitanum, 12th c.) — Rhymed rules of diet and sleep taught across medieval Europe.
+Luigi Cornaro (Venice, 1558) — The first longevity memoir: twelve ounces of food and fourteen of wine daily; lived into his nineties.
+Sowa Rigpa, Tibetan medicine (Gyushi, 12th c.) — Diet and behavior as the first two treatments, before herbs and procedures.
+Kampo (Japan, 7th c. onward; cf. 360 Morita) — Chinese herbal medicine adapted; the abdominal exam and the bath as treatment.
+Unani tibb (Greco-Arabic medicine, 9th c. onward) — Humoral balance through diet, climate and movement, still practiced in South Asia.
+
+## The trained body, ancient to physical culture
+The Greek gymnasion (classical Greece; the Olympic Games from 776 BCE; Milo of Croton) — Naked training, oil and dust, meat and figs; fitness as a civic institution.
+The flow arts: Aikido, Systema, Capoeira, Brazilian jiu-jitsu (Morihei Ueshiba 1942; Mikhail Ryabko and Vladimir Vasiliev 1990s; Angola and Bahia 16th c.; the Gracie family 1920s) — Blending, breathing, relaxation under pressure and the roll rather than the strike; the martial arts kept for how they move a body, not how they end a fight.
+Kalaripayattu (Kerala, c. 3rd c. BCE) — Among the oldest martial arts, with oil massage and a full-body conditioning sequence.
+Shaolin conditioning (Henan, 5th c. onward) — Stance training, forms and iron-body drills as monastic discipline.
+Pehlwani and the zurkhaneh (India; Persia, 10th c.) — Wrestling, club swinging and mace work on a milk-and-almond diet.
+Budo and the dojo (Jigoro Kano, judo 1882) — Daily practice, falling, rank and etiquette as physical education.
+Turnen and Swedish gymnastics (Friedrich Jahn, 1811; Per Henrik Ling 1813) — Apparatus and calisthenics for the whole population; the origin of school PE.
+Physical culture (Eugen Sandow, 1897; Bernarr Macfadden 1899) — Muscle, light, air and plain food sold to the public; the first fitness industry.
+The nature cure (Vincenz Priessnitz, 1820s; Sebastian Kneipp 1886) — Cold water, barefoot walking, herbs and simple food as a system.
+Muscular Christianity and the YMCA (Thomas Hughes, 1857; Luther Gulick 1890s) — Faith, fitness and service in one building; basketball and volleyball invented inside it.
+African traditional medicine (the sangoma and inyanga lineages; Yoruba herbal practice; WHO Traditional Medicine Strategy 2002) — Diet, plant medicine and the healer's diagnosis as the continent's own regimen, still the first care for most of its people.
+
+## Water, heat and rest traditions
+The Roman bath (thermae, 1st c. BCE) — Warm, hot and cold rooms in sequence, an exercise yard and scraping; public and daily.
+Sauna (Finland, pit saunas from c. 2000 BCE; UNESCO 2020) — Weekly löyly as a national rite; 80–100 °C in repeated rounds.
+Onsen and sentō (Japan, 8th c. record) — Mineral hot-spring and neighborhood bathing; the evening soak before sleep.
+Hammam (Umayyad, 8th c.; Ottoman form) — Steam, scrub and rest rooms; weekly, tied to prayer purity.
+Banya (Russia, 10th c. record) — Steam, birch-branch whisking and the cold plunge in rounds.
+Temazcal and the sweat lodge (Mesoamerica; Plains traditions; cf. 360 #286 and #356) — Ritual heat for purification and healing.
+Biphasic sleep and the siesta (pre-industrial two sleeps, Roger Ekirch 2001; Mediterranean siesta) — A first and second sleep, or a midday rest of 20–30 minutes.
+
+## Foodways of peoples
+The Okinawan table (pre-1960s record; cf. 360 Blue Zones) — Sweet potato, bitter melon, tofu, seaweed and little meat; the diet behind the longevity record.
+Washoku (Japan; UNESCO 2013) — Rice, miso soup, fish, pickles and seaweed; one soup, three sides.
+The Korean table (kimchi, doenjang, gochujang; Three Kingdoms era) — Fermented vegetables and soy daily; banchan variety at every meal.
+The Chinese food-as-medicine kitchen (Sun Simiao, 7th c.) — Cooked vegetables, broths, congee, and warming and cooling foods by season.
+The Indian thali (Charaka's six tastes) — All six tastes in one meal; turmeric, cumin and ginger daily.
+The Mediterranean peasant table at its sources (Crete, Ikaria, Cilento; 1950s record) — Legumes, greens, bread, olive oil and wine with meals; meat on feast days.
+West African foodways (fonio, millet, yam, okra, palm oil, leafy greens; Oldways African Heritage pyramid 2011) — The diet of the diaspora before sugar and refined grain.
+Inuit and Arctic eating (seal, whale, fish and organ meats; Bang and Dyerberg 1971 on omega-3) — Raw and fermented animal food as the foodways of the Arctic peoples.
+Indigenous foodways of the Americas (the Three Sisters: corn, beans, squash; bison and wild rice; Sean Sherman 2017; cf. 360 #356) — Pre-colonial food systems and their revival.
+Hunter-gatherer activity (Hadza; Herman Pontzer, 2012) — 15,000 steps and four to six hours of light activity daily on tubers, berries, honey and meat.
+
+@ TIER 25: LIVING SYSTEMS AND INSTITUTIONS
+
+## Food laws and fasts of living traditions
+Kosher (Torah; cf. 360 #316) — Permitted animals, no blood, meat and dairy kept apart; every meal.
+Halal and Islamic abstention (Qur'an; cf. 360 #321) — Permitted slaughter, no pork, no alcohol; every meal.
+Ramadan (cf. 360 #321) — Dawn-to-dusk fast for one lunar month each year, with suhoor and iftar.
+Lent and the Orthodox fasts (cf. 360 #317 and #323) — Forty days before Easter; Orthodox Wednesday and Friday abstention, near half the year without meat, dairy or oil.
+Yom Kippur and the Jewish fast days (cf. 360 #316) — A 25-hour full fast once a year, plus five minor fasts.
+Ekadashi (cf. 360 #344) — Fasting on the eleventh day of each lunar fortnight, twice a month.
+The Jain ahimsa diet (cf. 360 #338) — Strict vegetarianism without root vegetables, no eating after dark; the Paryushana fasts.
+Buddhist monastic eating and the fifth precept (cf. 360 #337 and #339) — No food after noon; no intoxicants; vegetarianism in the Mahayana.
+The Seventh-day Adventist diet (Ellen White, 1863; Adventist Health Studies 1958–; cf. 360 #328) — Vegetarian, no alcohol or tobacco; Loma Linda's measured longevity.
+Rastafari ital (cf. 360 #332) — Natural, unprocessed, largely plant food without salt or additives.
+Veganism (Donald Watson, Vegan Society 1944) — No animal products in food or dress; the modern ethical-vegetarian movement.
+Langar (Guru Nanak; cf. 360 #346) — A free vegetarian meal served to anyone, daily, in every gurdwara; food as service.
+The Bahá'í Nineteen-Day Fast (Bahá'u'lláh; cf. 360 #330) — Sunrise to sunset without food or drink for the nineteen days before the new year.
+
+## Institutions and standing bodies
+World guideline bodies: WHO, the Nordic Nutrition Recommendations, Health Japan 21 (1948; 1980; 2000) — 150–300 minutes of moderate activity weekly and strength twice as the world's floor; the Nordic and Japanese standards as the two non-American benchmarks.
+The American College of Sports Medicine and Exercise Is Medicine (ACSM 1954; EIM 2007; HHS guidelines 2008, 2018) — The exercise prescription, and activity assessed as a vital sign in the clinic.
+The Framingham Heart Study (1948–) — The study that invented the risk factor; the ten-year risk score.
+The Nurses' Health Study and the Harvard cohorts (Frank Speizer, 1976; Walter Willett) — 280,000 people followed for fifty years; the evidence under most diet guidance.
+UK Biobank (2006–) — 500,000 people's genes, scans and habits open to approved researchers; the sleep, steps and grip findings of the 2020s.
+Cochrane (Iain Chalmers, 1993) — Systematic reviews that grade the evidence and its certainty.
+The North Karelia Project (Pekka Puska, Finland 1972) — The population heart intervention that cut coronary death by four-fifths over forty years; the model for every lifestyle program on this list.
+The tobacco evidence (Richard Doll and Austin Bradford Hill 1950; the Surgeon General's Report 1964) — The largest health finding of the century, and the model for how a population changes its mind.
+The Institute for Functional Medicine (1991) — The certifying body for the matrix model.
+Peer weigh-in as a method (TOPS, Esther Manz 1948; Jean Nidetch 1963; cf. 360 Twelve Steps) — Weekly weigh-in and group meeting; the group as the intervention.
+Indigenous food sovereignty (Native American Food Sovereignty Alliance, 2014; cf. 360 #356) — Returning seed, hunt and harvest to the peoples who kept them.
+The National Institutes of Health (1887; NHLBI 1948) — The public funder of DASH, the Diabetes Prevention Program and CALERIE; the trials that set the numbers.
