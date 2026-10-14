@@ -1,0 +1,360 @@
+Psychotherapy-derived modalities	Love	Ericksonian hypnotherapy (Milton Erickson, 1950s–70s) — Indirect suggestion, utilization and strategic intervention.
+Psychotherapy-derived modalities	Listen	Structural Family Therapy (Salvador Minuchin, 1974) — Boundaries, subsystems and family organization.
+Psychotherapy-derived modalities	Love	Stress Inoculation Training (Donald Meichenbaum, 1970s) — Coping skills, rehearsal and graduated exposure.
+Psychotherapy-derived modalities	Learn	Codependent No More (Melody Beattie, 1986) — Naming codependency and recovering a self inside relationship.
+Psychotherapy-derived modalities	Learn	Karen Horney (Neurosis and Human Growth, 1950) — Self-realization against the tyranny of the should.
+Psychotherapy-derived modalities	Live	Existential psychotherapy (Rollo May, Irvin Yalom, 1958–1980; Ernest Becker, The Denial of Death 1973) — Death, freedom, isolation and meaning as the four givens.
+Psychotherapy-derived modalities	Love	Hakomi (Ron Kurtz, 1980) — Mindfulness-based, body-centered therapy using gentle experiments to surface core beliefs.
+Psychotherapy-derived modalities	Learn	Psychoanalysis (Sigmund Freud, 1890s–1930s) — Unconscious conflict, defense and transference as the roots of behavior.
+Psychotherapy-derived modalities	Listen	Individual psychology (Alfred Adler, 1910s) — Inferiority, belonging and social interest.
+Psychotherapy-derived modalities	Learn	Analytical psychology (Carl Jung, 1910s–1960s) — Archetypes, shadow, individuation and the collective unconscious.
+Psychotherapy-derived modalities	Listen	Psychodrama (Jacob Moreno, 1920s) — Enacting life situations on a stage with a group.
+Psychotherapy-derived modalities	Listen	Twelve-Step programs (Bill W. and Dr. Bob, 1935) — Peer fellowship, admission of powerlessness, inventory, amends and service.
+Psychotherapy-derived modalities	Listen	Person-centered therapy (Carl Rogers, 1940s) — Empathy, congruence and unconditional positive regard as the conditions for growth.
+Psychotherapy-derived modalities	Live	Logotherapy (Viktor Frankl, 1946) — Meaning, not pleasure or power, as the primary human drive; "Man's Search for Meaning."
+Psychotherapy-derived modalities	Learn	Gestalt therapy (Fritz Perls, 1951) — Here-and-now awareness, the empty chair and owning disowned parts.
+Psychotherapy-derived modalities	Love	Rational Emotive Behavior Therapy (Albert Ellis, 1955) — Disputing irrational beliefs via the A-B-C model.
+Psychotherapy-derived modalities	Listen	Attachment theory (John Bowlby and Mary Ainsworth, 1950s–70s) — Secure, anxious, avoidant and disorganized patterns formed in infancy that shape adult relationships.
+Psychotherapy-derived modalities	Learn	Transactional Analysis (Eric Berne, 1958) — Parent/Adult/Child ego states and the "games people play."
+Psychotherapy-derived modalities	Love	Cognitive Behavioral Therapy (Aaron Beck, 1960s) — Identify and test distorted thoughts to change mood and behavior.
+Psychotherapy-derived modalities	Learn	Internal Family Systems (Richard Schwartz, 1980s) — The mind as a system of protective parts led by a core Self; "no bad parts."
+Psychotherapy-derived modalities	Love	Acceptance and Commitment Therapy (Steven Hayes, 1980s) — Psychological flexibility: accept inner experience, defuse from thoughts, act on values.
+Psychotherapy-derived modalities	Listen	Motivational Interviewing (William Miller and Stephen Rollnick, 1983) — Evoking a person's own reasons for change rather than arguing for it.
+Psychotherapy-derived modalities	Live	Narrative therapy (Michael White and David Epston, 1980s) — "The person is not the problem"; re-authoring the stories people live inside.
+Psychotherapy-derived modalities	Love	Dialectical Behavior Therapy (Marsha Linehan, 1980s) — Mindfulness, distress tolerance, emotion regulation and interpersonal skills, originally for borderline personality disorder.
+Psychotherapy-derived modalities	Listen	Emotionally Focused Therapy (Sue Johnson, 1980s) — Attachment-based couples work; "Hold Me Tight."
+Psychotherapy-derived modalities	Love	Solution-Focused Brief Therapy (Steve de Shazer and Insoo Kim Berg, 1980s) — The miracle question and scaling; build on what already works.
+Psychotherapy-derived modalities	Love	EMDR (Francine Shapiro, 1987) — Bilateral eye movements while recalling trauma; used as a PTSD treatment.
+Psychotherapy-derived modalities	Learn	John Bradshaw (Bradshaw On: The Family 1988; Healing the Shame That Binds You 1988) — Toxic shame, the wounded inner child and family-of-origin roles as a recovery path.
+Psychotherapy-derived modalities	Learn	Schema Therapy (Jeffrey Young, 1990s) — Eighteen lifelong maladaptive schemas and the modes that act them out.
+Psychotherapy-derived modalities	Love	Somatic Experiencing (Peter Levine, 1997) — Releasing trauma stored in the body by tracking sensation and completing thwarted survival responses.
+Psychotherapy-derived modalities	Live	Positive Psychology (Martin Seligman, 1998) — The study of what makes life worth living: PERMA, learned optimism, character strengths.
+Mystics, poets and modern sages	Learn	"Know thyself" and the Delphic maxims (Greece, c. 600 BCE; Socrates) — The Greek instruction to self-knowledge, later taken up by Socrates: the unexamined life is not worth living.
+Mystics, poets and modern sages	Live	Plato: the cave and the examined soul (Republic, Phaedo; c. 380 BCE) — Turning from shadows toward the light as the first Western picture of awakening.
+Mystics, poets and modern sages	Love	Nicomachean Ethics (Aristotle, c. 340 BCE) — Eudaimonia reached through habituated virtue and the mean.
+Mystics, poets and modern sages	Live	Howard Thurman (Jesus and the Disinherited, 1949) — The inner life as the ground of nonviolent action; mysticism of the oppressed.
+Mystics, poets and modern sages	Love	Mirabai (Rajasthan, 16th c.) — Bhakti poetry of devotion against caste and court.
+Mystics, poets and modern sages	Love	The Roman Stoics: Marcus Aurelius, Seneca, Epictetus (1st–2nd c. CE) — The Meditations, the Letters and the Enchiridion; the dichotomy of control at its source.
+Mystics, poets and modern sages	Love	Rabia al-Adawiyya (Basra, 8th c.) — Love of God for its own sake, without fear of hell or hope of paradise; the founding voice of Sufi love-mysticism.
+Mystics, poets and modern sages	Live	Omar Khayyam's Rubaiyat (Persia, 11th c.; FitzGerald 1859) — Impermanence, presence and the cup in hand.
+Mystics, poets and modern sages	Love	The Persian Sufi poets: Attar and Hafiz (12th and 14th c.) — The Conference of the Birds and the ghazals of the beloved; still read for guidance.
+Mystics, poets and modern sages	Love	Ibn Arabi (Andalusia, 12th c.) — Unity of being and the perfect human; the systematic philosopher of Sufi mysticism.
+Mystics, poets and modern sages	Love	Rumi (Persia, 13th c.) — The Masnavi and the whirling of the Mevlevi order; longing as the road home.
+Mystics, poets and modern sages	Love	The Christian mystics: Meister Eckhart, Julian of Norwich, Teresa of Ávila, John of the Cross, Thomas Merton (13th–20th c.) — The ground of the soul, showings of love, the interior castle, the dark night, and the contemplative life.
+Mystics, poets and modern sages	Love	Kabir (India, 15th c.) — Weaver-poet who dissolved sectarian lines; songs of the inner guru.
+Mystics, poets and modern sages	Learn	Montaigne's Essays (1580) — Self-examination as a literary practice; "what do I know?"
+Mystics, poets and modern sages	Learn	Kierkegaard and Nietzsche (Either/Or 1843; Thus Spoke Zarathustra 1883) — The stages on life's way, and "become who you are": the existential root of self-authorship.
+Mystics, poets and modern sages	Listen	Swami Vivekananda (Chicago Parliament of Religions, 1893) — The talk that introduced Vedanta and yoga to America.
+Mystics, poets and modern sages	Live	Satyagraha (Mohandas Gandhi; Hind Swaraj 1909; An Autobiography 1927) — Truth-force: nonviolent resistance as a discipline of the self before it is a politics.
+Mystics, poets and modern sages	Learn	The Fourth Way (G. I. Gurdjieff, 1910s–40s) — Self-remembering, the Enneagram symbol and "the work" on mechanical man.
+Mystics, poets and modern sages	Love	Sufism in the West: Hazrat Inayat Khan and Idries Shah (1914; 1960s–90s) — Sufi music and heart practice outside any single faith; Nasrudin tales as teaching stories.
+Mystics, poets and modern sages	Love	Modern parables: Siddhartha, The Alchemist, The Four Agreements (Hermann Hesse 1922; Paulo Coelho 1988; Don Miguel Ruiz 1997) — The river teaches; follow your Personal Legend; be impeccable with your word.
+Mystics, poets and modern sages	Live	The Prophet (Khalil Gibran, Lebanon, 1923) — On love, work, children and death.
+Mystics, poets and modern sages	Love	Jiddu Krishnamurti (1929–1986) — "Truth is a pathless land"; choiceless awareness without teacher, method or authority.
+Mystics, poets and modern sages	Love	Alan Watts (Britain, 1950s–70s) — Zen and Taoism explained to the West; "the wisdom of insecurity."
+Mystics, poets and modern sages	Listen	Ram Dass (Be Here Now, 1971) — Loving awareness and "be here now"; bhakti devotion and service carried from Neem Karoli Baba to the West.
+Mystics, poets and modern sages	Live	Richard Rohr (Center for Action and Contemplation 1987; Falling Upward 2011) — Two halves of life, the order-disorder-reorder arc, and contemplative practice taught outside denominational walls.
+Mystics, poets and modern sages	Live	Secular ethics and the Mind & Life dialogues (Dalai Lama, 1987–) — Compassion training studied with neuroscientists, independent of belief.
+Mystics, poets and modern sages	Love	Sadhguru / Inner Engineering (Jaggi Vasudev, 1992) — Shambhavi Mahamudra kriya and the Isha framework of body, mind, energy.
+Leadership, teams and organizations	Love	EOS / Traction (Gino Wickman, 2007) — Six components and a ninety-day cadence for running a small company.
+Leadership, teams and organizations	Listen	The Fifth Discipline (Peter Senge, 1990) — The learning organization: systems thinking, personal mastery, mental models, shared vision, team learning.
+Leadership, teams and organizations	Learn	Managing Oneself (Peter Drucker, 1999) — Know your strengths, how you perform, your values, where you belong, what you contribute.
+Leadership, teams and organizations	Love	Pyramid of Success (John Wooden, 1948) — Fifteen blocks of character from industriousness to competitive greatness.
+Leadership, teams and organizations	Listen	Mary Parker Follett (Creative Experience, 1924) — Power with, not power over; integration of conflicting desires.
+Leadership, teams and organizations	Learn	Organizational Culture (Edgar Schein, 1985) — Artifacts, espoused values and underlying assumptions.
+Leadership, teams and organizations	Love	Adaptive Leadership (Ronald Heifetz, 1994) — Technical problems against adaptive challenges that require the group to learn.
+Leadership, teams and organizations	Listen	Rosabeth Moss Kanter (Men and Women of the Corporation, 1977) — Structural opportunity, power and proportion in organizations.
+Leadership, teams and organizations	Live	Situational Leadership (Hersey and Blanchard, 1969) — Match directing, coaching, supporting or delegating to the follower's readiness.
+Leadership, teams and organizations	Live	Servant Leadership (Robert Greenleaf, 1970) — The leader as steward whose first job is the growth of those served.
+Leadership, teams and organizations	Listen	Appreciative Inquiry (David Cooperrider, 1987) — Change by asking what works; the source of strengths-based organizational practice.
+Leadership, teams and organizations	Listen	The GROW Model (John Whitmore, Coaching for Performance, 1992) — Goal, Reality, Options, Will as the standard coaching conversation.
+Leadership, teams and organizations	Listen	Co-Active Coaching / CTI (Laura Whitworth, Henry Kimsey-House and Karen Kimsey-House, 1992) — The client is naturally creative, resourceful and whole.
+Leadership, teams and organizations	Listen	Coach U and the coaching profession (Thomas Leonard, 1992; the International Coach Federation, 1995) — The founding of coaching as a profession with its own training, ethics and credential.
+Leadership, teams and organizations	Learn	Emotional Intelligence (Daniel Goleman, 1995) — Self-awareness, self-regulation, motivation, empathy and social skill as workplace competencies.
+Leadership, teams and organizations	Listen	Developmental maps of culture: Spiral Dynamics and Integral Theory (Clare Graves; Beck and Cowan 1996; Ken Wilber 1995) — Value systems and quadrants as staged maps of human and cultural development.
+Leadership, teams and organizations	Listen	Psychological Safety (Amy Edmondson, 1999; The Fearless Organization 2019) — A team climate in which people can speak up without fear of punishment.
+Leadership, teams and organizations	Live	Good to Great (Jim Collins, 2001) — Level 5 leadership, the hedgehog concept and the flywheel.
+Leadership, teams and organizations	Listen	The Five Dysfunctions of a Team (Patrick Lencioni, 2002) — Trust, conflict, commitment, accountability, results as a pyramid.
+Leadership, teams and organizations	Love	Presencing and self-management: Theory U and Reinventing Organizations (Otto Scharmer 2007; Frederic Laloux 2014) — Leading from the emerging future; self-management, wholeness and evolutionary purpose.
+Leadership, teams and organizations	Learn	Immunity to Change (Robert Kegan and Lisa Lahey, 2009) — Surfacing the hidden competing commitments that keep people stuck.
+Leadership, teams and organizations	Live	Start With Why (Simon Sinek, 2009) — The Golden Circle: purpose before process before product.
+Leadership, teams and organizations	Live	The 15 Commitments of Conscious Leadership (Dethmer, Chapman, Klemp, 2014) — Above or below the line: radical responsibility, curiosity and candor.
+Leadership, teams and organizations	Live	Radical Candor (Kim Scott, 2017) — Care personally and challenge directly.
+Global cultural practices and the science that anchors them	Learn	Medicine Wheel and Vision Quest (Plains and Lakota traditions) — Four directions as a map of the self and solitary fasting as rite of passage.
+Global cultural practices and the science that anchors them	Live	Ayni (Andean Q'ero) — Sacred reciprocity with people and land as the basis of right living.
+Global cultural practices and the science that anchors them	Learn	The Harvard Study of Adult Development (1938–; Waldinger and Schulz, The Good Life, 2023) — Longitudinal data on what predicts health and happiness.
+Global cultural practices and the science that anchors them	Live	The Seven Grandfather Teachings (Anishinaabe) — Wisdom, love, respect, bravery, honesty, humility, truth as a complete ethic.
+Global cultural practices and the science that anchors them	Love	Hózhó (Diné / Navajo) — The Beauty Way: balance, harmony and restoration as the aim of life.
+Global cultural practices and the science that anchors them	Live	The Work That Reconnects (Joanna Macy, 1978–) — Gratitude, honoring pain, seeing with new eyes, going forth, as a group spiral.
+Global cultural practices and the science that anchors them	Listen	Nunchi (Korea) — The art of reading a room and sensing others' states; social intelligence as a trained skill.
+Global cultural practices and the science that anchors them	Listen	Ubuntu (Southern Africa) — "I am because we are"; personhood as relational.
+Global cultural practices and the science that anchors them	Love	Japanese aesthetics of imperfection: wabi-sabi and kintsugi (15th c. tea tradition) — Beauty in impermanence, and the repaired crack as part of the history.
+Global cultural practices and the science that anchors them	Learn	Sankofa (Akan, Ghana) — "Go back and fetch it"; retrieving the past in order to move forward, adopted widely in African-American education.
+Global cultural practices and the science that anchors them	Love	Nordic life practices: hygge, lagom, friluftsliv, sisu (Denmark, Sweden, Norway, Finland) — Coziness, enough, open-air life and inner reserve as a shared northern way of living.
+Global cultural practices and the science that anchors them	Live	Epigenetics (Conrad Waddington 1942; Michael Meaney and Moshe Szyf 2004) — The study of changes in gene regulation that do not alter the DNA sequence, and how experience shapes them.
+Global cultural practices and the science that anchors them	Live	Kaizen (Japan; Toyota 1950s; Masaaki Imai 1986) — Continuous small improvement applied to a life as readily as a factory.
+Global cultural practices and the science that anchors them	Listen	Ho'oponopono (Hawaiian; Mary Kawena Pukui, Nānā I Ke Kumu, 1972; Morrnah Simeona 1976; the four phrases, Ihaleakala Hew Len 1990s) — Family reconciliation and forgiveness practice; in its modern form, I'm sorry, please forgive me, thank you, I love you.
+Global cultural practices and the science that anchors them	Love	Psychoneuroimmunology (Robert Ader, 1975) — Thoughts and emotions alter immune function.
+Global cultural practices and the science that anchors them	Learn	Core Shamanism (Michael Harner, 1980; drawn from Shuar, Conibo and Siberian practice) — Cross-cultural drumming journey techniques taught outside any one tradition.
+Global cultural practices and the science that anchors them	Love	Shinrin-yoku / forest bathing (Japan, 1982) — Slow immersion in forest air as a health practice.
+Global cultural practices and the science that anchors them	Listen	Te Whare Tapa Whā (Mason Durie, Māori, 1984) — Health as a four-walled house: body, mind, spirit, family; adopted into New Zealand public health.
+Global cultural practices and the science that anchors them	Love	Neuroplasticity (Michael Merzenich 1980s; Norman Doidge's The Brain That Changes Itself, 2007) — The adult brain rewires with practice.
+Global cultural practices and the science that anchors them	Love	Hara hachi bu and the Blue Zones (Okinawa; Dan Buettner 2008) — Eat to 80% full, move naturally, belong, have purpose; the habits recorded in regions with high reported longevity.
+Global cultural practices and the science that anchors them	Live	Robin Wall Kimmerer (Braiding Sweetgrass, 2013) — Potawatomi reciprocity and plant knowledge woven with botany as a way of living with land.
+Global cultural practices and the science that anchors them	Live	Chronobiology and circadian rhythm (Hall, Rosbash and Young, Nobel Prize 2017; Satchin Panda's time-restricted eating) — Light, meal timing and sleep cycles as regulators of mood and metabolism.
+Global cultural practices and the science that anchors them	Learn	How Emotions Are Made (Lisa Feldman Barrett, 2017) — Emotions as constructed predictions rather than hardwired reactions.
+Eastern philosophy and contemplative science	Love	Ayurveda (India, c. 1000 BCE; Charaka, Sushruta, Vāgbhaṭa) — Vata, pitta and kapha constitutions guiding diet, routine and temperament.
+Eastern philosophy and contemplative science	Live	Charvaka (India, c. 600 BCE) — Materialist atheism; perception as the only valid knowledge; known through its critics' summaries.
+Eastern philosophy and contemplative science	Live	Confucian self-cultivation (Confucius, Analects, c. 500 BCE) — Daily reflection, ritual propriety and the rectification of names as the path to becoming a junzi (exemplary person).
+Eastern philosophy and contemplative science	Learn	The Art of War (Sun Tzu, c. 500 BCE) — Strategy, self-knowledge and winning without fighting, adopted by business and leadership.
+Eastern philosophy and contemplative science	Love	Tao Te Ching and wu wei (Laozi, c. 400 BCE) — Effortless action, yielding and the uncarved block.
+Eastern philosophy and contemplative science	Live	Mencius on innate goodness (c. 300 BCE) — The four sprouts of compassion, shame, courtesy and judgment that grow with cultivation.
+Eastern philosophy and contemplative science	Love	Zhuangzi (c. 300 BCE) — Freedom through perspective-shifting, humor and the butterfly dream.
+Eastern philosophy and contemplative science	Love	The Bhagavad Gita (c. 200 BCE–200 CE) — Action without attachment to results, the three yogas of knowledge, devotion and action, and duty under uncertainty, read as philosophy.
+Eastern philosophy and contemplative science	Love	Yoga Sutras of Patanjali (c. 200 BCE–400 CE) — The eight limbs from ethical restraint to absorption; "yoga is the stilling of the fluctuations of the mind."
+Eastern philosophy and contemplative science	Love	Advaita Vedanta and the Upanishads (Shankara, 8th c.) — "Tat tvam asi," you are that; the self and the absolute are not two.
+Eastern philosophy and contemplative science	Love	Dzogchen and Mahamudra (Tibet, 8th c. onward) — Resting in the nature of mind as already complete.
+Eastern philosophy and contemplative science	Listen	The Tibetan Book of the Dead / Bardo teachings (Padmasambhava 8th c., Karma Lingpa 14th c.; Evans-Wentz 1927; Robert Thurman 1994) — Death and transition as the ultimate training in letting go.
+Eastern philosophy and contemplative science	Love	Tummo (Tibetan; Herbert Benson's studies, 1982) — Inner-heat meditation that raises body temperature at will.
+Eastern philosophy and contemplative science	Love	Lojong and Tonglen (Atisha 11th c.; Chekawa's fifty-nine slogans, 12th c.; Pema Chödrön) — Mind-training slogans and the practice of breathing in suffering, breathing out relief.
+Eastern philosophy and contemplative science	Love	Wang Yangming's unity of knowledge and action (1500s) — You do not truly know a thing until you act on it.
+Eastern philosophy and contemplative science	Love	The Book of Five Rings and Bushido (Miyamoto Musashi 1645; Hagakure 1716; Nitobe Inazō 1900) — The way of strategy and timing as self-mastery, and the samurai virtues of rectitude, courage, benevolence, honor and self-control.
+Eastern philosophy and contemplative science	Love	Kriya Yoga and its modern breath lineages (Lahiri Mahasaya 1861; Paramahansa Yogananda 1946; Sudarshan Kriya, Sri Sri Ravi Shankar 1981) — Energy-control breathing techniques that brought Indian yoga to the West.
+Eastern philosophy and contemplative science	Love	Anandamayi Ma (1896–1982) — Bengali teacher of spontaneous devotion and presence-based self-realization.
+Eastern philosophy and contemplative science	Love	Morita therapy (Shoma Morita, Japan, 1919) — Accept feelings as they are and act anyway; "arugamama."
+Eastern philosophy and contemplative science	Live	Integral Yoga (Sri Aurobindo and The Mother, 1920s–50s) — Evolution of consciousness through all of life rather than withdrawal from it.
+Eastern philosophy and contemplative science	Listen	Naikan (Yoshimoto Ishin, Japan, 1940s) — Structured self-reflection on three questions: what I received, what I gave, what trouble I caused.
+Eastern philosophy and contemplative science	Love	Engaged mindfulness / Plum Village (Thich Nhat Hanh, 1960s–2022) — Mindful walking, eating and "interbeing" as social as well as personal practice.
+Adult development, learning theory and pedagogy	Learn	Thinking, Fast and Slow (Daniel Kahneman, 2011) — System 1 and System 2; heuristics and biases.
+Adult development, learning theory and pedagogy	Learn	W. E. B. Du Bois (The Souls of Black Folk, 1903) — Double consciousness: seeing oneself through the eyes of others.
+Adult development, learning theory and pedagogy	Learn	Multiple Intelligences (Howard Gardner, 1983) — Eight kinds of intelligence beyond the IQ test.
+Adult development, learning theory and pedagogy	Learn	Nigrescence (William Cross, 1971) — Stages of Black identity development from pre-encounter to internalization.
+Adult development, learning theory and pedagogy	Listen	Ethics of Care (Carol Gilligan, In a Different Voice, 1982) — Moral development read through relationship and responsibility.
+Adult development, learning theory and pedagogy	Learn	Montessori Method (Maria Montessori, 1907) — Prepared environment, self-directed activity and mixed ages.
+Adult development, learning theory and pedagogy	Learn	Progressive education (John Dewey, 1916) — Learning by doing, democracy in the classroom.
+Adult development, learning theory and pedagogy	Love	Waldorf / Steiner education (Rudolf Steiner, 1919) — Head, heart and hands; developmental stages of seven years; arts woven through everything.
+Adult development, learning theory and pedagogy	Learn	Piaget's cognitive development (Jean Piaget, 1920s–50s) — Children construct knowledge through stages; the basis of constructivist teaching.
+Adult development, learning theory and pedagogy	Listen	Vygotsky's Zone of Proximal Development (Lev Vygotsky, 1930s) — Learning happens just beyond what you can do alone, with a more skilled other.
+Adult development, learning theory and pedagogy	Live	Maslow's Hierarchy of Needs (Abraham Maslow, 1943) — Physiological, safety, belonging, esteem and self-actualization; the base map of humanistic psychology.
+Adult development, learning theory and pedagogy	Learn	Reggio Emilia (Loris Malaguzzi, 1945) — The child as a capable co-constructor; the environment as the third teacher.
+Adult development, learning theory and pedagogy	Live	Erikson's psychosocial stages (Erik Erikson, 1950) — Eight life crises from trust vs. mistrust to integrity vs. despair.
+Adult development, learning theory and pedagogy	Listen	Martin Luther King Jr. (Stride Toward Freedom 1958; Letter from Birmingham Jail 1963) — Nonviolent direct action as a discipline of the self and the community; Thurman named as source.
+Adult development, learning theory and pedagogy	Learn	Pedagogy of the Oppressed (Paulo Freire, 1968) — Dialogue and critical consciousness in place of the "banking" model of education.
+Adult development, learning theory and pedagogy	Learn	Andragogy (Malcolm Knowles, 1970) — Adults learn best when self-directed, experience-based and problem-centered.
+Adult development, learning theory and pedagogy	Live	Social Cognitive Theory and self-efficacy (Albert Bandura, 1977) — Belief in one's capacity to act as the driver of effort, persistence and change.
+Adult development, learning theory and pedagogy	Learn	Transformative Learning (Jack Mezirow, 1978) — Disorienting dilemmas that force a revision of one's frame of reference.
+Adult development, learning theory and pedagogy	Learn	Kegan's Constructive-Developmental Theory (Robert Kegan, 1982) — Socialized, self-authoring and self-transforming minds; how adults keep growing.
+Adult development, learning theory and pedagogy	Learn	Learning cycles and taxonomies: Kolb and Bloom (Experiential Learning Cycle 1984; Bloom's Taxonomy 1956) — Experience, reflection, conceptualization, experimentation; remember, understand, apply, analyze, evaluate, create.
+Adult development, learning theory and pedagogy	Listen	bell hooks (Teaching to Transgress 1994; All About Love 2000) — Engaged pedagogy and love as a practice with six ingredients: care, affection, recognition, respect, commitment, trust.
+Abrahamic	Listen	Judaism — Moses and the Torah at Sinai (c. 1300 BCE) — One God chose a people and bound them by covenant and law; existence is a partnership in repairing the world.
+Abrahamic	Live	Palestinian liberation theology (Naim Ateek; Sabeel, 1989) — Scripture read from the side of the occupied; no text used to dispossess a people.
+Abrahamic	Love	Sufism as a living tradition — the tariqa orders (Mevlevi, Naqshbandi, Qadiri, 12th c. onward) — Remembrance, the shaykh and the path of the heart within Islam.
+Abrahamic	Listen	Alevism (Anatolia, 13th c.; Haji Bektash Veli) — Cem gatherings, music and the Twelve Imams in a heterodox Islamic tradition.
+Abrahamic	Listen	Roman Catholicism — Jesus through Peter and the papacy — Salvation through Christ's sacrifice, mediated by sacraments and one visible church with apostolic authority.
+Abrahamic	Listen	Closed faiths of the Near East: Druze and Yazidi (1017; 12th c.) — Hereditary esoteric traditions of reincarnation and the Peacock Angel, passed within the community.
+Abrahamic	Learn	The Gnostic traditions: Gnosticism, Manichaeism, Mandaeism (2nd c.; Mani 3rd c.; John the Baptist as prophet) — A flawed material world and salvation through knowledge of the divine spark; light trapped in matter; living water and the soul's ascent.
+Abrahamic	Listen	Oriental Orthodoxy — The churches of Egypt, Ethiopia, Armenia and Syria (split at Chalcedon, 451) — Miaphysite Christology; Christianity's oldest continuous African and Near Eastern churches.
+Abrahamic	Listen	Sunni Islam — Muhammad through Abu Bakr and the community's consensus (632) — Submission to the one God as revealed in the Qur'an; five pillars and the example of the Prophet.
+Abrahamic	Listen	Shia Islam — Muhammad through Ali and the Imams — Divinely guided leadership runs through the Prophet's family; martyrdom at Karbala as the lens of history.
+Abrahamic	Listen	Eastern Orthodoxy — Jesus through the seven councils and Constantinople (split 1054); Hesychasm and the Jesus Prayer (Philokalia 1782) — Theosis: humans exist to become united with God's uncreated energies through liturgy, icon and the prayer of the heart.
+Abrahamic	Love	The Reformation churches: Lutheran, Reformed and Anglican (Luther 1517; Calvin 1536; Cranmer 1534) — Faith alone, grace alone, scripture alone; God's sovereignty; the middle way of the Book of Common Prayer.
+Abrahamic	Love	British evangelical churches: Baptist and Methodist (John Smyth 1609; John Wesley 1738) — Believer's baptism and congregational freedom; grace available to all and the method of small-group accountability.
+Abrahamic	Listen	Quakerism — George Fox (1650s) — The inner light of God in every person; silent worship, equality and pacifism.
+Abrahamic	Listen	Hasidic Judaism — The Baal Shem Tov (1700s) — God is in everything; joy, song and the rebbe's guidance open the ordinary to the holy.
+Abrahamic	Love	American-born churches: Latter-day Saints, Seventh-day Adventists, Jehovah's Witnesses, Christian Science, Pentecostalism, Unitarian Universalism (1819–1906) — Continuing revelation, the Sabbath and the Second Coming, the imminent kingdom, healing by prayer, the Spirit still speaking, and the church of the Transcendentalists.
+Abrahamic	Listen	Modern Jewish movements: Reform, Conservative, Reconstructionist (Geiger 1800s; Schechter 1886; Kaplan 1922) — Judaism adapted to modern life while keeping covenant, learning and peoplehood.
+Abrahamic	Listen	Bahá'í Faith — Bahá'u'lláh (1863) — All religions are chapters of one progressive revelation; humanity exists to become one people.
+Abrahamic	Listen	Ahmadiyya — Mirza Ghulam Ahmad (1889) — The promised Messiah has already come; Islam renewed as a peaceful, missionary faith.
+Abrahamic	Listen	Rastafari — Haile Selassie I as the living God; Leonard Howell, the first Rastafari preacher (1933) — Africa as Zion, Babylon as exile; livity and the sacrament of ganja.
+Abrahamic	Live	Liberation theologies of the Americas: James Cone (1969) and Gustavo Gutiérrez (1971) — God on the side of the oppressed; a preferential option for the poor; base communities.
+Classic self-help and success literature	Live	Frederick Douglass ("Self-Made Men," 1859) — Self-making as a public lecture by a man who freed himself; the American self-help idea in its first form.
+Classic self-help and success literature	Listen	Erich Fromm (The Art of Loving, 1956; Escape from Freedom, 1941) — Love as a practiced art; freedom and the flight from it.
+Classic self-help and success literature	Live	Transcendentalism (Emerson, Self-Reliance 1841; Thoreau, Walden 1854) — Self-trust, nature and the inner law as the first American philosophy of the individual.
+Classic self-help and success literature	Learn	William James (The Principles of Psychology, "Habit," 1890; The Varieties of Religious Experience, 1902) — Habit, will and the varieties of conversion experience as the first American psychology of self-change.
+Classic self-help and success literature	Live	As a Man Thinketh (James Allen, 1903) — A 1903 essay connecting habitual thought, character and life circumstances.
+Classic self-help and success literature	Listen	How to Win Friends and Influence People (Dale Carnegie, 1936) — A guide to listening, genuine interest and persuasion in everyday relationships.
+Classic self-help and success literature	Live	Think and Grow Rich (Napoleon Hill, 1937) — Thirteen principles of wealth drawn from interviews with Carnegie-era industrialists, centered on definite purpose, belief and the "mastermind" group.
+Classic self-help and success literature	Live	The Power of Positive Thinking (Norman Vincent Peale, 1952) — Affirmation and visualization as a daily practice for confidence and resilience.
+Classic self-help and success literature	Live	Earl Nightingale's The Strangest Secret (1956) — "We become what we think about," delivered as the first gold-record spoken-word recording.
+Classic self-help and success literature	Live	Psycho-Cybernetics (Maxwell Maltz, 1960) — Self-image as a thermostat; change the internal picture and behavior follows.
+Classic self-help and success literature	Live	The sales-floor philosophers: Jim Rohn, Zig Ziglar, Brian Tracy (1960s–present) — Personal responsibility, daily disciplines, attitude and goal-setting taught from the platform; "you are the average of the five people you spend time with."
+Classic self-help and success literature	Love	Og Mandino (The Greatest Salesman in the World, 1968) — Ten scroll-based habits read daily for thirty days each.
+Classic self-help and success literature	Live	Wayne Dyer (Your Erroneous Zones, 1976; later spiritual work) — From cognitive self-responsibility to "change the way you look at things and the things you look at change."
+Classic self-help and success literature	Love	Louise Hay (You Can Heal Your Life, 1984) — Affirmations and the teaching that thought patterns shape bodily health; founder of Hay House.
+Classic self-help and success literature	Love	Tony Robbins (Unlimited Power 1986; Awaken the Giant Within 1991; Date with Destiny and Unleash the Power Within) — NLP-rooted state change, the Six Human Needs model and multi-day immersion events.
+Classic self-help and success literature	Live	Stephen Covey's 7 Habits (1989) — Principle-centered character ethic: be proactive, begin with the end in mind, seek first to understand.
+Classic self-help and success literature	Learn	Iyanla Vanzant (Acts of Faith 1993; In the Meantime 1998; Iyanla: Fix My Life 2012–2020) — Daily spiritual practice and self-worth work from a Yoruba priestess in the Black women's self-help lineage.
+Classic self-help and success literature	Live	Jack Canfield's Success Principles (2005; Chicken Soup for the Soul) — Sixty-four principles starting with 100% responsibility (E + R = O).
+Classic self-help and success literature	Love	Mel Robbins' 5 Second Rule (2017) — Counting down 5-4-3-2-1 to interrupt hesitation and act; later the "Let Them" theory.
+Classic self-help and success literature	Live	12 Rules for Life (Jordan Peterson, 2018) — Twelve maxims on responsibility, order and meaning drawn from clinical practice and myth.
+Mindfulness, contemplative and spiritual paths	Love	Loving-kindness (Metta) (Buddhist tradition) — Systematically wishing wellbeing to self, friend, stranger and enemy.
+Mindfulness, contemplative and spiritual paths	Listen	Ignatian Spiritual Exercises (Ignatius of Loyola, 1548; modern retreat format) — Structured discernment through imaginative prayer and the daily Examen.
+Mindfulness, contemplative and spiritual paths	Love	Direct-path Advaita (Ramana Maharshi, Nisargadatta Maharaj; Adyashanti and the Western teachers) — Self-inquiry: "Who am I?"
+Mindfulness, contemplative and spiritual paths	Love	Zen practice in the West (D. T. Suzuki, Shunryu Suzuki, 1950s–70s) — Zazen, koan and "beginner's mind."
+Mindfulness, contemplative and spiritual paths	Love	Transcendental Meditation (Maharishi Mahesh Yogi, 1955) — Mantra meditation twenty minutes twice daily.
+Mindfulness, contemplative and spiritual paths	Love	Vipassana (Ledi Sayadaw and U Ba Khin lineage; S. N. Goenka, 1969) — Ten-day silent retreats observing sensation with equanimity; donation-run worldwide.
+Mindfulness, contemplative and spiritual paths	Love	Centering Prayer (Thomas Keating, 1970s) — Christian contemplative silence drawn from The Cloud of Unknowing.
+Mindfulness, contemplative and spiritual paths	Love	Insight Meditation Society (Jack Kornfield, Joseph Goldstein, Sharon Salzberg, 1975) — Western Theravada; loving-kindness and self-compassion practice.
+Mindfulness, contemplative and spiritual paths	Love	A Course in Miracles (Helen Schucman, 1976) — Year-long workbook on forgiveness and the undoing of fear; source text for Marianne Williamson.
+Mindfulness, contemplative and spiritual paths	Love	Mindfulness-Based Stress Reduction (Jon Kabat-Zinn, 1979) — The eight-week secular course that brought meditation into hospitals.
+Mindfulness, contemplative and spiritual paths	Listen	The Work (Byron Katie, 1986) — Four questions and a turnaround applied to any stressful thought: "Is it true? Can you absolutely know it's true?"
+Mindfulness, contemplative and spiritual paths	Love	Marianne Williamson (A Return to Love, 1992) — A Course in Miracles taught as a daily practice of forgiveness and love over fear.
+Mindfulness, contemplative and spiritual paths	Love	Pema Chödrön (When Things Fall Apart, 1997) — Tibetan Buddhist teaching on uncertainty, basic goodness and leaning into difficulty.
+Mindfulness, contemplative and spiritual paths	Love	The Power of Now (Eckhart Tolle, 1997) — Presence over identification with the thinking mind and "pain-body."
+Mindfulness, contemplative and spiritual paths	Love	Mindfulness-Based Cognitive Therapy (Segal, Williams and Teasdale, 2002) — MBSR combined with CBT for depression relapse prevention.
+Mindfulness, contemplative and spiritual paths	Love	Self-Compassion and Compassion-Focused Therapy (Kristin Neff 2003; Paul Gilbert 2000s) — Treating yourself as you would a friend: self-kindness, common humanity, mindfulness, and its clinical form.
+Mindfulness, contemplative and spiritual paths	Love	Tara Brach (Radical Acceptance, 2003) — Recognize, Allow, Investigate, Nurture as a mindfulness and self-compassion sequence.
+Mindfulness, contemplative and spiritual paths	Love	Gratitude practice (Robert Emmons, 2000s) — Daily written gratitude as a wellbeing practice.
+Mindfulness, contemplative and spiritual paths	Love	The Untethered Soul (Michael Singer, 2007) — Observing the inner voice and releasing the grip of thought.
+Mindfulness, contemplative and spiritual paths	Love	Modern Stoicism (Ryan Holiday, Massimo Pigliucci, 2010s) — Dichotomy of control, negative visualization and the obstacle as the way, taught as a daily practice.
+Habits, productivity and performance	Love	Stages of Change (Prochaska and DiClemente, 1983) — Precontemplation, contemplation, preparation, action, maintenance.
+Habits, productivity and performance	Love	The Inner Game (Tim Gallwey, The Inner Game of Tennis, 1974) — Self 1 and Self 2; performance equals potential minus interference.
+Habits, productivity and performance	Live	Self-Determination Theory (Edward Deci and Richard Ryan, 1985) — Autonomy, competence and relatedness as the three needs behind intrinsic motivation.
+Habits, productivity and performance	Love	Pomodoro Technique (Francesco Cirillo, late 1980s) — Twenty-five-minute focus blocks with short breaks.
+Habits, productivity and performance	Love	Flow (Mihaly Csikszentmihalyi, 1990) — Optimal experience when challenge meets skill.
+Habits, productivity and performance	Love	Deliberate Practice (Anders Ericsson, 1993) — Expertise built from structured, feedback-rich practice at the edge of ability.
+Habits, productivity and performance	Love	Implementation Intentions / WOOP (Peter Gollwitzer, Gabriele Oettingen, 1990s–2014) — "If X then Y" planning and mental contrasting.
+Habits, productivity and performance	Love	OKRs (Andy Grove 1970s; John Doerr's Measure What Matters 2018) — Objectives and Key Results for aligning ambition with measurable outcomes.
+Habits, productivity and performance	Love	Getting Things Done and the Bullet Journal (David Allen 2001; Ryder Carroll 2013) — Capture everything, clarify next actions, review weekly; rapid logging and migration in a single notebook.
+Habits, productivity and performance	Live	Growth Mindset (Carol Dweck, 2006) — Believing abilities develop through effort changes how people respond to failure.
+Habits, productivity and performance	Love	The 4-Hour Workweek (Tim Ferriss, 2007) — Elimination, automation and lifestyle design; "fear-setting."
+Habits, productivity and performance	Love	KonMari (Marie Kondo, 2011) — Keep what sparks joy and discard the rest, in a fixed order of categories.
+Habits, productivity and performance	Love	The Power of Habit (Charles Duhigg, 2012) — Cue, routine, reward; keystone habits that cascade.
+Habits, productivity and performance	Love	Essentialism (Greg McKeown, 2014) — The disciplined pursuit of less; if it isn't a clear yes it's a no.
+Habits, productivity and performance	Love	Grit (Angela Duckworth, 2016) — Passion plus perseverance for long-term goals.
+Habits, productivity and performance	Love	Deep Work (Cal Newport, 2016) — Scheduled, distraction-free concentration on cognitively demanding work.
+Habits, productivity and performance	Love	Atomic Habits (James Clear, 2018) — Make it obvious, attractive, easy, satisfying; identity-based habit change through 1% improvements.
+Habits, productivity and performance	Love	Tiny Habits (BJ Fogg, 2019) — Behavior = Motivation × Ability × Prompt; anchor a tiny new behavior to an existing routine.
+Body, breath and nervous system	Love	Tai Chi and Qigong (ancient China; Western health uptake 1970s–) — Slow meditative movement for balance, circulation and calm.
+Body, breath and nervous system	Love	Pranayama (yogic tradition; Western uptake 1920s–) — Breath control as a direct lever on the mind; alternate-nostril, box breathing, kapalabhati.
+Body, breath and nervous system	Love	Resmaa Menakem and the body's inherited trauma (My Grandmother's Hands, 2017; epigenetic and intergenerational trauma research) — Racialized trauma held in the body across generations and settled through body practice.
+Body, breath and nervous system	Love	Alexander Technique (F. M. Alexander, 1890s–1930s) — Undoing habitual tension in posture and movement, long used by actors and musicians.
+Body, breath and nervous system	Love	Pilates (Joseph Pilates, 1920s) — Core-centered controlled movement originally designed as "Contrology."
+Body, breath and nervous system	Love	The relaxation family: the Relaxation Response and Progressive Muscle Relaxation (Herbert Benson 1975; Edmund Jacobson 1929) — A secular meditation, and tensing and releasing muscle groups in sequence, that measurably lower bodily arousal.
+Body, breath and nervous system	Love	Feldenkrais Method (Moshe Feldenkrais, 1940s–70s) — Awareness through slow movement; relearning how you move to change how you think.
+Body, breath and nervous system	Love	Buteyko Method (Konstantin Buteyko, 1950s) — Reduced-volume nasal breathing for asthma and anxiety.
+Body, breath and nervous system	Love	Rolfing Structural Integration (Ida Rolf, 1950s) — Ten-session deep fascia work to realign the body in gravity.
+Body, breath and nervous system	Love	Bioenergetic Analysis (Alexander Lowen, 1950s) — Reichian body psychotherapy: character armor, grounding and expressive release.
+Body, breath and nervous system	Love	Hatha Yoga in the West (Krishnamacharya lineage: B. K. S. Iyengar, Indra Devi, T. K. V. Desikachar, 1947–) — Postures, breath and discipline as a path to steadiness.
+Body, breath and nervous system	Love	Breath and movement explorations: Holotropic Breathwork, Rebirthing, Continuum Movement, 5Rhythms (Grof 1976; Leonard Orr 1970s; Emilie Conrad 1967; Gabrielle Roth 1977) — Accelerated breathing, circular breathing, fluid micro-movement and ecstatic dance as doors to non-ordinary states and release.
+Body, breath and nervous system	Love	Heart Rate Variability / HeartMath (Doc Childre, 1991) — Breathing into coherence between heart rhythm and emotion, tracked with biofeedback.
+Body, breath and nervous system	Love	Trauma and recovery: Judith Herman, Bessel van der Kolk, Gabor Maté (Trauma and Recovery 1992; The Body Keeps the Score 2014; Compassionate Inquiry 2010s) — Safety, remembrance and reconnection; trauma held in the body; present symptoms traced to childhood adaptation.
+Body, breath and nervous system	Love	Polyvagal Theory (Stephen Porges, 1994) — A framework connecting autonomic states to perceived safety, fight-or-flight and shutdown.
+Body, breath and nervous system	Love	Wim Hof Method (Wim Hof, 2000s) — Cyclic hyperventilation, cold exposure and commitment as three pillars of resilience.
+Body, breath and nervous system	Love	TRE – Tension and Trauma Releasing Exercises (David Berceli, 2000s) — Inducing neurogenic tremors to discharge stored stress.
+Relationship, systemic and communication work	Love	Desmond Tutu and Nelson Mandela (The Book of Forgiving 2014; the Truth and Reconciliation Commission 1996; Long Walk to Freedom 1994) — The fourfold path: tell the story, name the hurt, grant forgiveness, renew or release; reconciliation practiced at the scale of a nation.
+Relationship, systemic and communication work	Listen	Martin Buber (I and Thou, 1923) — Relationship as the unit of being human; I-Thou against I-It.
+Relationship, systemic and communication work	Learn	Harriet Lerner (The Dance of Anger, 1985) — Anger as a signal for changing relationship patterns.
+Relationship, systemic and communication work	Listen	Interpersonal Neurobiology (Dan Siegel, 1999; Mindsight 2010) — Mind, brain and relationship as one system; integration as health.
+Relationship, systemic and communication work	Listen	Bowen Family Systems Theory (Murray Bowen, 1950s–70s) — Differentiation of self, triangles and multigenerational transmission.
+Relationship, systemic and communication work	Listen	The Satir Model (Virginia Satir, Conjoint Family Therapy, 1964) — Family therapy through communication stances, self-worth and family reconstruction.
+Relationship, systemic and communication work	Listen	Nonviolent Communication (Marshall Rosenberg, 1960s–2003) — Observations, feelings, needs, requests; speaking without blame.
+Relationship, systemic and communication work	Listen	Getting to Yes (Fisher and Ury, 1981) — Principled negotiation: interests over positions, BATNA.
+Relationship, systemic and communication work	Listen	Parenting as development: Positive Discipline, Circle of Security, Conscious Parenting (Jane Nelsen 1981; Cooper, Hoffman and Powell 1990s; Shefali Tsabary 2010) — Kind and firm at once; the parent as secure base; the child as the parent's mirror.
+Relationship, systemic and communication work	Listen	The Gottman Method (John and Julie Gottman, 1980s–) — Couples work built on observational research; the Four Horsemen and the Sound Relationship House.
+Relationship, systemic and communication work	Listen	Imago Relationship Therapy (Harville Hendrix and Helen LaKelly Hunt, 1988) — Partners as mirrors of childhood wounds; the structured Imago dialogue.
+Relationship, systemic and communication work	Listen	The Five Love Languages (Gary Chapman, 1992) — Words, acts, gifts, time, touch as the ways people give and receive love.
+Relationship, systemic and communication work	Learn	Family Constellations (Bert Hellinger, 1990s) — Representatives stand in for family members to reveal hidden loyalties and entanglements across generations.
+Relationship, systemic and communication work	Learn	Hard conversations: Difficult Conversations and Crucial Conversations (Stone, Patton and Heen 1999; Patterson, Grenny, McMillan and Switzler 2002) — The three conversations inside every hard one, and staying in dialogue when stakes and emotions run high.
+Relationship, systemic and communication work	Listen	Circling and Authentic Relating (Guy Sengstock 2000s; 2010s) — Relational meditation and games for honest, present connection in a group.
+Relationship, systemic and communication work	Listen	Esther Perel's work (Mating in Captivity, 2006) — Desire, eroticism and the tension between security and freedom in long-term love.
+Ancient and esoteric systems	Live	Ma'at and the weighing of the heart (Ancient Egypt, c. 2400 BCE) — Living in truth, balance and right order so the heart weighs lighter than a feather.
+Ancient and esoteric systems	Learn	Western natal astrology (Babylon; Ptolemy's Tetrabiblos 2nd c.; psychological turn via Dane Rudhyar and Liz Greene) — The birth chart as a map of temperament, tension and timing.
+Ancient and esoteric systems	Learn	I Ching (China, c. 1000 BCE; Wilhelm/Jung edition 1950) — Sixty-four hexagrams consulted as an oracle of change and a mirror of character.
+Ancient and esoteric systems	Learn	Jyotish / Vedic astrology (India; Vedic roots c. 1000 BCE, twelve-sign system from the 2nd c. CE) — Sidereal zodiac, lunar mansions and planetary periods (dashas) used for life guidance.
+Ancient and esoteric systems	Learn	Vastu Shastra (India, c. 500 BCE) — The Indian science of placement and architecture for harmony of dwelling and dweller.
+Ancient and esoteric systems	Learn	Numerology and the letter-number systems: Pythagorean numerology, Chaldean numerology, gematria (Pythagorean tradition; the modern life-path system, L. Dow Balliett 1900s; Cheiro 1920s; Hebrew and Greek) — Numbers one to nine as qualities, and meaning read through the numeric value of letters and names.
+Ancient and esoteric systems	Love	Chinese correlative cosmology: Wu Xing, feng shui and BaZi (China, c. 300 BCE onward) — Five elements, the placement of dwellings and the four pillars of birth as one system of correspondences.
+Ancient and esoteric systems	Listen	Freemasonry as an initiatory system (Grand Lodge of London, 1717) — Three degrees of symbolic initiation framed as moral self-improvement.
+Ancient and esoteric systems	Learn	Hermeticism and its modern restatements: the Corpus Hermeticum, the Emerald Tablet, the Kybalion, sacred geometry (c. 100–300 CE; Atkinson 1908; Drunvalo Melchizedek 1990s) — Initiation through stages of knowledge; as above, so below; pattern as the language of creation.
+Ancient and esoteric systems	Learn	Northern European revivals: rune casting and modern Druidry (Elder Futhark 2nd c.; Ogham 4th c.; Ralph Blum 1982; OBOD 1964) — Symbols cast for guidance, tree lore and seasonal festivals in nature-based self-cultivation.
+Ancient and esoteric systems	Learn	Kabbalistic Tree of Life (Sefer Yetzirah, 3rd–6th c.; Zohar, 13th c.) — Ten sefirot as a map of consciousness descending from unity into form, used as a meditation ladder.
+Ancient and esoteric systems	Learn	Maya Tzolk'in (Maya, c. 900 BCE onward) — A 260-day sacred count of twenty day-signs and thirteen numbers read for character and timing.
+Ancient and esoteric systems	Love	The subtle body: chakras and kundalini (Tantric India; Arthur Avalon 1919; Gopi Krishna 1967; Anodea Judith 1987) — Seven energy centers and the coiled energy at the base of the spine, read as stages of development.
+Ancient and esoteric systems	Learn	Tarot (Italy 15th c.; Pamela Colman Smith and A. E. Waite, 1909) — Seventy-eight images used as a projective tool for reflection.
+Ancient and esoteric systems	Learn	Alchemy as inner work (Paracelsus 16th c.; Jung 1944) — Nigredo, albedo, rubedo: the transmutation of lead into gold read as psychological transformation.
+Ancient and esoteric systems	Live	Theosophy and Anthroposophy, with the Akashic Records (Helena Blavatsky 1875; Rudolf Steiner 1912; Edgar Cayce 1920s) — Esoteric syntheses of East and West that seeded Waldorf education, Krishnamurti and the New Age; the universal record of every soul.
+Creativity, narrative and life design	Live	Gloria Anzaldúa (Borderlands / La Frontera, 1987) — Nepantla, the in-between, as a stage of identity.
+Creativity, narrative and life design	Live	Finding Meaning in the Second Half of Life (James Hollis, 2005) — Jungian reckoning with identity and meaning in later adulthood.
+Creativity, narrative and life design	Live	The Hero's Journey (Joseph Campbell, 1949) — Call, threshold, ordeal, return; a story structure applied to the shape of a life.
+Creativity, narrative and life design	Love	Malcolm X (The Autobiography of Malcolm X, 1965) — Self-remaking through discipline, reading and the Hajj; a public transformation told in his own voice.
+Creativity, narrative and life design	Learn	Journaling as practice (Ira Progoff's Intensive Journal, 1966) — Structured dialogue with life periods, people and the body on the page.
+Creativity, narrative and life design	Live	Ikigai (Japanese concept; Mieko Kamiya, 1966) — A reason for living; a sense of purpose and meaning in daily life.
+Creativity, narrative and life design	Listen	On Death and Dying (Elisabeth Kübler-Ross, 1969) — The five stages of grief and the turn toward speaking openly with the dying.
+Creativity, narrative and life design	Live	Life Review (Robert Butler, 1963) — Guided reflection on legacy and purpose in later life.
+Creativity, narrative and life design	Love	Expressive Writing (James Pennebaker, 1986) — Twenty minutes of writing about upheaval for four consecutive days.
+Creativity, narrative and life design	Live	Ethical Will / Legacy Letter (Jewish tradition; modern revival 1990s) — Writing down values, lessons and hopes for the next generation.
+Creativity, narrative and life design	Live	Design thinking (IDEO / Stanford d.school, 1990s–2000s) — Empathize, define, ideate, prototype, test, applied to personal problems.
+Creativity, narrative and life design	Love	Creative courage: The Artist's Way, The War of Art, Big Magic (Julia Cameron 1992; Steven Pressfield 2002; Elizabeth Gilbert 2015) — Morning pages and the artist date; naming Resistance and turning pro; curiosity over fear.
+Creativity, narrative and life design	Live	Designing Your Life (Bill Burnett and Dave Evans, 2016) — Stanford design thinking applied to career and life: prototype, don't plan.
+Men's and women's work	Love	Audre Lorde (A Burst of Light, 1988) — Caring for oneself as an act of political survival; the origin of the modern idea of self-care.
+Men's and women's work	Learn	Marion Woodman (Addiction to Perfection, 1982; The Pregnant Virgin, 1985) — Jungian analysis of the feminine, the body and perfectionism.
+Men's and women's work	Learn	Jean Shinoda Bolen (Goddesses in Everywoman, 1984) — Seven Greek goddess archetypes as patterns in women's lives.
+Men's and women's work	Listen	Bill Plotkin (Soulcraft, 2003; Nature and the Human Soul, 2008) — Wilderness-based soul initiation and an eight-stage eco-centric map of development.
+Men's and women's work	Listen	Women's circles: consciousness-raising circles, Woman Within, Red Tent, the Wild Woman Project (1967; 1988; 1997; 2012) — Facilitated circles where women speak and are witnessed, around initiation, the menstrual cycle and the new moon.
+Men's and women's work	Listen	Goddess spirituality (Starhawk, Marija Gimbutas, 1979–) — Reclaiming feminine divinity through ritual and earth-based practice.
+Men's and women's work	Listen	Men's initiation circles: The ManKind Project, Sacred Sons, EVRYMAN (1985; 2016; 2017) — Initiatory weekends and ongoing peer groups where men drop the mask: feel it, say it, share it.
+Men's and women's work	Live	Mythopoetic men's movement / Iron John (Robert Bly, 1990) — Fairy tale and poetry as a map of male initiation and the "wild man" within.
+Men's and women's work	Live	Women Who Run With the Wolves (Clarissa Pinkola Estés, 1992) — The Wild Woman archetype recovered through myth and story; widely used in women's circles.
+Men's and women's work	Listen	Malidoma Somé's ritual and initiation work (Ritual: Power, Healing and Community 1993; Of Water and the Spirit 1994) — Dagara elderhood, grief ritual and initiation brought into Western men's and community work.
+Men's and women's work	Listen	Polarity and men's relational work: David Deida, Robert Glover, Western neo-tantra (The Way of the Superior Man 1997; No More Mr. Nice Guy 2003; Margot Anand, The Art of Sexual Ecstasy 1989) — Masculine and feminine polarity, covert contracts, and breath-and-presence practices for intimacy.
+Men's and women's work	Learn	Brené Brown's vulnerability work (Daring Greatly 2012; Rising Strong 2015) — Shame research framing vulnerability as the birthplace of courage and connection.
+Energy, esoteric and consciousness frameworks	Live	New Thought / Science of Mind (Quimby, Emma Curtis Hopkins 1880s; Ernest Holmes 1927) — Mind as creative cause; affirmative prayer and spiritual mind treatment.
+Energy, esoteric and consciousness frameworks	Live	Spiritism (Allan Kardec, The Spirits' Book, 1857) — Reincarnation, moral progress and communication with spirits; the framework behind Brazil's largest spiritual movement.
+Energy, esoteric and consciousness frameworks	Love	Reiki (Mikao Usui, 1922) — Hands-on energy transmission for relaxation and healing.
+Energy, esoteric and consciousness frameworks	Love	Neuro-Linguistic Programming (John Grinder and Richard Bandler, 1975; Milton Erickson as source) — Modeling excellence through language patterns, anchoring and reframing.
+Energy, esoteric and consciousness frameworks	Live	Law of Attraction / The Secret (New Thought lineage: Quimby, Hopkins, Fillmore; Atkinson 1906; Abraham-Hicks 1980s; Rhonda Byrne 2006) — Like attracts like; feeling as the point of creation.
+Energy, esoteric and consciousness frameworks	Live	Consciousness maps and energy processes: Hawkins' Map of Consciousness, Access Consciousness, ThetaHealing (David Hawkins 1995; Gary Douglas 1990; Vianna Stibal 1995) — Calibrated emotional states, "the Bars," and belief work in a theta state.
+Energy, esoteric and consciousness frameworks	Learn	Ayahuasca and plant-medicine ceremony (Amazonian traditions; Western uptake 1990s–) — Facilitated visionary journeys for healing and insight.
+Energy, esoteric and consciousness frameworks	Love	Emotional Freedom Technique / Tapping (Gary Craig, 1995) — Tapping acupoints while voicing a problem.
+Energy, esoteric and consciousness frameworks	Learn	Caroline Myss (Anatomy of the Spirit 1996; Sacred Contracts 2001) — Chakra-mapped energy anatomy and archetypal contracts read as a personal life map.
+Energy, esoteric and consciousness frameworks	Learn	Psychedelic-assisted therapy (MAPS, Johns Hopkins, 2000s–) — MDMA and psilocybin in clinical settings for trauma and depression.
+Energy, esoteric and consciousness frameworks	Love	Joe Dispenza (Breaking the Habit of Being Yourself, 2012) — Meditation to rewire the brain and "become supernatural."
+Typology, personality and strengths systems	Learn	DISC (William Marston 1928; assessment 1950s) — Dominance, Influence, Steadiness, Conscientiousness as workplace behavior styles.
+Typology, personality and strengths systems	Learn	Myers-Briggs Type Indicator and its descendants (Katharine Briggs and Isabel Myers 1943; Insights Discovery 1993; 16Personalities 2011) — Sixteen types from four Jungian dichotomies, in the original instrument, the color-energy model and the free online test.
+Typology, personality and strengths systems	Learn	Workplace assessment instruments (Predictive Index 1955; Kolbe A Index 1980s; Hogan Assessments 1987; Leadership Circle Profile 2000s; Culture Index 2000s) — Behavioral, conative, personality and 360 instruments used to place people in roles and develop leaders.
+Typology, personality and strengths systems	Learn	The Enneagram (Oscar Ichazo 1950s; Claudio Naranjo 1970s; Riso-Hudson) — Nine core motivations with wings, arrows and instincts.
+Typology, personality and strengths systems	Learn	Big Five / OCEAN (Costa and McCrae, 1980s–90s) — Openness, conscientiousness, extraversion, agreeableness, neuroticism as the five broad traits.
+Typology, personality and strengths systems	Learn	Human Design and the Gene Keys (Ra Uru Hu 1987; Richard Rudd 2009) — A synthesis of astrology, the I Ching, Kabbalah and the chakras yielding a personal type, strategy and authority, and sixty-four archetypes each with a shadow, gift and siddhi.
+Typology, personality and strengths systems	Learn	CliftonStrengths / StrengthsFinder (Donald Clifton and Gallup, 2001) — Thirty-four talent themes; build on strengths rather than fixing weaknesses.
+Typology, personality and strengths systems	Learn	VIA Character Strengths (Peterson and Seligman, 2004) — Twenty-four character strengths across six virtues.
+Typology, personality and strengths systems	Learn	Entrepreneur and brand profiles: Wealth Dynamics, Fascination Advantage, Sparketype (Roger Hamilton 2006; Sally Hogshead 2014; Jonathan Fields 2021) — Profiles of how a person creates value, is perceived, and comes alive at work.
+Typology, personality and strengths systems	Listen	Working Genius (Patrick Lencioni, 2022) — Six types of work (Wonder, Invention, Discernment, Galvanizing, Enablement, Tenacity); two are your genius, two are frustrations.
+Indian	Love	Theravada Buddhism — Siddhartha Gautama and the Pali Canon (c. 500 BCE) — Suffering, its cause, its end and the eightfold path; the monk's way to nirvana.
+Indian	Live	Jainism — Mahavira (c. 500 BCE) — Non-violence to every living thing and the soul's own effort, with no creator god, to shed karma.
+Indian	Love	Mahayana Buddhism — Nagarjuna and the bodhisattva ideal (2nd c.) — Emptiness of all things; postpone one's own liberation for the sake of all beings.
+Indian	Love	Shakta Hinduism — Devi; the Devi Mahatmya (c. 500 CE) — The Goddess as supreme reality; tantra and the Divine Mother.
+Indian	Love	Zen Buddhism — Bodhidharma, Huineng and Dōgen (6th–13th c.) — Direct pointing to the mind; sitting itself is awakening.
+Indian	Love	Vajrayana Buddhism — Padmasambhava and the Dalai Lamas (8th c.) — Tantric means, deity visualization and guru devotion to reach enlightenment in one lifetime.
+Indian	Love	Shaiva Hinduism — Shiva; Abhinavagupta and the Kashmir tradition (10th c.) — The universe as Shiva's dance of creation and dissolution; liberation through recognition.
+Indian	Love	Vaishnava Hinduism — Vishnu and his avatars Krishna and Rama; Ramanuja (11th c.) — Devotion (bhakti) to a personal God who descends to restore order.
+Indian	Love	Nichiren Buddhism — Nichiren (1253) — Chanting the title of the Lotus Sutra as the single practice for this age.
+Indian	Live	Sikhism — Guru Nanak and the ten Gurus (1500s) — One formless God, equality of all, honest work and service; the Guru Granth Sahib as the living teacher.
+Transformational and large-group awareness trainings	Listen	Dale Carnegie Course (1912) — A human-relations and public-speaking training running continuously since 1912.
+Transformational and large-group awareness trainings	Listen	Toastmasters (Ralph Smedley, 1924) — Peer-run clubs that build speaking and leadership through structured practice and feedback.
+Transformational and large-group awareness trainings	Love	Outward Bound (Kurt Hahn, 1941) — Wilderness challenge as character education; "there is more in you than you think."
+Transformational and large-group awareness trainings	Love	Esalen Institute (Michael Murphy and Dick Price, 1962) — The residential center where encounter groups, Gestalt, Rolfing and body work converged into the human potential movement.
+Transformational and large-group awareness trainings	Love	NOLS (Paul Petzoldt, 1965) — Expedition-based leadership training grown from Outward Bound.
+Transformational and large-group awareness trainings	Love	Mind Dynamics / Silva Method (José Silva 1966; Alexander Everett 1968) — Alpha-state relaxation and visualization for problem-solving and intuition.
+Transformational and large-group awareness trainings	Learn	Hoffman Process (Bob Hoffman, 1967) — Seven-day residential retreat to identify and release negative patterns inherited from parents.
+Transformational and large-group awareness trainings	Learn	est and Landmark (Werner Erhard, 1971; The Forum 1985; Landmark Education 1991) — A weekend training on taking responsibility for one's own experience: distinguishing rackets and creating possibility through declaration.
+Transformational and large-group awareness trainings	Learn	The second-wave trainings: Lifespring, PSI Seminars, Insight Seminars, Momentum Education (John Hanley 1974; Thomas Willhite 1973; John-Roger and Russell Bishop 1978; New York 2000s) — Multi-day experiential programs in the est lineage on responsibility, loving and purpose.
+East Asian	Listen	Confucianism as a religion: the state cult and ancestor rites (China, Korea, Vietnam; c. 500 BCE onward) — Heaven, the ancestors and ritual propriety as the sacred order of family and state.
+East Asian	Love	East Asian new religions: Tenrikyo (Nakayama Miki, 1838) and Cao Dai (Ngô Văn Chiêu, 1926) — God the Parent's joyous life; a Vietnamese synthesis under one Supreme Being.
+East Asian	Love	Religious Daoism — Laozi deified; Zhang Daoling's Celestial Masters (142 CE) — Immortality, alchemy and harmony with the Dao through ritual and cultivation.
+East Asian	Love	Shinto — Amaterasu and the kami of the Kojiki (712) — Japan's native way of purity, gratitude and reverence for the spirits in places and ancestors.
+East Asian	Love	Pure Land Buddhism — Amitabha; Hōnen (1175) and Shinran — Rebirth in the Pure Land through trust and recitation of the Buddha's name.
+East Asian	Live	Korean shamanism and Cheondogyo (Muism; Choe Je-u 1860) — The mudang's rites and the teaching that heaven is within every person.
+Indigenous and diaspora	Listen	Australian Aboriginal religions (a family of hundreds of distinct traditions) — The Rainbow Serpent and the Dreaming ancestors — Creation is not past but present; the land itself is the scripture, sung into being.
+Indigenous and diaspora	Listen	Tengrism and Siberian shamanism (Central Asia and Siberia) — The sky god, the spirits of place, and the shaman's journey on behalf of the people.
+Indigenous and diaspora	Listen	African traditional religions: Yoruba Ifá, Akan, Zulu, Dogon — Olodumare and Orunmila, the Orisha, the ancestors; destiny chosen before birth and read through divination; the root of the diaspora faiths.
+Indigenous and diaspora	Listen	North American Indigenous religions: Lakota, Diné (Navajo), Hopi, Haudenosaunee — Wakan Tanka and the Great Mystery; all things related; the pipe, the sweat lodge and the vision; each nation's own teachings.
+Indigenous and diaspora	Listen	Afro-Atlantic diaspora faiths: Haitian Vodou, Brazilian Candomblé, Cuban Santería (1700s–1830s) — Bondye and the lwa, the Orixás, the Orisha; initiation and trance in the Yoruba diaspora.
+Indigenous and diaspora	Listen	Wicca — Gerald Gardner (1954) — Goddess and Horned God, the wheel of the year and "an it harm none."
+Ancient	Live	Ancient Near Eastern religions: Egypt, Atenism, Mesopotamia (Ra and Osiris; Akhenaten c. 1350 BCE; Marduk and the Enuma Elish) — Cosmic order against chaos, the first state monotheism, humans made to serve the gods.
+Ancient	Live	The Hellenistic mysteries: Eleusis (c. 1500 BCE), Orphism (c. 500 BCE), Mithraism (1st–4th c. CE) — Initiation into death and rebirth through the secret rites of Demeter, Orpheus and Mithras.
+Ancient	Love	Greek Olympian religion — Zeus; Homer and Hesiod (c. 700 BCE) — Gods above and fate above them; virtue as excellence in a life that ends in shadow.
+Ancient	Live	Mesoamerican and Andean religions: Maya (the Popol Vuh), Aztec (Huitzilopochtli and Quetzalcoatl), Inca (Inti and Viracocha) — Humans made of maize; the sun fed with blood; the emperor as the sun's son; time as cycles.
+Ancient	Live	Norse religion — Odin, Thor and the Eddas — The world hangs on a tree, ends at Ragnarök and begins again; courage and honor as the answer to doom.
+Non-theistic	Live	Secular Humanism (Humanist Manifesto 1933; ancestors in Epicurus, c. 300 BCE, and T. H. Huxley's agnosticism, 1869) — Meaning and ethics without a god.
+Iranian	Live	Zoroastrianism — Zarathustra (c. 1200 BCE) — Ahura Mazda against the lie, and each person's good thoughts, words and deeds tip the cosmic balance.
