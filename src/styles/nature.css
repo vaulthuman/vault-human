@@ -49,3 +49,13 @@ body[data-time=all] .hero-video .timeword .tw:after{background:var(--acc-soft)}
 footer,.foot{color:var(--muted)}
 @media(prefers-reduced-motion:reduce){.bgvid{display:none}}
 @media(max-width:760px){.hero-video{min-height:84vh}.hero-video .wrap{padding-top:110px}}
+
+/* 10/14 adds */
+.proof-grid{grid-template-columns:repeat(5,1fr)}
+.proof-grid b{font-size:44px}
+@media(max-width:760px){.proof-grid{grid-template-columns:repeat(3,1fr)}.proof-grid div:nth-child(4){border-left:0}}
+.guide-grid{grid-template-columns:.55fr 1.45fr;gap:48px}
+.guide-grid img{height:400px}
+.hero:not(.hero-video){padding-top:150px}
+.gallery-sec.faces{padding:36px 0 0}
+.gallery figure{height:260px}
