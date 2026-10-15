@@ -62,21 +62,18 @@ const year = new Date().getFullYear();
       <div class="sec-head"><p class="eyebrow">In the room</p><h2>Coaching is a contact sport.</h2></div>
       <div class="coach-grid">
         <figure class="cg-vid"><video autoplay muted loop playsinline preload="metadata" poster="/img/russ/coach/coach-room-poster.jpg" aria-label="Russ coaching a room from the stage"><source src="/img/russ/coach/coach-room.mp4" type="video/mp4"></video><figcaption>On stage</figcaption></figure>
-        <figure><img src="/img/russ/coach/coach-board.jpg" alt="Russ teaching at a whiteboard" loading="lazy" style="object-position:50% 22%" /><figcaption>At the board</figcaption></figure>
-        <figure><img src="/img/russ/coach/coach-stage.jpg" alt="Russ speaking with a microphone on a lit stage" loading="lazy" style="object-position:50% 30%" /><figcaption>The mic</figcaption></figure>
-        <figure><img src="/img/russ/coach/coach-circle.jpg" alt="Russ leading a men's circle in a lodge" loading="lazy" style="object-position:50% 0%" /><figcaption>The circle</figcaption></figure>
-        <figure><img src="/img/russ/coach/coach-field.jpg" alt="Russ coaching a youth team on a field" loading="lazy" /><figcaption>The field</figcaption></figure>
-        <figure><img src="/img/russ/coach/coach-sideline.jpg" alt="Russ coaching football players on the sideline" loading="lazy" style="object-position:50% 30%" /><figcaption>The sideline</figcaption></figure>
+        <figure><img src="/img/russ/coach/coach-circle.jpg" alt="Russ leading a men's circle in a lodge" loading="lazy" style="object-position:50% 4%" /><figcaption>The circle</figcaption></figure>
+        <figure><img src="/img/russ/coach/coach-stage.jpg" alt="Russ speaking with a microphone on a lit stage" loading="lazy" style="object-position:50% 28%" /><figcaption>The mic</figcaption></figure>
       </div>
     </div></section>
     <style is:global>
-      .coach-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:260px;gap:16px}
+      .coach-grid{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:200px 200px;gap:16px}
       .coach-grid figure{margin:0;position:relative;overflow:hidden;border-radius:10px;background:#111}
       .coach-grid img,.coach-grid video{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}
       .coach-grid figure:hover img{transform:scale(1.04)}
-      .coach-grid .cg-vid{grid-column:span 2;grid-row:span 2}
+      .coach-grid .cg-vid{grid-row:span 2}
       .coach-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;color:#fff;font-family:var(--disp);font-size:22px;letter-spacing:1px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.75))}
-      @media(max-width:760px){.coach-grid{grid-template-columns:1fr 1fr;grid-auto-rows:200px;gap:12px}.coach-grid .cg-vid{grid-column:span 2;grid-row:span 1}.coach-grid figure:last-child{grid-column:span 2}}
+      @media(max-width:760px){.coach-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 170px;gap:12px}.coach-grid .cg-vid{grid-column:span 2;grid-row:span 1}}
     </style>
     <section class="sec alt" id="how"><div class="wrap">
       <div class="sec-head"><p class="eyebrow">How it works</p><h2>Three steps.</h2><p class="lede">One lesson a day, one room at a time, with a person who reads what you write. <a href="/method/">Read how the method works.</a></p></div>
