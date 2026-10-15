@@ -60,21 +60,19 @@ const year = new Date().getFullYear();
 
     <section class="sec coach-sec" id="coaching"><div class="wrap">
       <div class="sec-head"><p class="eyebrow">In the room</p><h2>Coaching is a contact sport.</h2></div>
-      <div class="coach-grid">
-        <figure class="cg-vid"><video autoplay muted loop playsinline preload="metadata" poster="/img/russ/coach/coach-room-poster.jpg" aria-label="Russ coaching a room from the stage"><source src="/img/russ/coach/coach-room.mp4" type="video/mp4"></video><figcaption>On stage</figcaption></figure>
-        <figure><img src="/img/russ/coach/coach-circle.jpg" alt="Russ leading a men's circle in a lodge" loading="lazy" style="object-position:50% 4%" /><figcaption>The circle</figcaption></figure>
-        <figure><img src="/img/russ/coach/coach-stage.jpg" alt="Russ speaking with a microphone on a lit stage" loading="lazy" style="object-position:50% 28%" /><figcaption>The mic</figcaption></figure>
+      <div class="rrow">
+        <figure style="--ar:1.92"><video autoplay muted loop playsinline preload="metadata" poster="/img/russ/coach/coach-room-poster.jpg" aria-label="Russ coaching a room from the stage"><source src="/img/russ/coach/coach-room.mp4" type="video/mp4"></video><figcaption>On stage</figcaption></figure>
+        <figure style="--ar:1.3809"><img src="/img/russ/coach/coach-burchard.jpg" alt="Russ with Brendon Burchard at High Performance Academy" width="1200" height="869" loading="lazy" /><figcaption>With Brendon Burchard</figcaption></figure>
+        <figure style="--ar:0.7393"><img src="/img/russ/coach/coach-stage.jpg" alt="Russ speaking with a microphone on a lit stage" width="1035" height="1400" loading="lazy" /><figcaption>The mic</figcaption></figure>
       </div>
     </div></section>
     <style is:global>
-      .coach-grid{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:200px 200px;gap:16px}
-      .coach-grid figure{margin:0;position:relative;overflow:hidden;border-radius:10px;background:#111}
-      .coach-grid img,.coach-grid video{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}
-      .coach-grid figure:hover img{transform:scale(1.04)}
-      .coach-grid .cg-vid{grid-row:span 2}
-      .coach-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;color:#fff;font-family:var(--disp);font-size:22px;letter-spacing:1px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.75))}
-      @media(max-width:760px){.coach-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 170px;gap:12px}.coach-grid .cg-vid{grid-column:span 2;grid-row:span 1}}
-    </style>
+  .rrow{display:flex;gap:16px;align-items:flex-start}
+  .rrow figure{flex:var(--ar) 1 0;min-width:0;margin:0;position:relative;overflow:hidden;border-radius:10px;aspect-ratio:var(--ar);background:#111}
+  .rrow img,.rrow video{width:100%;height:100%;display:block}
+  .rrow figcaption{position:absolute;left:0;right:0;bottom:0;padding:12px 14px;color:#fff;font-family:var(--disp);font-size:20px;letter-spacing:1px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.7))}
+  @media(max-width:760px){.rrow{flex-direction:column;gap:12px}.rrow figure{flex:none;width:100%}}
+</style>
     <section class="sec alt" id="how"><div class="wrap">
       <div class="sec-head"><p class="eyebrow">How it works</p><h2>Three steps.</h2><p class="lede">One lesson a day, one room at a time, with a person who reads what you write. <a href="/method/">Read how the method works.</a></p></div>
       <div class="steps"><div class="step"><div class="n">01</div><h3>Sign up</h3><p>$97 a month. A real person replies within the minute, with your first lesson.</p></div><div class="step"><div class="n">02</div><h3>Talk to Russ</h3><p>A 30-minute call within two days. No sales pitch.</p></div><div class="step"><div class="n">03</div><h3>Walk the year</h3><p>One lesson a day. Write three lines at night. We read them.</p></div></div>
@@ -145,6 +143,6 @@ const year = new Date().getFullYear();
   document.addEventListener('mouseout',function(e){if(!e.relatedTarget&&e.clientY<=0)pop();});
   if(matchMedia('(max-width:760px)').matches)setTimeout(pop,45000);})();
   </script>
-  <script is:inline>document.querySelectorAll(".coach-grid video").forEach(function(v){v.playbackRate=0.5;v.addEventListener("loadedmetadata",function(){v.playbackRate=0.5;});});document.querySelectorAll("video.bgvid").forEach(function(v){v.playbackRate=0.6;v.addEventListener("loadedmetadata",function(){v.playbackRate=0.6;});});</script>
+  <script is:inline>document.querySelectorAll(".rrow video").forEach(function(v){v.playbackRate=0.5;v.addEventListener("loadedmetadata",function(){v.playbackRate=0.5;});});document.querySelectorAll("video.bgvid").forEach(function(v){v.playbackRate=0.6;v.addEventListener("loadedmetadata",function(){v.playbackRate=0.6;});});</script>
 </body>
 </html>

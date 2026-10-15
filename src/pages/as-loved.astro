@@ -53,6 +53,14 @@ const year = new Date().getFullYear();
 
     <section class="sec gallery-sec"><div class="wrap gallery"><figure><img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1000&q=72&auto=format&fit=crop" alt="Three runners at sunrise" loading="lazy" /><figcaption>The walk</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1000&q=72&auto=format&fit=crop" alt="A colorful healthy meal on a wooden table" loading="lazy" /><figcaption>The table</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1000&q=72&auto=format&fit=crop" alt="A woman exercising on a mat" loading="lazy" /><figcaption>The body</figcaption></figure></div></section>
 
+    <section class="sec" id="russ-as-loved"><div class="wrap"><div class="sec-head"><p class="eyebrow">Russ, as loved</p><h2>What I love.</h2></div><div class="rrow"><figure style="--ar:0.6417"><img src="/img/russ/tabs/loved-shore.jpg" alt="Russ on a beach at sunset" width="770" height="1200" loading="lazy" /><figcaption>The shore</figcaption></figure><figure style="--ar:1.3333"><img src="/img/russ/tabs/loved-hug.jpg" alt="Russ embracing a friend" width="1200" height="900" loading="lazy" /><figcaption>The hug</figcaption></figure><figure style="--ar:1.1869"><img src="/img/russ/tabs/loved-spain.jpg" alt="Russ on a beach in Spain" width="1200" height="1011" loading="lazy" /><figcaption>The road</figcaption></figure></div></div></section>
+    <style is:global>
+  .rrow{display:flex;gap:16px;align-items:flex-start}
+  .rrow figure{flex:var(--ar) 1 0;min-width:0;margin:0;position:relative;overflow:hidden;border-radius:10px;aspect-ratio:var(--ar);background:#111}
+  .rrow img,.rrow video{width:100%;height:100%;display:block}
+  .rrow figcaption{position:absolute;left:0;right:0;bottom:0;padding:12px 14px;color:#fff;font-family:var(--disp);font-size:20px;letter-spacing:1px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.7))}
+  @media(max-width:760px){.rrow{flex-direction:column;gap:12px}.rrow figure{flex:none;width:100%}}
+</style>
     <section class="sec dark" id="company"><div class="wrap">
       <div class="sec-head"><p class="eyebrow">Coaching, specifically</p><h2>Need executive, leadership or communication coaching?</h2><p class="lede">Every Vault Human coaching program is delivered by Triplicity Advisory: the Coached Year, the Family Year, and Executive and Team. If you are a leader who wants a specific engagement for yourself or your team, go straight there.</p></div>
       <div class="ctarow" style="justify-content:center"><a class="btn btn-acc" href="https://triplicityadvisory.com" target="_blank" rel="noopener">Yes, take me to Triplicity ↗</a><a class="btn btn-ghost" href="#" data-open-form>No, I want coaching</a></div>

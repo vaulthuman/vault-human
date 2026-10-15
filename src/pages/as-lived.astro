@@ -53,6 +53,14 @@ const year = new Date().getFullYear();
 
     <section class="sec gallery-sec"><div class="wrap gallery"><figure><img src="https://images.unsplash.com/photo-1543342384-1f1350e27861?w=1000&q=72&auto=format&fit=crop" alt="New parents holding their newborn" loading="lazy" /><figcaption>The ones who come after</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1000&q=72&auto=format&fit=crop" alt="A volunteer at a community event" loading="lazy" /><figcaption>Serving</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=1000&q=72&auto=format&fit=crop" alt="An older man smiling" loading="lazy" /><figcaption>Leaving it better</figcaption></figure></div></section>
 
+    <section class="sec" id="russ-as-lived"><div class="wrap"><div class="sec-head"><p class="eyebrow">Russ, as lived</p><h2>How I live it.</h2></div><div class="rrow"><figure style="--ar:1.1278"><img src="/img/russ/tabs/lived-ice.jpg" alt="Russ in an ice bath with a group" width="1200" height="1064" loading="lazy" /><figcaption>The ice</figcaption></figure><figure style="--ar:1.1429"><img src="/img/russ/tabs/lived-snorkel.jpg" alt="Russ snorkeling over a deep rock fissure" width="1200" height="1050" loading="lazy" /><figcaption>The deep</figcaption></figure><figure style="--ar:0.905"><img src="/img/russ/tabs/lived-scuba.jpg" alt="Russ in scuba gear in clear water" width="1086" height="1200" loading="lazy" /><figcaption>The dive</figcaption></figure></div></div></section>
+    <style is:global>
+  .rrow{display:flex;gap:16px;align-items:flex-start}
+  .rrow figure{flex:var(--ar) 1 0;min-width:0;margin:0;position:relative;overflow:hidden;border-radius:10px;aspect-ratio:var(--ar);background:#111}
+  .rrow img,.rrow video{width:100%;height:100%;display:block}
+  .rrow figcaption{position:absolute;left:0;right:0;bottom:0;padding:12px 14px;color:#fff;font-family:var(--disp);font-size:20px;letter-spacing:1px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.7))}
+  @media(max-width:760px){.rrow{flex-direction:column;gap:12px}.rrow figure{flex:none;width:100%}}
+</style>
     <section class="sec dark" id="company"><div class="wrap">
       <div class="sec-head"><p class="eyebrow">The documents</p><h2>Need the actual will, trust, or succession plan?</h2><p class="lede">That is legal work, and Tercet Law does it at flat fees: wills, trusts, health directives, powers of attorney and business succession. Based in Austin; Alabama licensed with Texas admission pending. It is a law firm, not coaching, and never required for coaching.</p></div>
       <div class="ctarow" style="justify-content:center"><a class="btn btn-acc" href="https://www.tercetlaw.com" target="_blank" rel="noopener">Yes, I need the documents ↗</a><a class="btn btn-ghost" href="#" data-open-form>No, I want coaching</a></div>
