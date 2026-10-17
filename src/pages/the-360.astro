@@ -1,18 +1,17 @@
 ---
 import '../styles/home.css';
 import '../styles/nature.css';
-import raw from '../data/the360.txt?raw';
+import chambers from '../data/chambers.json';
 const year = new Date().getFullYear();
-const rows = raw.trim().split('\n').map(l=>{const [cat,verb,text]=l.split('\t');const i=text.indexOf(' — ');return {cat,verb,name:i>0?text.slice(0,i):text,desc:i>0?text.slice(i+3):''};});
-const cats=[...new Set(rows.map(r=>r.cat))];
+
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The 360 — Vault Human</title><link rel="canonical" href="https://www.vaulthuman.com/the-360/">
-  <meta name="description" content="The full list of 360 teachings behind Vault Human coaching, named, dated and sourced, grouped by tradition.">
-  <meta property="og:title" content="The 360 — Vault Human"><meta property="og:description" content="The full list of 360 teachings behind Vault Human coaching, named, dated and sourced, grouped by tradition."><meta property="og:image" content="https://www.vaulthuman.com/og-vaulthuman.png"><meta name="twitter:card" content="summary_large_image">
+  <meta name="description" content="The 360 keys for the mind behind Vault Human coaching, placed chamber by chamber across the coaching year.">
+  <meta property="og:title" content="The 360 — Vault Human"><meta property="og:description" content="The 360 keys for the mind behind Vault Human coaching, placed chamber by chamber across the coaching year."><meta property="og:image" content="https://www.vaulthuman.com/og-vaulthuman.png"><meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <!-- Google Ads gtag (AW-18371546487) + HubSpot conversion listener -->
@@ -30,15 +29,33 @@ const cats=[...new Set(rows.map(r=>r.cat))];
   <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">The approach <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/#how">How it works</a><a href="/method/">The method</a><a href="/the-360/">The 360 · keys for the mind</a><a href="/the-180/">The 180 · keys for the body</a><a href="/#listened">Listening</a><span class="navdrop__rule"></span><a href="/as-learned/">As learned · the past</a><a href="/as-loved/">As loved · the present</a><a href="/as-lived/">As lived · the future</a></div></div><a href="/#pricing">Pricing</a><a href="/#russ">About Russ</a><a href="/speaking/">Speaking</a><a class="btn btn-acc" href="#" data-open-form>Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
   <main>
     <section class="hero"><div class="wrap">
-      <p class="eyebrow">The 360 · mind, heart, spirit</p>
-      <h1>Three hundred sixty <em>teachings.</em></h1>
-      <p class="lede">Every one named, dated and sourced. Grouped by where it comes from. The verb at the end is the part of the year it belongs to. This is the whole curriculum, and it is not a secret.</p>
-      <div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Begin with Vault</a><a class="btn btn-line" href="/method/">How we use it</a></div>
+      <p class="eyebrow">The 360 · keys for the mind</p>
+      <h1>Three hundred sixty keys. <em>Each in its place.</em></h1>
+      <p class="lede">We gathered 360 of the ways people have learned to grow, from ancient practice to modern psychology, and placed each one in the part of your life where it does the most good. Your coach hands you one each morning, inside the chamber you're in, and helps you put it to work.</p>
+      <div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Begin with Vault</a><a class="btn btn-line" href="#chambers">See the chambers</a></div>
     </div></section>
-    <section class="sec" style="padding-top:40px"><div class="wrap listwrap">
-      {cats.map(c=>(<><h3 class="listcat">{c} <small>{rows.filter(r=>r.cat===c).length}</small></h3><ul class="list">{rows.filter(r=>r.cat===c).map(r=>(<li><b>{r.name}</b><span>{r.desc}</span><em>{r.verb}</em></li>))}</ul></>))}
+    <section class="sec" style="padding-top:20px"><div class="wrap">
+      <div class="ck-steps">
+        <div><span>01</span><b>It arrives</b><p>Your Vault Key comes each morning, from the chamber you're in.</p></div>
+        <div><span>02</span><b>You use it</b><p>One thing to do today: a practice, a call, a page, a walk.</p></div>
+        <div><span>03</span><b>You log it</b><p>One line: what you did and what it did.</p></div>
+        <div><span>04</span><b>It turns</b><p>When it becomes a habit, the key turns and the gate swings open.</p></div>
+      </div>
     </div></section>
-    <section class="sec final"><div class="wrap"><h2>One a day. In order.</h2><p class="lede">Reading the list is not the practice. Walking it is.</p><div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Begin with Vault</a><a class="btn btn-line" href="/the-180/">The 180 for the body</a></div></div></section>
+    <section class="sec" id="chambers"><div class="wrap">
+      <div class="sec-head"><p class="eyebrow">The keys, chamber by chamber</p><h2>Every key has a room.</h2><p class="lede">The year moves through eleven chambers, one part of your life at a time, with a month of rest in the middle. Each chamber holds its own keys. Open one to see what it asks of you.</p></div>
+      <div class="ck">
+        {chambers.map(c => c.rest ? (
+          <div class="ck-row ck-rest"><span class="ck-m">{String(c.month).padStart(2,'0')}</span><div class="ck-t"><b>Rest</b> <i>by Restoring</i><small>{c.asks}</small></div></div>
+        ) : (
+          <details class="ck-row"><summary><span class="ck-m">{String(c.month).padStart(2,'0')}</span><div class="ck-t"><b>{c.chamber}</b> <i>by {c.verb}</i><small>{c.title}</small></div><span class="ck-n">{c.mind.length} keys</span></summary>
+            <div class="ck-body"><div class="ck-ask"><p><span>What this chamber asks</span>{c.asks}</p><p><span>What a key asks of you</span>{c.mindDo}</p></div>
+            <ul class="ck-keys">{c.mind.map(k => <li>{k}</li>)}</ul></div>
+          </details>
+        ))}
+      </div>
+    </div></section>
+    <section class="sec final"><div class="wrap"><h2>You never hunt for keys.</h2><p class="lede">They come to you in order, one a morning, with a coach beside you.</p><div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Begin with Vault</a><a class="btn btn-line" href="/the-180/">The 180 · keys for the body</a></div></div></section>
   </main>
   <footer class="site"><div class="wrap foot">
     <div><a class="brand" href="/">Vault <b>Human</b></a><p>Daily coaching with Russ Michaels.</p><p><a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a></p></div>
