@@ -45,14 +45,16 @@ const year = new Date().getFullYear();
       </div>
     </div></section>
     <section class="sec" id="chambers"><div class="wrap">
-      <div class="sec-head"><p class="eyebrow">The keys, chamber by chamber</p><h2>Every key has a room.</h2><p class="lede">The year moves through eleven chambers, one part of your life at a time, with a pause after the fifth to rest and integrate. Each chamber holds its own keys. Open one to see what it asks of you.</p></div>
+      <div class="sec-head"><p class="eyebrow">The keys, chamber by chamber</p><h2>Every key has a room.</h2><p class="lede">The year moves through eleven chambers, one part of your life at a time, with a pause after the fifth to rest and integrate. Each chamber has its own focus. Open one to see what we coach and what you'll do.</p></div>
       <div class="ck">
         {chambers.map(c => c.rest ? (
           <div class="ck-row ck-rest"><span class="ck-m ck-pause" aria-hidden="true">‖</span><div class="ck-t"><b>Integration</b> <i>a pause, not a chamber</i><small>{c.asks}</small></div></div>
         ) : (
           <details class="ck-row"><summary><span class="ck-m">{String(c.n).padStart(2,'0')}</span><div class="ck-t"><b>{c.chamber}</b> <i>by {c.verb}</i><small>{c.title}</small></div><span class="ck-n">{c.body.length} keys</span></summary>
-            <div class="ck-body"><div class="ck-ask"><p><span>What this chamber asks</span>{c.asks}</p><p><span>What a key asks of you</span>{c.bodyDo}</p></div>
-            <ul class="ck-keys">{c.body.map(k => <li>{k}</li>)}</ul></div>
+            <div class="ck-body"><p class="ck-q">{c.asks}</p>
+              <div class="ck-ask"><div><span>What we coach</span><ul>{c.bodyThemes.map(x => <li>{x}</li>)}</ul></div><div><span>What you'll do</span><ul>{c.bodyPractice.map(x => <li>{x}</li>)}</ul></div></div>
+              <div class="ck-reel" aria-label="Ideas your coach draws on in this chamber"><span>Ideas your coach draws on</span><div class="ck-track"><div class="ck-run">{c.body.map(k => <em>{k}</em>)}</div><div class="ck-run" aria-hidden="true">{c.body.map(k => <em>{k}</em>)}</div></div></div>
+            </div>
           </details>
         ))}
       </div>
