@@ -249,3 +249,20 @@ header.site .navdrop__menu a:hover{background:rgba(241,237,228,.08)}
  body.nav-open header.site{background:transparent;box-shadow:none;border-bottom:0}
 }
 body.nav-open header.site{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:transparent!important}
+
+/* Wrap polish (10/17): no orphan words, rows that line up */
+h1,h2,h3,h4,.lede,.eyebrow{text-wrap:balance}
+p,li,em,figcaption,dd,.faq p{text-wrap:pretty}
+.quiz .opts a small{display:block;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:2px}
+.quiz .opts a b{white-space:nowrap}
+.tlc{display:flex;flex-direction:column}
+.tlc p{margin-bottom:0}
+.tlc span{margin-top:auto;padding-top:16px}
+.loop-steps h3{white-space:nowrap}
+.foot li{white-space:nowrap}
+@media(min-width:801px){.foot{grid-template-columns:1.3fr 1fr 1.2fr}}
+.offers-note,.tlc p,.proof-grid a em,.loop-steps p,.trio p,.quiz p,.guarantee,.wd,.sec-head p,.mcard p,.strip-head p,figcaption,.sp-topic p,.sp-fee p{text-wrap:balance}
+.listcat small{white-space:nowrap}
+.sec-head .lede{max-width:58ch}
+.loop-steps h3{white-space:normal;font-size:clamp(21px,1.75vw,25px)}
+.loop-steps p{text-wrap:pretty}
