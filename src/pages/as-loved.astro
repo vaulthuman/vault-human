@@ -103,7 +103,7 @@ const year = new Date().getFullYear();
   <div class="dk-pop__card" role="dialog" aria-modal="true" aria-labelledby="dk-pop-title">
     <button class="dk-pop__x" type="button" data-dk-close aria-label="Close">&times;</button>
     <svg class="dk-icon" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M32 6v7M32 51v7M6 32h7M51 32h7M13.6 13.6l5 5M45.4 45.4l5 5M13.6 50.4l5-5M45.4 18.6l5-5"/><circle cx="26" cy="32" r="7"/><path d="M33 32h16M44 32v5M48 32v4"/></g></svg>
-    <h2 class="dk-title" id="dk-pop-title">The Daily Key</h2>
+    <h2 class="dk-title" id="dk-pop-title">The Vault Key</h2>
     <p class="dk-sub">Free guidance from Russ in your inbox, five mornings a week. One short teaching, one small practice.</p>
     <form class="dk-form" novalidate><label class="dk-sr" for="dk-email-pop">Email</label><input id="dk-email-pop" type="email" name="email" placeholder="Email" autocomplete="email" required /><button type="submit">Subscribe</button></form>
     <p class="dk-fine">Free. Unsubscribe any time. We never share your email.</p>
@@ -124,7 +124,7 @@ const year = new Date().getFullYear();
         var v=(inp.value||'').trim();
         if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){msg.textContent='Please enter a valid email address.';inp.focus();return;}
         btn.disabled=true;msg.textContent='Sending…';
-        fetch(URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fields:[{name:'email',value:v},{name:'message',value:'Daily Key subscriber'}],context:{pageUri:location.href,pageName:'Daily Key signup · '+document.title}})})
+        fetch(URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fields:[{name:'email',value:v},{name:'message',value:'Vault Key subscriber'}],context:{pageUri:location.href,pageName:'Vault Key signup · '+document.title}})})
         .then(function(r){if(!r.ok)throw 0;put('dk_sub','1');f.style.display='none';msg.textContent='You’re in. Your first key arrives tomorrow morning.';try{gtag('event','sign_up',{method:'daily_key'})}catch(_){};})
         .catch(function(){btn.disabled=false;msg.innerHTML='That didn’t go through. Try again, or write to <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a>.';});
       });
