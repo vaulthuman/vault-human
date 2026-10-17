@@ -217,3 +217,10 @@ header.site .navlinks .btn{color:#121715}
 @media(max-width:760px){.sp-offers{grid-template-columns:repeat(2,minmax(0,1fr))}.sp-offers li{font-size:22px;padding:16px 8px}.sp-fees,.sp-row{grid-template-columns:1fr}.sp-form .btn{width:100%}.sp-topics li{grid-template-columns:48px minmax(0,1fr)}.sp-topics li:before{font-size:32px}}
 .guide-grid .lede a{color:var(--acc-soft)}
 @media(max-width:1120px){header.site .navlinks a:not(.btn){display:none}body.nav-open header.site .navlinks a:not(.btn){display:block}}
+/* proof band as a legend */
+.hero-video .proof .wrap{padding-top:22px;padding-bottom:24px}
+.proof-intro{text-align:center;color:rgba(241,237,228,.9);font-size:16px;margin:0 auto 18px;max-width:72ch}
+.proof-intro b{color:var(--acc-soft);font-weight:600}
+.proof-grid{padding:0!important}
+.proof-grid a em{display:block;font-style:normal;font-size:13px;line-height:1.4;color:rgba(241,237,228,.78);margin-top:6px;max-width:22ch;margin-left:auto;margin-right:auto}
+@media(max-width:760px){.proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 0}.proof-grid a{border-left:0!important;padding:4px 8px}.proof-grid a:last-child{grid-column:span 2}.proof-intro{font-size:15px}}
