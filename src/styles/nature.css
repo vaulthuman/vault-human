@@ -225,3 +225,4 @@ header.site .navlinks .btn{color:#121715}
 .proof-grid a em{display:block;font-style:normal;font-size:13px;line-height:1.4;color:rgba(241,237,228,.78);margin-top:6px;max-width:22ch;margin-left:auto;margin-right:auto}
 @media(max-width:760px){.proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 0}.proof-grid a{border-left:0!important;padding:4px 8px}.proof-grid a:last-child{grid-column:span 2}.proof-intro{font-size:15px}}
 .quiz .opts a i{display:block;font-style:italic;font-size:14px;color:var(--acc-soft);margin:2px 0 8px}
+.faq p a{color:var(--acc-soft)}
