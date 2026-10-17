@@ -6,8 +6,6 @@
 "month": 1,
 "title": "Getting to know myself",
 "asks": "Know yourself first.",
-"mindDo": "Take the mirror or read the chapter today. Write three lines: what fit, what didn't, what you were handed.",
-"bodyDo": "Log the number the key asks for. No judgment, just the number and the date.",
 "mind": [
 "Og Mandino",
 "Emerson and Thoreau",
@@ -51,6 +49,27 @@
 "Bone loading",
 "Physical literacy",
 "The Framingham Heart Study"
+],
+"mindThemes": [
+"How you're wired",
+"Your strengths",
+"The story you were handed",
+"Owning your choices"
+],
+"mindPractice": [
+"Take a short self-assessment with your coach",
+"Write three lines: what fits, what doesn't",
+"Walk outside before your phone"
+],
+"bodyThemes": [
+"Your baseline",
+"How your body is built",
+"Moving every day"
+],
+"bodyPractice": [
+"Log four numbers: steps, sleep, weight, resting heart rate",
+"A daily walk",
+"Note how you feel, without judging"
 ]
 },
 {
@@ -60,8 +79,6 @@
 "month": 2,
 "title": "Coming into my body",
 "asks": "Change enters through the body, not the argument.",
-"mindDo": "Do the practice once today, timed. Notice what your body did before your mind had an opinion.",
-"bodyDo": "Run the dose today at the size your worst week could hold.",
 "mind": [
 "Caroline Myss",
 "Resmaa Menakem",
@@ -126,6 +143,27 @@
 "The nature cure",
 "The YMCA",
 "African traditional medicine"
+],
+"mindThemes": [
+"Calming your nervous system",
+"Breath as a lever",
+"Letting go of tension",
+"Feeling before thinking"
+],
+"mindPractice": [
+"Five minutes of slow breathing",
+"A body scan before bed",
+"A stretch break in the afternoon"
+],
+"bodyThemes": [
+"Strength",
+"Mobility",
+"Moving with intent"
+],
+"bodyPractice": [
+"A short strength session",
+"Ten minutes of mobility",
+"A walk you can talk through"
 ]
 },
 {
@@ -135,8 +173,6 @@
 "month": 3,
 "title": "Paying attention",
 "asks": "What you attend to grows.",
-"mindDo": "Sit or practice for ten minutes. Name one thing you noticed that you usually miss.",
-"bodyDo": "The sleep or attention dose tonight; the number in the morning.",
 "mind": [
 "A Course in Miracles",
 "Marianne Williamson",
@@ -190,6 +226,27 @@
 "Yoga nidra",
 "Recovery and deload",
 "Nasal breathing"
+],
+"mindThemes": [
+"Attention",
+"Presence",
+"Gratitude",
+"Noticing your thoughts"
+],
+"mindPractice": [
+"A ten-minute sit",
+"One line of gratitude",
+"A phone-free hour"
+],
+"bodyThemes": [
+"Sleep",
+"Light",
+"Recovery"
+],
+"bodyPractice": [
+"The same wake time every day",
+"Morning light in your eyes",
+"Screens off an hour before bed"
 ]
 },
 {
@@ -199,8 +256,6 @@
 "month": 4,
 "title": "Finding my why",
 "asks": "A reason you can say out loud, in your own words.",
-"mindDo": "Write the why this key asks for, in your own words, today.",
-"bodyDo": "Eat one meal this way today and say why you chose it.",
 "mind": [
 "Montessori",
 "Waldorf",
@@ -262,6 +317,27 @@
 "Hydration by thirst",
 "Traditional foods",
 "Free sugars"
+],
+"mindThemes": [
+"Your why",
+"Your story",
+"Purpose",
+"How you grow"
+],
+"mindPractice": [
+"Write your why in one sentence",
+"Start a letter to the people who come after you",
+"Name what matters most this year"
+],
+"bodyThemes": [
+"How you eat",
+"Why you eat that way",
+"A table you choose"
+],
+"bodyPractice": [
+"One meal a day, by choice",
+"Say why you chose it",
+"Plan the week's table"
 ]
 },
 {
@@ -271,8 +347,6 @@
 "month": 5,
 "title": "Saying the unsaid",
 "asks": "Name what is hidden. The unspoken runs you until it is spoken.",
-"mindDo": "Do the homework the key sets: a letter you won't send, a timeline, a named thing. If it is trauma, book the right door.",
-"bodyDo": "Name the hidden number. Read the panel with someone who reads panels.",
 "mind": [
 "John Bradshaw",
 "Twelve Steps",
@@ -315,6 +389,27 @@
 "Elimination and reintroduction",
 "Nutrigenomics",
 "Glucose monitoring"
+],
+"mindThemes": [
+"Naming what's hidden",
+"Patterns from the past",
+"Being kind to yourself",
+"Knowing when to bring in a professional"
+],
+"mindPractice": [
+"Write a letter you won't send",
+"Map one pattern back to where it started",
+"Book the right support if you need it"
+],
+"bodyThemes": [
+"The numbers you haven't checked",
+"Your gut",
+"Getting looked at"
+],
+"bodyPractice": [
+"Have your bloodwork read",
+"Add one fermented food",
+"Book the checkup"
 ]
 },
 {
@@ -335,8 +430,6 @@
 "month": 7,
 "title": "Finding my people",
 "asks": "You grow in a circle. No one changes alone.",
-"mindDo": "Make the call, the apology or the ask this key names, or show up to the circle.",
-"bodyDo": "Eat with someone, keep a fast of your tradition, or cook a people's dish that isn't yours.",
 "mind": [
 "Tutu and Mandela",
 "Nonviolent Communication",
@@ -381,6 +474,26 @@
 "Veganism",
 "Langar",
 "The Bahá'í Fast"
+],
+"mindThemes": [
+"Listening",
+"Hard conversations",
+"Relationships",
+"Finding your people"
+],
+"mindPractice": [
+"Make the call you've been putting off",
+"Have the conversation",
+"Join or start a circle"
+],
+"bodyThemes": [
+"Eating together",
+"The traditions of the table"
+],
+"bodyPractice": [
+"Share a meal with someone",
+"Cook for someone",
+"Keep a tradition's table for a day"
 ]
 },
 {
@@ -390,8 +503,6 @@
 "month": 8,
 "title": "Keeping a rhythm",
 "asks": "Rhythm beats intensity. The small thing, repeated.",
-"mindDo": "Do the tiny version today and set the cue for tomorrow.",
-"bodyDo": "Do the session, the window or the walk. Log the rhythm, not the intensity.",
 "mind": [
 "The Inner Game",
 "Tiny Habits",
@@ -431,6 +542,27 @@
 "Swimming",
 "Couch to 5K",
 "Polarized training"
+],
+"mindThemes": [
+"Tiny habits",
+"Routines",
+"Focus",
+"Consistency over intensity"
+],
+"mindPractice": [
+"Anchor one tiny habit to one you already have",
+"A focused work block",
+"Set tomorrow's cue tonight"
+],
+"bodyThemes": [
+"Steady cardio",
+"An eating window",
+"Training you can repeat"
+],
+"bodyPractice": [
+"A steady walk or run",
+"Eat inside the same hours",
+"Log the rhythm, not the intensity"
 ]
 },
 {
@@ -440,8 +572,6 @@
 "month": 9,
 "title": "Letting go",
 "asks": "Let go to move forward. Release before reach.",
-"mindDo": "Release one thing: a story, a grudge, a plan. Say it out loud to someone.",
-"bodyDo": "Set it down for the day, or step into the heat or the cold. Count the minutes.",
 "mind": [
 "est and Landmark",
 "The Dale Carnegie Course",
@@ -500,6 +630,27 @@
 "Banya",
 "Temazcal and sweat lodge",
 "The siesta"
+],
+"mindThemes": [
+"Letting go",
+"Forgiveness",
+"Old stories",
+"Courage"
+],
+"mindPractice": [
+"Name one thing to release and say it out loud",
+"Forgive one thing",
+"Do one brave thing"
+],
+"bodyThemes": [
+"Heat and cold",
+"Time in nature",
+"Cutting back"
+],
+"bodyPractice": [
+"A sauna or a cold plunge",
+"Two hours outside this week",
+"A week off one thing"
 ]
 },
 {
@@ -509,8 +660,6 @@
 "month": 10,
 "title": "Facing the future",
 "asks": "The horizon makes the day matter.",
-"mindDo": "Face the horizon the key names: write the date, the picture or the plan.",
-"bodyDo": "Measure the number that predicts your next thirty years, or keep one line of an ancient regimen.",
 "mind": [
 "I Ching",
 "Tarot",
@@ -579,6 +728,27 @@
 "Tibetan medicine",
 "Kampo",
 "Unani"
+],
+"mindThemes": [
+"The long view",
+"Planning",
+"Legacy",
+"Health as an investment"
+],
+"mindPractice": [
+"Write the plan",
+"Picture your life at eighty",
+"Put your documents in order"
+],
+"bodyThemes": [
+"The numbers that predict the next thirty years",
+"Healthspan",
+"Old wisdom about living long"
+],
+"bodyPractice": [
+"Know your numbers",
+"Book the scan",
+"Keep one longevity habit"
 ]
 },
 {
@@ -588,8 +758,6 @@
 "month": 11,
 "title": "Handing it on: of service to others, and to yourself",
 "asks": "Every key had a teacher. Now you are one.",
-"mindDo": "Teach this key to one person today, or lead one thing it describes.",
-"bodyDo": "Read the guideline, meet the system, name your own practitioners.",
 "mind": [
 "EOS / Traction",
 "The GROW model",
@@ -628,6 +796,24 @@
 "Peer weigh-ins",
 "Food sovereignty",
 "The NIH"
+],
+"mindThemes": [
+"Leading",
+"Teaching",
+"Serving others, and yourself"
+],
+"mindPractice": [
+"Teach one thing you've learned",
+"Lead one thing",
+"Give an hour"
+],
+"bodyThemes": [
+"Your care team",
+"How the experts set the standard"
+],
+"bodyPractice": [
+"Name your doctor, trainer and practitioners",
+"Share what's working with one person"
 ]
 },
 {
@@ -637,8 +823,6 @@
 "month": 12,
 "title": "Sharing it: with others, and of yourself",
 "asks": "It ends in sharing: how the world's traditions hold and give.",
-"mindDo": "Visit as a guest: the service, the house, the table of a tradition. Learn how they share.",
-"bodyDo": "Cook a people's dish that isn't yours and serve it to someone.",
 "mind": [
 "Norse religion",
 "Palestinian liberation theology",
@@ -702,6 +886,22 @@
 "Arctic eating",
 "Indigenous foodways",
 "The Hadza"
+],
+"mindThemes": [
+"The world's traditions",
+"Generosity",
+"Sharing what you learned"
+],
+"mindPractice": [
+"Visit a tradition as a guest",
+"Tell your story to someone",
+"Give something away"
+],
+"bodyThemes": [
+"The tables of the world"
+],
+"bodyPractice": [
+"Cook a dish from another culture and serve it"
 ]
 }
 ]
