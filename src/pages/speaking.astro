@@ -1,59 +1,170 @@
 ---
-import Base from '../layouts/Base.astro';
+import '../styles/home.css';
+import '../styles/nature.css';
+const year = new Date().getFullYear();
 ---
-<Base title="Speaking — Russ Michaels, Vault Human" description="Russ Michaels speaks on AI, authorship, and self-government — which decisions belong in human hands, and why.">
-<div class="wrap">
-<div class="pagehead">
-<p class="eyebrow">Speaking</p>
-<h1>A human on the podium.</h1>
-<p class="dek">Russ Michaels speaks on AI, authorship, and self-government &mdash; which decisions belong in human hands, and why.</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Speaking — Russ Michaels · Vault Human</title><link rel="canonical" href="https://www.vaulthuman.com/speaking/">
+  <meta name="description" content="Book Russ Michaels to speak: keynotes, conversations and workshops on listening, judgment and what stays human as AI gets brilliant.">
+  <meta property="og:title" content="Speaking — Russ Michaels · Vault Human"><meta property="og:description" content="Book Russ Michaels to speak: keynotes, conversations and workshops on listening, judgment and what stays human as AI gets brilliant."><meta property="og:image" content="https://www.vaulthuman.com/og-vaulthuman.png"><meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Google Ads gtag (AW-18371546487) + HubSpot conversion listener -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18371546487"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};var gtag=window.gtag;
+    gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD',{linker:{domains:['vaulthuman.com','tercetlaw.com','fretworksystems.com','triplicityadvisory.com']}});
+    (function(){var fired=false;function fire(){if(fired)return;fired=true;gtag('event','conversion',{send_to:'AW-18371546487/r4eECOKGw9wcEPeanrhE'});gtag('event','generate_lead');}
+    window.addEventListener('message',function(e){var d=e&&e.data;if(!d)return;if(typeof d==='string'){try{d=JSON.parse(d);}catch(_){return;}}if(!d||typeof d!=='object')return;var t=d.type||d.messageType||'',n=d.eventName||d.event||'';if(t==='hsFormCallback'&&(n==='onFormSubmitted'||n==='onFormSubmit'))fire();else if(n==='onFormSubmitted')fire();else if(d.accepted===true&&d.formGuid)fire();});
+    window.addEventListener('hsFormCallback',function(e){if(e&&e.detail&&e.detail.eventName==='onFormSubmitted')fire();});})();
+  </script>
+</head>
+<body data-time="all" class="page-speaking">
+  <header class="site"><div class="wrap bar">
+    <a class="brand" href="/">Vault <b>Human</b></a>
+    <nav class="navlinks" id="navlinks"><a href="/#how">How it works</a><a href="/method/">The method</a><a href="/the-360/">The 360</a><a href="/the-180/">The 180</a><a href="/#pricing">Pricing</a><a href="/#russ">About Russ</a><a href="/speaking/">Speaking</a><a class="btn btn-acc" href="#" data-open-form>Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div></header>
+  <main>
+    <section class="hero hero-video"><video class="bgvid" autoplay muted loop playsinline poster="/img/russ/v2/home-room-poster.jpg"><source src="/img/russ/v2/home-room.mp4" type="video/mp4"></video><div class="veil"></div>
+      <div class="wrap hero-grid"><div class="hero-copy">
+        <p class="eyebrow">Russ Michaels · Speaking</p>
+        <h1>A human <em>on the podium.</em></h1>
+        <p class="lede">Russ speaks on listening, judgment and what stays human as the machines get brilliant. An attorney, a twenty-year operator, and a coach who has stood in the rooms where people decide what their lives are for.</p>
+        <div class="ctarow"><a class="btn btn-acc" href="#book">Book Russ</a><a class="btn btn-line" href="#topics">See the topics</a></div>
+      </div></div>
+    </section>
+
+    <section class="sec" id="offers"><div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Russ offers</p><h2>Keynotes and rooms.</h2></div>
+      <ul class="sp-offers"><li>Keynotes</li><li>Moderated conversations</li><li>Workshops</li><li>Fireside chats</li><li>Leadership offsites</li><li>Guided practices</li></ul>
+    </div></section>
+
+    <section class="sec gallery-sec"><div class="wrap"><p class="strip-head">On stage and in the room</p><div class="gallery">
+      <figure><img src="/img/russ/v2/home-mic.jpg" alt="Russ speaking with a microphone on a lit stage" style="object-position:50% 28%" loading="lazy" /><figcaption>Keynotes</figcaption></figure>
+      <figure><img src="/img/russ/v2/home-marianne.jpg" alt="Russ on stage with a microphone beside Marianne Williamson" style="object-position:80% 40%" loading="lazy" /><figcaption>Conversations</figcaption></figure>
+      <figure><img src="/img/russ/v2/learned-whiteboard.jpg" alt="Russ teaching in front of a whiteboard drawing of the 360" style="object-position:50% 50%" loading="lazy" /><figcaption>Workshops</figcaption></figure>
+    </div></div></section>
+
+    <section class="sec alt" id="topics"><div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Most requested</p><h2>Topics.</h2><p class="lede">Every talk is built for your room and your people. These are where most start.</p></div>
+      <ol class="sp-topics"><li><h3>Let AI get brilliant. Let us get wiser.</h3><p>The machines are getting smarter every month. The question is whether we are. A keynote on judgment, attention and the parts of a life that should never be automated.</p></li><li><h3>Whose choice was it?</h3><p>Estate law has a test for decisions that are yours in name only. Russ runs it, live, on the AI tools your people already use.</p></li><li><h3>Who sings the “we”?</h3><p>Forty voices, one song. What a 1985 recording session teaches about teams, ego and keeping the human part in the room.</p></li><li><h3>The listening loop</h3><p>Listen, hear, discern, create. The communication practice under every Vault Human program, built for leaders and teams.</p></li><li><h3>Hand on the key</h3><p>Leading when your tools act on their own: who checks the math, who owns the off switch, and who takes the stick when it matters.</p></li><li><h3>Law, life, legacy: one house</h3><p>Why the help we get comes in pieces, and how families and companies put it back together.</p></li><li><h3>The films that saw it coming</h3><p>WarGames, 2001, Electric Dreams. Classic movies, current headlines, and what they ask of us now.</p></li></ol>
+    </div></section>
+
+    <section class="sec" id="fees"><div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Fees</p><h2>Simple and clear.</h2></div>
+      <div class="sp-fees"><div><h3>Keynote</h3><p class="sp-price">From $7,500</p><p>Plus travel. Virtual keynotes from $3,500.</p></div><div><h3>Conversation or fireside</h3><p class="sp-price">From $3,500</p><p>Panels, moderated conversations and firesides, plus travel.</p></div><div><h3>Workshop or offsite</h3><p class="sp-price">From $12,500</p><p>A half-day working session for a board or leadership team.</p></div></div>
+      <p class="offers-note">Nonprofit and education rates on request.</p>
+    </div></section>
+
+    <section class="sec alt" id="book"><div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Book Russ</p><h2>Tell us about your event.</h2><p class="lede">Share as much as you can. Russ reads every request and answers within two business days.</p></div>
+      <form class="sp-form" id="sp-form" novalidate>
+        <div class="sp-row"><label>First name<input name="firstname" required autocomplete="given-name"></label><label>Last name<input name="lastname" required autocomplete="family-name"></label></div>
+        <div class="sp-row"><label>Email<input name="email" type="email" required autocomplete="email"></label><label>Phone<input name="phone" type="tel" autocomplete="tel"></label></div>
+        <div class="sp-row"><label>Organization<input name="company" autocomplete="organization"></label><label>Event website<input name="site" type="url" placeholder="https://"></label></div>
+        <div class="sp-row"><label>In person or virtual<select name="mode"><option value="">Choose one</option><option>In person</option><option>Virtual</option><option>Not sure yet</option></select></label><label>Event date(s)<input name="dates" placeholder="e.g. March 12, 2027"></label></div>
+        <div class="sp-row"><label>Format<select name="format"><option value="">Choose one</option><option>Keynotes</option><option>Moderated conversations</option><option>Workshops</option><option>Fireside chats</option><option>Leadership offsites</option><option>Guided practices</option><option>Not sure yet</option></select></label><label>Length<select name="length"><option value="">Choose one</option><option>Under 1 hour</option><option>1 to 2 hours</option><option>Half day</option><option>Full day</option><option>Not sure yet</option></select></label></div>
+        <div class="sp-row"><label>Topic of interest<select name="topic"><option value="">Choose one</option><option>Let AI get brilliant. Let us get wiser.</option><option>Whose choice was it?</option><option>Who sings the “we”?</option><option>The listening loop</option><option>Hand on the key</option><option>Law, life, legacy: one house</option><option>The films that saw it coming</option><option>Something else</option></select></label><label>Proposed budget<select name="budget"><option value="">Choose one</option><option>Under $5,000</option><option>$5,000 to $10,000</option><option>$10,000 to $20,000</option><option>Over $20,000</option><option>Not sure yet</option></select></label></div>
+        <div class="sp-row"><label>Location<input name="location" placeholder="City, state"></label><label>Expected attendance<input name="size" inputmode="numeric" placeholder="e.g. 250"></label></div>
+        <label>Who is in the audience, and what do you hope they leave with?<textarea name="about" rows="4"></textarea></label>
+        <button class="btn btn-acc" type="submit">Send the request</button>
+        <p class="sp-msg" aria-live="polite"></p>
+      </form>
+    </div></section>
+
+    <section class="sec dark vid-sec" id="russ"><video class="bgvid" autoplay muted loop playsinline><source src="https://assets.mixkit.co/videos/47818/47818-720.mp4" type="video/mp4"></video><div class="veil"></div><div class="wrap guide-grid">
+      <img src="/russ-michaels.jpg" alt="Russ Michaels" width="340" height="425" loading="lazy" />
+      <div><p class="eyebrow">About the speaker</p><h2>Russ Michaels, Esq.</h2><p class="lede">Founder of Vault Human. For over twenty years Russ has led organizations as a CEO, executive director and board president, and he still practices law. He speaks as an operator and a builder, not a theorist: someone who has raised capital, run teams, and stood with people through the decisions that shape a life.</p><p class="lede">His SXSW 2027 proposal, “Who Sings the We? Optimized Out of Your Own World,” is on <a href="/sxsw">the SXSW page</a>. Read his thinking in <a href="/writing">Writing</a>.</p><div class="ctarow"><a class="btn btn-acc" href="#book">Book Russ</a><a class="btn btn-ghost" href="https://www.linkedin.com/in/russ-michaels/" target="_blank" rel="noopener">LinkedIn</a></div></div>
+    </div></section>
+
+    <section class="sec dk-band" id="daily-key"><div class="wrap dk-band__in">
+  <svg class="dk-icon" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M32 6v7M32 51v7M6 32h7M51 32h7M13.6 13.6l5 5M45.4 45.4l5 5M13.6 50.4l5-5M45.4 18.6l5-5"/><circle cx="26" cy="32" r="7"/><path d="M33 32h16M44 32v5M48 32v4"/></g></svg>
+  <h2 class="dk-title">The Daily Key</h2>
+  <p class="dk-sub">One short teaching and one small practice from Russ, free in your inbox five mornings a week.</p>
+  <form class="dk-form" novalidate><label class="dk-sr" for="dk-email-inline">Email</label><input id="dk-email-inline" type="email" name="email" placeholder="Your email" autocomplete="email" required /><button type="submit">Send me the key</button></form>
+  <p class="dk-fine">Free. Unsubscribe any time. We never share your email.</p>
+  <p class="dk-msg" aria-live="polite"></p>
+</div></section>
+  </main>
+  <footer class="site"><div class="wrap foot">
+    <div><a class="brand" href="/">Vault <b>Human</b></a><p>Daily coaching with Russ Michaels.</p><p><a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a></p></div>
+    <ul><li><a href="/as-learned/">As Learned · the past</a></li><li><a href="/as-loved/">As Loved · the present</a></li><li><a href="/as-lived/">As Lived · the future</a></li><li><a href="/#pricing">Pricing</a></li><li><a href="/writing">Writing</a></li><li><a href="/speaking/">Speaking</a></li></ul>
+    <ul><li><a href="https://www.fretworksystems.com">Fretwork Systems</a> — automation for businesses</li><li><a href="https://triplicityadvisory.com">Triplicity Advisory</a> — executive and leadership coaching</li><li><a href="https://www.tercetlaw.com">Tercet Law</a> — wills, trusts, succession</li></ul>
+  </div><div class="wrap legal"><span>&copy; {year} Vault Human, LLC. Coaching is not legal, medical, financial or therapeutic advice.</span><span>Learn · Love · Live · Listen</span></div></footer>
+  <div id="vh-modal" class="vh-modal" aria-hidden="true"><div class="vh-modal__bg" data-close-form></div><div class="vh-modal__card" role="dialog" aria-modal="true" aria-label="Begin your year with Russ"><button class="vh-modal__x" type="button" data-close-form aria-label="Close">&times;</button><h2 class="vh-modal__title">Begin your year with Russ</h2><p class="vh-modal__sub">Tell us a little about you. Russ will write back personally, and tomorrow at 7 a.m. your first key arrives: a short teaching and one small practice to start your first chamber. Your first week is on us.</p><div class="hs-form-frame" data-region="na2" data-form-id="3f225ab5-5a70-46d9-a497-29e6256b1e52" data-portal-id="246947446"></div></div></div>
+  <script is:inline src="https://js-na2.hsforms.net/forms/embed/246947446.js" defer></script>
+  <script is:inline>
+  (function(){var m=document.getElementById('vh-modal');if(!m)return;function o(e){if(e)e.preventDefault();m.classList.add('is-open');m.setAttribute('aria-hidden','false');document.documentElement.style.overflow='hidden';}function c(){m.classList.remove('is-open');m.setAttribute('aria-hidden','true');document.documentElement.style.overflow='';}document.addEventListener('click',function(e){var t=e.target.closest('[data-open-form]');if(t){o(e);return;}if(e.target.closest('[data-close-form]'))c();});document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});})();
+  addEventListener('DOMContentLoaded',function(){document.body.classList.add('ready');if(!('IntersectionObserver'in window))return;var e=[].slice.call(document.querySelectorAll('.sec .wrap > *'));e.forEach(function(x){x.classList.add('reveal')});var o=new IntersectionObserver(function(t){t.forEach(function(y){if(y.isIntersecting){y.target.classList.add('in');o.unobserve(y.target)}})},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});e.forEach(function(x){o.observe(x)});});
+  </script>
+  <div class="stickybar" id="stickybar"><span>Daily coaching with Russ Michaels</span><a class="btn btn-acc" href="#" data-open-form>Begin</a></div>
+  <script is:inline>
+  (function(){var sb=document.getElementById('stickybar');if(sb){document.body.classList.add('has-sticky');setTimeout(function(){sb.classList.add('on')},6000);}
+  var shown=false;try{shown=!!sessionStorage.getItem('vhpop')}catch(e){}
+  function pop(){if(shown)return;shown=true;try{sessionStorage.setItem('vhpop','1')}catch(e){}var m=document.getElementById('vh-modal');if(m&&!m.classList.contains('is-open')){m.classList.add('is-open');m.setAttribute('aria-hidden','false');}}
+  
+  })();
+  </script>
+  <script is:inline>document.querySelectorAll("video.bgvid").forEach(function(v){v.playbackRate=0.6;v.addEventListener("loadedmetadata",function(){v.playbackRate=0.6;});});</script>
+<script is:inline>(function(){var b=document.querySelector(".navtoggle"),n=document.getElementById("navlinks");if(!b||!n)return;function set(o){document.body.classList.toggle("nav-open",o);b.setAttribute("aria-expanded",o?"true":"false");b.setAttribute("aria-label",o?"Close menu":"Open menu");}b.addEventListener("click",function(){set(!document.body.classList.contains("nav-open"));});n.addEventListener("click",function(e){if(e.target.closest("a"))set(false);});document.addEventListener("keydown",function(e){if(e.key==="Escape")set(false);});})();</script>
+
+<script is:inline>
+(function(){var f=document.getElementById('sp-form');if(!f)return;var msg=f.querySelector('.sp-msg');
+f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f),g=function(k){return (d.get(k)||'').toString().trim()};
+if(!g('firstname')||!g('lastname')||!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(g('email'))){msg.textContent='Please add your name and a valid email.';return;}
+var lines=['SPEAKING REQUEST','Mode: '+g('mode'),'Dates: '+g('dates'),'Format: '+g('format'),'Length: '+g('length'),'Topic: '+g('topic'),'Budget: '+g('budget'),'Location: '+g('location'),'Attendance: '+g('size'),'Website: '+g('site'),'Audience: '+g('about')];
+var b=f.querySelector('button');b.disabled=true;msg.textContent='Sending…';
+fetch('https://api.hsforms.com/submissions/v3/integration/submit/246947446/3f225ab5-5a70-46d9-a497-29e6256b1e52',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fields:[{name:'firstname',value:g('firstname')},{name:'lastname',value:g('lastname')},{name:'email',value:g('email')},{name:'phone',value:g('phone')},{name:'company',value:g('company')},{name:'message',value:lines.join('\n')}],context:{pageUri:location.href,pageName:'Speaking request'}})})
+.then(function(r){if(!r.ok)throw 0;f.reset();msg.textContent='Thank you. Your request is in, and Russ will answer within two business days.';try{gtag('event','generate_lead',{form:'speaking'})}catch(_){}})
+.catch(function(){msg.innerHTML='That didn’t go through. Please write to <a href="mailto:russ@vaulthuman.com">russ@vaulthuman.com</a>.'}).finally(function(){b.disabled=false});});})();
+</script>
+<div class="dk-pop" id="dk-pop" aria-hidden="true">
+  <div class="dk-pop__bg" data-dk-close></div>
+  <div class="dk-pop__card" role="dialog" aria-modal="true" aria-labelledby="dk-pop-title">
+    <button class="dk-pop__x" type="button" data-dk-close aria-label="Close">&times;</button>
+    <svg class="dk-icon" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M32 6v7M32 51v7M6 32h7M51 32h7M13.6 13.6l5 5M45.4 45.4l5 5M13.6 50.4l5-5M45.4 18.6l5-5"/><circle cx="26" cy="32" r="7"/><path d="M33 32h16M44 32v5M48 32v4"/></g></svg>
+    <h2 class="dk-title" id="dk-pop-title">The Daily Key</h2>
+    <p class="dk-sub">Free guidance from Russ in your inbox, five mornings a week. One short teaching, one small practice.</p>
+    <form class="dk-form" novalidate><label class="dk-sr" for="dk-email-pop">Email</label><input id="dk-email-pop" type="email" name="email" placeholder="Email" autocomplete="email" required /><button type="submit">Subscribe</button></form>
+    <p class="dk-fine">Free. Unsubscribe any time. We never share your email.</p>
+    <p class="dk-msg" aria-live="polite"></p>
+  </div>
 </div>
-
-<hr class="rule" />
-
-<section class="speaking">
-<h2 class="sec">The keynote</h2>
-<p class="talk-meta">SXSW 2027 PanelPicker proposal &middot; community voting closed Aug 23 &middot; Austin &middot; Tech &amp; AI</p>
-<p class="talk-title">Who Sings the &ldquo;We&rdquo;? Optimized Out of Your Own World</p>
-<div class="prose"><p>Quincy Jones hung a sign over the biggest voices in the world &mdash; <em>check your ego at the door</em> &mdash; and they made a song no perfect singer could. Put today&rsquo;s AI in that studio and every note is flawless. So is the danger: a partner so good you hand over your part, one choice at a time, until the decision quietly stops being yours &mdash; and you never feel it leave. The law&rsquo;s name for a choice that&rsquo;s yours in name only is undue influence. Which decisions do you keep? Check your ego. Keep your voice.</p></div>
-<ul class="steps" style="margin-top:8px">
-<li>The undue-influence test &mdash; run live on your own AI-assisted decisions.</li>
-<li>Silent Deferral &mdash; how authorship transfers with no alarm, no villain, no bad result.</li>
-<li>Autotune for your judgment &mdash; perfect pitch, no range, and why range is the point.</li>
-<li>Self-government &mdash; what to hand off, and what stays in human hands.</li>
-</ul>
-</section>
-
-<hr class="rule" />
-
-<h2 class="sec">Formats</h2>
-<section class="cols">
-<div><h3>Keynote</h3><p>A 20&ndash;45 minute keynote for technology, ideas, and leadership stages.</p></div>
-<div><h3>Panels &amp; fireside</h3><p>AI and human agency, the future of professional judgment, law &amp; technology.</p></div>
-<div><h3>Private rooms</h3><p>Boards, partnerships, and teams working out what to hand to the machine &mdash; and what to keep.</p></div>
-</section>
-
-<hr class="rule" />
-
-<h2 class="sec">Fees</h2>
-<section class="cols">
-<div><h3>Keynote</h3><p>From $7,500, plus travel. Virtual keynotes from $3,500.</p></div>
-<div><h3>Panels &amp; fireside</h3><p>From $3,500, plus travel.</p></div>
-<div><h3>Private rooms</h3><p>A half-day working session for a board or leadership team, from $12,500.</p></div>
-</section>
-<p class="note">Nonprofit and education rates on request.</p>
-
-<hr class="rule" />
-
-<section class="about">
-<h2 class="sec">About the speaker</h2>
-<img class="portrait" src="/russ-michaels.jpg" alt="Russ Michaels, Founder of Vault Human" width="340" height="425" />
-<p class="person-name">Russ Michaels, Esq.</p>
-<div class="prose">
-<p>Founder of Vault Human. For over twenty years Russ has led organizations &mdash; as a CEO, Executive Director, and Board President, and as an attorney, still practicing. He speaks as an operator and a builder, not a theorist: someone who has raised capital, run teams, and stood with people through the decisions that constitute a life.</p>
-</div>
-<div class="cta" style="margin-top:34px"><a class="btn btn-acc" href="mailto:russ@vaulthuman.com?subject=Speaking%20invitation%20for%20Russ%20Michaels&body=Hi%20Russ%20%E2%80%94%20I%27d%20like%20to%20talk%20about%20having%20you%20speak.%0A%0AEvent%3A%0ADate%3A%0AAudience%3A%0AFormat%20(keynote%20%2F%20panel%20%2F%20private%20room)%3A%0A%0A">Invite Russ to your stage</a> <a class="btn btn-line" href="https://participate.sxsw.com/flow/sxsw/sxsw27/community-voting-sxsw/page/community-voting/session/1785011734260001qe1c" target="_blank" rel="noopener">Read the proposal &amp; leave a comment &#8599;</a></div>
-<p class="note">Write to <a href="mailto:russ@vaulthuman.com" style="text-decoration:underline">russ@vaulthuman.com</a>. Full speaker kit, topics, and video available on request. The full SXSW 2027 proposal lives on <a href="/sxsw" style="text-decoration:underline">the SXSW page</a> &mdash; community voting closed Aug 23; results come from SXSW later this fall. Read the thinking behind the talk in <a href="/writing" style="text-decoration:underline">Writing</a>.</p>
-</section>
-</div>
-</Base>
+<script is:inline>
+(function(){
+  if(window.__dkInit)return;window.__dkInit=true;
+  var URL='https://api.hsforms.com/submissions/v3/integration/submit/246947446/3f225ab5-5a70-46d9-a497-29e6256b1e52';
+  function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
+  function put(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+  function bind(){
+    document.querySelectorAll('.dk-form').forEach(function(f){
+      if(f.__b)return;f.__b=true;
+      f.addEventListener('submit',function(e){
+        e.preventDefault();var inp=f.querySelector('input'),msg=f.parentNode.querySelector('.dk-msg'),btn=f.querySelector('button');
+        var v=(inp.value||'').trim();
+        if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){msg.textContent='Please enter a valid email address.';inp.focus();return;}
+        btn.disabled=true;msg.textContent='Sending…';
+        fetch(URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fields:[{name:'email',value:v},{name:'message',value:'Daily Key subscriber'}],context:{pageUri:location.href,pageName:'Daily Key signup · '+document.title}})})
+        .then(function(r){if(!r.ok)throw 0;put('dk_sub','1');f.style.display='none';msg.textContent='You’re in. Your first key arrives tomorrow morning.';try{gtag('event','sign_up',{method:'daily_key'})}catch(_){};})
+        .catch(function(){btn.disabled=false;msg.innerHTML='That didn’t go through. Try again, or write to <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a>.';});
+      });
+    });
+  }
+  function init(){
+    bind();
+    var p=document.getElementById('dk-pop');if(!p)return;
+    function open(){if(get('dk_sub'))return;var last=+get('dk_seen')||0;if(Date.now()-last<14*864e5)return;var m=document.getElementById('vh-modal');if(m&&m.classList.contains('is-open'))return;if(document.body.classList.contains('nav-open'))return;put('dk_seen',String(Date.now()));p.classList.add('is-open');p.setAttribute('aria-hidden','false');}
+    function close(){p.classList.remove('is-open');p.setAttribute('aria-hidden','true');}
+    p.addEventListener('click',function(e){if(e.target.closest('[data-dk-close]'))close();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+    var t=setTimeout(open,30000);
+    addEventListener('scroll',function s(){var h=document.documentElement;if((h.scrollTop+innerHeight)/h.scrollHeight>0.55){removeEventListener('scroll',s);clearTimeout(t);open();}},{passive:true});
+    document.addEventListener('mouseout',function(e){if(!e.relatedTarget&&e.clientY<=0)open();});
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>
+</body></html>
