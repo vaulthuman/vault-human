@@ -333,3 +333,18 @@ details[open] .ck-n::after{transform:rotate(45deg)}
 @keyframes ckreel{to{transform:translateX(-100%)}}
 @media(prefers-reduced-motion:reduce){.ck-run{animation:none}.ck-track{flex-wrap:wrap}.ck-run[aria-hidden]{display:none}}
 .ck{grid-template-columns:minmax(0,1fr)}.ck-row,.ck-body,.ck-reel{min-width:0}.ck-row{overflow:hidden}.ck-track{width:100%}
+.wheelbox{max-width:560px;margin:0 auto}
+.wheel{width:100%;height:auto;display:block;--w-self:#2C3B2C;--w-more:#26302B;--w-rest:#1A201C;--w-core:#121715}
+.wheel text{text-anchor:middle;font-family:Inter,system-ui,sans-serif}
+.wn{font-size:13px;font-weight:600;fill:#F1EDE4}.wn.rest{fill:rgba(241,237,228,.6)}
+.wv{font-size:9.5px;fill:#B3C6A3}.wm{font-size:9px;fill:rgba(241,237,228,.55)}
+.wg{stroke:#F1EDE4;stroke-width:2}
+.gbg{fill:#121715;stroke:rgba(241,237,228,.4)}
+.gi{fill:none;stroke:#F1EDE4;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.gleaf{stroke:#B3C6A3}.gkey{stroke:#E2C98A}.gi.gk{stroke:#E2C98A}
+.wc0{font-size:11px;letter-spacing:.35em;fill:#B3C6A3}
+.wc1{font-family:"Bebas Neue",Inter,sans-serif;font-size:30px;fill:#F1EDE4;letter-spacing:.03em}
+.wc2{font-size:11px;fill:rgba(241,237,228,.65)}
+.wleg{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 22px;font-size:14px;color:var(--muted);margin-top:16px}
+.wleg i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.vault180 text.vh,.wheel text.wc1{font-family:"Bebas Neue",Inter,sans-serif;font-weight:400}
