@@ -173,7 +173,7 @@ header.site .navlinks .btn{color:#121715}
 /* tab-page Russ grids: same as home, video tall enough on phones */
 @media(max-width:760px){.lgrid.lgrid:not(.home) .big{grid-row:span 2}}
 
-/* 10/17c — The Daily Key (email signup) */
+/* 10/17c — The Vault Key (email signup) */
 .dk-icon{width:52px;height:52px;color:#F1EDE4;display:block;margin:0 auto 6px}
 .dk-title{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(44px,7vw,64px);line-height:1;letter-spacing:-.01em;margin:0 0 12px;text-transform:none;color:#F7F4EE}
 .dk-sub{font-size:18px;line-height:1.45;color:#F7F4EE;margin:0 auto 20px;max-width:30ch}
@@ -266,3 +266,51 @@ p,li,em,figcaption,dd,.faq p{text-wrap:pretty}
 .sec-head .lede{max-width:58ch}
 .loop-steps h3{white-space:normal;font-size:clamp(21px,1.75vw,25px)}
 .loop-steps p{text-wrap:pretty}
+.vault180{width:100%;min-width:620px;height:auto;display:block}
+.vault180 text{text-anchor:middle;font-family:Inter,system-ui,sans-serif}
+.vg{stroke:rgba(241,237,228,.25);stroke-width:1.5}
+.vrun{fill:rgba(143,166,126,.35)}
+.vdot{fill:#121715;stroke:#B3C6A3;stroke-width:2.5}
+.vl{font-size:17px;font-weight:600;fill:#F1EDE4}
+.vs{font-size:13px;fill:rgba(241,237,228,.65)}
+.vh{font-family:"Bebas Neue",Inter,sans-serif;font-size:26px;letter-spacing:.06em;fill:#B3C6A3}
+.vs2{font-size:14px;fill:rgba(241,237,228,.75)}
+.vchev{fill:none;stroke:rgba(179,198,163,.6);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.vbox{fill:rgba(241,237,228,.5)}
+.vpole{fill:none;stroke:#F1EDE4;stroke-width:4;stroke-linecap:round}
+.vstd{stroke:rgba(241,237,228,.55);stroke-width:3;stroke-linecap:round}
+.vbar{stroke:#B3C6A3;stroke-width:5;stroke-linecap:round}
+.vtraj{fill:none;stroke:#8FA67E;stroke-width:2.5;stroke-dasharray:7 7}
+.vtrajh{fill:none;stroke:#8FA67E;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.vturn{fill:rgba(143,166,126,.16);stroke:#8FA67E;stroke-width:1.5}
+.vturnp{fill:none;stroke:#F1EDE4;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.vmat{fill:rgba(143,166,126,.45)}
+/* Chamber keys (360 / 180 pages) */
+.v180box{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 auto 28px;max-width:1000px}
+.ck-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.ck-steps>div{background:rgba(241,237,228,.05);border:1px solid var(--line);border-radius:10px;padding:20px}
+.ck-steps span{display:block;font-family:var(--disp);font-size:30px;line-height:1;color:var(--acc);margin-bottom:8px;letter-spacing:.03em}
+.ck-steps b{display:block;color:var(--ink);font-size:17px;margin-bottom:4px}
+.ck-steps p{margin:0;font-size:15px;color:var(--muted)}
+@media(max-width:860px){.ck-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.ck-steps{grid-template-columns:1fr}}
+.ck{display:grid;gap:10px;max-width:980px;margin:0 auto}
+.ck-row{background:rgba(241,237,228,.05);border:1px solid var(--line);border-radius:10px}
+.ck-row summary,.ck-rest{display:flex;align-items:center;gap:18px;padding:16px 20px;cursor:pointer;list-style:none}
+.ck-row summary::-webkit-details-marker{display:none}
+.ck-rest{cursor:default;opacity:.75}
+.ck-m{font-family:var(--disp);font-size:34px;line-height:1;color:var(--acc);min-width:42px}
+.ck-t{flex:1;min-width:0}
+.ck-t b{font-family:var(--disp);font-weight:400;font-size:28px;letter-spacing:.03em;color:var(--ink)}
+.ck-t i{font-style:normal;color:var(--acc-soft);font-size:16px;margin-left:4px}
+.ck-t small{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+.ck-n{font-size:13px;color:var(--muted);white-space:nowrap}
+.ck-n::after{content:"+";display:inline-block;margin-left:12px;font-size:20px;color:var(--acc);transition:transform .2s;vertical-align:-2px}
+details[open] .ck-n::after{transform:rotate(45deg)}
+.ck-body{padding:0 20px 20px 80px}
+.ck-ask{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.ck-ask p{margin:0;font-size:15.5px;color:rgba(241,237,228,.88)}
+.ck-ask span{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--acc-soft);font-weight:700;margin-bottom:4px}
+.ck-keys{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.ck-keys li{font-size:13.5px;padding:6px 12px;border-radius:999px;background:rgba(143,166,126,.14);border:1px solid rgba(143,166,126,.3);color:rgba(241,237,228,.9)}
+@media(max-width:640px){.ck-body{padding:0 16px 18px}.ck-ask{grid-template-columns:1fr}.ck-row summary,.ck-rest{gap:12px;padding:14px 16px}.ck-t b{font-size:24px}.ck-n{font-size:12px}}
