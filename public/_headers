@@ -1,0 +1,5 @@
+/video/*.ts
+  Content-Type: video/mp2t
+  Cache-Control: public, max-age=31536000, immutable
+/video/*.m3u8
+  Content-Type: application/vnd.apple.mpegurl
