@@ -348,3 +348,24 @@ details[open] .ck-n::after{transform:rotate(45deg)}
 .wleg{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 22px;font-size:14px;color:var(--muted);margin-top:16px}
 .wleg i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
 .vault180 text.vh,.wheel text.wc1{font-family:"Bebas Neue",Inter,sans-serif;font-weight:400}
+/* Jump links on How it works */
+.jump{display:flex;flex-wrap:wrap;gap:8px 10px;margin-top:22px}
+.jump a{font-size:13px;font-weight:600;letter-spacing:.04em;color:rgba(241,237,228,.85);text-decoration:none;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(15,20,18,.4)}
+.jump a:hover{border-color:var(--acc);color:#fff}
+/* Plans */
+.member{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:28px;align-items:center;background:rgba(143,166,126,.12);border:1px solid rgba(143,166,126,.4);border-radius:12px;padding:30px 32px;max-width:1000px;margin:0 auto}
+.member .tag{font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--acc-soft);margin:0 0 8px}
+.member h3{margin:0 0 10px;color:var(--ink)}
+.member p{margin:0;color:rgba(241,237,228,.85);font-size:16px}
+.member .price{font-family:var(--disp);font-size:64px;line-height:1;color:var(--ink)}
+.member .price small{font-family:var(--sans);font-size:13px;letter-spacing:1px;text-transform:uppercase;margin-left:4px;color:var(--muted)}
+.member .guarantee{margin:8px 0 14px;font-size:14px;color:var(--muted)}
+.plans{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;max-width:1200px;margin:0 auto}
+.plan{background:rgba(241,237,228,.05);border:1px solid var(--line);border-radius:10px;padding:22px 20px;display:flex;flex-direction:column}
+.plan h3{margin:0 0 8px;font-size:22px;color:var(--ink)}
+.plan .price{font-family:var(--disp);font-size:34px;line-height:1.05;color:var(--acc-soft);margin-bottom:10px}
+.plan .price small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-top:2px}
+.plan .price-word{font-size:24px}
+.plan p{margin:0;font-size:14.5px;color:rgba(241,237,228,.8)}
+@media(max-width:1100px){.plans{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.member{grid-template-columns:1fr;padding:24px 20px}.plans{grid-template-columns:1fr}}
