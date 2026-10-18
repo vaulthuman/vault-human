@@ -387,3 +387,4 @@ details[open] .ck-n::after{transform:rotate(45deg)}
 @media(max-width:900px){.hero-side .bgvid{object-position:62% 20%}.hero-side .veil{background:linear-gradient(180deg,rgba(18,23,21,.3) 0%,rgba(18,23,21,.55) 40%,rgba(18,23,21,.94) 75%)}}
 
 .sister-note{text-align:center;font-size:13px;color:var(--muted);margin:0;padding:22px 16px;border-top:1px solid var(--line)}.sister-note a{color:var(--acc-soft);text-decoration:none}.sister-note a:hover{text-decoration:underline}
+video[autoplay]::-webkit-media-controls,video[autoplay]::-webkit-media-controls-start-playback-button,video[autoplay]::-webkit-media-controls-overlay-play-button{display:none!important;-webkit-appearance:none;opacity:0!important}
