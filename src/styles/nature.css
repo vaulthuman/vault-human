@@ -373,3 +373,15 @@ details[open] .ck-n::after{transform:rotate(45deg)}
 @media(max-width:860px){.tl-cards.three{grid-template-columns:1fr}}
 .vidframe{position:relative;max-width:960px;margin:0 auto;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.45)}
 .vidframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* approach hero: Russ loop on the right, words on the left */
+.hero-side{background:#121715}
+.hero-side .ctarow{justify-content:flex-start;margin:28px 0 0}
+.hero-side .bgvid{object-position:50% 30%}
+.hero-side .veil{background:linear-gradient(180deg,rgba(18,23,21,.45) 0%,rgba(18,23,21,.15) 45%,rgba(18,23,21,.9) 100%)}
+@media(min-width:901px){
+.hero-side .bgvid{left:auto;right:0;width:62%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
+.hero-side .veil{background:linear-gradient(90deg,rgba(18,23,21,.85) 0%,rgba(18,23,21,.35) 45%,rgba(18,23,21,0) 70%),linear-gradient(180deg,rgba(18,23,21,.35) 0%,rgba(18,23,21,0) 30%,rgba(18,23,21,0) 70%,rgba(18,23,21,.9) 100%)}
+.hero-side .wrap{max-width:1180px}
+.hero-side .lede{max-width:44ch}
+}
+@media(max-width:900px){.hero-side .bgvid{object-position:62% 20%}.hero-side .veil{background:linear-gradient(180deg,rgba(18,23,21,.3) 0%,rgba(18,23,21,.55) 40%,rgba(18,23,21,.94) 75%)}}
