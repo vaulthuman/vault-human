@@ -457,3 +457,10 @@ video[autoplay]::-webkit-media-controls,video[autoplay]::-webkit-media-controls-
 /* every page's opening text starts at the same height as the home page */
 .hero-video{justify-content:flex-start}
 .hero-video .proof{margin-top:auto}
+/* plain (no background video) openings line up with the video openings */
+.hero.hero-plain{padding:0!important;text-align:left}
+.hero-plain .wrap{padding-top:70px;padding-bottom:56px}
+.hero-plain .hero-grid{grid-template-columns:1fr;max-width:900px}
+.hero-plain h1{max-width:18ch;font-size:clamp(44px,5.4vw,78px)}
+.hero-plain .lede{max-width:60ch}
+@media(max-width:760px){.hero-plain .wrap{padding-top:40px}}
