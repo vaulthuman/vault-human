@@ -464,3 +464,23 @@ video[autoplay]::-webkit-media-controls,video[autoplay]::-webkit-media-controls-
 .hero-plain h1{max-width:18ch;font-size:clamp(44px,5.4vw,78px)}
 .hero-plain .lede{max-width:60ch}
 @media(max-width:760px){.hero-plain .wrap{padding-top:40px}}
+/* === Frame (after danmartell.com): one left edge for logo, headlines, copy, buttons and cards === */
+.hero-video .hero-grid,.hero-plain .hero-grid{max-width:none}
+.hero-video h1,.hero-plain h1{max-width:16ch}
+.hero-video .lede,.hero-plain .lede{max-width:54ch}
+.sec{padding:112px 0}
+.sec-head{max-width:none;margin:0 0 48px;text-align:left}
+.sec-head h2{max-width:none}
+.sec-head .lede{margin:16px 0 0;max-width:56ch}
+.wrap>.ctarow,.final .ctarow,.wrap>.ctarow[style]{justify-content:flex-start!important}
+.final{text-align:left}
+.final .lede{margin:14px 0 26px}
+.strip-head{text-align:left}
+.offers-note,.constant,.proof-intro,.kw-cap,.sp-pack,.closing,.cta,.turn,.note{text-align:left;margin-left:0;margin-right:0}
+.walk-links{justify-content:flex-start!important}
+.vidframe{max-width:none}
+@media(max-width:760px){.sec{padding:72px 0}}
+.hero-video .wrap{max-width:1180px;margin-left:auto;margin-right:auto}
+.faq,.member,.ck,.tl-cards.three,.sp-form{max-width:none;margin-left:0;margin-right:0}
+.proof-intro{max-width:none}
+.hero.hero-plain{max-width:none}.hero-plain .wrap{max-width:1180px;margin-left:auto;margin-right:auto}
