@@ -388,3 +388,9 @@ details[open] .ck-n::after{transform:rotate(45deg)}
 
 .sister-note{text-align:center;font-size:13px;color:var(--muted);margin:0;padding:22px 16px;border-top:1px solid var(--line)}.sister-note a{color:var(--acc-soft);text-decoration:none}.sister-note a:hover{text-decoration:underline}
 video[autoplay]::-webkit-media-controls,video[autoplay]::-webkit-media-controls-start-playback-button,video[autoplay]::-webkit-media-controls-overlay-play-button{display:none!important;-webkit-appearance:none;opacity:0!important}
+/* photo walls that never crop: each tile keeps its photo's own shape */
+.lgrid.masonry{display:block;columns:3 240px;column-gap:14px}
+.lgrid.masonry figure{break-inside:avoid;margin:0 0 14px;height:auto;display:block}
+.lgrid.masonry figure.fit::before{display:none}
+.lgrid.masonry .fg{height:auto!important;width:100%;object-fit:contain!important;object-position:50% 50%!important}
+@media(max-width:760px){.lgrid.masonry{columns:2;column-gap:10px}.lgrid.masonry figure{margin-bottom:10px}}
