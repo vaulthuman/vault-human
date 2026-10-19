@@ -334,7 +334,7 @@ details[open] .ck-n::after{transform:rotate(45deg)}
 @media(prefers-reduced-motion:reduce){.ck-run{animation:none}.ck-track{flex-wrap:wrap}.ck-run[aria-hidden]{display:none}}
 .ck{grid-template-columns:minmax(0,1fr)}.ck-row,.ck-body,.ck-reel{min-width:0}.ck-row{overflow:hidden}.ck-track{width:100%}
 .wheelbox{max-width:860px;margin:0 auto}
-.wheel{width:100%;height:auto;display:block;--w-self:#3A4F36;--w-now:#2F3A30;--w-more:#26302B;--w-rest:#1A201C;--w-core:#121715}
+.wheel{width:100%;height:auto;display:block;--w-self:#3A4F36;--w-now:#2F3A30;--w-more:#26302B;--w-past:#4A3B2C;--w-present:#2B3A47;--w-future:#2F4430;--w-rest:#1A201C;--w-core:#121715}
 .wheel text{text-anchor:middle;font-family:Inter,system-ui,sans-serif}
 .wn{font-size:13px;font-weight:600;fill:#F1EDE4}.wn.rest{fill:rgba(241,237,228,.6)}
 .wv{font-size:9.5px;fill:#B3C6A3}.wm{font-size:9px;fill:rgba(241,237,228,.55)}
@@ -396,10 +396,10 @@ video[autoplay]::-webkit-media-controls,video[autoplay]::-webkit-media-controls-
 @media(max-width:760px){.lgrid.uni{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px}.lgrid.uni figure.big{grid-row:span 1!important}.lgrid.uni figure:last-child{grid-column:span 2!important;aspect-ratio:1.45/1}}
 
 .wheel .wa{fill:none;stroke-width:3;stroke-linecap:round}
-.wheel .wa-in{stroke:#B3C6A3;stroke-width:3}
-.wheel .wa-past{stroke:#8FA67E}.wheel .wa-now{stroke:#B3C6A3}.wheel .wa-fut{stroke:#E2C98A}
+.wheel .wa-in{stroke:url(#wa-grad);stroke-width:3}
+.wheel .wa-past{stroke:#B88A5E}.wheel .wa-now{stroke:#7FA3C2}.wheel .wa-fut{stroke:#8FA67E}.wheel .wa-start{fill:#B88A5E;stroke:#121715;stroke-width:3}.wheel text.wal-start{fill:#D9B48C;font-size:18px}
 .wheel text.wal{font-family:"Bebas Neue",Inter,sans-serif;font-size:24px;letter-spacing:.06em;fill:#F1EDE4}
-.wheel text.wal-in{fill:#B3C6A3;font-size:20px}
+.wheel text.wal-in{fill:#C9B79A;font-size:20px}
 .wheel text.wals{font-size:13px;fill:rgba(241,237,228,.72)}
 .wheel a:hover text.wal{fill:#B3C6A3}
 .wleg a{color:inherit;text-decoration:none}.wleg a:hover{color:#F1EDE4;text-decoration:underline}
