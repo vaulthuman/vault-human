@@ -487,3 +487,7 @@ video[autoplay]::-webkit-media-controls,video[autoplay]::-webkit-media-controls-
 #year .wheelbox{max-width:1000px;margin-top:88px}
 #year{padding-bottom:32px}
 #year + #lists{padding-top:40px}
+/* About Russ: offer tiles run the full content width */
+.sp-offers{max-width:none;margin:0;gap:16px;grid-auto-rows:1fr}
+.sp-offers li{font-size:clamp(28px,2.6vw,38px);line-height:1.05;padding:40px 28px 32px;text-align:left;display:flex;align-items:flex-end;min-height:170px}
+@media(max-width:760px){.sp-offers li{font-size:24px;padding:28px 16px;min-height:96px}}
