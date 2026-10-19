@@ -508,7 +508,7 @@ button.btn{cursor:pointer;font-family:inherit}
 /* === Home: StoryBrand flow, split sections (after danmartell.com) === */
 .split{display:grid;grid-template-columns:1fr 1fr;min-height:620px;background:var(--bg)}
 .split__media{background-size:cover;background-position:center;min-height:420px;position:relative}
-.split__media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,23,21,0) 60%,rgba(18,23,21,.9))}
+.split__media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,23,21,0) 82%,rgba(18,23,21,.85))}
 .split.rev .split__media{order:2}
 .split.rev .split__media:after{background:linear-gradient(270deg,rgba(18,23,21,0) 60%,rgba(18,23,21,.9))}
 .split__copy{display:flex;flex-direction:column;justify-content:center;padding:96px 64px 96px max(24px,calc((100vw - 1180px)/2 + 24px))}
