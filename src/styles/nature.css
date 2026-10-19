@@ -454,3 +454,6 @@ video[autoplay]::-webkit-media-controls,video[autoplay]::-webkit-media-controls-
 #video.sec{padding-top:8px;padding-bottom:0}
 .vid-cta{justify-content:center;margin:28px 0 0}
 #video + .gallery-sec{padding-top:56px}
+/* every page's opening text starts at the same height as the home page */
+.hero-video{justify-content:flex-start}
+.hero-video .proof{margin-top:auto}
