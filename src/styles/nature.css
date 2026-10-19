@@ -382,7 +382,7 @@ details[open] .ck-n::after{transform:rotate(45deg)}
 @media(min-width:901px){
 .hero-side .bgvid{left:auto;right:0;width:62%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
 .hero-side .veil{background:linear-gradient(90deg,rgba(18,23,21,.85) 0%,rgba(18,23,21,.35) 45%,rgba(18,23,21,0) 70%),linear-gradient(180deg,rgba(18,23,21,.35) 0%,rgba(18,23,21,0) 30%,rgba(18,23,21,0) 70%,rgba(18,23,21,.9) 100%)}
-.hero-side .wrap{max-width:1180px}
+.hero-side .wrap{max-width:900px}
 .hero-side .lede{max-width:44ch}
 }
 @media(max-width:900px){.hero-side .bgvid{object-position:62% 20%}.hero-side .veil{background:linear-gradient(180deg,rgba(18,23,21,.3) 0%,rgba(18,23,21,.55) 40%,rgba(18,23,21,.94) 75%)}}
@@ -450,3 +450,7 @@ video[autoplay]::-webkit-media-controls,video[autoplay]::-webkit-media-controls-
 .sp-feetab td small{display:block;font-size:13px;color:rgba(241,237,228,.65);font-weight:400;margin-top:2px}
 .sp-pack{margin:16px 0 0;text-align:center;color:rgba(241,237,228,.84)}.sp-pack b{color:#F1EDE4}
 @media(max-width:640px){.sp-feetab th,.sp-feetab td{padding:12px 12px}.sp-feetab td{font-size:22px}.sp-feetab td:first-child{font-size:15px}.sp-feetab th{font-size:10px;letter-spacing:.08em}}
+/* page videos on the life pages: sit up under the hero, CTA between video and photos */
+#video.sec{padding-top:8px;padding-bottom:0}
+.vid-cta{justify-content:center;margin:28px 0 0}
+#video + .gallery-sec{padding-top:56px}
