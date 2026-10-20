@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import FirstKey from '../components/FirstKey.astro';
+const STRIPE = 'https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00';
+---
+<Base title="Your first key: Go Outside — Vault Human" description="See what a Vault Key is: a two-minute video, one page, and one thing to do. Key 01 is Go Outside. Members get the full three-day practice." image="https://www.vaulthuman.com/img/keys/key01-go-outside-poster.jpg">
+  <div class="fk-top"><div class="wrap"><p class="eyebrow">Your first key</p><h1>One key. <em>Then 359 more.</em></h1><p class="lede">This is what arrives each morning: a short video, one page, and one thing to do. Here is the first one, free.</p></div></div>
+
+  <FirstKey variant="full" eyebrow="Vault Key 01 · Chamber One · You" id="key" />
+
+  <section class="sec fk-members" id="members"><div class="wrap">
+    <div class="sec-head"><p class="eyebrow">For members</p><h2>Behind every key, a full practice.</h2><p class="lede">Members get each key as a guided practice: three days, an hour or two in all, on paper or on your phone, with a coach reading what you capture.</p></div>
+    <div class="fk-pages">
+      <figure><img src="/img/keys/key01-pkg-cover.jpg" alt="Cover of the Vault Key 01 member package, Go Outside" loading="lazy" /><figcaption>The package</figcaption></figure>
+      <figure class="lock"><img src="/img/keys/key01-pkg-practice.jpg" alt="The Threshold Twenty practice page" loading="lazy" /><span>Members</span><figcaption>The practice</figcaption></figure>
+      <figure class="lock"><img src="/img/keys/key01-pkg-day1.jpg" alt="Day 1 worksheet page" loading="lazy" /><span>Members</span><figcaption>Day by day</figcaption></figure>
+    </div>
+    <ul class="fk-list">
+      <li><b>The Threshold Twenty&trade;</b> Our four-step practice for the key, taught step by step.</li>
+      <li><b>Three guided days</b> A short lesson, an exercise and a capture for each day.</li>
+      <li><b>Your tracker</b> Seven days of numbers, minutes and what you noticed, ready for your coach.</li>
+      <li><b>A coach</b> Who reads it, asks the right question, and helps you keep it.</li>
+    </ul>
+  </div></section>
+
+  <section class="sec final"><div class="wrap">
+    <h2>Begin with Vault.</h2>
+    <p class="lede">Vault Keys membership, $99 a month. Your first week is free.</p>
+    <div class="ctarow"><a class="btn btn-acc" href={STRIPE}>Begin with Vault</a></div>
+  </div></section>
+
+  <style is:inline>
+  .fk-top{padding:140px 0 0}
+  .fk-top h1{margin:.1em 0 .3em}
+  .fk-top .lede{max-width:56ch}
+  .fk-pages{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0 30px}
+  .fk-pages figure{position:relative;margin:0;border-radius:10px;overflow:hidden;border:1px solid var(--line,rgba(241,237,228,.15));background:#0d110f}
+  .fk-pages img{display:block;width:100%;aspect-ratio:8.5/11;object-fit:cover;object-position:top}
+  .fk-pages .lock img{filter:blur(2.5px) saturate(.85);mask-image:linear-gradient(180deg,#000 35%,rgba(0,0,0,.35) 100%);-webkit-mask-image:linear-gradient(180deg,#000 35%,rgba(0,0,0,.35) 100%)}
+  .fk-pages .lock span{position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:#10160F;background:#8FA67E;padding:6px 12px;border-radius:999px}
+  .fk-pages figcaption{position:absolute;left:0;right:0;bottom:0;padding:10px 14px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:#F1EDE4;background:linear-gradient(180deg,transparent,rgba(13,17,15,.9))}
+  .fk-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px}
+  .fk-list li b{display:block;font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:22px;letter-spacing:.03em;color:#8FA67E}
+  @media(max-width:760px){.fk-top{padding-top:110px}.fk-pages{grid-template-columns:1fr 1fr}.fk-pages figure:first-child{grid-column:1/-1}.fk-list{grid-template-columns:1fr}}
+  </style>
+</Base>

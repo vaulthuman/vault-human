@@ -1,4 +1,5 @@
 ---
+import FirstKey from '../components/FirstKey.astro';
 import '../styles/home.css';
 import '../styles/nature.css';
 const year = new Date().getFullYear();
@@ -48,6 +49,7 @@ v.addEventListener('play',function(){w.classList.add('playing');});v.addEventLis
 v.addEventListener('ended',function(){w.classList.remove('playing');v.controls=false;v.currentTime=0;});})();</script>
     </div></section>
 
+    <FirstKey eyebrow="What a key looks like" />
     <section class="sec" id="start"><div class="wrap">
       <div class="sec-head"><p class="eyebrow">How to start</p><h2>It starts when you say yes.</h2><p class="lede">No big plan. No perfect timing. One yes, and the change has already begun.</p></div>
       <div class="steps"><div class="step"><div class="n">01</div><h3>Say yes</h3><p>Click Begin. Your first week is free, and saying yes is the hardest step of all.</p></div><div class="step"><div class="n">02</div><h3>Your first key arrives</h3><p>Within minutes, your first Vault Key lands in your inbox: a short lesson and one thing to do that day. A new one follows every morning at 7.</p></div><div class="step"><div class="n">03</div><h3>Meet your coach</h3><p>In your first week, a short conversation with Russ or a Vault coach. Then a key every morning, one step at a time.</p></div></div>
