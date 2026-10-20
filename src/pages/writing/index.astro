@@ -215,4 +215,5 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
 <script is:inline>document.querySelectorAll("video.bgvid").forEach(function(v){v.playbackRate=0.6;v.addEventListener("loadedmetadata",function(){v.playbackRate=0.6;});});
 (function(){var d=new Date(),iso=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');var t=document.querySelector('.rl[data-iso="'+iso+'"][data-vault="mind"]')||document.querySelector('.rl[data-iso="'+iso+'"]');if(!t)t=document.querySelector('.rl');if(t){t.classList.add('now');var b=document.getElementById('todays-letter');if(b)b.href=t.getAttribute('href');}})();
 (function(){var e=[].slice.call(document.querySelectorAll('.rl.rv'));if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('on')});return;}var o=new IntersectionObserver(function(t){t.forEach(function(y){if(y.isIntersecting){y.target.classList.add('on');o.unobserve(y.target)}})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){o.observe(x)});})();</script>
+<script is:inline src="/vh-dock.js" defer></script>
 </body></html>
