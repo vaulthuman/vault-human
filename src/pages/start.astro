@@ -1,0 +1,133 @@
+---
+// Paid-traffic landing page. No site menu, no video, no exits. One action: request a free call.
+// The Google Ads conversion fires on /thanks (the HubSpot form redirects there), never here.
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Life coaching with Russ Michaels · Vault Human</title>
+  <meta name="description" content="Coaching for your whole life. Start with a free 30-minute call with Russ Michaels. Membership from $99 a month." />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://www.vaulthuman.com/start/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=1200&q=50&auto=format&fit=crop" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18371546487"></script>
+  <script is:inline>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD');
+  </script>
+  <style is:inline>
+    :root{--acc:#8FA67E;--acc-ink:#6F8A5E;--bg:#141A16;--bg2:#1B231D;--ink:#F1EDE4;--muted:rgba(241,237,228,.74);--line:rgba(241,237,228,.14);--paper:#F4F1EA;--paper-ink:#1B231D}
+    *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif}
+    a{color:inherit}img{max-width:100%;display:block}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+    h1,h2,h3{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.02em;line-height:1.02;margin:0}
+    .top{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+    .brand{font-family:"Bebas Neue",Impact,sans-serif;font-size:26px;letter-spacing:.06em;text-decoration:none}.brand b{color:var(--acc);font-weight:400}
+    .tel{font-weight:600;text-decoration:none;font-size:15px}
+    .hero{position:relative;background:#141A16 url("https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=1200&q=50&auto=format&fit=crop") center/cover;isolation:isolate}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,26,22,.55),rgba(20,26,22,.9));z-index:-1}
+    .hero .in{padding:48px 0 64px;max-width:760px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:13px;font-weight:600;color:var(--acc);margin:0 0 14px}
+    .hero h1{font-size:clamp(48px,8vw,84px)}
+    .lede{font-size:19px;color:var(--muted);margin:18px 0 26px;max-width:620px}
+    .btn{display:inline-block;background:var(--acc);color:#141A16;font-weight:700;text-decoration:none;padding:15px 26px;border-radius:6px;font-size:16px}
+    .btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+    .fine{font-size:14px;color:var(--muted);margin-top:12px}
+    section{padding:64px 0}.alt{background:var(--bg2)}
+    h2{font-size:clamp(36px,5vw,54px);margin-bottom:22px}
+    .ticks{list-style:none;padding:0;margin:0;display:grid;gap:14px;max-width:720px}
+    .ticks li{padding-left:34px;position:relative}.ticks li:before{content:"";position:absolute;left:0;top:7px;width:18px;height:10px;border-left:3px solid var(--acc);border-bottom:3px solid var(--acc);transform:rotate(-45deg)}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:1px solid var(--line);border-radius:10px;padding:22px}
+    .card .n{font-family:"Bebas Neue";font-size:34px;color:var(--acc)}
+    .card h3{font-size:28px;margin:4px 0 8px}.card p{margin:0;color:var(--muted)}
+    .price{font-family:"Bebas Neue";font-size:44px;color:var(--ink)}.price small{font-family:Inter;font-size:15px;color:var(--muted)}
+    .russ{display:grid;grid-template-columns:300px 1fr;gap:36px;align-items:center}
+    .russ img{border-radius:10px;width:100%;height:auto;object-fit:cover}
+    blockquote{margin:18px 0 0;padding-left:16px;border-left:3px solid var(--acc);font-style:italic;color:var(--muted)}
+    .formbox{background:var(--paper);color:var(--paper-ink);border-radius:12px;padding:28px;max-width:640px}
+    .formbox h2{color:var(--paper-ink)}.formbox p{color:#3b443d;margin-top:0}
+    details{border-top:1px solid var(--line);padding:14px 0}details summary{cursor:pointer;font-weight:600}details p{color:var(--muted);margin:8px 0 0}
+    footer{padding:28px 0 40px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+    @media (max-width:760px){.grid3{grid-template-columns:1fr}.russ{grid-template-columns:1fr}.russ img{max-width:280px}section{padding:48px 0}}
+  </style>
+</head>
+<body>
+  <div class="hero"><div class="wrap">
+    <div class="top"><span class="brand">Vault <b>Human</b></span><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
+    <div class="in">
+      <p class="eyebrow">Life coaching, online</p>
+      <h1>A coach in your corner. Every day.</h1>
+      <p class="lede">Vault Human is coaching for your whole life with Russ Michaels: how you were built, how you're living now, and what you want to leave. It starts with a free 30-minute call.</p>
+      <a class="btn" href="#call">Book your free call</a>
+      <p class="fine">No cost and no obligation. Plans from $99 a month.</p>
+    </div>
+  </div></div>
+
+  <section><div class="wrap">
+    <p class="eyebrow">What changes</p>
+    <h2>Growth is better together.</h2>
+    <ul class="ticks">
+      <li>You see which of your habits are yours and which you inherited, and you choose which to keep.</li>
+      <li>You practice one small thing a day, so the change actually holds.</li>
+      <li>You have a coach who knows the whole picture: work, family, body and the future you're building.</li>
+    </ul>
+  </div></section>
+
+  <section class="alt"><div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2>Three steps.</h2>
+    <div class="grid3">
+      <div class="card"><div class="n">01</div><h3>A free call</h3><p>Thirty minutes with Russ. Tell him what's going on and where you want to be.</p></div>
+      <div class="card"><div class="n">02</div><h3>Choose your plan</h3><p>Membership, one on one, a group, or coaching for your family or team.</p></div>
+      <div class="card"><div class="n">03</div><h3>Begin</h3><p>Your first key arrives: a short teaching and one small practice to start.</p></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <p class="eyebrow">Plans</p>
+    <h2>Simple to start.</h2>
+    <div class="grid3">
+      <div class="card"><h3>Vault Keys membership</h3><div class="price">$99<small>/month</small></div><p>The coaching year, a key and a practice to work on, and a live monthly call with Russ. Your first week is on us. Cancel any time.</p></div>
+      <div class="card"><h3>One on one</h3><div class="price">$800<small>/month</small></div><p>Two private 60-minute sessions a month with your coach, plus messages between sessions.</p></div>
+      <div class="card"><h3>As a group</h3><div class="price">$200<small>/person · month</small></div><p>Groups of 5 to 10, meeting twice a month. Families, teams and businesses are priced to fit.</p></div>
+    </div>
+  </div></section>
+
+  <section class="alt"><div class="wrap russ">
+    <img src="/russ-michaels.jpg" alt="Russ Michaels" width="340" height="425" loading="lazy" />
+    <div>
+      <p class="eyebrow">Your coach</p>
+      <h2>Russ Michaels</h2>
+      <p class="lede" style="margin-bottom:0">An attorney and a twenty-year operator who coaches from the whole picture: how you were built, how you're living, and what you intend to leave. He founded Vault Human and chose every key in it.</p>
+      <blockquote>Sometimes we meet life where it is, not where we are. We hold that together.</blockquote>
+    </div>
+  </div></section>
+
+  <section id="call"><div class="wrap">
+    <div class="formbox">
+      <h2>Book your free 30-minute call</h2>
+      <p>Tell us a little about you. Russ will reach out personally, usually the same day, to set a time that works for you.</p>
+      <div class="hs-form-frame" data-region="na2" data-form-id="3f225ab5-5a70-46d9-a497-29e6256b1e52" data-portal-id="246947446"></div>
+    </div>
+  </div></section>
+
+  <section class="alt"><div class="wrap" style="max-width:760px">
+    <h2>Questions</h2>
+    <details><summary>Is this therapy?</summary><p>No. It's coaching. If a therapist or doctor would serve you better, we'll tell you and help you find one.</p></details>
+    <details><summary>Is it online?</summary><p>Yes. Calls and sessions are by video or phone, anywhere in the United States.</p></details>
+    <details><summary>What does the call cost?</summary><p>Nothing. It's a conversation about where you are and whether Vault Human fits.</p></details>
+    <details><summary>Can I cancel?</summary><p>Yes. Any time, with no fee.</p></details>
+  </div></section>
+
+  <footer><div class="wrap">&copy; {year} Vault Human, LLC · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · (888) 833-2510<br />Coaching is not legal, medical, financial or therapeutic advice.</div></footer>
+
+  <script is:inline src="https://js-na2.hsforms.net/forms/embed/246947446.js" defer></script>
+</body>
+</html>
