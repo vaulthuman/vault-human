@@ -543,3 +543,10 @@ button.btn{cursor:pointer;font-family:inherit}
 .vk-toast__s{margin:0 0 14px;font-size:14px;color:rgba(241,237,228,.8)}
 .vk-toast .btn{width:100%;text-align:center}
 @media(max-width:900px){.split{grid-template-columns:1fr;min-height:0}.split.rev .split__media{order:0}.split__media{min-height:300px}.split__media:after,.split.rev .split__media:after{background:linear-gradient(180deg,rgba(18,23,21,0) 50%,rgba(18,23,21,.9))}.split__copy,.split:not(.rev) .split__copy{padding:56px 20px 64px}.pcards,.after{grid-template-columns:1fr}.pcard{min-height:340px}.after{gap:28px}.vk-toast{right:12px;left:12px;bottom:84px;width:auto}}
+
+/* 10/20 — popup on the site's dark forest tone, sage accent; form fields styled in HubSpot to match */
+.vh-modal__card{background:#161D18;color:#E8ECE6;border-top:4px solid var(--acc);box-shadow:0 30px 90px rgba(0,0,0,.6)}
+.vh-modal__title{color:#F4F6F2}
+.vh-modal__sub{color:#B9C3BA;font-size:16px;line-height:1.5}
+.vh-modal__x{color:#B9C3BA}.vh-modal__x:hover{color:#F4F6F2}
+.vh-modal__fine{margin:10px 0 0;font-size:13px;color:#8E998F;text-align:center}
