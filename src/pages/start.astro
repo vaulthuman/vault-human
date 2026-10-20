@@ -1,6 +1,7 @@
 ---
-// Paid-traffic landing page. No site menu, no video, no exits. One action: request a free call.
-// The Google Ads conversion fires on /thanks (the HubSpot form redirects there), never here.
+// Paid-traffic landing page. No site menu, no exits. One screen: the film plays, two fields beside it (first name + email).
+// The form posts straight to the HubSpot Forms API (same form 3f225ab5… → same alerts, same pipeline) and sends the visitor to /thanks,
+// where the Google Ads conversion fires and Calendly books the call. Nothing fires here.
 const year = new Date().getFullYear();
 ---
 <!doctype html>
@@ -32,10 +33,23 @@ const year = new Date().getFullYear();
     .tel{font-weight:600;text-decoration:none;font-size:15px}
     .hero{position:relative;background:#141A16 url("https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=1200&q=50&auto=format&fit=crop") center/cover;isolation:isolate}
     .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,26,22,.55),rgba(20,26,22,.9));z-index:-1}
-    .hero .in{padding:48px 0 64px;max-width:760px}
+    .hero .in{padding:36px 0 56px;display:grid;grid-template-columns:1.25fr .85fr;gap:36px;align-items:center}
+    .hero h1{font-size:clamp(40px,5.6vw,66px)}
+    .film{position:relative;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 24px 60px rgba(0,0,0,.45);aspect-ratio:16/9}
+    .film video{width:100%;height:100%;display:block;object-fit:cover}
+    .snd{position:absolute;left:14px;top:14px;background:rgba(20,26,22,.82);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:9px 16px;font:600 14px Inter,sans-serif;cursor:pointer}
+    .snd:hover{background:rgba(20,26,22,.95)}
+    .capture{background:var(--paper);color:var(--paper-ink);border-radius:12px;padding:26px 24px}
+    .capture h2{color:var(--paper-ink);font-size:clamp(30px,3.4vw,40px);margin-bottom:6px}
+    .capture p{color:#3b443d;margin:0 0 16px;font-size:15px}
+    .capture label{display:block;font-weight:600;font-size:14px;margin:12px 0 6px}
+    .capture input{width:100%;padding:13px 14px;border:1px solid #c9c4b8;border-radius:8px;font:16px Inter,sans-serif;background:#fff;color:#1B231D}
+    .capture input:focus{outline:2px solid var(--acc);border-color:var(--acc)}
+    .capture .btn{width:100%;text-align:center;border:0;cursor:pointer;margin-top:16px;font-family:Inter,sans-serif}
+    .capture .fine{color:#5a635c;margin-top:10px;font-size:13px}
+    .capture .err{display:none;color:#8a2a2a;font-size:14px;margin-top:10px}
     .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:13px;font-weight:600;color:var(--acc);margin:0 0 14px}
-    .hero h1{font-size:clamp(48px,8vw,84px)}
-    .lede{font-size:19px;color:var(--muted);margin:18px 0 26px;max-width:620px}
+    .lede{font-size:18px;color:var(--muted);margin:14px 0 0;max-width:620px}
     .btn{display:inline-block;background:var(--acc);color:#141A16;font-weight:700;text-decoration:none;padding:15px 26px;border-radius:6px;font-size:16px}
     .btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
     .fine{font-size:14px;color:var(--muted);margin-top:12px}
@@ -55,6 +69,8 @@ const year = new Date().getFullYear();
     .formbox h2{color:var(--paper-ink)}.formbox p{color:#3b443d;margin-top:0}
     details{border-top:1px solid var(--line);padding:14px 0}details summary{cursor:pointer;font-weight:600}details p{color:var(--muted);margin:8px 0 0}
     footer{padding:28px 0 40px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+    .below{padding:40px 0 0}.below .lede{margin:0 auto;text-align:center}
+    @media (max-width:900px){.hero .in{grid-template-columns:1fr;gap:22px}}
     @media (max-width:760px){.grid3{grid-template-columns:1fr}.russ{grid-template-columns:1fr}.russ img{max-width:280px}section{padding:48px 0}}
   </style>
 </head>
@@ -62,13 +78,29 @@ const year = new Date().getFullYear();
   <div class="hero"><div class="wrap">
     <div class="top"><span class="brand">Vault <b>Human</b></span><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
     <div class="in">
-      <p class="eyebrow">Life coaching, online</p>
-      <h1>A coach in your corner. Every day.</h1>
-      <p class="lede">Vault Human is coaching for the whole of you, with Russ Michaels: how you were built, how you're living now, and what you want to leave. It starts with a free 30-minute call.</p>
-      <a class="btn" href="#call">Book your free call</a>
-      <p class="fine">No cost and no obligation. Plans from $99 a month.</p>
+      <div>
+        <p class="eyebrow">Life coaching, online</p>
+        <h1>A coach in your corner. Every day.</h1>
+        <div class="film" style="margin-top:18px">
+          <video id="film" src="/img/russ/v2/how-it-works.mp4" poster="/img/russ/v2/how-it-works-poster.jpg" autoplay muted loop playsinline controls preload="metadata"></video>
+          <button class="snd" id="snd" type="button" aria-label="Turn the sound on">🔊 Tap for sound</button>
+        </div>
+      </div>
+      <form class="capture" id="cap" novalidate>
+        <h2>Get your first key, free.</h2>
+        <p>A short teaching and one small practice, in your inbox in minutes. Then pick a time for a free 30-minute call with Russ.</p>
+        <label for="fn">First name</label>
+        <input id="fn" name="firstname" type="text" autocomplete="given-name" required />
+        <label for="em">Email</label>
+        <input id="em" name="email" type="email" autocomplete="email" inputmode="email" required />
+        <button class="btn" id="go" type="submit">Send me the first key</button>
+        <p class="fine">No cost, no obligation, no spam. Plans from $99 a month, cancel any time.</p>
+        <p class="err" id="err">Something didn't go through. Try again, or call <a href="tel:+18888332510">(888) 833-2510</a>.</p>
+      </form>
     </div>
   </div></div>
+
+  <div class="wrap below"><p class="lede">Vault Human is coaching for the whole of you, with Russ Michaels: how you were built, how you're living now, and what you want to leave. It starts with a free 30-minute call.</p></div>
 
   <section><div class="wrap">
     <p class="eyebrow">What changes</p>
@@ -113,8 +145,8 @@ const year = new Date().getFullYear();
   <section id="call"><div class="wrap">
     <div class="formbox">
       <h2>Book your free 30-minute call</h2>
-      <p>Tell us a little about you. On the next screen you'll pick a time on Russ's calendar.</p>
-      <div class="hs-form-frame" data-region="na2" data-form-id="3f225ab5-5a70-46d9-a497-29e6256b1e52" data-portal-id="246947446"></div>
+      <p>Your first name and email are all it takes. On the next screen you'll pick a time on Russ's calendar.</p>
+      <a class="btn" href="#cap">Get your first key, free</a>
     </div>
   </div></section>
 
@@ -128,6 +160,25 @@ const year = new Date().getFullYear();
 
   <footer><div class="wrap">&copy; {year} Vault Human, LLC · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · (888) 833-2510<br />Coaching is not legal, medical, financial or therapeutic advice.</div></footer>
 
-  <script is:inline src="https://js-na2.hsforms.net/forms/embed/246947446.js" defer></script>
+  <script is:inline>
+    (function(){
+      var v=document.getElementById('film'),b=document.getElementById('snd');
+      b.addEventListener('click',function(){v.muted=!v.muted;if(!v.muted){v.currentTime=0;v.play();}b.textContent=v.muted?'🔊 Tap for sound':'🔇 Mute';});
+      var f=document.getElementById('cap'),go=document.getElementById('go'),err=document.getElementById('err');
+      f.addEventListener('submit',function(e){
+        e.preventDefault();
+        var fn=f.firstname.value.trim(),em=f.email.value.trim();
+        if(!fn||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){f.reportValidity();return;}
+        go.disabled=true;go.textContent='Sending…';err.style.display='none';
+        var hutk=(document.cookie.match(/(?:^|; )hubspotutk=([^;]+)/)||[])[1];
+        var ctx={pageUri:location.href,pageName:document.title};if(hutk)ctx.hutk=hutk;
+        fetch('https://api-na2.hsforms.com/submissions/v3/integration/submit/246947446/3f225ab5-5a70-46d9-a497-29e6256b1e52',{
+          method:'POST',headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({fields:[{name:'firstname',value:fn},{name:'email',value:em}],context:ctx})
+        }).then(function(r){if(!r.ok)throw new Error(r.status);location.href='/thanks/';})
+        .catch(function(){go.disabled=false;go.textContent='Send me the first key';err.style.display='block';});
+      });
+    })();
+  </script>
 </body>
 </html>
