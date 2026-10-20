@@ -1,48 +1,200 @@
 ---
-import Base from '../../layouts/Base.astro';
-import { articles } from '../../data/writing.js';
-import { letters } from '../../data/letters.js';
+import '../../styles/home.css';
+import '../../styles/nature.css';
+import { letters, BORN } from '../../data/letters.js';
+const year = new Date().getFullYear();
+// Newest first: the most recent day at the top, down to the first scroll on the day Vault Human began.
+const run = [...letters].sort((a, b) => b.day - a.day || (a.vault === 'mind' ? -1 : 1));
+const newest = run[0];
+const first = run[run.length - 1];
+const days = newest.day;
+// Month markers along the spine (one each time the month changes going down the page).
+let lastMonth = '';
+const rows = run.map((l) => { const m = l.month !== lastMonth ? l.month : null; lastMonth = l.month; return { l, m }; });
+const desc = 'One short piece a day from Vault Human, in the order they came, from the day we began.';
 ---
-<Base title="Writing — Vault Human" description="Essays and daily letters from Vault Human on wholeness, authorship, and what to keep in human hands.">
-  <div class="wrap">
-    <div class="pagehead">
-      <p class="eyebrow">Writing</p>
-      <h1>On being whole<br>in a world of pieces.</h1>
-      <p class="dek">Essays, and a short letter for every day since Vault Human began.</p>
-    </div>
-
-    <div class="wlist">
-      <p class="wsec">Essays</p>
-      {articles.map((a) => (
-        <a class="witem" href={`/writing/${a.slug}/`}>
-          <p class="wm">{a.date}</p>
-          <p class="wt">{a.title}</p>
-          <p class="wd">{a.dek}</p>
-        </a>
-      ))}
-    </div>
-
-    <div class="wlist" id="letters">
-      <p class="wsec">The letters</p>
-      <p class="wintro">One short piece a day, in the order they came, from the day we began. Start at the first one, or open whichever title calls you.</p>
-      {letters.map((l) => (
-        <a class="witem witem-letter" href={`/writing/${l.slug}/`}>
-          <p class="wt">{l.title}</p>
-          <p class="wd" set:html={l.dek}></p>
-        </a>
-      ))}
-    </div>
-
-    <hr class="rule" />
-    <p class="closing" style="font-size:24px">A coach. Every day. For your whole life.</p>
-    <div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Begin with Vault</a></div>
-  </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Writing — Vault Human</title><link rel="canonical" href="https://www.vaulthuman.com/writing/">
+  <meta name="description" content={desc}>
+  <meta property="og:title" content="Writing — Vault Human"><meta property="og:description" content={desc}><meta property="og:image" content="https://www.vaulthuman.com/og-vaulthuman.png"><meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Google Ads gtag (AW-18371546487) + HubSpot conversion listener -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18371546487"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};var gtag=window.gtag;
+    gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD',{linker:{domains:['vaulthuman.com','tercetlaw.com','fretworksystems.com','triplicityadvisory.com']}});
+  </script>
   <style is:inline>
-    .wsec{font-family:var(--sans);font-size:11px;letter-spacing:4px;text-transform:uppercase;opacity:.6;margin:0 0 6px}
-    .wintro{font-family:'Times New Roman',Times,serif;font-style:italic;font-size:19px;opacity:.85;margin:0 0 18px;max-width:640px}
-    #letters{margin-top:64px}
-    .witem-letter{padding:18px 4px}
-    .witem-letter .wt{font-size:23px;margin:0 0 4px}
-    .witem-letter .wd{font-size:17px}
+    /* Writing: the run of letters, newest first, down a spine to the first scroll */
+    .wr-hero .veil{background:linear-gradient(180deg,rgba(18,23,21,.62) 0%,rgba(18,23,21,.38) 45%,rgba(18,23,21,.96) 100%)}
+    .wr-hero .bgvid{object-position:50% 40%}
+    .wr-since{font-family:var(--sans);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:rgba(241,237,228,.6);margin:18px 0 0}
+    .split .bgvid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .split__media{overflow:hidden}
+    .split__media:after{z-index:1}
+    .split .lede{max-width:52ch}
+    /* the spine */
+    .runwrap{padding:72px 0 96px}
+    .run{position:relative;display:flex;flex-direction:column;max-width:1180px;margin:0 auto;padding:0 24px}
+    .run:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;transform:translateX(-.5px);background:linear-gradient(180deg,var(--acc-soft),rgba(143,166,126,.5) 20%,rgba(143,166,126,.5) 80%,transparent)}
+    .rm{display:flex;justify-content:center;padding:34px 0 26px;position:relative}
+    .rm span{font-family:var(--sans);font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--acc-soft);background:var(--bg);padding:6px 14px;border:1px solid rgba(143,166,126,.5);border-radius:999px}
+    .rm.first{padding-top:0}
+    .rl{position:relative;display:block;text-decoration:none;color:var(--ink);padding:18px 24px 22px;margin:8px 0;border-radius:12px;border:1px solid transparent;transition:border-color .3s ease,background .3s ease,opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+    .rl{width:calc(50% - 44px)}
+    .rl:nth-of-type(odd){margin-right:auto}
+    .rl:nth-of-type(even){margin-left:auto}
+    .rl+.rl{margin-top:-10px}
+    .rl:before{content:"";position:absolute;top:30px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:2px solid var(--acc-soft);transition:background .3s ease}
+    .rl:nth-of-type(odd):before{right:-44px;transform:translateX(50%)}
+    .rl:nth-of-type(even):before{left:-44px;transform:translateX(-50%)}
+    .rl:after{content:"";position:absolute;top:34px;height:1px;width:34px;background:rgba(143,166,126,.5)}
+    .rl:nth-of-type(odd):after{right:-40px}
+    .rl:nth-of-type(even):after{left:-40px}
+    .rl:hover{border-color:rgba(143,166,126,.4);background:rgba(143,166,126,.08)}
+    .rl:hover:before{background:var(--acc-soft)}
+    .rl-date{font-family:var(--sans);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--acc-soft);margin:0 0 8px}
+    .rl-t{font-family:var(--disp);font-size:clamp(26px,2.4vw,34px);line-height:1;margin:0 0 8px;letter-spacing:.5px}
+    .rl-d{font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;line-height:1.5;color:rgba(241,237,228,.8);margin:0}
+    .rl-d em{font-style:italic}
+    .rl.rv{opacity:0}
+    .rl.rv:nth-of-type(odd){transform:translateX(-26px)}
+    .rl.rv:nth-of-type(even){transform:translateX(26px)}
+    .rl.rv.on{opacity:1;transform:none}
+    .rl.now .rl-date:after{content:"· today";margin-left:6px;color:var(--ink);opacity:.7}
+    .rl.origin{border-color:rgba(143,166,126,.5);background:rgba(143,166,126,.08)}
+    .rl.origin .rl-date:after{content:"· the day we began";margin-left:6px;color:var(--ink);opacity:.7}
+    .rend{display:flex;justify-content:center;padding:26px 0 0}
+    .rend span{width:11px;height:11px;border-radius:50%;background:var(--acc-soft);box-shadow:0 0 0 6px rgba(143,166,126,.18)}
+    @media(prefers-reduced-motion:reduce){.rl.rv{opacity:1;transform:none}}
+    @media(max-width:760px){
+      .run{padding:0 18px}
+      .run:before{left:24px}
+      .rm{justify-content:flex-start;padding:26px 0 18px}
+      .rm span{margin-left:0}
+      .rl,.rl:nth-of-type(odd),.rl:nth-of-type(even){width:auto;margin:6px 0 6px 38px}
+      .rl+.rl{margin-top:6px}
+      .rl:nth-of-type(odd):before,.rl:nth-of-type(even):before{left:-32px;right:auto;transform:translateX(-50%)}
+      .rl:nth-of-type(odd):after,.rl:nth-of-type(even):after{left:-22px;right:auto;width:18px}
+      .rl.rv:nth-of-type(odd),.rl.rv:nth-of-type(even){transform:translateY(14px)}
+      .rend{justify-content:flex-start;padding-left:9px}
+      .runwrap{padding:40px 0 64px}
+    }
   </style>
-</Base>
+</head>
+<body data-time="all">
+  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About Russ</a><a class="btn btn-acc" href="#" data-open-form>Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+  <main>
+    <section class="hero hero-video wr-hero"><video class="bgvid" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1600&q=60&auto=format&fit=crop"><source src="https://assets.mixkit.co/videos/6734/6734-720.mp4" type="video/mp4"></video><div class="veil"></div>
+      <div class="wrap hero-grid"><div class="hero-copy">
+        <p class="eyebrow">Writing</p>
+        <h1>One short piece a day, <em>since the day we began.</em></h1>
+        <p class="lede">In the order they came, from the day Vault Human began. Start at the first one, or open whichever one calls you.</p>
+        <div class="ctarow"><a class="btn btn-acc" href={`/writing/${newest.slug}/`}>Today's piece</a><a class="btn btn-line" href={`/writing/${first.slug}/`}>Start at the first one</a></div>
+        <p class="wr-since">{days} days · since May 16, 2026</p>
+      </div></div>
+    </section>
+
+    <section class="split" id="about-the-letters"><div class="split__media" role="img" aria-label="Morning light through a forest"><video class="bgvid" autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=55&auto=format&fit=crop"><source src="https://assets.mixkit.co/videos/22728/22728-720.mp4" type="video/mp4"></video></div><div class="split__copy">
+      <p class="eyebrow">How to read them</p>
+      <h2>One page. Out loud. Until it sounds like you.</h2>
+      <p class="lede">Each piece is one page and one idea: where it came from, who found it, what it asks of you. Nothing to buy, nothing to finish. Read one, put it down, and let the day do the rest.</p>
+      <div class="ctarow"><a class="btn btn-line" href="#letters">Go to the letters</a></div>
+    </div></section>
+
+    <section class="split rev" id="every-morning"><div class="split__media" role="img" aria-label="A campfire at dusk"><video class="bgvid" autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1475483768296-6163e08872a1?w=1200&q=55&auto=format&fit=crop"><source src="https://assets.mixkit.co/videos/47818/47818-720.mp4" type="video/mp4"></video></div><div class="split__copy">
+      <p class="eyebrow">Every morning</p>
+      <h2>Have the next one <em style="font-style:normal;color:var(--acc-soft)">find you.</em></h2>
+      <p class="lede">The Vault Key brings a short teaching and one small practice to your inbox, free, five mornings a week. The letters here are the long form of that: the same keys, written out one at a time.</p>
+      <div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Get the Vault Key, free</a><a class="btn btn-line" href="/method/">How it works</a></div>
+    </div></section>
+
+    <section class="sec runwrap" id="letters" style="padding-top:88px">
+      <div class="wrap" style="padding-bottom:10px"><div class="sec-head"><p class="eyebrow">The letters</p><h2>From today, back to the first scroll.</h2><p class="lede">Newest at the top. Keep scrolling and you'll reach the day we began.</p></div></div>
+      <div class="run">
+        {rows.map(({ l, m }, i) => (
+          <>
+            {m && <div class={`rm${i === 0 ? ' first' : ''}`}><span>{m}</span></div>}
+            <a class={`rl rv${l.day === days && l.vault === 'mind' ? ' now' : ''}${l.day === 1 && l.vault === 'mind' ? ' origin' : ''}`} href={`/writing/${l.slug}/`}>
+              <p class="rl-date">{l.date}</p>
+              <p class="rl-t">{l.title}</p>
+              <p class="rl-d" set:html={l.dek}></p>
+            </a>
+          </>
+        ))}
+        <div class="rend" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <section class="sec final vid-sec" id="begin"><video class="bgvid" autoplay muted loop playsinline preload="metadata"><source src="https://assets.mixkit.co/videos/15919/15919-720.mp4" type="video/mp4"></video><div class="veil"></div><div class="wrap">
+      <h2>A coach. Every day. For your whole life.</h2>
+      <p class="lede">Your first key arrives within minutes. Then one every morning at 7.</p>
+      <div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Begin with Vault</a><a class="btn btn-line" href="/plans/">Plans and pricing</a></div>
+    </div></section>
+  </main>
+  <footer class="site"><div class="wrap foot">
+    <div><a class="brand" href="/">Vault <b>Human</b></a><p>Daily coaching with Russ Michaels.</p><p><a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a></p></div>
+    <ul><li><a href="/method/">How it works</a></li><li><a href="/the-360/">The 360 · mind</a></li><li><a href="/the-180/">The 180 · body</a></li><li><a href="/as-learned/">As Learned</a></li><li><a href="/as-loved/">As Loved</a></li><li><a href="/as-lived/">As Lived</a></li><li><a href="/plans/">Plans and pricing</a></li><li><a href="/writing">Writing</a></li><li><a href="/speaking/">Speaking</a></li></ul>
+    <ul><li><a href="https://www.fretworksystems.com">Fretwork Systems</a> · automation</li><li><a href="https://triplicityadvisory.com">Triplicity Advisory</a> · leadership coaching</li><li><a href="https://www.tercetlaw.com">Tercet Law</a> · wills and trusts</li></ul>
+  </div><div class="wrap legal"><span>&copy; {year} Vault Human, LLC. Coaching is not legal, medical, financial or therapeutic advice.</span><span>Learn · Love · Live · Listen</span></div></footer>
+  <div id="vh-modal" class="vh-modal" aria-hidden="true"><div class="vh-modal__bg" data-close-form></div><div class="vh-modal__card" role="dialog" aria-modal="true" aria-label="Begin your year with Vault"><button class="vh-modal__x" type="button" data-close-form aria-label="Close">&times;</button><h2 class="vh-modal__title">Begin your year with Vault</h2><p class="vh-modal__sub">Tell us a little about you. Your Vault coach will write back personally. Your first key arrives in your inbox within minutes: a short teaching and one small practice to start your first chamber. Then a new key every morning at 7. Your first week is on us.</p><div class="hs-form-frame" data-region="na2" data-form-id="3f225ab5-5a70-46d9-a497-29e6256b1e52" data-portal-id="246947446"></div></div></div>
+  <script is:inline src="https://js-na2.hsforms.net/forms/embed/246947446.js" defer></script>
+  <script is:inline>
+  (function(){var m=document.getElementById('vh-modal');if(!m)return;function o(e){if(e)e.preventDefault();m.classList.add('is-open');m.setAttribute('aria-hidden','false');document.documentElement.style.overflow='hidden';}function c(){m.classList.remove('is-open');m.setAttribute('aria-hidden','true');document.documentElement.style.overflow='';}document.addEventListener('click',function(e){var t=e.target.closest('[data-open-form]');if(t){o(e);return;}if(e.target.closest('[data-close-form]'))c();});document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});})();
+  addEventListener('DOMContentLoaded',function(){document.body.classList.add('ready');if(!('IntersectionObserver'in window))return;var e=[].slice.call(document.querySelectorAll('.sec .wrap > *'));e.forEach(function(x){x.classList.add('reveal')});var o=new IntersectionObserver(function(t){t.forEach(function(y){if(y.isIntersecting){y.target.classList.add('in');o.unobserve(y.target)}})},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});e.forEach(function(x){o.observe(x)});});
+  </script>
+<script is:inline>(function(){var b=document.querySelector(".navtoggle"),n=document.getElementById("navlinks");if(!b||!n)return;function set(o){document.body.classList.toggle("nav-open",o);b.setAttribute("aria-expanded",o?"true":"false");b.setAttribute("aria-label",o?"Close menu":"Open menu");}b.addEventListener("click",function(){set(!document.body.classList.contains("nav-open"));});n.addEventListener("click",function(e){if(e.target.closest("a"))set(false);});document.addEventListener("keydown",function(e){if(e.key==="Escape")set(false);});})();</script>
+<div class="dk-pop" id="dk-pop" aria-hidden="true">
+  <div class="dk-pop__bg" data-dk-close></div>
+  <div class="dk-pop__card" role="dialog" aria-modal="true" aria-labelledby="dk-pop-title">
+    <button class="dk-pop__x" type="button" data-dk-close aria-label="Close">&times;</button>
+    <svg class="dk-icon" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M32 6v7M32 51v7M6 32h7M51 32h7M13.6 13.6l5 5M45.4 45.4l5 5M13.6 50.4l5-5M45.4 18.6l5-5"/><circle cx="26" cy="32" r="7"/><path d="M33 32h16M44 32v5M48 32v4"/></g></svg>
+    <h2 class="dk-title" id="dk-pop-title">The Vault Key</h2>
+    <p class="dk-sub">Free guidance from Russ in your inbox, five mornings a week. One short teaching, one small practice.</p>
+    <form class="dk-form" novalidate><label class="dk-sr" for="dk-email-pop">Email</label><input id="dk-email-pop" type="email" name="email" placeholder="Email" autocomplete="email" required /><button type="submit">Subscribe</button></form>
+    <p class="dk-fine">Free. Unsubscribe any time. We never share your email.</p>
+    <p class="dk-msg" aria-live="polite"></p>
+  </div>
+</div>
+<script is:inline>
+(function(){
+  if(window.__dkInit)return;window.__dkInit=true;
+  var URL='https://api.hsforms.com/submissions/v3/integration/submit/246947446/3f225ab5-5a70-46d9-a497-29e6256b1e52';
+  function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
+  function put(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+  function bind(){
+    document.querySelectorAll('.dk-form').forEach(function(f){
+      if(f.__b)return;f.__b=true;
+      f.addEventListener('submit',function(e){
+        e.preventDefault();var inp=f.querySelector('input'),msg=f.parentNode.querySelector('.dk-msg'),btn=f.querySelector('button');
+        var v=(inp.value||'').trim();
+        if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){msg.textContent='Please enter a valid email address.';inp.focus();return;}
+        btn.disabled=true;msg.textContent='Sending…';
+        fetch(URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fields:[{name:'email',value:v},{name:'message',value:'Vault Key subscriber'}],context:{pageUri:location.href,pageName:'Vault Key signup · '+document.title}})})
+        .then(function(r){if(!r.ok)throw 0;put('dk_sub','1');f.style.display='none';msg.textContent='You’re in. Your first key arrives tomorrow morning.';try{gtag('event','sign_up',{method:'daily_key'})}catch(_){};})
+        .catch(function(){btn.disabled=false;msg.innerHTML='That didn’t go through. Try again, or write to <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a>.';});
+      });
+    });
+  }
+  function init(){
+    bind();
+    var p=document.getElementById('dk-pop');if(!p)return;
+    function open(){if(get('dk_sub'))return;var last=+get('dk_seen')||0;if(Date.now()-last<14*864e5)return;var m=document.getElementById('vh-modal');if(m&&m.classList.contains('is-open'))return;if(document.body.classList.contains('nav-open'))return;put('dk_seen',String(Date.now()));p.classList.add('is-open');p.setAttribute('aria-hidden','false');}
+    function close(){p.classList.remove('is-open');p.setAttribute('aria-hidden','true');}
+    p.addEventListener('click',function(e){if(e.target.closest('[data-dk-close]'))close();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+    var t=setTimeout(open,30000);
+    addEventListener('scroll',function s(){var h=document.documentElement;if(performance.now()>20000&&(h.scrollTop+innerHeight)/h.scrollHeight>0.55){removeEventListener('scroll',s);clearTimeout(t);open();}},{passive:true});
+    document.addEventListener('mouseout',function(e){if(!e.relatedTarget&&e.clientY<=0)open();});
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>
+<script is:inline>(function(){var h=document.querySelector("header.site");function f(){if(h)h.classList.toggle("scrolled",scrollY>40)}addEventListener("scroll",f,{passive:true});f();document.querySelectorAll(".navdrop__btn").forEach(function(b){b.addEventListener("click",function(e){e.stopPropagation();document.querySelectorAll(".navdrop.open").forEach(function(x){if(x!==b.parentNode)x.classList.remove("open")});var d=b.parentNode,o=!d.classList.contains("open");d.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false")})});document.addEventListener("click",function(e){document.querySelectorAll(".navdrop.open").forEach(function(d){if(!d.contains(e.target)){d.classList.remove("open");d.querySelector(".navdrop__btn").setAttribute("aria-expanded","false")}})});})();</script>
+<script is:inline>document.querySelectorAll("video.bgvid").forEach(function(v){v.playbackRate=0.6;v.addEventListener("loadedmetadata",function(){v.playbackRate=0.6;});});
+(function(){var e=[].slice.call(document.querySelectorAll('.rl.rv'));if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('on')});return;}var o=new IntersectionObserver(function(t){t.forEach(function(y){if(y.isIntersecting){y.target.classList.add('on');o.unobserve(y.target)}})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){o.observe(x)});})();</script>
+</body></html>

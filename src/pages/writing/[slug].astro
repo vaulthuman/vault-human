@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { articles } from '../../data/writing.js';
-import { letters, PUBLISHED } from '../../data/letters.js';
+import { letters } from '../../data/letters.js';
 export function getStaticPaths() {
   const ess = articles.map((a) => ({ params: { slug: a.slug }, props: { a, kind: 'essay' } }));
   const let_ = letters.map((l, i) => ({ params: { slug: l.slug }, props: { a: l, kind: 'letter', prev: i > 0 ? letters[i-1] : null, next: i < letters.length-1 ? letters[i+1] : null } }));
@@ -18,7 +18,7 @@ const plainDek = (a.dek || '').replace(/<[^>]+>/g, '');
       {kind === 'essay' ? (
         <p class="amx"><a href="/writing/" class="backlink" style="margin:0;opacity:.7">Writing</a> &middot; {a.date}</p>
       ) : (
-        <p class="amx"><a href="/writing/" class="backlink" style="margin:0;opacity:.7">Writing</a> &middot; <a href="/writing/#letters" class="backlink" style="margin:0;opacity:.7">The letters</a></p>
+        <p class="amx"><a href="/writing/#letters" class="backlink" style="margin:0;opacity:.7">Writing</a> &middot; {a.date}</p>
       )}
       <h1>{a.title}</h1>
       {kind === 'essay' && <p class="adek">{a.dek}</p>}
@@ -42,10 +42,9 @@ const plainDek = (a.dek || '').replace(/<[^>]+>/g, '');
             <a class="btn btn-line" href="/method/">How it works</a>
           </div>
           <nav class="lnav" aria-label="Letters">
-            <span>{prev ? <a href={`/writing/${prev.slug}/`}>&larr; {prev.title}</a> : <a href="/writing/#letters">&larr; All the letters</a>}</span>
-            <span>{next ? <a href={`/writing/${next.slug}/`}>{next.title} &rarr;</a> : <a href="/writing/#letters">All the letters &rarr;</a>}</span>
+            <span>{prev ? <a href={`/writing/${prev.slug}/`}>&larr; {prev.title}<small>{prev.date}</small></a> : <a href="/writing/#letters">&larr; All the letters</a>}</span>
+            <span>{next ? <a href={`/writing/${next.slug}/`}>{next.title} &rarr;<small>{next.date}</small></a> : <a href="/writing/#letters">All the letters &rarr;</a>}</span>
           </nav>
-          <p class="lfine">From Vault Human's first year. Published {PUBLISHED}.</p>
         </div>
       )}
     </article>
@@ -54,7 +53,8 @@ const plainDek = (a.dek || '').replace(/<[^>]+>/g, '');
     .lnav{display:flex;justify-content:space-between;gap:16px;margin:30px 0 0;font-family:var(--sans);font-size:13px;text-align:left}
     .lnav a{text-decoration:none;opacity:.8}
     .lnav a:hover{opacity:1;text-decoration:underline}
-    .lfine{font-family:var(--sans);font-size:11px;letter-spacing:1px;opacity:.5;margin:22px 0 0}
+    .lnav small{display:block;font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.6;margin-top:3px}
+    .lnav span:last-child{text-align:right}
     @media(max-width:600px){.lnav{flex-direction:column}}
   </style>
 </Base>
