@@ -1,11 +1,12 @@
 // Generated from vault-method/key-archive/batch-*.md by tools/build_letters.py — do not hand-edit.
-// The daily letters, in the order they came, for /writing. No key, chamber or day labels on the page.
+// The daily letters, in the order they came, for /writing. Each carries the date of its day (Day 1 = May 16, 2026, the day Vault Human began).
+export const BORN='2026-05-16';
 export const PUBLISHED='October 19, 2026';
 export const letters=[
  {
   "slug": "the-first-scroll",
   "title": "The first scroll",
-  "dek": "\"Today I begin a new life.\"",
+  "dek": "\"Today I begin a new life.\" That is the first line of the first scroll in Og Mandino's <em>The Greatest Salesman in the World</em>, and it is where Vault Human begins too.",
   "day": 1,
   "vault": "mind",
   "body": [
@@ -34,7 +35,10 @@ export const letters=[
     "t": "I started Vault Human here because this is how it works. One thing, repeated, before the next thing. Not thirty books in a month. One page, out loud, until it sounds like you."
    }
   ],
-  "n": 1
+  "n": 1,
+  "date": "May 16, 2026",
+  "iso": "2026-05-16",
+  "month": "May 2026"
  },
  {
   "slug": "go-outside",
@@ -64,12 +68,15 @@ export const letters=[
     "t": "This morning's morning letter said form the habit. This is the habit. It sits beside the scroll on purpose."
    }
   ],
-  "n": 2
+  "n": 2,
+  "date": "May 16, 2026",
+  "iso": "2026-05-16",
+  "month": "May 2026"
  },
  {
   "slug": "yours-or-handed-to-you",
   "title": "Yours, or handed to you",
-  "dek": "Yesterday a man told you to form a habit.",
+  "dek": "Yesterday a man told you to form a habit. Today two men tell you the habit has to be yours.",
   "day": 2,
   "vault": "mind",
   "body": [
@@ -94,7 +101,10 @@ export const letters=[
     "t": "This key does not ask you to throw anything out. It asks you to look at the label."
    }
   ],
-  "n": 3
+  "n": 3,
+  "date": "May 17, 2026",
+  "iso": "2026-05-17",
+  "month": "May 2026"
  },
  {
   "slug": "begin-at-the-end",
@@ -124,12 +134,15 @@ export const letters=[
     "t": "Covey died at seventy-nine after a bicycle accident. His eulogies were already written. He had done the exercise, and the people who stood up to speak had the easiest job in the room."
    }
   ],
-  "n": 4
+  "n": 4,
+  "date": "May 18, 2026",
+  "iso": "2026-05-18",
+  "month": "May 2026"
  },
  {
   "slug": "three-questions-none-about-you",
   "title": "Three questions, none about you",
-  "dek": "I spent more than ten years in restaurants, every station from the valet stand to the floor, and the whole business runs on one thing Dale Carnegie wrote…",
+  "dek": "I spent more than ten years in restaurants, every station from the valet stand to the floor, and the whole business runs on one thing Dale Carnegie wrote down in…",
   "day": 4,
   "vault": "mind",
   "body": [
@@ -154,12 +167,15 @@ export const letters=[
     "t": "Most of us are waiting for our turn. This key asks you to give up your turn, once, on purpose, and see what it costs."
    }
   ],
-  "n": 5
+  "n": 5,
+  "date": "May 19, 2026",
+  "iso": "2026-05-19",
+  "month": "May 2026"
  },
  {
   "slug": "four-numbers",
   "title": "Four numbers",
-  "dek": "In 1948 the U.S.",
+  "dek": "In 1948 the U.S. Public Health Service enrolled a little over five thousand people in a mill town outside Boston and started measuring them every two years to find…",
   "day": 4,
   "vault": "body",
   "body": [
@@ -184,7 +200,10 @@ export const letters=[
     "t": "My first set were not what I expected either. I wrote them down anyway. That was the point."
    }
   ],
-  "n": 6
+  "n": 6,
+  "date": "May 19, 2026",
+  "iso": "2026-05-19",
+  "month": "May 2026"
  },
  {
   "slug": "why-four-days-in-a-row-is-working",
@@ -222,7 +241,10 @@ export const letters=[
     "t": "That is the whole reason every morning letter asks for one small action inside twenty-four hours. He said it in 1890. We just built the house around it."
    }
   ],
-  "n": 7
+  "n": 7,
+  "date": "May 20, 2026",
+  "iso": "2026-05-20",
+  "month": "May 2026"
  },
  {
   "slug": "two-ledgers",
@@ -256,7 +278,10 @@ export const letters=[
     "t": "Most of us have told both lies, depending on the room. Writing the two lists is the first time most people stop."
    }
   ],
-  "n": 8
+  "n": 8,
+  "date": "May 21, 2026",
+  "iso": "2026-05-21",
+  "month": "May 2026"
  },
  {
   "slug": "it-was-not-you",
@@ -290,12 +315,15 @@ export const letters=[
     "t": "I put this key in the month called You for one reason. Most people carry their diet history as a list of personal failures. Read the science and it turns into a list of a body doing exactly what bodies do. That is a different story about you, and it is the true one."
    }
   ],
-  "n": 9
+  "n": 9,
+  "date": "May 21, 2026",
+  "iso": "2026-05-21",
+  "month": "May 2026"
  },
  {
   "slug": "the-other-side",
   "title": "The other side",
-  "dek": "For six days you have been doing.",
+  "dek": "For six days you have been doing. Today someone asks what story you've been telling yourself while you did it.",
   "day": 7,
   "vault": "mind",
   "body": [
@@ -328,7 +356,10 @@ export const letters=[
     "t": "We go deeper into the thinking traps in the third month. This week you only need to catch one."
    }
   ],
-  "n": 10
+  "n": 10,
+  "date": "May 22, 2026",
+  "iso": "2026-05-22",
+  "month": "May 2026"
  },
  {
   "slug": "write-it-down-with-a-date",
@@ -358,7 +389,10 @@ export const letters=[
     "t": "Most people have never written theirs down. Not because it's hard. Because writing it makes it real, and real can be measured. That is exactly why it works."
    }
   ],
-  "n": 11
+  "n": 11,
+  "date": "May 23, 2026",
+  "iso": "2026-05-23",
+  "month": "May 2026"
  },
  {
   "slug": "a-different-clock",
@@ -388,12 +422,15 @@ export const letters=[
     "t": "Nobody told me this for most of my adult life. I had been handing people the default plan with a straight face."
    }
   ],
-  "n": 12
+  "n": 12,
+  "date": "May 23, 2026",
+  "iso": "2026-05-23",
+  "month": "May 2026"
  },
  {
   "slug": "hold-the-picture",
   "title": "Hold the picture",
-  "dek": "Yesterday you wrote what you want.",
+  "dek": "Yesterday you wrote what you want. Today, can you see it?",
   "day": 9,
   "vault": "mind",
   "body": [
@@ -422,12 +459,15 @@ export const letters=[
     "t": "One more thing. Holding a picture for a full minute is harder than it sounds. The mind wanders in about eight seconds. Bring it back without scolding yourself. That gentleness is part of the practice, not a failure of it."
    }
   ],
-  "n": 13
+  "n": 13,
+  "date": "May 24, 2026",
+  "iso": "2026-05-24",
+  "month": "May 2026"
  },
  {
   "slug": "the-thermostat",
   "title": "The thermostat",
-  "dek": "Ten days in.",
+  "dek": "Ten days in. Something new may still feel like someone else is doing it.",
   "day": 10,
   "vault": "mind",
   "body": [
@@ -456,12 +496,15 @@ export const letters=[
     "t": "One correction of my own: Maltz noticed it took his patients about twenty-one days to get used to a new face, and that one sentence became the twenty-one-day myth of the whole habit world. The real number in the research since is closer to sixty-six, and it varies by person and by habit. So don't be discouraged at twenty-two. You're a third of the way to the new setting."
    }
   ],
-  "n": 14
+  "n": 14,
+  "date": "May 25, 2026",
+  "iso": "2026-05-25",
+  "month": "May 2026"
  },
  {
   "slug": "a-stage-of-life-not-a-problem",
   "title": "A stage of life, not a problem",
-  "dek": "In 2002 a large government trial was stopped early, the headlines said hormone therapy caused breast cancer and heart attacks, and within a year millions of…",
+  "dek": "In 2002 a large government trial was stopped early, the headlines said hormone therapy caused breast cancer and heart attacks, and within a year millions of women…",
   "day": 10,
   "vault": "body",
   "body": [
@@ -486,7 +529,10 @@ export const letters=[
     "t": "The log has been asking about your sleep for ten days. If sleep has been breaking at three in the morning, this is one of the places that answer might live."
    }
   ],
-  "n": 15
+  "n": 15,
+  "date": "May 25, 2026",
+  "iso": "2026-05-25",
+  "month": "May 2026"
  },
  {
   "slug": "your-five",
@@ -520,12 +566,15 @@ export const letters=[
     "t": "This is not a key about cutting people out of your life. It is a key about looking. Most of us have never once written the five names down and asked what each one hands us. When you do, you'll find some of them are gifts you hadn't thanked, and one or two are seats you've been keeping warm out of habit."
    }
   ],
-  "n": 16
+  "n": 16,
+  "date": "May 26, 2026",
+  "iso": "2026-05-26",
+  "month": "May 2026"
  },
  {
   "slug": "say-your-name",
   "title": "Say your name",
-  "dek": "\"The point of power is always in the present moment.\"",
+  "dek": "\"The point of power is always in the present moment.\" Louise Hay wrote that, and she had earned it.",
   "day": 12,
   "vault": "mind",
   "body": [
@@ -554,7 +603,10 @@ export const letters=[
     "t": "Most people get through their name fine. It's the second half that comes out like a question. That's useful to know."
    }
   ],
-  "n": 17
+  "n": 17,
+  "date": "May 27, 2026",
+  "iso": "2026-05-27",
+  "month": "May 2026"
  },
  {
   "slug": "know-where-you-are-in-the-month",
@@ -584,12 +636,15 @@ export const letters=[
     "t": "For the men reading this: half the people you love run on this clock. Learning the four phases is not a small courtesy. It's a form of paying attention."
    }
   ],
-  "n": 18
+  "n": 18,
+  "date": "May 27, 2026",
+  "iso": "2026-05-27",
+  "month": "May 2026"
  },
  {
   "slug": "one-page-before-the-phone",
   "title": "One page before the phone",
-  "dek": "\"You cannot fix what you will not face.\"",
+  "dek": "\"You cannot fix what you will not face.\" Iyanla Vanzant said that to a great many people on television who did not want to hear it, and most of them thanked her later.",
   "day": 13,
   "vault": "mind",
   "body": [
@@ -618,12 +673,15 @@ export const letters=[
     "t": "Most of us hand the first five minutes of our day to a stranger with an algorithm. Vanzant asks for them back. One page. One sentence to carry. Then the day can have you."
    }
   ],
-  "n": 19
+  "n": 19,
+  "date": "May 28, 2026",
+  "iso": "2026-05-28",
+  "month": "May 2026"
  },
  {
   "slug": "e-r-o",
   "title": "E + R = O",
-  "dek": "Two weeks.",
+  "dek": "Two weeks. Today is a test of the first thirteen days, and it's a kind one.",
   "day": 14,
   "vault": "mind",
   "body": [
@@ -656,7 +714,10 @@ export const letters=[
     "t": "Here's what I find hopeful about this key. The moment you take the R back, you have options. Three of them, usually, that you couldn't see while the E was in charge. That's not a burden. That's the door opening."
    }
   ],
-  "n": 20
+  "n": 20,
+  "date": "May 29, 2026",
+  "iso": "2026-05-29",
+  "month": "May 2026"
  },
  {
   "slug": "the-muscle-nobody-showed-you",
@@ -686,12 +747,15 @@ export const letters=[
     "t": "This key is in the month called You because knowing your body means knowing the parts nobody taught you about. Most of us learned our bodies from sports and mirrors, which cover the outside. This is the first key about the inside, and it's a quiet, private, slightly funny place to start. That's fine. Shut the door."
    }
   ],
-  "n": 21
+  "n": 21,
+  "date": "May 29, 2026",
+  "iso": "2026-05-29",
+  "month": "May 2026"
  },
  {
   "slug": "five-four-three-two-one",
   "title": "Five, four, three, two, one",
-  "dek": "Halfway through the first month.",
+  "dek": "Halfway through the first month. By now the hard part is no longer knowing what to do.",
   "day": 15,
   "vault": "mind",
   "body": [
@@ -720,12 +784,15 @@ export const letters=[
     "t": "Neither is deep. Both get used. A key doesn't have to be profound to turn a lock. It has to be in your hand at the moment you're standing at the door."
    }
   ],
-  "n": 22
+  "n": 22,
+  "date": "May 30, 2026",
+  "iso": "2026-05-30",
+  "month": "May 2026"
  },
  {
   "slug": "fifteen-minutes-alone",
   "title": "Fifteen minutes alone",
-  "dek": "\"Love is not a feeling you fall into.",
+  "dek": "\"Love is not a feeling you fall into. It is an art you practice.\"",
   "day": 16,
   "vault": "mind",
   "body": [
@@ -754,12 +821,15 @@ export const letters=[
     "t": "Most people last about four minutes before they reach for something. The urge to leave your own company is one of the most honest readings you will ever take of yourself. It's also a muscle, and like every muscle in this month, it responds to reps. By the end of the year, fifteen minutes alone will be the best part of your morning."
    }
   ],
-  "n": 23
+  "n": 23,
+  "date": "May 31, 2026",
+  "iso": "2026-05-31",
+  "month": "May 2026"
  },
  {
   "slug": "the-long-way-is-the-only-way-that-lasts",
   "title": "The long way is the only way that lasts",
-  "dek": "Abraham Morgentaler is a Harvard urologist who has spent forty years studying testosterone, and in 2008 he wrote the book on it, *Testosterone for Life*,…",
+  "dek": "Abraham Morgentaler is a Harvard urologist who has spent forty years studying testosterone, and in 2008 he wrote the book on it, <em>Testosterone for Life</em>, that most of…",
   "day": 16,
   "vault": "body",
   "body": [
@@ -784,12 +854,15 @@ export const letters=[
     "t": "This letter goes to everyone. For men it's a mirror. For women it's the other half of the clock you read on day eight."
    }
   ],
-  "n": 24
+  "n": 24,
+  "date": "May 31, 2026",
+  "iso": "2026-05-31",
+  "month": "May 2026"
  },
  {
   "slug": "thirty-days-on-a-card",
   "title": "Thirty days on a card",
-  "dek": "\"We become what we think about.\"",
+  "dek": "\"We become what we think about.\" Six words.",
   "day": 17,
   "vault": "mind",
   "body": [
@@ -814,7 +887,10 @@ export const letters=[
     "t": "His other idea is the one I'd put on the wall. \"Success is the progressive realization of a worthy ideal.\" Read it slowly. It means anyone moving steadily toward something they chose is already succeeding, whatever the bank says this month. That is a definition you can use on a Tuesday."
    }
   ],
-  "n": 25
+  "n": 25,
+  "date": "June 1, 2026",
+  "iso": "2026-06-01",
+  "month": "June 2026"
  },
  {
   "slug": "the-gardener",
@@ -844,7 +920,10 @@ export const letters=[
     "t": "Seventeen days of walking and writing is seventeen days of weeding. You have more say over what grows in there than anyone has ever told you."
    }
   ],
-  "n": 26
+  "n": 26,
+  "date": "June 2, 2026",
+  "iso": "2026-06-02",
+  "month": "June 2026"
  },
  {
   "slug": "bone-is-built-by-load",
@@ -874,7 +953,10 @@ export const letters=[
     "t": "Bone density is measured by a DEXA scan, ten minutes, and most women aren't offered one until sixty-five and most men never. If you've had one, the T-score is your number. If you haven't, whether you should is a doctor's call based on age, family and history. What you can do today, with a wall and a pencil, is check your height against the height on your license. Bone that's going quietly takes an inch first."
    }
   ],
-  "n": 27
+  "n": 27,
+  "date": "June 2, 2026",
+  "iso": "2026-06-02",
+  "month": "June 2026"
  },
  {
   "slug": "compare-yourself-to-yesterday",
@@ -908,7 +990,10 @@ export const letters=[
     "t": "Then there's the other half of the key, which is about the room. One square yard. The desk you've been stacking things on. The corner you step around. Peterson's point is that order in one small place is not about tidiness. It's about proof that you can make the world the way you want it, at least here, and the proof travels."
    }
   ],
-  "n": 28
+  "n": 28,
+  "date": "June 3, 2026",
+  "iso": "2026-06-03",
+  "month": "June 2026"
  },
  {
   "slug": "the-six-needs",
@@ -942,7 +1027,10 @@ export const letters=[
     "t": "Once you see that, the habit stops being a mystery and a shame. It's a need being met badly. And a need being met badly can be met well."
    }
   ],
-  "n": 29
+  "n": 29,
+  "date": "June 4, 2026",
+  "iso": "2026-06-04",
+  "month": "June 2026"
  },
  {
   "slug": "the-seven-movements",
@@ -972,12 +1060,15 @@ export const letters=[
     "t": "And here's the hopeful part. Every one of the seven can still be learned. A swim lesson for an adult is the most avoided door in this chamber and the easiest to walk through. Watch a grown man learn to float and you'll understand the whole point of this year."
    }
   ],
-  "n": 30
+  "n": 30,
+  "date": "June 4, 2026",
+  "iso": "2026-06-04",
+  "month": "June 2026"
  },
  {
   "slug": "the-first-mirror",
   "title": "The first mirror",
-  "dek": "Three weeks.",
+  "dek": "Three weeks. For twenty days you have been building a face.",
   "day": 21,
   "vault": "mind",
   "body": [
@@ -1006,12 +1097,15 @@ export const letters=[
     "t": "Take it honestly, not aspirationally. The point is the face in the mirror, not the one you'd like to see. Then bring your scores to your coach this week, because a mirror is best read with someone standing next to you."
    }
   ],
-  "n": 31
+  "n": 31,
+  "date": "June 5, 2026",
+  "iso": "2026-06-05",
+  "month": "June 2026"
  },
  {
   "slug": "what-feels-like-nothing-to-you",
   "title": "What feels like nothing to you",
-  "dek": "Yesterday's mirror showed you your weather.",
+  "dek": "Yesterday's mirror showed you your weather. Today's shows you your hands.",
   "day": 22,
   "vault": "mind",
   "body": [
@@ -1040,12 +1134,15 @@ export const letters=[
     "t": "Your coach will read the five with you this week and ask one question: which of these has the last three weeks been using without you noticing?"
    }
   ],
-  "n": 32
+  "n": 32,
+  "date": "June 6, 2026",
+  "iso": "2026-06-06",
+  "month": "June 2026"
  },
  {
   "slug": "a-little-more-than-last-week",
   "title": "A little more than last week",
-  "dek": "The first month's body letters asked for numbers.",
+  "dek": "The first month's body letters asked for numbers. The second month's ask for load.",
   "day": 22,
   "vault": "body",
   "body": [
@@ -1074,12 +1171,15 @@ export const letters=[
     "t": "Nothing in this letter is a program. The program comes with a coach. The key is the principle, and the principle is one more than last time."
    }
   ],
-  "n": 33
+  "n": 33,
+  "date": "June 6, 2026",
+  "iso": "2026-06-06",
+  "month": "June 2026"
  },
  {
   "slug": "what-you-are-good-for",
   "title": "What you are good for",
-  "dek": "Yesterday asked what you are good at.",
+  "dek": "Yesterday asked what you are good at. Today asks what you are good for.",
   "day": 23,
   "vault": "mind",
   "body": [
@@ -1108,7 +1208,10 @@ export const letters=[
     "t": "This is also the first mirror in the month that your own tradition will recognize. Every faith on the 360 has a version of this list. Peterson and Seligman say so, and they credit them. When you look at your top five, you're looking at something much older than a survey, and your coach may ask whose list it reminds you of."
    }
   ],
-  "n": 34
+  "n": 34,
+  "date": "June 7, 2026",
+  "iso": "2026-06-07",
+  "month": "June 2026"
  },
  {
   "slug": "the-one-that-stings",
@@ -1142,7 +1245,10 @@ export const letters=[
     "t": "Used with a coach, the Enneagram is the best instrument in this chamber for the question of why. Used alone, it becomes a label, and labels are the thing this whole month is against. You are not a number. You are a person who, under pressure, reaches for one particular kind of safety. Knowing which kind is a gift."
    }
   ],
-  "n": 35
+  "n": 35,
+  "date": "June 8, 2026",
+  "iso": "2026-06-08",
+  "month": "June 2026"
  },
  {
   "slug": "four-lifts-three-days",
@@ -1172,12 +1278,15 @@ export const letters=[
     "t": "Now the honest part. Nobody should learn these four from a letter. The reason the program works is the form, and the reason the form works is a coach watching your first sessions. Vault Human points you to one. The key is the simplicity: four movements, three days, a little more each time. Everything else is noise."
    }
   ],
-  "n": 36
+  "n": 36,
+  "date": "June 8, 2026",
+  "iso": "2026-06-08",
+  "month": "June 2026"
  },
  {
   "slug": "four-letters-held-loosely",
   "title": "Four letters, held loosely",
-  "dek": "Katharine Briggs was a mother in Washington who had been quietly sorting the people in her life into types for years when, in 1923, she read Carl Jung and…",
+  "dek": "Katharine Briggs was a mother in Washington who had been quietly sorting the people in her life into types for years when, in 1923, she read Carl Jung and found he'd…",
   "day": 25,
   "vault": "mind",
   "body": [
@@ -1202,12 +1311,15 @@ export const letters=[
     "t": "This month's use for it is narrow and useful. Take the free version. Note your four letters. Then set them beside the Big Five scores from day twenty-one. E lines up with extraversion, N with openness, F with agreeableness, J with conscientiousness. If they disagree, trust the Big Five; it's the better instrument. If they agree, you have two mirrors saying the same thing, and that's worth a line in the log."
    }
   ],
-  "n": 37
+  "n": 37,
+  "date": "June 9, 2026",
+  "iso": "2026-06-09",
+  "month": "June 2026"
  },
  {
   "slug": "how-you-come-across",
   "title": "How you come across",
-  "dek": "By now you have four mirrors of who you are.",
+  "dek": "By now you have four mirrors of who you are. This one shows how you come across, which is not the same thing.",
   "day": 26,
   "vault": "mind",
   "body": [
@@ -1232,7 +1344,10 @@ export const letters=[
     "t": "Here's the the first month use, and it's a little humbling. If you know your own letter, you know what you've been expecting from everyone else and calling rudeness when they didn't supply it. The person who \"never gets to the point\" is a high I being themselves. The person who \"doesn't care how you feel\" is a high D being themselves. Nobody was being rude. They were speaking their letter."
    }
   ],
-  "n": 38
+  "n": 38,
+  "date": "June 10, 2026",
+  "iso": "2026-06-10",
+  "month": "June 2026"
  },
  {
   "slug": "slow-is-fast",
@@ -1262,12 +1377,15 @@ export const letters=[
     "t": "Vault Human points to 5/3/1 as one good long-middle plan among several. The key is the idea: percentages, waves, and a deload week built in before you need it. Rest isn't a break from the program. It's the fourth week of it."
    }
   ],
-  "n": 39
+  "n": 39,
+  "date": "June 10, 2026",
+  "iso": "2026-06-10",
+  "month": "June 2026"
  },
  {
   "slug": "a-mirror-you-may-already-own",
   "title": "A mirror you may already own",
-  "dek": "Some of you already have this chart.",
+  "dek": "Some of you already have this chart. Today we look at it together, honestly.",
   "day": 27,
   "vault": "mind",
   "body": [
@@ -1292,12 +1410,15 @@ export const letters=[
     "t": "We don't read charts. We let you read yours, in your own words, as a mirror. If you want a real reading, trained analysts exist and we'll point you to them every time. What this letter asks is smaller and, I think, more useful: what did you already know that the chart just confirmed? And what does it say that you honestly doubt? Both answers belong in the log. The second one is a sign of a healthy mind, not a closed one."
    }
   ],
-  "n": 40
+  "n": 40,
+  "date": "June 11, 2026",
+  "iso": "2026-06-11",
+  "month": "June 2026"
  },
  {
   "slug": "the-mirror-you-were-handed",
   "title": "The mirror you were handed",
-  "dek": "The mirrors you chose came first.",
+  "dek": "The mirrors you chose came first. Today, the mirror your employer held up, usually without telling you what it saw.",
   "day": 28,
   "vault": "mind",
   "body": [
@@ -1322,7 +1443,10 @@ export const letters=[
     "t": "This month is called You, and part of knowing yourself is knowing what others have been told about you. Not to resent it. To read it as if it were about a stranger, and see what it got right."
    }
   ],
-  "n": 41
+  "n": 41,
+  "date": "June 12, 2026",
+  "iso": "2026-06-12",
+  "month": "June 2026"
  },
  {
   "slug": "grease-the-groove",
@@ -1348,12 +1472,15 @@ export const letters=[
     "t": "This is a key for the second month because it's about breath and rhythm as much as muscle. The swing is a breathing exercise with a weight attached: sharp exhale at the top, every rep. And greasing the groove is the gentlest way anyone has ever found to get strong, which makes it the right way to start for the people who've been afraid to."
    }
   ],
-  "n": 42
+  "n": 42,
+  "date": "June 12, 2026",
+  "iso": "2026-06-12",
+  "month": "June 2026"
  },
  {
   "slug": "is-your-work-yours",
   "title": "Is your work yours?",
-  "dek": "Twenty-eight keys have asked what is yours.",
+  "dek": "Twenty-eight keys have asked what is yours. This one asks whether your work is.",
   "day": 29,
   "vault": "mind",
   "body": [
@@ -1378,12 +1505,15 @@ export const letters=[
     "t": "That's a finding for the first month. If your answer today is \"no, my work isn't mine,\" that is not a crisis. It's a line in the log, and it comes back in the fourth month, when we build your why. For now, the point is just to know."
    }
   ],
-  "n": 43
+  "n": 43,
+  "date": "June 13, 2026",
+  "iso": "2026-06-13",
+  "month": "June 2026"
  },
  {
   "slug": "the-two-things-to-let-someone-else-do",
   "title": "The two things to let someone else do",
-  "dek": "The last key of the first month.",
+  "dek": "The last key of the first month. Tomorrow you walk through a gate.",
   "day": 30,
   "vault": "mind",
   "body": [
@@ -1412,7 +1542,10 @@ export const letters=[
     "t": "The first month is called You. The last thing to know about you is which two things you should let someone else do. That isn't weakness. It's the beginning of a team."
    }
   ],
-  "n": 44
+  "n": 44,
+  "date": "June 14, 2026",
+  "iso": "2026-06-14",
+  "month": "June 2026"
  },
  {
   "slug": "what-actually-builds-muscle",
@@ -1438,12 +1571,15 @@ export const letters=[
     "t": "Here's why this belongs in the Body chamber and in the month of Breathing. Muscle is the organ of longevity. It's where the body stores and burns fuel, it's what keeps you upright at eighty, and the set-point key on day six told you it's one of the few things that moves the thermostat. And a hard set near failure is one of the most honest breathing exercises there is. Your body will tell you, in your breath, exactly where your limit is. Most people have never gone there. It's safer than it looks, and it's where the change lives."
    }
   ],
-  "n": 45
+  "n": 45,
+  "date": "June 14, 2026",
+  "iso": "2026-06-14",
+  "month": "June 2026"
  },
  {
   "slug": "your-biography-becomes-your-biology",
   "title": "Your biography becomes your biology",
-  "dek": "For thirty days you looked at who you are.",
+  "dek": "For thirty days you looked at who you are. For the next month you look at what you're living in.",
   "day": 31,
   "vault": "mind",
   "body": [
@@ -1468,12 +1604,15 @@ export const letters=[
     "t": "That's the first key of a month about the body, because before we ask the body to breathe, lift, sleep or move differently, we ask it what it's been carrying."
    }
   ],
-  "n": 46
+  "n": 46,
+  "date": "June 15, 2026",
+  "iso": "2026-06-15",
+  "month": "June 2026"
  },
  {
   "slug": "what-the-body-inherited",
   "title": "What the body inherited",
-  "dek": "Some of what your body carries isn't yours.",
+  "dek": "Some of what your body carries isn't yours. It arrived before you did.",
   "day": 32,
   "vault": "mind",
   "body": [
@@ -1502,12 +1641,15 @@ export const letters=[
     "t": "I'll add one thing. Finding out that some of your vigilance was inherited is not bad news. It means you were never broken. You were handed something, and what was handed can be set down."
    }
   ],
-  "n": 47
+  "n": 47,
+  "date": "June 16, 2026",
+  "iso": "2026-06-16",
+  "month": "June 2026"
  },
  {
   "slug": "one-hard-set",
   "title": "One hard set",
-  "dek": "Arthur Jones was a self-taught inventor who in 1970 built a strange-looking machine with a cam shaped like a nautilus shell, and with it he started an…",
+  "dek": "Arthur Jones was a self-taught inventor who in 1970 built a strange-looking machine with a cam shaped like a nautilus shell, and with it he started an argument that's…",
   "day": 32,
   "vault": "body",
   "body": [
@@ -1536,7 +1678,10 @@ export const letters=[
     "t": "Vault Human keeps the moment and leaves the dogma. You don't need to train Jones's way. You need to know what he was pointing at."
    }
   ],
-  "n": 48
+  "n": 48,
+  "date": "June 16, 2026",
+  "iso": "2026-06-16",
+  "month": "June 2026"
  },
  {
   "slug": "meditation-in-motion",
@@ -1566,12 +1711,15 @@ export const letters=[
     "t": "Stand with your feet apart. Shift your weight to one foot, slowly, over a full breath in. Shift it back over a full breath out. That's it. If you feel wobbly, good; that's the information, and it's the thing the practice fixes."
    }
   ],
-  "n": 49
+  "n": 49,
+  "date": "June 17, 2026",
+  "iso": "2026-06-17",
+  "month": "June 2026"
  },
  {
   "slug": "the-breath-is-the-lever",
   "title": "The breath is the lever",
-  "dek": "You've been breathing all your life without instruction.",
+  "dek": "You've been breathing all your life without instruction. Today you get some.",
   "day": 34,
   "vault": "mind",
   "body": [
@@ -1596,12 +1744,15 @@ export const letters=[
     "t": "This is the key the whole chamber turns on. The second month is the Body, by Breathing. Everything that follows this month, strength, sleep, food, rest, works better in a body that knows how to exhale. Most of us have been taking shallow breaths at the top of the chest since we got our first job. The lungs are waiting at the bottom."
    }
   ],
-  "n": 50
+  "n": 50,
+  "date": "June 18, 2026",
+  "iso": "2026-06-18",
+  "month": "June 2026"
  },
  {
   "slug": "light-weight-real-growth",
   "title": "Light weight, real growth",
-  "dek": "In 1966 a young Japanese man named Yoshiaki Sato was kneeling at a Buddhist ceremony when his legs went numb, and he noticed that the pressure felt a lot…",
+  "dek": "In 1966 a young Japanese man named Yoshiaki Sato was kneeling at a Buddhist ceremony when his legs went numb, and he noticed that the pressure felt a lot like the…",
   "day": 34,
   "vault": "body",
   "body": [
@@ -1626,7 +1777,10 @@ export const letters=[
     "t": "The idea to keep is bigger than the cuff. The body responds to the signal, not the number on the bar. Learn to send the signal, by whatever door is open to you, and the body answers."
    }
   ],
-  "n": 51
+  "n": 51,
+  "date": "June 18, 2026",
+  "iso": "2026-06-18",
+  "month": "June 2026"
  },
  {
   "slug": "steadiness-one-posture-at-a-time",
@@ -1656,12 +1810,15 @@ export const letters=[
     "t": "Desikachar's principle is the one Vault Human keeps: the practice is fitted to the person. Your coach will point you to a teacher who teaches that way. Today, you just need a wall."
    }
   ],
-  "n": 52
+  "n": 52,
+  "date": "June 19, 2026",
+  "iso": "2026-06-19",
+  "month": "June 2026"
  },
  {
   "slug": "progress-is-the-point",
   "title": "Progress is the point",
-  "dek": "In 1857 a French educator named Hippolyte Rivail, writing as Allan Kardec, published *The Spirits' Book*, a set of a thousand questions and answers about…",
+  "dek": "In 1857 a French educator named Hippolyte Rivail, writing as Allan Kardec, published <em>The Spirits' Book</em>, a set of a thousand questions and answers about where we…",
   "day": 36,
   "vault": "mind",
   "body": [
@@ -1686,12 +1843,15 @@ export const letters=[
     "t": "So here's the question I'd take from him. If you could ask one question and get a true answer, what would it be? Most people, when they sit with that, find that the question is about how to live, not what happens after. That's the one to work on."
    }
   ],
-  "n": 53
+  "n": 53,
+  "date": "June 20, 2026",
+  "iso": "2026-06-20",
+  "month": "June 2026"
  },
  {
   "slug": "your-body-is-the-gym",
   "title": "Your body is the gym",
-  "dek": "Eugen Sandow was a Prussian strongman who in the 1890s became the first bodybuilding celebrity in the world and in 1897 published a book saying that anyone…",
+  "dek": "Eugen Sandow was a Prussian strongman who in the 1890s became the first bodybuilding celebrity in the world and in 1897 published a book saying that anyone could…",
   "day": 36,
   "vault": "body",
   "body": [
@@ -1712,12 +1872,15 @@ export const letters=[
     "t": "I like this key for the same reason I like the walk on day one. It removes every excuse. You don't need money, a membership, a drive across town, or a spotter. You need the ten square feet you're standing in and the honesty to start at step one."
    }
   ],
-  "n": 54
+  "n": 54,
+  "date": "June 20, 2026",
+  "iso": "2026-06-20",
+  "month": "June 2026"
  },
  {
   "slug": "a-door-we-point-to-carefully",
   "title": "A door we point to, carefully",
-  "dek": "This is an information key.",
+  "dek": "This is an information key. I want to be clear about that at the top.",
   "day": 37,
   "vault": "mind",
   "body": [
@@ -1742,12 +1905,15 @@ export const letters=[
     "t": "That's the teaching. An experience, any experience, the hard conversation, the retreat, the loss, the breakthrough, changes you only if you prepare for it and sit with it afterward. Most of us do neither. We rush in and rush on."
    }
   ],
-  "n": 55
+  "n": 55,
+  "date": "June 21, 2026",
+  "iso": "2026-06-21",
+  "month": "June 2026"
  },
  {
   "slug": "prayer-that-affirms",
   "title": "Prayer that affirms",
-  "dek": "Before any of the people in the first month wrote a word, there was a quiet American movement teaching that the mind is a creative cause and that what you…",
+  "dek": "Before any of the people in the first month wrote a word, there was a quiet American movement teaching that the mind is a creative cause and that what you hold in it…",
   "day": 38,
   "vault": "mind",
   "body": [
@@ -1772,7 +1938,10 @@ export const letters=[
     "t": "It's in the month of Breathing because the release at the end is an exhale. Holmes understood that you cannot hold a prayer in a clenched body. You say it, you mean it, and you let it out."
    }
   ],
-  "n": 56
+  "n": 56,
+  "date": "June 22, 2026",
+  "iso": "2026-06-22",
+  "month": "June 2026"
  },
  {
   "slug": "the-year-has-seasons",
@@ -1798,7 +1967,10 @@ export const letters=[
     "t": "Periodization also forgives. If you're not getting stronger this month, you may be in a month that isn't for that. Ask what this block is for. Then do that."
    }
   ],
-  "n": 57
+  "n": 57,
+  "date": "June 22, 2026",
+  "iso": "2026-06-22",
+  "month": "June 2026"
  },
  {
   "slug": "the-body-can-be-told-to-stand-down",
@@ -1832,12 +2004,15 @@ export const letters=[
     "t": "Neither method requires belief. Both have been used in hospitals for decades. And both are free."
    }
   ],
-  "n": 58
+  "n": 58,
+  "date": "June 23, 2026",
+  "iso": "2026-06-23",
+  "month": "June 2026"
  },
  {
   "slug": "the-honest-version-of-attraction",
   "title": "The honest version of attraction",
-  "dek": "In 2006 a film and a book called *The Secret* told millions of people that the universe is a catalog and feeling is the order form.",
+  "dek": "In 2006 a film and a book called <em>The Secret</em> told millions of people that the universe is a catalog and feeling is the order form.",
   "day": 40,
   "vault": "mind",
   "body": [
@@ -1866,12 +2041,15 @@ export const letters=[
     "t": "So we keep the practice and drop the cosmology. Feel the finished thing. Then go do the next real step. The feeling is the fuel, not the vehicle."
    }
   ],
-  "n": 59
+  "n": 59,
+  "date": "June 24, 2026",
+  "iso": "2026-06-24",
+  "month": "June 2026"
  },
  {
   "slug": "fast-from-the-floor-to-overhead",
   "title": "Fast, from the floor to overhead",
-  "dek": "There are two lifts in the Olympics.",
+  "dek": "There are two lifts in the Olympics. The snatch: a barbell pulled from the floor to overhead in one movement.",
   "day": 40,
   "vault": "body",
   "body": [
@@ -1896,12 +2074,15 @@ export const letters=[
     "t": "This belongs in the month of Breathing because the lifts are a single breath. Brace, pull, catch, exhale. There's no room in a snatch for a second thought. Everything you've learned about the breath this month happens in one second."
    }
   ],
-  "n": 60
+  "n": 60,
+  "date": "June 24, 2026",
+  "iso": "2026-06-24",
+  "month": "June 2026"
  },
  {
   "slug": "control-from-the-center",
   "title": "Control, from the center",
-  "dek": "Joseph Pilates was a sickly German boy who built himself into a boxer, a gymnast and a circus performer, and who spent the First World War interned on the…",
+  "dek": "Joseph Pilates was a sickly German boy who built himself into a boxer, a gymnast and a circus performer, and who spent the First World War interned on the Isle of…",
   "day": 41,
   "vault": "mind",
   "body": [
@@ -1926,7 +2107,10 @@ export const letters=[
     "t": "A hundred years on, the pelvic floor key from the first month, the breath key from last week, and this one all turn out to be the same key. He had it in 1926."
    }
   ],
-  "n": 61
+  "n": 61,
+  "date": "June 25, 2026",
+  "iso": "2026-06-25",
+  "month": "June 2026"
  },
  {
   "slug": "cold-breath-and-the-decision-to-stay",
@@ -1952,12 +2136,15 @@ export const letters=[
     "t": "What belongs in the month of the Body is the third pillar. Everyone talks about the breath and the ice. Hof says the method is the decision. The cold water hits, every nerve says get out, and you stay for one more breath. That is a practice you can take anywhere, and I think it's the real gift. The body learns that the alarm is not an order. You can hear it, breathe through it, and choose."
    }
   ],
-  "n": 62
+  "n": 62,
+  "date": "June 26, 2026",
+  "iso": "2026-06-26",
+  "month": "June 2026"
  },
  {
   "slug": "hard-varied-and-scaled-to-you",
   "title": "Hard, varied, and scaled to you",
-  "dek": "In 2000 a gymnastics coach named Greg Glassman opened a gym in Santa Cruz with a formula: constantly varied functional movement, done at high intensity,…",
+  "dek": "In 2000 a gymnastics coach named Greg Glassman opened a gym in Santa Cruz with a formula: constantly varied functional movement, done at high intensity, scaled to…",
   "day": 42,
   "vault": "body",
   "body": [
@@ -1982,12 +2169,15 @@ export const letters=[
     "t": "For the month of Breathing, this key is about the three-on, one-off week. Glassman built the rest in. Three days of real work, one day of none. Most people get the ratio backward: six days of half effort and no real rest. Flip it."
    }
   ],
-  "n": 63
+  "n": 63,
+  "date": "June 26, 2026",
+  "iso": "2026-06-26",
+  "month": "June 2026"
  },
  {
   "slug": "hands-attention-and-rest",
   "title": "Hands, attention, and rest",
-  "dek": "In 1922 a Japanese man named Mikao Usui came down from a mountain outside Kyoto after a long fast and began teaching a practice of laying hands on people,…",
+  "dek": "In 1922 a Japanese man named Mikao Usui came down from a mountain outside Kyoto after a long fast and began teaching a practice of laying hands on people, lightly,…",
   "day": 43,
   "vault": "mind",
   "body": [
@@ -2012,12 +2202,15 @@ export const letters=[
     "t": "So today's key isn't about energy. It's about putting your attention, and if appropriate your hands, on something with full care. Your own shoulders. A child's back. A partner's hands. A dog."
    }
   ],
-  "n": 64
+  "n": 64,
+  "date": "June 27, 2026",
+  "iso": "2026-06-27",
+  "month": "June 2026"
  },
  {
   "slug": "change-the-frame",
   "title": "Change the frame",
-  "dek": "In 1975 two men at the University of California, Santa Cruz, a linguist named John Grinder and a student named Richard Bandler, sat in on sessions with the…",
+  "dek": "In 1975 two men at the University of California, Santa Cruz, a linguist named John Grinder and a student named Richard Bandler, sat in on sessions with the best…",
   "day": 44,
   "vault": "mind",
   "body": [
@@ -2038,7 +2231,10 @@ export const letters=[
     "t": "Why it's here, in the month of the Body: Bandler and Grinder's deepest insight was that the mind changes fastest through the body and the senses, not through argument. Change the posture, the breath, the picture, the tone of voice, and the feeling follows, before the thinking has a chance to object. Tony Robbins learned this from them and built an arena on it. You can use it at your desk."
    }
   ],
-  "n": 65
+  "n": 65,
+  "date": "June 28, 2026",
+  "iso": "2026-06-28",
+  "month": "June 2026"
  },
  {
   "slug": "muscle-is-medicine",
@@ -2068,12 +2264,15 @@ export const letters=[
     "t": "I'll say it the way I'd say it to someone I love. You don't have to lift heavy. You have to lift twice a week, for the rest of your life, because the organ that keeps you alive only works when you ask it to."
    }
   ],
-  "n": 66
+  "n": 66,
+  "date": "June 28, 2026",
+  "iso": "2026-06-28",
+  "month": "June 2026"
  },
  {
   "slug": "tap-and-say-it",
   "title": "Tap and say it",
-  "dek": "In 1995 a Stanford engineer named Gary Craig simplified a complicated therapy he'd learned from a psychologist named Roger Callahan into something anyone…",
+  "dek": "In 1995 a Stanford engineer named Gary Craig simplified a complicated therapy he'd learned from a psychologist named Roger Callahan into something anyone could do in…",
   "day": 45,
   "vault": "mind",
   "body": [
@@ -2098,12 +2297,15 @@ export const letters=[
     "t": "Vault Human doesn't teach the meridian theory. We teach the sentence and the rhythm, and we point you to a practitioner if you want the full method."
    }
   ],
-  "n": 67
+  "n": 67,
+  "date": "June 29, 2026",
+  "iso": "2026-06-29",
+  "month": "June 2026"
  },
  {
   "slug": "stop-doing-the-thing",
   "title": "Stop doing the thing",
-  "dek": "F.",
+  "dek": "F. M. Alexander was a young Shakespearean actor in Australia in the 1890s who kept losing his voice on stage.",
   "day": 46,
   "vault": "mind",
   "body": [
@@ -2124,12 +2326,15 @@ export const letters=[
     "t": "Most of us tighten before we do anything. Before we stand up, before we speak, before we lift, before we open an email. Alexander's whole teaching is that the tightening isn't necessary, that it was learned, and that what was learned can be unlearned, one noticing at a time."
    }
   ],
-  "n": 68
+  "n": 68,
+  "date": "June 30, 2026",
+  "iso": "2026-06-30",
+  "month": "June 2026"
  },
  {
   "slug": "grip-balance-and-the-fall-that-doesn-t-happen",
   "title": "Grip, balance, and the fall that doesn't happen",
-  "dek": "In 1990 a physician named Maria Fiatarone put ten people in a Boston nursing home, average age ninety, on a program of heavy leg strength training, eight…",
+  "dek": "In 1990 a physician named Maria Fiatarone put ten people in a Boston nursing home, average age ninety, on a program of heavy leg strength training, eight weeks, three…",
   "day": 46,
   "vault": "body",
   "body": [
@@ -2154,12 +2359,15 @@ export const letters=[
     "t": "Balance is the one most of us never train. Stand on one foot while you brush your teeth. That's the whole prescription to start. If you wobble, good; that's the muscle learning. If you can't do it at all, that's the most important thing you'll learn this month, and it's fixable."
    }
   ],
-  "n": 69
+  "n": 69,
+  "date": "June 30, 2026",
+  "iso": "2026-06-30",
+  "month": "June 2026"
  },
  {
   "slug": "a-ceremony-we-don-t-run",
   "title": "A ceremony we don't run",
-  "dek": "This is the second information key in the second month, and I'll say at the top what I said on day thirty-seven: Vault Human doesn't facilitate this,…",
+  "dek": "This is the second information key in the second month, and I'll say at the top what I said on day thirty-seven: Vault Human doesn't facilitate this, doesn't…",
   "day": 47,
   "vault": "mind",
   "body": [
@@ -2180,12 +2388,15 @@ export const letters=[
     "t": "That's the teaching, and you can use it without any brew. Every one of us faces experiences that are too big to process alone: a diagnosis, a birth, a death, a leaving. The traditions say: don't go in unprepared, don't go in alone, and don't come out and pretend it didn't happen."
    }
   ],
-  "n": 70
+  "n": 70,
+  "date": "July 1, 2026",
+  "iso": "2026-07-01",
+  "month": "July 2026"
  },
  {
   "slug": "the-three-states",
   "title": "The three states",
-  "dek": "In 1994 a scientist named Stephen Porges proposed a map of the nervous system that therapists have been using ever since, because it explains something…",
+  "dek": "In 1994 a scientist named Stephen Porges proposed a map of the nervous system that therapists have been using ever since, because it explains something every one of…",
   "day": 48,
   "vault": "mind",
   "body": [
@@ -2206,7 +2417,10 @@ export const letters=[
     "t": "The key for the month of Breathing is this: the way back up the ladder, from shutdown to mobilized to safe, runs through the body. A long exhale. A hum, which vibrates the vagus. Eyes meeting kind eyes. Warmth. These are not soft extras. They are the switches. And the person who learns to read their own three states, and to move between them on purpose, has a kind of freedom most people never get."
    }
   ],
-  "n": 71
+  "n": 71,
+  "date": "July 2, 2026",
+  "iso": "2026-07-02",
+  "month": "July 2026"
  },
  {
   "slug": "the-man-who-did-it-on-television-for-thirty-four-years",
@@ -2236,12 +2450,15 @@ export const letters=[
     "t": "Six and a half weeks of walks and logs is the beginning of a LaLanne morning. You're not building a body. You're building a person who shows up. The body follows that person around."
    }
   ],
-  "n": 72
+  "n": 72,
+  "date": "July 2, 2026",
+  "iso": "2026-07-02",
+  "month": "July 2026"
  },
  {
   "slug": "rehearse-the-person-you-re-becoming",
   "title": "Rehearse the person you're becoming",
-  "dek": "Joe Dispenza is a chiropractor who, after a serious accident in his twenties, spent years studying how the mind might take part in the body's healing, and…",
+  "dek": "Joe Dispenza is a chiropractor who, after a serious accident in his twenties, spent years studying how the mind might take part in the body's healing, and in 2012…",
   "day": 49,
   "vault": "mind",
   "body": [
@@ -2262,12 +2479,15 @@ export const letters=[
     "t": "It belongs in the second month because his method begins with the body: breath, stillness, and the release of the body's habitual bracing, before any thought is rehearsed. Seven weeks in, you know how to do that part."
    }
   ],
-  "n": 73
+  "n": 73,
+  "date": "July 3, 2026",
+  "iso": "2026-07-03",
+  "month": "July 2026"
  },
  {
   "slug": "armor-you-forgot-you-were-wearing",
   "title": "Armor you forgot you were wearing",
-  "dek": "Alexander Lowen was a lawyer who became a psychiatrist, a student of Wilhelm Reich in the 1940s, and in the 1950s the founder of a therapy that starts with…",
+  "dek": "Alexander Lowen was a lawyer who became a psychiatrist, a student of Wilhelm Reich in the 1940s, and in the 1950s the founder of a therapy that starts with the body…",
   "day": 50,
   "vault": "mind",
   "body": [
@@ -2288,12 +2508,15 @@ export const letters=[
     "t": "Here's what I love about this key, fifty days in. You've been walking, breathing, lifting. Your body has been getting stronger. Lowen asks a different question of that same body: what's it been carrying for you? Fifty days of attention is enough that you can start to feel the answer."
    }
   ],
-  "n": 74
+  "n": 74,
+  "date": "July 4, 2026",
+  "iso": "2026-07-04",
+  "month": "July 2026"
  },
  {
   "slug": "ten-minutes-of-maintenance",
   "title": "Ten minutes of maintenance",
-  "dek": "Kelly Starrett is a physical therapist in San Francisco who in 2013 wrote *Becoming a Supple Leopard*, a large book with a small message: your body needs…",
+  "dek": "Kelly Starrett is a physical therapist in San Francisco who in 2013 wrote <em>Becoming a Supple Leopard</em>, a large book with a small message: your body needs daily…",
   "day": 50,
   "vault": "body",
   "body": [
@@ -2318,7 +2541,10 @@ export const letters=[
     "t": "It's in the month of the Body because the strength you've been building needs somewhere to go. A muscle that's getting stronger across a stiff joint is a problem being built. Mobility is what lets the strength be used."
    }
   ],
-  "n": 75
+  "n": 75,
+  "date": "July 4, 2026",
+  "iso": "2026-07-04",
+  "month": "July 2026"
  },
  {
   "slug": "move-slowly-enough-to-notice",
@@ -2344,7 +2570,10 @@ export const letters=[
     "t": "It's in the month of Breathing because the first thing his students notice, every time, is that they've been holding their breath to move. Slow the movement down enough and the breath comes back on its own. It's also a gentler door than most. The person who can't do a push-up can lie on the floor and roll their head, and that person will learn as much as anyone."
    }
   ],
-  "n": 76
+  "n": 76,
+  "date": "July 5, 2026",
+  "iso": "2026-07-05",
+  "month": "July 2026"
  },
  {
   "slug": "breathe-less",
@@ -2374,12 +2603,15 @@ export const letters=[
     "t": "For the month of Breathing, this key is about the exhale and the nose. Mouth breathing, especially at night, is one of the quiet health problems of our time, and the fix starts with closing the mouth during the day. Light, slow, nasal, low. That's the Buteyko breath, and you can do it in a meeting."
    }
   ],
-  "n": 77
+  "n": 77,
+  "date": "July 6, 2026",
+  "iso": "2026-07-06",
+  "month": "July 2026"
  },
  {
   "slug": "spine-hygiene",
   "title": "Spine hygiene",
-  "dek": "Stuart McGill spent thirty years at the University of Waterloo in Canada doing something nobody else was doing: measuring, in a lab, exactly what loads the…",
+  "dek": "Stuart McGill spent thirty years at the University of Waterloo in Canada doing something nobody else was doing: measuring, in a lab, exactly what loads the human…",
   "day": 52,
   "vault": "body",
   "body": [
@@ -2404,12 +2636,15 @@ export const letters=[
     "t": "It belongs in the second month because the brace you learned under the bar on day twenty-four is the same brace McGill teaches for picking up a child. The spine likes one shape. Keep it, and move everything else around it."
    }
   ],
-  "n": 78
+  "n": 78,
+  "date": "July 6, 2026",
+  "iso": "2026-07-06",
+  "month": "July 2026"
  },
  {
   "slug": "the-body-in-gravity",
   "title": "The body in gravity",
-  "dek": "Ida Rolf earned a doctorate in biochemistry from Columbia in 1920, when very few women did, and spent the next fifty years on a question nobody else was…",
+  "dek": "Ida Rolf earned a doctorate in biochemistry from Columbia in 1920, when very few women did, and spent the next fifty years on a question nobody else was asking: what…",
   "day": 53,
   "vault": "mind",
   "body": [
@@ -2434,12 +2669,15 @@ export const letters=[
     "t": "And here's the breath connection she insisted on: a compressed ribcage can't breathe fully no matter how many breathing exercises you do. The ribs have to be free. Session three of her ten is almost entirely about the sides of the body, for that reason."
    }
   ],
-  "n": 79
+  "n": 79,
+  "date": "July 7, 2026",
+  "iso": "2026-07-07",
+  "month": "July 2026"
  },
  {
   "slug": "let-it-shake",
   "title": "Let it shake",
-  "dek": "Watch a dog after something frightens it.",
+  "dek": "Watch a dog after something frightens it. It shakes, hard, head to tail, for a few seconds, and then it's fine.",
   "day": 54,
   "vault": "mind",
   "body": [
@@ -2464,12 +2702,15 @@ export const letters=[
     "t": "That's a key for the second month because it's the body doing its own work when the mind gets out of the way. And it rhymes with the whole month: the exhale, the release, the standing down."
    }
   ],
-  "n": 80
+  "n": 80,
+  "date": "July 8, 2026",
+  "iso": "2026-07-08",
+  "month": "July 2026"
  },
  {
   "slug": "find-the-asymmetry-first",
   "title": "Find the asymmetry first",
-  "dek": "Gray Cook and Lee Burton were two physical therapists who in 1997 got tired of watching athletes get hurt doing programs that were, on paper, perfectly…",
+  "dek": "Gray Cook and Lee Burton were two physical therapists who in 1997 got tired of watching athletes get hurt doing programs that were, on paper, perfectly designed.",
   "day": 54,
   "vault": "body",
   "body": [
@@ -2490,7 +2731,10 @@ export const letters=[
     "t": "For the month of the Body, this key is the mirror the strength keys needed. You've been adding load for a month. Before you add more, ask: is the load going into a body that moves evenly? A certified screener can run the full seven in ten minutes. You can run the simplest version at home today."
    }
   ],
-  "n": 81
+  "n": 81,
+  "date": "July 8, 2026",
+  "iso": "2026-07-08",
+  "month": "July 2026"
  },
  {
   "slug": "breathe-the-heart-into-rhythm",
@@ -2520,7 +2764,10 @@ export const letters=[
     "t": "Here's why this key sits late in the month of Breathing. You've learned to breathe deep, breathe less, breathe into the belly, breathe through a hard set. This is the one that adds a feeling to the breath. Not just slow. Slow and grateful. The body knows the difference."
    }
   ],
-  "n": 82
+  "n": 82,
+  "date": "July 9, 2026",
+  "iso": "2026-07-09",
+  "month": "July 2026"
  },
  {
   "slug": "the-body-keeps-the-score",
@@ -2550,12 +2797,15 @@ export const letters=[
     "t": "Maté's gift is the gentlest line in the chamber: the thing you're hardest on yourself about was probably once the thing that kept you safe."
    }
   ],
-  "n": 83
+  "n": 83,
+  "date": "July 10, 2026",
+  "iso": "2026-07-10",
+  "month": "July 2026"
  },
  {
   "slug": "the-way-we-moved-before-gyms",
   "title": "The way we moved before gyms",
-  "dek": "Georges Hébert was a French naval officer who in 1902 helped evacuate hundreds of people from a volcanic eruption on Martinique and was struck by the…",
+  "dek": "Georges Hébert was a French naval officer who in 1902 helped evacuate hundreds of people from a volcanic eruption on Martinique and was struck by the islanders he…",
   "day": 56,
   "vault": "body",
   "body": [
@@ -2580,7 +2830,10 @@ export const letters=[
     "t": "I'll say it plainly for the people who've never climbed anything since childhood: start with a curb. Balance along it. Step up onto a bench. Crawl across the lawn on hands and feet for twenty feet. It will feel silly and it will feel wonderful, in that order."
    }
   ],
-  "n": 84
+  "n": 84,
+  "date": "July 10, 2026",
+  "iso": "2026-07-10",
+  "month": "July 2026"
  },
  {
   "slug": "the-doors-of-breath-and-dance",
@@ -2606,12 +2859,15 @@ export const letters=[
     "t": "What they share, and what I keep, is this: there are parts of you that don't speak in words, and they can be reached by breath and movement when they can't be reached by thought. Fifty-seven days in, you've built a body that can hold that. The dance class is the door most people can walk through this week."
    }
   ],
-  "n": 85
+  "n": 85,
+  "date": "July 11, 2026",
+  "iso": "2026-07-11",
+  "month": "July 2026"
  },
  {
   "slug": "maps-we-hold-loosely",
   "title": "Maps we hold loosely",
-  "dek": "The last key of the second month is three systems with large followings and little evidence, and I'm including them because people you know use them and you…",
+  "dek": "The last key of the second month is three systems with large followings and little evidence, and I'm including them because people you know use them and you should…",
   "day": 58,
   "vault": "mind",
   "body": [
@@ -2632,12 +2888,15 @@ export const letters=[
     "t": "Vault Human holds these loosely and says so. We take the picture, leave the mechanism, and point to a practitioner if you want the experience."
    }
   ],
-  "n": 86
+  "n": 86,
+  "date": "July 12, 2026",
+  "iso": "2026-07-12",
+  "month": "July 2026"
  },
  {
   "slug": "move-all-day-not-for-an-hour",
   "title": "Move all day, not for an hour",
-  "dek": "Katy Bowman is a biomechanist who in 2014 wrote *Move Your DNA* with a claim that upends the whole fitness conversation: an hour of exercise a day doesn't…",
+  "dek": "Katy Bowman is a biomechanist who in 2014 wrote <em>Move Your DNA</em> with a claim that upends the whole fitness conversation: an hour of exercise a day doesn't undo…",
   "day": 58,
   "vault": "body",
   "body": [
@@ -2662,7 +2921,10 @@ export const letters=[
     "t": "A chair isn't the enemy. A chair for ten hours is. Bowman's practice starts with noticing how many hours, which most people have never counted."
    }
   ],
-  "n": 87
+  "n": 87,
+  "date": "July 12, 2026",
+  "iso": "2026-07-12",
+  "month": "July 2026"
  },
  {
   "slug": "the-undoing-of-fear",
@@ -2692,12 +2954,15 @@ export const letters=[
     "t": "Lesson one of the Course is deliberately humbling: nothing I see means anything. Not a philosophy. An exercise, in noticing how much meaning you've already loaded onto a room before you've looked at it."
    }
   ],
-  "n": 88
+  "n": 88,
+  "date": "July 13, 2026",
+  "iso": "2026-07-13",
+  "month": "July 2026"
  },
  {
   "slug": "our-deepest-fear",
   "title": "Our deepest fear",
-  "dek": "\"Our deepest fear is not that we are inadequate.",
+  "dek": "\"Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure.\"",
   "day": 60,
   "vault": "mind",
   "body": [
@@ -2726,12 +2991,15 @@ export const letters=[
     "t": "And the fear in her famous line is worth sitting with. Most of us are more afraid of our own light than our darkness. We play small because it's safer, and we call it humility. She says it isn't. Humility is being exactly as big as you are."
    }
   ],
-  "n": 89
+  "n": 89,
+  "date": "July 14, 2026",
+  "iso": "2026-07-14",
+  "month": "July 2026"
  },
  {
   "slug": "movement-is-the-medicine-for-pain",
   "title": "Movement is the medicine for pain",
-  "dek": "In 1921 a woman named Mary McMillan, who had treated wounded soldiers in the First World War with exercise and movement when the standard treatment was bed…",
+  "dek": "In 1921 a woman named Mary McMillan, who had treated wounded soldiers in the First World War with exercise and movement when the standard treatment was bed rest,…",
   "day": 60,
   "vault": "body",
   "body": [
@@ -2752,7 +3020,10 @@ export const letters=[
     "t": "That's a key for the second month because sixty days of movement have probably surfaced something, somewhere: a knee, a shoulder, a back. The answer is rarely to stop. The answer is a physical therapist who finds your direction and gives you a graded path back."
    }
   ],
-  "n": 90
+  "n": 90,
+  "date": "July 14, 2026",
+  "iso": "2026-07-14",
+  "month": "July 2026"
  },
  {
   "slug": "may-you-be-well",
@@ -2782,7 +3053,10 @@ export const letters=[
     "t": "I'll tell you the hardest person to wish well for, in my experience and in the research. It isn't the enemy. It's yourself. Most people have to be coached through the first phrase. Start there anyway."
    }
   ],
-  "n": 91
+  "n": 91,
+  "date": "July 15, 2026",
+  "iso": "2026-07-15",
+  "month": "July 2026"
  },
  {
   "slug": "the-examined-day",
@@ -2812,7 +3086,10 @@ export const letters=[
     "t": "Vault Human holds the Examen as a practice anyone can do, whatever they believe. The vocabulary is Catholic; the method is human. You can do it with God, or with your own honesty, and it works either way."
    }
   ],
-  "n": 92
+  "n": 92,
+  "date": "July 16, 2026",
+  "iso": "2026-07-16",
+  "month": "July 2026"
  },
  {
   "slug": "hold-it-longer",
@@ -2846,7 +3123,10 @@ export const letters=[
     "t": "Hatha on day thirty-five was steady and comfortable. Yin takes the comfortable away and keeps the steady. You find out what you're like when there's nothing to do but stay."
    }
   ],
-  "n": 93
+  "n": 93,
+  "date": "July 16, 2026",
+  "iso": "2026-07-16",
+  "month": "July 2026"
  },
  {
   "slug": "beginner-s-mind",
@@ -2876,12 +3156,15 @@ export const letters=[
     "t": "Zen is also the place where everything this month has been pointing finally gets stripped down. No sentence to hold, no person to wish well, no steps. Just attention, on the breath, now. That's the gate of Awareness with nothing on it."
    }
   ],
-  "n": 94
+  "n": 94,
+  "date": "July 17, 2026",
+  "iso": "2026-07-17",
+  "month": "July 2026"
  },
  {
   "slug": "ten-days-of-silence",
   "title": "Ten days of silence",
-  "dek": "Somewhere near you, probably within a few hours' drive, there's a center where you can sit in silence for ten days, be fed and housed, and pay nothing…",
+  "dek": "Somewhere near you, probably within a few hours' drive, there's a center where you can sit in silence for ten days, be fed and housed, and pay nothing unless you…",
   "day": 64,
   "vault": "mind",
   "body": [
@@ -2906,7 +3189,10 @@ export const letters=[
     "t": "Here's what I'll say about the ten days. People come back changed, and most say the third day was the hardest thing they've ever done. If this is your key, your coach will help you decide when."
    }
   ],
-  "n": 95
+  "n": 95,
+  "date": "July 18, 2026",
+  "iso": "2026-07-18",
+  "month": "July 2026"
  },
  {
   "slug": "pain-is-a-judgment-not-a-measurement",
@@ -2940,12 +3226,15 @@ export const letters=[
     "t": "A plain line: new, sharp, or worsening pain, or pain with other symptoms, is a doctor's visit. This key is for the old, familiar ache that's been running your life."
    }
   ],
-  "n": 96
+  "n": 96,
+  "date": "July 18, 2026",
+  "iso": "2026-07-18",
+  "month": "July 2026"
  },
  {
   "slug": "eight-weeks-that-changed-medicine",
   "title": "Eight weeks that changed medicine",
-  "dek": "In 1979 a molecular biologist named Jon Kabat-Zinn, who'd been practicing meditation for years, walked into the basement of a hospital in Massachusetts with…",
+  "dek": "In 1979 a molecular biologist named Jon Kabat-Zinn, who'd been practicing meditation for years, walked into the basement of a hospital in Massachusetts with a…",
   "day": 65,
   "vault": "mind",
   "body": [
@@ -2970,7 +3259,10 @@ export const letters=[
     "t": "Sixty-five days in, you've been doing a shortened version of this since day one. The walk was mindfulness. The log was mindfulness. Now we name it."
    }
   ],
-  "n": 97
+  "n": 97,
+  "date": "July 19, 2026",
+  "iso": "2026-07-19",
+  "month": "July 2026"
  },
  {
   "slug": "thoughts-are-not-facts",
@@ -2996,7 +3288,10 @@ export const letters=[
     "t": "I'll say the clinical thing clearly. If you've had episodes of depression, the course is designed for you and your coach will point you to it, and to a therapist if you need one now. For everyone else, the method is the same. Every mind runs loops. The practice is to catch the first thought, call it a thought, and watch where it was trying to take you."
    }
   ],
-  "n": 98
+  "n": 98,
+  "date": "July 20, 2026",
+  "iso": "2026-07-20",
+  "month": "July 2026"
  },
  {
   "slug": "the-first-gym",
@@ -3022,7 +3317,10 @@ export const letters=[
     "t": "Vault Human's year is built on that model, whether or not we say so. The walk outside, the strength, the log, the sitting still. One institution for the whole person. The Greeks didn't separate them. We've spent two thousand years putting them in different buildings."
    }
   ],
-  "n": 99
+  "n": 99,
+  "date": "July 20, 2026",
+  "iso": "2026-07-20",
+  "month": "July 2026"
  },
  {
   "slug": "treat-yourself-like-a-friend",
@@ -3048,12 +3346,15 @@ export const letters=[
     "t": "This is the key I'd give almost everyone who walks into Vault Human. The people who come to coaching are usually hard workers who are brutal to themselves and think that's what drives them. It isn't. It's what's holding them back. Sixty-seven days of a log is proof you can be consistent. Now let's find out what happens when you're kind about it."
    }
   ],
-  "n": 100
+  "n": 100,
+  "date": "July 21, 2026",
+  "iso": "2026-07-21",
+  "month": "July 2026"
  },
  {
   "slug": "what-s-in-your-control",
   "title": "What's in your control",
-  "dek": "Two thousand years ago a Greek teacher in Rome named Epictetus, who had been born without freedom and earned it, opened his handbook with one sentence that…",
+  "dek": "Two thousand years ago a Greek teacher in Rome named Epictetus, who had been born without freedom and earned it, opened his handbook with one sentence that could save…",
   "day": 68,
   "vault": "mind",
   "body": [
@@ -3086,7 +3387,10 @@ export const letters=[
     "t": "I'll add that Stoicism isn't about feeling nothing. Marcus wept. Seneca grieved. It's about not being ruled by what you can't rule."
    }
   ],
-  "n": 101
+  "n": 101,
+  "date": "July 22, 2026",
+  "iso": "2026-07-22",
+  "month": "July 2026"
  },
  {
   "slug": "flow-not-force",
@@ -3116,12 +3420,15 @@ export const letters=[
     "t": "Vault Human points to a school. Any of the four, with a good teacher, will do this work."
    }
   ],
-  "n": 102
+  "n": 102,
+  "date": "July 22, 2026",
+  "iso": "2026-07-22",
+  "month": "July 2026"
  },
  {
   "slug": "lean-in",
   "title": "Lean in",
-  "dek": "Pema Chödrön was a schoolteacher in California, twice married and twice divorced, when she walked into a Tibetan Buddhist center in the 1970s and never…",
+  "dek": "Pema Chödrön was a schoolteacher in California, twice married and twice divorced, when she walked into a Tibetan Buddhist center in the 1970s and never really left.",
   "day": 69,
   "vault": "mind",
   "body": [
@@ -3150,12 +3457,15 @@ export const letters=[
     "t": "Here's the line of hers I keep closest: \"Nothing ever goes away until it has taught us what we need to know.\""
    }
   ],
-  "n": 103
+  "n": 103,
+  "date": "July 23, 2026",
+  "iso": "2026-07-23",
+  "month": "July 2026"
  },
  {
   "slug": "twenty-minutes-twice-a-day",
   "title": "Twenty minutes, twice a day",
-  "dek": "In 1955 an Indian teacher named Maharishi Mahesh Yogi began teaching a simple mantra meditation, and within fifteen years, after the Beatles visited his…",
+  "dek": "In 1955 an Indian teacher named Maharishi Mahesh Yogi began teaching a simple mantra meditation, and within fifteen years, after the Beatles visited his ashram, it…",
   "day": 70,
   "vault": "mind",
   "body": [
@@ -3176,7 +3486,10 @@ export const letters=[
     "t": "Vault Human points to a certified TM teacher for the real thing. The idea of two restful sits a day, bookending the work, is yours regardless."
    }
   ],
-  "n": 104
+  "n": 104,
+  "date": "July 24, 2026",
+  "iso": "2026-07-24",
+  "month": "July 2026"
  },
  {
   "slug": "the-oldest-training-hall",
@@ -3202,7 +3515,10 @@ export const letters=[
     "t": "Vault Human points to a Kalaripayattu teacher for anyone who finds one; they're rare outside India but they exist. The principle is for everyone, today. Prepare the body as if preparation mattered. Because it does."
    }
   ],
-  "n": 105
+  "n": 105,
+  "date": "July 24, 2026",
+  "iso": "2026-07-24",
+  "month": "July 2026"
  },
  {
   "slug": "four-questions",
@@ -3236,12 +3552,15 @@ export const letters=[
     "t": "Katie's claim is that suffering is optional, which sounds glib until you've done the four questions on something that's been eating you for years and felt it loosen."
    }
   ],
-  "n": 106
+  "n": 106,
+  "date": "July 25, 2026",
+  "iso": "2026-07-25",
+  "month": "July 2026"
  },
  {
   "slug": "recognize-allow-investigate-nurture",
   "title": "Recognize, allow, investigate, nurture",
-  "dek": "Tara Brach is a psychologist and meditation teacher in Washington, D.C., who in 2003 wrote *Radical Acceptance*, a book about what she calls the trance of…",
+  "dek": "Tara Brach is a psychologist and meditation teacher in Washington, D.C., who in 2003 wrote <em>Radical Acceptance</em>, a book about what she calls the trance of…",
   "day": 72,
   "vault": "mind",
   "body": [
@@ -3270,12 +3589,15 @@ export const letters=[
     "t": "Vault Human points to Brach's free guided practices online, which are generous and good."
    }
   ],
-  "n": 107
+  "n": 107,
+  "date": "July 26, 2026",
+  "iso": "2026-07-26",
+  "month": "July 2026"
  },
  {
   "slug": "stand-until-the-stance-holds-you",
   "title": "Stand until the stance holds you",
-  "dek": "In the fifth century a Buddhist monastery was founded on a mountain in Henan province, China, and over the centuries it became the most famous training hall…",
+  "dek": "In the fifth century a Buddhist monastery was founded on a mountain in Henan province, China, and over the centuries it became the most famous training hall in the world.",
   "day": 72,
   "vault": "body",
   "body": [
@@ -3300,12 +3622,15 @@ export const letters=[
     "t": "The Shaolin discipline is also the plainest illustration on the 180 of a truth every key keeps circling: mastery is boring. The thing that looks like magic in the film is ten thousand mornings of standing in a stance. There was never a shortcut, and the monks never pretended there was."
    }
   ],
-  "n": 108
+  "n": 108,
+  "date": "July 26, 2026",
+  "iso": "2026-07-26",
+  "month": "July 2026"
  },
  {
   "slug": "sit-in-the-silence",
   "title": "Sit in the silence",
-  "dek": "In the 1970s three Trappist monks in a Massachusetts abbey, led by Thomas Keating, noticed that young Americans were going to Asia to learn meditation and…",
+  "dek": "In the 1970s three Trappist monks in a Massachusetts abbey, led by Thomas Keating, noticed that young Americans were going to Asia to learn meditation and had no idea…",
   "day": 73,
   "vault": "mind",
   "body": [
@@ -3330,12 +3655,15 @@ export const letters=[
     "t": "Keating's rule for distractions is the kindest I know: \"Ever so gently return to the sacred word.\" Ever so gently. No scolding. The thought came; you came back. That's the practice working, not failing."
    }
   ],
-  "n": 109
+  "n": 109,
+  "date": "July 27, 2026",
+  "iso": "2026-07-27",
+  "month": "July 2026"
  },
  {
   "slug": "the-three-who-brought-it-home",
   "title": "The three who brought it home",
-  "dek": "In 1975 three young Americans who'd spent years in monasteries in Thailand, Burma and India bought an old Catholic seminary in Barre, Massachusetts, and…",
+  "dek": "In 1975 three young Americans who'd spent years in monasteries in Thailand, Burma and India bought an old Catholic seminary in Barre, Massachusetts, and opened a…",
   "day": 74,
   "vault": "mind",
   "body": [
@@ -3360,12 +3688,15 @@ export const letters=[
     "t": "Vault Human points to IMS and its sister centers for retreats, and to the three teachers' books, which are among the kindest ever written on this subject."
    }
   ],
-  "n": 110
+  "n": 110,
+  "date": "July 28, 2026",
+  "iso": "2026-07-28",
+  "month": "July 2026"
  },
  {
   "slug": "clubs-maces-and-milk",
   "title": "Clubs, maces, and milk",
-  "dek": "In the courtyards of Persia, for a thousand years, men have trained in a sunken octagonal pit called a zurkhaneh, the house of strength, to the beat of a…",
+  "dek": "In the courtyards of Persia, for a thousand years, men have trained in a sunken octagonal pit called a zurkhaneh, the house of strength, to the beat of a drum and the…",
   "day": 74,
   "vault": "body",
   "body": [
@@ -3386,7 +3717,10 @@ export const letters=[
     "t": "For the month of the Body, this is the key about the shoulders and about rhythm. Vault Human points to a coach who teaches clubs or maces, and they exist in most cities now. A light club, even a plastic one, is enough to start."
    }
   ],
-  "n": 111
+  "n": 111,
+  "date": "July 28, 2026",
+  "iso": "2026-07-28",
+  "month": "July 2026"
  },
  {
   "slug": "three-good-things",
@@ -3416,7 +3750,10 @@ export const letters=[
     "t": "I'll say one more thing. The people who find this hardest are usually the ones it helps most. If you sit down and nothing comes, start smaller. The coffee was hot. The light was green. Someone held a door."
    }
   ],
-  "n": 112
+  "n": 112,
+  "date": "July 29, 2026",
+  "iso": "2026-07-29",
+  "month": "July 2026"
  },
  {
   "slug": "now",
@@ -3446,12 +3783,15 @@ export const letters=[
     "t": "I hold Tolle's larger metaphysics lightly. The practice I hold tightly, because it has steadied a great many people when nothing else did. The present moment is always survivable. It's the past and the future that aren't."
    }
   ],
-  "n": 113
+  "n": 113,
+  "date": "July 30, 2026",
+  "iso": "2026-07-30",
+  "month": "July 2026"
  },
  {
   "slug": "the-way-and-the-room-you-practice-it-in",
   "title": "The way, and the room you practice it in",
-  "dek": "In 1882 a slight, bookish young Japanese educator named Jigoro Kano, who'd been bullied as a boy and had taken up the old jujutsu to defend himself, did…",
+  "dek": "In 1882 a slight, bookish young Japanese educator named Jigoro Kano, who'd been bullied as a boy and had taken up the old jujutsu to defend himself, did something new.",
   "day": 76,
   "vault": "body",
   "body": [
@@ -3476,7 +3816,10 @@ export const letters=[
     "t": "Vault Human points to a dojo, judo or otherwise. The gentle way is a good one to start with."
    }
   ],
-  "n": 114
+  "n": 114,
+  "date": "July 30, 2026",
+  "iso": "2026-07-30",
+  "month": "July 2026"
  },
  {
   "slug": "who-am-i",
@@ -3506,12 +3849,15 @@ export const letters=[
     "t": "It's the right close for this part of the third month because every key this month has been about attention, and this is the one that turns attention around to look at itself. Vault Human points to teachers for anyone who wants to go deep. The question is free, and it's yours."
    }
   ],
-  "n": 115
+  "n": 115,
+  "date": "July 31, 2026",
+  "iso": "2026-07-31",
+  "month": "July 2026"
  },
  {
   "slug": "the-roommate-in-your-head",
   "title": "The roommate in your head",
-  "dek": "There's a voice in your head that never stops talking.",
+  "dek": "There's a voice in your head that never stops talking. It comments on everything, argues with people who aren't there, replays yesterday and rehearses tomorrow.",
   "day": 78,
   "vault": "mind",
   "body": [
@@ -3536,12 +3882,15 @@ export const letters=[
     "t": "It's in the month of Awareness because it's awareness at its most practical. No cushion required. The roommate is talking right now, reading this. Notice that you can hear it. That's the whole key."
    }
   ],
-  "n": 116
+  "n": 116,
+  "date": "August 1, 2026",
+  "iso": "2026-08-01",
+  "month": "August 2026"
  },
  {
   "slug": "fitness-for-everyone-invented-twice",
   "title": "Fitness for everyone, invented twice",
-  "dek": "In 1811 a German schoolteacher named Friedrich Jahn, humiliated by his country's defeat and convinced that a free people needed strong bodies, built the…",
+  "dek": "In 1811 a German schoolteacher named Friedrich Jahn, humiliated by his country's defeat and convinced that a free people needed strong bodies, built the first outdoor…",
   "day": 78,
   "vault": "body",
   "body": [
@@ -3566,12 +3915,15 @@ export const letters=[
     "t": "The deeper key is civic. Jahn built his field for free, outdoors, for everyone. The best fitness idea in history was a public park with a bar in it."
    }
   ],
-  "n": 117
+  "n": 117,
+  "date": "August 1, 2026",
+  "iso": "2026-08-01",
+  "month": "August 2026"
  },
  {
   "slug": "your-right-is-to-the-work",
   "title": "Your right is to the work",
-  "dek": "The *Bhagavad Gita* opens on a battlefield, with a warrior named Arjuna frozen in his chariot, unable to act because every choice seems wrong.",
+  "dek": "The <em>Bhagavad Gita</em> opens on a battlefield, with a warrior named Arjuna frozen in his chariot, unable to act because every choice seems wrong.",
   "day": 79,
   "vault": "mind",
   "body": [
@@ -3596,12 +3948,15 @@ export const letters=[
     "t": "Seventy-nine days in, you've been doing karma yoga without the name. The walk, the log, the small action, done because they're yours, not because today's result is guaranteed. The Gita would say you've been practicing the teaching. Now you have the sentence."
    }
   ],
-  "n": 118
+  "n": 118,
+  "date": "August 2, 2026",
+  "iso": "2026-08-02",
+  "month": "August 2026"
  },
  {
   "slug": "know-your-constitution",
   "title": "Know your constitution",
-  "dek": "Three thousand years ago in India, physicians began writing down a system of medicine built on a single insight: people are not the same, and the same food,…",
+  "dek": "Three thousand years ago in India, physicians began writing down a system of medicine built on a single insight: people are not the same, and the same food, routine…",
   "day": 80,
   "vault": "mind",
   "body": [
@@ -3626,12 +3981,15 @@ export const letters=[
     "t": "Eighty days of a log has given you more data on your own constitution than most people ever gather. Ayurveda is the oldest framework for reading it."
    }
   ],
-  "n": 119
+  "n": 119,
+  "date": "August 3, 2026",
+  "iso": "2026-08-03",
+  "month": "August 2026"
  },
  {
   "slug": "the-first-fitness-industry",
   "title": "The first fitness industry",
-  "dek": "In 1897 a Prussian strongman who'd become the most famous body in the world published a book, *Strength and How to Obtain It*, and with it invented an industry.",
+  "dek": "In 1897 a Prussian strongman who'd become the most famous body in the world published a book, <em>Strength and How to Obtain It</em>, and with it invented an industry.",
   "day": 80,
   "vault": "body",
   "body": [
@@ -3652,12 +4010,15 @@ export const letters=[
     "t": "The key for the month of the Body is to separate the method from the sale. Sandow's dumbbells worked. Macfadden's sunlight worked. The timeline they promised was marketing. Take the method, forgive the salesman, and ignore the deadline. A hundred and twenty-nine years later, that's still the way to read any ad."
    }
   ],
-  "n": 120
+  "n": 120,
+  "date": "August 3, 2026",
+  "iso": "2026-08-03",
+  "month": "August 2026"
  },
  {
   "slug": "examine-yourself-three-times-a-day",
   "title": "Examine yourself three times a day",
-  "dek": "Twenty-five centuries ago a teacher in China, whose students wrote down his sayings after he died, laid out a program for becoming a good person that is…",
+  "dek": "Twenty-five centuries ago a teacher in China, whose students wrote down his sayings after he died, laid out a program for becoming a good person that is still, in its…",
   "day": 81,
   "vault": "mind",
   "body": [
@@ -3682,7 +4043,10 @@ export const letters=[
     "t": "The thing I love most in Confucius is his humility. Asked whether he was a sage, he said he was only someone who never tired of learning and never tired of teaching. That's a bar anyone can reach."
    }
   ],
-  "n": 121
+  "n": 121,
+  "date": "August 4, 2026",
+  "iso": "2026-08-04",
+  "month": "August 2026"
  },
  {
   "slug": "yoga-is-the-stilling-of-the-mind",
@@ -3712,12 +4076,15 @@ export const letters=[
     "t": "Vault Human points to a teacher who teaches the eight limbs, not just the third. There's a reason the postures came with a whole ethical frame. A body on a mat in a person who's at war with everyone isn't yoga yet."
    }
   ],
-  "n": 122
+  "n": 122,
+  "date": "August 5, 2026",
+  "iso": "2026-08-05",
+  "month": "August 2026"
  },
  {
   "slug": "cold-water-and-bare-feet",
   "title": "Cold water and bare feet",
-  "dek": "In the 1820s a farmer's son in the mountains of Silesia named Vincenz Priessnitz healed his own broken ribs with cold wet compresses, and then built a…",
+  "dek": "In the 1820s a farmer's son in the mountains of Silesia named Vincenz Priessnitz healed his own broken ribs with cold wet compresses, and then built a clinic that…",
   "day": 82,
   "vault": "body",
   "body": [
@@ -3738,12 +4105,15 @@ export const letters=[
     "t": "Kneipp's barefoot walk on wet grass is the practice I'd keep, because it costs nothing and does something: the cold on the feet, the uneven ground, the five minutes of attention to where you're stepping."
    }
   ],
-  "n": 123
+  "n": 123,
+  "date": "August 5, 2026",
+  "iso": "2026-08-05",
+  "month": "August 2026"
  },
  {
   "slug": "the-breath-lineages",
   "title": "The breath lineages",
-  "dek": "In 1861 a railway accountant in India named Lahiri Mahasaya met a teacher in the Himalayas and received a breathing technique he was told to pass on to…",
+  "dek": "In 1861 a railway accountant in India named Lahiri Mahasaya met a teacher in the Himalayas and received a breathing technique he was told to pass on to householders,…",
   "day": 83,
   "vault": "mind",
   "body": [
@@ -3768,7 +4138,10 @@ export const letters=[
     "t": "The practice I'd keep today is simpler: a breath you do every morning, the same way, as a discipline. Lahiri's householders did theirs before work. So can you."
    }
   ],
-  "n": 124
+  "n": 124,
+  "date": "August 6, 2026",
+  "iso": "2026-08-06",
+  "month": "August 2026"
  },
  {
   "slug": "walk-as-if-your-feet-are-kissing-the-earth",
@@ -3798,12 +4171,15 @@ export const letters=[
     "t": "He's also the gentlest teacher on this shelf, and his gentleness was earned in a war. He had every reason to be bitter and chose, every day, not to be. \"Peace is every step,\" he wrote. That was the title of a book and the sum of a life."
    }
   ],
-  "n": 125
+  "n": 125,
+  "date": "August 7, 2026",
+  "iso": "2026-08-07",
+  "month": "August 2026"
  },
  {
   "slug": "faith-fitness-and-a-gym-with-a-chapel",
   "title": "Faith, fitness and a gym with a chapel",
-  "dek": "In 1857 an English novel called *Tom Brown's School Days* made a case that sounds strange now and shaped the next century: that a strong body was a…",
+  "dek": "In 1857 an English novel called <em>Tom Brown's School Days</em> made a case that sounds strange now and shaped the next century: that a strong body was a Christian duty,…",
   "day": 84,
   "vault": "body",
   "body": [
@@ -3824,12 +4200,15 @@ export const letters=[
     "t": "We've since separated them. The gym is here, the church is there, the library is somewhere else, and the person runs between them. Gulick would ask why."
    }
   ],
-  "n": 126
+  "n": 126,
+  "date": "August 7, 2026",
+  "iso": "2026-08-07",
+  "month": "August 2026"
  },
  {
   "slug": "know-yourself-win-without-fighting",
   "title": "Know yourself, win without fighting",
-  "dek": "Twenty-five centuries ago a Chinese general wrote thirteen short chapters on how to win, and they've been read by every kind of strategist since: generals,…",
+  "dek": "Twenty-five centuries ago a Chinese general wrote thirteen short chapters on how to win, and they've been read by every kind of strategist since: generals, statesmen,…",
   "day": 85,
   "vault": "mind",
   "body": [
@@ -3854,12 +4233,15 @@ export const letters=[
     "t": "Here's how I'd use it today. Pick the conflict you're in right now, at work, at home, with yourself. Ask Sun Tzu's questions. Do I know myself in this? Do I know the other side? Is there a way to win this without fighting at all? Often there is, and it's usually the one you hadn't considered because fighting felt more honorable."
    }
   ],
-  "n": 127
+  "n": 127,
+  "date": "August 8, 2026",
+  "iso": "2026-08-08",
+  "month": "August 2026"
  },
  {
   "slug": "do-nothing-and-nothing-is-left-undone",
   "title": "Do nothing, and nothing is left undone",
-  "dek": "The *Tao Te Ching* is eighty-one short poems attributed to a man named Laozi, who may or may not have existed, from around the fourth century BCE.",
+  "dek": "The <em>Tao Te Ching</em> is eighty-one short poems attributed to a man named Laozi, who may or may not have existed, from around the fourth century BCE.",
   "day": 86,
   "vault": "mind",
   "body": [
@@ -3888,7 +4270,10 @@ export const letters=[
     "t": "\"The tree that fills a man's arms grew from a tiny shoot.\" Small, patient, unforced. That's eighty-six days of a log."
    }
   ],
-  "n": 128
+  "n": 128,
+  "date": "August 9, 2026",
+  "iso": "2026-08-09",
+  "month": "August 2026"
  },
  {
   "slug": "the-continent-s-own-regimen",
@@ -3914,12 +4299,15 @@ export const letters=[
     "t": "That's exactly what the first month's log did, and what Hippocrates did, and what good physicians still do when they have the time. The African traditions kept it at the center when everyone else moved it to the edge."
    }
   ],
-  "n": 129
+  "n": 129,
+  "date": "August 9, 2026",
+  "iso": "2026-08-09",
+  "month": "August 2026"
  },
  {
   "slug": "you-are-that",
   "title": "You are that",
-  "dek": "In the eighth century a young philosopher in southern India named Shankara walked the length of the subcontinent, debating every school of thought he met,…",
+  "dek": "In the eighth century a young philosopher in southern India named Shankara walked the length of the subcontinent, debating every school of thought he met, and…",
   "day": 87,
   "vault": "mind",
   "body": [
@@ -3948,7 +4336,10 @@ export const letters=[
     "t": "Shankara, for all his philosophy, left a practical line: the world is like a rope mistaken for a snake in the dark. Nothing changes when the light comes on except that you stop being afraid."
    }
   ],
-  "n": 130
+  "n": 130,
+  "date": "August 10, 2026",
+  "iso": "2026-08-10",
+  "month": "August 2026"
  },
  {
   "slug": "letting-go-practiced-early",
@@ -3974,7 +4365,10 @@ export const letters=[
     "t": "The teaching also makes death a teacher instead of a terror, which every tradition on the 360 does in its own way. A person who has looked at their own ending clearly tends to live the middle with more care and less fear. That's not morbid. It's the most practical awareness there is."
    }
   ],
-  "n": 131
+  "n": 131,
+  "date": "August 11, 2026",
+  "iso": "2026-08-11",
+  "month": "August 2026"
  },
  {
   "slug": "the-third-of-your-life-you-ve-been-ignoring",
@@ -4000,12 +4394,15 @@ export const letters=[
     "t": "Your log has been asking about sleep since day two. Eighty-eight nights of data is more than most doctors ever see from a patient. Tonight, read it."
    }
   ],
-  "n": 132
+  "n": 132,
+  "date": "August 11, 2026",
+  "iso": "2026-08-11",
+  "month": "August 2026"
  },
  {
   "slug": "fifty-nine-slogans",
   "title": "Fifty-nine slogans",
-  "dek": "In the eleventh century a Bengali master named Atisha carried a set of mind-training teachings to Tibet, and a century later a monk named Chekawa wrote them…",
+  "dek": "In the eleventh century a Bengali master named Atisha carried a set of mind-training teachings to Tibet, and a century later a monk named Chekawa wrote them into…",
   "day": 89,
   "vault": "mind",
   "body": [
@@ -4030,7 +4427,10 @@ export const letters=[
     "t": "It's an Awareness key because every slogan is a cue for noticing. You're mid-argument, and the line surfaces: don't be so predictable. That one second of noticing is where the choice lives."
    }
   ],
-  "n": 133
+  "n": 133,
+  "date": "August 12, 2026",
+  "iso": "2026-08-12",
+  "month": "August 2026"
  },
  {
   "slug": "the-way-of-the-sword-read-for-the-self",
@@ -4060,7 +4460,10 @@ export const letters=[
     "t": "And his famous nine principles end with the plainest: do nothing which is of no use. Ninety days in, you've cut a lot of what was of no use. Musashi would call that the beginning of the way."
    }
   ],
-  "n": 134
+  "n": 134,
+  "date": "August 13, 2026",
+  "iso": "2026-08-13",
+  "month": "August 2026"
  },
  {
   "slug": "the-rules-of-the-bedroom",
@@ -4086,7 +4489,10 @@ export const letters=[
     "t": "For this chamber, I'd frame it this way. Sleep hygiene is attention applied to the hours you're not aware. You can't attend while you're asleep. So you attend before: to the room, the light, the clock, the hour. The night takes care of itself if the evening was taken care of."
    }
   ],
-  "n": 135
+  "n": 135,
+  "date": "August 13, 2026",
+  "iso": "2026-08-13",
+  "month": "August 2026"
  },
  {
   "slug": "already-complete",
@@ -4116,12 +4522,15 @@ export const letters=[
     "t": "That's a hopeful teaching for anyone who's ever felt they were behind, broken, or not enough. The tradition says the thing you've been looking for is the one doing the looking, and it's been fine all along."
    }
   ],
-  "n": 136
+  "n": 136,
+  "date": "August 14, 2026",
+  "iso": "2026-08-14",
+  "month": "August 2026"
  },
  {
   "slug": "the-inner-fire",
   "title": "The inner fire",
-  "dek": "In 1982 a Harvard cardiologist named Herbert Benson, the same man who gave us the Relaxation Response, traveled to the Himalayas with instruments and…",
+  "dek": "In 1982 a Harvard cardiologist named Herbert Benson, the same man who gave us the Relaxation Response, traveled to the Himalayas with instruments and measured…",
   "day": 92,
   "vault": "mind",
   "body": [
@@ -4146,12 +4555,15 @@ export const letters=[
     "t": "Here's the modest practice I'd keep. Attention, placed on a part of the body with warmth and intention, changes that part. Try it on cold hands."
    }
   ],
-  "n": 137
+  "n": 137,
+  "date": "August 15, 2026",
+  "iso": "2026-08-15",
+  "month": "August 2026"
  },
  {
   "slug": "the-treatment-that-works-for-insomnia",
   "title": "The treatment that works for insomnia",
-  "dek": "If you lie awake at night, there is a treatment for it that works better than any pill, lasts after it's stopped, and is recommended first by every major…",
+  "dek": "If you lie awake at night, there is a treatment for it that works better than any pill, lasts after it's stopped, and is recommended first by every major medical…",
   "day": 92,
   "vault": "body",
   "body": [
@@ -4176,12 +4588,15 @@ export const letters=[
     "t": "Vault Human points to a CBT-I therapist, or to one of the several validated apps that deliver it, and I'd say this plainly: if sleep is your problem, this is your key, before anything else on the 180."
    }
   ],
-  "n": 138
+  "n": 138,
+  "date": "August 15, 2026",
+  "iso": "2026-08-15",
+  "month": "August 2026"
  },
  {
   "slug": "feel-it-and-act-anyway",
   "title": "Feel it, and act anyway",
-  "dek": "In 1919 a Japanese psychiatrist named Shoma Morita, who'd suffered from anxiety himself as a young man, built a therapy that runs against almost everything…",
+  "dek": "In 1919 a Japanese psychiatrist named Shoma Morita, who'd suffered from anxiety himself as a young man, built a therapy that runs against almost everything Western…",
   "day": 93,
   "vault": "mind",
   "body": [
@@ -4206,7 +4621,10 @@ export const letters=[
     "t": "Here's what I find kind in this. Morita never tells you your feelings are wrong. He only tells you they aren't the boss."
    }
   ],
-  "n": 139
+  "n": 139,
+  "date": "August 16, 2026",
+  "iso": "2026-08-16",
+  "month": "August 2026"
  },
  {
   "slug": "three-questions-about-anyone",
@@ -4244,7 +4662,10 @@ export const letters=[
     "t": "Vault Human points to Naikan centers for the retreat, which exist in Japan and a few in the West. The three questions are free."
    }
   ],
-  "n": 140
+  "n": 140,
+  "date": "August 17, 2026",
+  "iso": "2026-08-17",
+  "month": "August 2026"
  },
  {
   "slug": "light-sets-the-clock",
@@ -4270,12 +4691,15 @@ export const letters=[
     "t": "It's a key for the third month because it's attention to something invisible. You don't feel the clock being set. You feel the result twelve hours later, as sleepiness that comes on time or doesn't. Morning light is the single cheapest, most powerful sleep intervention there is, and it costs nothing but stepping outside, which you've done every day for ninety-four days. Now do it earlier."
    }
   ],
-  "n": 141
+  "n": 141,
+  "date": "August 17, 2026",
+  "iso": "2026-08-17",
+  "month": "August 2026"
  },
  {
   "slug": "four-sprouts",
   "title": "Four sprouts",
-  "dek": "Twenty-three centuries ago a Chinese philosopher named Mencius, the most important follower of Confucius, made an argument about human nature that's still…",
+  "dek": "Twenty-three centuries ago a Chinese philosopher named Mencius, the most important follower of Confucius, made an argument about human nature that's still the most…",
   "day": 95,
   "vault": "mind",
   "body": [
@@ -4300,7 +4724,10 @@ export const letters=[
     "t": "Ninety-five days in, you've been watering. Mencius would say the sprouts were always there."
    }
   ],
-  "n": 142
+  "n": 142,
+  "date": "August 18, 2026",
+  "iso": "2026-08-18",
+  "month": "August 2026"
  },
  {
   "slug": "the-butterfly-s-dream",
@@ -4330,7 +4757,10 @@ export const letters=[
     "t": "I keep him for the humor. Every other key in this chamber is serious. Zhuangzi says awareness without lightness is just another trap, and that the person who can laugh at their own certainty is the freest person in the room."
    }
   ],
-  "n": 143
+  "n": 143,
+  "date": "August 19, 2026",
+  "iso": "2026-08-19",
+  "month": "August 2026"
  },
  {
   "slug": "the-nap-with-a-time-limit",
@@ -4360,7 +4790,10 @@ export const letters=[
     "t": "Vault Human holds the nap as a tool, not a daily rule. If your night sleep is good, you may never need it. If an afternoon finds you unable to attend, it's there."
    }
   ],
-  "n": 144
+  "n": 144,
+  "date": "August 19, 2026",
+  "iso": "2026-08-19",
+  "month": "August 2026"
  },
  {
   "slug": "presence-without-a-method",
@@ -4390,12 +4823,15 @@ export const letters=[
     "t": "Vault Human points to her words, which are collected in a few small books. The presence can't be pointed to. It can only be practiced."
    }
   ],
-  "n": 145
+  "n": 145,
+  "date": "August 20, 2026",
+  "iso": "2026-08-20",
+  "month": "August 2026"
  },
  {
   "slug": "knowing-is-acting",
   "title": "Knowing is acting",
-  "dek": "Wang Yangming was a Chinese official and general in the early 1500s who, in exile in a remote province, had a realization that reorganized Confucian thought…",
+  "dek": "Wang Yangming was a Chinese official and general in the early 1500s who, in exile in a remote province, had a realization that reorganized Confucian thought for the…",
   "day": 98,
   "vault": "mind",
   "body": [
@@ -4420,7 +4856,10 @@ export const letters=[
     "t": "Here's the encouraging version. You don't need to understand a thing completely before you act. You act, and the understanding arrives through the action. The log you've kept is Wang's whole philosophy in practice: write what you did, not what you believe."
    }
   ],
-  "n": 146
+  "n": 146,
+  "date": "August 21, 2026",
+  "iso": "2026-08-21",
+  "month": "August 2026"
  },
  {
   "slug": "rest-that-isn-t-sleep",
@@ -4446,7 +4885,10 @@ export const letters=[
     "t": "Vault Human points to the recordings; there are many good ones, ten to thirty minutes, and your coach can suggest a few. The practice itself asks nothing but a floor and a blanket."
    }
   ],
-  "n": 147
+  "n": 147,
+  "date": "August 21, 2026",
+  "iso": "2026-08-21",
+  "month": "August 2026"
  },
  {
   "slug": "all-of-life-is-the-practice",
@@ -4476,7 +4918,10 @@ export const letters=[
     "t": "Ninety-nine days in, you've been living an integral practice without the name. Every key was deployed in a life, not a retreat."
    }
   ],
-  "n": 148
+  "n": 148,
+  "date": "August 22, 2026",
+  "iso": "2026-08-22",
+  "month": "August 2026"
  },
  {
   "slug": "the-skeptic-s-seat",
@@ -4506,12 +4951,15 @@ export const letters=[
     "t": "Vault Human's whole approach rests on a Charvaka rule: we tell you what the evidence supports and what it doesn't, every time, and we let you perceive the rest. A hundred days of a log is a hundred days of perception. That's the only authority this year has ever asked you to trust."
    }
   ],
-  "n": 149
+  "n": 149,
+  "date": "August 23, 2026",
+  "iso": "2026-08-23",
+  "month": "August 2026"
  },
  {
   "slug": "train-by-readiness",
   "title": "Train by readiness",
-  "dek": "In 1936 a young Hungarian-Canadian researcher named Hans Selye, injecting rats with various substances, noticed that whatever he injected, they responded…",
+  "dek": "In 1936 a young Hungarian-Canadian researcher named Hans Selye, injecting rats with various substances, noticed that whatever he injected, they responded the same…",
   "day": 100,
   "vault": "body",
   "body": [
@@ -4536,12 +4984,15 @@ export const letters=[
     "t": "And Selye's deepest point is for life, not just training. Stress is not the enemy. Unrecovered stress is. The person who rests on purpose can carry more than the person who never stops."
    }
   ],
-  "n": 150
+  "n": 150,
+  "date": "August 23, 2026",
+  "iso": "2026-08-23",
+  "month": "August 2026"
  },
  {
   "slug": "the-prepared-environment",
   "title": "The prepared environment",
-  "dek": "Three months of self, body and attention.",
+  "dek": "Three months of self, body and attention. Now the question turns outward: what will you make of it, and what does it mean?",
   "day": 101,
   "vault": "mind",
   "body": [
@@ -4566,12 +5017,15 @@ export const letters=[
     "t": "Meaning is made the same way. You don't will it. You arrange a life in which it can grow."
    }
   ],
-  "n": 151
+  "n": 151,
+  "date": "August 24, 2026",
+  "iso": "2026-08-24",
+  "month": "August 2026"
  },
  {
   "slug": "head-heart-and-hands",
   "title": "Head, heart and hands",
-  "dek": "In 1919, in the ruins of the First World War, the owner of a cigarette factory in Stuttgart asked a philosopher named Rudolf Steiner to build a school for…",
+  "dek": "In 1919, in the ruins of the First World War, the owner of a cigarette factory in Stuttgart asked a philosopher named Rudolf Steiner to build a school for his…",
   "day": 102,
   "vault": "mind",
   "body": [
@@ -4596,7 +5050,10 @@ export const letters=[
     "t": "The month of Meaning will ask you to make things. Steiner would say meaning lives in the hands."
    }
   ],
-  "n": 152
+  "n": 152,
+  "date": "August 25, 2026",
+  "iso": "2026-08-25",
+  "month": "August 2026"
  },
  {
   "slug": "breathe-through-your-nose",
@@ -4626,7 +5083,10 @@ export const letters=[
     "t": "A chamber about attention ends on the one thing you do twenty thousand times a day without noticing. Notice it. Close your mouth."
    }
   ],
-  "n": 153
+  "n": 153,
+  "date": "August 25, 2026",
+  "iso": "2026-08-25",
+  "month": "August 2026"
  },
  {
   "slug": "the-cycle-of-learning",
@@ -4656,12 +5116,15 @@ export const letters=[
     "t": "And Bloom's ladder tells you where you are. You remember the keys. You understand most of them. You've applied many. Analyze, evaluate, create: that's the work of this chamber and the rest of the year. Making meaning is the top rung. It's the one where you stop receiving the keys and start cutting your own."
    }
   ],
-  "n": 154
+  "n": 154,
+  "date": "August 26, 2026",
+  "iso": "2026-08-26",
+  "month": "August 2026"
  },
  {
   "slug": "prototype-your-life",
   "title": "Prototype your life",
-  "dek": "In the 1990s a design firm in California called IDEO, and later a program at Stanford called the d.school, turned the way industrial designers work into a…",
+  "dek": "In the 1990s a design firm in California called IDEO, and later a program at Stanford called the d.school, turned the way industrial designers work into a method…",
   "day": 104,
   "vault": "mind",
   "body": [
@@ -4686,12 +5149,15 @@ export const letters=[
     "t": "Vault Human points to the d.school's free resources and the book, and we use the method in coaching every week."
    }
   ],
-  "n": 155
+  "n": 155,
+  "date": "August 27, 2026",
+  "iso": "2026-08-27",
+  "month": "August 2026"
  },
  {
   "slug": "the-table-that-keeps-hearts-alive",
   "title": "The table that keeps hearts alive",
-  "dek": "The fourth month's body letters are about the table.",
+  "dek": "The fourth month's body letters are about the table. We begin with the most studied way of eating on earth.",
   "day": 104,
   "vault": "body",
   "body": [
@@ -4716,12 +5182,15 @@ export const letters=[
     "t": "It opens the Meaning chamber's body letters because meals are where meaning and body meet. A table is a practice. The Cretans didn't eat for their hearts. They ate for their families, slowly, outdoors, and their hearts came along."
    }
   ],
-  "n": 156
+  "n": 156,
+  "date": "August 27, 2026",
+  "iso": "2026-08-27",
+  "month": "August 2026"
  },
  {
   "slug": "learning-by-doing",
   "title": "Learning by doing",
-  "dek": "In 1916 the American philosopher John Dewey published *Democracy and Education*, and it argued, against the whole tradition of schooling as the pouring of…",
+  "dek": "In 1916 the American philosopher John Dewey published <em>Democracy and Education</em>, and it argued, against the whole tradition of schooling as the pouring of facts into…",
   "day": 105,
   "vault": "mind",
   "body": [
@@ -4746,12 +5215,15 @@ export const letters=[
     "t": "One hundred and five days in, you've been a Dewey student without knowing it: you learned each key by doing it, not by reading about it. Now the question of the chamber is what you'll make with what you've learned, and with whom."
    }
   ],
-  "n": 157
+  "n": 157,
+  "date": "August 28, 2026",
+  "iso": "2026-08-28",
+  "month": "August 2026"
  },
  {
   "slug": "you-built-what-you-know",
   "title": "You built what you know",
-  "dek": "Jean Piaget was a Swiss biologist who, in the 1920s, started watching his own three children with a scientist's patience, and spent the next fifty years…",
+  "dek": "Jean Piaget was a Swiss biologist who, in the 1920s, started watching his own three children with a scientist's patience, and spent the next fifty years showing that…",
   "day": 106,
   "vault": "mind",
   "body": [
@@ -4772,7 +5244,10 @@ export const letters=[
     "t": "A hundred and six days of a log is a record of the world not quite fitting. The number was higher than you thought. The walk changed your mood more than expected. The person you wrote about didn't act as you predicted. Piaget would say: those are the places you learned something. Everything else was just confirmation."
    }
   ],
-  "n": 158
+  "n": 158,
+  "date": "August 29, 2026",
+  "iso": "2026-08-29",
+  "month": "August 2026"
  },
  {
   "slug": "the-trial-that-reversed-heart-disease",
@@ -4798,12 +5273,15 @@ export const letters=[
     "t": "The program is intensive and the diet is strict, ten percent of calories from fat, which most people can't sustain and don't need to. What everyone can take: all four pillars daily, and the group weekly. You've been doing three of them for a hundred and six days. The fourth begins when the circles do."
    }
   ],
-  "n": 159
+  "n": 159,
+  "date": "August 29, 2026",
+  "iso": "2026-08-29",
+  "month": "August 2026"
  },
  {
   "slug": "just-beyond-your-reach",
   "title": "Just beyond your reach",
-  "dek": "Lev Vygotsky was a Russian psychologist who died of tuberculosis at thirty-seven in 1934, having written for barely a decade, and whose ideas were…",
+  "dek": "Lev Vygotsky was a Russian psychologist who died of tuberculosis at thirty-seven in 1934, having written for barely a decade, and whose ideas were suppressed in his…",
   "day": 107,
   "vault": "mind",
   "body": [
@@ -4828,12 +5306,15 @@ export const letters=[
     "t": "A hundred and seven days ago, a twenty-minute walk was in your zone. Now it isn't; it's just yours. The zone moved. That's the whole story of a year."
    }
   ],
-  "n": 160
+  "n": 160,
+  "date": "August 30, 2026",
+  "iso": "2026-08-30",
+  "month": "August 2026"
  },
  {
   "slug": "eight-crises-each-with-a-gift",
   "title": "Eight crises, each with a gift",
-  "dek": "In 1950 a psychoanalyst named Erik Erikson, who'd fled Germany and trained under Freud's daughter, published a map of the human life as eight stages, each…",
+  "dek": "In 1950 a psychoanalyst named Erik Erikson, who'd fled Germany and trained under Freud's daughter, published a map of the human life as eight stages, each with a…",
   "day": 108,
   "vault": "mind",
   "body": [
@@ -4858,7 +5339,10 @@ export const letters=[
     "t": "And the map forgives. A stage left unanswered early can be answered late. A person can learn to trust at forty. The questions stay open as long as you're alive to ask them."
    }
   ],
-  "n": 161
+  "n": 161,
+  "date": "August 31, 2026",
+  "iso": "2026-08-31",
+  "month": "August 2026"
  },
  {
   "slug": "walk-forty-five-minutes-and-eat-real-food",
@@ -4884,12 +5368,15 @@ export const letters=[
     "t": "The key for the table chamber is the pairing. Pritikin never separated the plate from the walk. Food and movement were one prescription, and the walk was non-negotiable: forty-five minutes, daily, as part of the eating plan, not a separate fitness goal. A hundred and eight days of twenty minutes outside is more than halfway there. The question he'd ask is whether the plate has caught up to the walk."
    }
   ],
-  "n": 162
+  "n": 162,
+  "date": "August 31, 2026",
+  "iso": "2026-08-31",
+  "month": "August 2026"
  },
  {
   "slug": "nobody-is-a-bank",
   "title": "Nobody is a bank",
-  "dek": "Paulo Freire taught reading to farm workers in the poorest region of Brazil in the early 1960s, and he noticed something that changed education around the…",
+  "dek": "Paulo Freire taught reading to farm workers in the poorest region of Brazil in the early 1960s, and he noticed something that changed education around the world.",
   "day": 109,
   "vault": "mind",
   "body": [
@@ -4914,12 +5401,15 @@ export const letters=[
     "t": "And his word for the alternative to being acted upon is one I'd put on the wall: praxis. Reflection and action, together. Think, then do, then think about what you did. The log again."
    }
   ],
-  "n": 163
+  "n": 163,
+  "date": "September 1, 2026",
+  "iso": "2026-09-01",
+  "month": "September 2026"
  },
  {
   "slug": "i-can",
   "title": "I can",
-  "dek": "Albert Bandura, a Stanford psychologist, spent the 1960s showing that people learn by watching others, and in 1977 he named the thing that decides whether…",
+  "dek": "Albert Bandura, a Stanford psychologist, spent the 1960s showing that people learn by watching others, and in 1977 he named the thing that decides whether what they…",
   "day": 110,
   "vault": "mind",
   "body": [
@@ -4944,7 +5434,10 @@ export const letters=[
     "t": "Here's the kind turn. If there's something you don't believe you can do, the answer isn't to believe harder. It's to do a smaller version until the belief catches up to the evidence."
    }
   ],
-  "n": 164
+  "n": 164,
+  "date": "September 2, 2026",
+  "iso": "2026-09-02",
+  "month": "September 2026"
  },
  {
   "slug": "all-plants-no-oil",
@@ -4970,12 +5463,15 @@ export const letters=[
     "t": "Vault Human points to the approach without prescribing it. For some people, especially with serious heart disease, it's been the key that turned. For most, it's a direction: more plants, more whole, less packaged."
    }
   ],
-  "n": 165
+  "n": 165,
+  "date": "September 2, 2026",
+  "iso": "2026-09-02",
+  "month": "September 2026"
  },
  {
   "slug": "love-as-a-practice",
   "title": "Love as a practice",
-  "dek": "bell hooks was a teacher and writer who spelled her name in lowercase so the ideas would come before the author, and who in 2000 wrote a book called *All…",
+  "dek": "bell hooks was a teacher and writer who spelled her name in lowercase so the ideas would come before the author, and who in 2000 wrote a book called <em>All About Love</em>…",
   "day": 111,
   "vault": "mind",
   "body": [
@@ -4996,7 +5492,10 @@ export const letters=[
     "t": "It's in the Meaning chamber because hooks made love a thing you do, which makes it a thing you can get better at. That rescues it from luck. A person who's been unlucky in love can still practice care, affection, recognition, respect, commitment and trust, and practice is how any skill grows. Erich Fromm said it on day sixteen; hooks gave it a checklist."
    }
   ],
-  "n": 166
+  "n": 166,
+  "date": "September 3, 2026",
+  "iso": "2026-09-03",
+  "month": "September 2026"
  },
  {
   "slug": "speak-with-the-dying",
@@ -5026,12 +5525,15 @@ export const letters=[
     "t": "The practice she'd ask of you is to stop avoiding the room. The dying person in your life, or the aging one, or the one with the diagnosis: they're waiting for you to ask. Not to fix. To ask, and to stay."
    }
   ],
-  "n": 167
+  "n": 167,
+  "date": "September 4, 2026",
+  "iso": "2026-09-04",
+  "month": "September 2026"
  },
  {
   "slug": "nutrients-per-calorie",
   "title": "Nutrients per calorie",
-  "dek": "Joel Fuhrman is a physician who in 2003 wrote *Eat to Live* with one organizing idea: rank foods by how many micronutrients they deliver per calorie, and…",
+  "dek": "Joel Fuhrman is a physician who in 2003 wrote <em>Eat to Live</em> with one organizing idea: rank foods by how many micronutrients they deliver per calorie, and eat the ones…",
   "day": 112,
   "vault": "body",
   "body": [
@@ -5052,7 +5554,10 @@ export const letters=[
     "t": "Honest line: Fuhrman sells supplements and products, and we point to the idea, not the store. The six foods are at any grocery."
    }
   ],
-  "n": 168
+  "n": 168,
+  "date": "September 4, 2026",
+  "iso": "2026-09-04",
+  "month": "September 2026"
  },
  {
   "slug": "turning-pro",
@@ -5078,12 +5583,15 @@ export const letters=[
     "t": "And they agree on the cure, which is the cure this whole year has been teaching. Show up daily. Small. Same time. Don't wait to feel ready. A hundred and thirteen days of a log is a hundred and thirteen days of turning pro at something. The thing you've been meaning to make is next."
    }
   ],
-  "n": 169
+  "n": 169,
+  "date": "September 5, 2026",
+  "iso": "2026-09-05",
+  "month": "September 2026"
  },
  {
   "slug": "prototype-don-t-plan",
   "title": "Prototype, don't plan",
-  "dek": "In 2016 two Stanford professors, Bill Burnett and Dave Evans, published a book built from a course they'd taught for years to students terrified of choosing…",
+  "dek": "In 2016 two Stanford professors, Bill Burnett and Dave Evans, published a book built from a course they'd taught for years to students terrified of choosing wrong.",
   "day": 114,
   "vault": "mind",
   "body": [
@@ -5108,12 +5616,15 @@ export const letters=[
     "t": "It's a Meaning key because it treats meaning as a design problem: not found, built, by iteration, with evidence. And it's hopeful in a way most career advice isn't. There's no wrong choice to fear. There's only the next prototype."
    }
   ],
-  "n": 170
+  "n": 170,
+  "date": "September 6, 2026",
+  "iso": "2026-09-06",
+  "month": "September 2026"
  },
  {
   "slug": "the-daily-dozen",
   "title": "The daily dozen",
-  "dek": "Michael Greger is a physician who, in 2015, took the evidence on diet and disease and wrote it into *How Not to Die*, a long book with a very short…",
+  "dek": "Michael Greger is a physician who, in 2015, took the evidence on diet and disease and wrote it into <em>How Not to Die</em>, a long book with a very short practical core: a…",
   "day": 114,
   "vault": "body",
   "body": [
@@ -5134,12 +5645,15 @@ export const letters=[
     "t": "I'll add the honest caveat. Greger argues the evidence further toward strict plant-based eating than many researchers would, and his nonprofit funds his work. The checklist is still a sound way to eat, and it's flexible: you don't need all twelve every day, and checking eight is better than checking three."
    }
   ],
-  "n": 171
+  "n": 171,
+  "date": "September 6, 2026",
+  "iso": "2026-09-06",
+  "month": "September 2026"
  },
  {
   "slug": "looking-back-on-purpose",
   "title": "Looking back, on purpose",
-  "dek": "In 1963 a psychiatrist named Robert Butler, who would later found the National Institute on Aging and coin the word ageism, noticed that his older patients…",
+  "dek": "In 1963 a psychiatrist named Robert Butler, who would later found the National Institute on Aging and coin the word ageism, noticed that his older patients reminisced…",
   "day": 115,
   "vault": "mind",
   "body": [
@@ -5160,7 +5674,10 @@ export const letters=[
     "t": "The fourth month is about making meaning. The life review is the raw material. A hundred and fifteen days of a log is the most recent chapter, already written. Today you go back further."
    }
   ],
-  "n": 172
+  "n": 172,
+  "date": "September 7, 2026",
+  "iso": "2026-09-07",
+  "month": "September 2026"
  },
  {
   "slug": "four-days-twenty-minutes",
@@ -5190,12 +5707,15 @@ export const letters=[
     "t": "A plain line: if the thing you'd write about is a trauma that's still raw, do this with a therapist, not alone. Pennebaker says so too."
    }
   ],
-  "n": 173
+  "n": 173,
+  "date": "September 8, 2026",
+  "iso": "2026-09-08",
+  "month": "September 2026"
  },
  {
   "slug": "seven-words",
   "title": "Seven words",
-  "dek": "\"Eat food.",
+  "dek": "\"Eat food. Not too much. Mostly plants.\"",
   "day": 116,
   "vault": "body",
   "body": [
@@ -5220,7 +5740,10 @@ export const letters=[
     "t": "For the month of Meaning: Pollan's deepest point was that eating is culture, not chemistry. A meal is a practice, shared, slow, and pleasurable, and the cultures that keep it that way are healthier than the ones that turned it into fuel."
    }
   ],
-  "n": 174
+  "n": 174,
+  "date": "September 8, 2026",
+  "iso": "2026-09-08",
+  "month": "September 2026"
  },
  {
   "slug": "write-the-letter",
@@ -5246,12 +5769,15 @@ export const letters=[
     "t": "You don't have to be old. You don't have to be dying. You have to be willing to sit down and ask what you'd want the people you love to know if you couldn't tell them. Most of us have never written a single sentence of it."
    }
   ],
-  "n": 175
+  "n": 175,
+  "date": "September 9, 2026",
+  "iso": "2026-09-09",
+  "month": "September 2026"
  },
  {
   "slug": "the-base-of-the-pyramid",
   "title": "The base of the pyramid",
-  "dek": "Abraham Maslow was a psychologist in New York who in 1943, when his field was mostly studying rats and the mentally ill, decided to study healthy people,…",
+  "dek": "Abraham Maslow was a psychologist in New York who in 1943, when his field was mostly studying rats and the mentally ill, decided to study healthy people, the ones who…",
   "day": 118,
   "vault": "mind",
   "body": [
@@ -5272,12 +5798,15 @@ export const letters=[
     "t": "What I'd keep from Maslow is his description of the people at the top. They weren't the richest or the most accomplished. They were the ones who'd accepted themselves, who had deep relationships with a few people, who were absorbed in work that mattered to them, and who had what he called peak experiences, moments of wonder that reorganized their sense of what life was for. That list is available to anyone with the base in place."
    }
   ],
-  "n": 176
+  "n": 176,
+  "date": "September 10, 2026",
+  "iso": "2026-09-10",
+  "month": "September 2026"
  },
  {
   "slug": "the-diet-that-was-tested-for-blood-pressure",
   "title": "The diet that was tested for blood pressure",
-  "dek": "Most diets are sold.",
+  "dek": "Most diets are sold. This one was tested, by the government, on blood pressure, and it worked.",
   "day": 118,
   "vault": "body",
   "body": [
@@ -5302,12 +5831,15 @@ export const letters=[
     "t": "And it closes this stretch of table keys with the number you wrote on day four. The cuff. DASH is the eating pattern with the best evidence for moving it."
    }
   ],
-  "n": 177
+  "n": 177,
+  "date": "September 10, 2026",
+  "iso": "2026-09-10",
+  "month": "September 2026"
  },
  {
   "slug": "the-shape-of-the-story",
   "title": "The shape of the story",
-  "dek": "In 1949 a literature professor named Joseph Campbell, who'd spent years reading the myths of every culture he could find, published *The Hero with a…",
+  "dek": "In 1949 a literature professor named Joseph Campbell, who'd spent years reading the myths of every culture he could find, published <em>The Hero with a Thousand Faces</em>…",
   "day": 119,
   "vault": "mind",
   "body": [
@@ -5332,12 +5864,15 @@ export const letters=[
     "t": "A hundred and nineteen days ago, a letter arrived. That was a call. You crossed on day one. You're somewhere in the middle of the road."
    }
   ],
-  "n": 178
+  "n": 178,
+  "date": "September 11, 2026",
+  "iso": "2026-09-11",
+  "month": "September 2026"
  },
  {
   "slug": "two-speeds-of-thought",
   "title": "Two speeds of thought",
-  "dek": "Daniel Kahneman was a psychologist who won the Nobel Prize in economics for showing that people don't decide the way economists assumed, and in 2011 he…",
+  "dek": "Daniel Kahneman was a psychologist who won the Nobel Prize in economics for showing that people don't decide the way economists assumed, and in 2011 he wrote the book…",
   "day": 120,
   "vault": "mind",
   "body": [
@@ -5362,7 +5897,10 @@ export const letters=[
     "t": "A hundred and twenty days of a log is a hundred and twenty invitations for system two. The log is the slow system, writing down what the fast one did."
    }
   ],
-  "n": 179
+  "n": 179,
+  "date": "September 12, 2026",
+  "iso": "2026-09-12",
+  "month": "September 2026"
  },
  {
   "slug": "the-table-for-your-brain",
@@ -5388,12 +5926,15 @@ export const letters=[
     "t": "It opens the second stretch of table keys because the Meaning chamber is about the mind, and the mind runs on what you eat. Six servings of greens a week isn't a diet. It's a habit, kept for decades, that keeps the organ you make meaning with."
    }
   ],
-  "n": 180
+  "n": 180,
+  "date": "September 12, 2026",
+  "iso": "2026-09-12",
+  "month": "September 2026"
  },
  {
   "slug": "seeing-yourself-through-other-eyes",
   "title": "Seeing yourself through other eyes",
-  "dek": "In 1903 a scholar named W.",
+  "dek": "In 1903 a scholar named W. E. B. Du Bois, the first Black American to earn a Harvard doctorate, published <em>The Souls of Black Folk</em>, and in its first pages he…",
   "day": 121,
   "vault": "mind",
   "body": [
@@ -5418,12 +5959,15 @@ export const letters=[
     "t": "A hundred and twenty-one days of a log, in your own hand, is a practice of authorship. Nobody else's eyes are in it."
    }
   ],
-  "n": 181
+  "n": 181,
+  "date": "September 13, 2026",
+  "iso": "2026-09-13",
+  "month": "September 2026"
  },
  {
   "slug": "more-than-one-way-to-be-smart",
   "title": "More than one way to be smart",
-  "dek": "In 1983 a Harvard psychologist named Howard Gardner published *Frames of Mind* and argued against the single number that had ruled a century of schooling.",
+  "dek": "In 1983 a Harvard psychologist named Howard Gardner published <em>Frames of Mind</em> and argued against the single number that had ruled a century of schooling.",
   "day": 122,
   "vault": "mind",
   "body": [
@@ -5448,7 +5992,10 @@ export const letters=[
     "t": "And it bears on what you'll make. Meaning comes from working in your strongest intelligence, not your most rewarded one. The mirrors in the first month asked a version of this. Gardner asks it about the mind itself."
    }
   ],
-  "n": 182
+  "n": 182,
+  "date": "September 14, 2026",
+  "iso": "2026-09-14",
+  "month": "September 2026"
  },
  {
   "slug": "four-foods-that-lower-cholesterol",
@@ -5478,12 +6025,15 @@ export const letters=[
     "t": "A plain line: if your cholesterol is high, this is a conversation with a physician, and the portfolio is something to bring to it, not a replacement for it."
    }
   ],
-  "n": 183
+  "n": 183,
+  "date": "September 14, 2026",
+  "iso": "2026-09-14",
+  "month": "September 2026"
  },
  {
   "slug": "the-dilemma-that-changes-you",
   "title": "The dilemma that changes you",
-  "dek": "Jack Mezirow was a professor of adult education at Columbia who in the 1970s studied women going back to college after years away, and noticed that the ones…",
+  "dek": "Jack Mezirow was a professor of adult education at Columbia who in the 1970s studied women going back to college after years away, and noticed that the ones who…",
   "day": 123,
   "vault": "mind",
   "body": [
@@ -5508,12 +6058,15 @@ export const letters=[
     "t": "Here's the kind reading. If you're in a disorienting dilemma right now, you are not falling apart. You're in step one of the only process by which people become more than they were. Stay, reflect, try things, and rebuild."
    }
   ],
-  "n": 184
+  "n": 184,
+  "date": "September 15, 2026",
+  "iso": "2026-09-15",
+  "month": "September 2026"
  },
  {
   "slug": "the-mind-that-writes-its-own-script",
   "title": "The mind that writes its own script",
-  "dek": "Robert Kegan is a Harvard developmental psychologist who, starting in 1982, mapped something Piaget had left out: how adults keep growing after the body has…",
+  "dek": "Robert Kegan is a Harvard developmental psychologist who, starting in 1982, mapped something Piaget had left out: how adults keep growing after the body has stopped.",
   "day": 124,
   "vault": "mind",
   "body": [
@@ -5538,7 +6091,10 @@ export const letters=[
     "t": "And the kind part: if you recognize yourself in the socialized mind, you're in the majority, and the next mind is reachable. It's not a verdict. It's a direction."
    }
   ],
-  "n": 185
+  "n": 185,
+  "date": "September 16, 2026",
+  "iso": "2026-09-16",
+  "month": "September 2026"
  },
  {
   "slug": "eat-more-food-fewer-calories",
@@ -5568,7 +6124,10 @@ export const letters=[
     "t": "It also rhymes with the set point from day six. The thermostat defends against hunger. Volumetrics is how you lose without triggering the alarm."
    }
   ],
-  "n": 186
+  "n": 186,
+  "date": "September 16, 2026",
+  "iso": "2026-09-16",
+  "month": "September 2026"
  },
  {
   "slug": "becoming-who-you-were-born-as",
@@ -5594,12 +6153,15 @@ export const letters=[
     "t": "It's a Meaning key because identity is where meaning lives, and most of us carry at least one inheritance we've never walked through the arc with. We're stuck in pre-encounter, never having looked, or in immersion, never having settled."
    }
   ],
-  "n": 187
+  "n": 187,
+  "date": "September 17, 2026",
+  "iso": "2026-09-17",
+  "month": "September 2026"
  },
  {
   "slug": "a-different-voice",
   "title": "A different voice",
-  "dek": "In 1982 a Harvard psychologist named Carol Gilligan published *In a Different Voice*, and it began with a problem in her own field.",
+  "dek": "In 1982 a Harvard psychologist named Carol Gilligan published <em>In a Different Voice</em>, and it began with a problem in her own field.",
   "day": 126,
   "vault": "mind",
   "body": [
@@ -5620,12 +6182,15 @@ export const letters=[
     "t": "I hear this one in my own work constantly. Legal reasoning is almost all justice voice: rules, rights, precedent. The families in front of me are almost all care voice: who gets hurt, who's been left out, what does Mom actually need. The best outcomes come when both voices are in the room."
    }
   ],
-  "n": 188
+  "n": 188,
+  "date": "September 18, 2026",
+  "iso": "2026-09-18",
+  "month": "September 2026"
  },
  {
   "slug": "hunger-as-the-guide",
   "title": "Hunger as the guide",
-  "dek": "In 1995 two dietitians, Evelyn Tribole and Elyse Resch, wrote a book for the people the diet industry had failed, which was most of their clients: people…",
+  "dek": "In 1995 two dietitians, Evelyn Tribole and Elyse Resch, wrote a book for the people the diet industry had failed, which was most of their clients: people who'd lost…",
   "day": 126,
   "vault": "body",
   "body": [
@@ -5650,12 +6215,15 @@ export const letters=[
     "t": "It belongs in the Meaning chamber because it returns authorship. Every other table key is someone else's plan. This one says: your body knows, if you'll listen, and the practice is learning to listen again. A hundred and twenty-six days of attention have made you a better listener. Point it at your plate."
    }
   ],
-  "n": 189
+  "n": 189,
+  "date": "September 18, 2026",
+  "iso": "2026-09-18",
+  "month": "September 2026"
  },
  {
   "slug": "the-in-between",
   "title": "The in-between",
-  "dek": "Gloria Anzaldúa was a writer who grew up on the Texas-Mexico border and in 1987 wrote *Borderlands / La Frontera*, a book that moves between English and…",
+  "dek": "Gloria Anzaldúa was a writer who grew up on the Texas-Mexico border and in 1987 wrote <em>Borderlands / La Frontera</em>, a book that moves between English and Spanish,…",
   "day": 127,
   "vault": "mind",
   "body": [
@@ -5680,7 +6248,10 @@ export const letters=[
     "t": "It also sits well next to Cross from two days ago. His arc ends in internalization, a settled identity. Anzaldúa says some of us won't settle, and shouldn't, and that the unsettled place has its own gifts to offer."
    }
   ],
-  "n": 190
+  "n": 190,
+  "date": "September 19, 2026",
+  "iso": "2026-09-19",
+  "month": "September 2026"
  },
  {
   "slug": "dialogue-on-the-page",
@@ -5710,12 +6281,15 @@ export const letters=[
     "t": "A hundred and twenty-eight days of three-line logs have built the daily-log section already. Today you add one dialogue, and you let the other side speak."
    }
   ],
-  "n": 191
+  "n": 191,
+  "date": "September 20, 2026",
+  "iso": "2026-09-20",
+  "month": "September 2026"
  },
  {
   "slug": "cut-the-sugar-and-starch",
   "title": "Cut the sugar and starch",
-  "dek": "In 1863 a London undertaker named William Banting, so heavy he had to walk downstairs backward, published a sixteen-page pamphlet describing how he'd lost…",
+  "dek": "In 1863 a London undertaker named William Banting, so heavy he had to walk downstairs backward, published a sixteen-page pamphlet describing how he'd lost fifty pounds.",
   "day": 128,
   "vault": "body",
   "body": [
@@ -5736,7 +6310,10 @@ export const letters=[
     "t": "Vault Human holds it as one sound door among several. For some bodies, particularly ones that struggle with blood sugar, it's the key that turns. The set point from day six still applies, and so does the thermostat."
    }
   ],
-  "n": 192
+  "n": 192,
+  "date": "September 20, 2026",
+  "iso": "2026-09-20",
+  "month": "September 2026"
  },
  {
   "slug": "a-reason-to-get-up",
@@ -5766,12 +6343,15 @@ export const letters=[
     "t": "A hundred and twenty-nine days ago, a walk and a log became a small daily reason. That counts."
    }
   ],
-  "n": 193
+  "n": 193,
+  "date": "September 21, 2026",
+  "iso": "2026-09-21",
+  "month": "September 2026"
  },
  {
   "slug": "the-environment-is-the-third-teacher",
   "title": "The environment is the third teacher",
-  "dek": "In 1945, in the ruins of a small town in northern Italy, the parents of Reggio Emilia built a school with their own hands from the rubble of the war,…",
+  "dek": "In 1945, in the ruins of a small town in northern Italy, the parents of Reggio Emilia built a school with their own hands from the rubble of the war, selling a tank…",
   "day": 130,
   "vault": "mind",
   "body": [
@@ -5788,7 +6368,10 @@ export const letters=[
     "t": "For the Meaning chamber, three keys from Reggio. The hundred languages: meaning isn't only made in words; make it in whatever language is yours. Documentation: the log is your documentation, and reading it back is how you see your own thinking. And the third teacher: the space you make meaning in shapes the meaning you make. Montessori said it on day one hundred and one. Reggio says it with more beauty."
    }
   ],
-  "n": 194
+  "n": 194,
+  "date": "September 22, 2026",
+  "iso": "2026-09-22",
+  "month": "September 2026"
  },
  {
   "slug": "running-on-ketones",
@@ -5814,12 +6397,15 @@ export const letters=[
     "t": "What I keep is Wilder's insight: the body has two fuels, and most of us have never used the second. Even without going fully ketogenic, the experience of letting the body burn fat for a stretch, through a lower-carb day or an overnight fast extended to lunch, teaches something about hunger that the sugar-fed body never learns: it passes."
    }
   ],
-  "n": 195
+  "n": 195,
+  "date": "September 22, 2026",
+  "iso": "2026-09-22",
+  "month": "September 2026"
  },
  {
   "slug": "how-grown-ups-learn",
   "title": "How grown-ups learn",
-  "dek": "In 1970 an educator named Malcolm Knowles published a book arguing that adults learn in a fundamentally different way from children, and that teaching them…",
+  "dek": "In 1970 an educator named Malcolm Knowles published a book arguing that adults learn in a fundamentally different way from children, and that teaching them like…",
   "day": 131,
   "vault": "mind",
   "body": [
@@ -5844,12 +6430,15 @@ export const letters=[
     "t": "A hundred and thirty-one days in, you're the most self-directed learner you've ever been. Knowles would say you were always built this way, and school just never asked."
    }
   ],
-  "n": 196
+  "n": 196,
+  "date": "September 23, 2026",
+  "iso": "2026-09-23",
+  "month": "September 2026"
  },
  {
   "slug": "the-second-half",
   "title": "The second half",
-  "dek": "James Hollis is a Jungian analyst who in 2005 wrote *Finding Meaning in the Second Half of Life*, a book for the people who've done everything they were…",
+  "dek": "James Hollis is a Jungian analyst who in 2005 wrote <em>Finding Meaning in the Second Half of Life</em>, a book for the people who've done everything they were supposed to,…",
   "day": 132,
   "vault": "mind",
   "body": [
@@ -5874,12 +6463,15 @@ export const letters=[
     "t": "I'd add that you don't have to be fifty for this key. The second half of life, in Jung's sense, begins whenever the adapted self stops being enough. For some people that's thirty-five. For some it's seventy. The question is the same."
    }
   ],
-  "n": 197
+  "n": 197,
+  "date": "September 24, 2026",
+  "iso": "2026-09-24",
+  "month": "September 2026"
  },
  {
   "slug": "eating-like-your-oldest-ancestors",
   "title": "Eating like your oldest ancestors",
-  "dek": "In 1985 two scholars at Emory, a physician named Boyd Eaton and an anthropologist named Melvin Konner, published a paper in a major medical journal with a…",
+  "dek": "In 1985 two scholars at Emory, a physician named Boyd Eaton and an anthropologist named Melvin Konner, published a paper in a major medical journal with a provocative…",
   "day": 132,
   "vault": "body",
   "body": [
@@ -5904,12 +6496,15 @@ export const letters=[
     "t": "For the Meaning chamber: Eaton and Konner's deeper point was about mismatch, and it applies beyond food. We have bodies built for one world living in another. Noticing the mismatch, in food, in movement, in sleep, in light, is most of what this year has been."
    }
   ],
-  "n": 198
+  "n": 198,
+  "date": "September 24, 2026",
+  "iso": "2026-09-24",
+  "month": "September 2026"
  },
  {
   "slug": "discipline-as-the-ground-of-courage",
   "title": "Discipline as the ground of courage",
-  "dek": "Martin Luther King Jr.",
+  "dek": "Martin Luther King Jr. is remembered for what he changed. I want to teach what he practiced, because the practice was the key, and he said so himself.",
   "day": 133,
   "vault": "mind",
   "body": [
@@ -5934,7 +6529,10 @@ export const letters=[
     "t": "Every key this year has been a small discipline. King's life says the small disciplines are what large meaning stands on."
    }
   ],
-  "n": 199
+  "n": 199,
+  "date": "September 25, 2026",
+  "iso": "2026-09-25",
+  "month": "September 2026"
  },
  {
   "slug": "remade-in-his-own-voice",
@@ -5964,12 +6562,15 @@ export const letters=[
     "t": "Every key in this year has asked for a small daily discipline. His life says what a small daily discipline can build, and what it can let a person become, and become again."
    }
   ],
-  "n": 200
+  "n": 200,
+  "date": "September 26, 2026",
+  "iso": "2026-09-26",
+  "month": "September 2026"
  },
  {
   "slug": "the-year-on-meat-alone",
   "title": "The year on meat alone",
-  "dek": "In 1928 an Arctic explorer named Vilhjalmur Stefansson, who'd lived for years among the Inuit eating nothing but meat and fat and claimed to have thrived,…",
+  "dek": "In 1928 an Arctic explorer named Vilhjalmur Stefansson, who'd lived for years among the Inuit eating nothing but meat and fat and claimed to have thrived, agreed to…",
   "day": 134,
   "vault": "body",
   "body": [
@@ -5990,12 +6591,15 @@ export const letters=[
     "t": "Here's what I'd take from it for the Meaning chamber's table. Stefansson's story is really about trust in direct experience over received wisdom. He ate the way the Inuit ate and watched what happened to his own body. That's the Charvaka rule from day one hundred, pointed at a plate. The lesson isn't to eat only meat. It's to notice how you actually feel after what you actually eat."
    }
   ],
-  "n": 201
+  "n": 201,
+  "date": "September 26, 2026",
+  "iso": "2026-09-26",
+  "month": "September 2026"
  },
  {
   "slug": "the-child-you-were",
   "title": "The child you were",
-  "dek": "Four months of building.",
+  "dek": "Four months of building. This month is about what's been hurt, and the keys are the paths people have found through it.",
   "day": 135,
   "vault": "mind",
   "body": [
@@ -6016,12 +6620,15 @@ export const letters=[
     "t": "It's the right first key for the healing chamber because it names the oldest wound, the one that came before we had words. Healing, by Honoring: Bradshaw's whole teaching is that the child deserves to be honored, not hurried past."
    }
   ],
-  "n": 202
+  "n": 202,
+  "date": "September 27, 2026",
+  "iso": "2026-09-27",
+  "month": "September 2026"
  },
  {
   "slug": "the-rooms",
   "title": "The rooms",
-  "dek": "In 1935 a New York stockbroker and an Ohio surgeon, both drinking themselves to death, sat down together in a house in Akron and found that the only thing…",
+  "dek": "In 1935 a New York stockbroker and an Ohio surgeon, both drinking themselves to death, sat down together in a house in Akron and found that the only thing that kept…",
   "day": 136,
   "vault": "mind",
   "body": [
@@ -6042,7 +6649,10 @@ export const letters=[
     "t": "If this is your door, or someone you love's, there's a meeting tonight, in your town, and it's free."
    }
   ],
-  "n": 203
+  "n": 203,
+  "date": "September 28, 2026",
+  "iso": "2026-09-28",
+  "month": "September 2026"
  },
  {
   "slug": "enough-protein-at-every-meal",
@@ -6072,12 +6682,15 @@ export const letters=[
     "t": "It's a Meaning-chamber key because it completes the muscle keys from months ago. Muscle is medicine; the lifting sends the signal; protein is what the body builds with. A hundred and thirty-six days of walking and lifting need this to show up on the frame."
    }
   ],
-  "n": 204
+  "n": 204,
+  "date": "September 28, 2026",
+  "iso": "2026-09-28",
+  "month": "September 2026"
  },
  {
   "slug": "test-the-thought",
   "title": "Test the thought",
-  "dek": "In the 1960s a psychiatrist in Philadelphia named Aaron Beck, trained in psychoanalysis, was studying the dreams of depressed patients to confirm Freud's…",
+  "dek": "In the 1960s a psychiatrist in Philadelphia named Aaron Beck, trained in psychoanalysis, was studying the dreams of depressed patients to confirm Freud's theories…",
   "day": 137,
   "vault": "mind",
   "body": [
@@ -6098,12 +6711,15 @@ export const letters=[
     "t": "Here's the honest line. CBT is a treatment, and if you're depressed or anxious in a way that's running your life, the door is a CBT therapist, and it's a good door. The worksheet, used daily, is also a tool for everyone. Most of us run a dozen distorted thoughts before breakfast and never test one."
    }
   ],
-  "n": 205
+  "n": 205,
+  "date": "September 29, 2026",
+  "iso": "2026-09-29",
+  "month": "September 2026"
  },
  {
   "slug": "the-part-you-can-t-see",
   "title": "The part you can't see",
-  "dek": "Sigmund Freud was a Viennese neurologist who, in the 1890s, began listening to patients talk, for hours, about whatever came to mind, and concluded that…",
+  "dek": "Sigmund Freud was a Viennese neurologist who, in the 1890s, began listening to patients talk, for hours, about whatever came to mind, and concluded that most of what…",
   "day": 138,
   "vault": "mind",
   "body": [
@@ -6124,12 +6740,15 @@ export const letters=[
     "t": "Vault Human points to psychoanalytic and psychodynamic therapists for anyone who wants to go that deep, and some people need to. The modest practice for everyone is Freud's own first step: say what comes to mind, without editing, and notice what you didn't want to say."
    }
   ],
-  "n": 206
+  "n": 206,
+  "date": "September 30, 2026",
+  "iso": "2026-09-30",
+  "month": "September 2026"
  },
  {
   "slug": "not-all-carbohydrates-are-the-same",
   "title": "Not all carbohydrates are the same",
-  "dek": "In 1981 a Toronto researcher named David Jenkins, the same man who later built the Portfolio diet, ran an experiment that changed how people think about…",
+  "dek": "In 1981 a Toronto researcher named David Jenkins, the same man who later built the Portfolio diet, ran an experiment that changed how people think about carbohydrate.",
   "day": 138,
   "vault": "body",
   "body": [
@@ -6150,7 +6769,10 @@ export const letters=[
     "t": "It's the table key that sits between the low-carb keys and the plant-based ones and makes peace between them. You don't have to cut carbohydrate. You have to choose the kind, and slow it down. For blood sugar, energy, and hunger, that one choice, made at every meal, does most of what the stricter diets do without the restriction."
    }
   ],
-  "n": 207
+  "n": 207,
+  "date": "September 30, 2026",
+  "iso": "2026-09-30",
+  "month": "September 2026"
  },
  {
   "slug": "the-shadow",
@@ -6176,7 +6798,10 @@ export const letters=[
     "t": "Vault Human points to Jungian analysts for the deep work. The shadow question and the dream journal belong to everyone."
    }
   ],
-  "n": 208
+  "n": 208,
+  "date": "October 1, 2026",
+  "iso": "2026-10-01",
+  "month": "October 2026"
  },
  {
   "slug": "three-conditions",
@@ -6202,12 +6827,15 @@ export const letters=[
     "t": "It's also the clearest description I know of what a coach is for, and of what Vault Human tries to be. Not an expert with answers. A person who understands you from inside, who's real with you, and who's on your side without conditions. Rogers believed that in that kind of presence, people find their own way. Eighty years of evidence agrees."
    }
   ],
-  "n": 209
+  "n": 209,
+  "date": "October 2, 2026",
+  "iso": "2026-10-02",
+  "month": "October 2026"
  },
  {
   "slug": "when-the-story-is-better-than-the-science",
   "title": "When the story is better than the science",
-  "dek": "In 1996 a naturopathic physician named Peter D'Adamo published *Eat Right 4 Your Type*, which claimed that your blood group, O, A, B or AB, determines which…",
+  "dek": "In 1996 a naturopathic physician named Peter D'Adamo published <em>Eat Right 4 Your Type</em>, which claimed that your blood group, O, A, B or AB, determines which foods…",
   "day": 140,
   "vault": "body",
   "body": [
@@ -6232,12 +6860,15 @@ export const letters=[
     "t": "Vault Human's rule, which this key illustrates: keep the method when it's sound, hold the story lightly, and never confuse feeling chosen with being right. The set point from day six, the fullness from day one hundred and twenty-four, the protein from four days ago: those are the science. The rest is marketing."
    }
   ],
-  "n": 210
+  "n": 210,
+  "date": "October 2, 2026",
+  "iso": "2026-10-02",
+  "month": "October 2026"
  },
  {
   "slug": "the-last-freedom",
   "title": "The last freedom",
-  "dek": "Viktor Frankl was a Viennese psychiatrist who spent three years in the concentration camps, lost his wife, his parents and his brother there, and came out…",
+  "dek": "Viktor Frankl was a Viennese psychiatrist who spent three years in the concentration camps, lost his wife, his parents and his brother there, and came out in 1945…",
   "day": 141,
   "vault": "mind",
   "body": [
@@ -6262,12 +6893,15 @@ export const letters=[
     "t": "Vault Human points to logotherapists and to the book, which I'd put in everyone's hands."
    }
   ],
-  "n": 211
+  "n": 211,
+  "date": "October 3, 2026",
+  "iso": "2026-10-03",
+  "month": "October 2026"
  },
  {
   "slug": "what-goes-right",
   "title": "What goes right",
-  "dek": "In 1998 a psychologist named Martin Seligman became president of the American Psychological Association and used the position to make a complaint: his field…",
+  "dek": "In 1998 a psychologist named Martin Seligman became president of the American Psychological Association and used the position to make a complaint: his field had spent…",
   "day": 142,
   "vault": "mind",
   "body": [
@@ -6288,7 +6922,10 @@ export const letters=[
     "t": "Here's the honest caveat. The field has had its overclaims and its replication troubles, and some of its early findings shrank. The core has held: wellbeing can be built, on purpose, by practice, and it's not the same thing as the absence of illness."
    }
   ],
-  "n": 212
+  "n": 212,
+  "date": "October 4, 2026",
+  "iso": "2026-10-04",
+  "month": "October 2026"
  },
  {
   "slug": "a-chart-you-may-already-own-at-the-table",
@@ -6318,7 +6955,10 @@ export const letters=[
     "t": "Vault Human points to a Human Design analyst for anyone who wants the chart read properly. The question about conditions is free."
    }
   ],
-  "n": 213
+  "n": 213,
+  "date": "October 4, 2026",
+  "iso": "2026-10-04",
+  "month": "October 2026"
  },
  {
   "slug": "no-bad-parts",
@@ -6344,12 +6984,15 @@ export const letters=[
     "t": "Vault Human uses parts language in coaching, lightly, because it's kind and it works, and we point to an IFS-certified therapist for the real work with exiles, which is not a coach's job. The practice for everyone is the question Schwartz asks: when a part shows up, instead of fighting it, get curious. What are you afraid would happen if you didn't do this?"
    }
   ],
-  "n": 214
+  "n": 214,
+  "date": "October 5, 2026",
+  "iso": "2026-10-05",
+  "month": "October 2026"
  },
  {
   "slug": "make-room-and-move",
   "title": "Make room, and move",
-  "dek": "Steven Hayes was a young psychologist in the 1980s having panic attacks in the middle of faculty meetings, and everything he'd been trained in told him to…",
+  "dek": "Steven Hayes was a young psychologist in the 1980s having panic attacks in the middle of faculty meetings, and everything he'd been trained in told him to control the…",
   "day": 144,
   "vault": "mind",
   "body": [
@@ -6374,7 +7017,10 @@ export const letters=[
     "t": "Vault Human points to ACT therapists, and I'll say that of all the therapies in this chamber, this is the one whose methods a coach can most honestly borrow, because it's about living, not diagnosing."
    }
   ],
-  "n": 215
+  "n": 215,
+  "date": "October 6, 2026",
+  "iso": "2026-10-06",
+  "month": "October 2026"
  },
  {
   "slug": "fuel-the-session-measure-with-your-hand",
@@ -6404,7 +7050,10 @@ export const letters=[
     "t": "For the Meaning chamber: a hundred and forty-four days of walks and lifts have made you someone who trains. Someone who trains eats like it: fuel for the work, food for the rest."
    }
   ],
-  "n": 216
+  "n": 216,
+  "date": "October 6, 2026",
+  "iso": "2026-10-06",
+  "month": "October 2026"
  },
  {
   "slug": "their-own-reasons",
@@ -6434,12 +7083,15 @@ export const letters=[
     "t": "Vault Human's coaching leans on MI heavily. Your coach will rarely tell you to do anything. They'll ask you why you might, and let you convince yourself."
    }
   ],
-  "n": 217
+  "n": 217,
+  "date": "October 7, 2026",
+  "iso": "2026-10-07",
+  "month": "October 2026"
  },
  {
   "slug": "both-things-are-true",
   "title": "Both things are true",
-  "dek": "Marsha Linehan was a psychologist at the University of Washington in the 1980s trying to treat the patients nobody could help: chronically suicidal women…",
+  "dek": "Marsha Linehan was a psychologist at the University of Washington in the 1980s trying to treat the patients nobody could help: chronically suicidal women with what…",
   "day": 146,
   "vault": "mind",
   "body": [
@@ -6460,12 +7112,15 @@ export const letters=[
     "t": "Vault Human points to DBT therapists for anyone whose emotions are running their life. The skills belong to everyone."
    }
   ],
-  "n": 218
+  "n": 218,
+  "date": "October 8, 2026",
+  "iso": "2026-10-08",
+  "month": "October 2026"
  },
  {
   "slug": "drink-when-you-re-thirsty",
   "title": "Drink when you're thirsty",
-  "dek": "For thirty years, athletes were told to drink before they were thirsty, as much as they could tolerate, because thirst was a lagging signal and dehydration…",
+  "dek": "For thirty years, athletes were told to drink before they were thirsty, as much as they could tolerate, because thirst was a lagging signal and dehydration was the enemy.",
   "day": 146,
   "vault": "body",
   "body": [
@@ -6486,12 +7141,15 @@ export const letters=[
     "t": "It closes the table keys of this chamber because it's a story about trusting the body over the rule. The same body that tells you it's full, that tells you it's tired, that tells you it needs protein after a lift, tells you when to drink. The whole table chamber has been about learning to hear it."
    }
   ],
-  "n": 219
+  "n": 219,
+  "date": "October 8, 2026",
+  "iso": "2026-10-08",
+  "month": "October 2026"
  },
  {
   "slug": "the-eyes",
   "title": "The eyes",
-  "dek": "In 1987 a psychologist named Francine Shapiro was walking in a park, troubled by a memory, and noticed that as her eyes moved back and forth, following the…",
+  "dek": "In 1987 a psychologist named Francine Shapiro was walking in a park, troubled by a memory, and noticed that as her eyes moved back and forth, following the path, the…",
   "day": 147,
   "vault": "mind",
   "body": [
@@ -6512,7 +7170,10 @@ export const letters=[
     "t": "The teaching for everyone is Shapiro's accident in the park. The body has its own ways of filing what hurts, and sometimes it only needs a little help to finish the job it was already trying to do."
    }
   ],
-  "n": 220
+  "n": 220,
+  "date": "October 9, 2026",
+  "iso": "2026-10-09",
+  "month": "October 2026"
  },
  {
   "slug": "act-it-out",
@@ -6538,12 +7199,15 @@ export const letters=[
     "t": "Vault Human points to psychodrama groups for anyone drawn to it. The reversal you can do at a kitchen table with two chairs."
    }
   ],
-  "n": 221
+  "n": 221,
+  "date": "October 10, 2026",
+  "iso": "2026-10-10",
+  "month": "October 2026"
  },
  {
   "slug": "what-the-old-diets-had-in-common",
   "title": "What the old diets had in common",
-  "dek": "In the 1930s a Cleveland dentist named Weston Price closed his practice and spent a decade traveling to the most isolated peoples he could reach: villages…",
+  "dek": "In the 1930s a Cleveland dentist named Weston Price closed his practice and spent a decade traveling to the most isolated peoples he could reach: villages in the…",
   "day": 148,
   "vault": "body",
   "body": [
@@ -6564,7 +7228,10 @@ export const letters=[
     "t": "For the table chamber, Price is the ancestor of Pollan's seven words. Eat food, by which he'd mean food your great-grandmother in any country would recognize."
    }
   ],
-  "n": 222
+  "n": 222,
+  "date": "October 10, 2026",
+  "iso": "2026-10-10",
+  "month": "October 2026"
  },
  {
   "slug": "the-empty-chair",
@@ -6590,7 +7257,10 @@ export const letters=[
     "t": "It's a Healing key because Gestalt's premise is that healing happens in the present, not in the archaeology of the past. What's unfinished shows up now, in the body, in the sentence, and it can be finished now. Vault Human points to Gestalt therapists, and I'll say that of all the therapies this chamber describes, this one's spirit is closest to how coaching works: present, embodied, owned."
    }
   ],
-  "n": 223
+  "n": 223,
+  "date": "October 11, 2026",
+  "iso": "2026-10-11",
+  "month": "October 2026"
  },
  {
   "slug": "a-b-c",
@@ -6620,12 +7290,15 @@ export const letters=[
     "t": "Vault Human points to REBT and CBT therapists; the ABC is a tool for everyone, and it fits on an index card."
    }
   ],
-  "n": 224
+  "n": 224,
+  "date": "October 12, 2026",
+  "iso": "2026-10-12",
+  "month": "October 2026"
  },
  {
   "slug": "the-suspect-that-was-ignored",
   "title": "The suspect that was ignored",
-  "dek": "In 1972 a British physiologist named John Yudkin published a book with a title that told you where he stood: *Pure, White and Deadly*.",
+  "dek": "In 1972 a British physiologist named John Yudkin published a book with a title that told you where he stood: <em>Pure, White and Deadly</em>.",
   "day": 150,
   "vault": "body",
   "body": [
@@ -6650,12 +7323,15 @@ export const letters=[
     "t": "And it's a story about how long a right answer can be ignored. Yudkin died in 1995, before the field came round."
    }
   ],
-  "n": 225
+  "n": 225,
+  "date": "October 12, 2026",
+  "iso": "2026-10-12",
+  "month": "October 2026"
  },
  {
   "slug": "use-what-s-there",
   "title": "Use what's there",
-  "dek": "Milton Erickson was a psychiatrist in Phoenix who had polio twice, spent much of his life in a wheelchair, and became the most inventive therapist of the…",
+  "dek": "Milton Erickson was a psychiatrist in Phoenix who had polio twice, spent much of his life in a wheelchair, and became the most inventive therapist of the twentieth…",
   "day": 151,
   "vault": "mind",
   "body": [
@@ -6676,7 +7352,10 @@ export const letters=[
     "t": "It's a Healing key because it's the therapy of indirection, and indirection is often what works when the direct route is blocked. Vault Human points to certified Ericksonian hypnotherapists; the practice is a skill, and a real one. What I keep for everyone is utilization: whatever you've got, including the thing you call the problem, is material. Use it."
    }
   ],
-  "n": 226
+  "n": 226,
+  "date": "October 13, 2026",
+  "iso": "2026-10-13",
+  "month": "October 2026"
  },
  {
   "slug": "the-family-is-the-patient",
@@ -6706,12 +7385,15 @@ export const letters=[
     "t": "Vault Human points to family therapists for the family work, which a coach can't do. The map belongs to anyone with a family."
    }
   ],
-  "n": 227
+  "n": 227,
+  "date": "October 14, 2026",
+  "iso": "2026-10-14",
+  "month": "October 2026"
  },
  {
   "slug": "the-organ-you-didn-t-know-you-had",
   "title": "The organ you didn't know you had",
-  "dek": "In 2007 the National Institutes of Health launched the Human Microbiome Project to catalog the trillions of bacteria, fungi and other organisms that live in…",
+  "dek": "In 2007 the National Institutes of Health launched the Human Microbiome Project to catalog the trillions of bacteria, fungi and other organisms that live in and on a…",
   "day": 152,
   "vault": "body",
   "body": [
@@ -6728,12 +7410,15 @@ export const letters=[
     "t": "It's a Healing key because the gut is where a great deal of healing turns out to happen, and because it's the organ the table keys have been feeding all along without naming. The Mediterranean plate, the daily dozen, the greens: they were microbiome diets before anyone had the word."
    }
   ],
-  "n": 228
+  "n": 228,
+  "date": "October 14, 2026",
+  "iso": "2026-10-14",
+  "month": "October 2026"
  },
  {
   "slug": "practice-the-hard-thing-before-it-comes",
   "title": "Practice the hard thing before it comes",
-  "dek": "Donald Meichenbaum was a Canadian psychologist who in the 1970s asked a question doctors had been asking about the body for a century and nobody had asked…",
+  "dek": "Donald Meichenbaum was a Canadian psychologist who in the 1970s asked a question doctors had been asking about the body for a century and nobody had asked about the…",
   "day": 153,
   "vault": "mind",
   "body": [
@@ -6758,12 +7443,15 @@ export const letters=[
     "t": "The small practice for everyone: before anything hard, rehearse it, in detail, with the feeling present. Day nine taught you to picture success. Meichenbaum teaches you to picture the difficulty, and your response to it, so neither surprises you."
    }
   ],
-  "n": 229
+  "n": 229,
+  "date": "October 15, 2026",
+  "iso": "2026-10-15",
+  "month": "October 2026"
  },
  {
   "slug": "how-you-were-wired-to-love",
   "title": "How you were wired to love",
-  "dek": "In the 1940s a British psychiatrist named John Bowlby watched children separated from their parents in wartime London and in hospitals, and saw a pattern of…",
+  "dek": "In the 1940s a British psychiatrist named John Bowlby watched children separated from their parents in wartime London and in hospitals, and saw a pattern of protest,…",
   "day": 154,
   "vault": "mind",
   "body": [
@@ -6788,12 +7476,15 @@ export const letters=[
     "t": "It's a Healing key because it's where most of the chamber's wounds began, before memory. Vault Human points to attachment-focused therapists, and a coach can help you name the pattern, which is the beginning."
    }
   ],
-  "n": 230
+  "n": 230,
+  "date": "October 16, 2026",
+  "iso": "2026-10-16",
+  "month": "October 2026"
  },
  {
   "slug": "the-second-brain",
   "title": "The second brain",
-  "dek": "In 1998 a Columbia University physician named Michael Gershon published a book with a title that sounded like a metaphor and wasn't: *The Second Brain*.",
+  "dek": "In 1998 a Columbia University physician named Michael Gershon published a book with a title that sounded like a metaphor and wasn't: <em>The Second Brain</em>.",
   "day": 154,
   "vault": "body",
   "body": [
@@ -6814,7 +7505,10 @@ export const letters=[
     "t": "And it's a practical key. What settles the gut settles the mind: slow eating, fiber, fermented foods, the long exhale that stimulates the vagus, which you've been practicing since the second month. Chronic gut trouble is a physician's door, and so is anything that's lasted more than a few weeks. The daily conversation with the second brain is yours."
    }
   ],
-  "n": 231
+  "n": 231,
+  "date": "October 16, 2026",
+  "iso": "2026-10-16",
+  "month": "October 2026"
  },
  {
   "slug": "the-games-people-play",
@@ -6840,12 +7534,15 @@ export const letters=[
     "t": "Vault Human points to TA therapists; the three states are a tool for any conversation. Most conflicts end the moment one person steps into Adult and stays there."
    }
   ],
-  "n": 232
+  "n": 232,
+  "date": "October 17, 2026",
+  "iso": "2026-10-17",
+  "month": "October 2026"
  },
  {
   "slug": "a-self-inside-the-relationship",
   "title": "A self inside the relationship",
-  "dek": "In 1986 a woman named Melody Beattie, who'd been through addiction and recovery and then found herself consumed by the addictions of the people around her,…",
+  "dek": "In 1986 a woman named Melody Beattie, who'd been through addiction and recovery and then found herself consumed by the addictions of the people around her, wrote a…",
   "day": 156,
   "vault": "mind",
   "body": [
@@ -6870,7 +7567,10 @@ export const letters=[
     "t": "Vault Human points to Al-Anon and to therapists who work with codependency; the daily questions belong to anyone who's ever managed another adult's life instead of living their own."
    }
   ],
-  "n": 233
+  "n": 233,
+  "date": "October 18, 2026",
+  "iso": "2026-10-18",
+  "month": "October 2026"
  },
  {
   "slug": "your-own-curve",
@@ -6900,18 +7600,21 @@ export const letters=[
     "t": "It's the right close for the table keys. A hundred and fifty-six days of letters have offered every sensible way of eating on earth. The last one says: now watch your own body, and eat by what it tells you."
    }
   ],
-  "n": 234
+  "n": 234,
+  "date": "October 18, 2026",
+  "iso": "2026-10-18",
+  "month": "October 2026"
  },
  {
   "slug": "belonging-is-the-cure",
   "title": "Belonging is the cure",
-  "dek": "This is the day these letters were written, all of them, and published, so that there would be one for every day since Vault Human began.",
+  "dek": "One hundred and fifty-seven mornings since we began.",
   "day": 157,
   "vault": "mind",
   "body": [
    {
     "k": "lead",
-    "t": "This is the day these letters were written, all of them, and published, so that there would be one for every day since Vault Human began. From here, the keys continue as they're written, one day at a time, the way a key is meant to."
+    "t": "One hundred and fifty-seven mornings since we began. One short piece a day, from the day Vault Human began, and from here they continue one day at a time, the way a key is meant to."
    },
    {
     "k": "",
@@ -6930,6 +7633,9 @@ export const letters=[
     "t": "It's the last key before tomorrow because it's where this year has been heading. The first month asked what's yours. The second and third months built the body and the attention. The fourth month made meaning. The fifth month honors what was hurt. And the sixth month, which comes after a rest, is Circle: your people. Adler would say that's not a chapter. It's the point."
    }
   ],
-  "n": 235
+  "n": 235,
+  "date": "October 19, 2026",
+  "iso": "2026-10-19",
+  "month": "October 2026"
  }
 ];
