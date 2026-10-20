@@ -1,7 +1,7 @@
 /* Vault Human — end-of-page dock: "Back to top" + "Watch the video". Slides up once the visitor has scrolled down a little and paused for a moment; tucks away while they scroll. */
 (function(){
   if (window.__vhDock) return; window.__vhDock = true;
-  var FILM = '/img/russ/v2/how-it-works.mp4', POSTER = '/img/russ/v2/how-it-works-poster.jpg';
+  var FILM = document.body.getAttribute('data-film') || '/img/russ/v2/how-it-works.mp4', POSTER = document.body.getAttribute('data-film-poster') || '/img/russ/v2/how-it-works-poster.jpg';
   var css = ''
    + '.vh-dock{position:fixed;left:50%;bottom:22px;z-index:880;display:flex;gap:6px;padding:6px;border-radius:999px;'
    + 'background:rgba(22,29,24,.92);border:1px solid rgba(143,166,126,.45);box-shadow:0 14px 40px rgba(0,0,0,.45);'
