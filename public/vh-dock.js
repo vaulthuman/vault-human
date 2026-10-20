@@ -1,12 +1,12 @@
-/* Vault Human — end-of-page dock: "Back to top" + "Watch the film". Appears when the visitor nears the bottom of any page. */
+/* Vault Human — end-of-page dock: "Back to top" + "Watch the video". Slides up once the visitor has scrolled down a little and paused for a moment; tucks away while they scroll. */
 (function(){
   if (window.__vhDock) return; window.__vhDock = true;
   var FILM = '/img/russ/v2/how-it-works.mp4', POSTER = '/img/russ/v2/how-it-works-poster.jpg';
   var css = ''
    + '.vh-dock{position:fixed;left:50%;bottom:22px;z-index:880;display:flex;gap:6px;padding:6px;border-radius:999px;'
    + 'background:rgba(22,29,24,.92);border:1px solid rgba(143,166,126,.45);box-shadow:0 14px 40px rgba(0,0,0,.45);'
-   + '-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transform:translate(-50%,18px);opacity:0;pointer-events:none;'
-   + 'transition:opacity .3s ease,transform .3s ease;font-family:Inter,system-ui,sans-serif}'
+   + '-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transform:translate(-50%,28px);opacity:0;pointer-events:none;'
+   + 'transition:opacity .45s ease,transform .45s cubic-bezier(.2,.8,.2,1);font-family:Inter,system-ui,sans-serif}'
    + '.vh-dock.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}'
    + '.vh-dock button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;cursor:pointer;'
    + 'padding:10px 16px;font:600 12px/1 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;'
@@ -27,7 +27,7 @@
   var dock = document.createElement('nav');
   dock.className = 'vh-dock'; dock.setAttribute('aria-label', 'Page shortcuts');
   dock.innerHTML = '<button type="button" class="vh-dock__top">' + up + 'Back to top</button>'
-                 + '<button type="button" class="vh-dock__film">' + play + 'Watch the film</button>';
+                 + '<button type="button" class="vh-dock__film">' + play + 'Watch the video</button>';
   document.body.appendChild(dock);
   var pad = document.createElement('div'); pad.className = 'vh-dock-space'; pad.setAttribute('aria-hidden','true');
   pad.style.cssText = 'height:84px;background:inherit'; document.body.insertBefore(pad, dock);
@@ -40,7 +40,7 @@
   var own = null;
   function ownFilm(){
     if (own) return own;
-    own = document.createElement('div'); own.className = 'vh-film'; own.setAttribute('role','dialog'); own.setAttribute('aria-label','Vault Human film');
+    own = document.createElement('div'); own.className = 'vh-film'; own.setAttribute('role','dialog'); own.setAttribute('aria-label','Vault Human video');
     own.innerHTML = '<button type="button" aria-label="Close">&times;</button><video playsinline controls preload="none"></video>';
     document.body.appendChild(own);
     var v = own.querySelector('video');
@@ -60,14 +60,16 @@
     var p = v.play(); if (p && p.catch) p.catch(function(){});
   });
 
-  var ticking = false;
-  function check(){
-    ticking = false;
-    var h = document.documentElement, total = h.scrollHeight, seen = (window.scrollY || h.scrollTop) + innerHeight;
-    var near = total > innerHeight * 1.5 && (total - seen) < Math.max(innerHeight * 0.9, 700);
+  var idle = null;
+  function show(){
+    var h = document.documentElement, y = window.scrollY || h.scrollTop;
+    var far = y > Math.max(innerHeight * 0.6, 500) && h.scrollHeight > innerHeight * 1.5;
     var toast = document.querySelector('.vk-toast.in');
-    dock.classList.toggle('on', near && !toast);
+    dock.classList.toggle('on', far && !toast);
   }
-  addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(check); } }, { passive: true });
-  addEventListener('resize', check); check();
+  addEventListener('scroll', function(){
+    dock.classList.remove('on');
+    clearTimeout(idle); idle = setTimeout(show, 1200);
+  }, { passive: true });
+  addEventListener('resize', function(){ clearTimeout(idle); idle = setTimeout(show, 1200); });
 })();
