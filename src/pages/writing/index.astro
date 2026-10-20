@@ -1,18 +1,20 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { articles } from '../../data/writing.js';
+import { letters } from '../../data/letters.js';
 ---
-<Base title="Writing — Vault Human" description="Essays from Vault Human on wholeness, authorship, and what to keep in human hands.">
+<Base title="Writing — Vault Human" description="Essays and daily letters from Vault Human on wholeness, authorship, and what to keep in human hands.">
   <div class="wrap">
     <div class="pagehead">
       <p class="eyebrow">Writing</p>
       <h1>On being whole<br>in a world of pieces.</h1>
-      <p class="dek">Essays on authorship, wholeness, and which decisions belong in human hands.</p>
+      <p class="dek">Essays, and a short letter for every day since Vault Human began.</p>
     </div>
 
     <div class="wlist">
+      <p class="wsec">Essays</p>
       {articles.map((a) => (
-        <a class="witem" href={`/writing/${a.slug}`}>
+        <a class="witem" href={`/writing/${a.slug}/`}>
           <p class="wm">{a.date}</p>
           <p class="wt">{a.title}</p>
           <p class="wd">{a.dek}</p>
@@ -20,8 +22,27 @@ import { articles } from '../../data/writing.js';
       ))}
     </div>
 
+    <div class="wlist" id="letters">
+      <p class="wsec">The letters</p>
+      <p class="wintro">One short piece a day, in the order they came, from the day we began. Start at the first one, or open whichever title calls you.</p>
+      {letters.map((l) => (
+        <a class="witem witem-letter" href={`/writing/${l.slug}/`}>
+          <p class="wt">{l.title}</p>
+          <p class="wd" set:html={l.dek}></p>
+        </a>
+      ))}
+    </div>
+
     <hr class="rule" />
-    <p class="closing" style="font-size:24px">One lesson a day. A real person reads what you write.</p>
+    <p class="closing" style="font-size:24px">A coach. Every day. For your whole life.</p>
     <div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Begin with Vault</a></div>
   </div>
+  <style is:inline>
+    .wsec{font-family:var(--sans);font-size:11px;letter-spacing:4px;text-transform:uppercase;opacity:.6;margin:0 0 6px}
+    .wintro{font-family:'Times New Roman',Times,serif;font-style:italic;font-size:19px;opacity:.85;margin:0 0 18px;max-width:640px}
+    #letters{margin-top:64px}
+    .witem-letter{padding:18px 4px}
+    .witem-letter .wt{font-size:23px;margin:0 0 4px}
+    .witem-letter .wd{font-size:17px}
+  </style>
 </Base>

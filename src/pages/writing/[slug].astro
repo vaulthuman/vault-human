@@ -1,30 +1,60 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { articles } from '../../data/writing.js';
+import { letters, PUBLISHED } from '../../data/letters.js';
 export function getStaticPaths() {
-  return articles.map((a) => ({ params: { slug: a.slug }, props: { a } }));
+  const ess = articles.map((a) => ({ params: { slug: a.slug }, props: { a, kind: 'essay' } }));
+  const let_ = letters.map((l, i) => ({ params: { slug: l.slug }, props: { a: l, kind: 'letter', prev: i > 0 ? letters[i-1] : null, next: i < letters.length-1 ? letters[i+1] : null } }));
+  return [...ess, ...let_];
 }
-const { a } = Astro.props;
+const { a, kind, prev, next } = Astro.props;
 const WITH_PDF = ['the-fracture', 'the-warmer-intelligence', 'the-mirror', 'decision-points', 'how-do-we-grow-leaders-now'];
-const pdf = WITH_PDF.includes(a.slug) ? `/${a.slug}.pdf` : null;
+const pdf = kind === 'essay' && WITH_PDF.includes(a.slug) ? `/${a.slug}.pdf` : null;
+const plainDek = (a.dek || '').replace(/<[^>]+>/g, '');
 ---
-<Base title={`${a.title} — Vault Human`} description={a.dek}>
+<Base title={`${a.title} — Vault Human`} description={plainDek}>
   <div class="wrap">
     <article class="article">
-      <p class="amx"><a href="/writing" class="backlink" style="margin:0;opacity:.7">Writing</a> &middot; {a.date}</p>
+      {kind === 'essay' ? (
+        <p class="amx"><a href="/writing/" class="backlink" style="margin:0;opacity:.7">Writing</a> &middot; {a.date}</p>
+      ) : (
+        <p class="amx"><a href="/writing/" class="backlink" style="margin:0;opacity:.7">Writing</a> &middot; <a href="/writing/#letters" class="backlink" style="margin:0;opacity:.7">The letters</a></p>
+      )}
       <h1>{a.title}</h1>
-      <p class="adek">{a.dek}</p>
+      {kind === 'essay' && <p class="adek">{a.dek}</p>}
       <div class="abody">
         {a.body.map((b) => b.k === "h" ? <h3 class="ah" set:html={b.t}></h3> : <p class={b.k} set:html={b.t}></p>)}
       </div>
-      <div class="article-cta">
-        <p class="closing" style="font-size:22px">You were never a set of separate problems. One coach. One method. Your whole life.</p>
-        <div class="ctarow">
-          <a class="btn btn-acc" href="#" data-open-form>Begin with Vault</a>
-          {pdf && <a class="btn btn-line" href={pdf} target="_blank" rel="noopener">Download the PDF</a>}
-          <a class="btn btn-line" href="/writing">More writing</a>
+      {kind === 'essay' ? (
+        <div class="article-cta">
+          <p class="closing" style="font-size:22px">You were never a set of separate problems. One coach. One method. Your whole life.</p>
+          <div class="ctarow">
+            <a class="btn btn-acc" href="#" data-open-form>Begin with Vault</a>
+            {pdf && <a class="btn btn-line" href={pdf} target="_blank" rel="noopener">Download the PDF</a>}
+            <a class="btn btn-line" href="/writing/">More writing</a>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div class="article-cta">
+          <p class="closing" style="font-size:22px">A coach. Every day. For your whole life.</p>
+          <div class="ctarow">
+            <a class="btn btn-acc" href="#" data-open-form>Get the Vault Key, free</a>
+            <a class="btn btn-line" href="/method/">How it works</a>
+          </div>
+          <nav class="lnav" aria-label="Letters">
+            <span>{prev ? <a href={`/writing/${prev.slug}/`}>&larr; {prev.title}</a> : <a href="/writing/#letters">&larr; All the letters</a>}</span>
+            <span>{next ? <a href={`/writing/${next.slug}/`}>{next.title} &rarr;</a> : <a href="/writing/#letters">All the letters &rarr;</a>}</span>
+          </nav>
+          <p class="lfine">From Vault Human's first year. Published {PUBLISHED}.</p>
+        </div>
+      )}
     </article>
   </div>
+  <style is:inline>
+    .lnav{display:flex;justify-content:space-between;gap:16px;margin:30px 0 0;font-family:var(--sans);font-size:13px;text-align:left}
+    .lnav a{text-decoration:none;opacity:.8}
+    .lnav a:hover{opacity:1;text-decoration:underline}
+    .lfine{font-family:var(--sans);font-size:11px;letter-spacing:1px;opacity:.5;margin:22px 0 0}
+    @media(max-width:600px){.lnav{flex-direction:column}}
+  </style>
 </Base>
