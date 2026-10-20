@@ -1,0 +1,32 @@
+---
+// /welcome — where Stripe sends a new member after checkout ($99 membership or $999 one-on-one).
+// Step 1: where the daily keys go (same HubSpot form → welcome email + daily keys from vault@).
+// Step 2: book the first conversation with Russ (Calendly). No Google Ads lead conversion fires here.
+import Base from '../layouts/Base.astro';
+---
+<Base title="Welcome to Vault Human" description="You're in. Two quick steps to start.">
+  <div class="wrap" style="max-width:680px;margin:0 auto;padding:70px 20px 30px;text-align:center">
+    <p class="eyebrow" style="letter-spacing:2px;text-transform:uppercase;opacity:.6;font-size:14px">You're in</p>
+    <h1 style="font-size:42px;margin:10px 0 14px">Welcome to Vault Human.</h1>
+    <p style="font-size:18px;line-height:1.6;opacity:.85">Two quick steps and you're started. Your receipt is on its way from Stripe.</p>
+  </div>
+  <div class="wrap" style="max-width:560px;margin:0 auto;padding:0 20px 40px">
+    <div style="background:#F4F1EA;color:#1B231D;border-radius:12px;padding:28px 26px">
+      <p style="margin:0 0 4px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#5a635c">Step 1 of 2</p>
+      <h2 style="margin:0 0 6px;color:#1B231D">Where should your keys go?</h2>
+      <p style="margin:0 0 6px;color:#3b443d;font-size:15px">Your first key arrives within minutes, then one every morning at 7.</p>
+      <form class="vh-cap" data-next="#step2" novalidate><label>First name<input name="firstname" type="text" autocomplete="given-name" required /></label><label>Email<input name="email" type="email" autocomplete="email" inputmode="email" required /></label><button class="btn btn-acc" type="submit">Send my first key</button><p class="vh-cap__err" style="display:none">That didn't go through. Try again, or call <a href="tel:+18888332510">(888) 833-2510</a>.</p></form>
+    </div>
+  </div>
+  <div id="step2" hidden class="wrap" style="max-width:1000px;margin:0 auto;padding:10px 12px 80px">
+    <div style="text-align:center;max-width:680px;margin:0 auto 18px">
+      <p style="margin:0 0 4px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.6">Step 2 of 2</p>
+      <h2 style="margin:0 0 8px">Pick a time to meet Russ.</h2>
+      <p style="opacity:.85;margin:0">Thirty minutes to start: where you are, where you want to be, and how we'll get there together.</p>
+    </div>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/vaulthuman/free-call?hide_gdpr_banner=1&hide_landing_page_details=1" style="min-width:320px;height:760px;border-radius:12px;overflow:hidden;background:#F4F1EA"></div>
+  </div>
+  <style is:inline>.vh-cap label{display:block;font:600 14px Inter,system-ui,sans-serif;margin:12px 0 0;color:#1B231D}.vh-cap input{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1px solid #c9c4b8;border-radius:8px;font:16px Inter,system-ui,sans-serif;background:#fff;color:#1B231D}.vh-cap button{width:100%;margin-top:16px;border:0;cursor:pointer}.vh-cap__err{color:#8a2a2a;font-size:14px;margin:10px 0 0}</style>
+  <script is:inline src="/vh-capture.js" defer></script>
+  <script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</Base>
