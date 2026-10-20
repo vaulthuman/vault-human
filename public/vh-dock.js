@@ -52,6 +52,7 @@
     return own;
   }
   dock.querySelector('.vh-dock__film').addEventListener('click', function(){
+    dock.classList.remove('on');
     var existing = document.querySelector('[data-vpop]');
     if (existing && document.getElementById('vpop')) { existing.click(); return; }
     var o = ownFilm(), v = o.querySelector('video');
@@ -61,15 +62,39 @@
   });
 
   var idle = null;
+  // Never on screen with a popup, an open menu, a playing video, or the page's own buttons.
+  var POPS = '.vh-modal,.dk-pop,.vpop,.vh-film,.vk-toast,dialog[open],[role="dialog"],[aria-modal="true"]';
+  function visible(el){
+    if (!el || el === dock || dock.contains(el)) return false;
+    var cs = getComputedStyle(el);
+    if (cs.display === 'none' || cs.visibility === 'hidden' || +cs.opacity === 0) return false;
+    var r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0;
+  }
+  function blocked(){
+    var b = document.body;
+    if (b.classList.contains('nav-open') || b.style.overflow === 'hidden' || document.fullscreenElement || document.webkitFullscreenElement) return true;
+    var pops = document.querySelectorAll(POPS);
+    for (var i = 0; i < pops.length; i++) if (visible(pops[i])) return true;
+    var vids = document.querySelectorAll('video');
+    for (var j = 0; j < vids.length; j++) { var v = vids[j]; if (!v.paused && !v.ended && !v.muted) return true; }
+    var rows = document.querySelectorAll('.ctarow');
+    for (var k = 0; k < rows.length; k++) { var r = rows[k].getBoundingClientRect(); if (r.height && r.bottom > 0 && r.top < innerHeight) return true; }
+    return false;
+  }
+  function hide(){ dock.classList.remove('on'); }
   function show(){
     var h = document.documentElement, y = window.scrollY || h.scrollTop;
     var far = y > Math.max(innerHeight * 0.6, 500) && h.scrollHeight > innerHeight * 1.5;
-    var toast = document.querySelector('.vk-toast.in');
-    dock.classList.toggle('on', far && !toast);
+    dock.classList.toggle('on', far && !blocked());
   }
-  addEventListener('scroll', function(){
-    dock.classList.remove('on');
-    clearTimeout(idle); idle = setTimeout(show, 1200);
-  }, { passive: true });
-  addEventListener('resize', function(){ clearTimeout(idle); idle = setTimeout(show, 1200); });
+  function later(){ clearTimeout(idle); idle = setTimeout(show, 1200); }
+  addEventListener('scroll', function(){ hide(); later(); }, { passive: true });
+  addEventListener('resize', later);
+  // Any click that opens something: tuck away at once, re-check after it settles.
+  document.addEventListener('click', function(e){ if (!dock.contains(e.target)) { hide(); later(); } }, true);
+  document.addEventListener('play', function(){ hide(); }, true);
+  ['pause','ended'].forEach(function(t){ document.addEventListener(t, later, true); });
+  document.addEventListener('fullscreenchange', function(){ hide(); later(); });
+  if (window.MutationObserver) new MutationObserver(function(){ if (dock.classList.contains('on') && blocked()) hide(); })
+    .observe(document.body, { attributes: true, attributeFilter: ['class','style','open'], subtree: true });
 })();
