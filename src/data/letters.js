@@ -7637,5 +7637,63 @@ export const letters=[
   "date": "October 19, 2026",
   "iso": "2026-10-19",
   "month": "October 2026"
+ },
+ {
+  "slug": "the-tyranny-of-the-should",
+  "title": "The tyranny of the should",
+  "dek": "\"I should be further along by now.\" \"I should be a better parent.\"",
+  "day": 158,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"I should be further along by now.\" \"I should be a better parent.\" \"I should not need help.\" If you listen for it, there's a voice in most of us that speaks almost entirely in shoulds, and Karen Horney was the first person to give it a name."
+   },
+   {
+    "k": "",
+    "t": "She was a German physician, one of the first women to train in psychoanalysis, who came to New York in 1932 and spent the next twenty years quietly taking apart the theory she'd been taught. Where Freud saw instinct, she saw culture and childhood: a child who doesn't feel safe builds strategies to cope, moving toward people, against them, or away from them, and carries the strategy into adult life long after the danger is gone. In 1950, two years before she died, she published her last book, <em>Neurosis and Human Growth</em>, and in it she described what she called the tyranny of the should."
+   },
+   {
+    "k": "",
+    "t": "Here's the idea. Somewhere early, a person who felt they weren't enough builds an idealized picture of who they ought to be: flawless, tireless, always generous, never afraid. Then they spend their life trying to live up to a picture no one could live up to, and they punish themselves, in a steady inner commentary of shoulds, every time they fall short. The real self, the one with limits and wants and a tired Tuesday, gets no say. Horney's work was helping people hear the difference between the two voices, and choosing the real one. She called that self-realization, and she believed it was what every person is built to grow toward, the way an acorn grows toward an oak, if the shoulds get out of the way."
+   },
+   {
+    "k": "",
+    "t": "It belongs in the Healing month because the should is one of the quietest wounds we carry, and one of the oldest. Vault Human coaches, and doesn't treat; a therapist who works with the inner critic is a good door if the voice is loud. What anyone can do is catch the word. Every should is a demand pretending to be a fact. Underneath it there is nearly always a want, and a want can be chosen, or not, like a free person."
+   }
+  ],
+  "n": 236,
+  "date": "October 20, 2026",
+  "iso": "2026-10-20",
+  "month": "October 2026"
+ },
+ {
+  "slug": "the-test-in-the-mail",
+  "title": "The test in the mail",
+  "dek": "Since 2017 you've been able to order a kit, mail a sample of your stool to a lab, and get back a list of foods your gut supposedly wants and a list it supposedly doesn't.",
+  "day": 158,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Since 2017 you've been able to order a kit, mail a sample of your stool to a lab, and get back a list of foods your gut supposedly wants and a list it supposedly doesn't. The science underneath is real and the letters of the last week have told it: the Human Microbiome Project mapped the trillions of organisms in the gut, and the methods it used, sequencing the genes of everything living there, are what the consumer kits borrow. What the kits add is the promise that your personal list can be read from one sample."
+   },
+   {
+    "k": "",
+    "t": "I'd like to tell you plainly where that stands. The microbiome changes day to day with what you ate, how you slept and whether you were sick; a single sample is a photograph of a river. Two kits from the same person on the same day have returned different lists. And the gastroenterology societies that review this evidence have said, as recently as 2024, that commercial microbiome tests shouldn't be used to make clinical decisions, because there isn't yet a validated way to turn the sequencing into advice for one person. That may change. The field is moving fast and some of the companies are doing serious work. But today the honest reading is: the science is strong and the mail-order version isn't ready."
+   },
+   {
+    "k": "",
+    "t": "It sits in the Healing month anyway, because Healing is the month for the hidden numbers, and this is a lesson about which hidden numbers to trust. The gut keys that are proven are the plain ones you've already been handed: thirty plant foods a week, fermented food daily, fiber near thirty grams, and a log of how you feel after you eat. Those move the microbiome measurably, in trials, in weeks. If you have real symptoms, bloating, pain, change in your bowels, the door is a gastroenterologist, not a kit; there are validated tests for the things that matter, and a physician knows which."
+   },
+   {
+    "k": "",
+    "t": "Vault Human coaches and doesn't treat, and it won't sell you a test. It will ask you to read the one instrument you own."
+   }
+  ],
+  "n": 237,
+  "date": "October 20, 2026",
+  "iso": "2026-10-20",
+  "month": "October 2026"
  }
 ];
