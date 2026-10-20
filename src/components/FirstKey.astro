@@ -1,0 +1,58 @@
+---
+// The public teaser for Vault Key 01 (Go Outside): the 2-minute reel + the teaser words.
+// variant="compact" → for other pages (links to /first-key/); variant="full" → the /first-key/ page itself.
+const { variant = 'compact', eyebrow = 'What a key looks like', id = 'first-key' } = Astro.props;
+
+---
+<section class="sec fk-sec" id={id}>
+  <div class="wrap">
+    <div class="fk">
+      <div class="fk-player" data-src="/video/key01-go-outside.mp4">
+        <video preload="none" playsinline poster="/img/keys/key01-go-outside-cover.jpg" aria-label="Vault Key 01: Go Outside"></video>
+        <button class="fk-play" type="button" aria-label="Play: Vault Key 01, Go Outside">
+          <span class="fk-k">Vault Key 01</span>
+          <span class="fk-t">Go Outside</span>
+          <span class="fk-btn" aria-hidden="true"></span>
+          <span class="fk-s">Watch · 2 minutes</span>
+        </button>
+      </div>
+      <div class="fk-copy">
+        <p class="eyebrow">{eyebrow}</p>
+        <h2>Go outside.</h2>
+        <p>The first thing Vault Human asks of you is the oldest thing anyone ever prescribed. Walk, roll, swim, or sit by an open door. It doesn't matter how. It matters that you cross the threshold on purpose, every day, and notice what's there.</p>
+        <p class="fk-today"><b>Today:</b> twenty minutes outside, in whatever form your body has today. Rate how you feel, 1 to 10, before you go and when you come back, and write one thing you noticed.</p>
+        {variant === 'compact' ? (
+          <>
+            <p class="fk-note">That's one key. A short video, one page, one thing to do. The year holds 360 of them, one a morning.</p>
+            <div class="ctarow"><a class="btn btn-acc" href="/first-key/">See the whole first key</a></div>
+          </>
+        ) : (
+          <p class="fk-note">That's one key: a short video, one page, one thing to do. Now picture 360 of them, one each morning, with a coach reading what you write.</p>
+        )}
+      </div>
+    </div>
+  </div>
+</section>
+<style is:inline>
+.fk-sec .fk{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(24px,4vw,56px);align-items:center}
+.fk-player{position:relative;aspect-ratio:16/9;max-width:100%;border-radius:12px;overflow:hidden;background:#0d110f;border:1px solid rgba(143,166,126,.55);box-shadow:0 24px 60px rgba(0,0,0,.45),0 0 60px -12px rgba(143,166,126,.35)}
+.fk-player video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#0d110f}
+.fk-play{position:absolute;inset:0;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;text-align:center;padding:18px;background:rgba(18,23,21,.5);border:0;cursor:pointer;transition:opacity .3s;color:#F1EDE4}
+.fk-play .fk-k{font-size:11px;letter-spacing:.32em;text-transform:uppercase;font-weight:700;color:#E9C9A6}
+.fk-play .fk-t{font-family:"Bebas Neue",sans-serif;font-size:clamp(38px,6vw,72px);line-height:.9;letter-spacing:.02em}
+.fk-play .fk-btn{width:76px;height:76px;border-radius:50%;background:rgba(143,166,126,.94);position:relative;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .2s}
+.fk-play .fk-btn:after{content:"";position:absolute;left:31px;top:23px;border-style:solid;border-width:15px 0 15px 24px;border-color:transparent transparent transparent #121715}
+.fk-play:hover .fk-btn{transform:scale(1.06)}
+.fk-play:focus-visible .fk-btn{outline:2px solid #F1EDE4;outline-offset:4px}
+.fk-play .fk-s{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(241,237,228,.78);font-weight:600}
+.fk-player.playing .fk-play{opacity:0;pointer-events:none}
+.fk-copy h2{margin:.1em 0 .35em}
+.fk-copy p{max-width:60ch}
+.fk-today{border-left:3px solid #B88A5E;padding-left:14px;margin:18px 0}
+.fk-note{opacity:.8;font-size:.95em}
+@media(max-width:860px){.fk-sec .fk{grid-template-columns:1fr}.fk-play .fk-btn{width:58px;height:58px}.fk-play .fk-btn:after{left:23px;top:17px;border-width:12px 0 12px 19px}}
+</style>
+<script is:inline>
+document.querySelectorAll('.fk-player').forEach(function(w){if(w.dataset.bound)return;w.dataset.bound='1';var v=w.querySelector('video'),b=w.querySelector('.fk-play');
+b.addEventListener('click',function(){document.querySelectorAll('video').forEach(function(o){if(o!==v&&!o.paused&&!o.muted)o.pause()});if(!v.src){v.src=w.dataset.src;v.controls=true;v.addEventListener('ended',function(){w.classList.remove('playing');v.currentTime=0;});}w.classList.add('playing');var p=v.play();if(p&&p.catch)p.catch(function(){});});});
+</script>
