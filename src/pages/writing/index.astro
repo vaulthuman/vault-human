@@ -11,6 +11,27 @@ const days = newest.day;
 // Month markers along the spine (one each time the month changes going down the page).
 let lastMonth = '';
 const rows = run.map((l) => { const m = l.month !== lastMonth ? l.month : null; lastMonth = l.month; return { l, m }; });
+// Photo bands every ten pieces, themed to the chamber those pieces come from (none of these photos is used elsewhere on the site).
+const CH = {
+  1: { k: 'Getting to know myself', t: 'Know yourself first.', img: ['photo-1455390582262-044cdead277a', 'photo-1488190211105-8b0e65b80b4e'] },
+  2: { k: 'Coming into my body', t: 'Change enters through the body, not the argument.', img: ['photo-1506126613408-eca07ce68773', 'photo-1433086966358-54859d0ed716'] },
+  3: { k: 'Paying attention', t: 'What you attend to grows.', img: ['photo-1513836279014-a89f7a76ae86', 'photo-1465146344425-f00d5f5c8f07'] },
+  4: { k: 'Finding my why', t: 'A reason you can say out loud, in your own words.', img: ['photo-1472214103451-9374bd1c798e', 'photo-1506905925346-21bda4d32df4'] },
+  5: { k: 'Saying the unsaid', t: 'Name what is hidden. The unspoken runs you until it is spoken.', img: ['photo-1441974231531-c6227db76b6e', 'photo-1444927714506-8492d94b4e3d'] },
+  6: { k: 'Finding my people', t: 'No one changes alone.', img: ['photo-1447752875215-b2761acb3c5d', 'photo-1501785888041-af3ef285b470'] },
+  7: { k: 'Keeping a rhythm', t: 'The small thing repeated beats the big thing once.', img: ['photo-1518837695005-2083093ee35b', 'photo-1507400492013-162706c8c05e'] },
+  8: { k: 'Letting go', t: 'Release before reach.', img: ['photo-1500382017468-9049fed747ef', 'photo-1501594907352-04cda38ebc29'] },
+  9: { k: 'Facing tomorrow', t: 'The horizon makes the day matter.', img: ['photo-1495954484750-af469f2f9be5', 'photo-1469474968028-56623f02e42e'] },
+  10: { k: 'Handing it on', t: 'Every key had a teacher. Now you are one.', img: ['photo-1502082553048-f009c37129b9', 'photo-1476514525535-07fb3b4ae5f1'] },
+  11: { k: 'Sharing it', t: 'It ends in sharing.', img: ['photo-1519681393784-d120267933ba', 'photo-1490750967868-88aa4486c946'] },
+};
+const EVERY = 10;
+let bandCount = 0;
+const items = [];
+rows.forEach(({ l, m }, i) => {
+  if (i > 0 && i % EVERY === 0) { const c = CH[l.chamber] || CH[1]; items.push({ band: { ...c, img: c.img[bandCount % c.img.length], n: bandCount } }); bandCount++; }
+  items.push({ l, m, i });
+});
 const desc = 'One short piece a day from Vault Human, in the order they came, from the day we began.';
 ---
 <!doctype html>
@@ -30,9 +51,18 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
   </script>
   <style is:inline>
     /* Writing: the run of letters, newest first, down a spine to the first scroll */
-    .wr-hero .veil{background:linear-gradient(180deg,rgba(18,23,21,.55) 0%,rgba(18,23,21,.45) 45%,rgba(18,23,21,.97) 100%)}
+    .wr-hero .veil{background:linear-gradient(180deg,rgba(18,23,21,.6) 0%,rgba(18,23,21,.38) 50%,rgba(18,23,21,.97) 100%)}
     .wr-hero{min-height:78vh}
-    .wr-hero .bgvid{object-position:50% 55%}
+    .wr-hero .bgvid{object-position:50% 45%}
+    /* photo bands that break the spine every ten pieces */
+    .rb{position:relative;width:100vw;margin:48px 0 48px calc(50% - 50vw);min-height:46vh;background-size:cover;background-position:center;background-attachment:fixed;display:flex;align-items:flex-end;isolation:isolate}
+    .rb:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,23,21,.55) 0%,rgba(18,23,21,.15) 45%,rgba(18,23,21,.9) 100%);z-index:0}
+    .rb-in{position:relative;z-index:1;width:100%;max-width:1180px;margin:0 auto;padding:0 24px 40px}
+    .rb-r .rb-in{text-align:right}
+    .rb-k{font-family:var(--sans);font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--acc-soft);margin:0 0 10px}
+    .rb-t{font-family:var(--disp);font-size:clamp(30px,3.6vw,54px);line-height:1;margin:0;max-width:18ch;color:var(--ink);letter-spacing:.5px}
+    .rb-r .rb-t{margin-left:auto}
+    @media(max-width:900px){.rb{background-attachment:scroll;min-height:38vh;margin:36px 0 36px calc(50% - 50vw)}.rb-in{padding:0 18px 28px}}
     /* the spine */
     .runwrap{padding:0 0 96px}
     .run{position:relative;display:flex;flex-direction:column;max-width:1180px;margin:0 auto;padding:0 24px}
@@ -85,7 +115,7 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
 <body data-time="all">
   <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About Russ</a><a class="btn btn-acc" href="#" data-open-form>Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
   <main>
-    <section class="hero hero-video wr-hero"><video class="bgvid" autoplay muted loop playsinline poster="/img/writing-dusk-poster.jpg"><source src="https://assets.mixkit.co/videos/6850/6850-720.mp4" type="video/mp4"></video><div class="veil"></div>
+    <section class="hero hero-video wr-hero"><video class="bgvid" autoplay muted loop playsinline poster="/img/writing-dusk-poster.jpg"><source src="https://assets.mixkit.co/videos/44496/44496-720.mp4" type="video/mp4"></video><div class="veil"></div>
       <div class="wrap hero-grid"><div class="hero-copy">
         <p class="eyebrow">Writing</p>
         <h1>One short piece a day. <em>One of them is yours.</em></h1>
@@ -96,13 +126,17 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
 
     <section class="sec runwrap" id="letters">
       <div class="run">
-        {rows.map(({ l, m }, i) => (
+        {items.map((it) => it.band ? (
+          <div class={`rb${it.band.n % 2 ? ' rb-r' : ''}`} style={`background-image:url('https://images.unsplash.com/${it.band.img}?w=1800&q=60&auto=format&fit=crop')`}>
+            <div class="rb-in"><p class="rb-k">{it.band.k}</p><p class="rb-t">{it.band.t}</p></div>
+          </div>
+        ) : (
           <>
-            {m && <div class={`rm${i === 0 ? ' first' : ''}`}><span>{m}</span></div>}
-            <a class={`rl rv${l.day === 1 && l.vault === 'mind' ? ' origin' : ''}`} data-iso={l.iso} data-vault={l.vault} href={`/writing/${l.slug}/`}>
-              <p class="rl-date">{l.date}</p>
-              <p class="rl-t">{l.title}</p>
-              <p class="rl-d" set:html={l.dek}></p>
+            {it.m && <div class={`rm${it.i === 0 ? ' first' : ''}`}><span>{it.m}</span></div>}
+            <a class={`rl rv${it.l.day === 1 && it.l.vault === 'mind' ? ' origin' : ''}`} data-iso={it.l.iso} data-vault={it.l.vault} href={`/writing/${it.l.slug}/`}>
+              <p class="rl-date">{it.l.date}</p>
+              <p class="rl-t">{it.l.title}</p>
+              <p class="rl-d" set:html={it.l.dek}></p>
             </a>
           </>
         ))}
