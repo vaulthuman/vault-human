@@ -3729,6 +3729,254 @@ export const letters=[
   "written": "2026-10-19",
   "chamber": 5,
   "chamberName": "Healing"
+ },
+ {
+  "vault": "mind",
+  "day": 148,
+  "key": 148,
+  "title": "Act it out",
+  "paras": [
+   "Jacob Moreno was a Viennese psychiatrist who in the 1920s noticed that his patients could say things on a stage, in a role, that they couldn't say in a chair. He built a method around it: psychodrama. A person, the protagonist, enacts a situation from their life with members of the group playing the other parts. The father. The boss. The younger self. The director, Moreno's word for the therapist, moves the scene, and the techniques are specific: role reversal, where you step into the other person's place and speak as them; the double, where someone stands behind you and says what you're not saying; the mirror, where you watch someone else play you.",
+   "It's the ancestor of nearly every group and role-play method since, and it's still practiced. What Moreno understood before anyone was that insight in the head changes less than experience in the body, and that a situation re-lived with people standing in for the people, with the chance to do it differently, reaches something talk can't.",
+   "For the Healing chamber, the key is role reversal. Most of our stuck conflicts are stuck because we've never once stood where the other person stands. Not imagined it; stood there, and spoken from it. Moreno had people do that literally, and they came out of it with something no argument gives: the other person's reasons, felt from inside.",
+   "Vault Human points to psychodrama groups for anyone drawn to it. The reversal you can do at a kitchen table with two chairs.",
+   "**Today:** set two chairs facing each other. Sit in one as yourself and say what you'd say to someone you're in conflict with. Then move to the other chair and answer as them, in the first person, as honestly as you can. Two rounds. Write what they said that you hadn't heard before. Outside, twenty minutes."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "body",
+  "day": 148,
+  "key": 74,
+  "title": "What the old diets had in common",
+  "paras": [
+   "In the 1930s a Cleveland dentist named Weston Price closed his practice and spent a decade traveling to the most isolated peoples he could reach: villages in the Swiss Alps, the Outer Hebrides, Inuit communities, Pacific islands, African tribes, Aboriginal Australians. He went to look at their teeth. What he found, and photographed, and published in 1939 as *Nutrition and Physical Degeneration*, was that people eating their traditional diets had almost no tooth decay and broad, well-formed faces, and that within a generation of switching to white flour, sugar and canned goods, their children had crowded teeth, cavities and narrow jaws.",
+   "The traditional diets varied enormously, fish and seal fat in one place, dairy and rye in another, root vegetables and insects in a third. What they shared was that nothing came from a factory, that animal foods were eaten whole, including organs and bones, that much of the food was fermented or aged, and that fat from healthy animals was prized rather than feared.",
+   "I'll say the plain thing. The seat here is Price's 1939 book, which is a remarkable piece of observation, and not the foundation that later took his name and campaigns for raw milk and against vaccines, which Price had nothing to do with. The book's lesson is sound and modest: traditional diets, whatever their content, were whole, and the degeneration he saw followed the processed foods, not any particular macronutrient.",
+   "For the table chamber, Price is the ancestor of Pollan's seven words. Eat food, by which he'd mean food your great-grandmother in any country would recognize.",
+   "**In the next 48 hours:** eat one thing from each of Price's categories: a fermented food, an organ meat or bone broth if you can, a whole animal or plant food close to how it grew. Write how far your usual week is from that table. Then write which one you'd add for good."
+  ],
+  "written": "2026-10-19",
+  "chamber": 4,
+  "chamberName": "Meaning"
+ },
+ {
+  "vault": "mind",
+  "day": 149,
+  "key": 149,
+  "title": "The empty chair",
+  "paras": [
+   "Fritz Perls was a German psychoanalyst who fled to South Africa, then New York, and in 1951 published a book that broke with everything he'd been trained in. Gestalt therapy. Instead of digging into the past, stay in the present. Instead of talking about a feeling, feel it, now, in the room. Instead of the therapist interpreting, the therapist points: what are you doing with your hands? What happened to your breath just then? Awareness, in the here and now, was the whole method.",
+   "His most famous technique came from Moreno and became his own. The empty chair. You put the person you need to speak to in an empty chair, a parent, a lost love, a part of yourself, and you speak to them. Then you switch chairs and speak back. People say things to an empty chair they've carried for decades.",
+   "His other great idea was owning the disowned. We say \"it makes me angry\" when we mean \"I am angry.\" We say \"one feels\" when we mean \"I feel.\" Perls had people change the grammar, and the grammar changed the ownership. \"You made me\" became \"I chose.\" It sounds small. It isn't.",
+   "It's a Healing key because Gestalt's premise is that healing happens in the present, not in the archaeology of the past. What's unfinished shows up now, in the body, in the sentence, and it can be finished now. Vault Human points to Gestalt therapists, and I'll say that of all the therapies this chamber describes, this one's spirit is closest to how coaching works: present, embodied, owned.",
+   "**Today:** put a person in an empty chair and say the thing you've never said. Then rewrite one sentence you said today from \"it\" or \"you\" to \"I\": \"I'm choosing to,\" \"I feel.\" Write what the empty chair heard. Outside, twenty minutes."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "mind",
+  "day": 150,
+  "key": 150,
+  "title": "A, B, C",
+  "paras": [
+   "Albert Ellis was a New York psychologist who in 1955, a few years before Beck, built the first of the cognitive therapies, and he built it from the Stoics. Epictetus, whom you met on day sixty-eight, said people are disturbed not by things but by their views of things. Ellis turned that into a method: Rational Emotive Behavior Therapy. REBT.",
+   "The model is three letters. A is the activating event: what happened. C is the consequence: how you feel and what you do. Most people think A causes C. Ellis said no: B does, the belief about A. Same event, different belief, different consequence. The job is to find B, and B is almost always a demand dressed as a fact: I must succeed. People must treat me fairly. Life must be easy. He called it musturbation, with a grin, and he said those three musts produce most human misery.",
+   "The method is dispute. D: challenge the belief. Where's the evidence that you must? What happens if you don't? Is it true that it would be unbearable, or merely hard? And E: the new effect, the feeling that follows a preference instead of a demand. \"I'd strongly prefer to succeed, and I'll be disappointed if I don't\" produces disappointment. \"I must succeed\" produces panic.",
+   "Ellis was blunt, funny and tireless, and he saw patients until the week he died at ninety-three. His key for the Healing chamber is the difference between a preference and a demand. Most of what torments us is a wish we've promoted to a law.",
+   "Vault Human points to REBT and CBT therapists; the ABC is a tool for everyone, and it fits on an index card.",
+   "**Today:** take one upset from this week. Write A, the event. Write C, how you felt. Then find B, the must underneath. Rewrite the must as a strong preference and write how the feeling changes. Outside, twenty minutes."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "body",
+  "day": 150,
+  "key": 75,
+  "title": "The suspect that was ignored",
+  "paras": [
+   "In 1972 a British physiologist named John Yudkin published a book with a title that told you where he stood: *Pure, White and Deadly*. His claim, built on decades of research, was that sugar, not fat, was the dietary cause of the heart disease, obesity and diabetes rising across the West. He was ridiculed, his career was damaged, and the field went on to spend forty years blaming fat.",
+   "He was mostly right. In 2012 a pediatric endocrinologist named Robert Lustig picked the argument back up in *Fat Chance*, and by 2015 the World Health Organization had put a number on it: free sugars, meaning added sugars and the sugar in juice and honey, should be under ten percent of daily calories, with five percent as the better target. For most adults that's about twenty-five to fifty grams a day. A single can of soda is about forty.",
+   "The science that vindicated Yudkin is now broad. Added sugar, especially in drinks, drives weight gain, insulin resistance, fatty liver and the whole cluster of metabolic disease, and it does it partly by bypassing the fullness signals that solid food triggers. Fat, meanwhile, turned out to be a far more complicated story than the low-fat decades allowed.",
+   "It's a table key because sugar is the single ingredient whose removal does the most for the most people, and because it hides. Bread, sauces, yogurt, cereal, anything labeled low-fat: the sugar is in there, by the gram, and most people have no idea how much they eat. The honest number, counted for a day, is usually a shock.",
+   "And it's a story about how long a right answer can be ignored. Yudkin died in 1995, before the field came round.",
+   "**In the next 48 hours:** count your added sugar for one day, reading labels: grams of added sugar, everything, including drinks. Write the total against the fifty-gram line. Then, the second day, cut the single largest source and write what you noticed about hunger and energy."
+  ],
+  "written": "2026-10-19",
+  "chamber": 4,
+  "chamberName": "Meaning"
+ },
+ {
+  "vault": "mind",
+  "day": 151,
+  "key": 151,
+  "title": "Use what's there",
+  "paras": [
+   "Milton Erickson was a psychiatrist in Phoenix who had polio twice, spent much of his life in a wheelchair, and became the most inventive therapist of the twentieth century. He practiced hypnosis, but not the stage kind. His hypnosis was conversation: stories, metaphors, indirect suggestions slipped into ordinary talk, so that the patient's own unconscious did the work without the conscious mind arguing.",
+   "His principle was utilization. Whatever the patient brings, you use. A man who can't stop pacing is told to pace, in a pattern, until the pacing becomes the cure. A woman who insists she can't be hypnotized is told that's right, she can't, and while she's agreeing, she's already gone under. Resistance isn't fought. It's redirected. Erickson believed every person already has the resources to solve their problem and that the therapist's job is to arrange the conditions, often sideways, for those resources to come forward.",
+   "His stories are legendary. A depressed woman who grew African violets was told to grow them for every church event in her town, and within a year she was known as the African Violet Queen and was no longer depressed. He never mentioned depression.",
+   "It's a Healing key because it's the therapy of indirection, and indirection is often what works when the direct route is blocked. Vault Human points to certified Ericksonian hypnotherapists; the practice is a skill, and a real one. What I keep for everyone is utilization: whatever you've got, including the thing you call the problem, is material. Use it.",
+   "**Today:** write one trait you think of as a flaw: stubbornness, worry, restlessness. Then write three ways that same trait could be useful, deployed somewhere else. Pick one and do it today. Outside, twenty minutes."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "mind",
+  "day": 152,
+  "key": 152,
+  "title": "The family is the patient",
+  "paras": [
+   "Salvador Minuchin was an Argentine psychiatrist who in the 1960s worked with delinquent boys in New York and realized he couldn't treat them. The boy would improve, go home, and the family would pull him back into the old role within weeks. So he started treating the family. In 1974 he published *Families and Family Therapy*, and structural family therapy became one of the foundations of the field.",
+   "His map is architectural. A family has subsystems: the parents, the siblings, each parent with each child. Between them are boundaries, and the boundaries can be clear, which is healthy; rigid, where nobody can reach anybody; or diffuse, where everyone is in everyone's business and nobody has a self. Problems in one member, a child's symptom, a spouse's depression, are often the family's structure speaking through its weakest point. Fix the structure and the symptom often resolves.",
+   "Minuchin's sessions were theatrical. He'd rearrange the chairs so the parents sat together and the child apart, enacting the boundary he wanted. He'd side with a father against the family's pattern of dismissing him. He'd unbalance the system on purpose until it found a healthier balance.",
+   "It's a Healing key because it reframes a question most of us ask wrong. \"What's wrong with me?\" is often the wrong question. \"What role did my family need me to play, and am I still playing it?\" is the right one. The hero, the peacemaker, the one who holds it together, the one who's always the problem: those are structural positions, assigned early, and a person can step out of one.",
+   "Vault Human points to family therapists for the family work, which a coach can't do. The map belongs to anyone with a family.",
+   "**Today:** draw your family of origin as boxes. Draw the boundaries: clear, rigid or diffuse. Mark the role you were assigned. Then write one way you're still playing it in your adult life, and one small step out of it. Outside, twenty minutes."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "body",
+  "day": 152,
+  "key": 76,
+  "title": "The organ you didn't know you had",
+  "paras": [
+   "Chamber Five's Body keys begin inside you, with an organ nobody had mapped until this century.",
+   "In 2007 the National Institutes of Health launched the Human Microbiome Project to catalog the trillions of bacteria, fungi and other organisms that live in and on a human body, most of them in the gut. The findings reorganized medicine. The gut's microbes outnumber your own cells, they weigh about as much as your brain, they make vitamins, train the immune system, regulate inflammation, and produce compounds that reach the brain. They're an organ. And unlike your other organs, you feed this one directly, three times a day, and what you feed it changes what it becomes within days.",
+   "What the microbes want is fiber. Not the fiber on a cereal box, but the whole range of plant fibers that human digestion can't break down and that bacteria can: in beans, whole grains, vegetables, fruit, nuts and seeds. The guideline is about thirty grams a day. Most people in the West eat about fifteen. The research links the gap to everything from inflammation to mood, and the fix is the plainest on the shelf: more plants, more kinds of them. One large study found that people who ate thirty different plant foods a week had markedly more diverse microbiomes than people who ate ten.",
+   "It's a Healing key because the gut is where a great deal of healing turns out to happen, and because it's the organ the table keys have been feeding all along without naming. The Mediterranean plate, the daily dozen, the greens: they were microbiome diets before anyone had the word.",
+   "**In the next 48 hours:** count the different plant foods you eat in two days, every distinct vegetable, fruit, grain, bean, nut, seed, herb and spice. Write the number. Then write what it would take to reach thirty in a week, and add five new ones this week."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "mind",
+  "day": 153,
+  "key": 153,
+  "title": "Practice the hard thing before it comes",
+  "paras": [
+   "Donald Meichenbaum was a Canadian psychologist who in the 1970s asked a question doctors had been asking about the body for a century and nobody had asked about the mind: can you be inoculated against stress the way you're inoculated against disease? A small, controlled dose that builds resistance to the real thing. He built a method on the answer. Stress Inoculation Training.",
+   "Three phases. Conceptualization: understand what stress is and how it works in you specifically, your triggers, your signs, your usual response. Skill acquisition: learn the tools, relaxation, breathing, self-talk, problem-solving, rehearsed until they're reliable. And application: practice the skills under graduated stress, in imagination first, then in role-play, then in real situations of increasing difficulty, so that when the big one comes, the body has already been there.",
+   "It's used with surgeons, police, athletes, soldiers, people facing surgery or chronic pain, and anyone whose life includes predictable stress. The research supports it, and its principle is the principle of every drill ever run: you don't rise to the occasion. You fall to the level of your training.",
+   "It's a Healing key because it's prevention rather than repair, and the healing chamber needs one of those. Most of this month has been about what's already hurt. Meichenbaum's question is what you can do before the next hurt arrives, and his answer is rehearsal, with the stress turned up a little each time.",
+   "The small practice for everyone: before anything hard, rehearse it, in detail, with the feeling present. Day nine taught you to picture success. Meichenbaum teaches you to picture the difficulty, and your response to it, so neither surprises you.",
+   "**Today:** write the next stressful thing on your calendar. Write your usual signs of stress and your usual response. Then rehearse it, eyes closed, five minutes: the situation, the stress rising, and you using one skill from this year to meet it. Outside, twenty minutes."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "mind",
+  "day": 154,
+  "key": 154,
+  "title": "How you were wired to love",
+  "paras": [
+   "In the 1940s a British psychiatrist named John Bowlby watched children separated from their parents in wartime London and in hospitals, and saw a pattern of protest, despair and detachment that the psychology of his day had no name for. He concluded that the bond between a child and the person who cares for them is not a side effect of feeding. It's a biological need, as basic as hunger, and what happens to it shapes everything after. His collaborator, Mary Ainsworth, put toddlers in a room with a stranger, had the mother leave and return, and watched what the child did when she came back. From that came four patterns.",
+   "Secure: the child is upset when she leaves and comforted when she returns. Anxious: the child clings and can't be soothed. Avoidant: the child barely reacts, having learned not to expect comfort. Disorganized: the child wants closeness and fears it, usually because the caregiver was also frightening.",
+   "The patterns follow us into adulthood, into every relationship. Secure adults can be close and be alone. Anxious ones reach and worry and read silence as leaving. Avoidant ones keep a door open to the exit. Disorganized ones want and fear the same thing at once.",
+   "None of these is a verdict. Ainsworth's own finding was that each pattern was a strategy the child built for the caregiver they had, and the right strategy at the time. And the research's kindest phrase is earned secure: adults can build security they weren't given, through a stable relationship, through therapy, through the slow work of noticing the pattern when it fires.",
+   "It's a Healing key because it's where most of the chamber's wounds began, before memory. Vault Human points to attachment-focused therapists, and a coach can help you name the pattern, which is the beginning.",
+   "**Today:** read the four. Write yours, and the last time it fired: the text you re-read, the call you didn't return, the plan to leave before anyone had left. Then write one thing a securely attached person would have done instead. Outside, twenty minutes."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "body",
+  "day": 154,
+  "key": 77,
+  "title": "The second brain",
+  "paras": [
+   "In 1998 a Columbia University physician named Michael Gershon published a book with a title that sounded like a metaphor and wasn't: *The Second Brain*. The gut, he showed, has its own nervous system, the enteric nervous system, with about five hundred million neurons, more than the spinal cord, that can run digestion entirely on its own. It makes most of the body's serotonin. And it's connected to the brain in the head by the vagus nerve, which carries far more traffic up from the gut than down to it.",
+   "That last fact is the key. The gut talks to the brain constantly, and the brain listens. The phrases we use, gut feeling, butterflies, can't stomach it, sick with worry, are not figures of speech. They're reports from the second brain, delivered up the vagus, and they shape mood, judgment and stress in ways the research is only now measuring. The microbiome from two days ago is part of the conversation: the bacteria produce compounds the gut's neurons respond to, and the whole system, microbes, gut, vagus, brain, is now called the gut-brain axis.",
+   "It's a Healing key because so many of the wounds this chamber has been honoring are stored, as the body-therapy keys said, below the neck. Gershon put anatomy under that claim. The knot in the stomach before the hard conversation is five hundred million neurons doing their job.",
+   "And it's a practical key. What settles the gut settles the mind: slow eating, fiber, fermented foods, the long exhale that stimulates the vagus, which you've been practicing since Chamber Two. Chronic gut trouble is a physician's door, and so is anything that's lasted more than a few weeks. The daily conversation with the second brain is yours.",
+   "**In the next 48 hours:** before each meal, take five slow breaths, out longer than in, to put the gut in rest mode before you feed it. Then eat slowly. Write how your stomach felt an hour after each meal, compared to usual. That's the second brain, reporting on the conversation."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "mind",
+  "day": 155,
+  "key": 155,
+  "title": "The games people play",
+  "paras": [
+   "Eric Berne was a psychiatrist in California who in 1958 proposed something that sounds like a cartoon and turned out to be a serious tool. Inside every person are three states: a Parent, who carries the rules, judgments and nurturing absorbed from the people who raised you; an Adult, who thinks, weighs and decides in the present; and a Child, who feels, wants, plays and fears as you did when small. We switch among them constantly, often without noticing, and the switching explains much of what goes wrong between people.",
+   "Transactional Analysis looks at the exchanges. When one person's Adult speaks to another's Adult, things go fine. When one person's Parent scolds and the other's Child rebels, you have a fight that neither of them chose. Berne's 1964 book *Games People Play* named the repeating patterns, the games, with wicked titles: \"Why Don't You, Yes But,\" where one person offers solutions and the other rejects each; \"If It Weren't for You\"; \"Now I've Got You.\" Each game has a hidden payoff, and the payoff is why it keeps being played.",
+   "It's a Healing key because it names the thing that happens in relationships when two adults suddenly aren't. The grown man who becomes a sulking boy with his mother. The competent woman who becomes a scolding parent with her husband. Berne's gift was a vocabulary for catching the switch, and the practice of asking: which state am I in right now, and which state am I speaking to?",
+   "Vault Human points to TA therapists; the three states are a tool for any conversation. Most conflicts end the moment one person steps into Adult and stays there.",
+   "**Today:** in one conversation today, notice which state you're in: Parent, Adult or Child. If it isn't Adult, switch, and notice what happens to the other person. Then write the game you most often play, and its payoff. Outside, twenty minutes."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "mind",
+  "day": 156,
+  "key": 156,
+  "title": "A self inside the relationship",
+  "paras": [
+   "In 1986 a woman named Melody Beattie, who'd been through addiction and recovery and then found herself consumed by the addictions of the people around her, wrote a book for the people the recovery movement had been forgetting: the ones who weren't drinking but were drowning anyway. *Codependent No More*. It sold millions and gave a name to something enormous numbers of people recognized in themselves.",
+   "Codependency, as she described it: letting another person's behavior affect you so completely, and becoming so obsessed with controlling it, that you lose yourself. The spouse who monitors every drink. The parent who rescues every time. The friend who can't say no. The person who feels responsible for everyone's feelings and has no idea what their own are. It usually begins in a family where someone's trouble organized everything, and a child learned that love meant managing.",
+   "Her recovery path borrowed from the twelve steps and added the piece they'd lacked for this group: detachment. Not coldness. Letting the other person have their own life, their own consequences, their own recovery or not, and taking yours back. Her phrase was detach with love. And the daily practice was simple: what am I feeling, what do I need, what's actually mine to do.",
+   "It's a Healing key because so many wounds are relational, and this is the wound of losing yourself in someone else's. It also rhymes with the Let Them idea from day fifteen, which is codependency recovery in two words.",
+   "Vault Human points to Al-Anon and to therapists who work with codependency; the daily questions belong to anyone who's ever managed another adult's life instead of living their own.",
+   "**Today:** write one person whose behavior you've been trying to manage. Then write Beattie's three: what I'm feeling about it, what I need, and what is actually mine to do. Do only the third. Outside, twenty minutes."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "body",
+  "day": 156,
+  "key": 78,
+  "title": "Your own curve",
+  "paras": [
+   "The last Body key before today is the one that undoes the premise of every diet before it.",
+   "In 2015 two researchers at the Weizmann Institute in Israel, Eran Segal and Eran Elinav, put continuous glucose monitors on eight hundred people and tracked their blood sugar after every meal for a week. The finding was startling. The same food produced wildly different responses in different people. One person's blood sugar spiked after a banana and stayed flat after a cookie; another's did the reverse. The glycemic index, which ranks foods as if everyone responds alike, was wrong for a large share of people. The responses were personal, and they were predictable from the person's microbiome, body and history. In 2020 a British researcher named Tim Spector repeated it at larger scale with the PREDICT study, measuring fat and sugar responses in thousands of people, including identical twins, and found the same: even twins responded differently to the same meal.",
+   "The lesson is personalized nutrition, and I'll say the honest thing about it. Both groups have founded companies that sell personalized diet advice from these measurements, and the field is young; the evidence that eating by your own curve improves long-term health is promising but not settled. Vault Human points to the science, not the products.",
+   "What's free, and what I'd keep, is the principle. The right diet for you is the one your body measurably responds well to, and the only way to know is to look. A continuous glucose monitor, worn for two weeks, is one way. A log of how you felt ninety minutes after what you ate, which you started on day one hundred and thirty-four, is another, and it's been under your pen the whole time.",
+   "It's the right close for the table keys. A hundred and fifty-six days of letters have offered every sensible way of eating on earth. The last one says: now watch your own body, and eat by what it tells you.",
+   "**In the next 48 hours:** eat the same breakfast two days in a row and write how you felt at thirty, sixty and ninety minutes. Then eat a different breakfast the third day and compare. That's your curve, in pencil. If you want it in ink, a two-week glucose monitor is a physician's order and a door worth asking about."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
+ },
+ {
+  "vault": "mind",
+  "day": 157,
+  "key": 157,
+  "title": "Belonging is the cure",
+  "paras": [
+   "Day one hundred and fifty-seven. This is the day these letters were written, all of them, and published, so that there would be one for every day since Vault Human began. From here, the keys continue as they're written, one day at a time, the way a key is meant to.",
+   "The key is Alfred Adler, and he's the right one to arrive on. A Viennese physician, Freud's early colleague and then his first great dissenter, Adler built in the 1910s a psychology he called individual, and its center is a single idea that every key this year has been circling: belonging.",
+   "Adler said that every person begins in a state of inferiority, small, dependent, surrounded by people who can do what they can't, and that the whole of a life is the striving to overcome it. The striving can go two ways. Toward superiority over others, which is the neurotic path, and which never satisfies, because there's always someone above you. Or toward what he called social interest, Gemeinschaftsgefühl, the feeling of community: the sense that you belong, that you contribute, that your life is useful to others. He thought that was the measure of mental health, and that most suffering was a person who'd lost the feeling of belonging and was compensating badly.",
+   "His therapy was encouragement, almost literally: giving courage. He asked about earliest memories, because he thought they revealed the story a person had decided to live by. He asked about birth order. And he asked, always, what the person would do if the problem vanished, because the answer showed what they were avoiding.",
+   "It's the last key before tomorrow because it's where this year has been heading. Chamber One asked what's yours. Chambers Two and Three built the body and the attention. Chamber Four made meaning. Chamber Five honors what was hurt. And the sixth chamber, which comes after a rest, is Circle: your people. Adler would say that's not a chapter. It's the point.",
+   "**Today:** write your earliest memory, in three lines. Then write what it says about the story you decided to live by. Then write what you'd do tomorrow if the thing that's been holding you back vanished tonight. Outside, twenty minutes. Thank you for walking this far."
+  ],
+  "written": "2026-10-19",
+  "chamber": 5,
+  "chamberName": "Healing"
  }
 ];
 export function dayCount(today=new Date()){const b=new Date(BORN+'T00:00:00-05:00');return Math.floor((today-b)/864e5)+1;}
