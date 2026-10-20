@@ -30,20 +30,16 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
   </script>
   <style is:inline>
     /* Writing: the run of letters, newest first, down a spine to the first scroll */
-    .wr-hero .veil{background:linear-gradient(180deg,rgba(18,23,21,.62) 0%,rgba(18,23,21,.38) 45%,rgba(18,23,21,.96) 100%)}
-    .wr-hero .bgvid{object-position:50% 40%}
-    .wr-since{font-family:var(--sans);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:rgba(241,237,228,.6);margin:18px 0 0}
-    .split .bgvid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .split__media{overflow:hidden}
-    .split__media:after{z-index:1}
-    .split .lede{max-width:52ch}
+    .wr-hero .veil{background:linear-gradient(180deg,rgba(18,23,21,.55) 0%,rgba(18,23,21,.45) 45%,rgba(18,23,21,.97) 100%)}
+    .wr-hero{min-height:78vh}
+    .wr-hero .bgvid{object-position:50% 55%}
     /* the spine */
-    .runwrap{padding:72px 0 96px}
+    .runwrap{padding:0 0 96px}
     .run{position:relative;display:flex;flex-direction:column;max-width:1180px;margin:0 auto;padding:0 24px}
     .run:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;transform:translateX(-.5px);background:linear-gradient(180deg,var(--acc-soft),rgba(143,166,126,.5) 20%,rgba(143,166,126,.5) 80%,transparent)}
     .rm{display:flex;justify-content:center;padding:34px 0 26px;position:relative}
     .rm span{font-family:var(--sans);font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--acc-soft);background:var(--bg);padding:6px 14px;border:1px solid rgba(143,166,126,.5);border-radius:999px}
-    .rm.first{padding-top:0}
+    .rm.first{padding-top:8px}
     .rl{position:relative;display:block;text-decoration:none;color:var(--ink);padding:18px 24px 22px;margin:8px 0;border-radius:12px;border:1px solid transparent;transition:border-color .3s ease,background .3s ease,opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
     .rl{width:calc(50% - 44px)}
     .rl:nth-of-type(odd){margin-right:auto}
@@ -82,44 +78,28 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
       .rl:nth-of-type(odd):after,.rl:nth-of-type(even):after{left:-22px;right:auto;width:18px}
       .rl.rv:nth-of-type(odd),.rl.rv:nth-of-type(even){transform:translateY(14px)}
       .rend{justify-content:flex-start;padding-left:9px}
-      .runwrap{padding:40px 0 64px}
+      .runwrap{padding:0 0 64px}
     }
   </style>
 </head>
 <body data-time="all">
   <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About Russ</a><a class="btn btn-acc" href="#" data-open-form>Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
   <main>
-    <section class="hero hero-video wr-hero"><video class="bgvid" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1600&q=60&auto=format&fit=crop"><source src="https://assets.mixkit.co/videos/6734/6734-720.mp4" type="video/mp4"></video><div class="veil"></div>
+    <section class="hero hero-video wr-hero"><video class="bgvid" autoplay muted loop playsinline poster="/img/writing-dusk-poster.jpg"><source src="https://assets.mixkit.co/videos/6850/6850-720.mp4" type="video/mp4"></video><div class="veil"></div>
       <div class="wrap hero-grid"><div class="hero-copy">
         <p class="eyebrow">Writing</p>
-        <h1>One short piece a day, <em>since the day we began.</em></h1>
-        <p class="lede">In the order they came, from the day Vault Human began. Start at the first one, or open whichever one calls you.</p>
-        <div class="ctarow"><a class="btn btn-acc" href={`/writing/${newest.slug}/`}>Today's piece</a><a class="btn btn-line" href={`/writing/${first.slug}/`}>Start at the first one</a></div>
-        <p class="wr-since">{days} days · since May 16, 2026</p>
+        <h1>One short piece a day. <em>One of them is yours.</em></h1>
+        <p class="lede">Start at the first one, or open whichever one calls you.</p>
+        <div class="ctarow"><a class="btn btn-acc" id="todays-letter" href={`/writing/${newest.slug}/`}>Today's letter</a><a class="btn btn-line" href={`/writing/${first.slug}/`}>The first letter</a><button class="btn btn-line" type="button" data-vpop="/img/russ/v2/how-it-works.mp4" data-vpop-poster="/img/russ/v2/how-it-works-poster.jpg">How it works</button></div>
       </div></div>
     </section>
 
-    <section class="split" id="about-the-letters"><div class="split__media" role="img" aria-label="Morning light through a forest"><video class="bgvid" autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=55&auto=format&fit=crop"><source src="https://assets.mixkit.co/videos/22728/22728-720.mp4" type="video/mp4"></video></div><div class="split__copy">
-      <p class="eyebrow">How to read them</p>
-      <h2>One page. Out loud. Until it sounds like you.</h2>
-      <p class="lede">Each piece is one page and one idea: where it came from, who found it, what it asks of you. Nothing to buy, nothing to finish. Read one, put it down, and let the day do the rest.</p>
-      <div class="ctarow"><a class="btn btn-line" href="#letters">Go to the letters</a></div>
-    </div></section>
-
-    <section class="split rev" id="every-morning"><div class="split__media" role="img" aria-label="A campfire at dusk"><video class="bgvid" autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1475483768296-6163e08872a1?w=1200&q=55&auto=format&fit=crop"><source src="https://assets.mixkit.co/videos/47818/47818-720.mp4" type="video/mp4"></video></div><div class="split__copy">
-      <p class="eyebrow">Every morning</p>
-      <h2>Have the next one <em style="font-style:normal;color:var(--acc-soft)">find you.</em></h2>
-      <p class="lede">The Vault Key brings a short teaching and one small practice to your inbox, free, five mornings a week. The letters here are the long form of that: the same keys, written out one at a time.</p>
-      <div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Get the Vault Key, free</a><a class="btn btn-line" href="/method/">How it works</a></div>
-    </div></section>
-
-    <section class="sec runwrap" id="letters" style="padding-top:88px">
-      <div class="wrap" style="padding-bottom:10px"><div class="sec-head"><p class="eyebrow">The letters</p><h2>From today, back to the first scroll.</h2><p class="lede">Newest at the top. Keep scrolling and you'll reach the day we began.</p></div></div>
+    <section class="sec runwrap" id="letters">
       <div class="run">
         {rows.map(({ l, m }, i) => (
           <>
             {m && <div class={`rm${i === 0 ? ' first' : ''}`}><span>{m}</span></div>}
-            <a class={`rl rv${l.day === days && l.vault === 'mind' ? ' now' : ''}${l.day === 1 && l.vault === 'mind' ? ' origin' : ''}`} href={`/writing/${l.slug}/`}>
+            <a class={`rl rv${l.day === 1 && l.vault === 'mind' ? ' origin' : ''}`} data-iso={l.iso} data-vault={l.vault} href={`/writing/${l.slug}/`}>
               <p class="rl-date">{l.date}</p>
               <p class="rl-t">{l.title}</p>
               <p class="rl-d" set:html={l.dek}></p>
@@ -130,7 +110,7 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
       </div>
     </section>
 
-    <section class="sec final vid-sec" id="begin"><video class="bgvid" autoplay muted loop playsinline preload="metadata"><source src="https://assets.mixkit.co/videos/15919/15919-720.mp4" type="video/mp4"></video><div class="veil"></div><div class="wrap">
+    <section class="sec final vid-sec" id="begin"><video class="bgvid" autoplay muted loop playsinline preload="metadata"><source src="https://assets.mixkit.co/videos/47818/47818-720.mp4" type="video/mp4"></video><div class="veil"></div><div class="wrap">
       <h2>A coach. Every day. For your whole life.</h2>
       <p class="lede">Your first key arrives within minutes. Then one every morning at 7.</p>
       <div class="ctarow"><a class="btn btn-acc" href="#" data-open-form>Begin with Vault</a><a class="btn btn-line" href="/plans/">Plans and pricing</a></div>
@@ -148,6 +128,9 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
   addEventListener('DOMContentLoaded',function(){document.body.classList.add('ready');if(!('IntersectionObserver'in window))return;var e=[].slice.call(document.querySelectorAll('.sec .wrap > *'));e.forEach(function(x){x.classList.add('reveal')});var o=new IntersectionObserver(function(t){t.forEach(function(y){if(y.isIntersecting){y.target.classList.add('in');o.unobserve(y.target)}})},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});e.forEach(function(x){o.observe(x)});});
   </script>
 <script is:inline>(function(){var b=document.querySelector(".navtoggle"),n=document.getElementById("navlinks");if(!b||!n)return;function set(o){document.body.classList.toggle("nav-open",o);b.setAttribute("aria-expanded",o?"true":"false");b.setAttribute("aria-label",o?"Close menu":"Open menu");}b.addEventListener("click",function(){set(!document.body.classList.contains("nav-open"));});n.addEventListener("click",function(e){if(e.target.closest("a"))set(false);});document.addEventListener("keydown",function(e){if(e.key==="Escape")set(false);});})();</script>
+<script is:inline src="/vh-video.js" defer></script>
+<div class="vpop" id="vpop" aria-hidden="true"><div class="vpop__bg" data-vpop-close></div><div class="vpop__card" role="dialog" aria-modal="true" aria-label="Video"><button class="vpop__x" type="button" data-vpop-close aria-label="Close">&times;</button><video playsinline preload="none"></video></div></div>
+<script is:inline>(function(){var p=document.getElementById('vpop');if(!p)return;var v=p.querySelector('video');function close(){v.pause();p.classList.remove('open');p.setAttribute('aria-hidden','true');document.body.style.overflow=''}v.addEventListener('click',function(){if(v.paused){v.play()}else{v.pause()}});v.addEventListener('ended',close);document.querySelectorAll('[data-vpop]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();if(v.getAttribute('src')!==b.dataset.vpop){v.src=b.dataset.vpop;v.poster=b.dataset.vpopPoster||''}else{v.currentTime=0}v.controls=false;p.classList.add('open');p.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';var q=v.play();if(q&&q.catch)q.catch(function(){v.controls=true});});});p.querySelectorAll('[data-vpop-close]').forEach(function(x){x.addEventListener('click',close)});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&p.classList.contains('open'))close()});})();</script>
 <div class="dk-pop" id="dk-pop" aria-hidden="true">
   <div class="dk-pop__bg" data-dk-close></div>
   <div class="dk-pop__card" role="dialog" aria-modal="true" aria-labelledby="dk-pop-title">
@@ -196,5 +179,6 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
 </script>
 <script is:inline>(function(){var h=document.querySelector("header.site");function f(){if(h)h.classList.toggle("scrolled",scrollY>40)}addEventListener("scroll",f,{passive:true});f();document.querySelectorAll(".navdrop__btn").forEach(function(b){b.addEventListener("click",function(e){e.stopPropagation();document.querySelectorAll(".navdrop.open").forEach(function(x){if(x!==b.parentNode)x.classList.remove("open")});var d=b.parentNode,o=!d.classList.contains("open");d.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false")})});document.addEventListener("click",function(e){document.querySelectorAll(".navdrop.open").forEach(function(d){if(!d.contains(e.target)){d.classList.remove("open");d.querySelector(".navdrop__btn").setAttribute("aria-expanded","false")}})});})();</script>
 <script is:inline>document.querySelectorAll("video.bgvid").forEach(function(v){v.playbackRate=0.6;v.addEventListener("loadedmetadata",function(){v.playbackRate=0.6;});});
+(function(){var d=new Date(),iso=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');var t=document.querySelector('.rl[data-iso="'+iso+'"][data-vault="mind"]')||document.querySelector('.rl[data-iso="'+iso+'"]');if(!t)t=document.querySelector('.rl');if(t){t.classList.add('now');var b=document.getElementById('todays-letter');if(b)b.href=t.getAttribute('href');}})();
 (function(){var e=[].slice.call(document.querySelectorAll('.rl.rv'));if(!('IntersectionObserver'in window)){e.forEach(function(x){x.classList.add('on')});return;}var o=new IntersectionObserver(function(t){t.forEach(function(y){if(y.isIntersecting){y.target.classList.add('on');o.unobserve(y.target)}})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});e.forEach(function(x){o.observe(x)});})();</script>
 </body></html>
