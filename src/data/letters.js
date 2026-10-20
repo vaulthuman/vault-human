@@ -38,7 +38,8 @@ export const letters=[
   "n": 1,
   "date": "May 16, 2026",
   "iso": "2026-05-16",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "go-outside",
@@ -71,7 +72,8 @@ export const letters=[
   "n": 2,
   "date": "May 16, 2026",
   "iso": "2026-05-16",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "yours-or-handed-to-you",
@@ -104,7 +106,8 @@ export const letters=[
   "n": 3,
   "date": "May 17, 2026",
   "iso": "2026-05-17",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "begin-at-the-end",
@@ -137,7 +140,8 @@ export const letters=[
   "n": 4,
   "date": "May 18, 2026",
   "iso": "2026-05-18",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "three-questions-none-about-you",
@@ -170,7 +174,8 @@ export const letters=[
   "n": 5,
   "date": "May 19, 2026",
   "iso": "2026-05-19",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "four-numbers",
@@ -203,7 +208,8 @@ export const letters=[
   "n": 6,
   "date": "May 19, 2026",
   "iso": "2026-05-19",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "why-four-days-in-a-row-is-working",
@@ -244,7 +250,8 @@ export const letters=[
   "n": 7,
   "date": "May 20, 2026",
   "iso": "2026-05-20",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "two-ledgers",
@@ -281,7 +288,8 @@ export const letters=[
   "n": 8,
   "date": "May 21, 2026",
   "iso": "2026-05-21",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "it-was-not-you",
@@ -318,7 +326,8 @@ export const letters=[
   "n": 9,
   "date": "May 21, 2026",
   "iso": "2026-05-21",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "the-other-side",
@@ -359,7 +368,8 @@ export const letters=[
   "n": 10,
   "date": "May 22, 2026",
   "iso": "2026-05-22",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "write-it-down-with-a-date",
@@ -392,7 +402,8 @@ export const letters=[
   "n": 11,
   "date": "May 23, 2026",
   "iso": "2026-05-23",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "a-different-clock",
@@ -425,7 +436,8 @@ export const letters=[
   "n": 12,
   "date": "May 23, 2026",
   "iso": "2026-05-23",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "hold-the-picture",
@@ -462,7 +474,8 @@ export const letters=[
   "n": 13,
   "date": "May 24, 2026",
   "iso": "2026-05-24",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "the-thermostat",
@@ -499,7 +512,8 @@ export const letters=[
   "n": 14,
   "date": "May 25, 2026",
   "iso": "2026-05-25",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "a-stage-of-life-not-a-problem",
@@ -532,7 +546,8 @@ export const letters=[
   "n": 15,
   "date": "May 25, 2026",
   "iso": "2026-05-25",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "your-five",
@@ -569,7 +584,8 @@ export const letters=[
   "n": 16,
   "date": "May 26, 2026",
   "iso": "2026-05-26",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "say-your-name",
@@ -606,7 +622,8 @@ export const letters=[
   "n": 17,
   "date": "May 27, 2026",
   "iso": "2026-05-27",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "know-where-you-are-in-the-month",
@@ -639,7 +656,8 @@ export const letters=[
   "n": 18,
   "date": "May 27, 2026",
   "iso": "2026-05-27",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "one-page-before-the-phone",
@@ -676,7 +694,8 @@ export const letters=[
   "n": 19,
   "date": "May 28, 2026",
   "iso": "2026-05-28",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "e-r-o",
@@ -717,7 +736,8 @@ export const letters=[
   "n": 20,
   "date": "May 29, 2026",
   "iso": "2026-05-29",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "the-muscle-nobody-showed-you",
@@ -750,7 +770,8 @@ export const letters=[
   "n": 21,
   "date": "May 29, 2026",
   "iso": "2026-05-29",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "five-four-three-two-one",
@@ -787,7 +808,8 @@ export const letters=[
   "n": 22,
   "date": "May 30, 2026",
   "iso": "2026-05-30",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "fifteen-minutes-alone",
@@ -824,7 +846,8 @@ export const letters=[
   "n": 23,
   "date": "May 31, 2026",
   "iso": "2026-05-31",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "the-long-way-is-the-only-way-that-lasts",
@@ -857,7 +880,8 @@ export const letters=[
   "n": 24,
   "date": "May 31, 2026",
   "iso": "2026-05-31",
-  "month": "May 2026"
+  "month": "May 2026",
+  "chamber": 1
  },
  {
   "slug": "thirty-days-on-a-card",
@@ -890,7 +914,8 @@ export const letters=[
   "n": 25,
   "date": "June 1, 2026",
   "iso": "2026-06-01",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "the-gardener",
@@ -923,7 +948,8 @@ export const letters=[
   "n": 26,
   "date": "June 2, 2026",
   "iso": "2026-06-02",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "bone-is-built-by-load",
@@ -956,7 +982,8 @@ export const letters=[
   "n": 27,
   "date": "June 2, 2026",
   "iso": "2026-06-02",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "compare-yourself-to-yesterday",
@@ -993,7 +1020,8 @@ export const letters=[
   "n": 28,
   "date": "June 3, 2026",
   "iso": "2026-06-03",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "the-six-needs",
@@ -1030,7 +1058,8 @@ export const letters=[
   "n": 29,
   "date": "June 4, 2026",
   "iso": "2026-06-04",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "the-seven-movements",
@@ -1063,7 +1092,8 @@ export const letters=[
   "n": 30,
   "date": "June 4, 2026",
   "iso": "2026-06-04",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "the-first-mirror",
@@ -1100,7 +1130,8 @@ export const letters=[
   "n": 31,
   "date": "June 5, 2026",
   "iso": "2026-06-05",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "what-feels-like-nothing-to-you",
@@ -1137,7 +1168,8 @@ export const letters=[
   "n": 32,
   "date": "June 6, 2026",
   "iso": "2026-06-06",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "a-little-more-than-last-week",
@@ -1174,7 +1206,8 @@ export const letters=[
   "n": 33,
   "date": "June 6, 2026",
   "iso": "2026-06-06",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "what-you-are-good-for",
@@ -1211,7 +1244,8 @@ export const letters=[
   "n": 34,
   "date": "June 7, 2026",
   "iso": "2026-06-07",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "the-one-that-stings",
@@ -1248,7 +1282,8 @@ export const letters=[
   "n": 35,
   "date": "June 8, 2026",
   "iso": "2026-06-08",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "four-lifts-three-days",
@@ -1281,7 +1316,8 @@ export const letters=[
   "n": 36,
   "date": "June 8, 2026",
   "iso": "2026-06-08",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "four-letters-held-loosely",
@@ -1314,7 +1350,8 @@ export const letters=[
   "n": 37,
   "date": "June 9, 2026",
   "iso": "2026-06-09",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "how-you-come-across",
@@ -1347,7 +1384,8 @@ export const letters=[
   "n": 38,
   "date": "June 10, 2026",
   "iso": "2026-06-10",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "slow-is-fast",
@@ -1380,7 +1418,8 @@ export const letters=[
   "n": 39,
   "date": "June 10, 2026",
   "iso": "2026-06-10",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "a-mirror-you-may-already-own",
@@ -1413,7 +1452,8 @@ export const letters=[
   "n": 40,
   "date": "June 11, 2026",
   "iso": "2026-06-11",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "the-mirror-you-were-handed",
@@ -1446,7 +1486,8 @@ export const letters=[
   "n": 41,
   "date": "June 12, 2026",
   "iso": "2026-06-12",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "grease-the-groove",
@@ -1475,7 +1516,8 @@ export const letters=[
   "n": 42,
   "date": "June 12, 2026",
   "iso": "2026-06-12",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "is-your-work-yours",
@@ -1508,7 +1550,8 @@ export const letters=[
   "n": 43,
   "date": "June 13, 2026",
   "iso": "2026-06-13",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "the-two-things-to-let-someone-else-do",
@@ -1545,7 +1588,8 @@ export const letters=[
   "n": 44,
   "date": "June 14, 2026",
   "iso": "2026-06-14",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 1
  },
  {
   "slug": "what-actually-builds-muscle",
@@ -1574,7 +1618,8 @@ export const letters=[
   "n": 45,
   "date": "June 14, 2026",
   "iso": "2026-06-14",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "your-biography-becomes-your-biology",
@@ -1607,7 +1652,8 @@ export const letters=[
   "n": 46,
   "date": "June 15, 2026",
   "iso": "2026-06-15",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "what-the-body-inherited",
@@ -1644,7 +1690,8 @@ export const letters=[
   "n": 47,
   "date": "June 16, 2026",
   "iso": "2026-06-16",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "one-hard-set",
@@ -1681,7 +1728,8 @@ export const letters=[
   "n": 48,
   "date": "June 16, 2026",
   "iso": "2026-06-16",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "meditation-in-motion",
@@ -1714,7 +1762,8 @@ export const letters=[
   "n": 49,
   "date": "June 17, 2026",
   "iso": "2026-06-17",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "the-breath-is-the-lever",
@@ -1747,7 +1796,8 @@ export const letters=[
   "n": 50,
   "date": "June 18, 2026",
   "iso": "2026-06-18",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "light-weight-real-growth",
@@ -1780,7 +1830,8 @@ export const letters=[
   "n": 51,
   "date": "June 18, 2026",
   "iso": "2026-06-18",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "steadiness-one-posture-at-a-time",
@@ -1813,7 +1864,8 @@ export const letters=[
   "n": 52,
   "date": "June 19, 2026",
   "iso": "2026-06-19",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "progress-is-the-point",
@@ -1846,7 +1898,8 @@ export const letters=[
   "n": 53,
   "date": "June 20, 2026",
   "iso": "2026-06-20",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "your-body-is-the-gym",
@@ -1875,7 +1928,8 @@ export const letters=[
   "n": 54,
   "date": "June 20, 2026",
   "iso": "2026-06-20",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "a-door-we-point-to-carefully",
@@ -1908,7 +1962,8 @@ export const letters=[
   "n": 55,
   "date": "June 21, 2026",
   "iso": "2026-06-21",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "prayer-that-affirms",
@@ -1941,7 +1996,8 @@ export const letters=[
   "n": 56,
   "date": "June 22, 2026",
   "iso": "2026-06-22",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "the-year-has-seasons",
@@ -1970,7 +2026,8 @@ export const letters=[
   "n": 57,
   "date": "June 22, 2026",
   "iso": "2026-06-22",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "the-body-can-be-told-to-stand-down",
@@ -2007,7 +2064,8 @@ export const letters=[
   "n": 58,
   "date": "June 23, 2026",
   "iso": "2026-06-23",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "the-honest-version-of-attraction",
@@ -2044,7 +2102,8 @@ export const letters=[
   "n": 59,
   "date": "June 24, 2026",
   "iso": "2026-06-24",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "fast-from-the-floor-to-overhead",
@@ -2077,7 +2136,8 @@ export const letters=[
   "n": 60,
   "date": "June 24, 2026",
   "iso": "2026-06-24",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "control-from-the-center",
@@ -2110,7 +2170,8 @@ export const letters=[
   "n": 61,
   "date": "June 25, 2026",
   "iso": "2026-06-25",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "cold-breath-and-the-decision-to-stay",
@@ -2139,7 +2200,8 @@ export const letters=[
   "n": 62,
   "date": "June 26, 2026",
   "iso": "2026-06-26",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "hard-varied-and-scaled-to-you",
@@ -2172,7 +2234,8 @@ export const letters=[
   "n": 63,
   "date": "June 26, 2026",
   "iso": "2026-06-26",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "hands-attention-and-rest",
@@ -2205,7 +2268,8 @@ export const letters=[
   "n": 64,
   "date": "June 27, 2026",
   "iso": "2026-06-27",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "change-the-frame",
@@ -2234,7 +2298,8 @@ export const letters=[
   "n": 65,
   "date": "June 28, 2026",
   "iso": "2026-06-28",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "muscle-is-medicine",
@@ -2267,7 +2332,8 @@ export const letters=[
   "n": 66,
   "date": "June 28, 2026",
   "iso": "2026-06-28",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "tap-and-say-it",
@@ -2300,7 +2366,8 @@ export const letters=[
   "n": 67,
   "date": "June 29, 2026",
   "iso": "2026-06-29",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "stop-doing-the-thing",
@@ -2329,7 +2396,8 @@ export const letters=[
   "n": 68,
   "date": "June 30, 2026",
   "iso": "2026-06-30",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "grip-balance-and-the-fall-that-doesn-t-happen",
@@ -2362,7 +2430,8 @@ export const letters=[
   "n": 69,
   "date": "June 30, 2026",
   "iso": "2026-06-30",
-  "month": "June 2026"
+  "month": "June 2026",
+  "chamber": 2
  },
  {
   "slug": "a-ceremony-we-don-t-run",
@@ -2391,7 +2460,8 @@ export const letters=[
   "n": 70,
   "date": "July 1, 2026",
   "iso": "2026-07-01",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "the-three-states",
@@ -2420,7 +2490,8 @@ export const letters=[
   "n": 71,
   "date": "July 2, 2026",
   "iso": "2026-07-02",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "the-man-who-did-it-on-television-for-thirty-four-years",
@@ -2453,7 +2524,8 @@ export const letters=[
   "n": 72,
   "date": "July 2, 2026",
   "iso": "2026-07-02",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "rehearse-the-person-you-re-becoming",
@@ -2482,7 +2554,8 @@ export const letters=[
   "n": 73,
   "date": "July 3, 2026",
   "iso": "2026-07-03",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "armor-you-forgot-you-were-wearing",
@@ -2511,7 +2584,8 @@ export const letters=[
   "n": 74,
   "date": "July 4, 2026",
   "iso": "2026-07-04",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "ten-minutes-of-maintenance",
@@ -2544,7 +2618,8 @@ export const letters=[
   "n": 75,
   "date": "July 4, 2026",
   "iso": "2026-07-04",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "move-slowly-enough-to-notice",
@@ -2573,7 +2648,8 @@ export const letters=[
   "n": 76,
   "date": "July 5, 2026",
   "iso": "2026-07-05",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "breathe-less",
@@ -2606,7 +2682,8 @@ export const letters=[
   "n": 77,
   "date": "July 6, 2026",
   "iso": "2026-07-06",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "spine-hygiene",
@@ -2639,7 +2716,8 @@ export const letters=[
   "n": 78,
   "date": "July 6, 2026",
   "iso": "2026-07-06",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "the-body-in-gravity",
@@ -2672,7 +2750,8 @@ export const letters=[
   "n": 79,
   "date": "July 7, 2026",
   "iso": "2026-07-07",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "let-it-shake",
@@ -2705,7 +2784,8 @@ export const letters=[
   "n": 80,
   "date": "July 8, 2026",
   "iso": "2026-07-08",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "find-the-asymmetry-first",
@@ -2734,7 +2814,8 @@ export const letters=[
   "n": 81,
   "date": "July 8, 2026",
   "iso": "2026-07-08",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "breathe-the-heart-into-rhythm",
@@ -2767,7 +2848,8 @@ export const letters=[
   "n": 82,
   "date": "July 9, 2026",
   "iso": "2026-07-09",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "the-body-keeps-the-score",
@@ -2800,7 +2882,8 @@ export const letters=[
   "n": 83,
   "date": "July 10, 2026",
   "iso": "2026-07-10",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "the-way-we-moved-before-gyms",
@@ -2833,7 +2916,8 @@ export const letters=[
   "n": 84,
   "date": "July 10, 2026",
   "iso": "2026-07-10",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "the-doors-of-breath-and-dance",
@@ -2862,7 +2946,8 @@ export const letters=[
   "n": 85,
   "date": "July 11, 2026",
   "iso": "2026-07-11",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "maps-we-hold-loosely",
@@ -2891,7 +2976,8 @@ export const letters=[
   "n": 86,
   "date": "July 12, 2026",
   "iso": "2026-07-12",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "move-all-day-not-for-an-hour",
@@ -2924,7 +3010,8 @@ export const letters=[
   "n": 87,
   "date": "July 12, 2026",
   "iso": "2026-07-12",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "the-undoing-of-fear",
@@ -2957,7 +3044,8 @@ export const letters=[
   "n": 88,
   "date": "July 13, 2026",
   "iso": "2026-07-13",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "our-deepest-fear",
@@ -2994,7 +3082,8 @@ export const letters=[
   "n": 89,
   "date": "July 14, 2026",
   "iso": "2026-07-14",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "movement-is-the-medicine-for-pain",
@@ -3023,7 +3112,8 @@ export const letters=[
   "n": 90,
   "date": "July 14, 2026",
   "iso": "2026-07-14",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "may-you-be-well",
@@ -3056,7 +3146,8 @@ export const letters=[
   "n": 91,
   "date": "July 15, 2026",
   "iso": "2026-07-15",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "the-examined-day",
@@ -3089,7 +3180,8 @@ export const letters=[
   "n": 92,
   "date": "July 16, 2026",
   "iso": "2026-07-16",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "hold-it-longer",
@@ -3126,7 +3218,8 @@ export const letters=[
   "n": 93,
   "date": "July 16, 2026",
   "iso": "2026-07-16",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "beginner-s-mind",
@@ -3159,7 +3252,8 @@ export const letters=[
   "n": 94,
   "date": "July 17, 2026",
   "iso": "2026-07-17",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "ten-days-of-silence",
@@ -3192,7 +3286,8 @@ export const letters=[
   "n": 95,
   "date": "July 18, 2026",
   "iso": "2026-07-18",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "pain-is-a-judgment-not-a-measurement",
@@ -3229,7 +3324,8 @@ export const letters=[
   "n": 96,
   "date": "July 18, 2026",
   "iso": "2026-07-18",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "eight-weeks-that-changed-medicine",
@@ -3262,7 +3358,8 @@ export const letters=[
   "n": 97,
   "date": "July 19, 2026",
   "iso": "2026-07-19",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "thoughts-are-not-facts",
@@ -3291,7 +3388,8 @@ export const letters=[
   "n": 98,
   "date": "July 20, 2026",
   "iso": "2026-07-20",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "the-first-gym",
@@ -3320,7 +3418,8 @@ export const letters=[
   "n": 99,
   "date": "July 20, 2026",
   "iso": "2026-07-20",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "treat-yourself-like-a-friend",
@@ -3349,7 +3448,8 @@ export const letters=[
   "n": 100,
   "date": "July 21, 2026",
   "iso": "2026-07-21",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "what-s-in-your-control",
@@ -3390,7 +3490,8 @@ export const letters=[
   "n": 101,
   "date": "July 22, 2026",
   "iso": "2026-07-22",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "flow-not-force",
@@ -3423,7 +3524,8 @@ export const letters=[
   "n": 102,
   "date": "July 22, 2026",
   "iso": "2026-07-22",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "lean-in",
@@ -3460,7 +3562,8 @@ export const letters=[
   "n": 103,
   "date": "July 23, 2026",
   "iso": "2026-07-23",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "twenty-minutes-twice-a-day",
@@ -3489,7 +3592,8 @@ export const letters=[
   "n": 104,
   "date": "July 24, 2026",
   "iso": "2026-07-24",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "the-oldest-training-hall",
@@ -3518,7 +3622,8 @@ export const letters=[
   "n": 105,
   "date": "July 24, 2026",
   "iso": "2026-07-24",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "four-questions",
@@ -3555,7 +3660,8 @@ export const letters=[
   "n": 106,
   "date": "July 25, 2026",
   "iso": "2026-07-25",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "recognize-allow-investigate-nurture",
@@ -3592,7 +3698,8 @@ export const letters=[
   "n": 107,
   "date": "July 26, 2026",
   "iso": "2026-07-26",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "stand-until-the-stance-holds-you",
@@ -3625,7 +3732,8 @@ export const letters=[
   "n": 108,
   "date": "July 26, 2026",
   "iso": "2026-07-26",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "sit-in-the-silence",
@@ -3658,7 +3766,8 @@ export const letters=[
   "n": 109,
   "date": "July 27, 2026",
   "iso": "2026-07-27",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "the-three-who-brought-it-home",
@@ -3691,7 +3800,8 @@ export const letters=[
   "n": 110,
   "date": "July 28, 2026",
   "iso": "2026-07-28",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "clubs-maces-and-milk",
@@ -3720,7 +3830,8 @@ export const letters=[
   "n": 111,
   "date": "July 28, 2026",
   "iso": "2026-07-28",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "three-good-things",
@@ -3753,7 +3864,8 @@ export const letters=[
   "n": 112,
   "date": "July 29, 2026",
   "iso": "2026-07-29",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "now",
@@ -3786,7 +3898,8 @@ export const letters=[
   "n": 113,
   "date": "July 30, 2026",
   "iso": "2026-07-30",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "the-way-and-the-room-you-practice-it-in",
@@ -3819,7 +3932,8 @@ export const letters=[
   "n": 114,
   "date": "July 30, 2026",
   "iso": "2026-07-30",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "who-am-i",
@@ -3852,7 +3966,8 @@ export const letters=[
   "n": 115,
   "date": "July 31, 2026",
   "iso": "2026-07-31",
-  "month": "July 2026"
+  "month": "July 2026",
+  "chamber": 3
  },
  {
   "slug": "the-roommate-in-your-head",
@@ -3885,7 +4000,8 @@ export const letters=[
   "n": 116,
   "date": "August 1, 2026",
   "iso": "2026-08-01",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "fitness-for-everyone-invented-twice",
@@ -3918,7 +4034,8 @@ export const letters=[
   "n": 117,
   "date": "August 1, 2026",
   "iso": "2026-08-01",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 2
  },
  {
   "slug": "your-right-is-to-the-work",
@@ -3951,7 +4068,8 @@ export const letters=[
   "n": 118,
   "date": "August 2, 2026",
   "iso": "2026-08-02",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "know-your-constitution",
@@ -3984,7 +4102,8 @@ export const letters=[
   "n": 119,
   "date": "August 3, 2026",
   "iso": "2026-08-03",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-first-fitness-industry",
@@ -4013,7 +4132,8 @@ export const letters=[
   "n": 120,
   "date": "August 3, 2026",
   "iso": "2026-08-03",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 2
  },
  {
   "slug": "examine-yourself-three-times-a-day",
@@ -4046,7 +4166,8 @@ export const letters=[
   "n": 121,
   "date": "August 4, 2026",
   "iso": "2026-08-04",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "yoga-is-the-stilling-of-the-mind",
@@ -4079,7 +4200,8 @@ export const letters=[
   "n": 122,
   "date": "August 5, 2026",
   "iso": "2026-08-05",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "cold-water-and-bare-feet",
@@ -4108,7 +4230,8 @@ export const letters=[
   "n": 123,
   "date": "August 5, 2026",
   "iso": "2026-08-05",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 2
  },
  {
   "slug": "the-breath-lineages",
@@ -4141,7 +4264,8 @@ export const letters=[
   "n": 124,
   "date": "August 6, 2026",
   "iso": "2026-08-06",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "walk-as-if-your-feet-are-kissing-the-earth",
@@ -4174,7 +4298,8 @@ export const letters=[
   "n": 125,
   "date": "August 7, 2026",
   "iso": "2026-08-07",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "faith-fitness-and-a-gym-with-a-chapel",
@@ -4203,7 +4328,8 @@ export const letters=[
   "n": 126,
   "date": "August 7, 2026",
   "iso": "2026-08-07",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 2
  },
  {
   "slug": "know-yourself-win-without-fighting",
@@ -4236,7 +4362,8 @@ export const letters=[
   "n": 127,
   "date": "August 8, 2026",
   "iso": "2026-08-08",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "do-nothing-and-nothing-is-left-undone",
@@ -4273,7 +4400,8 @@ export const letters=[
   "n": 128,
   "date": "August 9, 2026",
   "iso": "2026-08-09",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-continent-s-own-regimen",
@@ -4302,7 +4430,8 @@ export const letters=[
   "n": 129,
   "date": "August 9, 2026",
   "iso": "2026-08-09",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 2
  },
  {
   "slug": "you-are-that",
@@ -4339,7 +4468,8 @@ export const letters=[
   "n": 130,
   "date": "August 10, 2026",
   "iso": "2026-08-10",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "letting-go-practiced-early",
@@ -4368,7 +4498,8 @@ export const letters=[
   "n": 131,
   "date": "August 11, 2026",
   "iso": "2026-08-11",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-third-of-your-life-you-ve-been-ignoring",
@@ -4397,7 +4528,8 @@ export const letters=[
   "n": 132,
   "date": "August 11, 2026",
   "iso": "2026-08-11",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "fifty-nine-slogans",
@@ -4430,7 +4562,8 @@ export const letters=[
   "n": 133,
   "date": "August 12, 2026",
   "iso": "2026-08-12",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-way-of-the-sword-read-for-the-self",
@@ -4463,7 +4596,8 @@ export const letters=[
   "n": 134,
   "date": "August 13, 2026",
   "iso": "2026-08-13",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-rules-of-the-bedroom",
@@ -4492,7 +4626,8 @@ export const letters=[
   "n": 135,
   "date": "August 13, 2026",
   "iso": "2026-08-13",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "already-complete",
@@ -4525,7 +4660,8 @@ export const letters=[
   "n": 136,
   "date": "August 14, 2026",
   "iso": "2026-08-14",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-inner-fire",
@@ -4558,7 +4694,8 @@ export const letters=[
   "n": 137,
   "date": "August 15, 2026",
   "iso": "2026-08-15",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-treatment-that-works-for-insomnia",
@@ -4591,7 +4728,8 @@ export const letters=[
   "n": 138,
   "date": "August 15, 2026",
   "iso": "2026-08-15",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "feel-it-and-act-anyway",
@@ -4624,7 +4762,8 @@ export const letters=[
   "n": 139,
   "date": "August 16, 2026",
   "iso": "2026-08-16",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "three-questions-about-anyone",
@@ -4665,7 +4804,8 @@ export const letters=[
   "n": 140,
   "date": "August 17, 2026",
   "iso": "2026-08-17",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "light-sets-the-clock",
@@ -4694,7 +4834,8 @@ export const letters=[
   "n": 141,
   "date": "August 17, 2026",
   "iso": "2026-08-17",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "four-sprouts",
@@ -4727,7 +4868,8 @@ export const letters=[
   "n": 142,
   "date": "August 18, 2026",
   "iso": "2026-08-18",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-butterfly-s-dream",
@@ -4760,7 +4902,8 @@ export const letters=[
   "n": 143,
   "date": "August 19, 2026",
   "iso": "2026-08-19",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-nap-with-a-time-limit",
@@ -4793,7 +4936,8 @@ export const letters=[
   "n": 144,
   "date": "August 19, 2026",
   "iso": "2026-08-19",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "presence-without-a-method",
@@ -4826,7 +4970,8 @@ export const letters=[
   "n": 145,
   "date": "August 20, 2026",
   "iso": "2026-08-20",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "knowing-is-acting",
@@ -4859,7 +5004,8 @@ export const letters=[
   "n": 146,
   "date": "August 21, 2026",
   "iso": "2026-08-21",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "rest-that-isn-t-sleep",
@@ -4888,7 +5034,8 @@ export const letters=[
   "n": 147,
   "date": "August 21, 2026",
   "iso": "2026-08-21",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "all-of-life-is-the-practice",
@@ -4921,7 +5068,8 @@ export const letters=[
   "n": 148,
   "date": "August 22, 2026",
   "iso": "2026-08-22",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-skeptic-s-seat",
@@ -4954,7 +5102,8 @@ export const letters=[
   "n": 149,
   "date": "August 23, 2026",
   "iso": "2026-08-23",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "train-by-readiness",
@@ -4987,7 +5136,8 @@ export const letters=[
   "n": 150,
   "date": "August 23, 2026",
   "iso": "2026-08-23",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-prepared-environment",
@@ -5020,7 +5170,8 @@ export const letters=[
   "n": 151,
   "date": "August 24, 2026",
   "iso": "2026-08-24",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 4
  },
  {
   "slug": "head-heart-and-hands",
@@ -5053,7 +5204,8 @@ export const letters=[
   "n": 152,
   "date": "August 25, 2026",
   "iso": "2026-08-25",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 4
  },
  {
   "slug": "breathe-through-your-nose",
@@ -5086,7 +5238,8 @@ export const letters=[
   "n": 153,
   "date": "August 25, 2026",
   "iso": "2026-08-25",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 3
  },
  {
   "slug": "the-cycle-of-learning",
@@ -5119,7 +5272,8 @@ export const letters=[
   "n": 154,
   "date": "August 26, 2026",
   "iso": "2026-08-26",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 4
  },
  {
   "slug": "prototype-your-life",
@@ -5152,7 +5306,8 @@ export const letters=[
   "n": 155,
   "date": "August 27, 2026",
   "iso": "2026-08-27",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 4
  },
  {
   "slug": "the-table-that-keeps-hearts-alive",
@@ -5185,7 +5340,8 @@ export const letters=[
   "n": 156,
   "date": "August 27, 2026",
   "iso": "2026-08-27",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 4
  },
  {
   "slug": "learning-by-doing",
@@ -5218,7 +5374,8 @@ export const letters=[
   "n": 157,
   "date": "August 28, 2026",
   "iso": "2026-08-28",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 4
  },
  {
   "slug": "you-built-what-you-know",
@@ -5247,7 +5404,8 @@ export const letters=[
   "n": 158,
   "date": "August 29, 2026",
   "iso": "2026-08-29",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 4
  },
  {
   "slug": "the-trial-that-reversed-heart-disease",
@@ -5276,7 +5434,8 @@ export const letters=[
   "n": 159,
   "date": "August 29, 2026",
   "iso": "2026-08-29",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 4
  },
  {
   "slug": "just-beyond-your-reach",
@@ -5309,7 +5468,8 @@ export const letters=[
   "n": 160,
   "date": "August 30, 2026",
   "iso": "2026-08-30",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 4
  },
  {
   "slug": "eight-crises-each-with-a-gift",
@@ -5342,7 +5502,8 @@ export const letters=[
   "n": 161,
   "date": "August 31, 2026",
   "iso": "2026-08-31",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 4
  },
  {
   "slug": "walk-forty-five-minutes-and-eat-real-food",
@@ -5371,7 +5532,8 @@ export const letters=[
   "n": 162,
   "date": "August 31, 2026",
   "iso": "2026-08-31",
-  "month": "August 2026"
+  "month": "August 2026",
+  "chamber": 4
  },
  {
   "slug": "nobody-is-a-bank",
@@ -5404,7 +5566,8 @@ export const letters=[
   "n": 163,
   "date": "September 1, 2026",
   "iso": "2026-09-01",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "i-can",
@@ -5437,7 +5600,8 @@ export const letters=[
   "n": 164,
   "date": "September 2, 2026",
   "iso": "2026-09-02",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "all-plants-no-oil",
@@ -5466,7 +5630,8 @@ export const letters=[
   "n": 165,
   "date": "September 2, 2026",
   "iso": "2026-09-02",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "love-as-a-practice",
@@ -5495,7 +5660,8 @@ export const letters=[
   "n": 166,
   "date": "September 3, 2026",
   "iso": "2026-09-03",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "speak-with-the-dying",
@@ -5528,7 +5694,8 @@ export const letters=[
   "n": 167,
   "date": "September 4, 2026",
   "iso": "2026-09-04",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "nutrients-per-calorie",
@@ -5557,7 +5724,8 @@ export const letters=[
   "n": 168,
   "date": "September 4, 2026",
   "iso": "2026-09-04",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "turning-pro",
@@ -5586,7 +5754,8 @@ export const letters=[
   "n": 169,
   "date": "September 5, 2026",
   "iso": "2026-09-05",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "prototype-don-t-plan",
@@ -5619,7 +5788,8 @@ export const letters=[
   "n": 170,
   "date": "September 6, 2026",
   "iso": "2026-09-06",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-daily-dozen",
@@ -5648,7 +5818,8 @@ export const letters=[
   "n": 171,
   "date": "September 6, 2026",
   "iso": "2026-09-06",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "looking-back-on-purpose",
@@ -5677,7 +5848,8 @@ export const letters=[
   "n": 172,
   "date": "September 7, 2026",
   "iso": "2026-09-07",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "four-days-twenty-minutes",
@@ -5710,7 +5882,8 @@ export const letters=[
   "n": 173,
   "date": "September 8, 2026",
   "iso": "2026-09-08",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "seven-words",
@@ -5743,7 +5916,8 @@ export const letters=[
   "n": 174,
   "date": "September 8, 2026",
   "iso": "2026-09-08",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "write-the-letter",
@@ -5772,7 +5946,8 @@ export const letters=[
   "n": 175,
   "date": "September 9, 2026",
   "iso": "2026-09-09",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-base-of-the-pyramid",
@@ -5801,7 +5976,8 @@ export const letters=[
   "n": 176,
   "date": "September 10, 2026",
   "iso": "2026-09-10",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-diet-that-was-tested-for-blood-pressure",
@@ -5834,7 +6010,8 @@ export const letters=[
   "n": 177,
   "date": "September 10, 2026",
   "iso": "2026-09-10",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-shape-of-the-story",
@@ -5867,7 +6044,8 @@ export const letters=[
   "n": 178,
   "date": "September 11, 2026",
   "iso": "2026-09-11",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "two-speeds-of-thought",
@@ -5900,7 +6078,8 @@ export const letters=[
   "n": 179,
   "date": "September 12, 2026",
   "iso": "2026-09-12",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-table-for-your-brain",
@@ -5929,7 +6108,8 @@ export const letters=[
   "n": 180,
   "date": "September 12, 2026",
   "iso": "2026-09-12",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "seeing-yourself-through-other-eyes",
@@ -5962,7 +6142,8 @@ export const letters=[
   "n": 181,
   "date": "September 13, 2026",
   "iso": "2026-09-13",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "more-than-one-way-to-be-smart",
@@ -5995,7 +6176,8 @@ export const letters=[
   "n": 182,
   "date": "September 14, 2026",
   "iso": "2026-09-14",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "four-foods-that-lower-cholesterol",
@@ -6028,7 +6210,8 @@ export const letters=[
   "n": 183,
   "date": "September 14, 2026",
   "iso": "2026-09-14",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-dilemma-that-changes-you",
@@ -6061,7 +6244,8 @@ export const letters=[
   "n": 184,
   "date": "September 15, 2026",
   "iso": "2026-09-15",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-mind-that-writes-its-own-script",
@@ -6094,7 +6278,8 @@ export const letters=[
   "n": 185,
   "date": "September 16, 2026",
   "iso": "2026-09-16",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "eat-more-food-fewer-calories",
@@ -6127,7 +6312,8 @@ export const letters=[
   "n": 186,
   "date": "September 16, 2026",
   "iso": "2026-09-16",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "becoming-who-you-were-born-as",
@@ -6156,7 +6342,8 @@ export const letters=[
   "n": 187,
   "date": "September 17, 2026",
   "iso": "2026-09-17",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "a-different-voice",
@@ -6185,7 +6372,8 @@ export const letters=[
   "n": 188,
   "date": "September 18, 2026",
   "iso": "2026-09-18",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "hunger-as-the-guide",
@@ -6218,7 +6406,8 @@ export const letters=[
   "n": 189,
   "date": "September 18, 2026",
   "iso": "2026-09-18",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-in-between",
@@ -6251,7 +6440,8 @@ export const letters=[
   "n": 190,
   "date": "September 19, 2026",
   "iso": "2026-09-19",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "dialogue-on-the-page",
@@ -6284,7 +6474,8 @@ export const letters=[
   "n": 191,
   "date": "September 20, 2026",
   "iso": "2026-09-20",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "cut-the-sugar-and-starch",
@@ -6313,7 +6504,8 @@ export const letters=[
   "n": 192,
   "date": "September 20, 2026",
   "iso": "2026-09-20",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "a-reason-to-get-up",
@@ -6346,7 +6538,8 @@ export const letters=[
   "n": 193,
   "date": "September 21, 2026",
   "iso": "2026-09-21",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-environment-is-the-third-teacher",
@@ -6371,7 +6564,8 @@ export const letters=[
   "n": 194,
   "date": "September 22, 2026",
   "iso": "2026-09-22",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "running-on-ketones",
@@ -6400,7 +6594,8 @@ export const letters=[
   "n": 195,
   "date": "September 22, 2026",
   "iso": "2026-09-22",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "how-grown-ups-learn",
@@ -6433,7 +6628,8 @@ export const letters=[
   "n": 196,
   "date": "September 23, 2026",
   "iso": "2026-09-23",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-second-half",
@@ -6466,7 +6662,8 @@ export const letters=[
   "n": 197,
   "date": "September 24, 2026",
   "iso": "2026-09-24",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "eating-like-your-oldest-ancestors",
@@ -6499,7 +6696,8 @@ export const letters=[
   "n": 198,
   "date": "September 24, 2026",
   "iso": "2026-09-24",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "discipline-as-the-ground-of-courage",
@@ -6532,7 +6730,8 @@ export const letters=[
   "n": 199,
   "date": "September 25, 2026",
   "iso": "2026-09-25",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "remade-in-his-own-voice",
@@ -6565,7 +6764,8 @@ export const letters=[
   "n": 200,
   "date": "September 26, 2026",
   "iso": "2026-09-26",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-year-on-meat-alone",
@@ -6594,7 +6794,8 @@ export const letters=[
   "n": 201,
   "date": "September 26, 2026",
   "iso": "2026-09-26",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-child-you-were",
@@ -6623,7 +6824,8 @@ export const letters=[
   "n": 202,
   "date": "September 27, 2026",
   "iso": "2026-09-27",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 5
  },
  {
   "slug": "the-rooms",
@@ -6652,7 +6854,8 @@ export const letters=[
   "n": 203,
   "date": "September 28, 2026",
   "iso": "2026-09-28",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 5
  },
  {
   "slug": "enough-protein-at-every-meal",
@@ -6685,7 +6888,8 @@ export const letters=[
   "n": 204,
   "date": "September 28, 2026",
   "iso": "2026-09-28",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "test-the-thought",
@@ -6714,7 +6918,8 @@ export const letters=[
   "n": 205,
   "date": "September 29, 2026",
   "iso": "2026-09-29",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 5
  },
  {
   "slug": "the-part-you-can-t-see",
@@ -6743,7 +6948,8 @@ export const letters=[
   "n": 206,
   "date": "September 30, 2026",
   "iso": "2026-09-30",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 5
  },
  {
   "slug": "not-all-carbohydrates-are-the-same",
@@ -6772,7 +6978,8 @@ export const letters=[
   "n": 207,
   "date": "September 30, 2026",
   "iso": "2026-09-30",
-  "month": "September 2026"
+  "month": "September 2026",
+  "chamber": 4
  },
  {
   "slug": "the-shadow",
@@ -6801,7 +7008,8 @@ export const letters=[
   "n": 208,
   "date": "October 1, 2026",
   "iso": "2026-10-01",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "three-conditions",
@@ -6830,7 +7038,8 @@ export const letters=[
   "n": 209,
   "date": "October 2, 2026",
   "iso": "2026-10-02",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "when-the-story-is-better-than-the-science",
@@ -6863,7 +7072,8 @@ export const letters=[
   "n": 210,
   "date": "October 2, 2026",
   "iso": "2026-10-02",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 4
  },
  {
   "slug": "the-last-freedom",
@@ -6896,7 +7106,8 @@ export const letters=[
   "n": 211,
   "date": "October 3, 2026",
   "iso": "2026-10-03",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "what-goes-right",
@@ -6925,7 +7136,8 @@ export const letters=[
   "n": 212,
   "date": "October 4, 2026",
   "iso": "2026-10-04",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "a-chart-you-may-already-own-at-the-table",
@@ -6958,7 +7170,8 @@ export const letters=[
   "n": 213,
   "date": "October 4, 2026",
   "iso": "2026-10-04",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 4
  },
  {
   "slug": "no-bad-parts",
@@ -6987,7 +7200,8 @@ export const letters=[
   "n": 214,
   "date": "October 5, 2026",
   "iso": "2026-10-05",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "make-room-and-move",
@@ -7020,7 +7234,8 @@ export const letters=[
   "n": 215,
   "date": "October 6, 2026",
   "iso": "2026-10-06",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "fuel-the-session-measure-with-your-hand",
@@ -7053,7 +7268,8 @@ export const letters=[
   "n": 216,
   "date": "October 6, 2026",
   "iso": "2026-10-06",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 4
  },
  {
   "slug": "their-own-reasons",
@@ -7086,7 +7302,8 @@ export const letters=[
   "n": 217,
   "date": "October 7, 2026",
   "iso": "2026-10-07",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "both-things-are-true",
@@ -7115,7 +7332,8 @@ export const letters=[
   "n": 218,
   "date": "October 8, 2026",
   "iso": "2026-10-08",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "drink-when-you-re-thirsty",
@@ -7144,7 +7362,8 @@ export const letters=[
   "n": 219,
   "date": "October 8, 2026",
   "iso": "2026-10-08",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 4
  },
  {
   "slug": "the-eyes",
@@ -7173,7 +7392,8 @@ export const letters=[
   "n": 220,
   "date": "October 9, 2026",
   "iso": "2026-10-09",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "act-it-out",
@@ -7202,7 +7422,8 @@ export const letters=[
   "n": 221,
   "date": "October 10, 2026",
   "iso": "2026-10-10",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "what-the-old-diets-had-in-common",
@@ -7231,7 +7452,8 @@ export const letters=[
   "n": 222,
   "date": "October 10, 2026",
   "iso": "2026-10-10",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 4
  },
  {
   "slug": "the-empty-chair",
@@ -7260,7 +7482,8 @@ export const letters=[
   "n": 223,
   "date": "October 11, 2026",
   "iso": "2026-10-11",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "a-b-c",
@@ -7293,7 +7516,8 @@ export const letters=[
   "n": 224,
   "date": "October 12, 2026",
   "iso": "2026-10-12",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "the-suspect-that-was-ignored",
@@ -7326,7 +7550,8 @@ export const letters=[
   "n": 225,
   "date": "October 12, 2026",
   "iso": "2026-10-12",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 4
  },
  {
   "slug": "use-what-s-there",
@@ -7355,7 +7580,8 @@ export const letters=[
   "n": 226,
   "date": "October 13, 2026",
   "iso": "2026-10-13",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "the-family-is-the-patient",
@@ -7388,7 +7614,8 @@ export const letters=[
   "n": 227,
   "date": "October 14, 2026",
   "iso": "2026-10-14",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "the-organ-you-didn-t-know-you-had",
@@ -7413,7 +7640,8 @@ export const letters=[
   "n": 228,
   "date": "October 14, 2026",
   "iso": "2026-10-14",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "practice-the-hard-thing-before-it-comes",
@@ -7446,7 +7674,8 @@ export const letters=[
   "n": 229,
   "date": "October 15, 2026",
   "iso": "2026-10-15",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "how-you-were-wired-to-love",
@@ -7479,7 +7708,8 @@ export const letters=[
   "n": 230,
   "date": "October 16, 2026",
   "iso": "2026-10-16",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "the-second-brain",
@@ -7508,7 +7738,8 @@ export const letters=[
   "n": 231,
   "date": "October 16, 2026",
   "iso": "2026-10-16",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "the-games-people-play",
@@ -7537,7 +7768,8 @@ export const letters=[
   "n": 232,
   "date": "October 17, 2026",
   "iso": "2026-10-17",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "a-self-inside-the-relationship",
@@ -7570,7 +7802,8 @@ export const letters=[
   "n": 233,
   "date": "October 18, 2026",
   "iso": "2026-10-18",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "your-own-curve",
@@ -7603,7 +7836,8 @@ export const letters=[
   "n": 234,
   "date": "October 18, 2026",
   "iso": "2026-10-18",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "belonging-is-the-cure",
@@ -7636,7 +7870,8 @@ export const letters=[
   "n": 235,
   "date": "October 19, 2026",
   "iso": "2026-10-19",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "the-tyranny-of-the-should",
@@ -7665,7 +7900,8 @@ export const letters=[
   "n": 236,
   "date": "October 20, 2026",
   "iso": "2026-10-20",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  },
  {
   "slug": "the-test-in-the-mail",
@@ -7694,6 +7930,7 @@ export const letters=[
   "n": 237,
   "date": "October 20, 2026",
   "iso": "2026-10-20",
-  "month": "October 2026"
+  "month": "October 2026",
+  "chamber": 5
  }
 ];
