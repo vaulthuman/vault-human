@@ -28,7 +28,7 @@ const year = new Date().getFullYear();
       <p class="eyebrow">How it works</p>
       <h1>One method. <em>The whole of you.</em></h1>
       <p class="lede">One key a day. Eleven chambers. Nine gates. A coach the whole way. Here is how it works.</p>
-      <div class="ctarow"><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin with Vault</a></div>
+      <div class="ctarow"><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin with Vault</a><a class="btn btn-line" href="#video" data-watch>Watch the approach video</a></div>
     </div></div></section>
 
     <section class="sec" id="video" style="padding-bottom:0"><div class="wrap">
@@ -139,6 +139,7 @@ v.addEventListener('ended',function(){w.classList.remove('playing');v.controls=f
 })();
 </script>
 <script is:inline>(function(){var h=document.querySelector("header.site");function f(){if(h)h.classList.toggle("scrolled",scrollY>40)}addEventListener("scroll",f,{passive:true});f();document.querySelectorAll(".navdrop__btn").forEach(function(b){b.addEventListener("click",function(e){e.stopPropagation();document.querySelectorAll(".navdrop.open").forEach(function(x){if(x!==b.parentNode)x.classList.remove("open")});var d=b.parentNode,o=!d.classList.contains("open");d.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false")})});document.addEventListener("click",function(e){document.querySelectorAll(".navdrop.open").forEach(function(d){if(!d.contains(e.target)){d.classList.remove("open");d.querySelector(".navdrop__btn").setAttribute("aria-expanded","false")}})});})();</script>
+<script is:inline>document.querySelectorAll("[data-watch]").forEach(function(a){a.addEventListener("click",function(e){var s=document.getElementById("video");if(!s)return;e.preventDefault();s.scrollIntoView({behavior:"smooth",block:"start"});var b=s.querySelector(".vh-play");if(b)setTimeout(function(){b.click()},650);});});</script>
 <script is:inline src="/vh-video.js" defer></script>
 <script is:inline src="/vh-dock.js" defer></script>
 </body></html>
