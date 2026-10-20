@@ -108,7 +108,7 @@ const year = new Date().getFullYear();
   function init(){
     bind();
     var p=document.getElementById('dk-pop');if(!p)return;
-    function open(){if(get('dk_sub'))return;var last=+get('dk_seen')||0;if(Date.now()-last<14*864e5)return;var m=document.getElementById('vh-modal');if(m&&m.classList.contains('is-open'))return;if(document.body.classList.contains('nav-open'))return;put('dk_seen',String(Date.now()));p.classList.add('is-open');p.setAttribute('aria-hidden','false');}
+    function open(){if(get('dk_sub'))return;var last=+get('dk_seen')||0;if(Date.now()-last<14*864e5)return;var m=document.getElementById('vh-modal');if(m&&m.classList.contains('is-open'))return;if(document.body.classList.contains('nav-open'))return;if(document.querySelector('.vpop.open,.vpop.is-open,.vh-film.open,.vh-modal.is-open')||[].some.call(document.querySelectorAll('video'),function(v){return !v.paused&&!v.ended&&!v.muted}))return;put('dk_seen',String(Date.now()));p.classList.add('is-open');p.setAttribute('aria-hidden','false');}
     function close(){p.classList.remove('is-open');p.setAttribute('aria-hidden','true');}
     p.addEventListener('click',function(e){if(e.target.closest('[data-dk-close]'))close();});
     document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
