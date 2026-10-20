@@ -11,7 +11,7 @@
     var hutk=(document.cookie.match(/(?:^|; )hubspotutk=([^;]+)/)||[])[1];
     var ctx={pageUri:location.href,pageName:document.title};if(hutk)ctx.hutk=hutk;
     fetch(URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fields:[{name:'firstname',value:first},{name:'email',value:email}],context:ctx})})
-    .then(function(r){if(!r.ok)throw new Error(r.status);location.href='/thanks/';})
+    .then(function(r){if(!r.ok)throw new Error(r.status);var nx=f.getAttribute('data-next')||'/thanks/';if(nx.charAt(0)==='#'){f.style.display='none';var t=document.querySelector(nx);if(t){t.hidden=false;t.scrollIntoView({behavior:'smooth',block:'start'});}}else{location.href=nx;}})
     .catch(function(){go.disabled=false;go.textContent='Send me the first key';if(err)err.style.display='block';});
   });
 })();
