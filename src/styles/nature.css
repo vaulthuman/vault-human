@@ -552,20 +552,21 @@ button.btn{cursor:pointer;font-family:inherit}
 .vh-modal__fine{margin:10px 0 0;font-size:13px;color:#8E998F;text-align:center}
 
 /* Home: The Vault Approach (heading, then the wheel, then what it is) */
-.appr .sec-head{max-width:860px;margin:0 auto 32px}
 .appr-grid{display:grid;grid-template-columns:1fr;gap:48px;justify-items:center}
 .appr-wheel{width:100%;max-width:860px;background:radial-gradient(circle at 50% 50%,#1C2620 0%,#121715 70%);border-radius:14px;padding:32px 28px 28px}
 .appr-wheel svg{width:100%;height:auto;display:block}
 .appr-cap{margin:14px auto 0;max-width:46ch;text-align:center;color:#C9CFC6;font-size:1rem;text-wrap:balance}
 .appr-cap b{color:#D9B48C;font-weight:600}
-.appr-copy{width:100%;max-width:860px}
+.appr-copy{width:100%}
 .appr-copy .ticks{max-width:none;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));column-gap:40px;margin-bottom:32px}
 .appr-copy .ticks:last-child{margin-bottom:0}
-.appr .appr-photo{width:100%;max-width:860px;margin:0;border-radius:14px;overflow:hidden;aspect-ratio:16/9;background:#1C2620}
+.appr .appr-photo{width:100%;margin:0;border-radius:14px;overflow:hidden;aspect-ratio:21/9;background:#1C2620}
+.mtiles{margin-bottom:48px}
+.mtiles .pcard{cursor:default}
 .appr .appr-photo img{width:100%;height:100%;object-fit:cover;display:block}
 #problem{padding-top:0}
 .wheel .wa-in{stroke-width:4}
 .wheel .wa-flow{fill:none;stroke:#F1EDE4;stroke-width:4;stroke-linecap:round;stroke-dasharray:2 22;opacity:.55;animation:wa-flow 1.6s linear infinite}
 @keyframes wa-flow{to{stroke-dashoffset:-24}}
 @media(prefers-reduced-motion:reduce){.wheel .wa-flow{animation:none;display:none}}
-@media(max-width:900px){.appr-wheel{padding:20px 8px}.appr-copy .ticks{grid-template-columns:1fr}}
+@media(max-width:900px){.appr .appr-photo{aspect-ratio:4/3}.appr-wheel{padding:20px 8px}.appr-copy .ticks{grid-template-columns:1fr}}
