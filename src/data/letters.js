@@ -7932,5 +7932,35 @@ export const letters=[
   "iso": "2026-10-20",
   "month": "October 2026",
   "chamber": 5
+ },
+ {
+  "slug": "the-four-givens",
+  "title": "The four givens",
+  "dek": "Irvin Yalom tells of a patient who came to him afraid of dying, and who left, months later, more alive than she'd been in years.",
+  "day": 159,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Irvin Yalom tells of a patient who came to him afraid of dying, and who left, months later, more alive than she'd been in years. That is existential psychotherapy in one sentence, and it's today's key."
+   },
+   {
+    "k": "",
+    "t": "The school came to America in 1958, when a psychologist named Rollo May co-edited a book called <em>Existence</em> and introduced his country to the European idea that a person's deepest troubles aren't symptoms to be removed but questions to be faced. May had earned the right to say so. In his thirties he spent more than a year in a sanatorium with tuberculosis, with nothing to do but wait and read, and he noticed that the patients who handed themselves over to the doctors did worse than the ones who took up the fight themselves. He read Kierkegaard in that bed and wrote <em>The Meaning of Anxiety</em> out of it: anxiety isn't a malfunction. It's what a free person feels standing in front of a real choice."
+   },
+   {
+    "k": "",
+    "t": "Yalom, a Stanford psychiatrist, gave the school its map in 1980. Four givens of being alive, none of them fixable. Death: it ends. Freedom: no one is coming to tell you what to do with it. Isolation: however loved you are, you came in alone and you go out alone. Meaning: the universe doesn't supply one; you do. Most of what hurts, Yalom said, is a quarrel with one of those four, and the quarrel is lost before it starts. What's left, once you stop quarreling, is the work: to live on purpose, in the time you have, with the people you choose, for reasons you can say out loud. Ernest Becker, whose <em>The Denial of Death</em> won a Pulitzer in 1974, two months after he died, put it more bluntly. The one thing we spend the most energy not looking at is the one thing that would make us live."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because this month is for naming what's hidden, and these four are the most hidden of all. Vault Human coaches and doesn't treat; if the fear is heavy, the door is an existential or humanistic therapist. The practice is for everyone. Yalom's own way was never to argue a patient out of the fear of death, but to stand in it with them until it turned, as it reliably does, into an appetite for the life that's left."
+   }
+  ],
+  "n": 238,
+  "date": "October 21, 2026",
+  "iso": "2026-10-21",
+  "month": "October 2026",
+  "chamber": 5
  }
 ];
