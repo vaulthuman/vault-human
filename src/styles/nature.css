@@ -559,7 +559,11 @@ button.btn{cursor:pointer;font-family:inherit}
 .appr-cap{margin:14px auto 0;max-width:46ch;text-align:center;color:#C9CFC6;font-size:1rem;text-wrap:balance}
 .appr-cap b{color:#D9B48C;font-weight:600}
 .appr-copy{width:100%;max-width:860px}
-.appr-copy .ticks{max-width:none;grid-template-columns:1fr 1fr;column-gap:40px;margin-bottom:32px}
+.appr-copy .ticks{max-width:none;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));column-gap:40px;margin-bottom:32px}
+.appr-copy .ticks:last-child{margin-bottom:0}
+.appr .appr-photo{width:100%;max-width:860px;margin:0;border-radius:14px;overflow:hidden;aspect-ratio:16/9;background:#1C2620}
+.appr .appr-photo img{width:100%;height:100%;object-fit:cover;display:block}
+#problem{padding-top:0}
 .wheel .wa-in{stroke-width:4}
 .wheel .wa-flow{fill:none;stroke:#F1EDE4;stroke-width:4;stroke-linecap:round;stroke-dasharray:2 22;opacity:.55;animation:wa-flow 1.6s linear infinite}
 @keyframes wa-flow{to{stroke-dashoffset:-24}}
