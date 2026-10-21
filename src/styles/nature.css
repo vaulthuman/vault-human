@@ -564,7 +564,6 @@ button.btn{cursor:pointer;font-family:inherit}
 .mtiles{margin-bottom:48px}
 .mtiles .pcard{cursor:default}
 .appr .appr-photo img{width:100%;height:100%;object-fit:cover;display:block}
-#problem{padding-top:0}
 .wheel .wa-in{stroke-width:4}
 .wheel .wa-flow{fill:none;stroke:#F1EDE4;stroke-width:4;stroke-linecap:round;stroke-dasharray:2 22;opacity:.55;animation:wa-flow 1.6s linear infinite}
 @keyframes wa-flow{to{stroke-dashoffset:-24}}
