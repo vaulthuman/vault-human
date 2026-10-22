@@ -7962,5 +7962,65 @@ export const letters=[
   "iso": "2026-10-21",
   "month": "October 2026",
   "chamber": 5
+ },
+ {
+  "slug": "the-problem-is-the-problem",
+  "title": "The problem is the problem",
+  "dek": "\"The person is not the problem. The problem is the problem.\"",
+  "day": 160,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"The person is not the problem. The problem is the problem.\" Michael White said it so often that it became the motto of a whole school of therapy, and it's today's key."
+   },
+   {
+    "k": "",
+    "t": "White was a social worker in Adelaide, Australia, and David Epston a family therapist in Auckland, New Zealand, and through the 1980s, with the Tasman Sea between them, they built narrative therapy, written down in 1990 in <em>Narrative Means to Therapeutic Ends</em>. Their starting point was simple and, at the time, radical. People live inside stories. A child who's been called \"the difficult one\" a thousand times starts to narrate her own life that way; a man who has decided he's a failure reads each day's evidence through that one sentence. The story isn't false, exactly. It's thin. It has left out everything that didn't fit."
+   },
+   {
+    "k": "",
+    "t": "White's first famous cases were children who kept soiling themselves, and families worn down by it. He gave the problem a name, Sneaky Poo, and talked about it as a thing outside the child that had been pushing the whole family around. Who's winning this week, you or Sneaky Poo? The child stopped being the problem and became the one fighting it, and the families began to win. That move is called externalizing, and it's the heart of the method. Once the problem is out there with a name, you can study its tactics and count the times it didn't win. White called those unique outcomes: the Tuesday the anger didn't take over, the morning the worry lost. Re-authoring is the slow work of collecting them until a richer story has enough evidence to stand on. Epston's part was letters. After a session he'd write to the person, in their own words, so the new story existed on paper where they could read it again. White died suddenly in 2008, at fifty-nine; the Dulwich Centre he founded in Adelaide still teaches the work."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because this month is for naming what's hidden, and the most hidden thing of all is often the story we didn't know we were telling. Vault Human coaches and doesn't treat; if the story is heavy, the door is a narrative therapist. The practice is for everyone, and it begins with grammar. Not \"I am anxious\" but \"anxiety has been visiting.\" Not \"I'm a mess\" but \"the mess has been winning lately.\" Say it that way and watch the distance open between you and it."
+   }
+  ],
+  "n": 239,
+  "date": "October 22, 2026",
+  "iso": "2026-10-22",
+  "month": "October 2026",
+  "chamber": 5
+ },
+ {
+  "slug": "the-sour-milk-cure",
+  "title": "The sour milk cure",
+  "dek": "In 1907 a Russian-born zoologist at the Pasteur Institute in Paris, Élie Metchnikoff, published a book called <em>The Prolongation of Life</em>, and in it he made a claim…",
+  "day": 160,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1907 a Russian-born zoologist at the Pasteur Institute in Paris, Élie Metchnikoff, published a book called <em>The Prolongation of Life</em>, and in it he made a claim that made him a celebrity and, for a century, something of a joke. The peasants of Bulgaria, he'd read, lived unusually long, and they drank soured milk every day. Metchnikoff decided the lactic-acid bacteria in that milk were crowding out the putrefying microbes in the gut, and that the gut's rot was what aged a person. So he drank sour milk daily and told Europe to do the same. Yogurt sales rose. He won the Nobel Prize the next year, for other work, the discovery of the cells that swallow invaders, and died in 1916 at seventy-one, which the newspapers noted was not the century he'd promised."
+   },
+   {
+    "k": "",
+    "t": "Here is the part that's not a joke. In 2021 a team at Stanford, Justin and Erica Sonnenburg with Christopher Gardner, ran a trial in which thirty-six healthy adults ate, for ten weeks, either a diet high in fiber or a diet high in fermented food: yogurt, kefir, kimchi, sauerkraut, kombucha, fermented vegetables, building up to about six servings a day. The fermented-food group's gut microbiomes became measurably more diverse, and nineteen markers of inflammation in their blood went down. The fiber group's diversity, on average, didn't rise in ten weeks. Metchnikoff's mechanism was wrong and his instinct was right."
+   },
+   {
+    "k": "",
+    "t": "I'll say the plain thing about probiotics, the capsules. The evidence for particular strains in particular conditions is real; the evidence that a pill does much for a healthy person is thin, and the supplement shelf is lightly regulated. The trial was food. Food is where the evidence is."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because the gut keys this month are the hidden numbers, and this one is the easiest to move: diversity rose in weeks, in people who were already well. Live-culture food is fine for nearly everyone. If your immune system is suppressed, or your gut has been wrong for more than a month, the door is your physician; Vault Human coaches and doesn't treat."
+   }
+  ],
+  "n": 240,
+  "date": "October 22, 2026",
+  "iso": "2026-10-22",
+  "month": "October 2026",
+  "chamber": 5
  }
 ];
