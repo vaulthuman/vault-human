@@ -58,6 +58,8 @@ const year = new Date().getFullYear();
     .card h3{font-size:28px;margin:0 0 6px}.card p{margin:0;color:var(--muted);font-size:15.5px}
     .price{font-family:"Bebas Neue";font-size:42px}.price small{font-family:Inter;font-size:15px;color:var(--muted)}
     details{border-top:1px solid var(--line);padding:14px 0}details summary{cursor:pointer;font-weight:600}details p{color:var(--muted);margin:8px 0 0}
+    .peeks{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:end}.peeks a{text-decoration:none;display:flex;flex-direction:column;gap:6px}.peeks img{height:300px;width:auto;max-width:100%;object-fit:contain;align-self:flex-start;border-radius:4px;box-shadow:0 14px 30px rgba(0,0,0,.45)}.peeks img.ph{border-radius:22px;border:6px solid #0B0F0C}.peeks b{font-size:17px;margin-top:10px}.peeks span{font-size:14.5px;color:var(--muted)}
+    @media (max-width:760px){.peeks{grid-template-columns:1fr 1fr 1fr;gap:10px}.peeks img{height:180px}.peeks img.ph{border-width:3px;border-radius:12px}.peeks b{font-size:14px}.peeks span{display:none}}
     footer{padding:28px 0 40px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
     @media (max-width:760px){.hero{min-height:520px}.cta .btn{width:100%}.cta .fine{text-align:center}.steps,.grid3{grid-template-columns:1fr}section{padding:44px 0}}
   </style>
@@ -89,6 +91,17 @@ const year = new Date().getFullYear();
       </div>
     </div>
     <script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </div></section>
+
+  <section id="inside"><div class="wrap">
+    <p class="eyebrow">After the call</p>
+    <h2>What you get.</h2>
+    <div class="peeks">
+      <a href="/inside/#booklet"><img src="/img/inside/booklet-cover.jpg" alt="Cover of the Key 01 booklet, Go Outside" width="800" height="1035" loading="lazy" /><b>A booklet for every key</b><span>The teaching, the practice, the worksheets</span></a>
+      <a href="/inside/#app"><img class="ph" src="/img/inside/app-capture.jpg" alt="The Vault app capture screen" width="560" height="1212" loading="lazy" /><b>The app on your phone</b><span>Your practice and a private folder</span></a>
+      <a href="/inside/#words"><img class="ph" src="/img/inside/letter.jpg" alt="The morning letter on a phone" width="560" height="1212" loading="lazy" /><b>A letter every morning</b><span>One short teaching to start the day</span></a>
+    </div>
+    <p class="fine"><a href="/inside/" style="color:#B3C6A3;font-weight:600">Look inside →</a></p>
   </div></section>
 
   <section class="alt"><div class="wrap">
