@@ -1,0 +1,341 @@
+---
+// Keyholders — an unlisted page for people Russ invites. Not in the nav or sitemap.
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For our Keyholders — Vault Human</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="An invitation to see what Vault Human is building, and to walk it with us." />
+  <meta property="og:title" content="For our Keyholders — Vault Human" /><meta property="og:description" content="A coach every day. For the whole of you. An invitation to see what we are building." /><meta property="og:image" content="https://www.vaulthuman.com/og-vaulthuman.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,wght@0,400;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18371546487"></script>
+  <script is:inline>
+    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};var gtag=window.gtag;
+    gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD');
+  </script>
+  <style is:inline>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#101511;--bg2:#141a16;--card:#171e19;--line:#263028;--ink:#EDEBE4;--soft:#c9cdc6;--mute:#8f988f;--sage:#8FA67E;--past:#D2A576;--now:#9DC0DE;--fut:#A9C397}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+    section{padding:96px 0}
+    .alt{background:var(--bg2)}
+    .eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:14px}
+    h1,h2{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:.5px;line-height:.95}
+    h1{font-size:clamp(56px,9vw,112px)}
+    h2{font-size:clamp(40px,6vw,66px);margin-bottom:18px}
+    h3{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:26px;letter-spacing:.6px;margin-bottom:6px}
+    p{font-size:16px;color:var(--soft)}
+    .lede{font-size:20px;line-height:1.5;color:var(--ink);max-width:760px}
+    .serif{font-family:Fraunces,serif;font-style:italic}
+    .bar{height:3px;width:64px;border-radius:2px;background:var(--sage);margin:24px 0}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+    .card p{font-size:15px}
+    .num{font-family:'Bebas Neue';font-size:54px;color:var(--sage);line-height:1}
+    .tile{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+    .tile .ph{aspect-ratio:4/3;background-size:cover;background-position:center 25%}
+    .tile .t{padding:18px 20px}
+    .tile .t p{font-size:14.5px}
+    .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;padding:0 0 80px;background:url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=2000&q=80&auto=format&fit=crop) center/cover}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,13,11,.2) 0%,rgba(10,13,11,.5) 45%,rgba(10,13,11,.97) 100%)}
+    .hero .wrap{position:relative;z-index:2}
+    .topbar{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:28px 24px;max-width:1080px;margin:0 auto}
+    .brand{font-family:'Bebas Neue';font-size:24px;letter-spacing:6px}
+    .brand b{color:var(--sage);font-weight:400}
+    .topbar a.site{font-size:11px;letter-spacing:3px;color:var(--soft)}
+    .letter{display:grid;grid-template-columns:300px 1fr;gap:56px;align-items:start}
+    .letter img{border-radius:12px;width:100%}
+    .letter p{font-size:17px;margin-bottom:18px}
+    .why{position:relative;background:url(https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=2000&q=80&auto=format&fit=crop) center 35%/cover}
+    .why:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,21,17,.35),rgba(16,21,17,.97) 65%)}
+    .why .wrap{position:relative;z-index:2;padding-top:30vh}
+    table{width:100%;border-collapse:collapse;font-size:15px}
+    th{text-align:left;font-weight:600;color:var(--sage);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:12px;border-bottom:1px solid #2c352e}
+    td{padding:13px 12px;border-bottom:1px solid #222a24;color:var(--soft);vertical-align:top}
+    td b{color:var(--ink)}
+    .cap{font-size:12.5px;color:var(--mute);margin-top:10px;line-height:1.4}
+    .phone{border-radius:22px;border:2px solid var(--line);overflow:hidden}
+    .svgw svg{width:100%;height:auto}
+    .coachgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;grid-template-rows:240px 240px;gap:14px}
+    .coachgrid > div{border-radius:12px;overflow:hidden;position:relative}
+    .coachgrid img,.coachgrid video{width:100%;height:100%;object-fit:cover;object-position:center 25%}
+    .coachgrid .big{grid-row:1/3}
+    .vid{position:relative;border-radius:16px;overflow:hidden;background:#000;aspect-ratio:16/9}
+    .vid video{width:100%;height:100%;display:block}
+    .fine{padding:120px 0 60px}
+    .fine p{font-size:12px;color:var(--mute);max-width:820px;line-height:1.6}
+    .step{display:flex;gap:18px;align-items:flex-start}
+    .step .num{font-size:40px;min-width:40px}
+    .wheelrow{grid-template-columns:1.15fr 1fr;gap:40px;align-items:center}
+    @media (max-width:860px){
+      section{padding:72px 0}
+      .grid2,.grid3,.grid4{grid-template-columns:1fr 1fr}
+      .letter{grid-template-columns:1fr}
+      .letter img{max-width:260px}
+      .coachgrid{grid-template-columns:1fr 1fr;grid-template-rows:260px 180px 180px}
+      .coachgrid .big{grid-column:1/3;grid-row:1}
+      .hero{min-height:80vh}
+    }
+    @media (max-width:560px){
+      .grid2,.grid3,.grid4{grid-template-columns:1fr}
+      .coachgrid{grid-template-columns:1fr 1fr;grid-template-rows:220px 150px 150px}
+      .wheelrow{grid-template-columns:1fr}
+      .phone{max-width:240px!important}
+      h2{font-size:44px}
+      .lede{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="topbar"><a class="brand" href="/">VAULT <b>HUMAN</b></a><a class="site" href="https://www.vaulthuman.com/">VAULTHUMAN.COM</a></div>
+  <div class="wrap">
+    <p class="eyebrow">For our Keyholders</p>
+    <h1>A coach every day.<br><span style="color:var(--sage)">For the whole of you.</span></h1>
+    <div class="bar"></div>
+    <p class="serif" style="font-size:24px;color:var(--ink);max-width:640px">An invitation to see what we are building, and to walk it with us.</p>
+  </div>
+</header>
+
+<section id="letter">
+  <div class="wrap letter">
+    <div>
+      <img src="/russ-michaels.jpg" alt="Russ Michaels" />
+      <p class="cap">Russ Michaels<br>Founder, Vault Human</p>
+    </div>
+    <div>
+      <p class="eyebrow">A letter</p>
+      <h2>Dear Keyholder,</h2>
+      <p style="color:var(--ink)">Thank you for opening this. Before I show you anything, I want you to know why it exists.</p>
+      <p>Most of us were handed the pieces of ourselves, never the whole. A little advice here, a lesson there, a hard season we walked through alone. We learned to get by. Very few of us were ever taught how to grow on purpose, a day at a time, with someone in our corner.</p>
+      <p>I have spent more than twenty years leading organizations and sitting with people in the moments that shape them. What I have seen, over and over, is that people are far bigger than the stories they have been told about themselves. When someone feels heard, seen and believed in, they rise. Almost always.</p>
+      <p>Vault Human is my answer to that. Each morning, a short key arrives: something to learn, something to love, something to live. You take one small step. You write down what you notice. A coach walks beside you. Over a year, it comes full circle, and you come home to more of yourself.</p>
+      <p>And here is the part that moves me most. When one person grows, everyone who loves them feels it. A mother who finally feels heard. A teenager who learns early that his voice matters. A father who finds his footing again. A team that starts telling each other the truth. That is how the world gets kinder: one person, one day, one key at a time.</p>
+      <p>You are receiving this because you are someone I trust to see it early. I would love for you to walk it with us.</p>
+      <p class="serif" style="font-size:24px;color:var(--ink);margin-top:28px">With gratitude,<br>Russ</p>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <p class="eyebrow">Why we exist</p>
+    <h1 style="font-size:clamp(48px,7vw,92px)">Big, not small.<br><span style="color:var(--sage)">Empowered, not disempowered.</span></h1>
+    <p class="lede" style="margin-top:22px">We believe every person carries more than they have been told. Vault Human exists to help people grow into it, and to finish each day a little more of who they are.</p>
+    <div class="grid3" style="margin-top:40px">
+      <div class="card" style="border-top:3px solid var(--past)"><h3 style="color:var(--past)">Seen</h3><p>Your past honored, not erased. What shaped you becomes something you can work with.</p></div>
+      <div class="card" style="border-top:3px solid var(--now)"><h3 style="color:var(--now)">Heard</h3><p>Your voice in the present, all the way to the end of what you have to say.</p></div>
+      <div class="card" style="border-top:3px solid var(--fut)"><h3 style="color:var(--fut)">Empowered</h3><p>Your future, chosen on purpose and lived into, one day at a time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="who">
+  <div class="wrap">
+    <p class="eyebrow">Who it is for</p>
+    <h2>Life does not wait<br>until we are ready.</h2>
+    <p class="lede">Picture the people you love. One of them is carrying something right now.</p>
+    <div class="grid2" style="margin-top:36px">
+      <div class="tile"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1475609471617-0ef53b59cff5?w=1000&q=80&auto=format&fit=crop);background-position:center 18%"></div><div class="t"><h3>The mother</h3><p>She gives all day and goes to bed last. Ten quiet minutes each morning become the one place where someone asks how <i>she</i> is, and listens.</p></div></div>
+      <div class="tile"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1758272959140-e727ef77bbda?w=1200&q=80&auto=format&fit=crop);background-position:center 30%"></div><div class="t"><h3>The teenager</h3><p>Sixteen, and the world is loud. A daily key teaches him to notice his own mind, to speak up, and to trust that he is more than a screen says he is.</p></div></div>
+      <div class="tile"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1616587894289-86480e533129?w=1200&q=80&auto=format&fit=crop);background-position:center 30%"></div><div class="t"><h3>The father</h3><p>Steady for everyone else, unsure inside. A coach on a call, a page to write on, and a path that does not ask him to have it all figured out.</p></div></div>
+      <div class="tile"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1752659504423-87916d12bc37?w=1200&q=80&auto=format&fit=crop);background-position:center 30%"></div><div class="t"><h3>The team</h3><p>Talented people, talking past each other. When a team walks the same keys together, they start listening, and the work gets lighter.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="get-1">
+  <div class="wrap">
+    <p class="eyebrow">What you get · one</p>
+    <h2>You get your life back.</h2>
+    <p class="lede">Your past, your present and your future, held together instead of in pieces. That is the whole idea of the Vault Approach: one year that moves through all three, so you can see where you came from, stand where you are, and choose where you are going.</p>
+    <div class="svgw" style="margin:36px 0 28px;max-width:760px"><svg viewBox="0 0 680 88" width="680" height="88"><polygon points="0.0,0 200.66666666666666,0 218.66666666666666,26 200.66666666666666,52 0.0,52 0.0,26" fill="#D2A576" fill-opacity="0.16" stroke="#D2A576" stroke-width="1.5"/><text x="109.33333333333333" y="22" text-anchor="middle" font-family="Bebas Neue" font-size="17" letter-spacing="2" fill="#D2A576">PAST</text><text x="109.33333333333333" y="40" text-anchor="middle" font-family="Inter" font-size="11" fill="#dfe3dc">Learn · as learned</text><polygon points="230.66666666666666,0 431.3333333333333,0 449.3333333333333,26 431.3333333333333,52 230.66666666666666,52 248.66666666666666,26" fill="#9DC0DE" fill-opacity="0.16" stroke="#9DC0DE" stroke-width="1.5"/><text x="340.0" y="22" text-anchor="middle" font-family="Bebas Neue" font-size="17" letter-spacing="2" fill="#9DC0DE">PRESENT</text><text x="340.0" y="40" text-anchor="middle" font-family="Inter" font-size="11" fill="#dfe3dc">Love · as loved</text><polygon points="461.3333333333333,0 662.0,0 680.0,26 662.0,52 461.3333333333333,52 479.3333333333333,26" fill="#A9C397" fill-opacity="0.16" stroke="#A9C397" stroke-width="1.5"/><text x="570.6666666666666" y="22" text-anchor="middle" font-family="Bebas Neue" font-size="17" letter-spacing="2" fill="#A9C397">FUTURE</text><text x="570.6666666666666" y="40" text-anchor="middle" font-family="Inter" font-size="11" fill="#dfe3dc">Live · as lived</text><rect x="0" y="62" width="680" height="22" rx="11" fill="none" stroke="#8FA67E" stroke-width="1.2" stroke-dasharray="4 5"/><text x="340.0" y="77" text-anchor="middle" font-family="Inter" font-size="10.5" letter-spacing="3" fill="#8FA67E">LISTEN · ALL YEAR · AS HEARD, AS DISCERNED, AS CREATED</text></svg></div>
+    <div class="grid2 wheelrow">
+      <img src="/img/keyholders/wheel.png" alt="The Vault Approach wheel: one year, eleven chambers, nine gates" style="border-radius:14px" />
+      <div>
+        <h3 style="font-size:30px">One year. Eleven chambers. Nine gates.</h3>
+        <p style="margin-bottom:16px">The year moves through eleven chambers, one part of your life at a time. Along the way are nine gates, and each one opens when a daily practice stops being something you try and becomes something you live.</p>
+        <p style="margin-bottom:16px">You begin with yourself, honor what shaped you, rest in the middle, and finish by giving something back. Gates, not dates: nothing is due on anyone else's clock.</p>
+        <p class="serif" style="color:var(--ink);font-size:19px">Full circle. One year. The whole of you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="get-2">
+  <div class="wrap">
+    <p class="eyebrow">What you get · two</p>
+    <h2>You get the keys.</h2>
+    <p class="lede">Every chamber opens with keys: short teachings, each with one small practice. A key arrives each morning. You carry it through the day. When the practice holds, the key turns, and the gate opens.</p>
+    <div class="grid2" style="margin-top:44px;align-items:center;gap:48px">
+      <div style="display:flex;justify-content:center"><img class="phone" src="/img/inside/letter.jpg" alt="The morning letter, Who Made You, on a phone" style="max-width:300px" /></div>
+      <div>
+        <p class="eyebrow">Your first key</p>
+        <h3 style="font-size:40px">Who made you.</h3>
+        <p style="margin-bottom:14px;color:var(--ink);font-size:17px">Someone believed in you before you believed in yourself. Maybe it was a teacher who kept you after class, a coach who wouldn't let you quit on a bad day, a boss who handed you the keys and walked out the door. Most of them never heard what it meant.</p>
+        <p>That is the first key. A short morning letter, one small practice, and a week to carry it. Three moves: name them, write it down, read it to them. You are not the only one who changes when it's read out loud.</p>
+      </div>
+    </div>
+    <div class="grid4" style="margin-top:48px">
+      <div><img src="/img/inside/booklet-cover.jpg" alt="" style="border-radius:10px" /><p class="cap">The booklet: a key you can hold</p></div>
+      <div><img src="/img/inside/booklet-day1.jpg" alt="" style="border-radius:10px" /><p class="cap">Day one: the name</p></div>
+      <div><img src="/img/inside/booklet-key.jpg" alt="" style="border-radius:10px" /><p class="cap">The teaching, in plain words</p></div>
+      <div><img src="/img/inside/booklet-practice.jpg" alt="" style="border-radius:10px" /><p class="cap">Three moves, one week</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="get-3">
+  <div class="wrap">
+    <p class="eyebrow">What you get · three</p>
+    <h2>You get the tools,<br>and a coach.</h2>
+    <p class="lede">A letter every morning. A booklet for every key. An app that captures your work, any hour, from anywhere in the world. And a real person in your corner.</p>
+    <div class="grid3" style="margin-top:40px">
+      <div class="tile"><div class="ph" style="aspect-ratio:3/4;background-image:url(/img/inside/letter.jpg);background-position:center top"></div><div class="t"><h3>The letter</h3><p>Every morning, in your inbox and your app. One teaching, one practice.</p></div></div>
+      <div class="tile"><div class="ph" style="aspect-ratio:3/4;background-image:url(/img/inside/booklet-cover.jpg);background-position:center top"></div><div class="t"><h3>The booklet</h3><p>Each key as something you can hold, print and keep.</p></div></div>
+      <div class="tile"><div class="ph" style="aspect-ratio:3/4;background-image:url(/img/inside/app-capture.jpg);background-position:center top"></div><div class="t"><h3>The capture tool</h3><p>Write it, say it or snap it the moment it lands. A private folder that becomes your year in your own words.</p></div></div>
+    </div>
+
+    <div style="margin-top:88px">
+      <p class="eyebrow">The coach</p>
+      <h2>A real person<br>in your corner.</h2>
+      <p class="lede">Russ Michaels created Vault Human and coaches every member. More than twenty years leading organizations, more than ten as a chief executive and board president, more than ten as an attorney, and a decade in hospitality, where he learned that people wait patiently when they know they have been seen.</p>
+      <div class="coachgrid" style="margin-top:36px">
+        <div class="big"><video autoplay muted loop playsinline poster="/img/russ/coach/coach-point.jpg" aria-label="Russ on stage"><source src="/img/russ/coach/coach-point.mp4" type="video/mp4" /></video></div>
+        <div><img src="/img/russ/strip/friend.jpg" alt="" style="object-position:center 30%" /></div>
+        <div><img src="https://images.unsplash.com/photo-1565813086292-604790c8a97b?w=1200&q=80&auto=format&fit=crop" alt="" style="object-position:center 35%" /></div>
+        <div><img src="/img/russ/coach/coach-field.jpg" alt="" style="object-position:center 40%" /></div>
+        <div><img src="https://images.unsplash.com/photo-1542323228-002ac256e7b8?w=1200&q=80&auto=format&fit=crop" alt="" style="object-position:center 45%" /></div>
+      </div>
+      <div class="grid3" style="margin-top:28px">
+        <div class="card"><h3>Every member</h3><p>A live group call with Russ each month, recorded for anyone who cannot attend.</p></div>
+        <div class="card"><h3>Circles</h3><p>Small groups of six who walk the chambers together, twice a month.</p></div>
+        <div class="card"><h3>One-on-one</h3><p>Three private sessions a month for those who want to go deeper.</p></div>
+      </div>
+      <p class="serif" style="font-size:19px;color:var(--ink);margin-top:28px;text-align:center">Coaching, not therapy. A person, not a program.</p>
+    </div>
+  </div>
+</section>
+
+<section id="membership">
+  <div class="wrap">
+    <p class="eyebrow">The plan · why membership</p>
+    <h2>Built on the<br><span style="color:var(--sage)">forever relationship.</span></h2>
+    <p class="lede">The strongest personal-growth companies no longer sell one course at a time. They invite people into a membership and keep earning their trust, month after month. Robbie Kellman Baxter calls it "the forever transaction" in <i>The Membership Economy</i>.</p>
+    <div class="grid3" style="margin-top:36px">
+      <div class="card"><div class="num">$51B</div><p>Global personal development market in 2025, projected near $80B by 2033 (Grand View Research).</p></div>
+      <div class="card"><div class="num">122,974</div><p>Coaches worldwide, up 15% since 2023, in a $5.34B coaching industry (ICF Global Coaching Study, 2025).</p></div>
+      <div class="card"><div class="num">11%</div><p>Faster revenue growth for subscription companies than the S&amp;P 500 over two years (Zuora Subscription Economy Index, 2025).</p></div>
+    </div>
+    <div class="grid2" style="margin-top:22px">
+      <div class="card"><h3>Keeping members is the whole game</h3><p>Bain &amp; Company research by Frederick Reichheld found a 5% rise in retention lifts profit 25% to 95%. Keeping a member costs a fraction of finding a new one (Harvard Business Review, 2014).</p></div>
+      <div class="card"><h3>The closest model: Mindvalley</h3><p>A global personal-growth membership: every program, community and author sessions for $99 a month or $499 a year, with a Pro tier that adds live sessions with its founder. Brendon Burchard's GrowthDay runs a similar daily-coaching membership.</p></div>
+    </div>
+    <div class="card" style="margin-top:22px;border-left:3px solid var(--sage)"><p style="color:var(--ink)"><b>Where Vault Human is different:</b> a single guided year instead of a library to browse, a real coach inside every membership, and a capture tool that turns each day's practice into a record of who you are becoming.</p></div>
+  </div>
+</section>
+
+<section class="alt" id="paths">
+  <div class="wrap">
+    <p class="eyebrow">The plan · how people arrive</p>
+    <h2>Every path runs<br>through the membership.</h2>
+    <p class="lede">However someone finds us, they begin as a member. Deeper coaching is added on top, and the membership keeps renewing underneath.</p>
+    <div class="svgw" style="margin:36px auto 0;max-width:760px"><svg viewBox="0 0 700 520" width="700" height="520"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9aa39b"/></marker><marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8FA67E"/></marker></defs><circle cx="350" cy="270" r="118" fill="none" stroke="#8FA67E" stroke-width="1.2" stroke-dasharray="5 6"/><circle cx="350" cy="270" r="92" fill="#8FA67E" fill-opacity="0.18" stroke="#8FA67E" stroke-width="2.5"/><text x="350" y="254" text-anchor="middle" font-family="Bebas Neue" font-size="30" fill="#EDEBE4">MEMBERSHIP</text><text x="350" y="278" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#dfe3dc">$99 a month · $990 a year</text><text x="350" y="298" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#dfe3dc">renews every month</text><text x="350" y="142" text-anchor="middle" font-family="Inter" font-size="11" fill="#8FA67E" letter-spacing="2">RECURRING</text><rect x="24" y="50" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="75" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">LinkedIn &amp; social media</text><path d="M224 70 L283.5 167.7" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="24" y="122" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="147" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">Google Ads &amp; search</text><path d="M224 142 L263.1 184.4" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="24" y="194" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="219" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">The free Vault Key</text><path d="M224 214 L238.0 221.7" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="24" y="266" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="291" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">Group sessions &amp; weekends</text><path d="M224 286 L228.9 284.9" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="24" y="338" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="363" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">Tercet Law clients</text><path d="M224 358 L249.0 338.4" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="24" y="410" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="435" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">Friends &amp; referrals</text><path d="M224 430 L273.1 364.7" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="486" y="108" width="190" height="44" rx="10" fill="#8FA67E" fill-opacity="0.12" stroke="#8FA67E"/><text x="581.0" y="135" text-anchor="middle" font-family="Inter" font-weight="600" font-size="12.5" fill="#EDEBE4">One-on-one coaching</text><path d="M435.0 182.5 L482 130" stroke="#8FA67E" stroke-width="1.5" marker-end="url(#ag)"/><rect x="486" y="200" width="190" height="44" rx="10" fill="#8FA67E" fill-opacity="0.12" stroke="#8FA67E"/><text x="581.0" y="227" text-anchor="middle" font-family="Inter" font-weight="600" font-size="12.5" fill="#EDEBE4">Circles &amp; groups</text><path d="M465.0 229.4 L482 222" stroke="#8FA67E" stroke-width="1.5" marker-end="url(#ag)"/><rect x="486" y="292" width="190" height="44" rx="10" fill="#8FA67E" fill-opacity="0.12" stroke="#8FA67E"/><text x="581.0" y="319" text-anchor="middle" font-family="Inter" font-weight="600" font-size="12.5" fill="#EDEBE4">Families &amp; teens</text><path d="M466.1 307.6 L482 314" stroke="#8FA67E" stroke-width="1.5" marker-end="url(#ag)"/><rect x="486" y="384" width="190" height="44" rx="10" fill="#8FA67E" fill-opacity="0.12" stroke="#8FA67E"/><text x="581.0" y="411" text-anchor="middle" font-family="Inter" font-weight="600" font-size="12.5" fill="#EDEBE4">Teams &amp; business</text><path d="M436.3 356.3 L482 406" stroke="#8FA67E" stroke-width="1.5" marker-end="url(#ag)"/><text x="122" y="22" text-anchor="middle" font-family="Inter" font-size="11" letter-spacing="2" fill="#9aa39b">WAYS IN</text><text x="581" y="80" text-anchor="middle" font-family="Inter" font-size="11" letter-spacing="2" fill="#8FA67E">WAYS UP</text></svg></div>
+    <div class="grid2" style="margin-top:28px">
+      <div class="card"><h3>Events feed the year</h3><p>A weekend or group day is a powerful start, but no one can walk eleven chambers in two days. Every event closes with an invitation into membership, so the work continues at each person's own pace.</p></div>
+      <div class="card"><h3>Members become clients</h3><p>One-on-one, circles and team coaching grow out of members who want more. The warmest client is someone already doing the work.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="revenue">
+  <div class="wrap">
+    <p class="eyebrow">The plan · how revenue works</p>
+    <h2>Recurring by design.</h2>
+    <p class="lede">Once a key is written and filmed, serving the five-hundredth member costs almost nothing more than serving the fifth. That is why membership behaves like cash flow: the work is done once, and it keeps giving.</p>
+    <div style="overflow-x:auto;margin-top:32px"><table>
+      <tr><th>Offer</th><th>Price</th><th>What it is</th></tr>
+      <tr><td><b>The free Vault Key</b></td><td>Free</td><td>A first key by email. The front door.</td></tr>
+      <tr><td><b>Membership</b></td><td>$99 a month or $990 a year</td><td>The full year of keys, the app, and a monthly live call with Russ</td></tr>
+      <tr><td><b>Teen Path</b> <span style="color:var(--sage);font-size:12px">· coming</span></td><td>Proposed $49 a month</td><td>A curated year for ages 13 to 17, bought by a parent, with virtual teen calls</td></tr>
+      <tr><td><b>Family plan</b> <span style="color:var(--sage);font-size:12px">· coming</span></td><td>Proposed about $129 a month</td><td>A parent and a teen walking parallel paths</td></tr>
+      <tr><td><b>Circles</b></td><td>$200 per person a month</td><td>Groups of five to ten, twice a month</td></tr>
+      <tr><td><b>One-on-one</b></td><td>$999 a month</td><td>Three private sessions a month, membership included</td></tr>
+      <tr><td><b>Teams, families, business</b></td><td>Built to fit</td><td>Groups who walk the year together</td></tr>
+    </table></div>
+    <div class="grid3" style="margin-top:28px">
+      <div class="card"><h3 style="color:var(--past)">Pays monthly</h3><p>Members renew automatically. Annual members pay up front and stay the year.</p></div>
+      <div class="card"><h3 style="color:var(--now)">Grows quietly</h3><p>Each new member adds to the base. Revenue builds month on month.</p></div>
+      <div class="card"><h3 style="color:var(--fut)">Lifts everything</h3><p>Circles, one-on-one and teams are fed by the membership.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="projections">
+  <div class="wrap">
+    <p class="eyebrow">The plan · projections</p>
+    <h2>From zero, one member at a time.</h2>
+    <p class="lede">We start today with zero members. Here is what membership alone brings in as it grows, at $99 a month.</p>
+    <div class="grid2" style="margin-top:32px;align-items:start;gap:40px">
+      <div style="overflow-x:auto"><table>
+        <tr><th>Members</th><th>Monthly</th><th>Yearly</th></tr>
+        <tr><td><b>10</b></td><td>$990</td><td>$11,880</td></tr>
+        <tr><td><b>25</b></td><td>$2,475</td><td>$29,700</td></tr>
+        <tr><td><b>50</b></td><td>$4,950</td><td>$59,400</td></tr>
+        <tr><td><b>100</b></td><td>$9,900</td><td>$118,800</td></tr>
+        <tr><td><b>250</b></td><td>$24,750</td><td>$297,000</td></tr>
+        <tr><td><b>500</b></td><td>$49,500</td><td>$594,000</td></tr>
+        <tr><td><b>1,000</b></td><td>$99,000</td><td>$1,188,000</td></tr>
+      </table></div>
+      <div>
+        <h3>One possible first year</h3>
+        <p style="font-size:14px">Members at the end of each month if 40 people join each month and 5% leave each month.</p>
+        <div class="svgw" style="margin-top:8px"><svg viewBox="0 0 640 260" width="640" height="260"><line x1="56" x2="630" y1="220.0" y2="220.0" stroke="#2c352e"/><text x="48" y="224.0" text-anchor="end" font-family="Inter" font-size="11" fill="#9aa39b">0</text><line x1="56" x2="630" y1="175.0" y2="175.0" stroke="#2c352e"/><text x="48" y="179.0" text-anchor="end" font-family="Inter" font-size="11" fill="#9aa39b">100</text><line x1="56" x2="630" y1="130.0" y2="130.0" stroke="#2c352e"/><text x="48" y="134.0" text-anchor="end" font-family="Inter" font-size="11" fill="#9aa39b">200</text><line x1="56" x2="630" y1="85.0" y2="85.0" stroke="#2c352e"/><text x="48" y="89.0" text-anchor="end" font-family="Inter" font-size="11" fill="#9aa39b">300</text><line x1="56" x2="630" y1="40.0" y2="40.0" stroke="#2c352e"/><text x="48" y="44.0" text-anchor="end" font-family="Inter" font-size="11" fill="#9aa39b">400</text><rect x="66.0" y="202.0" width="36" height="18.0" rx="4" fill="#5f7a5b"/><text x="84.0" y="196.0" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">40</text><text x="84.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M1</text><rect x="114.0" y="184.9" width="36" height="35.1" rx="4" fill="#5f7a5b"/><text x="132.0" y="178.9" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">78</text><text x="132.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M2</text><rect x="162.0" y="168.7" width="36" height="51.3" rx="4" fill="#5f7a5b"/><text x="180.0" y="162.7" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">114</text><text x="180.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M3</text><rect x="210.0" y="153.4" width="36" height="66.6" rx="4" fill="#5f7a5b"/><text x="228.0" y="147.4" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">148</text><text x="228.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M4</text><rect x="258.0" y="138.6" width="36" height="81.5" rx="4" fill="#5f7a5b"/><text x="276.0" y="132.6" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">181</text><text x="276.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M5</text><rect x="306.0" y="124.6" width="36" height="95.4" rx="4" fill="#5f7a5b"/><text x="324.0" y="118.6" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">212</text><text x="324.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M6</text><rect x="354.0" y="111.5" width="36" height="108.5" rx="4" fill="#5f7a5b"/><text x="372.0" y="105.5" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">241</text><text x="372.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M7</text><rect x="402.0" y="99.0" width="36" height="121.0" rx="4" fill="#5f7a5b"/><text x="420.0" y="93.0" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">269</text><text x="420.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M8</text><rect x="450.0" y="86.8" width="36" height="133.2" rx="4" fill="#5f7a5b"/><text x="468.0" y="80.8" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">296</text><text x="468.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M9</text><rect x="498.0" y="75.6" width="36" height="144.4" rx="4" fill="#5f7a5b"/><text x="516.0" y="69.6" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">321</text><text x="516.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M10</text><rect x="546.0" y="64.8" width="36" height="155.2" rx="4" fill="#5f7a5b"/><text x="564.0" y="58.8" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">345</text><text x="564.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M11</text><rect x="594.0" y="54.4" width="36" height="165.6" rx="4" fill="#8FA67E"/><text x="612.0" y="48.4" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#cfd3cc">368</text><text x="612.0" y="238" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#9aa39b">M12</text></svg></div>
+        <p style="font-size:14px">That path reaches about 368 members, roughly $36,000 a month, by the end of year one, before any circles, one-on-one or team revenue.</p>
+      </div>
+    </div>
+    <div class="grid3" style="margin-top:40px">
+      <div class="card"><h3>Light to run</h3><p>The app, email and member care are small fixed costs, nearly the same at 50 members or 500. Payment processing is about 3% of revenue. Keys and films are made once and used every year.</p></div>
+      <div class="card"><h3>What keeps members</h3><p>A warm first week and a first call within 48 hours. Keys that unlock month by month. A monthly call with Russ. An annual plan. Pause instead of cancel.</p></div>
+      <div class="card"><h3>What we watch</h3><p>Two numbers every week: new members, and members who leave. Small improvements in staying power compound into a very different year two.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="begin">
+  <div class="wrap">
+    <p class="eyebrow">An invitation</p>
+    <h1 style="font-size:clamp(48px,7vw,92px)">Take the first steps<br><span style="color:var(--sage)">with us.</span></h1>
+    <p class="lede" style="margin-top:22px">Be among the first members when Vault Human opens. Do the work. Watch what changes in you, and in the people around you. Then tell us. Your experience will shape this for everyone who comes after you.</p>
+    <p class="serif" style="font-size:22px;color:var(--ink);margin:36px 0 18px">Your first step: go outside.</p>
+    <div class="vid"><video controls playsinline preload="metadata" poster="/img/keys/key01-go-outside-cover.jpg"><source src="/video/key01-go-outside.mp4" type="video/mp4" /></video></div>
+    <p class="cap">Key 01, Go Outside. Two minutes, from Russ.</p>
+    <div class="grid3" style="margin-top:44px">
+      <div class="step"><div class="num">1</div><p style="color:var(--ink)">Start with the free key at <a href="https://www.vaulthuman.com/" style="color:var(--sage)"><b>vaulthuman.com</b></a></p></div>
+      <div class="step"><div class="num">2</div><p style="color:var(--ink)">Join as a member and walk the year</p></div>
+      <div class="step"><div class="num">3</div><p style="color:var(--ink)">Talk with Russ about being part of what comes next</p></div>
+    </div>
+    <p class="serif" style="font-size:22px;color:var(--ink);margin-top:48px;max-width:760px">We believe this will touch, move and inspire people to change their lives. We are proud of it, and we would love you beside us.</p>
+  </div>
+</section>
+
+<footer class="fine">
+  <div class="wrap">
+    <p>Vault Human, its method, keys, chambers and materials were created by Russ Michaels and are original works of Vault Human, LLC. © {year} Vault Human, LLC. All rights reserved. Vault Human™ and related marks are trademarks of Vault Human, LLC; registration is planned.</p>
+    <p style="margin-top:12px">Vault Human is coaching, not therapy or medical care. This page is for information only. It is not an offer to sell or a solicitation of an offer to buy any security or interest in any company. Figures are illustrative examples, not forecasts or promises of results. Teen and family offers are proposed and not yet available.</p>
+  </div>
+</footer>
+
+</body>
+</html>
