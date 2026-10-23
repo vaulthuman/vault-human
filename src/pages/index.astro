@@ -73,17 +73,23 @@ const year = new Date().getFullYear();
 @media(max-width:760px){.lkm__ask .lkm__media{display:none}.lkm__ask .lkm__copy{padding-top:56px}}
 @media(prefers-reduced-motion:reduce){.lkm__track{transition:none}}
 
-.qt{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:52px}
-.qt__i{position:relative;display:flex;align-items:center;justify-content:center;min-height:150px;border:1px solid rgba(241,237,228,.10);border-radius:10px;background:rgba(241,237,228,.025);overflow:hidden}
-.qt__n,.qt__p{font:400 clamp(30px,3vw,44px)/1 "Bebas Neue",sans-serif;letter-spacing:.03em;white-space:nowrap}
-.qt__n{color:rgba(241,237,228,.42);transition:none}
-.qt__p{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;font-size:clamp(50px,4.8vw,70px);color:#F1EDE4;background:linear-gradient(90deg,#F1EDE4 0%,#C8DBB8 55%,#E2C9A6 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;-webkit-mask-image:linear-gradient(90deg,#000 45%,transparent 55%);mask-image:linear-gradient(90deg,#000 45%,transparent 55%);-webkit-mask-size:240% 100%;mask-size:240% 100%;-webkit-mask-position:100% 0;mask-position:100% 0;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
-.qt.in .qt__p{animation:qtw 7.5s cubic-bezier(.5,0,.2,1) infinite;animation-delay:calc(var(--i)*1.1s)}
-.qt.in .qt__n{animation:qtd 7.5s cubic-bezier(.5,0,.2,1) infinite;animation-delay:calc(var(--i)*1.1s)}
-@keyframes qtw{0%,6%{-webkit-mask-position:100% 0;mask-position:100% 0}30%,84%{-webkit-mask-position:0 0;mask-position:0 0;opacity:1}94%,100%{-webkit-mask-position:0 0;mask-position:0 0;opacity:0}}
-@keyframes qtd{0%,8%{opacity:1;filter:none}30%,84%{opacity:.07;filter:blur(2px)}96%,100%{opacity:1;filter:none}}
-@media(max-width:760px){.qt{grid-template-columns:1fr;gap:12px;margin-top:36px}.qt__i{min-height:104px}}
-@media(prefers-reduced-motion:reduce){.qt .qt__p{animation:none!important;-webkit-mask-image:none;mask-image:none}.qt .qt__n{animation:none!important;opacity:.07}}
+.qt-lead{margin:40px 0 0;text-align:center;font-size:13px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:rgba(241,237,228,.55)}
+.qt{display:flex;justify-content:center;gap:clamp(18px,5vw,64px);margin-top:22px}
+.qt__i{display:flex;flex-direction:column;align-items:center;gap:12px;--c:#A9C397}
+.qt__i.past{--c:#D2A576}.qt__i.now{--c:#9DC0DE}.qt__i.fut{--c:#A9C397}
+.qt__o{position:relative;width:clamp(100px,11vw,136px);aspect-ratio:1;perspective:600px}
+.qt__o:before,.qt__o:after{content:"";position:absolute;inset:0;border-radius:50%}
+.qt__o:before{border:1px solid rgba(241,237,228,.12)}
+.qt__o:after{border:1.5px solid transparent;border-top-color:var(--c);border-right-color:color-mix(in srgb,var(--c) 35%,transparent);opacity:.75;animation:qtr 16s linear infinite;animation-delay:calc(var(--i)*-5s)}
+.qt__c{position:absolute;inset:8px;transform-style:preserve-3d;transition:transform 1.6s cubic-bezier(.45,0,.2,1);transition-delay:calc(.5s + var(--i)*.7s)}
+.qt__f,.qt__b{position:absolute;inset:0;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.qt__f{font-size:clamp(8.5px,.85vw,10.5px);letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:rgba(241,237,228,.42);padding:0 8px;line-height:1.4}
+.qt__b{transform:rotateY(180deg);background:radial-gradient(circle,color-mix(in srgb,var(--c) 10%,transparent),transparent 70%);font:400 clamp(19px,2vw,26px)/1 "Bebas Neue",sans-serif;letter-spacing:.04em;color:var(--c)}
+.qt.in .qt__c{transform:rotateY(180deg)}
+.qt__t{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--c);opacity:.7}
+@keyframes qtr{to{transform:rotate(360deg)}}
+@media(max-width:760px){.qt-lead{margin-top:30px;font-size:11.5px}.qt{gap:12px}.qt__o{width:104px}.qt__t{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.qt__o:after{animation:none}.qt__c{transition:none;transform:rotateY(180deg)}}
 </style>
 </head>
 <body data-time="all">
@@ -121,7 +127,7 @@ const year = new Date().getFullYear();
       <div class="appr-grid"><figure class="appr-photo"><img src="https://images.unsplash.com/photo-1565813086292-604790c8a97b?w=1800&q=72&auto=format&fit=crop" alt="Two old friends sharing a warm embrace in a crowded room, one smiling with his eyes" style="object-position:60% 35%;transform:scale(1.3);transform-origin:78% 45%" loading="lazy" /></figure><div class="appr-copy">
       <p class="listen-prose">The world is loud, and it can leave the best of us feeling small. Here, at the quiet end of the day, you get to be big again: empowered instead of worn down, seen for who you really are, and heard all the way to the end of what you have to say.</p>
       </div></div>
-      <div class="qt" id="qt" role="group" aria-label="Heard, not unheard. Seen, not unseen. Empowered, not disempowered."><div class="qt__i" style="--i:0" aria-hidden="true"><span class="qt__n">not unheard</span><span class="qt__p">Heard</span></div><div class="qt__i" style="--i:1" aria-hidden="true"><span class="qt__n">not unseen</span><span class="qt__p">Seen</span></div><div class="qt__i" style="--i:2" aria-hidden="true"><span class="qt__n">not disempowered</span><span class="qt__p">Empowered</span></div></div>
+      <p class="qt-lead">And as you finish, you feel</p><div class="qt" id="qt" role="group" aria-label="Seen, not unseen. Heard, not unheard. Empowered, not disempowered."><div class="qt__i past" style="--i:0" aria-hidden="true"><div class="qt__o"><div class="qt__c"><span class="qt__f">Not unseen</span><span class="qt__b">Seen</span></div></div><span class="qt__t">Past</span></div><div class="qt__i now" style="--i:1" aria-hidden="true"><div class="qt__o"><div class="qt__c"><span class="qt__f">Not unheard</span><span class="qt__b">Heard</span></div></div><span class="qt__t">Present</span></div><div class="qt__i fut" style="--i:2" aria-hidden="true"><div class="qt__o"><div class="qt__c"><span class="qt__f">Not disempowered</span><span class="qt__b">Empowered</span></div></div><span class="qt__t">Future</span></div></div>
     </div></section>
 
     <section class="sec" id="inside"><div class="wrap">
