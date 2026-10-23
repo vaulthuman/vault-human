@@ -33,7 +33,7 @@ const year = new Date().getFullYear();
     h2{font-size:clamp(40px,6vw,66px);margin-bottom:18px}
     h3{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:26px;letter-spacing:.6px;margin-bottom:6px}
     p{font-size:16px;color:var(--soft)}
-    .lede{font-size:20px;line-height:1.5;color:var(--ink);max-width:760px}
+    .lede{font-size:20px;line-height:1.5;color:var(--ink)}
     .serif{font-family:Fraunces,serif;font-style:italic}
     .bar{height:3px;width:64px;border-radius:2px;background:var(--sage);margin:24px 0}
     .grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
@@ -106,7 +106,7 @@ const year = new Date().getFullYear();
     .wheel .wa-flow{fill:none;stroke:#F1EDE4;stroke-width:4;stroke-linecap:round;stroke-dasharray:2 22;opacity:.55;animation:wa-flow 1.6s linear infinite}
     @keyframes wa-flow{to{stroke-dashoffset:-24}}
     @media(prefers-reduced-motion:reduce){.wheel .wa-flow,.ar{animation:none}}
-    .under{max-width:760px;margin:28px auto 0;text-align:center}
+    .under{margin:28px 0 0}
     .keyrow{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px;align-items:start}
     .keyrow img{width:100%;border-radius:14px}
     .keytext{margin-top:22px}
@@ -114,6 +114,10 @@ const year = new Date().getFullYear();
     .ph{position:relative}
     .inset{position:absolute;right:18px;bottom:-1px;width:26%;border-radius:12px 12px 0 0;border:2px solid var(--line);border-bottom:0;box-shadow:0 10px 30px rgba(0,0,0,.5)}
     .who{margin-top:32px}
+    .mail{position:absolute;left:6%;right:6%;bottom:-1px;background:#F6F1E8;color:#1F2A33;border-radius:10px 10px 0 0;padding:14px 18px 16px;font-size:13px;line-height:1.5;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+    .mail .mh{font-size:12px;color:#4A5B6B;border-bottom:1px solid #e3ddd1;padding:3px 0}
+    .mail .mh span{display:inline-block;width:58px;color:#8f988f;letter-spacing:1px;text-transform:uppercase;font-size:10px}
+    .mail .mb{padding-top:10px;font-family:Fraunces,serif;font-size:14px}
     .soon{font-family:Inter;font-size:11px;letter-spacing:2px;color:var(--sage);vertical-align:middle;margin-left:6px}
     .cite{font-size:13px;color:var(--mute);margin-top:22px;line-height:1.6}
     .cite a{color:var(--soft);text-decoration:underline;text-decoration-color:var(--line)}
@@ -147,7 +151,7 @@ const year = new Date().getFullYear();
     <p class="eyebrow">For our Keyholders</p>
     <h1>A coach every day.<br><span style="color:var(--sage)">For the whole of you.</span></h1>
     <div class="bar"></div>
-    <p class="serif" style="font-size:24px;color:var(--ink);max-width:640px">An invitation to see what we are building, and to walk it with us.</p>
+    <p class="serif" style="font-size:24px;color:var(--ink)">An invitation to see what we are building, and to walk it with us.</p>
   </div>
 </header>
 
@@ -202,7 +206,7 @@ const year = new Date().getFullYear();
   <div class="wrap">
     <p class="eyebrow">What you get · one</p>
     <h2>You get your life back.</h2>
-    <p class="lede">Your past, your present and your future, held together instead of in pieces. One year that moves through all three.</p>
+    <p class="lede">Your past, your present and your future, held together instead of in pieces, in one year that moves through all three.</p>
     <div class="arrows" aria-hidden="true">
       <div class="ar past"><b>Past</b><span>Learn</span></div>
       <div class="ar now"><b>Present</b><span>Love</span></div>
@@ -210,7 +214,7 @@ const year = new Date().getFullYear();
     </div>
     <div class="wheelbox"><div class="appr-wheel"><svg class="wheel" viewBox="-175 -40 870 610" role="img" aria-label="The Vault Approach: an arrow comes in from the left to where you start, at the top, and the line wraps the year, through past (chambers 1 to 4), present (5 to 8, with a pause after Healing) and future (9 to 11)."><defs><marker id="wa-past" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#B88A5E"/></marker><marker id="wa-now" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#7FA3C2"/></marker><marker id="wa-fut" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8FA67E"/></marker><marker id="wa-head" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5.2" markerHeight="5.2" orient="auto"><path d="M0 0L10 5L0 10z" fill="#D9A877"/></marker><linearGradient id="wa-grad" gradientUnits="userSpaceOnUse" x1="-160" x2="244" y1="0" y2="0"><stop offset="0" stop-color="#B3C6A3" stop-opacity=".35"/><stop offset="1" stop-color="#B88A5E"/></linearGradient></defs><path class="wa wa-in" d="M-160 -2 H226" marker-end="url(#wa-head)"/><path class="wa-flow" d="M-160 -2 H222"/><circle cx="250" cy="-2" r="7" class="wa-start"/><text class="wal wal-start" x="250" y="-18">START WITH YOU</text><text class="wal wal-in" x="-160" y="-16" style="text-anchor:start">THE VAULT APPROACH</text><path class="wa wa-past" d="M258.8 -1.8 A252 252 0 0 1 472.5 368.3"/><path class="wa wa-now" d="M463.7 383.5 A252 252 0 0 1 -1.8 258.8"/><path class="wa wa-fut" d="M-1.8 241.2 A252 252 0 0 1 241.2 -1.8"/><a href="/as-learned/"><text class="wal" x="497" y="119" style="text-anchor:start">PAST</text><text class="wals" x="497" y="135" style="text-anchor:start">Learning your past · 1–4</text></a><a href="/as-loved/"><text class="wal" x="173" y="519" style="text-anchor:middle">PRESENT</text><text class="wals" x="173" y="535" style="text-anchor:middle">Loving your present · 5–8</text></a><a href="/as-lived/"><text class="wal" x="8" y="110" style="text-anchor:end">FUTURE</text><text class="wals" x="8" y="126" style="text-anchor:end">Living your future · 9–11</text></a><path d="M252.1 54.0 A196 196 0 0 1 346.2 79.2 L301.1 159.4 A104 104 0 0 0 251.1 146.0Z" fill="var(--w-past)"/><text class="wn" x="291.4" y="91.5">You</text><text class="wv" x="291.4" y="105.5">by Being</text><text class="wm" x="280.5" y="139.0">1</text><path d="M349.8 81.3 A196 196 0 0 1 418.7 150.2 L339.5 197.1 A104 104 0 0 0 302.9 160.5Z" fill="var(--w-past)"/><text class="wn" x="363.1" y="132.9">Body</text><text class="wv" x="363.1" y="146.9">by Breathing</text><text class="wm" x="333.4" y="169.6">2</text><line class="wg" x1="302.0" y1="159.9" x2="348.0" y2="80.3"/><g transform="translate(360.0 59.5)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M420.8 153.8 A196 196 0 0 1 446.0 247.9 L354.0 248.9 A104 104 0 0 0 340.6 198.9Z" fill="var(--w-past)"/><text class="wn" x="404.5" y="204.6">Awareness</text><text class="wv" x="404.5" y="218.6">by Attending</text><text class="wm" x="364.0" y="222.5">3</text><line class="wg" x1="340.1" y1="198.0" x2="419.7" y2="152.0"/><g transform="translate(440.5 140.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M446.0 252.1 A196 196 0 0 1 420.8 346.2 L340.6 301.1 A104 104 0 0 0 354.0 251.1Z" fill="var(--w-past)"/><text class="wn" x="404.5" y="287.4">Meaning</text><text class="wv" x="404.5" y="301.4">by Making</text><text class="wm" x="364.0" y="283.5">4</text><line class="wg" x1="354.0" y1="250.0" x2="446.0" y2="250.0"/><g transform="translate(470.0 250.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M418.7 349.8 A196 196 0 0 1 349.8 418.7 L302.9 339.5 A104 104 0 0 0 339.5 302.9Z" fill="var(--w-present)"/><text class="wn" x="363.1" y="359.1">Healing</text><text class="wv" x="363.1" y="373.1">by Honoring</text><text class="wm" x="333.4" y="336.4">5</text><line class="wg" x1="340.1" y1="302.0" x2="419.7" y2="348.0"/><g transform="translate(440.5 360.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M346.2 420.8 A196 196 0 0 1 252.1 446.0 L251.1 354.0 A104 104 0 0 0 301.1 340.6Z" fill="var(--w-present)" fill-opacity=".55"/><text class="wn rest" x="291.4" y="400.5">Integration</text><text class="wv" x="291.4" y="414.5">a pause</text><text class="wm" x="280.5" y="367.0"></text><path d="M247.9 446.0 A196 196 0 0 1 153.8 420.8 L198.9 340.6 A104 104 0 0 0 248.9 354.0Z" fill="var(--w-present)"/><text class="wn" x="208.6" y="400.5">Circle</text><text class="wv" x="208.6" y="414.5">by Connecting</text><text class="wm" x="219.5" y="367.0">6</text><line class="wg" x1="250.0" y1="354.0" x2="250.0" y2="446.0"/><g transform="translate(250.0 470.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M150.2 418.7 A196 196 0 0 1 81.3 349.8 L160.5 302.9 A104 104 0 0 0 197.1 339.5Z" fill="var(--w-present)"/><text class="wn" x="136.9" y="359.1">Rhythm</text><text class="wv" x="136.9" y="373.1">by Repeating</text><text class="wm" x="166.6" y="336.4">7</text><line class="wg" x1="198.0" y1="340.1" x2="152.0" y2="419.7"/><g transform="translate(140.0 440.5)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M79.2 346.2 A196 196 0 0 1 54.0 252.1 L146.0 251.1 A104 104 0 0 0 159.4 301.1Z" fill="var(--w-present)"/><text class="wn" x="95.5" y="287.4">Freedom</text><text class="wv" x="95.5" y="301.4">by Forgiving</text><text class="wm" x="136.0" y="283.5">8</text><line class="wg" x1="159.9" y1="302.0" x2="80.3" y2="348.0"/><g transform="translate(59.5 360.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M54.0 247.9 A196 196 0 0 1 79.2 153.8 L159.4 198.9 A104 104 0 0 0 146.0 248.9Z" fill="var(--w-future)"/><text class="wn" x="95.5" y="204.6">Future</text><text class="wv" x="95.5" y="218.6">by Planning</text><text class="wm" x="136.0" y="222.5">9</text><line class="wg" x1="146.0" y1="250.0" x2="54.0" y2="250.0"/><g transform="translate(30.0 250.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M81.3 150.2 A196 196 0 0 1 150.2 81.3 L197.1 160.5 A104 104 0 0 0 160.5 197.1Z" fill="var(--w-future)"/><text class="wn" x="136.9" y="132.9">Service</text><text class="wv" x="136.9" y="146.9">by Serving</text><text class="wm" x="166.6" y="169.6">10</text><line class="wg" x1="159.9" y1="198.0" x2="80.3" y2="152.0"/><g transform="translate(59.5 140.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M153.8 79.2 A196 196 0 0 1 247.9 54.0 L248.9 146.0 A104 104 0 0 0 198.9 159.4Z" fill="var(--w-future)"/><text class="wn" x="208.6" y="91.5">Sharing</text><text class="wv" x="208.6" y="105.5">by Showing</text><text class="wm" x="219.5" y="139.0">11</text><circle cx="250" cy="250" r="94" fill="var(--w-core)"/><text class="wc0" x="250" y="226">ONE</text><text class="wc1" x="250" y="268">YEAR</text><text class="wc2" x="250" y="300">11 chambers · 9 gates</text></svg></div></div>
     <div class="under">
-      <h3 style="font-size:34px">One year. Eleven chambers. Nine gates.</h3>
+      <h3 style="font-size:34px;color:var(--sage)">One year. Eleven chambers. Nine gates.</h3>
       <p>The year moves through eleven chambers, one part of your life at a time. Each gate opens when a daily practice stops being something you try and becomes something you live. Gates, not dates.</p>
     </div>
   </div>
@@ -220,16 +224,11 @@ const year = new Date().getFullYear();
   <div class="wrap">
     <p class="eyebrow">What you get · two</p>
     <h2>You get the keys<br>to unlock your life.</h2>
-    <p class="lede">Every chamber opens with keys: short teachings, each with one small practice. Here is the first one.</p>
+    <p class="lede">Every chamber opens with keys: short teachings, each with one small practice. There are 360 keys for the mind and 180 for the body. Here is one of them.</p>
     <div class="keyrow">
       <img src="/img/inside/booklet-cover.jpg" alt="Who Made You, the first key" />
       <div>
         <img src="/img/inside/booklet-key.jpg" alt="The teaching: Who Made You" />
-        <div class="keytext">
-          <h3 style="font-size:34px">Who made you.</h3>
-          <p>Someone believed in you before you believed in yourself. A teacher who kept you after class. A coach who wouldn't let you quit on a bad day. A boss who handed you the keys and walked out the door. Most of them never heard what it meant.</p>
-          <p style="margin-top:12px">That is the first key: a short teaching, one small practice, and a week to carry it. When the practice holds, the key turns.</p>
-        </div>
       </div>
     </div>
   </div>
@@ -241,8 +240,8 @@ const year = new Date().getFullYear();
     <h2>A letter every morning,<br>and a place to keep what you notice.</h2>
     <div class="grid2 duo">
       <div class="tile">
-        <div class="ph" style="aspect-ratio:16/10;background-image:url(https://images.unsplash.com/photo-1545945774-73922eb27813?w=1400&q=80&auto=format&fit=crop);background-position:center 40%"><img class="inset" src="/img/inside/letter.jpg" alt="" /></div>
-        <div class="t"><h3>The letter</h3><p>Each morning, a short letter from your coach, in your inbox and your app. One teaching, one practice, before the day takes you.</p></div>
+        <div class="ph" style="aspect-ratio:16/10;background-image:url(https://images.unsplash.com/photo-1545945774-73922eb27813?w=1400&q=80&auto=format&fit=crop);background-position:center 40%"><div class="mail"><div class="mh"><span>From</span> Russ, Vault Human</div><div class="mh"><span>Subject</span> Who made you</div><div class="mb">Someone believed in you before you believed in yourself. Maybe it was a teacher who kept you after class, a coach who wouldn't let you quit on a bad day&hellip;</div></div></div>
+        <div class="t"><h3>The letter</h3><p>Each morning, a short letter from your coach. Read it in your inbox, at your desk, or on your phone with your coffee. One teaching, one practice, before the day takes you.</p></div>
       </div>
       <div class="tile">
         <div class="ph" style="aspect-ratio:16/10;background-image:url(https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=1400&q=80&auto=format&fit=crop);background-position:center 30%"><img class="inset" src="/img/inside/app-capture.jpg" alt="" /></div>
