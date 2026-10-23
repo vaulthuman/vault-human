@@ -58,6 +58,7 @@ const year = new Date().getFullYear();
 .lkm__copy h3{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:clamp(34px,4vw,50px);line-height:.95;letter-spacing:.01em;margin:0 0 14px}
 .lkm__copy p{margin:0 0 12px;font-size:17px;line-height:1.55;color:rgba(241,237,228,.88)}
 .lkm__fine{font-size:12.5px!important;color:rgba(241,237,228,.6)!important}
+.lkm__go{align-self:flex-start;margin-top:18px;border:0;cursor:pointer;background:#8FA67E;color:#121715;font:700 13px/1 Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:14px 20px;border-radius:6px}.lkm__go:hover{background:#A3B993}
 .lkm__copy .dk-form{margin:8px 0 0;max-width:none}
 .lkm__copy .dk-msg{margin:10px 0 0;min-height:1.2em;font-size:14px}
 .lkm__more{display:inline-block;margin-top:14px;font-size:14px;color:rgba(241,237,228,.75);text-decoration:underline}
@@ -72,27 +73,17 @@ const year = new Date().getFullYear();
 @media(max-width:760px){.lkm__ask .lkm__media{display:none}.lkm__ask .lkm__copy{padding-top:56px}}
 @media(prefers-reduced-motion:reduce){.lkm__track{transition:none}}
 
-.qt{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;margin-top:48px}
-.qt__i{position:relative;padding-top:18px;border-top:2px solid rgba(143,166,126,.28)}
-.qt__i:before{content:"";position:absolute;left:0;top:-2px;height:2px;width:100%;background:linear-gradient(90deg,#8FA67E,#C9A98A)}
-.qt__i b{display:block;font:400 clamp(40px,4.6vw,64px)/.95 "Bebas Neue",sans-serif;letter-spacing:.02em;color:#F1EDE4}
-.qt__i span{display:block;margin-top:10px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:rgba(241,237,228,.5);width:fit-content;position:relative}
-.qt__i span:after{content:"";position:absolute;left:-3px;right:-3px;top:52%;height:2px;background:#C9A98A}
-.qt.arm .qt__i:before{transform:scaleX(0);transform-origin:left}
-.qt.arm .qt__i b{opacity:0;transform:translateY(14px)}
-.qt.arm .qt__i span{opacity:0}
-.qt.arm .qt__i span:after{transform:scaleX(0);transform-origin:left}
-.qt.arm.in .qt__i:before{animation:qtl .9s ease forwards;animation-delay:calc(var(--i)*.45s)}
-.qt.arm.in .qt__i b{animation:qtb .7s ease forwards,qtg 5s ease-in-out infinite;animation-delay:calc(var(--i)*.45s + .25s),calc(3.4s + var(--i)*.6s)}
-.qt.arm.in .qt__i span{animation:qts .5s ease forwards;animation-delay:calc(var(--i)*.45s + .6s)}
-.qt.arm.in .qt__i span:after{animation:qtx .5s ease forwards;animation-delay:calc(var(--i)*.45s + 1s)}
-@keyframes qtl{to{transform:scaleX(1)}}
-@keyframes qtb{to{opacity:1;transform:none}}
-@keyframes qts{to{opacity:1}}
-@keyframes qtx{to{transform:scaleX(1)}}
-@keyframes qtg{0%,100%{color:#F1EDE4}50%{color:#B9D1A6}}
-@media(max-width:760px){.qt{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 20px;margin-top:36px}}
-@media(prefers-reduced-motion:reduce){.qt.arm .qt__i:before,.qt.arm .qt__i b,.qt.arm .qt__i span,.qt.arm .qt__i span:after{opacity:1!important;transform:none!important;animation:none!important}}
+.qt{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:52px}
+.qt__i{position:relative;display:flex;align-items:center;justify-content:center;min-height:150px;border:1px solid rgba(241,237,228,.10);border-radius:10px;background:rgba(241,237,228,.025);overflow:hidden}
+.qt__n,.qt__p{font:400 clamp(30px,3vw,44px)/1 "Bebas Neue",sans-serif;letter-spacing:.03em;white-space:nowrap}
+.qt__n{color:rgba(241,237,228,.42);transition:none}
+.qt__p{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;font-size:clamp(50px,4.8vw,70px);color:#F1EDE4;background:linear-gradient(90deg,#F1EDE4 0%,#C8DBB8 55%,#E2C9A6 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;-webkit-mask-image:linear-gradient(90deg,#000 45%,transparent 55%);mask-image:linear-gradient(90deg,#000 45%,transparent 55%);-webkit-mask-size:240% 100%;mask-size:240% 100%;-webkit-mask-position:100% 0;mask-position:100% 0;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+.qt.in .qt__p{animation:qtw 7.5s cubic-bezier(.5,0,.2,1) infinite;animation-delay:calc(var(--i)*1.1s)}
+.qt.in .qt__n{animation:qtd 7.5s cubic-bezier(.5,0,.2,1) infinite;animation-delay:calc(var(--i)*1.1s)}
+@keyframes qtw{0%,6%{-webkit-mask-position:100% 0;mask-position:100% 0}30%,84%{-webkit-mask-position:0 0;mask-position:0 0;opacity:1}94%,100%{-webkit-mask-position:0 0;mask-position:0 0;opacity:0}}
+@keyframes qtd{0%,8%{opacity:1;filter:none}30%,84%{opacity:.07;filter:blur(2px)}96%,100%{opacity:1;filter:none}}
+@media(max-width:760px){.qt{grid-template-columns:1fr;gap:12px;margin-top:36px}.qt__i{min-height:104px}}
+@media(prefers-reduced-motion:reduce){.qt .qt__p{animation:none!important;-webkit-mask-image:none;mask-image:none}.qt .qt__n{animation:none!important;opacity:.07}}
 </style>
 </head>
 <body data-time="all">
@@ -130,7 +121,7 @@ const year = new Date().getFullYear();
       <div class="appr-grid"><figure class="appr-photo"><img src="https://images.unsplash.com/photo-1565813086292-604790c8a97b?w=1800&q=72&auto=format&fit=crop" alt="Two old friends sharing a warm embrace in a crowded room, one smiling with his eyes" style="object-position:60% 35%;transform:scale(1.3);transform-origin:78% 45%" loading="lazy" /></figure><div class="appr-copy">
       <p class="listen-prose">The world is loud, and it can leave the best of us feeling small. Here, at the quiet end of the day, you get to be big again: empowered instead of worn down, seen for who you really are, and heard all the way to the end of what you have to say.</p>
       </div></div>
-      <div class="qt" id="qt" role="group" aria-label="Big, not small. Heard, not unheard. Seen, not unseen. Empowered, not disempowered."><div class="qt__i" style="--i:0"><b>Big</b><span>not small</span></div><div class="qt__i" style="--i:1"><b>Heard</b><span>not unheard</span></div><div class="qt__i" style="--i:2"><b>Seen</b><span>not unseen</span></div><div class="qt__i" style="--i:3"><b>Empowered</b><span>not disempowered</span></div></div>
+      <div class="qt" id="qt" role="group" aria-label="Heard, not unheard. Seen, not unseen. Empowered, not disempowered."><div class="qt__i" style="--i:0" aria-hidden="true"><span class="qt__n">not unheard</span><span class="qt__p">Heard</span></div><div class="qt__i" style="--i:1" aria-hidden="true"><span class="qt__n">not unseen</span><span class="qt__p">Seen</span></div><div class="qt__i" style="--i:2" aria-hidden="true"><span class="qt__n">not disempowered</span><span class="qt__p">Empowered</span></div></div>
     </div></section>
 
     <section class="sec" id="inside"><div class="wrap">
@@ -138,9 +129,9 @@ const year = new Date().getFullYear();
       <style is:inline>.lk{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.lk a{display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#F1EDE4}.lk .im{aspect-ratio:4/5;max-width:100%;border-radius:10px;overflow:hidden;background:#1B231D}.lk img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.lk a:hover img{transform:scale(1.04)}.lk span{font-family:"Bebas Neue",sans-serif;font-size:26px;letter-spacing:.03em;line-height:1}.lk small{display:block;font-family:Inter,sans-serif;font-size:14px;letter-spacing:0;color:rgba(241,237,228,.72);margin-top:5px}@media(max-width:760px){.lk{grid-template-columns:1fr 1fr;gap:14px}.lk span{font-size:21px}}</style>
       <div class="lk">
         <a href="/inside/#booklet" data-lk="0"><div class="im"><img src="/img/inside/booklet-cover.jpg" alt="Cover of the Who Made You booklet" style="object-position:50% 100%" loading="lazy" /></div><span>The booklet<small>A key you can hold</small></span></a>
-        <a href="/inside/#app" data-lk="1"><div class="im"><img src="/img/inside/app-today.jpg" alt="The Vault app on a phone" style="object-position:50% 0%" loading="lazy" /></div><span>The app<small>Your practice, in your pocket</small></span></a>
-        <a href="/inside/#call" data-lk="2"><div class="im"><img src="https://images.unsplash.com/photo-1616587894289-86480e533129?w=900&q=72&auto=format&fit=crop" alt="A man smiling on a video call with his coach" style="object-position:62% 50%" loading="lazy" /></div><span>The call<small>A coach, face to face</small></span></a>
-        <a href="/inside/#words" data-lk="3"><div class="im"><img src="/img/inside/letter.jpg" alt="The morning letter on a phone" style="object-position:50% 0%" loading="lazy" /></div><span>The words<small>Something every morning</small></span></a>
+        <a href="/inside/#words" data-lk="1"><div class="im"><img src="/img/inside/letter.jpg" alt="The morning letter on a phone" style="object-position:50% 0%" loading="lazy" /></div><span>The words<small>A letter every morning</small></span></a>
+        <a href="/inside/#app" data-lk="2"><div class="im"><img src="/img/inside/app-capture.jpg" alt="The Vault app capturing a thought" style="object-position:50% 0%" loading="lazy" /></div><span>The app<small>Captures your work, privately</small></span></a>
+        <a href="/inside/#call" data-lk="3"><div class="im"><img src="https://images.unsplash.com/photo-1616587894289-86480e533129?w=900&q=72&auto=format&fit=crop" alt="A man smiling on a video call with his coach" style="object-position:62% 50%" loading="lazy" /></div><span>The call<small>A coach, face to face</small></span></a>
       </div>
       <div class="ctarow" style="margin-top:30px"><a class="btn btn-line" href="/inside/" data-lk="0">Walk through it</a></div>
     </div></section>
@@ -215,10 +206,10 @@ const year = new Date().getFullYear();
     <div class="lkm__card" role="dialog" aria-modal="true" aria-label="See what you get">
       <button class="lkm__x" type="button" data-lk-close aria-label="Close">&times;</button>
       <div class="lkm__track" id="lkm-track">
-        <div class="lkm__slide"><div class="lkm__media"><img src="/img/inside/booklet-cover.jpg" alt="Cover of the Who Made You booklet" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">1 of 4 · The booklet</p><h3>A key you can hold.</h3><p>Every key comes as a booklet: the teaching, the practice, and worksheets for the days that follow.</p><p class="lkm__fine">Shown: Who Made You. Screens and entries here are samples.</p></div></div>
-        <div class="lkm__slide"><div class="lkm__media"><img class="ph" src="/img/inside/app-today.jpg" alt="The Vault app on a phone, showing today's key" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">2 of 4 · The app</p><h3>Your practice, in your pocket.</h3><p>Today's key and its practice, a private place to capture whatever comes up, and your path through the chambers.</p><p class="lkm__fine">Screens and entries here are samples.</p></div></div>
-        <div class="lkm__slide"><div class="lkm__media"><img class="wide" src="https://images.unsplash.com/photo-1616587894289-86480e533129?w=900&q=72&auto=format&fit=crop" alt="A man smiling on a video call with his coach" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">3 of 4 · The call</p><h3>A coach, face to face.</h3><p>By video or phone, from your kitchen table. Your coach sees only what you choose to share.</p></div></div>
-        <div class="lkm__slide"><div class="lkm__media"><img class="ph" src="/img/inside/letter.jpg" alt="The morning letter on a phone" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">4 of 4 · The words</p><h3>Something waiting every morning.</h3><p>A letter to start each day, a page at the end of each month, and a card each time a gate opens.</p><p class="lkm__fine">Screens and entries here are samples.</p></div></div>
+        <div class="lkm__slide"><div class="lkm__media"><img src="/img/inside/booklet-cover.jpg" alt="Cover of the Who Made You booklet" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">1 of 4 · The booklet</p><h3>A key you can hold.</h3><p>Every key comes as a booklet: the teaching, the practice, and worksheets for the days that follow.</p><p class="lkm__fine">Shown: Who Made You. Screens and entries here are samples.</p><button type="button" class="lkm__go" data-lk-go>Get the first key free &rarr;</button></div></div>
+        <div class="lkm__slide"><div class="lkm__media"><img class="ph" src="/img/inside/letter.jpg" alt="The morning letter for Who Made You on a phone" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">2 of 4 · The words</p><h3>Something waiting every morning.</h3><p>A letter to start each day, a page at the end of each month, and a card each time a gate opens.</p><p class="lkm__fine">Shown: the Day 1 letter for Who Made You.</p><button type="button" class="lkm__go" data-lk-go>Get the first key free &rarr;</button></div></div>
+        <div class="lkm__slide"><div class="lkm__media"><img class="ph" src="/img/inside/app-capture.jpg" alt="The Vault app capturing a thought after writing the letter" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">3 of 4 · The app</p><h3>It captures your work.</h3><p>A thought after the call, a feeling in the car, the page you just wrote. Type it, say it or snap it, and it lands in your own private folder. Your coach sees only what you choose to share.</p><p class="lkm__fine">Screens and entries here are samples.</p><button type="button" class="lkm__go" data-lk-go>Get the first key free &rarr;</button></div></div>
+        <div class="lkm__slide"><div class="lkm__media"><img class="wide" src="https://images.unsplash.com/photo-1616587894289-86480e533129?w=900&q=72&auto=format&fit=crop" alt="A man smiling on a video call with his coach" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">4 of 4 · The call</p><h3>A coach, face to face.</h3><p>By video or phone, from your kitchen table. You bring what you captured; your coach helps you see what it means.</p><button type="button" class="lkm__go" data-lk-go>Get the first key free &rarr;</button></div></div>
         <div class="lkm__slide lkm__ask"><div class="lkm__media"><img src="/img/inside/booklet-cover.jpg" alt="" aria-hidden="true" loading="lazy" style="max-height:min(420px,calc(100dvh - 260px))" /></div><div class="lkm__copy"><p class="lkm__k">Your first key</p><h3>Start with the first one, free.</h3><p>One short teaching and one small practice from Russ, in your inbox five mornings a week.</p><form class="dk-form" novalidate><label class="dk-sr" for="dk-email-lk">Email</label><input id="dk-email-lk" type="email" name="email" placeholder="Your email" autocomplete="email" required /><button type="submit">Send me the key</button></form><p class="dk-msg" aria-live="polite"></p><p class="lkm__fine">Free. Unsubscribe any time. We never share your email.</p><a class="lkm__more" href="/inside/">See everything on one page</a></div></div>
       </div>
       <div class="lkm__nav"><button type="button" id="lkm-prev">Back</button><div class="lkm__dots" id="lkm-dots"></div><button type="button" id="lkm-next">Next</button></div>
@@ -230,7 +221,7 @@ for(var k=0;k<n;k++){var d=document.createElement('i');d.setAttribute('data-i',k
 function go(x){i=Math.max(0,Math.min(n-1,x));tr.style.transform='translateX(-'+(i*100)+'%)';[].forEach.call(dots.children,function(d,j){d.classList.toggle('on',j===i)});pv.disabled=i===0;nx.disabled=i===n-1;[].forEach.call(tr.children,function(s,j){s.setAttribute('aria-hidden',j===i?'false':'true');s.inert=j!==i;});try{gtag('event','walkthrough_slide',{slide:i+1})}catch(e){}}
 function open(x,from){last=from||null;m.classList.add('open');document.body.classList.add('lk-open');m.setAttribute('aria-hidden','false');document.documentElement.style.overflow='hidden';go(x||0);try{gtag('event','walkthrough_open')}catch(e){}}
 function close(){m.classList.remove('open');document.body.classList.remove('lk-open');m.setAttribute('aria-hidden','true');document.documentElement.style.overflow='';if(last&&last.focus)try{last.focus()}catch(e){}}
-document.addEventListener('click',function(e){var t=e.target.closest('[data-lk]');if(t){e.preventDefault();open(+t.getAttribute('data-lk')||0,t);return;}if(e.target.closest('[data-lk-close]')){close();return;}var dt=e.target.closest('#lkm-dots i');if(dt){go(+dt.getAttribute('data-i'));}});
+document.addEventListener('click',function(e){if(e.target.closest('[data-lk-go]')){go(n-1);try{gtag('event','walkthrough_jump_signup',{from:i+1})}catch(_){}setTimeout(function(){var f=document.getElementById('dk-email-lk');if(f)try{f.focus({preventScroll:true})}catch(_){}},450);return;}var t=e.target.closest('[data-lk]');if(t){e.preventDefault();open(+t.getAttribute('data-lk')||0,t);return;}if(e.target.closest('[data-lk-close]')){close();return;}var dt=e.target.closest('#lkm-dots i');if(dt){go(+dt.getAttribute('data-i'));}});
 pv.addEventListener('click',function(){go(i-1)});nx.addEventListener('click',function(){go(i+1)});
 document.addEventListener('keydown',function(e){if(!m.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowRight')go(i+1);else if(e.key==='ArrowLeft')go(i-1);});
 var sx=null;tr.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});tr.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)>50)go(i+(dx<0?1:-1));},{passive:true});
@@ -315,6 +306,6 @@ go(0);})();
 <aside class="vk-toast" id="vk-toast" aria-label="Free daily key" hidden><button class="vk-toast__x" type="button" aria-label="Close">&times;</button><p class="vk-toast__k">Free · five mornings a week</p><p class="vk-toast__t">Get the Vault Key</p><p class="vk-toast__s">One short teaching and one small practice from Russ, in your inbox.</p><a class="btn btn-acc" href="#daily-key">Send me the key</a></aside>
 <script is:inline>(function(){var t=document.getElementById('vk-toast');if(!t)return;function g(k){try{return localStorage.getItem(k)}catch(e){return null}}function s(k,v){try{localStorage.setItem(k,v)}catch(e){}}if(g('dk_sub')||(+g('vk_toast')||0)>Date.now()-3*864e5)return;var shown=false;function show(){if(shown)return;shown=true;t.hidden=false;requestAnimationFrame(function(){t.classList.add('in')});s('vk_toast',String(Date.now()))}function hide(){t.classList.remove('in');setTimeout(function(){t.hidden=true},300)}t.querySelector('.vk-toast__x').addEventListener('click',hide);t.querySelector('a').addEventListener('click',hide);addEventListener('scroll',function f(){var h=document.documentElement;if((h.scrollTop+innerHeight)/h.scrollHeight>0.35){removeEventListener('scroll',f);show()}},{passive:true});var dk=document.getElementById('daily-key');if(dk&&'IntersectionObserver' in window){new IntersectionObserver(function(e){if(e[0].isIntersecting)hide()}).observe(dk)}})();</script>
 <script is:inline src="/vh-dock.js" defer></script>
-<script is:inline>(function(){var q=document.getElementById("qt");if(!q||!("IntersectionObserver"in window))return;q.classList.add("arm");var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){q.classList.add("in");o.disconnect()}})},{threshold:.35});o.observe(q)})();</script>
+<script is:inline>(function(){var q=document.getElementById("qt");if(!q||!("IntersectionObserver"in window))return;var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){q.classList.add("in");o.disconnect()}})},{threshold:.35});o.observe(q)})();</script>
 </body>
 </html>
