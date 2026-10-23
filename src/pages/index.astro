@@ -42,6 +42,36 @@ const year = new Date().getFullYear();
 @media(prefers-reduced-motion:reduce){.tl .tl-flow{animation:none}}
 #after .after{border-top:0;padding-top:0}
 @media(max-width:900px){.appr-split{grid-template-columns:1fr}.appr-split .appr-wheel{padding:16px 6px}.appr-split .mtiles .pcard{min-height:200px}.sec-prose,.listen-prose{font-size:17px;text-align:left}.tl{gap:12px}}
+.lkm{position:fixed;inset:0;z-index:210;display:none;align-items:center;justify-content:center;padding:20px}
+.lkm.open{display:flex}
+.lkm__bg{position:absolute;inset:0;background:rgba(8,10,9,.88);backdrop-filter:blur(4px)}
+.lkm__card{position:relative;width:min(980px,100%);max-height:calc(100dvh - 40px);background:#141A16;border:1px solid rgba(241,237,228,.14);border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6);color:#F1EDE4;display:flex;flex-direction:column}
+.lkm__x{position:absolute;top:8px;right:10px;z-index:3;width:40px;height:40px;border:0;border-radius:50%;background:rgba(18,23,21,.75);color:#F1EDE4;font-size:26px;line-height:1;cursor:pointer}
+.lkm__track{display:flex;transition:transform .4s ease;width:100%;flex:1 1 auto;min-height:0}
+.lkm__slide{flex:0 0 100%;min-width:0;overflow-y:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:min(560px,calc(100dvh - 150px));align-items:stretch}
+.lkm__media{background:#0E1310;display:flex;align-items:center;justify-content:center;padding:28px}
+.lkm__media img{max-width:100%;max-height:calc(100dvh - 230px);width:auto;height:auto;border-radius:6px;box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.lkm__media img.ph{border-radius:22px;border:6px solid #0B0F0C;max-height:min(500px,calc(100dvh - 230px))}
+.lkm__media img.wide{width:100%;max-height:none;aspect-ratio:3/2;object-fit:cover;object-position:62% 50%;border-radius:10px}
+.lkm__copy{display:flex;flex-direction:column;justify-content:center;padding:36px 40px 36px 12px}
+.lkm__k{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#6CC0FF;font-weight:700;margin:0 0 10px}
+.lkm__copy h3{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:clamp(34px,4vw,50px);line-height:.95;letter-spacing:.01em;margin:0 0 14px}
+.lkm__copy p{margin:0 0 12px;font-size:17px;line-height:1.55;color:rgba(241,237,228,.88)}
+.lkm__fine{font-size:12.5px!important;color:rgba(241,237,228,.6)!important}
+.lkm__copy .dk-form{margin:8px 0 0;max-width:none}
+.lkm__copy .dk-msg{margin:10px 0 0;min-height:1.2em;font-size:14px}
+.lkm__more{display:inline-block;margin-top:14px;font-size:14px;color:rgba(241,237,228,.75);text-decoration:underline}
+.lkm__nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;border-top:1px solid rgba(241,237,228,.12);background:#101512}
+.lkm__nav button{border:0;background:transparent;color:#F1EDE4;font:700 13px/1 inherit;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;padding:12px 8px;min-width:64px}
+.lkm__nav button[disabled]{opacity:.25;cursor:default}
+.lkm__dots{display:flex;gap:9px}
+.lkm__dots i{width:9px;height:9px;border-radius:50%;background:rgba(241,237,228,.28);cursor:pointer;transition:background .2s}
+.lkm__dots i.on{background:#6CC0FF}
+@media(max-width:760px){.lkm{padding:10px}.lkm__card{max-height:calc(100dvh - 20px)}.lkm__slide{grid-template-columns:1fr;min-height:0;align-content:start}.lkm__media{padding:18px 18px 4px}.lkm__media img{max-height:32dvh}.lkm__media img.ph{max-height:32dvh}.lkm__media img.wide{max-height:32dvh;aspect-ratio:auto;object-fit:cover}.lkm__copy{padding:16px 22px 22px}.lkm__copy h3{font-size:34px}.lkm__copy p{font-size:16px}}
+.lk-open .stickybar,.lk-open .vk-toast{display:none!important}
+@media(max-width:760px){.lkm__ask .lkm__media{display:none}.lkm__ask .lkm__copy{padding-top:56px}}
+@media(prefers-reduced-motion:reduce){.lkm__track{transition:none}}
+
 </style>
 </head>
 <body data-time="all">
@@ -68,7 +98,6 @@ const year = new Date().getFullYear();
       <div class="ctarow appr-cta"><button class="btn btn-line" type="button" data-vpop="/img/russ/v2/how-it-works.mp4" data-vpop-poster="/img/russ/v2/how-it-works-poster.jpg">Watch the video</button><a class="btn btn-acc" href="/method/">See the approach</a></div>
     </div></section>
 
-
     <section class="sec" id="parts"><div class="wrap">
       <div class="sec-head"><p class="eyebrow">Learn · Love · Live</p><h2>Start where life is loudest.</h2></div>
       <div class="pcards"><a class="pcard pc-past" href="/as-learned/"><img src="https://images.unsplash.com/photo-1475609471617-0ef53b59cff5?w=900&q=72&auto=format&fit=crop" alt="A parent holding a child close" loading="lazy" /><span class="pc-k">The past</span><b>Learning your past</b><em>How you were wired, and what still runs you.</em></a><a class="pcard pc-now" href="/as-loved/"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=900&q=72&auto=format&fit=crop" alt="Friends with their arms around each other at sunset" loading="lazy" /><span class="pc-k">The present</span><b>Loving your present</b><em>Connected to yourself and the people around you.</em></a><a class="pcard pc-fut" href="/as-lived/"><img src="https://images.unsplash.com/photo-1593100126453-19b562a800c1?w=900&q=72&auto=format&fit=crop" alt="A grandmother hugging her grandchild" loading="lazy" /><span class="pc-k">The future</span><b>Living your future</b><em>Possibility, purpose and the legacy you leave.</em></a></div>
@@ -82,22 +111,16 @@ const year = new Date().getFullYear();
       </div></div>
     </div></section>
 
-    <section class="sec gallery-sec" id="ways"><div class="wrap"><div class="sec-head"><p class="eyebrow">Five ways to be coached</p><h2>Coaching that fits your life.</h2></div><div class="gallery five"><figure><img src="/img/russ/strip/inperson.jpg" alt="Russ reading aloud to a group by a stone fireplace" style="object-position:50% 18%" loading="lazy" /><figcaption>One on one</figcaption></figure><figure><img src="/img/russ/strip/retreat.jpg" alt="A men’s circle gathered in a mountain meadow" style="object-position:50% 60%" loading="lazy" /><figcaption>As a group</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1609260840244-22b52bfc6664?w=1000&q=72&auto=format&fit=crop" alt="Three generations of a family together on the porch" style="object-position:50% 35%" loading="lazy" /><figcaption>As a family</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1542323228-002ac256e7b8?w=1000&q=72&auto=format&fit=crop" alt="Men and women on a team stacking their hands together" loading="lazy" /><figcaption>As a team</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1752659504423-87916d12bc37?w=1000&q=72&auto=format&fit=crop" alt="Colleagues of different generations planning together" loading="lazy" /><figcaption>As a business</figcaption></figure></div><div class="ctarow" style="margin-top:30px"><a class="btn btn-acc" href="/plans/">Plans</a></div></div></section>
-    <section class="sec" id="inside" style="padding-top:20px"><div class="wrap">
+    <section class="sec" id="inside"><div class="wrap">
       <div class="sec-head"><p class="eyebrow">Look inside</p><h2>See what you get.</h2></div>
       <style is:inline>.lk{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.lk a{display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#F1EDE4}.lk .im{aspect-ratio:4/5;max-width:100%;border-radius:10px;overflow:hidden;background:#1B231D}.lk img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.lk a:hover img{transform:scale(1.04)}.lk span{font-family:"Bebas Neue",sans-serif;font-size:26px;letter-spacing:.03em;line-height:1}.lk small{display:block;font-family:Inter,sans-serif;font-size:14px;letter-spacing:0;color:rgba(241,237,228,.72);margin-top:5px}@media(max-width:760px){.lk{grid-template-columns:1fr 1fr;gap:14px}.lk span{font-size:21px}}</style>
       <div class="lk">
-        <a href="/inside/#booklet"><div class="im"><img src="/img/inside/booklet-cover.jpg" alt="Cover of the Key 01 booklet" style="object-position:50% 100%" loading="lazy" /></div><span>The booklet<small>A key you can hold</small></span></a>
-        <a href="/inside/#app"><div class="im"><img src="/img/inside/app-today.jpg" alt="The Vault app on a phone" style="object-position:50% 0%" loading="lazy" /></div><span>The app<small>Your practice, in your pocket</small></span></a>
-        <a href="/inside/#call"><div class="im"><img src="https://images.unsplash.com/photo-1616587894289-86480e533129?w=900&q=72&auto=format&fit=crop" alt="A man smiling on a video call with his coach" style="object-position:62% 50%" loading="lazy" /></div><span>The call<small>A coach, face to face</small></span></a>
-        <a href="/inside/#words"><div class="im"><img src="/img/inside/letter.jpg" alt="The morning letter on a phone" style="object-position:50% 0%" loading="lazy" /></div><span>The words<small>Something every morning</small></span></a>
+        <a href="/inside/#booklet" data-lk="0"><div class="im"><img src="/img/inside/booklet-cover.jpg" alt="Cover of the Key 01 booklet" style="object-position:50% 100%" loading="lazy" /></div><span>The booklet<small>A key you can hold</small></span></a>
+        <a href="/inside/#app" data-lk="1"><div class="im"><img src="/img/inside/app-today.jpg" alt="The Vault app on a phone" style="object-position:50% 0%" loading="lazy" /></div><span>The app<small>Your practice, in your pocket</small></span></a>
+        <a href="/inside/#call" data-lk="2"><div class="im"><img src="https://images.unsplash.com/photo-1616587894289-86480e533129?w=900&q=72&auto=format&fit=crop" alt="A man smiling on a video call with his coach" style="object-position:62% 50%" loading="lazy" /></div><span>The call<small>A coach, face to face</small></span></a>
+        <a href="/inside/#words" data-lk="3"><div class="im"><img src="/img/inside/letter.jpg" alt="The morning letter on a phone" style="object-position:50% 0%" loading="lazy" /></div><span>The words<small>Something every morning</small></span></a>
       </div>
-      <div class="ctarow" style="margin-top:30px"><a class="btn btn-line" href="/inside/">Look inside</a></div>
-    </div></section>
-
-    <section class="sec dark vid-sec" id="russ"><video class="bgvid" autoplay muted loop playsinline><source src="https://assets.mixkit.co/videos/47818/47818-720.mp4" type="video/mp4"></video><div class="veil"></div><div class="wrap guide-grid">
-      <img src="/russ-michaels.jpg" alt="Russ Michaels" width="340" height="425" loading="lazy" />
-      <div><p class="eyebrow">Founder of Vault Human</p><h2>Russ Michaels</h2><p class="lede">An attorney and a twenty-year operator who coaches from the whole picture: how you were built, how you are living, and what you intend to leave. He chose and ordered every key.</p><blockquote>Sometimes we meet life where it is, not where we are. We hold that together.</blockquote><div class="ctarow"><a class="btn btn-ghost" href="/speaking/">About Russ</a><a class="btn btn-ghost" href="/speaking/#book">Book Russ to speak</a></div></div>
+      <div class="ctarow" style="margin-top:30px"><a class="btn btn-line" href="/inside/" data-lk="0">Walk through it</a></div>
     </div></section>
 
     <section class="sec alt" id="how"><div class="wrap">
@@ -106,11 +129,18 @@ const year = new Date().getFullYear();
       <div class="ctarow" style="justify-content:center;margin-top:28px"><a class="btn btn-acc" href="#daily-key">Start free</a></div>
     </div></section>
 
+    <section class="sec dark vid-sec" id="russ"><video class="bgvid" autoplay muted loop playsinline><source src="https://assets.mixkit.co/videos/47818/47818-720.mp4" type="video/mp4"></video><div class="veil"></div><div class="wrap guide-grid">
+      <img src="/russ-michaels.jpg" alt="Russ Michaels" width="340" height="425" loading="lazy" />
+      <div><p class="eyebrow">Founder of Vault Human</p><h2>Russ Michaels</h2><p class="lede">An attorney and a twenty-year operator who coaches from the whole picture: how you were built, how you are living, and what you intend to leave. He chose and ordered every key.</p><blockquote>Sometimes we meet life where it is, not where we are. We hold that together.</blockquote><div class="ctarow"><a class="btn btn-ghost" href="/speaking/">About Russ</a><a class="btn btn-ghost" href="/speaking/#book">Book Russ to speak</a></div></div>
+    </div></section>
+
     <section class="sec" id="after"><div class="wrap">
       <div class="sec-head"><p class="eyebrow">A year from now</p><h2>What changes.</h2></div>
       <div class="tl" aria-hidden="true"><span class="tl-past">Past</span><span class="tl-now">Present</span><span class="tl-fut">Future</span><span class="tl-flow"></span></div>
       <div class="after"><div><b>You know why.</b><p>You can see the patterns you learned, and you choose which ones to keep.</p></div><div><b>You're here.</b><p>Present with yourself and the people you love, not just near them.</p></div><div><b>You're building.</b><p>A future you chose, and a life worth handing on.</p></div></div>
     </div></section>
+
+    <section class="sec gallery-sec" id="ways"><div class="wrap"><div class="sec-head"><p class="eyebrow">Five ways to be coached</p><h2>Coaching that fits your life.</h2></div><div class="gallery five"><figure><img src="/img/russ/strip/inperson.jpg" alt="Russ reading aloud to a group by a stone fireplace" style="object-position:50% 18%" loading="lazy" /><figcaption>One on one</figcaption></figure><figure><img src="/img/russ/strip/retreat.jpg" alt="A men’s circle gathered in a mountain meadow" style="object-position:50% 60%" loading="lazy" /><figcaption>As a group</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1609260840244-22b52bfc6664?w=1000&q=72&auto=format&fit=crop" alt="Three generations of a family together on the porch" style="object-position:50% 35%" loading="lazy" /><figcaption>As a family</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1542323228-002ac256e7b8?w=1000&q=72&auto=format&fit=crop" alt="Men and women on a team stacking their hands together" loading="lazy" /><figcaption>As a team</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1752659504423-87916d12bc37?w=1000&q=72&auto=format&fit=crop" alt="Colleagues of different generations planning together" loading="lazy" /><figcaption>As a business</figcaption></figure></div><div class="ctarow" style="margin-top:30px"><a class="btn btn-acc" href="/plans/">Plans</a></div></div></section>
 
     <section class="sec" id="pricing"><div class="wrap">
       <div class="sec-head"><p class="eyebrow">Plans and pricing</p><h2>Simple to start.</h2></div>
@@ -158,6 +188,32 @@ const year = new Date().getFullYear();
       <form class="vh-cap" novalidate><label>First name<input name="firstname" type="text" autocomplete="given-name" required /></label><label>Email<input name="email" type="email" autocomplete="email" inputmode="email" required /></label><button class="btn btn-acc" type="submit">Send me the first key</button><p class="vh-cap__err" style="display:none">That didn't go through. Try again, or call <a href="tel:+18888332510">(888) 833-2510</a>.</p></form><script is:inline src="/vh-capture.js" defer></script><style is:inline>.vh-cap label{display:block;font:600 14px Inter,system-ui,sans-serif;margin:10px 0 0}.vh-cap input{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1px solid #c9c4b8;border-radius:8px;font:16px Inter,system-ui,sans-serif;background:#fff;color:#1B231D}.vh-cap button{width:100%;margin-top:16px;border:0;cursor:pointer}.vh-cap__err{color:#8a2a2a;font-size:14px;margin:10px 0 0}</style><p class="vh-modal__fine">Free. One short email each morning. Unsubscribe anytime.</p>
     </div>
   </div>
+  <div class="lkm" id="lkm" aria-hidden="true">
+    <div class="lkm__bg" data-lk-close></div>
+    <div class="lkm__card" role="dialog" aria-modal="true" aria-label="See what you get">
+      <button class="lkm__x" type="button" data-lk-close aria-label="Close">&times;</button>
+      <div class="lkm__track" id="lkm-track">
+        <div class="lkm__slide"><div class="lkm__media"><img src="/img/inside/booklet-cover.jpg" alt="Cover of the Key 01 booklet" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">1 of 4 · The booklet</p><h3>A key you can hold.</h3><p>Every key comes as a booklet: the teaching, the practice, and worksheets for the days that follow.</p><p class="lkm__fine">Shown: Key 01, Go Outside. Screens and entries here are samples.</p></div></div>
+        <div class="lkm__slide"><div class="lkm__media"><img class="ph" src="/img/inside/app-today.jpg" alt="The Vault app on a phone, showing today's key" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">2 of 4 · The app</p><h3>Your practice, in your pocket.</h3><p>Today's key and its four moves, a private place to capture whatever comes up, and your path through the chambers.</p><p class="lkm__fine">Screens and entries here are samples.</p></div></div>
+        <div class="lkm__slide"><div class="lkm__media"><img class="wide" src="https://images.unsplash.com/photo-1616587894289-86480e533129?w=900&q=72&auto=format&fit=crop" alt="A man smiling on a video call with his coach" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">3 of 4 · The call</p><h3>A coach, face to face.</h3><p>By video or phone, from your kitchen table. Your coach sees only what you choose to share.</p></div></div>
+        <div class="lkm__slide"><div class="lkm__media"><img class="ph" src="/img/inside/letter.jpg" alt="The morning letter on a phone" loading="lazy" /></div><div class="lkm__copy"><p class="lkm__k">4 of 4 · The words</p><h3>Something waiting every morning.</h3><p>A letter to start each day, a page at the end of each month, and a card each time a gate opens.</p><p class="lkm__fine">Screens and entries here are samples.</p></div></div>
+        <div class="lkm__slide lkm__ask"><div class="lkm__media"><img src="/img/inside/booklet-cover.jpg" alt="" aria-hidden="true" loading="lazy" style="max-height:min(420px,calc(100dvh - 260px))" /></div><div class="lkm__copy"><p class="lkm__k">Your first key</p><h3>Start with the first one, free.</h3><p>One short teaching and one small practice from Russ, in your inbox five mornings a week.</p><form class="dk-form" novalidate><label class="dk-sr" for="dk-email-lk">Email</label><input id="dk-email-lk" type="email" name="email" placeholder="Your email" autocomplete="email" required /><button type="submit">Send me the key</button></form><p class="dk-msg" aria-live="polite"></p><p class="lkm__fine">Free. Unsubscribe any time. We never share your email.</p><a class="lkm__more" href="/inside/">See everything on one page</a></div></div>
+      </div>
+      <div class="lkm__nav"><button type="button" id="lkm-prev">Back</button><div class="lkm__dots" id="lkm-dots"></div><button type="button" id="lkm-next">Next</button></div>
+    </div>
+  </div>
+
+  <script is:inline>(function(){var m=document.getElementById('lkm');if(!m)return;var tr=document.getElementById('lkm-track'),n=tr.children.length,i=0,dots=document.getElementById('lkm-dots'),pv=document.getElementById('lkm-prev'),nx=document.getElementById('lkm-next'),last=null;
+for(var k=0;k<n;k++){var d=document.createElement('i');d.setAttribute('data-i',k);dots.appendChild(d);}
+function go(x){i=Math.max(0,Math.min(n-1,x));tr.style.transform='translateX(-'+(i*100)+'%)';[].forEach.call(dots.children,function(d,j){d.classList.toggle('on',j===i)});pv.disabled=i===0;nx.disabled=i===n-1;[].forEach.call(tr.children,function(s,j){s.setAttribute('aria-hidden',j===i?'false':'true');s.inert=j!==i;});try{gtag('event','walkthrough_slide',{slide:i+1})}catch(e){}}
+function open(x,from){last=from||null;m.classList.add('open');document.body.classList.add('lk-open');m.setAttribute('aria-hidden','false');document.documentElement.style.overflow='hidden';go(x||0);try{gtag('event','walkthrough_open')}catch(e){}}
+function close(){m.classList.remove('open');document.body.classList.remove('lk-open');m.setAttribute('aria-hidden','true');document.documentElement.style.overflow='';if(last&&last.focus)try{last.focus()}catch(e){}}
+document.addEventListener('click',function(e){var t=e.target.closest('[data-lk]');if(t){e.preventDefault();open(+t.getAttribute('data-lk')||0,t);return;}if(e.target.closest('[data-lk-close]')){close();return;}var dt=e.target.closest('#lkm-dots i');if(dt){go(+dt.getAttribute('data-i'));}});
+pv.addEventListener('click',function(){go(i-1)});nx.addEventListener('click',function(){go(i+1)});
+document.addEventListener('keydown',function(e){if(!m.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowRight')go(i+1);else if(e.key==='ArrowLeft')go(i-1);});
+var sx=null;tr.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});tr.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)>50)go(i+(dx<0?1:-1));},{passive:true});
+go(0);})();
+</script>
   <script is:inline src="https://js-na2.hsforms.net/forms/embed/246947446.js" defer></script>
   <script is:inline>
   (function(){var m=document.getElementById('vh-modal');if(!m)return;
@@ -219,7 +275,7 @@ const year = new Date().getFullYear();
   function init(){
     bind();
     var p=document.getElementById('dk-pop');if(!p)return;
-    function open(){if(get('dk_sub'))return;var last=+get('dk_seen')||0;if(Date.now()-last<14*864e5)return;var m=document.getElementById('vh-modal');if(m&&m.classList.contains('is-open'))return;if(document.body.classList.contains('nav-open'))return;if(document.querySelector('.vpop.open,.vpop.is-open,.vh-film.open,.vh-modal.is-open')||[].some.call(document.querySelectorAll('video'),function(v){return !v.paused&&!v.ended&&!v.muted}))return;put('dk_seen',String(Date.now()));p.classList.add('is-open');p.setAttribute('aria-hidden','false');}
+    function open(){if(get('dk_sub'))return;var last=+get('dk_seen')||0;if(Date.now()-last<14*864e5)return;var m=document.getElementById('vh-modal');if(m&&m.classList.contains('is-open'))return;if(document.body.classList.contains('nav-open'))return;if(document.querySelector('.vpop.open,.vpop.is-open,.vh-film.open,.vh-modal.is-open,.lkm.open')||[].some.call(document.querySelectorAll('video'),function(v){return !v.paused&&!v.ended&&!v.muted}))return;put('dk_seen',String(Date.now()));p.classList.add('is-open');p.setAttribute('aria-hidden','false');}
     function close(){p.classList.remove('is-open');p.setAttribute('aria-hidden','true');}
     p.addEventListener('click',function(e){if(e.target.closest('[data-dk-close]'))close();});
     document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
