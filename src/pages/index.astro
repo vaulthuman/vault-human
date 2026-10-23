@@ -72,6 +72,27 @@ const year = new Date().getFullYear();
 @media(max-width:760px){.lkm__ask .lkm__media{display:none}.lkm__ask .lkm__copy{padding-top:56px}}
 @media(prefers-reduced-motion:reduce){.lkm__track{transition:none}}
 
+.qt{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;margin-top:48px}
+.qt__i{position:relative;padding-top:18px;border-top:2px solid rgba(143,166,126,.28)}
+.qt__i:before{content:"";position:absolute;left:0;top:-2px;height:2px;width:100%;background:linear-gradient(90deg,#8FA67E,#C9A98A)}
+.qt__i b{display:block;font:400 clamp(40px,4.6vw,64px)/.95 "Bebas Neue",sans-serif;letter-spacing:.02em;color:#F1EDE4}
+.qt__i span{display:block;margin-top:10px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:rgba(241,237,228,.5);width:fit-content;position:relative}
+.qt__i span:after{content:"";position:absolute;left:-3px;right:-3px;top:52%;height:2px;background:#C9A98A}
+.qt.arm .qt__i:before{transform:scaleX(0);transform-origin:left}
+.qt.arm .qt__i b{opacity:0;transform:translateY(14px)}
+.qt.arm .qt__i span{opacity:0}
+.qt.arm .qt__i span:after{transform:scaleX(0);transform-origin:left}
+.qt.arm.in .qt__i:before{animation:qtl .9s ease forwards;animation-delay:calc(var(--i)*.45s)}
+.qt.arm.in .qt__i b{animation:qtb .7s ease forwards,qtg 5s ease-in-out infinite;animation-delay:calc(var(--i)*.45s + .25s),calc(3.4s + var(--i)*.6s)}
+.qt.arm.in .qt__i span{animation:qts .5s ease forwards;animation-delay:calc(var(--i)*.45s + .6s)}
+.qt.arm.in .qt__i span:after{animation:qtx .5s ease forwards;animation-delay:calc(var(--i)*.45s + 1s)}
+@keyframes qtl{to{transform:scaleX(1)}}
+@keyframes qtb{to{opacity:1;transform:none}}
+@keyframes qts{to{opacity:1}}
+@keyframes qtx{to{transform:scaleX(1)}}
+@keyframes qtg{0%,100%{color:#F1EDE4}50%{color:#B9D1A6}}
+@media(max-width:760px){.qt{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 20px;margin-top:36px}}
+@media(prefers-reduced-motion:reduce){.qt.arm .qt__i:before,.qt.arm .qt__i b,.qt.arm .qt__i span,.qt.arm .qt__i span:after{opacity:1!important;transform:none!important;animation:none!important}}
 </style>
 </head>
 <body data-time="all">
@@ -109,6 +130,7 @@ const year = new Date().getFullYear();
       <div class="appr-grid"><figure class="appr-photo"><img src="https://images.unsplash.com/photo-1565813086292-604790c8a97b?w=1800&q=72&auto=format&fit=crop" alt="Two old friends sharing a warm embrace in a crowded room, one smiling with his eyes" style="object-position:60% 35%;transform:scale(1.3);transform-origin:78% 45%" loading="lazy" /></figure><div class="appr-copy">
       <p class="listen-prose">The world is loud, and it can leave the best of us feeling small. Here, at the quiet end of the day, you get to be big again: empowered instead of worn down, seen for who you really are, and heard all the way to the end of what you have to say.</p>
       </div></div>
+      <div class="qt" id="qt" role="group" aria-label="Big, not small. Heard, not unheard. Seen, not unseen. Empowered, not disempowered."><div class="qt__i" style="--i:0"><b>Big</b><span>not small</span></div><div class="qt__i" style="--i:1"><b>Heard</b><span>not unheard</span></div><div class="qt__i" style="--i:2"><b>Seen</b><span>not unseen</span></div><div class="qt__i" style="--i:3"><b>Empowered</b><span>not disempowered</span></div></div>
     </div></section>
 
     <section class="sec" id="inside"><div class="wrap">
@@ -293,5 +315,6 @@ go(0);})();
 <aside class="vk-toast" id="vk-toast" aria-label="Free daily key" hidden><button class="vk-toast__x" type="button" aria-label="Close">&times;</button><p class="vk-toast__k">Free · five mornings a week</p><p class="vk-toast__t">Get the Vault Key</p><p class="vk-toast__s">One short teaching and one small practice from Russ, in your inbox.</p><a class="btn btn-acc" href="#daily-key">Send me the key</a></aside>
 <script is:inline>(function(){var t=document.getElementById('vk-toast');if(!t)return;function g(k){try{return localStorage.getItem(k)}catch(e){return null}}function s(k,v){try{localStorage.setItem(k,v)}catch(e){}}if(g('dk_sub')||(+g('vk_toast')||0)>Date.now()-3*864e5)return;var shown=false;function show(){if(shown)return;shown=true;t.hidden=false;requestAnimationFrame(function(){t.classList.add('in')});s('vk_toast',String(Date.now()))}function hide(){t.classList.remove('in');setTimeout(function(){t.hidden=true},300)}t.querySelector('.vk-toast__x').addEventListener('click',hide);t.querySelector('a').addEventListener('click',hide);addEventListener('scroll',function f(){var h=document.documentElement;if((h.scrollTop+innerHeight)/h.scrollHeight>0.35){removeEventListener('scroll',f);show()}},{passive:true});var dk=document.getElementById('daily-key');if(dk&&'IntersectionObserver' in window){new IntersectionObserver(function(e){if(e[0].isIntersecting)hide()}).observe(dk)}})();</script>
 <script is:inline src="/vh-dock.js" defer></script>
+<script is:inline>(function(){var q=document.getElementById("qt");if(!q||!("IntersectionObserver"in window))return;q.classList.add("arm");var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){q.classList.add("in");o.disconnect()}})},{threshold:.35});o.observe(q)})();</script>
 </body>
 </html>
