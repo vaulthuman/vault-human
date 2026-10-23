@@ -8022,5 +8022,35 @@ export const letters=[
   "iso": "2026-10-22",
   "month": "October 2026",
   "chamber": 5
+ },
+ {
+  "slug": "are-you-there-for-me",
+  "title": "Are you there for me?",
+  "dek": "Sue Johnson grew up in her parents' pub in England, and she said later that she learned what she knew about love by watching the people in it: the couples who came in…",
+  "day": 161,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Sue Johnson grew up in her parents' pub in England, and she said later that she learned what she knew about love by watching the people in it: the couples who came in happy and left in a fight, the ones who fought and made up before last call. I spent a decade in restaurants in every role, and I'll back her on that. You can learn most of what there is to know about people from a bar at the end of the night."
+   },
+   {
+    "k": "",
+    "t": "She carried the question to Canada, finished her doctorate in the early 1980s, and with Les Greenberg built what became Emotionally Focused Therapy, written up for couples in 1988. The field at the time treated a marriage as a negotiation: teach the two of them to communicate, trade favors, keep the contract. Johnson sat with couple after couple and heard something else. The fights weren't about the dishes or the money. They were protests. Under the sharpest sentence was a smaller one that never got said: Are you there for me? Can I count on you? She found the explanation in John Bowlby's attachment research, which had shown that a child needs one dependable person the way it needs food, and that the need runs, in Bowlby's words, \"from the cradle to the grave.\" Adults don't outgrow it. They fall in love with it."
+   },
+   {
+    "k": "",
+    "t": "So the method does something plainer than teaching skills. It slows a couple down until each can hear the question under the other's anger and answer it directly. Johnson named the three fights nearly every couple falls into: find the bad guy, where both attack; the protest polka, where one pushes and one pulls away; freeze and flee, where both have gone quiet. And she gave a three-letter test for a safe bond, A.R.E.: are you accessible, responsive, engaged? Her 2008 book <em>Hold Me Tight</em> put the work in the hands of ordinary couples, and in 2013 she and the neuroscientist Jim Coan showed with a brain scanner that, after the therapy, a partner's hand on yours quieted the brain's alarm in a way it hadn't before. She died in 2024, at seventy-six; the center she founded in Ottawa still trains the therapists."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because this month is for saying the unsaid, and the most common unsaid sentence in any house is the one under the fight. Vault Human coaches and doesn't treat; if the fighting has gone on for years, or someone has stopped fighting altogether, the door is a couples therapist trained in EFT. The practice is for everyone with someone to lose. Johnson wrote that love is not the icing on the cake of life but a basic need, like oxygen. Treat it that way and the argument changes shape."
+   }
+  ],
+  "n": 241,
+  "date": "October 23, 2026",
+  "iso": "2026-10-23",
+  "month": "October 2026",
+  "chamber": 5
  }
 ];
