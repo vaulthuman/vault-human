@@ -76,6 +76,48 @@ const year = new Date().getFullYear();
     .fine p{font-size:12px;color:var(--mute);max-width:820px;line-height:1.6}
     .step{display:flex;gap:18px;align-items:flex-start}
     .step .num{font-size:40px;min-width:40px}
+    .arrows{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:36px 0 28px}
+    .ar{position:relative;padding:16px 22px 14px 30px;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 50%,calc(100% - 22px) 100%,0 100%,22px 50%);background:var(--card);border:1px solid var(--line);text-align:center;animation:arpulse 4.8s ease-in-out infinite}
+    .ar:first-child{clip-path:polygon(0 0,calc(100% - 22px) 0,100% 50%,calc(100% - 22px) 100%,0 100%)}
+    .ar b{display:block;font-family:'Bebas Neue';font-weight:400;font-size:24px;letter-spacing:3px}
+    .ar span{font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:var(--soft)}
+    .ar.past{--c:var(--past)}.ar.now{--c:var(--now);animation-delay:1.6s}.ar.fut{--c:var(--fut);animation-delay:3.2s}
+    .ar b{color:var(--c)}
+    @keyframes arpulse{0%,60%,100%{background:var(--card)}15%,35%{background:color-mix(in srgb,var(--c) 22%,var(--card))}}
+    .wheelbox{background:#121715;border:1px solid var(--line);border-radius:16px;padding:28px 24px 12px}
+    .wheel{width:100%;height:auto;display:block;--w-self:#3A4F36;--w-now:#2F3A30;--w-more:#26302B;--w-past:#4A3B2C;--w-present:#2B3A47;--w-future:#2F4430;--w-rest:#1A201C;--w-core:#121715}
+    .wheel text{text-anchor:middle;font-family:Inter,system-ui,sans-serif}
+    .wn{font-size:13px;font-weight:600;fill:#F1EDE4}.wn.rest{fill:rgba(241,237,228,.6)}
+    .wv{font-size:9.5px;fill:#B3C6A3}.wm{font-size:9px;fill:rgba(241,237,228,.55)}
+    .wg{stroke:#F1EDE4;stroke-width:2}
+    .gbg{fill:#121715;stroke:rgba(241,237,228,.4)}
+    .gi{fill:none;stroke:#F1EDE4;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+    .gleaf{stroke:#B3C6A3}.gkey{stroke:#E2C98A}.gi.gk{stroke:#E2C98A}
+    .wc0{font-size:11px;letter-spacing:.35em;fill:#B3C6A3}
+    .wc1{font-family:"Bebas Neue",Inter,sans-serif;font-size:30px;fill:#F1EDE4;letter-spacing:.03em;font-weight:400}
+    .wc2{font-size:11px;fill:rgba(241,237,228,.65)}
+    .wheel .wa{fill:none;stroke-width:3;stroke-linecap:round}
+    .wheel .wa-in{stroke:url(#wa-grad);stroke-width:4}
+    .wheel .wa-past{stroke:#B88A5E}.wheel .wa-now{stroke:#7FA3C2}.wheel .wa-fut{stroke:#8FA67E}.wheel .wa-start{fill:#B88A5E;stroke:#121715;stroke-width:3}.wheel text.wal-start{fill:#D9B48C;font-size:18px}
+    .wheel text.wal{font-family:"Bebas Neue",Inter,sans-serif;font-size:24px;letter-spacing:.06em;fill:#F1EDE4}
+    .wheel text.wal-in{fill:#C9B79A;font-size:20px}
+    .wheel text.wals{font-size:13px;fill:rgba(241,237,228,.72)}
+    .wheel a:hover text.wal{fill:#B3C6A3}
+    .wheel .wa-flow{fill:none;stroke:#F1EDE4;stroke-width:4;stroke-linecap:round;stroke-dasharray:2 22;opacity:.55;animation:wa-flow 1.6s linear infinite}
+    @keyframes wa-flow{to{stroke-dashoffset:-24}}
+    @media(prefers-reduced-motion:reduce){.wheel .wa-flow,.ar{animation:none}}
+    .under{max-width:760px;margin:28px auto 0;text-align:center}
+    .keyrow{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px;align-items:start}
+    .keyrow img{width:100%;border-radius:14px}
+    .keytext{margin-top:22px}
+    .duo{margin-top:36px}
+    .ph{position:relative}
+    .inset{position:absolute;right:18px;bottom:-1px;width:26%;border-radius:12px 12px 0 0;border:2px solid var(--line);border-bottom:0;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+    .who{margin-top:32px}
+    .soon{font-family:Inter;font-size:11px;letter-spacing:2px;color:var(--sage);vertical-align:middle;margin-left:6px}
+    .cite{font-size:13px;color:var(--mute);margin-top:22px;line-height:1.6}
+    .cite a{color:var(--soft);text-decoration:underline;text-decoration-color:var(--line)}
+
     .wheelrow{grid-template-columns:1.15fr 1fr;gap:40px;align-items:center}
     @media (max-width:860px){
       section{padding:72px 0}
@@ -89,8 +131,9 @@ const year = new Date().getFullYear();
     @media (max-width:560px){
       .grid2,.grid3,.grid4{grid-template-columns:1fr}
       .coachgrid{grid-template-columns:1fr 1fr;grid-template-rows:220px 150px 150px}
-      .wheelrow{grid-template-columns:1fr}
-      .phone{max-width:240px!important}
+      .keyrow{grid-template-columns:1fr}
+      .arrows{gap:6px} .ar{padding:12px 10px 10px 18px} .ar b{font-size:18px;letter-spacing:2px} .ar span{font-size:10px}
+      .wheelbox{padding:12px 6px 4px}
       h2{font-size:44px}
       .lede{font-size:18px}
     }
@@ -159,16 +202,16 @@ const year = new Date().getFullYear();
   <div class="wrap">
     <p class="eyebrow">What you get · one</p>
     <h2>You get your life back.</h2>
-    <p class="lede">Your past, your present and your future, held together instead of in pieces. That is the whole idea of the Vault Approach: one year that moves through all three, so you can see where you came from, stand where you are, and choose where you are going.</p>
-    <div class="svgw" style="margin:36px 0 28px;max-width:760px"><svg viewBox="0 0 680 88" width="680" height="88"><polygon points="0.0,0 200.66666666666666,0 218.66666666666666,26 200.66666666666666,52 0.0,52 0.0,26" fill="#D2A576" fill-opacity="0.16" stroke="#D2A576" stroke-width="1.5"/><text x="109.33333333333333" y="22" text-anchor="middle" font-family="Bebas Neue" font-size="17" letter-spacing="2" fill="#D2A576">PAST</text><text x="109.33333333333333" y="40" text-anchor="middle" font-family="Inter" font-size="11" fill="#dfe3dc">Learn · as learned</text><polygon points="230.66666666666666,0 431.3333333333333,0 449.3333333333333,26 431.3333333333333,52 230.66666666666666,52 248.66666666666666,26" fill="#9DC0DE" fill-opacity="0.16" stroke="#9DC0DE" stroke-width="1.5"/><text x="340.0" y="22" text-anchor="middle" font-family="Bebas Neue" font-size="17" letter-spacing="2" fill="#9DC0DE">PRESENT</text><text x="340.0" y="40" text-anchor="middle" font-family="Inter" font-size="11" fill="#dfe3dc">Love · as loved</text><polygon points="461.3333333333333,0 662.0,0 680.0,26 662.0,52 461.3333333333333,52 479.3333333333333,26" fill="#A9C397" fill-opacity="0.16" stroke="#A9C397" stroke-width="1.5"/><text x="570.6666666666666" y="22" text-anchor="middle" font-family="Bebas Neue" font-size="17" letter-spacing="2" fill="#A9C397">FUTURE</text><text x="570.6666666666666" y="40" text-anchor="middle" font-family="Inter" font-size="11" fill="#dfe3dc">Live · as lived</text><rect x="0" y="62" width="680" height="22" rx="11" fill="none" stroke="#8FA67E" stroke-width="1.2" stroke-dasharray="4 5"/><text x="340.0" y="77" text-anchor="middle" font-family="Inter" font-size="10.5" letter-spacing="3" fill="#8FA67E">LISTEN · ALL YEAR · AS HEARD, AS DISCERNED, AS CREATED</text></svg></div>
-    <div class="grid2 wheelrow">
-      <img src="/img/keyholders/wheel.png" alt="The Vault Approach wheel: one year, eleven chambers, nine gates" style="border-radius:14px" />
-      <div>
-        <h3 style="font-size:30px">One year. Eleven chambers. Nine gates.</h3>
-        <p style="margin-bottom:16px">The year moves through eleven chambers, one part of your life at a time. Along the way are nine gates, and each one opens when a daily practice stops being something you try and becomes something you live.</p>
-        <p style="margin-bottom:16px">You begin with yourself, honor what shaped you, rest in the middle, and finish by giving something back. Gates, not dates: nothing is due on anyone else's clock.</p>
-        <p class="serif" style="color:var(--ink);font-size:19px">Full circle. One year. The whole of you.</p>
-      </div>
+    <p class="lede">Your past, your present and your future, held together instead of in pieces. One year that moves through all three.</p>
+    <div class="arrows" aria-hidden="true">
+      <div class="ar past"><b>Past</b><span>Learn</span></div>
+      <div class="ar now"><b>Present</b><span>Love</span></div>
+      <div class="ar fut"><b>Future</b><span>Live</span></div>
+    </div>
+    <div class="wheelbox"><div class="appr-wheel"><svg class="wheel" viewBox="-175 -40 870 610" role="img" aria-label="The Vault Approach: an arrow comes in from the left to where you start, at the top, and the line wraps the year, through past (chambers 1 to 4), present (5 to 8, with a pause after Healing) and future (9 to 11)."><defs><marker id="wa-past" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#B88A5E"/></marker><marker id="wa-now" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#7FA3C2"/></marker><marker id="wa-fut" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8FA67E"/></marker><marker id="wa-head" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5.2" markerHeight="5.2" orient="auto"><path d="M0 0L10 5L0 10z" fill="#D9A877"/></marker><linearGradient id="wa-grad" gradientUnits="userSpaceOnUse" x1="-160" x2="244" y1="0" y2="0"><stop offset="0" stop-color="#B3C6A3" stop-opacity=".35"/><stop offset="1" stop-color="#B88A5E"/></linearGradient></defs><path class="wa wa-in" d="M-160 -2 H226" marker-end="url(#wa-head)"/><path class="wa-flow" d="M-160 -2 H222"/><circle cx="250" cy="-2" r="7" class="wa-start"/><text class="wal wal-start" x="250" y="-18">START WITH YOU</text><text class="wal wal-in" x="-160" y="-16" style="text-anchor:start">THE VAULT APPROACH</text><path class="wa wa-past" d="M258.8 -1.8 A252 252 0 0 1 472.5 368.3"/><path class="wa wa-now" d="M463.7 383.5 A252 252 0 0 1 -1.8 258.8"/><path class="wa wa-fut" d="M-1.8 241.2 A252 252 0 0 1 241.2 -1.8"/><a href="/as-learned/"><text class="wal" x="497" y="119" style="text-anchor:start">PAST</text><text class="wals" x="497" y="135" style="text-anchor:start">Learning your past · 1–4</text></a><a href="/as-loved/"><text class="wal" x="173" y="519" style="text-anchor:middle">PRESENT</text><text class="wals" x="173" y="535" style="text-anchor:middle">Loving your present · 5–8</text></a><a href="/as-lived/"><text class="wal" x="8" y="110" style="text-anchor:end">FUTURE</text><text class="wals" x="8" y="126" style="text-anchor:end">Living your future · 9–11</text></a><path d="M252.1 54.0 A196 196 0 0 1 346.2 79.2 L301.1 159.4 A104 104 0 0 0 251.1 146.0Z" fill="var(--w-past)"/><text class="wn" x="291.4" y="91.5">You</text><text class="wv" x="291.4" y="105.5">by Being</text><text class="wm" x="280.5" y="139.0">1</text><path d="M349.8 81.3 A196 196 0 0 1 418.7 150.2 L339.5 197.1 A104 104 0 0 0 302.9 160.5Z" fill="var(--w-past)"/><text class="wn" x="363.1" y="132.9">Body</text><text class="wv" x="363.1" y="146.9">by Breathing</text><text class="wm" x="333.4" y="169.6">2</text><line class="wg" x1="302.0" y1="159.9" x2="348.0" y2="80.3"/><g transform="translate(360.0 59.5)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M420.8 153.8 A196 196 0 0 1 446.0 247.9 L354.0 248.9 A104 104 0 0 0 340.6 198.9Z" fill="var(--w-past)"/><text class="wn" x="404.5" y="204.6">Awareness</text><text class="wv" x="404.5" y="218.6">by Attending</text><text class="wm" x="364.0" y="222.5">3</text><line class="wg" x1="340.1" y1="198.0" x2="419.7" y2="152.0"/><g transform="translate(440.5 140.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M446.0 252.1 A196 196 0 0 1 420.8 346.2 L340.6 301.1 A104 104 0 0 0 354.0 251.1Z" fill="var(--w-past)"/><text class="wn" x="404.5" y="287.4">Meaning</text><text class="wv" x="404.5" y="301.4">by Making</text><text class="wm" x="364.0" y="283.5">4</text><line class="wg" x1="354.0" y1="250.0" x2="446.0" y2="250.0"/><g transform="translate(470.0 250.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M418.7 349.8 A196 196 0 0 1 349.8 418.7 L302.9 339.5 A104 104 0 0 0 339.5 302.9Z" fill="var(--w-present)"/><text class="wn" x="363.1" y="359.1">Healing</text><text class="wv" x="363.1" y="373.1">by Honoring</text><text class="wm" x="333.4" y="336.4">5</text><line class="wg" x1="340.1" y1="302.0" x2="419.7" y2="348.0"/><g transform="translate(440.5 360.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M346.2 420.8 A196 196 0 0 1 252.1 446.0 L251.1 354.0 A104 104 0 0 0 301.1 340.6Z" fill="var(--w-present)" fill-opacity=".55"/><text class="wn rest" x="291.4" y="400.5">Integration</text><text class="wv" x="291.4" y="414.5">a pause</text><text class="wm" x="280.5" y="367.0"></text><path d="M247.9 446.0 A196 196 0 0 1 153.8 420.8 L198.9 340.6 A104 104 0 0 0 248.9 354.0Z" fill="var(--w-present)"/><text class="wn" x="208.6" y="400.5">Circle</text><text class="wv" x="208.6" y="414.5">by Connecting</text><text class="wm" x="219.5" y="367.0">6</text><line class="wg" x1="250.0" y1="354.0" x2="250.0" y2="446.0"/><g transform="translate(250.0 470.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M150.2 418.7 A196 196 0 0 1 81.3 349.8 L160.5 302.9 A104 104 0 0 0 197.1 339.5Z" fill="var(--w-present)"/><text class="wn" x="136.9" y="359.1">Rhythm</text><text class="wv" x="136.9" y="373.1">by Repeating</text><text class="wm" x="166.6" y="336.4">7</text><line class="wg" x1="198.0" y1="340.1" x2="152.0" y2="419.7"/><g transform="translate(140.0 440.5)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M79.2 346.2 A196 196 0 0 1 54.0 252.1 L146.0 251.1 A104 104 0 0 0 159.4 301.1Z" fill="var(--w-present)"/><text class="wn" x="95.5" y="287.4">Freedom</text><text class="wv" x="95.5" y="301.4">by Forgiving</text><text class="wm" x="136.0" y="283.5">8</text><line class="wg" x1="159.9" y1="302.0" x2="80.3" y2="348.0"/><g transform="translate(59.5 360.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M54.0 247.9 A196 196 0 0 1 79.2 153.8 L159.4 198.9 A104 104 0 0 0 146.0 248.9Z" fill="var(--w-future)"/><text class="wn" x="95.5" y="204.6">Future</text><text class="wv" x="95.5" y="218.6">by Planning</text><text class="wm" x="136.0" y="222.5">9</text><line class="wg" x1="146.0" y1="250.0" x2="54.0" y2="250.0"/><g transform="translate(30.0 250.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M81.3 150.2 A196 196 0 0 1 150.2 81.3 L197.1 160.5 A104 104 0 0 0 160.5 197.1Z" fill="var(--w-future)"/><text class="wn" x="136.9" y="132.9">Service</text><text class="wv" x="136.9" y="146.9">by Serving</text><text class="wm" x="166.6" y="169.6">10</text><line class="wg" x1="159.9" y1="198.0" x2="80.3" y2="152.0"/><g transform="translate(59.5 140.0)"><rect x="-19" y="-12" width="38" height="24" rx="12" class="gbg"/><path d="M-13 6V-4M-4 6V-4M-13-4Q-8.5-8.5-4-4" class="gi"/><path d="M-4 5.5L-8 3.5V-3.5" class="gi gleaf"/><circle cx="4.5" cy="0" r="3.4" class="gi gk"/><path d="M7.9 0H15M12 0V3.2M15 0V3.2" class="gi gkey"/></g><path d="M153.8 79.2 A196 196 0 0 1 247.9 54.0 L248.9 146.0 A104 104 0 0 0 198.9 159.4Z" fill="var(--w-future)"/><text class="wn" x="208.6" y="91.5">Sharing</text><text class="wv" x="208.6" y="105.5">by Showing</text><text class="wm" x="219.5" y="139.0">11</text><circle cx="250" cy="250" r="94" fill="var(--w-core)"/><text class="wc0" x="250" y="226">ONE</text><text class="wc1" x="250" y="268">YEAR</text><text class="wc2" x="250" y="300">11 chambers · 9 gates</text></svg></div></div>
+    <div class="under">
+      <h3 style="font-size:34px">One year. Eleven chambers. Nine gates.</h3>
+      <p>The year moves through eleven chambers, one part of your life at a time. Each gate opens when a daily practice stops being something you try and becomes something you live. Gates, not dates.</p>
     </div>
   </div>
 </section>
@@ -176,22 +219,18 @@ const year = new Date().getFullYear();
 <section id="get-2">
   <div class="wrap">
     <p class="eyebrow">What you get · two</p>
-    <h2>You get the keys.</h2>
-    <p class="lede">Every chamber opens with keys: short teachings, each with one small practice. A key arrives each morning. You carry it through the day. When the practice holds, the key turns, and the gate opens.</p>
-    <div class="grid2" style="margin-top:44px;align-items:center;gap:48px">
-      <div style="display:flex;justify-content:center"><img class="phone" src="/img/inside/letter.jpg" alt="The morning letter, Who Made You, on a phone" style="max-width:300px" /></div>
+    <h2>You get the keys<br>to unlock your life.</h2>
+    <p class="lede">Every chamber opens with keys: short teachings, each with one small practice. Here is the first one.</p>
+    <div class="keyrow">
+      <img src="/img/inside/booklet-cover.jpg" alt="Who Made You, the first key" />
       <div>
-        <p class="eyebrow">Your first key</p>
-        <h3 style="font-size:40px">Who made you.</h3>
-        <p style="margin-bottom:14px;color:var(--ink);font-size:17px">Someone believed in you before you believed in yourself. Maybe it was a teacher who kept you after class, a coach who wouldn't let you quit on a bad day, a boss who handed you the keys and walked out the door. Most of them never heard what it meant.</p>
-        <p>That is the first key. A short morning letter, one small practice, and a week to carry it. Three moves: name them, write it down, read it to them. You are not the only one who changes when it's read out loud.</p>
+        <img src="/img/inside/booklet-key.jpg" alt="The teaching: Who Made You" />
+        <div class="keytext">
+          <h3 style="font-size:34px">Who made you.</h3>
+          <p>Someone believed in you before you believed in yourself. A teacher who kept you after class. A coach who wouldn't let you quit on a bad day. A boss who handed you the keys and walked out the door. Most of them never heard what it meant.</p>
+          <p style="margin-top:12px">That is the first key: a short teaching, one small practice, and a week to carry it. When the practice holds, the key turns.</p>
+        </div>
       </div>
-    </div>
-    <div class="grid4" style="margin-top:48px">
-      <div><img src="/img/inside/booklet-cover.jpg" alt="" style="border-radius:10px" /><p class="cap">The booklet: a key you can hold</p></div>
-      <div><img src="/img/inside/booklet-day1.jpg" alt="" style="border-radius:10px" /><p class="cap">Day one: the name</p></div>
-      <div><img src="/img/inside/booklet-key.jpg" alt="" style="border-radius:10px" /><p class="cap">The teaching, in plain words</p></div>
-      <div><img src="/img/inside/booklet-practice.jpg" alt="" style="border-radius:10px" /><p class="cap">Three moves, one week</p></div>
     </div>
   </div>
 </section>
@@ -199,29 +238,43 @@ const year = new Date().getFullYear();
 <section class="alt" id="get-3">
   <div class="wrap">
     <p class="eyebrow">What you get · three</p>
-    <h2>You get the tools,<br>and a coach.</h2>
-    <p class="lede">A letter every morning. A booklet for every key. An app that captures your work, any hour, from anywhere in the world. And a real person in your corner.</p>
-    <div class="grid3" style="margin-top:40px">
-      <div class="tile"><div class="ph" style="aspect-ratio:3/4;background-image:url(/img/inside/letter.jpg);background-position:center top"></div><div class="t"><h3>The letter</h3><p>Every morning, in your inbox and your app. One teaching, one practice.</p></div></div>
-      <div class="tile"><div class="ph" style="aspect-ratio:3/4;background-image:url(/img/inside/booklet-cover.jpg);background-position:center top"></div><div class="t"><h3>The booklet</h3><p>Each key as something you can hold, print and keep.</p></div></div>
-      <div class="tile"><div class="ph" style="aspect-ratio:3/4;background-image:url(/img/inside/app-capture.jpg);background-position:center top"></div><div class="t"><h3>The capture tool</h3><p>Write it, say it or snap it the moment it lands. A private folder that becomes your year in your own words.</p></div></div>
+    <h2>A letter every morning,<br>and a place to keep what you notice.</h2>
+    <div class="grid2 duo">
+      <div class="tile">
+        <div class="ph" style="aspect-ratio:16/10;background-image:url(https://images.unsplash.com/photo-1545945774-73922eb27813?w=1400&q=80&auto=format&fit=crop);background-position:center 40%"><img class="inset" src="/img/inside/letter.jpg" alt="" /></div>
+        <div class="t"><h3>The letter</h3><p>Each morning, a short letter from your coach, in your inbox and your app. One teaching, one practice, before the day takes you.</p></div>
+      </div>
+      <div class="tile">
+        <div class="ph" style="aspect-ratio:16/10;background-image:url(https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=1400&q=80&auto=format&fit=crop);background-position:center 30%"><img class="inset" src="/img/inside/app-capture.jpg" alt="" /></div>
+        <div class="t"><h3>The capture tool</h3><p>Write it, say it or snap it the moment it lands. A private folder that becomes your year, in your own words, any hour, from anywhere.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="coach">
+  <div class="wrap">
+    <p class="eyebrow">What you get · four</p>
+    <h2>A real person<br>in your corner.</h2>
+    <p class="lede">Russ Michaels created Vault Human and coaches every member. More than twenty years leading organizations, more than ten as a chief executive and board president, more than ten as an attorney, and a decade in hospitality, where he learned that people wait patiently when they know they have been seen.</p>
+    <div class="coachgrid" style="margin-top:36px">
+      <div class="big"><video autoplay muted loop playsinline poster="/img/russ/coach/coach-point.jpg" aria-label="Russ on stage"><source src="/img/russ/coach/coach-point.mp4" type="video/mp4" /></video></div>
+      <div><img src="/img/russ/strip/friend.jpg" alt="" style="object-position:center 30%" /></div>
+      <div><img src="https://images.unsplash.com/photo-1565813086292-604790c8a97b?w=1200&q=80&auto=format&fit=crop" alt="" style="object-position:center 35%" /></div>
+      <div><img src="/img/russ/coach/coach-field.jpg" alt="" style="object-position:center 40%" /></div>
+      <div><img src="https://images.unsplash.com/photo-1542323228-002ac256e7b8?w=1200&q=80&auto=format&fit=crop" alt="" style="object-position:center 45%" /></div>
     </div>
 
-    <div style="margin-top:88px">
-      <p class="eyebrow">The coach</p>
-      <h2>A real person<br>in your corner.</h2>
-      <p class="lede">Russ Michaels created Vault Human and coaches every member. More than twenty years leading organizations, more than ten as a chief executive and board president, more than ten as an attorney, and a decade in hospitality, where he learned that people wait patiently when they know they have been seen.</p>
-      <div class="coachgrid" style="margin-top:36px">
-        <div class="big"><video autoplay muted loop playsinline poster="/img/russ/coach/coach-point.jpg" aria-label="Russ on stage"><source src="/img/russ/coach/coach-point.mp4" type="video/mp4" /></video></div>
-        <div><img src="/img/russ/strip/friend.jpg" alt="" style="object-position:center 30%" /></div>
-        <div><img src="https://images.unsplash.com/photo-1565813086292-604790c8a97b?w=1200&q=80&auto=format&fit=crop" alt="" style="object-position:center 35%" /></div>
-        <div><img src="/img/russ/coach/coach-field.jpg" alt="" style="object-position:center 40%" /></div>
-        <div><img src="https://images.unsplash.com/photo-1542323228-002ac256e7b8?w=1200&q=80&auto=format&fit=crop" alt="" style="object-position:center 45%" /></div>
-      </div>
-      <div class="grid3" style="margin-top:28px">
-        <div class="card"><h3>Every member</h3><p>A live group call with Russ each month, recorded for anyone who cannot attend.</p></div>
-        <div class="card"><h3>Circles</h3><p>Small groups of six who walk the chambers together, twice a month.</p></div>
-        <div class="card"><h3>One-on-one</h3><p>Three private sessions a month for those who want to go deeper.</p></div>
+    <div style="margin-top:80px">
+      <p class="eyebrow">Who we coach</p>
+      <h2>Members, families, circles, teams.</h2>
+      <div class="grid3 who">
+        <div class="tile"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1616587894289-86480e533129?w=1200&q=80&auto=format&fit=crop);background-position:center 30%"></div><div class="t"><h3>Members, every day</h3><p>The year of keys, the app, and a live group call with Russ each month. Online, from anywhere.</p></div></div>
+        <div class="tile"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1526494661200-9d7cfd4b2404?w=1200&q=80&auto=format&fit=crop);background-position:center 30%"></div><div class="t"><h3>Parents and teens <span class="soon">coming</span></h3><p>A curated year for ages 13 to 17, bought by a parent, with virtual calls for teens.</p></div></div>
+        <div class="tile"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1653656120996-57c14eff3ee9?w=1200&q=80&auto=format&fit=crop);background-position:center 30%"></div><div class="t"><h3>Circles</h3><p>Small groups of six who walk the chambers together, twice a month.</p></div></div>
+        <div class="tile"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1683272468278-3ba6633c15a4?w=1200&q=80&auto=format&fit=crop);background-position:center 30%"></div><div class="t"><h3>One-on-one</h3><p>Three private sessions a month with Russ for those who want to go deeper.</p></div></div>
+        <div class="tile"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1752659504423-87916d12bc37?w=1200&q=80&auto=format&fit=crop);background-position:center 30%"></div><div class="t"><h3>Teams and business</h3><p>A team that walks the same keys starts listening to each other. Built to fit.</p></div></div>
+        <div class="tile"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1593100126453-19b562a800c1?w=1200&q=80&auto=format&fit=crop);background-position:center 30%"></div><div class="t"><h3>Families</h3><p>Parents and grandparents, kids and cousins, walking the year on parallel paths.</p></div></div>
       </div>
       <p class="serif" style="font-size:19px;color:var(--ink);margin-top:28px;text-align:center">Coaching, not therapy. A person, not a program.</p>
     </div>
@@ -232,17 +285,22 @@ const year = new Date().getFullYear();
   <div class="wrap">
     <p class="eyebrow">The plan · why membership</p>
     <h2>Built on the<br><span style="color:var(--sage)">forever relationship.</span></h2>
-    <p class="lede">The strongest personal-growth companies no longer sell one course at a time. They invite people into a membership and keep earning their trust, month after month. Robbie Kellman Baxter calls it "the forever transaction" in <i>The Membership Economy</i>.</p>
+    <p class="lede">The strongest personal-growth companies no longer sell one course at a time. They invite people into a membership and keep earning their trust, month after month. The research on why is consistent, and it comes from more than one place.</p>
     <div class="grid3" style="margin-top:36px">
-      <div class="card"><div class="num">$51B</div><p>Global personal development market in 2025, projected near $80B by 2033 (Grand View Research).</p></div>
-      <div class="card"><div class="num">122,974</div><p>Coaches worldwide, up 15% since 2023, in a $5.34B coaching industry (ICF Global Coaching Study, 2025).</p></div>
-      <div class="card"><div class="num">11%</div><p>Faster revenue growth for subscription companies than the S&amp;P 500 over two years (Zuora Subscription Economy Index, 2025).</p></div>
+      <div class="card"><div class="num">11%</div><p>Subscription companies grew revenue 11% faster than the S&amp;P 500 over two years, and 68% of U.S. consumers signed up for a new subscription in 2024.<br><span class="cite">Zuora, Subscription Economy Index, 2025</span></p></div>
+      <div class="card"><div class="num">25 to 95%</div><p>A 5% rise in customer retention lifts profit by 25% to 95%. Keeping a customer costs a fraction of finding a new one.<br><span class="cite">Frederick Reichheld, Bain &amp; Company, in Harvard Business Review</span></p></div>
+      <div class="card"><div class="num">92%</div><p>Twelve-month retention on annual plans, against 68% on monthly plans. Annual members stay, and failed payments almost disappear.<br><span class="cite">Baremetrics, subscription benchmarks</span></p></div>
     </div>
-    <div class="grid2" style="margin-top:22px">
-      <div class="card"><h3>Keeping members is the whole game</h3><p>Bain &amp; Company research by Frederick Reichheld found a 5% rise in retention lifts profit 25% to 95%. Keeping a member costs a fraction of finding a new one (Harvard Business Review, 2014).</p></div>
-      <div class="card"><h3>The closest model: Mindvalley</h3><p>A global personal-growth membership: every program, community and author sessions for $99 a month or $499 a year, with a Pro tier that adds live sessions with its founder. Brendon Burchard's GrowthDay runs a similar daily-coaching membership.</p></div>
+    <div class="grid3" style="margin-top:20px">
+      <div class="card"><div class="num">$51B</div><p>The personal development market in 2025, projected near $80B by 2033.<br><span class="cite">Grand View Research</span></p></div>
+      <div class="card"><div class="num">122,974</div><p>Coaches worldwide, up 15% since 2023, in a $5.34B coaching industry.<br><span class="cite">ICF Global Coaching Study, 2025, with PwC</span></p></div>
+      <div class="card"><div class="num">Under 5%</div><p>Monthly churn for memberships that mix content, community and live calls, against 8% to 12% for a course library alone. The coach is what keeps people.<br><span class="cite">Kourses, member retention benchmarks, 2026</span></p></div>
     </div>
-    <div class="card" style="margin-top:22px;border-left:3px solid var(--sage)"><p style="color:var(--ink)"><b>Where Vault Human is different:</b> a single guided year instead of a library to browse, a real coach inside every membership, and a capture tool that turns each day's practice into a record of who you are becoming.</p></div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>What the books say</h3><p>Robbie Kellman Baxter calls it the <i>forever transaction</i> in <i>The Membership Economy</i>: a relationship, not a sale. Tien Tzuo, who built Zuora, shows in <i>Subscribed</i> why recurring relationships beat one-time purchases. John Warrillow, in <i>The Automatic Customer</i>, shows how recurring revenue makes a company itself more valuable.</p></div>
+      <div class="card"><h3>The closest working model</h3><p>Mindvalley, a global personal-growth membership: every program, community and author sessions for $99 a month or $499 a year, with a tier that adds live sessions with its founder. Brendon Burchard's GrowthDay runs a daily-coaching membership on the same idea.</p></div>
+    </div>
+    <div class="card" style="margin-top:20px;border-left:3px solid var(--sage)"><p style="color:var(--ink)"><b>Where Vault Human is different:</b> a single guided year instead of a library to browse, a real coach inside every membership, and a capture tool that turns each day's practice into a record of who you are becoming.</p></div>
   </div>
 </section>
 
