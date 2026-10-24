@@ -49,7 +49,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     .under{font-size:13.5px;color:var(--mute);margin:10px 0 0;text-align:center}
     .err{color:#e0a08f;font-size:14px;margin:0;text-align:center}.err:empty{display:none}
     /* sections */
-    section{padding:34px 0;border-top:1px solid var(--line)}
+    section{padding:34px 0;border-top:1px solid var(--line);scroll-margin-top:12px}
     h2{font-family:var(--disp);font-weight:400;font-size:38px;line-height:.95;margin:0 0 10px;letter-spacing:.01em;color:var(--acc)}
     p{margin:0 0 12px;color:var(--soft)}
     .film{position:relative;border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;margin:14px 0 0}
@@ -94,14 +94,14 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
 <body>
   <div class="top"><span class="brand">Vault <b>Human</b><small>Online life coaching</small></span><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
 
-  <div class="hero"><div class="wrap">
+  <div class="hero" id="top"><div class="wrap">
     <div class="hc">
       <p class="eyebrow">First week free</p>
       <h1>A real coach. One small step every morning.</h1>
       <p class="lede">Vault Human is an online coaching program. Each morning your coach sends you a short note we call a <b>key</b>: two minutes to read, and one small thing to do that day. Over a year the keys work through every part of your life: your past, your present and your future.</p>
     </div>
     <div class="hv"><video autoplay muted loop playsinline preload="metadata" poster="/video/start-hero-fire.jpg" aria-hidden="true"><source src="/video/start-hero-fire.mp4" type="video/mp4" /></video></div>
-    <div class="whybox"><p class="eyebrow">Why Vault Human exists</p><p class="why">Most of us were handed the pieces of ourselves, never the whole. We believe every person carries more than they've been told, and that growing into it takes a coach in your corner, one day at a time.</p></div>
+    <div class="whybox" id="why"><p class="eyebrow">Why Vault Human exists</p><p class="why">Most of us were handed the pieces of ourselves, never the whole. We believe every person carries more than they've been told, and that growing into it takes a coach in your corner, one day at a time.</p></div>
     <form id="cap" novalidate>
       <div class="f2">
         <input name="firstname" type="text" placeholder="First name" autocomplete="given-name" required aria-label="First name" />
@@ -114,7 +114,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     </form>
   </div></div>
 
-  <section><div class="wrap">
+  <section id="coach"><div class="wrap">
     <div class="coach">
       <img src="/img/russ/coach/coach-point.jpg" alt="" />
       <div><p class="nm">Russ Michaels</p><p>The founder of Vault Human has spent decades leading people through hard decisions, and there's a live call with him every month. Behind every key, there's a coach.</p></div>
@@ -124,7 +124,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
   <section><div class="wrap">
   </div></section>
 
-  <section><div class="wrap">
+  <section id="film-sec"><div class="wrap">
     <h2>Watch the 1st Key.</h2>
     <p>This is what arrives on your first morning.</p>
     <div class="film" id="film">
@@ -133,7 +133,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     </div>
   </div></section>
 
-  <section><div class="wrap">
+  <section id="people"><div class="wrap">
     <div class="q"><p>He sees things in people they often can't see in themselves, and asks the questions no one else is willing to ask, with enough warmth that you actually want to answer.</p><cite>Coaching client · CEO</cite></div>
     <div class="q"><p>He draws people in, challenges how they think, and makes space for things that don't ordinarily get said. You leave thinking differently about yourself.</p><cite>Workshop participant</cite></div>
     <div class="q"><p>He can walk straight into the most uncomfortable conversation in the room without making anyone feel attacked, and leave everyone's dignity intact.</p><cite>Board chair</cite></div>
