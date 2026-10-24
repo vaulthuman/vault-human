@@ -27,6 +27,11 @@ import Base from '../layouts/Base.astro';
     <div class="calendly-inline-widget" data-url="https://calendly.com/vaulthuman/free-call?hide_gdpr_banner=1&hide_landing_page_details=1" style="min-width:320px;height:760px;border-radius:12px;overflow:hidden;background:#F4F1EA"></div>
   </div>
   <style is:inline>.vh-cap label{display:block;font:600 14px Inter,system-ui,sans-serif;margin:12px 0 0;color:#1B231D}.vh-cap input{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1px solid #c9c4b8;border-radius:8px;font:16px Inter,system-ui,sans-serif;background:#fff;color:#1B231D}.vh-cap button{width:100%;margin-top:16px;border:0;cursor:pointer}.vh-cap__err{color:#8a2a2a;font-size:14px;margin:10px 0 0}</style>
+  <script is:inline>
+    // Trial/membership started (Stripe success). GA4 key event; import to Google Ads once it has fired.
+    window.dataLayer=window.dataLayer||[];function gtag(){window.dataLayer.push(arguments);}
+    gtag('event','trial_started',{method:'stripe'});
+  </script>
   <script is:inline src="/vh-capture.js" defer></script>
   <script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </Base>
