@@ -1,0 +1,5 @@
+// The short films that go with the daily keys on /writing — one per letter as they are made.
+// slug → { src, poster }. The thumbnail shows on the timeline; the film sits at the end of the letter.
+export const letterVideos = {
+  'go-outside': { src: '/video/key01-go-outside.mp4', poster: '/img/keys/key01-go-outside-cover.jpg' },
+};
