@@ -54,9 +54,9 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     p{margin:0 0 12px;color:var(--soft)}
     .film{position:relative;border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;margin:14px 0 0}
     .film video{width:100%;height:100%;display:block}
-    .film .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25);cursor:pointer;border:0;color:#fff;font:600 15px Inter,sans-serif;gap:10px}
-    .film .play i{width:56px;height:56px;border-radius:50%;background:var(--acc);display:inline-block;position:relative}
-    .film .play i:after{content:"";position:absolute;left:22px;top:17px;border-left:18px solid #15190f;border-top:11px solid transparent;border-bottom:11px solid transparent}
+    .film .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.2);cursor:pointer;border:0}
+    .film .play i{width:64px;height:64px;border-radius:50%;background:var(--acc);display:inline-block;position:relative}
+    .film .play i:after{content:"";position:absolute;left:25px;top:20px;border-left:20px solid #15190f;border-top:12px solid transparent;border-bottom:12px solid transparent}
     .film.on .play{display:none}
     .coach{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center}
     .coach img{width:96px;height:96px;object-fit:cover;object-position:60% 20%;border-radius:10px;filter:saturate(.85)}
@@ -64,12 +64,16 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     .q{margin:0 0 14px;padding-left:14px;border-left:2px solid var(--acc)}
     .q p{font-family:Fraunces,Georgia,serif;font-size:18px;line-height:1.4;color:var(--ink);margin:0 0 4px}
     .q cite{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
-    .fine{font-size:13px;color:var(--mute);margin:0}
-    footer{padding:26px 20px 34px;text-align:center;font-size:13px;color:var(--mute);border-top:1px solid var(--line)}
+    .fine{font-size:13px;color:var(--mute);margin:28px 0 0}
+    .why{font-family:Fraunces,Georgia,serif;font-size:21px;line-height:1.4;color:var(--ink);margin:0}
+    footer{margin-top:24px;padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute);border-top:1px solid var(--line)}
     footer a{text-decoration:none}
     @media (min-width:900px){
-      .wrap{max-width:620px}
-      .top,.hero .wrap,.ask .wrap{max-width:980px}
+      .wrap{max-width:980px}
+      section .wrap{max-width:980px}
+      .q{max-width:760px}
+      .why{max-width:760px}
+      .coach p{max-width:760px}
       .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding-top:40px}
       .hv{margin:0}
       .ask .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}
@@ -86,7 +90,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     <div class="hc">
       <p class="eyebrow">First week free</p>
       <h1>A real coach. One small step every morning.</h1>
-      <p class="lede">Vault Human is an online coaching program. Each morning your coach sends you a short note we call a <b>key</b>: two minutes to read, and one small thing to do that day. Over a year the keys work through every part of your life: mind, body, work, relationships, purpose. Your first week is free.</p>
+      <p class="lede">Vault Human is an online coaching program. Each morning your coach sends you a short note we call a <b>key</b>: two minutes to read, and one small thing to do that day. Over a year the keys work through every part of your life: your past, your present and your future.</p>
     </div>
     <div class="hv"><video autoplay muted loop playsinline preload="metadata" poster="/video/key01-go-outside-hero.jpg" aria-hidden="true"><source src="/video/key01-go-outside-loop.mp4" type="video/mp4" /></video></div>
   </div></div>
@@ -99,31 +103,38 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
       </div>
       <input name="email" type="email" placeholder="Email" autocomplete="email" inputmode="email" required aria-label="Email" />
       <input name="phone" type="tel" placeholder="Mobile (optional)" autocomplete="tel" inputmode="tel" aria-label="Mobile" />
-      <button class="btn" id="go" type="submit">Send me my first key, free</button>
+      <button class="btn" id="go" type="submit">Send me my key, free</button>
       <p class="err" id="msg"></p>
     </form>
-    <p class="under">Free for a week. Then $99 a month, cancel any time.</p>
   </div></div>
 
   <section><div class="wrap">
-    <h2>Watch the first key.</h2>
-    <p>It's called Go Outside. Two minutes. This is what arrives on your first morning.</p>
+    <h2>Watch the first Key.</h2>
+    <p>This is what arrives on your first morning.</p>
     <div class="film" id="film">
       <video id="fv" playsinline preload="none" poster="/img/keys/key01-go-outside-cover.jpg"><source src="/video/key01-go-outside.mp4" type="video/mp4" /></video>
-      <button class="play" id="playbtn" type="button" aria-label="Play the first key"><i></i>Watch the first key · 2 min</button>
+      <button class="play" id="playbtn" type="button" aria-label="Play the first key"><i></i></button>
     </div>
   </div></section>
 
   <section><div class="wrap">
     <div class="coach">
       <img src="/img/russ/coach/coach-point.jpg" alt="" />
-      <p>Behind every key is a coach, not an app. Russ Michaels spent two decades leading people through hard decisions; the keys are his, and there's a live call with him every month.</p>
+      <p>Behind every key is a coach. Russ Michaels, the founder of Vault Human, has spent decades leading people through hard decisions, and there's a live call with him every month.</p>
     </div>
   </div></section>
 
   <section><div class="wrap">
-    <div class="q"><p>He sees things in people they often can't see in themselves, and asks the questions no one else is willing to ask.</p><cite>Coaching client · CEO</cite></div>
-    <div class="q"><p>You leave thinking differently about yourself.</p><cite>Workshop participant</cite></div>
+    <p class="eyebrow">Why Vault Human exists</p>
+    <p class="why">Most of us were handed the pieces of ourselves, never the whole. We believe every person carries more than they've been told, and that a coach in your corner, one day at a time, is how you grow into it.</p>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="q"><p>He sees things in people they often can't see in themselves, and asks the questions no one else is willing to ask, with enough warmth that you actually want to answer.</p><cite>Coaching client · CEO</cite></div>
+    <div class="q"><p>He draws people in, challenges how they think, and makes space for things that don't ordinarily get said. You leave thinking differently about yourself.</p><cite>Workshop participant</cite></div>
+    <div class="q"><p>He can walk straight into the most uncomfortable conversation in the room without making anyone feel attacked, and leave everyone's dignity intact.</p><cite>Board chair</cite></div>
+    <div class="q"><p>I've seen him in situations where almost anyone else would have lost their composure. There's a steadiness to him that changes the room.</p><cite>Executive colleague</cite></div>
+    <div class="q"><p>I've never once questioned whether he had my back. Sometimes he was the one most willing to tell me what I didn't want to hear.</p><cite>Former colleague</cite></div>
     <p class="fine">Names withheld at their request. Shared with permission.</p>
   </div></section>
 
@@ -144,7 +155,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
         fetch('https://api-na2.hsforms.com/submissions/v3/integration/submit/246947446/3f225ab5-5a70-46d9-a497-29e6256b1e52',{
           method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fields:fields,context:ctx})
         }).then(function(r){if(!r.ok)throw new Error(r.status);try{gtag('event','generate_lead',{method:'free_week'})}catch(_){}location.href='/thanks/';})
-        .catch(function(){go.disabled=false;go.textContent='Send me my first key, free';msg.textContent="That didn't go through. Try again, or call (888) 833-2510.";});
+        .catch(function(){go.disabled=false;go.textContent='Send me my key, free';msg.textContent="That didn't go through. Try again, or call (888) 833-2510.";});
       });
       var film=document.getElementById('film'),fv=document.getElementById('fv');
       document.getElementById('playbtn').addEventListener('click',function(){film.classList.add('on');fv.setAttribute('controls','');fv.play();try{gtag('event','video_play',{title:'go-outside'})}catch(e){}});
