@@ -21,12 +21,12 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD');
   </script>
   <style is:inline>
-    :root{--bg:#0E1512;--bg2:#121C17;--ink:#F3EFE6;--soft:#C9C3B6;--mute:#8E9A90;--acc:#C9A24A;--line:rgba(243,239,230,.14)}
+    :root{--bg:#141A16;--bg2:#1A2420;--ink:#F1EDE4;--soft:#CFC9BC;--mute:#8E9A90;--acc:#C9A24A;--green:#8FA67E;--line:rgba(241,237,228,.14)}
     *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
     a{color:inherit}
     .wrap{max-width:560px;margin:0 auto;padding:0 20px}
     .top{display:flex;justify-content:space-between;align-items:baseline;padding:18px 20px 0;max-width:980px;margin:0 auto}
-    .brand{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:22px;letter-spacing:.01em;color:var(--ink)}
+    .brand{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:19px;letter-spacing:5px;text-transform:uppercase;color:var(--ink)}.brand b{color:var(--green);font-weight:400}
     .brand small{display:block;font:12px/1.3 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-top:3px}
     .tel{font-weight:600;text-decoration:none;font-size:14px;color:var(--soft)}
     /* hero */
@@ -60,15 +60,18 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     .film.on .play{display:none}
     .coach{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center}
     .coach img{width:150px;height:170px;object-fit:cover;object-position:60% 20%;border-radius:12px}
-    .coach p{margin:0;color:var(--ink);font-size:18px}
-    .q{margin:0 0 18px;padding:20px 22px;border-radius:12px;background:#17221C;border:1px solid var(--line);opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}
-    .q:nth-child(even){background:#1F2A24;transform:translateX(40px)}
-    .q:nth-child(3n){background:#2A2616}
+    .coach p{margin:0;color:var(--ink);font-size:18px}.g{color:var(--green);font-weight:600}
+    .q{margin:0 0 18px;padding:20px 22px;border-radius:12px;background:#1A2420;border:1px solid var(--line);opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}
+    .q:nth-child(even){transform:translateX(40px)}
+    .q:nth-child(2){background:#2A2616}
+    .q:nth-child(3){background:#2B211B}
+    .q:nth-child(4){background:#1E2A2A}
+    .q:nth-child(5){background:#2A2420}
     .q.in{opacity:1;transform:none}
-    .q p{font-family:Fraunces,Georgia,serif;font-size:19px;line-height:1.45;color:var(--ink);margin:0 0 8px}
+    .q p{font-size:17px;line-height:1.55;color:var(--ink);margin:0 0 8px}
     .q cite{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
     .fine{font-size:13px;color:var(--mute);margin:28px 0 0}
-    .why{font-family:Fraunces,Georgia,serif;font-size:19px;line-height:1.4;color:var(--ink);margin:0}
+    .why{font-size:18px;line-height:1.55;color:var(--ink);margin:0}
     .whybox{margin:18px 0 0}
     footer{margin-top:24px;padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute);border-top:1px solid var(--line)}
     footer a{text-decoration:none}
@@ -88,7 +91,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
   </style>
 </head>
 <body>
-  <div class="top"><span class="brand">Vault Human<small>Online life coaching</small></span><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
+  <div class="top"><span class="brand">Vault <b>Human</b><small>Online life coaching</small></span><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
 
   <div class="hero"><div class="wrap">
     <div class="hc">
@@ -113,7 +116,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
   <section><div class="wrap">
     <div class="coach">
       <img src="/img/russ/coach/coach-point.jpg" alt="" />
-      <p>Behind every key is a coach. Russ Michaels, the founder of Vault Human, has spent decades leading people through hard decisions, and there's a live call with him every month.</p>
+      <p>Behind every key is a coach. <b class="g">Russ Michaels</b>, the founder of Vault Human, has spent decades leading people through hard decisions, and there's a live call with him every month.</p>
     </div>
   </div></section>
 
