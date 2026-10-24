@@ -58,26 +58,30 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     .film .play i{width:64px;height:64px;border-radius:50%;background:var(--acc);display:inline-block;position:relative}
     .film .play i:after{content:"";position:absolute;left:25px;top:20px;border-left:20px solid #15190f;border-top:12px solid transparent;border-bottom:12px solid transparent}
     .film.on .play{display:none}
-    .coach{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center}
-    .coach img{width:96px;height:96px;object-fit:cover;object-position:60% 20%;border-radius:10px;filter:saturate(.85)}
-    .coach p{margin:0}
-    .q{margin:0 0 14px;padding-left:14px;border-left:2px solid var(--acc)}
-    .q p{font-family:Fraunces,Georgia,serif;font-size:18px;line-height:1.4;color:var(--ink);margin:0 0 4px}
+    .coach{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center}
+    .coach img{width:150px;height:170px;object-fit:cover;object-position:60% 20%;border-radius:12px}
+    .coach p{margin:0;color:var(--ink);font-size:18px}
+    .q{margin:0 0 18px;padding:20px 22px;border-radius:12px;background:#17221C;border:1px solid var(--line);opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}
+    .q:nth-child(even){background:#1F2A24;transform:translateX(40px)}
+    .q:nth-child(3n){background:#2A2616}
+    .q.in{opacity:1;transform:none}
+    .q p{font-family:Fraunces,Georgia,serif;font-size:19px;line-height:1.45;color:var(--ink);margin:0 0 8px}
     .q cite{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
     .fine{font-size:13px;color:var(--mute);margin:28px 0 0}
-    .why{font-family:Fraunces,Georgia,serif;font-size:21px;line-height:1.4;color:var(--ink);margin:0}
+    .why{font-family:Fraunces,Georgia,serif;font-size:19px;line-height:1.4;color:var(--ink);margin:0}
+    .whybox{margin:18px 0 0}
     footer{margin-top:24px;padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute);border-top:1px solid var(--line)}
     footer a{text-decoration:none}
     @media (min-width:900px){
       .wrap{max-width:980px}
       section .wrap{max-width:980px}
-      .q{max-width:760px}
       .why{max-width:760px}
       .coach p{max-width:760px}
       .hero .wrap{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:14px 40px;align-items:start;padding-top:40px}
       .hc{grid-column:1;grid-row:1}
       .hero form{grid-column:1;grid-row:2}
-      .hv{grid-column:2;grid-row:1/3;margin:0;aspect-ratio:auto;height:100%;align-self:stretch}
+      .hv{grid-column:2;grid-row:1;margin:0;aspect-ratio:16/10;height:auto}
+      .whybox{grid-column:2;grid-row:2;margin:0;align-self:start}
       .hv video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
       h1{font-size:46px}
     }
@@ -92,7 +96,8 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
       <h1>A real coach. One small step every morning.</h1>
       <p class="lede">Vault Human is an online coaching program. Each morning your coach sends you a short note we call a <b>key</b>: two minutes to read, and one small thing to do that day. Over a year the keys work through every part of your life: your past, your present and your future.</p>
     </div>
-    <div class="hv"><video autoplay muted loop playsinline preload="metadata" poster="/video/start-hero.jpg" aria-hidden="true"><source src="/video/start-hero-loop.mp4" type="video/mp4" /></video></div>
+    <div class="hv"><video autoplay muted loop playsinline preload="metadata" poster="/video/start-hero-fire.jpg" aria-hidden="true"><source src="/video/start-hero-fire.mp4" type="video/mp4" /></video></div>
+    <div class="whybox"><p class="eyebrow">Why Vault Human exists</p><p class="why">Most of us were handed the pieces of ourselves, never the whole. We believe every person carries more than they've been told, and that a coach in your corner, one day at a time, is how you grow into it.</p></div>
     <form id="cap" novalidate>
       <div class="f2">
         <input name="firstname" type="text" placeholder="First name" autocomplete="given-name" required aria-label="First name" />
@@ -106,15 +111,6 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
   </div></div>
 
   <section><div class="wrap">
-    <h2>Watch the first Key.</h2>
-    <p>This is what arrives on your first morning.</p>
-    <div class="film" id="film">
-      <video id="fv" playsinline preload="none" poster="/img/keys/key01-go-outside-cover.jpg"><source src="/video/key01-go-outside.mp4" type="video/mp4" /></video>
-      <button class="play" id="playbtn" type="button" aria-label="Play the first key"><i></i></button>
-    </div>
-  </div></section>
-
-  <section><div class="wrap">
     <div class="coach">
       <img src="/img/russ/coach/coach-point.jpg" alt="" />
       <p>Behind every key is a coach. Russ Michaels, the founder of Vault Human, has spent decades leading people through hard decisions, and there's a live call with him every month.</p>
@@ -122,8 +118,15 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
   </div></section>
 
   <section><div class="wrap">
-    <p class="eyebrow">Why Vault Human exists</p>
-    <p class="why">Most of us were handed the pieces of ourselves, never the whole. We believe every person carries more than they've been told, and that a coach in your corner, one day at a time, is how you grow into it.</p>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>Watch the first Key.</h2>
+    <p>This is what arrives on your first morning.</p>
+    <div class="film" id="film">
+      <video id="fv" playsinline preload="none" poster="/img/keys/key01-go-outside-cover.jpg"><source src="/video/key01-go-outside.mp4" type="video/mp4" /></video>
+      <button class="play" id="playbtn" type="button" aria-label="Play the first key"><i></i></button>
+    </div>
   </div></section>
 
   <section><div class="wrap">
@@ -155,6 +158,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
         }).then(function(r){if(!r.ok)throw new Error(r.status);try{gtag('event','generate_lead',{method:'free_week'})}catch(_){}location.href='/thanks/';})
         .catch(function(){go.disabled=false;go.textContent='Send me my key, free';msg.textContent="That didn't go through. Try again, or call (888) 833-2510.";});
       });
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});document.querySelectorAll('.q').forEach(function(q){io.observe(q)});
       var film=document.getElementById('film'),fv=document.getElementById('fv');
       document.getElementById('playbtn').addEventListener('click',function(){film.classList.add('on');fv.setAttribute('controls','');fv.play();try{gtag('event','video_play',{title:'go-outside'})}catch(e){}});
     })();
