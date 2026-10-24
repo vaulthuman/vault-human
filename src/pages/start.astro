@@ -1,190 +1,147 @@
 ---
-// Paid-traffic landing page, rebuilt 10/24/26 from six expert reviews. One promise everywhere: your first week of coaching, free.
-// First name + email → HubSpot form 3f225ab5 → /thanks (the Google Ads lead conversion fires there).
-// Light, readable, no navigation. The hero is the product: the Day 1 email on a phone. No founder photo (Russ's rule).
-const year = new Date().getFullYear();
+// https://www.vaulthuman.com/start/ — Google Ads landing page. Short, dark, on brand.
+// One promise (first key free), one action (the form). Form → HubSpot → /thanks.
+const title = 'Vault Human — Life coaching, one key a day';
+const desc = 'A two-minute key and one thing to do, every morning, from a real coach. Your first week is free.';
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Online life coaching · your first week free · Vault Human</title>
-  <meta name="description" content="A coach in your corner, every morning. One short lesson and one small step a day, from a real coach. Your first week is free, no card, no call." />
+  <title>{title}</title>
+  <meta name="description" content={desc} />
   <meta name="robots" content="noindex" />
-  <link rel="canonical" href="https://www.vaulthuman.com/start/" />
+  <link rel="icon" href="/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18371546487"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" />
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18371546487"></script>
   <script is:inline>
     window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
     gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD');
   </script>
   <style is:inline>
-    :root{--paper:#F6F3EC;--paper2:#EEE9DF;--ink:#1B231D;--soft:#4A544C;--mute:#6E776F;--acc:#4F6B4C;--acc2:#8FA67E;--line:#D9D3C6;--dark:#121715}
-    *{box-sizing:border-box}html,body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    :root{--bg:#0E1512;--bg2:#121C17;--ink:#F3EFE6;--soft:#C9C3B6;--mute:#8E9A90;--acc:#C9A24A;--line:rgba(243,239,230,.14)}
+    *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
     a{color:inherit}
     .wrap{max-width:560px;margin:0 auto;padding:0 20px}
-    .top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px 4px}
-    .brand{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:22px;letter-spacing:.01em;text-decoration:none;color:var(--ink)}.brand b{color:var(--acc);font-weight:600}
+    .top{display:flex;justify-content:space-between;align-items:baseline;padding:18px 20px 0;max-width:980px;margin:0 auto;position:absolute;left:0;right:0;z-index:3}
+    .brand{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:22px;letter-spacing:.01em;color:var(--ink)}
+    .brand small{display:block;font:12px/1.3 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-top:3px}
     .tel{font-weight:600;text-decoration:none;font-size:14px;color:var(--soft)}
-    section{padding:34px 0}
+    /* hero */
+    .hero{position:relative;overflow:hidden;min-height:540px;display:flex;align-items:flex-end}
+    .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,21,18,.2) 0%,rgba(14,21,18,.5) 50%,var(--bg) 100%)}
+    .hero .wrap{position:relative;z-index:2;padding-top:150px;padding-bottom:16px}
     .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700;color:var(--acc);margin:0 0 10px}
-    h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(34px,8.5vw,46px);line-height:1.08;margin:0 0 12px;letter-spacing:-.01em}
-    h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:28px;line-height:1.15;margin:0 0 14px}
-    .lede{font-size:18px;color:var(--soft);margin:0 0 20px}
-    /* the product, on a phone */
-    .phone{margin:4px auto 24px;width:min(300px,86%);background:#111;border-radius:34px;padding:12px;box-shadow:0 18px 40px rgba(27,35,29,.22)}
-    .screen{background:#fff;border-radius:24px;overflow:hidden;font-size:13px;line-height:1.45;color:#222}
-    .sbar{display:flex;justify-content:space-between;padding:8px 14px 0;font-size:11px;color:#555;font-weight:600}
-    .mail{padding:10px 14px 14px}
-    .mail .from{display:flex;align-items:center;gap:8px;margin:6px 0 4px}.mail .av{width:26px;height:26px;border-radius:50%;background:var(--acc);color:#fff;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center}
-    .mail .fn{font-weight:700;font-size:12.5px}.mail .fm{font-size:11px;color:#666}
-    .mail .subj{font-weight:700;font-size:14px;margin:6px 0 8px;line-height:1.3}
-    .mail p{margin:0 0 8px;font-size:12.5px}
-    .mail .step{border:1.5px solid var(--acc2);border-radius:10px;padding:8px 10px;margin-top:6px;background:#F3F6EF}
-    .mail .step b{display:block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:3px}
-    .cap{font-size:13px;color:var(--mute);text-align:center;margin:-12px 0 18px}
-    form{display:grid;gap:10px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
-    label{font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--soft)}
-    input{width:100%;padding:14px 14px;border:1px solid #C9C2B4;border-radius:8px;background:#fff;color:var(--ink);font:17px Inter,system-ui,sans-serif}
+    h1{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:clamp(38px,10vw,54px);line-height:1.05;margin:0 0 14px;letter-spacing:-.01em}
+    .lede{font-size:17px;color:var(--soft);margin:0}
+    /* form */
+    .ask{padding:12px 0 36px}
+    form{display:grid;gap:10px}
+    .f2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    input{width:100%;padding:14px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.05);color:var(--ink);font:16px Inter,system-ui,sans-serif}
+    input::placeholder{color:#7f897f}
     input:focus{outline:2px solid var(--acc);border-color:var(--acc)}
-    .btn{display:block;width:100%;background:var(--acc);color:#fff;font-weight:700;border:0;padding:17px 22px;border-radius:8px;font-size:17px;cursor:pointer;font-family:Inter,sans-serif;margin-top:4px}
+    .btn{display:block;width:100%;background:var(--acc);color:#15190f;font-weight:700;border:0;padding:16px 22px;border-radius:8px;font-size:17px;cursor:pointer;font-family:Inter,sans-serif;margin-top:2px}
     .btn:disabled{opacity:.7}
-    .under{font-size:14px;color:var(--mute);margin:10px 0 0;text-align:center}
-    .err{color:#9a3b2e;font-size:14px;margin:6px 0 0;min-height:1em}
-    .trust{display:flex;flex-wrap:wrap;gap:6px 18px;margin:14px 0 0;padding:0;list-style:none;font-size:14.5px;color:var(--soft)}
-    .trust li:before{content:"✓";color:var(--acc);margin-right:6px;font-weight:700}
-    .tint{background:var(--paper2)}
-    .steps{display:grid;gap:14px;margin:0}
-    .st{display:flex;gap:14px}.st .n{flex:0 0 32px;height:32px;border-radius:50%;background:var(--acc);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
-    .st p{margin:0;color:var(--soft)}.st b{color:var(--ink)}
-    .forme{list-style:none;margin:0;padding:0;display:grid;gap:10px}.forme li{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-family:Fraunces,Georgia,serif;font-size:19px;line-height:1.35;color:var(--ink)}
-    .quotes{display:grid;gap:12px}
-    .quotes figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 16px 14px}
-    .quotes blockquote{margin:0 0 8px;font-family:Fraunces,Georgia,serif;font-size:18px;line-height:1.4}
-    .quotes figcaption{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
-    .fine{font-size:13.5px;color:var(--mute);margin:12px 0 0}
-    .price{display:grid;gap:10px}
-    .pr{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}.pr b{display:block;font-size:17px}.pr span{display:block;font-size:26px;font-family:Fraunces,Georgia,serif;font-weight:600;margin:4px 0 6px}.pr p{margin:0;color:var(--soft);font-size:15.5px}
+    .under{font-size:13.5px;color:var(--mute);margin:10px 0 0;text-align:center}
+    .err{color:#e0a08f;font-size:14px;margin:4px 0 0;min-height:1em;text-align:center}
+    /* sections */
+    section{padding:34px 0;border-top:1px solid var(--line)}
+    h2{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:28px;line-height:1.15;margin:0 0 10px}
+    p{margin:0 0 12px;color:var(--soft)}
+    .film{position:relative;border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;margin:14px 0 0}
+    .film video{width:100%;height:100%;display:block}
+    .film .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25);cursor:pointer;border:0;color:#fff;font:600 15px Inter,sans-serif;gap:10px}
+    .film .play i{width:56px;height:56px;border-radius:50%;background:var(--acc);display:inline-block;position:relative}
+    .film .play i:after{content:"";position:absolute;left:22px;top:17px;border-left:18px solid #15190f;border-top:11px solid transparent;border-bottom:11px solid transparent}
+    .film.on .play{display:none}
+    .coach{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center}
+    .coach img{width:96px;height:96px;object-fit:cover;object-position:60% 20%;border-radius:10px;filter:saturate(.85)}
+    .coach p{margin:0}
+    .q{margin:0 0 14px;padding-left:14px;border-left:2px solid var(--acc)}
+    .q p{font-family:Fraunces,Georgia,serif;font-size:18px;line-height:1.4;color:var(--ink);margin:0 0 4px}
+    .q cite{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
+    .fine{font-size:13px;color:var(--mute);margin:0}
     footer{padding:26px 20px 34px;text-align:center;font-size:13px;color:var(--mute);border-top:1px solid var(--line)}
     footer a{text-decoration:none}
-    @media (min-width:900px){.wrap{max-width:640px}.top{max-width:980px}#hero .wrap{max-width:980px;display:grid;grid-template-columns:1fr 360px;gap:0 56px;align-items:start}#hero .hc{grid-column:1}#hero .lede{margin-bottom:28px}#hero .hv{grid-column:2;grid-row:1/3;position:sticky;top:24px;padding-top:36px}#hero .phone{width:320px;margin:0 auto 18px}#hero .cap{margin:0}h1{font-size:48px}}
+    @media (min-width:900px){
+      .wrap{max-width:620px}
+      .hero{min-height:640px}
+      h1{font-size:56px}
+    }
   </style>
 </head>
 <body>
-  <div class="wrap top"><span class="brand">Vault <b>Human</b></span><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
+  <div class="top"><span class="brand">Vault Human<small>Life coaching, one key a day</small></span><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
 
-  <section id="hero"><div class="wrap">
-    <div class="hc">
-    <p class="eyebrow">Online life coaching</p>
-    <h1>A coach in your corner, every morning.</h1>
-    <p class="lede">One short lesson and one small step a day, from a real coach. For work, relationships, habits, and what's next. Your first week is free.</p>
+  <div class="hero">
+    <video autoplay muted loop playsinline preload="metadata" poster="/video/key01-go-outside-hero.jpg" aria-hidden="true"><source src="/video/key01-go-outside-loop.mp4" type="video/mp4" /></video>
+    <div class="wrap">
+      <p class="eyebrow">Online life coaching</p>
+      <h1>Change one thing. Keep it.</h1>
+      <p class="lede">Every morning a real coach sends you a key: two minutes to read, one thing to do. Each key opens a part of your life you've been meaning to get to. Your first week is free.</p>
     </div>
-    <div class="hv">
-    <div class="phone" aria-label="What arrives each morning"><div class="screen">
-      <div class="sbar"><span>7:02 AM</span><span>▪▪▪ ◡ ▮</span></div>
-      <div class="mail">
-        <div class="from"><div class="av">V</div><div><div class="fn">Vault Human</div><div class="fm">to you · 7:02 AM</div></div></div>
-        <div class="subj">Day 1 · Today I begin a new life.</div>
-        <p>You don't need a new life. You need one habit that is yours, kept long enough to change your mind about who you are.</p>
-        <p>You do not argue your way out of an old habit. You out-repeat it…</p>
-        <div class="step"><b>Today's step</b>Read one page out loud, in your own voice, where no one is making you. Notice how it sounds.</div>
-      </div>
-    </div></div>
-    <p class="cap">What arrives tomorrow at 7. Two minutes to read. One thing to do.</p>
-    </div>
-    <div class="hc">
+  </div>
+
+  <div class="ask"><div class="wrap">
     <form id="cap" novalidate>
-      <div><label for="fn">First name</label><input id="fn" name="firstname" type="text" autocomplete="given-name" required /></div>
-      <div><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" inputmode="email" required /></div>
-      <button class="btn" id="go" type="submit">Send me my first lesson, free</button>
+      <div class="f2">
+        <input name="firstname" type="text" placeholder="First name" autocomplete="given-name" required aria-label="First name" />
+        <input name="phone" type="tel" placeholder="Mobile (optional)" autocomplete="tel" inputmode="tel" aria-label="Mobile" />
+      </div>
+      <input name="email" type="email" placeholder="Email" autocomplete="email" inputmode="email" required aria-label="Email" />
+      <button class="btn" id="go" type="submit">Send me my first key, free</button>
       <p class="err" id="msg"></p>
     </form>
-    <p class="under">Your first week is free. No card, no call. Cancel any time.</p>
-    <ul class="trust"><li>Real coach, not an app</li><li>Private and online</li><li>Anywhere in the US</li></ul>
+    <p class="under">Free for a week. Then $99 a month, cancel any time.</p>
+  </div></div>
+
+  <section><div class="wrap">
+    <h2>The first key is about going outside.</h2>
+    <p>Not changing your life. One walk. Watch it, then decide if you want the next one.</p>
+    <div class="film" id="film">
+      <video id="fv" playsinline preload="none" poster="/img/keys/key01-go-outside-cover.jpg"><source src="/video/key01-go-outside.mp4" type="video/mp4" /></video>
+      <button class="play" id="playbtn" type="button" aria-label="Play the first key"><i></i>Watch the first key · 2 min</button>
     </div>
   </div></section>
 
-  <section class="tint" id="how"><div class="wrap">
-    <p class="eyebrow">How it works</p>
-    <h2>Small enough to do. Daily enough to matter.</h2>
-    <div class="steps">
-      <div class="st"><span class="n">1</span><p><b>Your first lesson lands in minutes.</b> Then one every morning at 7, in your inbox and in a simple app.</p></div>
-      <div class="st"><span class="n">2</span><p><b>Each one ends with one small step.</b> Some days it's a habit, some days a question, some days a conversation you've been avoiding.</p></div>
-      <div class="st"><span class="n">3</span><p><b>A real coach is behind every one.</b> When you want more, there's a monthly live call, and private sessions if you choose.</p></div>
+  <section><div class="wrap">
+    <div class="coach">
+      <img src="/img/russ/coach/coach-point.jpg" alt="" />
+      <p>Behind every key is a coach, not an app. Russ Michaels spent two decades leading people through hard decisions; the keys are his, and there's a live call with him every month.</p>
     </div>
   </div></section>
 
-  <section id="forme"><div class="wrap">
-    <p class="eyebrow">Is this for me?</p>
-    <ul class="forme">
-      <li>"I feel stuck, and I don't know where to start."</li>
-      <li>"I've read the books. I need something that actually happens every day."</li>
-      <li>"I don't want therapy. I want a coach."</li>
-      <li>"I want to change something before another year goes by."</li>
-    </ul>
-  </div></section>
-
-  <section class="tint" id="who"><div class="wrap">
-    <p class="eyebrow">Who's behind it</p>
-    <h2>Built by a coach who has spent two decades leading people.</h2>
-    <p class="lede" style="margin:0">Vault Human was created by Russ Michaels, an attorney and trained coach, after twenty years leading teams and boards through hard decisions. The daily lessons are his. The coaching is about you, not him.</p>
-  </div></section>
-
-  <section id="people"><div class="wrap">
-    <p class="eyebrow">From people who have worked with Russ</p>
-    <div class="quotes">
-      <figure><blockquote>He sees things in people they often can't see in themselves, and asks the questions no one else is willing to ask, with enough warmth that you actually want to answer.</blockquote><figcaption>Coaching client · CEO</figcaption></figure>
-      <figure><blockquote>He draws people in, challenges how they think, and makes space for things that don't ordinarily get said. You leave thinking differently about yourself.</blockquote><figcaption>Workshop participant</figcaption></figure>
-      <figure><blockquote>He can walk straight into the most uncomfortable conversation in the room without making anyone feel attacked, and leave everyone's dignity intact.</blockquote><figcaption>Board chair</figcaption></figure>
-    </div>
+  <section><div class="wrap">
+    <div class="q"><p>He sees things in people they often can't see in themselves, and asks the questions no one else is willing to ask.</p><cite>Coaching client · CEO</cite></div>
+    <div class="q"><p>You leave thinking differently about yourself.</p><cite>Workshop participant</cite></div>
     <p class="fine">Names withheld at their request. Shared with permission.</p>
   </div></section>
 
-  <section class="tint" id="cost"><div class="wrap">
-    <p class="eyebrow">What it costs</p>
-    <div class="price">
-      <div class="pr"><b>Membership</b><span>$99 a month</span><p>Your first week is free. The daily lessons, the app, and a monthly live coaching call. Cancel any time.</p></div>
-      <div class="pr"><b>Private coaching</b><span>$999 a month</span><p>Three private sessions a month, with the membership included. Starts with a free call.</p></div>
-    </div>
-  </div></section>
-
-  <section id="again"><div class="wrap">
-    <h2>Start with one morning.</h2>
-    <p class="lede">You don't have to decide about a year today. See whether one small step is useful.</p>
-    <form id="cap2" novalidate>
-      <div><label for="fn2">First name</label><input id="fn2" name="firstname" type="text" autocomplete="given-name" required /></div>
-      <div><label for="em2">Email</label><input id="em2" name="email" type="email" autocomplete="email" inputmode="email" required /></div>
-      <button class="btn" id="go2" type="submit">Send me my first lesson, free</button>
-      <p class="err" id="msg2"></p>
-    </form>
-    <p class="under">Free week. No card. Unsubscribe any time.</p>
-  </div></section>
-
-  <footer>© {year} Vault Human, LLC · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · (888) 833-2510<br>Coaching, not therapy. Not legal, medical, financial or therapeutic advice.</footer>
+  <footer>© 2026 Vault Human, LLC · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a><br/>Coaching, not therapy. Not legal, medical, financial or therapeutic advice.</footer>
 
   <script is:inline>
     (function(){
-      function wire(fid,gid,mid){
-        var f=document.getElementById(fid),go=document.getElementById(gid),msg=document.getElementById(mid),started=false;
-        f.addEventListener('input',function(){if(!started){started=true;try{gtag('event','form_start',{form:fid})}catch(e){}}});
-        f.addEventListener('submit',function(e){
-          e.preventDefault();
-          var fn=f.firstname.value.trim(),em=f.email.value.trim();
-          if(!fn||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){f.reportValidity();msg.textContent=fn?'Please check the email address.':'Please add your first name.';return;}
-          go.disabled=true;go.textContent='Sending…';msg.textContent='';
-          var hutk=(document.cookie.match(/(?:^|; )hubspotutk=([^;]+)/)||[])[1];
-          var ctx={pageUri:location.href,pageName:document.title};if(hutk)ctx.hutk=hutk;
-          fetch('https://api-na2.hsforms.com/submissions/v3/integration/submit/246947446/3f225ab5-5a70-46d9-a497-29e6256b1e52',{
-            method:'POST',headers:{'Content-Type':'application/json'},
-            body:JSON.stringify({fields:[{name:'firstname',value:fn},{name:'email',value:em}],context:ctx})
-          }).then(function(r){if(!r.ok)throw new Error(r.status);try{gtag('event','generate_lead',{method:'free_week'})}catch(_){}location.href='/thanks/';})
-          .catch(function(){go.disabled=false;go.textContent='Send me my first lesson, free';msg.textContent="That didn't go through. Try again, or call (888) 833-2510.";});
-        });
-      }
-      wire('cap','go','msg');wire('cap2','go2','msg2');
+      var f=document.getElementById('cap'),go=document.getElementById('go'),msg=document.getElementById('msg'),started=false;
+      f.addEventListener('input',function(){if(!started){started=true;try{gtag('event','form_start')}catch(e){}}});
+      f.addEventListener('submit',function(e){
+        e.preventDefault();
+        var fn=f.firstname.value.trim(),em=f.email.value.trim(),ph=f.phone.value.trim();
+        if(!fn||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){f.reportValidity();msg.textContent=fn?'Please check the email address.':'Please add your first name.';return;}
+        go.disabled=true;go.textContent='Sending…';msg.textContent='';
+        var hutk=(document.cookie.match(/(?:^|; )hubspotutk=([^;]+)/)||[])[1];
+        var ctx={pageUri:location.href,pageName:document.title};if(hutk)ctx.hutk=hutk;
+        var fields=[{name:'firstname',value:fn},{name:'email',value:em}];if(ph)fields.push({name:'phone',value:ph});
+        fetch('https://api-na2.hsforms.com/submissions/v3/integration/submit/246947446/3f225ab5-5a70-46d9-a497-29e6256b1e52',{
+          method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fields:fields,context:ctx})
+        }).then(function(r){if(!r.ok)throw new Error(r.status);try{gtag('event','generate_lead',{method:'free_week'})}catch(_){}location.href='/thanks/';})
+        .catch(function(){go.disabled=false;go.textContent='Send me my first key, free';msg.textContent="That didn't go through. Try again, or call (888) 833-2510.";});
+      });
+      var film=document.getElementById('film'),fv=document.getElementById('fv');
+      document.getElementById('playbtn').addEventListener('click',function(){film.classList.add('on');fv.setAttribute('controls','');fv.play();try{gtag('event','video_play',{title:'go-outside'})}catch(e){}});
     })();
   </script>
 </body>
