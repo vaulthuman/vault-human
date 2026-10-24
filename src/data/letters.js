@@ -144,6 +144,40 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "four-numbers",
+  "title": "Four numbers",
+  "dek": "In 1948 the U.S. Public Health Service enrolled a little over five thousand people in a mill town outside Boston and started measuring them every two years to find…",
+  "day": 3,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1948 the U.S. Public Health Service enrolled a little over five thousand people in a mill town outside Boston and started measuring them every two years to find out why Americans were dying of heart attacks. They are still measuring the grandchildren. The Framingham Heart Study invented the phrase \"risk factor\" in 1961, and almost everything your doctor checks at a physical came from it."
+   },
+   {
+    "k": "",
+    "t": "Vault Human takes four numbers from that tradition that you can read at home. Steps, which you wrote on day one. Sleep, which the log is catching. Waist, which a tape measures. The cuff, your blood pressure, which a twenty-dollar machine or a pharmacy kiosk reads for free."
+   },
+   {
+    "k": "",
+    "t": "Why these four. Steps are the cheapest measure of how much you move, and movement predicts more than most lab values. Sleep is the number people lie to themselves about most, and the log fixes that by asking every night. Waist beats weight because it measures where the fat is, and the fat around the organs is the fat that matters; the lines most doctors use are about forty inches for men and thirty-five for women, and the cleaner rule is waist under half your height. The cuff is the risk factor that study found first, and it is still the one that kills the most people who never felt a thing. Most adults over forty are above the textbook reading and don't know."
+   },
+   {
+    "k": "",
+    "t": "This key does not tell you what to do about any of the four. The practices for that come in later months. This key asks you to look. You cannot know yourself while refusing to know what your body is doing when you aren't watching."
+   },
+   {
+    "k": "",
+    "t": "My first set were not what I expected either. I wrote them down anyway. That was the point."
+   }
+  ],
+  "n": 5,
+  "date": "May 18, 2026",
+  "iso": "2026-05-18",
+  "month": "May 2026",
+  "chamber": 1
+ },
+ {
   "slug": "three-questions-none-about-you",
   "title": "Three questions, none about you",
   "dek": "I spent more than ten years in restaurants, every station from the valet stand to the floor, and the whole business runs on one thing Dale Carnegie wrote down in…",
@@ -169,40 +203,6 @@ export const letters=[
    {
     "k": "",
     "t": "Most of us are waiting for our turn. This key asks you to give up your turn, once, on purpose, and see what it costs."
-   }
-  ],
-  "n": 5,
-  "date": "May 19, 2026",
-  "iso": "2026-05-19",
-  "month": "May 2026",
-  "chamber": 1
- },
- {
-  "slug": "four-numbers",
-  "title": "Four numbers",
-  "dek": "In 1948 the U.S. Public Health Service enrolled a little over five thousand people in a mill town outside Boston and started measuring them every two years to find…",
-  "day": 4,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1948 the U.S. Public Health Service enrolled a little over five thousand people in a mill town outside Boston and started measuring them every two years to find out why Americans were dying of heart attacks. They are still measuring the grandchildren. The Framingham Heart Study invented the phrase \"risk factor\" in 1961, and almost everything your doctor checks at a physical came from it."
-   },
-   {
-    "k": "",
-    "t": "Vault Human takes four numbers from that tradition that you can read at home. Steps, which you wrote on day one. Sleep, which the log is catching. Waist, which a tape measures. The cuff, your blood pressure, which a twenty-dollar machine or a pharmacy kiosk reads for free."
-   },
-   {
-    "k": "",
-    "t": "Why these four. Steps are the cheapest measure of how much you move, and movement predicts more than most lab values. Sleep is the number people lie to themselves about most, and the log fixes that by asking every night. Waist beats weight because it measures where the fat is, and the fat around the organs is the fat that matters; the lines most doctors use are about forty inches for men and thirty-five for women, and the cleaner rule is waist under half your height. The cuff is the risk factor that study found first, and it is still the one that kills the most people who never felt a thing. Most adults over forty are above the textbook reading and don't know."
-   },
-   {
-    "k": "",
-    "t": "This key does not tell you what to do about any of the four. The practices for that come in later months. This key asks you to look. You cannot know yourself while refusing to know what your body is doing when you aren't watching."
-   },
-   {
-    "k": "",
-    "t": "My first set were not what I expected either. I wrote them down anyway. That was the point."
    }
   ],
   "n": 6,
@@ -254,6 +254,44 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "it-was-not-you",
+  "title": "It was not you",
+  "dek": "This is the key I wish someone had handed me at twenty-five.",
+  "day": 5,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "This is the key I wish someone had handed me at twenty-five."
+   },
+   {
+    "k": "",
+    "t": "In 1953 a British physiologist, Gordon Kennedy, proposed that the body defends a weight the way a house defends a temperature, with a thermostat. In 1995 three researchers at Rockefeller University, Rudolph Leibel, Michael Rosenbaum and Jules Hirsch, proved it in people. After you lose about ten percent of your weight, your body burns roughly fifteen percent fewer calories than a person who was always that size, and it keeps doing that for years. Hunger goes up. Burn goes down. The weight comes back. Not because you failed. Because the thermostat worked."
+   },
+   {
+    "k": "",
+    "t": "Every diet you have tried and regained was fighting that."
+   },
+   {
+    "k": "",
+    "t": "The mechanism is in the hormones. When fat falls, a signal from fat falls with it, and the brain reads that as famine and responds the way it has for a hundred thousand years: it makes you hungrier and cheaper to run. The body cannot tell a diet from a drought."
+   },
+   {
+    "k": "",
+    "t": "Here is the hopeful part, and it is also in the research. The thermostat is not fixed. It moves slowly, and it moves for reasons that are not dieting: muscle, which burns at rest; sleep, which sets the hunger signal; and time spent at a new weight, which the brain gradually accepts as home. That is why the body keys this year go muscle and sleep before the plate."
+   },
+   {
+    "k": "",
+    "t": "I put this key in the month called You for one reason. Most people carry their diet history as a list of personal failures. Read the science and it turns into a list of a body doing exactly what bodies do. That is a different story about you, and it is the true one."
+   }
+  ],
+  "n": 8,
+  "date": "May 20, 2026",
+  "iso": "2026-05-20",
+  "month": "May 2026",
+  "chamber": 1
+ },
+ {
   "slug": "two-ledgers",
   "title": "Two ledgers",
   "dek": "\"We may explain success mainly by one word and that word is work.\"",
@@ -283,44 +321,6 @@ export const letters=[
    {
     "k": "",
     "t": "Most of us have told both lies, depending on the room. Writing the two lists is the first time most people stop."
-   }
-  ],
-  "n": 8,
-  "date": "May 21, 2026",
-  "iso": "2026-05-21",
-  "month": "May 2026",
-  "chamber": 1
- },
- {
-  "slug": "it-was-not-you",
-  "title": "It was not you",
-  "dek": "This is the key I wish someone had handed me at twenty-five.",
-  "day": 6,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "This is the key I wish someone had handed me at twenty-five."
-   },
-   {
-    "k": "",
-    "t": "In 1953 a British physiologist, Gordon Kennedy, proposed that the body defends a weight the way a house defends a temperature, with a thermostat. In 1995 three researchers at Rockefeller University, Rudolph Leibel, Michael Rosenbaum and Jules Hirsch, proved it in people. After you lose about ten percent of your weight, your body burns roughly fifteen percent fewer calories than a person who was always that size, and it keeps doing that for years. Hunger goes up. Burn goes down. The weight comes back. Not because you failed. Because the thermostat worked."
-   },
-   {
-    "k": "",
-    "t": "Every diet you have tried and regained was fighting that."
-   },
-   {
-    "k": "",
-    "t": "The mechanism is in the hormones. When fat falls, a signal from fat falls with it, and the brain reads that as famine and responds the way it has for a hundred thousand years: it makes you hungrier and cheaper to run. The body cannot tell a diet from a drought."
-   },
-   {
-    "k": "",
-    "t": "Here is the hopeful part, and it is also in the research. The thermostat is not fixed. It moves slowly, and it moves for reasons that are not dieting: muscle, which burns at rest; sleep, which sets the hunger signal; and time spent at a new weight, which the brain gradually accepts as home. That is why the body keys this year go muscle and sleep before the plate."
-   },
-   {
-    "k": "",
-    "t": "I put this key in the month called You for one reason. Most people carry their diet history as a list of personal failures. Read the science and it turns into a list of a body doing exactly what bodies do. That is a different story about you, and it is the true one."
    }
   ],
   "n": 9,
@@ -372,6 +372,40 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "a-different-clock",
+  "title": "A different clock",
+  "dek": "Half the people you train beside, raise, work with and love run on a different clock, and almost no fitness advice accounts for it.",
+  "day": 7,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Half the people you train beside, raise, work with and love run on a different clock, and almost no fitness advice accounts for it."
+   },
+   {
+    "k": "",
+    "t": "In 2016 Stacy Sims, an exercise physiologist who had raced bicycles, got tired of being handed training and nutrition plans built from studies on college-age men. She wrote <em>ROAR</em> arguing that the menstrual cycle, pregnancy, perimenopause and menopause change how a woman's body uses fuel, recovers, builds muscle and handles heat, and that the default plan is built for someone else."
+   },
+   {
+    "k": "",
+    "t": "Her argument runs on the hormones. In the first half of the cycle, when estrogen is low and then rising, a woman's body handles carbohydrate and intensity well and recovers fast. In the second half, when progesterone is high, core temperature is up half a degree, sodium leaves faster, and the body is slower to build muscle and quicker to break it down, so protein matters more and hard intervals land worse. After forty, as estrogen declines, she says the old advice of long slow cardio and less food is the opposite of what works; the body now needs the signal of heavy load and the raw material of protein to hold muscle and bone."
+   },
+   {
+    "k": "",
+    "t": "This key goes to everyone, men included. If you coach, parent or partner a woman, the default plan is wrong for her, and you should know that it exists. If you are a woman, this is the first key that asks you to write down where you are instead of where the plan assumes you are."
+   },
+   {
+    "k": "",
+    "t": "Nobody told me this for most of my adult life. I had been handing people the default plan with a straight face."
+   }
+  ],
+  "n": 11,
+  "date": "May 22, 2026",
+  "iso": "2026-05-22",
+  "month": "May 2026",
+  "chamber": 1
+ },
+ {
   "slug": "write-it-down-with-a-date",
   "title": "Write it down, with a date",
   "dek": "\"Whatever the mind can conceive and believe, it can achieve.\"",
@@ -397,40 +431,6 @@ export const letters=[
    {
     "k": "",
     "t": "Most people have never written theirs down. Not because it's hard. Because writing it makes it real, and real can be measured. That is exactly why it works."
-   }
-  ],
-  "n": 11,
-  "date": "May 23, 2026",
-  "iso": "2026-05-23",
-  "month": "May 2026",
-  "chamber": 1
- },
- {
-  "slug": "a-different-clock",
-  "title": "A different clock",
-  "dek": "Half the people you train beside, raise, work with and love run on a different clock, and almost no fitness advice accounts for it.",
-  "day": 8,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Half the people you train beside, raise, work with and love run on a different clock, and almost no fitness advice accounts for it."
-   },
-   {
-    "k": "",
-    "t": "In 2016 Stacy Sims, an exercise physiologist who had raced bicycles, got tired of being handed training and nutrition plans built from studies on college-age men. She wrote <em>ROAR</em> arguing that the menstrual cycle, pregnancy, perimenopause and menopause change how a woman's body uses fuel, recovers, builds muscle and handles heat, and that the default plan is built for someone else."
-   },
-   {
-    "k": "",
-    "t": "Her argument runs on the hormones. In the first half of the cycle, when estrogen is low and then rising, a woman's body handles carbohydrate and intensity well and recovers fast. In the second half, when progesterone is high, core temperature is up half a degree, sodium leaves faster, and the body is slower to build muscle and quicker to break it down, so protein matters more and hard intervals land worse. After forty, as estrogen declines, she says the old advice of long slow cardio and less food is the opposite of what works; the body now needs the signal of heavy load and the raw material of protein to hold muscle and bone."
-   },
-   {
-    "k": "",
-    "t": "This key goes to everyone, men included. If you coach, parent or partner a woman, the default plan is wrong for her, and you should know that it exists. If you are a woman, this is the first key that asks you to write down where you are instead of where the plan assumes you are."
-   },
-   {
-    "k": "",
-    "t": "Nobody told me this for most of my adult life. I had been handing people the default plan with a straight face."
    }
   ],
   "n": 12,
@@ -478,6 +478,40 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "a-stage-of-life-not-a-problem",
+  "title": "A stage of life, not a problem",
+  "dek": "In 2002 a large government trial was stopped early, the headlines said hormone therapy caused breast cancer and heart attacks, and within a year millions of women…",
+  "day": 9,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 2002 a large government trial was stopped early, the headlines said hormone therapy caused breast cancer and heart attacks, and within a year millions of women stopped taking it and a generation of doctors stopped prescribing it. In 2017 the trial's own investigators published an eighteen-year follow-up: no increase in deaths, and for women who started in their fifties, benefits the headlines had missed."
+   },
+   {
+    "k": "",
+    "t": "Mary Claire Haver is an obstetrician in Galveston who read that follow-up, got angry about the twenty years in between, and in 2024 wrote <em>The New Menopause</em> to put the information back in women's hands."
+   },
+   {
+    "k": "",
+    "t": "This key is not a prescription. It is a mirror. A whole stage of life was mislabeled for two decades, and you should know which stage you, or the women near you, are in. Perimenopause can start in the late thirties and run a decade. Menopause itself is one day, twelve months after the last period. Everything after is post-menopause. Those are three different bodies with three different needs, and most of us were handed one word for all of them."
+   },
+   {
+    "k": "",
+    "t": "Haver's toolkit is four things, in an order you'll recognize from the rest of this year: lift heavy, because estrogen was holding the muscle and bone and now something else has to; eat protein; eat fiber; and have the hormone conversation with a physician who has read the 2017 paper, because many haven't. She is careful about what she is not. Not a replacement for your doctor, and not a claim that hormones are for everyone. Vault Human seats her the same way."
+   },
+   {
+    "k": "",
+    "t": "The log has been asking about your sleep for ten days. If sleep has been breaking at three in the morning, this is one of the places that answer might live."
+   }
+  ],
+  "n": 14,
+  "date": "May 24, 2026",
+  "iso": "2026-05-24",
+  "month": "May 2026",
+  "chamber": 1
+ },
+ {
   "slug": "the-thermostat",
   "title": "The thermostat",
   "dek": "Ten days in. Something new may still feel like someone else is doing it.",
@@ -507,40 +541,6 @@ export const letters=[
    {
     "k": "",
     "t": "One correction of my own: Maltz noticed it took his patients about twenty-one days to get used to a new face, and that one sentence became the twenty-one-day myth of the whole habit world. The real number in the research since is closer to sixty-six, and it varies by person and by habit. So don't be discouraged at twenty-two. You're a third of the way to the new setting."
-   }
-  ],
-  "n": 14,
-  "date": "May 25, 2026",
-  "iso": "2026-05-25",
-  "month": "May 2026",
-  "chamber": 1
- },
- {
-  "slug": "a-stage-of-life-not-a-problem",
-  "title": "A stage of life, not a problem",
-  "dek": "In 2002 a large government trial was stopped early, the headlines said hormone therapy caused breast cancer and heart attacks, and within a year millions of women…",
-  "day": 10,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 2002 a large government trial was stopped early, the headlines said hormone therapy caused breast cancer and heart attacks, and within a year millions of women stopped taking it and a generation of doctors stopped prescribing it. In 2017 the trial's own investigators published an eighteen-year follow-up: no increase in deaths, and for women who started in their fifties, benefits the headlines had missed."
-   },
-   {
-    "k": "",
-    "t": "Mary Claire Haver is an obstetrician in Galveston who read that follow-up, got angry about the twenty years in between, and in 2024 wrote <em>The New Menopause</em> to put the information back in women's hands."
-   },
-   {
-    "k": "",
-    "t": "This key is not a prescription. It is a mirror. A whole stage of life was mislabeled for two decades, and you should know which stage you, or the women near you, are in. Perimenopause can start in the late thirties and run a decade. Menopause itself is one day, twelve months after the last period. Everything after is post-menopause. Those are three different bodies with three different needs, and most of us were handed one word for all of them."
-   },
-   {
-    "k": "",
-    "t": "Haver's toolkit is four things, in an order you'll recognize from the rest of this year: lift heavy, because estrogen was holding the muscle and bone and now something else has to; eat protein; eat fiber; and have the hormone conversation with a physician who has read the 2017 paper, because many haven't. She is careful about what she is not. Not a replacement for your doctor, and not a claim that hormones are for everyone. Vault Human seats her the same way."
-   },
-   {
-    "k": "",
-    "t": "The log has been asking about your sleep for ten days. If sleep has been breaking at three in the morning, this is one of the places that answer might live."
    }
   ],
   "n": 15,
@@ -588,6 +588,40 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "know-where-you-are-in-the-month",
+  "title": "Know where you are in the month",
+  "dek": "A woman who tracks her cycle knows something about her own body that most of medicine never asks about.",
+  "day": 11,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "A woman who tracks her cycle knows something about her own body that most of medicine never asks about."
+   },
+   {
+    "k": "",
+    "t": "In 1953 John Billings, a neurologist in Melbourne, was asked by a Catholic marriage bureau to find a natural way to know when a woman could conceive. With his wife Evelyn he built a method from something women had always noticed and nobody had written down: the body's own signs change through the month, and you can learn to read them. The Billings method has been studied by the World Health Organization and taught in a hundred countries. In 2013 Alisa Vitti took the same awareness out of the fertility clinic and into daily life in <em>WomanCode</em>: the idea that food, work and training can follow the phases of the month. Her evidence is thinner than the Billings', and I'll say so. The practice underneath both is the key."
+   },
+   {
+    "k": "",
+    "t": "The cycle has four phases. The bleed, usually days one to five. The follicular phase, as estrogen rises toward ovulation, when energy and tolerance for intensity tend to climb. Ovulation, around day fourteen in a textbook and anywhere from ten to twenty in a person. And the luteal phase, when progesterone rises, temperature climbs half a degree, and the week before the next bleed carries the mood and appetite changes that have names."
+   },
+   {
+    "k": "",
+    "t": "For this month the use is the oldest one: know where you are. A woman who writes the cycle day next to the sleep and the walk will, in three months, hold a map of her own month that no app made for her. That map changes how you plan a hard week, when you push in training, and what you forgive yourself for."
+   },
+   {
+    "k": "",
+    "t": "For the men reading this: half the people you love run on this clock. Learning the four phases is not a small courtesy. It's a form of paying attention."
+   }
+  ],
+  "n": 17,
+  "date": "May 26, 2026",
+  "iso": "2026-05-26",
+  "month": "May 2026",
+  "chamber": 1
+ },
+ {
   "slug": "say-your-name",
   "title": "Say your name",
   "dek": "\"The point of power is always in the present moment.\" Louise Hay wrote that, and she had earned it.",
@@ -617,40 +651,6 @@ export const letters=[
    {
     "k": "",
     "t": "Most people get through their name fine. It's the second half that comes out like a question. That's useful to know."
-   }
-  ],
-  "n": 17,
-  "date": "May 27, 2026",
-  "iso": "2026-05-27",
-  "month": "May 2026",
-  "chamber": 1
- },
- {
-  "slug": "know-where-you-are-in-the-month",
-  "title": "Know where you are in the month",
-  "dek": "A woman who tracks her cycle knows something about her own body that most of medicine never asks about.",
-  "day": 12,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "A woman who tracks her cycle knows something about her own body that most of medicine never asks about."
-   },
-   {
-    "k": "",
-    "t": "In 1953 John Billings, a neurologist in Melbourne, was asked by a Catholic marriage bureau to find a natural way to know when a woman could conceive. With his wife Evelyn he built a method from something women had always noticed and nobody had written down: the body's own signs change through the month, and you can learn to read them. The Billings method has been studied by the World Health Organization and taught in a hundred countries. In 2013 Alisa Vitti took the same awareness out of the fertility clinic and into daily life in <em>WomanCode</em>: the idea that food, work and training can follow the phases of the month. Her evidence is thinner than the Billings', and I'll say so. The practice underneath both is the key."
-   },
-   {
-    "k": "",
-    "t": "The cycle has four phases. The bleed, usually days one to five. The follicular phase, as estrogen rises toward ovulation, when energy and tolerance for intensity tend to climb. Ovulation, around day fourteen in a textbook and anywhere from ten to twenty in a person. And the luteal phase, when progesterone rises, temperature climbs half a degree, and the week before the next bleed carries the mood and appetite changes that have names."
-   },
-   {
-    "k": "",
-    "t": "For this month the use is the oldest one: know where you are. A woman who writes the cycle day next to the sleep and the walk will, in three months, hold a map of her own month that no app made for her. That map changes how you plan a hard week, when you push in training, and what you forgive yourself for."
-   },
-   {
-    "k": "",
-    "t": "For the men reading this: half the people you love run on this clock. Learning the four phases is not a small courtesy. It's a form of paying attention."
    }
   ],
   "n": 18,
@@ -698,6 +698,40 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "the-muscle-nobody-showed-you",
+  "title": "The muscle nobody showed you",
+  "dek": "There is a muscle in your body most people can't find on the first try, and nobody put it in a gym.",
+  "day": 13,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "There is a muscle in your body most people can't find on the first try, and nobody put it in a gym."
+   },
+   {
+    "k": "",
+    "t": "Arnold Kegel was a Los Angeles gynecologist who, in 1948, got tired of operating on women for incontinence after childbirth. He built a small device to measure the squeeze of a muscle his patients didn't know they had, and then he taught them to train it: contract, hold, release, in sets, daily. The exercise took his name. It is now the first thing a pelvic physiotherapist prescribes for women after birth, for men after prostate surgery, and for anyone past fifty who has quietly started planning their day around bathrooms."
+   },
+   {
+    "k": "",
+    "t": "The pelvic floor is a sling of muscle from the pubic bone to the tailbone. It holds the bladder, the bowel, and in women the uterus, and it works with the diaphragm every time you breathe. The floor drops on the inhale and lifts on the exhale. That's why a Kegel done while holding your breath is only half the exercise, and why the second month, which is about breathing, starts here."
+   },
+   {
+    "k": "",
+    "t": "The research is clear that it works for most people who do it consistently for three months. One honest note: some people have the opposite problem, a floor that is too tight and can't let go, and for them the squeeze makes it worse. That is why pelvic floor physiotherapists exist, and why this letter points there at the first sign of pain."
+   },
+   {
+    "k": "",
+    "t": "This key is in the month called You because knowing your body means knowing the parts nobody taught you about. Most of us learned our bodies from sports and mirrors, which cover the outside. This is the first key about the inside, and it's a quiet, private, slightly funny place to start. That's fine. Shut the door."
+   }
+  ],
+  "n": 20,
+  "date": "May 28, 2026",
+  "iso": "2026-05-28",
+  "month": "May 2026",
+  "chamber": 1
+ },
+ {
   "slug": "e-r-o",
   "title": "E + R = O",
   "dek": "Two weeks. Today is a test of the first thirteen days, and it's a kind one.",
@@ -731,40 +765,6 @@ export const letters=[
    {
     "k": "",
     "t": "Here's what I find hopeful about this key. The moment you take the R back, you have options. Three of them, usually, that you couldn't see while the E was in charge. That's not a burden. That's the door opening."
-   }
-  ],
-  "n": 20,
-  "date": "May 29, 2026",
-  "iso": "2026-05-29",
-  "month": "May 2026",
-  "chamber": 1
- },
- {
-  "slug": "the-muscle-nobody-showed-you",
-  "title": "The muscle nobody showed you",
-  "dek": "There is a muscle in your body most people can't find on the first try, and nobody put it in a gym.",
-  "day": 14,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "There is a muscle in your body most people can't find on the first try, and nobody put it in a gym."
-   },
-   {
-    "k": "",
-    "t": "Arnold Kegel was a Los Angeles gynecologist who, in 1948, got tired of operating on women for incontinence after childbirth. He built a small device to measure the squeeze of a muscle his patients didn't know they had, and then he taught them to train it: contract, hold, release, in sets, daily. The exercise took his name. It is now the first thing a pelvic physiotherapist prescribes for women after birth, for men after prostate surgery, and for anyone past fifty who has quietly started planning their day around bathrooms."
-   },
-   {
-    "k": "",
-    "t": "The pelvic floor is a sling of muscle from the pubic bone to the tailbone. It holds the bladder, the bowel, and in women the uterus, and it works with the diaphragm every time you breathe. The floor drops on the inhale and lifts on the exhale. That's why a Kegel done while holding your breath is only half the exercise, and why the second month, which is about breathing, starts here."
-   },
-   {
-    "k": "",
-    "t": "The research is clear that it works for most people who do it consistently for three months. One honest note: some people have the opposite problem, a floor that is too tight and can't let go, and for them the squeeze makes it worse. That is why pelvic floor physiotherapists exist, and why this letter points there at the first sign of pain."
-   },
-   {
-    "k": "",
-    "t": "This key is in the month called You because knowing your body means knowing the parts nobody taught you about. Most of us learned our bodies from sports and mirrors, which cover the outside. This is the first key about the inside, and it's a quiet, private, slightly funny place to start. That's fine. Shut the door."
    }
   ],
   "n": 21,
@@ -812,6 +812,40 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "the-long-way-is-the-only-way-that-lasts",
+  "title": "The long way is the only way that lasts",
+  "dek": "Abraham Morgentaler is a Harvard urologist who has spent forty years studying testosterone, and in 2008 he wrote the book on it, <em>Testosterone for Life</em>, that most of…",
+  "day": 15,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Abraham Morgentaler is a Harvard urologist who has spent forty years studying testosterone, and in 2008 he wrote the book on it, <em>Testosterone for Life</em>, that most of the clinics selling it have not read. His order is the opposite of theirs."
+   },
+   {
+    "k": "",
+    "t": "First: sleep, strength and body fat. Low testosterone in a forty-five-year-old who sleeps six hours, lifts nothing and carries forty extra pounds is usually those three things wearing a hormone's name. Second: measure, twice, in the morning, before anyone says the word low. Third, and only then: treat, with a physician who follows you."
+   },
+   {
+    "k": "",
+    "t": "Testosterone in men falls about one percent a year from the thirties, which is slow. It falls much faster with poor sleep, belly fat, heavy drinking and some medications, which is fast and, here's the good news, reversible. The symptom list is honest: low drive, low energy, low mood, poor recovery, loss of muscle. The trouble is that every one of those is also a symptom of a sixty-hour week with a toddler and a bottle of wine. Morgentaler's rule is that nobody should be diagnosed from a symptom list. That's Vault Human's rule too. A single afternoon blood draw is nearly worthless, because the level is highest in the morning and varies day to day. Two morning draws, read by a doctor who knows the ranges, is the floor."
+   },
+   {
+    "k": "",
+    "t": "Why is this a key for the first month? Because the three things that come before any test, sleep, strength and body fat, are three numbers already in your log. The body you've been learning about this month is the body that makes the hormone. The men's health industry sells the shortcut. The long way is the only one that lasts, and you've been walking it for sixteen days."
+   },
+   {
+    "k": "",
+    "t": "This letter goes to everyone. For men it's a mirror. For women it's the other half of the clock you read on day eight."
+   }
+  ],
+  "n": 23,
+  "date": "May 30, 2026",
+  "iso": "2026-05-30",
+  "month": "May 2026",
+  "chamber": 1
+ },
+ {
   "slug": "fifteen-minutes-alone",
   "title": "Fifteen minutes alone",
   "dek": "\"Love is not a feeling you fall into. It is an art you practice.\"",
@@ -841,40 +875,6 @@ export const letters=[
    {
     "k": "",
     "t": "Most people last about four minutes before they reach for something. The urge to leave your own company is one of the most honest readings you will ever take of yourself. It's also a muscle, and like every muscle in this month, it responds to reps. By the end of the year, fifteen minutes alone will be the best part of your morning."
-   }
-  ],
-  "n": 23,
-  "date": "May 31, 2026",
-  "iso": "2026-05-31",
-  "month": "May 2026",
-  "chamber": 1
- },
- {
-  "slug": "the-long-way-is-the-only-way-that-lasts",
-  "title": "The long way is the only way that lasts",
-  "dek": "Abraham Morgentaler is a Harvard urologist who has spent forty years studying testosterone, and in 2008 he wrote the book on it, <em>Testosterone for Life</em>, that most of…",
-  "day": 16,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Abraham Morgentaler is a Harvard urologist who has spent forty years studying testosterone, and in 2008 he wrote the book on it, <em>Testosterone for Life</em>, that most of the clinics selling it have not read. His order is the opposite of theirs."
-   },
-   {
-    "k": "",
-    "t": "First: sleep, strength and body fat. Low testosterone in a forty-five-year-old who sleeps six hours, lifts nothing and carries forty extra pounds is usually those three things wearing a hormone's name. Second: measure, twice, in the morning, before anyone says the word low. Third, and only then: treat, with a physician who follows you."
-   },
-   {
-    "k": "",
-    "t": "Testosterone in men falls about one percent a year from the thirties, which is slow. It falls much faster with poor sleep, belly fat, heavy drinking and some medications, which is fast and, here's the good news, reversible. The symptom list is honest: low drive, low energy, low mood, poor recovery, loss of muscle. The trouble is that every one of those is also a symptom of a sixty-hour week with a toddler and a bottle of wine. Morgentaler's rule is that nobody should be diagnosed from a symptom list. That's Vault Human's rule too. A single afternoon blood draw is nearly worthless, because the level is highest in the morning and varies day to day. Two morning draws, read by a doctor who knows the ranges, is the floor."
-   },
-   {
-    "k": "",
-    "t": "Why is this a key for the first month? Because the three things that come before any test, sleep, strength and body fat, are three numbers already in your log. The body you've been learning about this month is the body that makes the hormone. The men's health industry sells the shortcut. The long way is the only one that lasts, and you've been walking it for sixteen days."
-   },
-   {
-    "k": "",
-    "t": "This letter goes to everyone. For men it's a mirror. For women it's the other half of the clock you read on day eight."
    }
   ],
   "n": 24,
@@ -918,6 +918,40 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "bone-is-built-by-load",
+  "title": "Bone is built by load",
+  "dek": "For thirty years, women with thinning bones were told to walk, do gentle yoga, and above all not lift anything heavy.",
+  "day": 17,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "For thirty years, women with thinning bones were told to walk, do gentle yoga, and above all not lift anything heavy. Belinda Beck, an exercise scientist at Griffith University in Australia, thought that was backwards. Bone is built by load. In 2018 she published the trial that proved it."
+   },
+   {
+    "k": "",
+    "t": "It was called LIFTMOR. A hundred and one women past menopause with low bone density. Half of them did thirty minutes of heavy deadlifts, squats, overhead presses and jumps twice a week for eight months, under supervision. The other half did the gentle program everyone had been prescribing. The lifting group gained bone in the spine and hip. The gentle group lost it. Nobody got hurt. The women were an average of sixty-five years old."
+   },
+   {
+    "k": "",
+    "t": "That result has since been repeated in men and in younger women. It overturned a rule about what a body can do at sixty, and that is why it's in the month called You. Most of what you believe about your body's limits was handed to you. Some of it is wrong in your favor."
+   },
+   {
+    "k": "",
+    "t": "Here's how bone works. It responds to force, and most of all to forces it doesn't expect: heavy, fast, in new directions. Walking is wonderful for the heart and does almost nothing for the spine, because your skeleton has felt walking every day since you were one. The program itself comes later in the year, with a coach and a bar. The key for this month is the number."
+   },
+   {
+    "k": "",
+    "t": "Bone density is measured by a DEXA scan, ten minutes, and most women aren't offered one until sixty-five and most men never. If you've had one, the T-score is your number. If you haven't, whether you should is a doctor's call based on age, family and history. What you can do today, with a wall and a pencil, is check your height against the height on your license. Bone that's going quietly takes an inch first."
+   }
+  ],
+  "n": 26,
+  "date": "June 1, 2026",
+  "iso": "2026-06-01",
+  "month": "June 2026",
+  "chamber": 1
+ },
+ {
   "slug": "the-gardener",
   "title": "The gardener",
   "dek": "\"Men are anxious to improve their circumstances, but are unwilling to improve themselves; they therefore remain bound.\"",
@@ -943,40 +977,6 @@ export const letters=[
    {
     "k": "",
     "t": "Seventeen days of walking and writing is seventeen days of weeding. You have more say over what grows in there than anyone has ever told you."
-   }
-  ],
-  "n": 26,
-  "date": "June 2, 2026",
-  "iso": "2026-06-02",
-  "month": "June 2026",
-  "chamber": 1
- },
- {
-  "slug": "bone-is-built-by-load",
-  "title": "Bone is built by load",
-  "dek": "For thirty years, women with thinning bones were told to walk, do gentle yoga, and above all not lift anything heavy.",
-  "day": 18,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "For thirty years, women with thinning bones were told to walk, do gentle yoga, and above all not lift anything heavy. Belinda Beck, an exercise scientist at Griffith University in Australia, thought that was backwards. Bone is built by load. In 2018 she published the trial that proved it."
-   },
-   {
-    "k": "",
-    "t": "It was called LIFTMOR. A hundred and one women past menopause with low bone density. Half of them did thirty minutes of heavy deadlifts, squats, overhead presses and jumps twice a week for eight months, under supervision. The other half did the gentle program everyone had been prescribing. The lifting group gained bone in the spine and hip. The gentle group lost it. Nobody got hurt. The women were an average of sixty-five years old."
-   },
-   {
-    "k": "",
-    "t": "That result has since been repeated in men and in younger women. It overturned a rule about what a body can do at sixty, and that is why it's in the month called You. Most of what you believe about your body's limits was handed to you. Some of it is wrong in your favor."
-   },
-   {
-    "k": "",
-    "t": "Here's how bone works. It responds to force, and most of all to forces it doesn't expect: heavy, fast, in new directions. Walking is wonderful for the heart and does almost nothing for the spine, because your skeleton has felt walking every day since you were one. The program itself comes later in the year, with a coach and a bar. The key for this month is the number."
-   },
-   {
-    "k": "",
-    "t": "Bone density is measured by a DEXA scan, ten minutes, and most women aren't offered one until sixty-five and most men never. If you've had one, the T-score is your number. If you haven't, whether you should is a doctor's call based on age, family and history. What you can do today, with a wall and a pencil, is check your height against the height on your license. Bone that's going quietly takes an inch first."
    }
   ],
   "n": 27,
@@ -1024,6 +1024,40 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "the-seven-movements",
+  "title": "The seven movements",
+  "dek": "The last body letter of the first month is about children, and it's for you.",
+  "day": 19,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The last body letter of the first month is about children, and it's for you."
+   },
+   {
+    "k": "",
+    "t": "Margaret Whitehead is a British philosopher of physical education who in 2001 gave a name to something teachers had seen for decades: children who could pass a fitness test and had no physical literacy, no confidence, competence or desire to move for the rest of their lives, because they'd been drilled instead of taught. Her idea became policy in Canada, the United Kingdom and Australia. The World Health Organization's number for children is sixty minutes of varied, mostly playful movement every day. About a quarter of American kids reach it."
+   },
+   {
+    "k": "",
+    "t": "Physical literacy is the ability, the confidence and the wish to be physically active for life. Whitehead's point is that it's learned the way reading is, in a window, through variety and play. A child who learns to run, jump, throw, catch, climb, swim and balance by ten will keep moving as an adult in ways a child drilled on one sport will not. The sixty minutes isn't sixty minutes of sport. It's sixty minutes of anything, broken up, mostly unstructured, outdoors when possible."
+   },
+   {
+    "k": "",
+    "t": "This sits at the end of the month called You because the body you have at forty was literate or illiterate by twelve. So the mirror looks backward. Which of the seven did you learn, and which did you never get? Most adults are missing two or three, and those are exactly the ones they avoid in a gym without knowing why. That's not a character flaw. It's an inventory of what you were handed and what you built, which is the question this whole month has been asking."
+   },
+   {
+    "k": "",
+    "t": "And here's the hopeful part. Every one of the seven can still be learned. A swim lesson for an adult is the most avoided door in this chamber and the easiest to walk through. Watch a grown man learn to float and you'll understand the whole point of this year."
+   }
+  ],
+  "n": 29,
+  "date": "June 3, 2026",
+  "iso": "2026-06-03",
+  "month": "June 2026",
+  "chamber": 1
+ },
+ {
   "slug": "the-six-needs",
   "title": "The six needs",
   "dek": "Why do you keep doing the thing you can't explain?",
@@ -1053,40 +1087,6 @@ export const letters=[
    {
     "k": "",
     "t": "Once you see that, the habit stops being a mystery and a shame. It's a need being met badly. And a need being met badly can be met well."
-   }
-  ],
-  "n": 29,
-  "date": "June 4, 2026",
-  "iso": "2026-06-04",
-  "month": "June 2026",
-  "chamber": 1
- },
- {
-  "slug": "the-seven-movements",
-  "title": "The seven movements",
-  "dek": "The last body letter of the first month is about children, and it's for you.",
-  "day": 20,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "The last body letter of the first month is about children, and it's for you."
-   },
-   {
-    "k": "",
-    "t": "Margaret Whitehead is a British philosopher of physical education who in 2001 gave a name to something teachers had seen for decades: children who could pass a fitness test and had no physical literacy, no confidence, competence or desire to move for the rest of their lives, because they'd been drilled instead of taught. Her idea became policy in Canada, the United Kingdom and Australia. The World Health Organization's number for children is sixty minutes of varied, mostly playful movement every day. About a quarter of American kids reach it."
-   },
-   {
-    "k": "",
-    "t": "Physical literacy is the ability, the confidence and the wish to be physically active for life. Whitehead's point is that it's learned the way reading is, in a window, through variety and play. A child who learns to run, jump, throw, catch, climb, swim and balance by ten will keep moving as an adult in ways a child drilled on one sport will not. The sixty minutes isn't sixty minutes of sport. It's sixty minutes of anything, broken up, mostly unstructured, outdoors when possible."
-   },
-   {
-    "k": "",
-    "t": "This sits at the end of the month called You because the body you have at forty was literate or illiterate by twelve. So the mirror looks backward. Which of the seven did you learn, and which did you never get? Most adults are missing two or three, and those are exactly the ones they avoid in a gym without knowing why. That's not a character flaw. It's an inventory of what you were handed and what you built, which is the question this whole month has been asking."
-   },
-   {
-    "k": "",
-    "t": "And here's the hopeful part. Every one of the seven can still be learned. A swim lesson for an adult is the most avoided door in this chamber and the easiest to walk through. Watch a grown man learn to float and you'll understand the whole point of this year."
    }
   ],
   "n": 30,
@@ -1134,6 +1134,44 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "a-little-more-than-last-week",
+  "title": "A little more than last week",
+  "dek": "The first month's body letters asked for numbers. The second month's ask for load.",
+  "day": 21,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The first month's body letters asked for numbers. The second month's ask for load."
+   },
+   {
+    "k": "",
+    "t": "In 1945 an Army physician named Thomas DeLorme was treating soldiers coming home with wasted muscles from long hospital stays, and the standard advice was rest and light movement. He tried the opposite. He had them lift weights, and he added weight as they got stronger. He called it progressive resistance exercise, and he wrote the first prescription for it: three sets of ten, with the weight rising week by week. The soldiers recovered faster than anyone had seen. Every strength program written since, every one, is built on that one idea."
+   },
+   {
+    "k": "",
+    "t": "The idea is this. A muscle grows when it's asked to do a little more than it did last time. Not a lot more. A little. Five more pounds. One more repetition. One more set. Then it adapts, and you ask again. That's the whole secret, and it's eighty years old."
+   },
+   {
+    "k": "",
+    "t": "Why it's the first body letter of the second month: the gate is Breathing, and strength is where breath meets the body under load. You will learn more about your breath in one heavy set than in a month of thinking about it."
+   },
+   {
+    "k": "",
+    "t": "I want to say something to the people who have never lifted and feel like this letter isn't for them. It is for you most of all. Progressive overload doesn't care where you start. A woman of seventy who can stand from a chair without her hands and next week does it holding a water jug is doing exactly what DeLorme's soldiers did. The starting weight is yours. The direction is the key."
+   },
+   {
+    "k": "",
+    "t": "Nothing in this letter is a program. The program comes with a coach. The key is the principle, and the principle is one more than last time."
+   }
+  ],
+  "n": 32,
+  "date": "June 5, 2026",
+  "iso": "2026-06-05",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
   "slug": "what-feels-like-nothing-to-you",
   "title": "What feels like nothing to you",
   "dek": "Yesterday's mirror showed you your weather. Today's shows you your hands.",
@@ -1165,49 +1203,11 @@ export const letters=[
     "t": "Your coach will read the five with you this week and ask one question: which of these has the last three weeks been using without you noticing?"
    }
   ],
-  "n": 32,
-  "date": "June 6, 2026",
-  "iso": "2026-06-06",
-  "month": "June 2026",
-  "chamber": 1
- },
- {
-  "slug": "a-little-more-than-last-week",
-  "title": "A little more than last week",
-  "dek": "The first month's body letters asked for numbers. The second month's ask for load.",
-  "day": 22,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "The first month's body letters asked for numbers. The second month's ask for load."
-   },
-   {
-    "k": "",
-    "t": "In 1945 an Army physician named Thomas DeLorme was treating soldiers coming home with wasted muscles from long hospital stays, and the standard advice was rest and light movement. He tried the opposite. He had them lift weights, and he added weight as they got stronger. He called it progressive resistance exercise, and he wrote the first prescription for it: three sets of ten, with the weight rising week by week. The soldiers recovered faster than anyone had seen. Every strength program written since, every one, is built on that one idea."
-   },
-   {
-    "k": "",
-    "t": "The idea is this. A muscle grows when it's asked to do a little more than it did last time. Not a lot more. A little. Five more pounds. One more repetition. One more set. Then it adapts, and you ask again. That's the whole secret, and it's eighty years old."
-   },
-   {
-    "k": "",
-    "t": "Why it's the first body letter of the second month: the gate is Breathing, and strength is where breath meets the body under load. You will learn more about your breath in one heavy set than in a month of thinking about it."
-   },
-   {
-    "k": "",
-    "t": "I want to say something to the people who have never lifted and feel like this letter isn't for them. It is for you most of all. Progressive overload doesn't care where you start. A woman of seventy who can stand from a chair without her hands and next week does it holding a water jug is doing exactly what DeLorme's soldiers did. The starting weight is yours. The direction is the key."
-   },
-   {
-    "k": "",
-    "t": "Nothing in this letter is a program. The program comes with a coach. The key is the principle, and the principle is one more than last time."
-   }
-  ],
   "n": 33,
   "date": "June 6, 2026",
   "iso": "2026-06-06",
   "month": "June 2026",
-  "chamber": 2
+  "chamber": 1
  },
  {
   "slug": "what-you-are-good-for",
@@ -1248,6 +1248,40 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "four-lifts-three-days",
+  "title": "Four lifts, three days",
+  "dek": "If you only ever learned four movements, these are the four.",
+  "day": 23,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "If you only ever learned four movements, these are the four."
+   },
+   {
+    "k": "",
+    "t": "Mark Rippetoe is a strength coach in Wichita Falls, Texas, who in 2005 wrote <em>Starting Strength</em>, a book that stripped the gym back to what matters. Four barbell lifts: the squat, the press, the deadlift and the bench press. Three sessions a week. Add weight every session. That's the program, and for a beginner it works better than anything with more moving parts, because the body of someone who has never lifted can get stronger every single workout for months before it slows down."
+   },
+   {
+    "k": "",
+    "t": "His reasoning is plain. These four lifts use the most muscle through the longest range of motion with the most weight. The squat trains the whole lower body and the back that holds it up. The deadlift is picking something heavy off the floor, which is the most useful thing a body does. The press puts weight overhead, which asks everything from the feet to the hands to hold still. The bench press pushes. Everything else in a gym is a smaller version of one of those."
+   },
+   {
+    "k": "",
+    "t": "Here's what belongs in the month of Breathing. Rippetoe teaches the breath as part of the lift. Big breath in, hold it, brace the trunk like you're about to be punched, lift, exhale at the top. That brace is what protects the spine. It's also the first time most people feel what their breath can do for their body under load. The lungs become a weight belt."
+   },
+   {
+    "k": "",
+    "t": "Now the honest part. Nobody should learn these four from a letter. The reason the program works is the form, and the reason the form works is a coach watching your first sessions. Vault Human points you to one. The key is the simplicity: four movements, three days, a little more each time. Everything else is noise."
+   }
+  ],
+  "n": 35,
+  "date": "June 7, 2026",
+  "iso": "2026-06-07",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
   "slug": "the-one-that-stings",
   "title": "The one that stings",
   "dek": "Today you read nine short descriptions of a person, and one of them will sting.",
@@ -1279,45 +1313,11 @@ export const letters=[
     "t": "Used with a coach, the Enneagram is the best instrument in this chamber for the question of why. Used alone, it becomes a label, and labels are the thing this whole month is against. You are not a number. You are a person who, under pressure, reaches for one particular kind of safety. Knowing which kind is a gift."
    }
   ],
-  "n": 35,
-  "date": "June 8, 2026",
-  "iso": "2026-06-08",
-  "month": "June 2026",
-  "chamber": 1
- },
- {
-  "slug": "four-lifts-three-days",
-  "title": "Four lifts, three days",
-  "dek": "If you only ever learned four movements, these are the four.",
-  "day": 24,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "If you only ever learned four movements, these are the four."
-   },
-   {
-    "k": "",
-    "t": "Mark Rippetoe is a strength coach in Wichita Falls, Texas, who in 2005 wrote <em>Starting Strength</em>, a book that stripped the gym back to what matters. Four barbell lifts: the squat, the press, the deadlift and the bench press. Three sessions a week. Add weight every session. That's the program, and for a beginner it works better than anything with more moving parts, because the body of someone who has never lifted can get stronger every single workout for months before it slows down."
-   },
-   {
-    "k": "",
-    "t": "His reasoning is plain. These four lifts use the most muscle through the longest range of motion with the most weight. The squat trains the whole lower body and the back that holds it up. The deadlift is picking something heavy off the floor, which is the most useful thing a body does. The press puts weight overhead, which asks everything from the feet to the hands to hold still. The bench press pushes. Everything else in a gym is a smaller version of one of those."
-   },
-   {
-    "k": "",
-    "t": "Here's what belongs in the month of Breathing. Rippetoe teaches the breath as part of the lift. Big breath in, hold it, brace the trunk like you're about to be punched, lift, exhale at the top. That brace is what protects the spine. It's also the first time most people feel what their breath can do for their body under load. The lungs become a weight belt."
-   },
-   {
-    "k": "",
-    "t": "Now the honest part. Nobody should learn these four from a letter. The reason the program works is the form, and the reason the form works is a coach watching your first sessions. Vault Human points you to one. The key is the simplicity: four movements, three days, a little more each time. Everything else is noise."
-   }
-  ],
   "n": 36,
   "date": "June 8, 2026",
   "iso": "2026-06-08",
   "month": "June 2026",
-  "chamber": 2
+  "chamber": 1
  },
  {
   "slug": "four-letters-held-loosely",
@@ -1354,6 +1354,40 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "slow-is-fast",
+  "title": "Slow is fast",
+  "dek": "Once the beginner's gains slow down, and they do, you need a plan for the long middle.",
+  "day": 25,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Once the beginner's gains slow down, and they do, you need a plan for the long middle."
+   },
+   {
+    "k": "",
+    "t": "Jim Wendler was a powerlifter who squatted a thousand pounds in competition and then, in 2009, wrote a short program called 5/3/1 for people who wanted to keep getting stronger for years without getting hurt. Its heart is a number: your training max, which is ninety percent of the most you can lift once. Everything is a percentage of that. Week one you lift sets of five at sixty-five, seventy-five and eighty-five percent. Week two, threes at seventy, eighty, ninety. Week three, a five, a three and a single at seventy-five, eighty-five and ninety-five. Week four you back off and recover. Then you add five or ten pounds to the training max and start the wave again."
+   },
+   {
+    "k": "",
+    "t": "The genius of it is how little it asks each day. You walk in, you know exactly what's on the bar, and you leave feeling like you could have done more. That feeling is the point. Wendler's rule, which he says in nearly every interview, is to start too light. Progress is slow on purpose, because slow progress is the only kind that's still happening in five years."
+   },
+   {
+    "k": "",
+    "t": "For the month of the Body, this is the key about patience. The body changes on its own clock. You can't shout it along. What you can do is show up with a plan, lift what the plan says, and trust the wave. People who try to rush it get hurt and quit. People who follow a boring plan for three years become the strongest people they know."
+   },
+   {
+    "k": "",
+    "t": "Vault Human points to 5/3/1 as one good long-middle plan among several. The key is the idea: percentages, waves, and a deload week built in before you need it. Rest isn't a break from the program. It's the fourth week of it."
+   }
+  ],
+  "n": 38,
+  "date": "June 9, 2026",
+  "iso": "2026-06-09",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
   "slug": "how-you-come-across",
   "title": "How you come across",
   "dek": "By now you have four mirrors of who you are. This one shows how you come across, which is not the same thing.",
@@ -1381,45 +1415,11 @@ export const letters=[
     "t": "Here's the the first month use, and it's a little humbling. If you know your own letter, you know what you've been expecting from everyone else and calling rudeness when they didn't supply it. The person who \"never gets to the point\" is a high I being themselves. The person who \"doesn't care how you feel\" is a high D being themselves. Nobody was being rude. They were speaking their letter."
    }
   ],
-  "n": 38,
-  "date": "June 10, 2026",
-  "iso": "2026-06-10",
-  "month": "June 2026",
-  "chamber": 1
- },
- {
-  "slug": "slow-is-fast",
-  "title": "Slow is fast",
-  "dek": "Once the beginner's gains slow down, and they do, you need a plan for the long middle.",
-  "day": 26,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Once the beginner's gains slow down, and they do, you need a plan for the long middle."
-   },
-   {
-    "k": "",
-    "t": "Jim Wendler was a powerlifter who squatted a thousand pounds in competition and then, in 2009, wrote a short program called 5/3/1 for people who wanted to keep getting stronger for years without getting hurt. Its heart is a number: your training max, which is ninety percent of the most you can lift once. Everything is a percentage of that. Week one you lift sets of five at sixty-five, seventy-five and eighty-five percent. Week two, threes at seventy, eighty, ninety. Week three, a five, a three and a single at seventy-five, eighty-five and ninety-five. Week four you back off and recover. Then you add five or ten pounds to the training max and start the wave again."
-   },
-   {
-    "k": "",
-    "t": "The genius of it is how little it asks each day. You walk in, you know exactly what's on the bar, and you leave feeling like you could have done more. That feeling is the point. Wendler's rule, which he says in nearly every interview, is to start too light. Progress is slow on purpose, because slow progress is the only kind that's still happening in five years."
-   },
-   {
-    "k": "",
-    "t": "For the month of the Body, this is the key about patience. The body changes on its own clock. You can't shout it along. What you can do is show up with a plan, lift what the plan says, and trust the wave. People who try to rush it get hurt and quit. People who follow a boring plan for three years become the strongest people they know."
-   },
-   {
-    "k": "",
-    "t": "Vault Human points to 5/3/1 as one good long-middle plan among several. The key is the idea: percentages, waves, and a deload week built in before you need it. Rest isn't a break from the program. It's the fourth week of it."
-   }
-  ],
   "n": 39,
   "date": "June 10, 2026",
   "iso": "2026-06-10",
   "month": "June 2026",
-  "chamber": 2
+  "chamber": 1
  },
  {
   "slug": "a-mirror-you-may-already-own",
@@ -1456,6 +1456,36 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "grease-the-groove",
+  "title": "Grease the groove",
+  "dek": "Pavel Tsatsouline was a physical-training instructor in the Soviet special forces who moved to the United States and, around 2001, introduced Americans to a…",
+  "day": 27,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Pavel Tsatsouline was a physical-training instructor in the Soviet special forces who moved to the United States and, around 2001, introduced Americans to a cannonball with a handle. The kettlebell had been in Russian gyms for a century. Within a decade it was in every American one."
+   },
+   {
+    "k": "",
+    "t": "Two things he taught are the key. The first is the swing: a hip-driven movement where the bell floats to chest height and falls, hundreds of times, building the whole back of the body and a heart that can go for a long time. The second is the Turkish get-up, which is simply standing up from the floor with a weight held overhead, slowly, through seven positions. It is the most complete single exercise I know, and nearly every person who does it for the first time discovers a weak link they didn't know they had."
+   },
+   {
+    "k": "",
+    "t": "But the idea I want you to carry out of this letter is a phrase of his: grease the groove. Instead of training a movement to exhaustion once a week, you do it often, well under your limit, throughout the day, and you never go to failure. Five pull-ups six times a day, when you can do ten. Three perfect push-ups every time you walk past the kitchen counter. The nervous system learns the movement the way it learns a language, by frequent easy repetition, and strength arrives almost as a side effect."
+   },
+   {
+    "k": "",
+    "t": "This is a key for the second month because it's about breath and rhythm as much as muscle. The swing is a breathing exercise with a weight attached: sharp exhale at the top, every rep. And greasing the groove is the gentlest way anyone has ever found to get strong, which makes it the right way to start for the people who've been afraid to."
+   }
+  ],
+  "n": 41,
+  "date": "June 11, 2026",
+  "iso": "2026-06-11",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
   "slug": "the-mirror-you-were-handed",
   "title": "The mirror you were handed",
   "dek": "The mirrors you chose came first. Today, the mirror your employer held up, usually without telling you what it saw.",
@@ -1483,41 +1513,11 @@ export const letters=[
     "t": "This month is called You, and part of knowing yourself is knowing what others have been told about you. Not to resent it. To read it as if it were about a stranger, and see what it got right."
    }
   ],
-  "n": 41,
-  "date": "June 12, 2026",
-  "iso": "2026-06-12",
-  "month": "June 2026",
-  "chamber": 1
- },
- {
-  "slug": "grease-the-groove",
-  "title": "Grease the groove",
-  "dek": "Pavel Tsatsouline was a physical-training instructor in the Soviet special forces who moved to the United States and, around 2001, introduced Americans to a…",
-  "day": 28,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Pavel Tsatsouline was a physical-training instructor in the Soviet special forces who moved to the United States and, around 2001, introduced Americans to a cannonball with a handle. The kettlebell had been in Russian gyms for a century. Within a decade it was in every American one."
-   },
-   {
-    "k": "",
-    "t": "Two things he taught are the key. The first is the swing: a hip-driven movement where the bell floats to chest height and falls, hundreds of times, building the whole back of the body and a heart that can go for a long time. The second is the Turkish get-up, which is simply standing up from the floor with a weight held overhead, slowly, through seven positions. It is the most complete single exercise I know, and nearly every person who does it for the first time discovers a weak link they didn't know they had."
-   },
-   {
-    "k": "",
-    "t": "But the idea I want you to carry out of this letter is a phrase of his: grease the groove. Instead of training a movement to exhaustion once a week, you do it often, well under your limit, throughout the day, and you never go to failure. Five pull-ups six times a day, when you can do ten. Three perfect push-ups every time you walk past the kitchen counter. The nervous system learns the movement the way it learns a language, by frequent easy repetition, and strength arrives almost as a side effect."
-   },
-   {
-    "k": "",
-    "t": "This is a key for the second month because it's about breath and rhythm as much as muscle. The swing is a breathing exercise with a weight attached: sharp exhale at the top, every rep. And greasing the groove is the gentlest way anyone has ever found to get strong, which makes it the right way to start for the people who've been afraid to."
-   }
-  ],
   "n": 42,
   "date": "June 12, 2026",
   "iso": "2026-06-12",
   "month": "June 2026",
-  "chamber": 2
+  "chamber": 1
  },
  {
   "slug": "is-your-work-yours",
@@ -1554,6 +1554,36 @@ export const letters=[
   "chamber": 1
  },
  {
+  "slug": "what-actually-builds-muscle",
+  "title": "What actually builds muscle",
+  "dek": "For decades the advice about building muscle came from magazines and gym folklore.",
+  "day": 29,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "For decades the advice about building muscle came from magazines and gym folklore. Then someone started counting."
+   },
+   {
+    "k": "",
+    "t": "Brad Schoenfeld is an exercise scientist in New York who in 2010 published a paper on the mechanisms of muscle growth that became one of the most cited in the field, and who has spent the years since running the trials everyone else quotes. His findings are refreshingly plain. Muscle grows in response to hard sets taken close to failure. Somewhere around ten to twenty of those sets per muscle per week is where growth happens for most people. The rep range matters less than people think; heavy sets of five and lighter sets of twenty both build muscle if they're hard. And rest between sets should be long enough to actually do the next set well."
+   },
+   {
+    "k": "",
+    "t": "What he cleared away is as useful as what he found. You don't need to confuse your muscles. You don't need a different exercise every week. You don't need to feel destroyed to have done enough. You need hard sets, enough of them, close enough to your limit, and then food and sleep to pay for them."
+   },
+   {
+    "k": "",
+    "t": "Here's why this belongs in the Body chamber and in the month of Breathing. Muscle is the organ of longevity. It's where the body stores and burns fuel, it's what keeps you upright at eighty, and the set-point key on day six told you it's one of the few things that moves the thermostat. And a hard set near failure is one of the most honest breathing exercises there is. Your body will tell you, in your breath, exactly where your limit is. Most people have never gone there. It's safer than it looks, and it's where the change lives."
+   }
+  ],
+  "n": 44,
+  "date": "June 13, 2026",
+  "iso": "2026-06-13",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
   "slug": "the-two-things-to-let-someone-else-do",
   "title": "The two things to let someone else do",
   "dek": "The last key of the first month. Tomorrow you walk through a gate.",
@@ -1585,41 +1615,11 @@ export const letters=[
     "t": "The first month is called You. The last thing to know about you is which two things you should let someone else do. That isn't weakness. It's the beginning of a team."
    }
   ],
-  "n": 44,
-  "date": "June 14, 2026",
-  "iso": "2026-06-14",
-  "month": "June 2026",
-  "chamber": 1
- },
- {
-  "slug": "what-actually-builds-muscle",
-  "title": "What actually builds muscle",
-  "dek": "For decades the advice about building muscle came from magazines and gym folklore.",
-  "day": 30,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "For decades the advice about building muscle came from magazines and gym folklore. Then someone started counting."
-   },
-   {
-    "k": "",
-    "t": "Brad Schoenfeld is an exercise scientist in New York who in 2010 published a paper on the mechanisms of muscle growth that became one of the most cited in the field, and who has spent the years since running the trials everyone else quotes. His findings are refreshingly plain. Muscle grows in response to hard sets taken close to failure. Somewhere around ten to twenty of those sets per muscle per week is where growth happens for most people. The rep range matters less than people think; heavy sets of five and lighter sets of twenty both build muscle if they're hard. And rest between sets should be long enough to actually do the next set well."
-   },
-   {
-    "k": "",
-    "t": "What he cleared away is as useful as what he found. You don't need to confuse your muscles. You don't need a different exercise every week. You don't need to feel destroyed to have done enough. You need hard sets, enough of them, close enough to your limit, and then food and sleep to pay for them."
-   },
-   {
-    "k": "",
-    "t": "Here's why this belongs in the Body chamber and in the month of Breathing. Muscle is the organ of longevity. It's where the body stores and burns fuel, it's what keeps you upright at eighty, and the set-point key on day six told you it's one of the few things that moves the thermostat. And a hard set near failure is one of the most honest breathing exercises there is. Your body will tell you, in your breath, exactly where your limit is. Most people have never gone there. It's safer than it looks, and it's where the change lives."
-   }
-  ],
   "n": 45,
   "date": "June 14, 2026",
   "iso": "2026-06-14",
   "month": "June 2026",
-  "chamber": 2
+  "chamber": 1
  },
  {
   "slug": "your-biography-becomes-your-biology",
@@ -1656,6 +1656,44 @@ export const letters=[
   "chamber": 2
  },
  {
+  "slug": "one-hard-set",
+  "title": "One hard set",
+  "dek": "Arthur Jones was a self-taught inventor who in 1970 built a strange-looking machine with a cam shaped like a nautilus shell, and with it he started an argument that's…",
+  "day": 31,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Arthur Jones was a self-taught inventor who in 1970 built a strange-looking machine with a cam shaped like a nautilus shell, and with it he started an argument that's still going."
+   },
+   {
+    "k": "",
+    "t": "His claim was that almost everyone in the gym was doing far too much. One set per exercise. Taken all the way to the point where you cannot move the weight another inch. Once or twice a week. Then go home and recover, because recovery is where the muscle is actually built. He called it high-intensity training, and the bodybuilders he trained with it got strong fast and spent most of their week not in the gym."
+   },
+   {
+    "k": "",
+    "t": "Most of the research since says he overstated it; multiple sets build more muscle than one for most people. But Jones was right about something important that the volume crowd forgets. Intensity is real. One set taken truly to the limit, with full attention, does more than five sets done while thinking about lunch. And the body doesn't grow in the gym. It grows in the rest afterward."
+   },
+   {
+    "k": "",
+    "t": "That's the key for the month of the Body, and it's about honesty. Most people who say they've \"worked out\" have never taken a single set to the point where the body says no. Jones built a whole method on that one moment. Once you've felt it, you know what effort means, and you can never again confuse being tired with being done."
+   },
+   {
+    "k": "",
+    "t": "There's a breath lesson here too. At the end of a true set, the breath is the loudest thing in the room. Jones would tell you to keep breathing through it, never to hold. The body wants to brace and stop. The practice is to brace and keep going, one more inch, with air moving."
+   },
+   {
+    "k": "",
+    "t": "Vault Human keeps the moment and leaves the dogma. You don't need to train Jones's way. You need to know what he was pointing at."
+   }
+  ],
+  "n": 47,
+  "date": "June 15, 2026",
+  "iso": "2026-06-15",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
   "slug": "what-the-body-inherited",
   "title": "What the body inherited",
   "dek": "Some of what your body carries isn't yours. It arrived before you did.",
@@ -1685,44 +1723,6 @@ export const letters=[
    {
     "k": "",
     "t": "I'll add one thing. Finding out that some of your vigilance was inherited is not bad news. It means you were never broken. You were handed something, and what was handed can be set down."
-   }
-  ],
-  "n": 47,
-  "date": "June 16, 2026",
-  "iso": "2026-06-16",
-  "month": "June 2026",
-  "chamber": 2
- },
- {
-  "slug": "one-hard-set",
-  "title": "One hard set",
-  "dek": "Arthur Jones was a self-taught inventor who in 1970 built a strange-looking machine with a cam shaped like a nautilus shell, and with it he started an argument that's…",
-  "day": 32,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Arthur Jones was a self-taught inventor who in 1970 built a strange-looking machine with a cam shaped like a nautilus shell, and with it he started an argument that's still going."
-   },
-   {
-    "k": "",
-    "t": "His claim was that almost everyone in the gym was doing far too much. One set per exercise. Taken all the way to the point where you cannot move the weight another inch. Once or twice a week. Then go home and recover, because recovery is where the muscle is actually built. He called it high-intensity training, and the bodybuilders he trained with it got strong fast and spent most of their week not in the gym."
-   },
-   {
-    "k": "",
-    "t": "Most of the research since says he overstated it; multiple sets build more muscle than one for most people. But Jones was right about something important that the volume crowd forgets. Intensity is real. One set taken truly to the limit, with full attention, does more than five sets done while thinking about lunch. And the body doesn't grow in the gym. It grows in the rest afterward."
-   },
-   {
-    "k": "",
-    "t": "That's the key for the month of the Body, and it's about honesty. Most people who say they've \"worked out\" have never taken a single set to the point where the body says no. Jones built a whole method on that one moment. Once you've felt it, you know what effort means, and you can never again confuse being tired with being done."
-   },
-   {
-    "k": "",
-    "t": "There's a breath lesson here too. At the end of a true set, the breath is the loudest thing in the room. Jones would tell you to keep breathing through it, never to hold. The body wants to brace and stop. The practice is to brace and keep going, one more inch, with air moving."
-   },
-   {
-    "k": "",
-    "t": "Vault Human keeps the moment and leaves the dogma. You don't need to train Jones's way. You need to know what he was pointing at."
    }
   ],
   "n": 48,
@@ -1766,6 +1766,40 @@ export const letters=[
   "chamber": 2
  },
  {
+  "slug": "light-weight-real-growth",
+  "title": "Light weight, real growth",
+  "dek": "In 1966 a young Japanese man named Yoshiaki Sato was kneeling at a Buddhist ceremony when his legs went numb, and he noticed that the pressure felt a lot like the…",
+  "day": 33,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1966 a young Japanese man named Yoshiaki Sato was kneeling at a Buddhist ceremony when his legs went numb, and he noticed that the pressure felt a lot like the pump after a hard set. He spent the next decades turning that noticing into a method. Kaatsu, which the West calls blood-flow restriction training: a cuff around the top of the arm or leg, snug enough to slow the blood leaving the limb but not entering it, and then light weights, around twenty to thirty percent of your maximum, for a few sets."
+   },
+   {
+    "k": "",
+    "t": "The body is fooled, in the best way. Under the cuff, the muscle fills with the byproducts of hard work far sooner than it would without it, and it responds as if the load were heavy. The research is now solid: people build muscle and strength with weights they could otherwise lift all day. It's used by physical therapists for patients who can't load a healing joint, by athletes coming back from surgery, and increasingly by older adults for whom heavy lifting isn't yet safe."
+   },
+   {
+    "k": "",
+    "t": "Why it's here, in the second month, after six keys about going heavier: because the body has more than one way in. Some of you have a knee, a shoulder, a back, or a doctor's note that keeps the heavy keys closed for now. That door isn't shut. It's a different door."
+   },
+   {
+    "k": "",
+    "t": "I'll be careful, because this one needs it. Blood-flow restriction is done with proper cuffs, proper pressure, and someone who has been trained in it. A belt or a band tightened by guesswork is not the method. If this key calls to you, the path is a physical therapist or a trainer certified in it."
+   },
+   {
+    "k": "",
+    "t": "The idea to keep is bigger than the cuff. The body responds to the signal, not the number on the bar. Learn to send the signal, by whatever door is open to you, and the body answers."
+   }
+  ],
+  "n": 50,
+  "date": "June 17, 2026",
+  "iso": "2026-06-17",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
   "slug": "the-breath-is-the-lever",
   "title": "The breath is the lever",
   "dek": "You've been breathing all your life without instruction. Today you get some.",
@@ -1791,40 +1825,6 @@ export const letters=[
    {
     "k": "",
     "t": "This is the key the whole chamber turns on. The second month is the Body, by Breathing. Everything that follows this month, strength, sleep, food, rest, works better in a body that knows how to exhale. Most of us have been taking shallow breaths at the top of the chest since we got our first job. The lungs are waiting at the bottom."
-   }
-  ],
-  "n": 50,
-  "date": "June 18, 2026",
-  "iso": "2026-06-18",
-  "month": "June 2026",
-  "chamber": 2
- },
- {
-  "slug": "light-weight-real-growth",
-  "title": "Light weight, real growth",
-  "dek": "In 1966 a young Japanese man named Yoshiaki Sato was kneeling at a Buddhist ceremony when his legs went numb, and he noticed that the pressure felt a lot like the…",
-  "day": 34,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1966 a young Japanese man named Yoshiaki Sato was kneeling at a Buddhist ceremony when his legs went numb, and he noticed that the pressure felt a lot like the pump after a hard set. He spent the next decades turning that noticing into a method. Kaatsu, which the West calls blood-flow restriction training: a cuff around the top of the arm or leg, snug enough to slow the blood leaving the limb but not entering it, and then light weights, around twenty to thirty percent of your maximum, for a few sets."
-   },
-   {
-    "k": "",
-    "t": "The body is fooled, in the best way. Under the cuff, the muscle fills with the byproducts of hard work far sooner than it would without it, and it responds as if the load were heavy. The research is now solid: people build muscle and strength with weights they could otherwise lift all day. It's used by physical therapists for patients who can't load a healing joint, by athletes coming back from surgery, and increasingly by older adults for whom heavy lifting isn't yet safe."
-   },
-   {
-    "k": "",
-    "t": "Why it's here, in the second month, after six keys about going heavier: because the body has more than one way in. Some of you have a knee, a shoulder, a back, or a doctor's note that keeps the heavy keys closed for now. That door isn't shut. It's a different door."
-   },
-   {
-    "k": "",
-    "t": "I'll be careful, because this one needs it. Blood-flow restriction is done with proper cuffs, proper pressure, and someone who has been trained in it. A belt or a band tightened by guesswork is not the method. If this key calls to you, the path is a physical therapist or a trainer certified in it."
-   },
-   {
-    "k": "",
-    "t": "The idea to keep is bigger than the cuff. The body responds to the signal, not the number on the bar. Learn to send the signal, by whatever door is open to you, and the body answers."
    }
   ],
   "n": 51,
@@ -1868,6 +1868,36 @@ export const letters=[
   "chamber": 2
  },
  {
+  "slug": "your-body-is-the-gym",
+  "title": "Your body is the gym",
+  "dek": "Eugen Sandow was a Prussian strongman who in the 1890s became the first bodybuilding celebrity in the world and in 1897 published a book saying that anyone could…",
+  "day": 35,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Eugen Sandow was a Prussian strongman who in the 1890s became the first bodybuilding celebrity in the world and in 1897 published a book saying that anyone could build a strong body with no equipment at all. A century later, in 2009, a book called <em>Convict Conditioning</em> made the same case in a harder voice: six bodyweight movements, each with ten progressions from the easiest version to one most people will never reach. Push-ups from the wall to one arm. Squats from a chair to one leg. Pull-ups from a doorframe to one arm. Leg raises, bridges, and handstand push-ups."
+   },
+   {
+    "k": "",
+    "t": "That's calisthenics, and the key is in the progressions. Every one of the six starts somewhere any body can begin. A wall push-up. A squat to a chair. Hanging from a bar for ten seconds. And every one has a next step. You never run out of road, and you never need a gym."
+   },
+   {
+    "k": "",
+    "t": "Why it matters in the second month, after six letters about barbells: not everyone has a barbell. Everyone has a floor and a wall. And bodyweight work teaches something the barbell can hide. When the load is your own body, you can't cheat the movement with momentum or a machine. The breath, the brace, the control have to be real, or the rep doesn't happen."
+   },
+   {
+    "k": "",
+    "t": "I like this key for the same reason I like the walk on day one. It removes every excuse. You don't need money, a membership, a drive across town, or a spotter. You need the ten square feet you're standing in and the honesty to start at step one."
+   }
+  ],
+  "n": 53,
+  "date": "June 19, 2026",
+  "iso": "2026-06-19",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
   "slug": "progress-is-the-point",
   "title": "Progress is the point",
   "dek": "In 1857 a French educator named Hippolyte Rivail, writing as Allan Kardec, published <em>The Spirits' Book</em>, a set of a thousand questions and answers about where we…",
@@ -1893,36 +1923,6 @@ export const letters=[
    {
     "k": "",
     "t": "So here's the question I'd take from him. If you could ask one question and get a true answer, what would it be? Most people, when they sit with that, find that the question is about how to live, not what happens after. That's the one to work on."
-   }
-  ],
-  "n": 53,
-  "date": "June 20, 2026",
-  "iso": "2026-06-20",
-  "month": "June 2026",
-  "chamber": 2
- },
- {
-  "slug": "your-body-is-the-gym",
-  "title": "Your body is the gym",
-  "dek": "Eugen Sandow was a Prussian strongman who in the 1890s became the first bodybuilding celebrity in the world and in 1897 published a book saying that anyone could…",
-  "day": 36,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Eugen Sandow was a Prussian strongman who in the 1890s became the first bodybuilding celebrity in the world and in 1897 published a book saying that anyone could build a strong body with no equipment at all. A century later, in 2009, a book called <em>Convict Conditioning</em> made the same case in a harder voice: six bodyweight movements, each with ten progressions from the easiest version to one most people will never reach. Push-ups from the wall to one arm. Squats from a chair to one leg. Pull-ups from a doorframe to one arm. Leg raises, bridges, and handstand push-ups."
-   },
-   {
-    "k": "",
-    "t": "That's calisthenics, and the key is in the progressions. Every one of the six starts somewhere any body can begin. A wall push-up. A squat to a chair. Hanging from a bar for ten seconds. And every one has a next step. You never run out of road, and you never need a gym."
-   },
-   {
-    "k": "",
-    "t": "Why it matters in the second month, after six letters about barbells: not everyone has a barbell. Everyone has a floor and a wall. And bodyweight work teaches something the barbell can hide. When the load is your own body, you can't cheat the movement with momentum or a machine. The breath, the brace, the control have to be real, or the rep doesn't happen."
-   },
-   {
-    "k": "",
-    "t": "I like this key for the same reason I like the walk on day one. It removes every excuse. You don't need money, a membership, a drive across town, or a spotter. You need the ten square feet you're standing in and the honesty to start at step one."
    }
   ],
   "n": 54,
@@ -1966,6 +1966,36 @@ export const letters=[
   "chamber": 2
  },
  {
+  "slug": "the-year-has-seasons",
+  "title": "The year has seasons",
+  "dek": "The Soviet sports scientist Lev Matveyev noticed in the 1960s that the athletes who won didn't train the same way all year.",
+  "day": 37,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The Soviet sports scientist Lev Matveyev noticed in the 1960s that the athletes who won didn't train the same way all year. They built a base, then built strength on the base, then built speed on the strength, then rested, and then started over. He called it periodization. Tudor Bompa, a Romanian coach who brought it West, wrote the textbook in 1983, and every serious athlete in the world now trains in planned cycles of volume and intensity across a year."
+   },
+   {
+    "k": "",
+    "t": "The idea is simple and most people have never applied it to anything. The body can't do everything at once. It can't get much bigger and much faster and much more enduring in the same month. So you pick one quality, give it a block of weeks, and let the others hold. Then you switch. Over a year the blocks add up to a body that's better at all of them."
+   },
+   {
+    "k": "",
+    "t": "That's the key, and it's about the whole year, not just the gym. Vault Human's year is periodized. Months one through five build the base, one chamber at a time. Month six is rest, with no new keys, because Matveyev found that the rest block isn't a break from training, it's where the training is absorbed. Months seven through twelve build on what's been laid down. You're in the second block now, and the second block always feels harder than the first, because the novelty is gone and the base is still forming. That's not a sign something's wrong. That's the season you're in."
+   },
+   {
+    "k": "",
+    "t": "Periodization also forgives. If you're not getting stronger this month, you may be in a month that isn't for that. Ask what this block is for. Then do that."
+   }
+  ],
+  "n": 56,
+  "date": "June 21, 2026",
+  "iso": "2026-06-21",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
   "slug": "prayer-that-affirms",
   "title": "Prayer that affirms",
   "dek": "Before any of the people in the first month wrote a word, there was a quiet American movement teaching that the mind is a creative cause and that what you hold in it…",
@@ -1991,36 +2021,6 @@ export const letters=[
    {
     "k": "",
     "t": "It's in the month of Breathing because the release at the end is an exhale. Holmes understood that you cannot hold a prayer in a clenched body. You say it, you mean it, and you let it out."
-   }
-  ],
-  "n": 56,
-  "date": "June 22, 2026",
-  "iso": "2026-06-22",
-  "month": "June 2026",
-  "chamber": 2
- },
- {
-  "slug": "the-year-has-seasons",
-  "title": "The year has seasons",
-  "dek": "The Soviet sports scientist Lev Matveyev noticed in the 1960s that the athletes who won didn't train the same way all year.",
-  "day": 38,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "The Soviet sports scientist Lev Matveyev noticed in the 1960s that the athletes who won didn't train the same way all year. They built a base, then built strength on the base, then built speed on the strength, then rested, and then started over. He called it periodization. Tudor Bompa, a Romanian coach who brought it West, wrote the textbook in 1983, and every serious athlete in the world now trains in planned cycles of volume and intensity across a year."
-   },
-   {
-    "k": "",
-    "t": "The idea is simple and most people have never applied it to anything. The body can't do everything at once. It can't get much bigger and much faster and much more enduring in the same month. So you pick one quality, give it a block of weeks, and let the others hold. Then you switch. Over a year the blocks add up to a body that's better at all of them."
-   },
-   {
-    "k": "",
-    "t": "That's the key, and it's about the whole year, not just the gym. Vault Human's year is periodized. Months one through five build the base, one chamber at a time. Month six is rest, with no new keys, because Matveyev found that the rest block isn't a break from training, it's where the training is absorbed. Months seven through twelve build on what's been laid down. You're in the second block now, and the second block always feels harder than the first, because the novelty is gone and the base is still forming. That's not a sign something's wrong. That's the season you're in."
-   },
-   {
-    "k": "",
-    "t": "Periodization also forgives. If you're not getting stronger this month, you may be in a month that isn't for that. Ask what this block is for. Then do that."
    }
   ],
   "n": 57,
@@ -2068,6 +2068,40 @@ export const letters=[
   "chamber": 2
  },
  {
+  "slug": "fast-from-the-floor-to-overhead",
+  "title": "Fast, from the floor to overhead",
+  "dek": "There are two lifts in the Olympics. The snatch: a barbell pulled from the floor to overhead in one movement.",
+  "day": 39,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "There are two lifts in the Olympics. The snatch: a barbell pulled from the floor to overhead in one movement. The clean and jerk: pulled to the shoulders, then driven overhead. Both are done with more weight than seems possible, by people who look like gymnasts rather than giants, and both are the purest expression of power, which is strength applied fast."
+   },
+   {
+    "k": "",
+    "t": "Bob Hoffman built the American version at York Barbell in Pennsylvania in the 1930s, and his lifters dominated the world until the Soviet system, with its sports science and its thousands of coached children, overtook them in the 1960s. The lifts themselves haven't changed. They're the most technical thing you can do with a barbell, and a good coach will spend months on the movement with an empty bar before adding a plate."
+   },
+   {
+    "k": "",
+    "t": "Why it's a key for everyone and not just athletes: power is the quality that leaves first. Strength holds into old age if you keep lifting. Power, the ability to move fast, goes earlier and quietly, and it's the thing that catches you when you trip. The research on falls in older adults keeps coming back to this. It's not just whether the legs are strong. It's whether they're fast."
+   },
+   {
+    "k": "",
+    "t": "So the key isn't the snatch. The key is fast. Something in your week where the body moves quickly against resistance: a jump, a throw, a kettlebell swing, a sprint up the stairs. The Olympic lifts are the graduate school of that idea, and if you want them, the door is a certified coach and an empty bar. The kindergarten is a jump."
+   },
+   {
+    "k": "",
+    "t": "This belongs in the month of Breathing because the lifts are a single breath. Brace, pull, catch, exhale. There's no room in a snatch for a second thought. Everything you've learned about the breath this month happens in one second."
+   }
+  ],
+  "n": 59,
+  "date": "June 23, 2026",
+  "iso": "2026-06-23",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
   "slug": "the-honest-version-of-attraction",
   "title": "The honest version of attraction",
   "dek": "In 2006 a film and a book called <em>The Secret</em> told millions of people that the universe is a catalog and feeling is the order form.",
@@ -2097,40 +2131,6 @@ export const letters=[
    {
     "k": "",
     "t": "So we keep the practice and drop the cosmology. Feel the finished thing. Then go do the next real step. The feeling is the fuel, not the vehicle."
-   }
-  ],
-  "n": 59,
-  "date": "June 24, 2026",
-  "iso": "2026-06-24",
-  "month": "June 2026",
-  "chamber": 2
- },
- {
-  "slug": "fast-from-the-floor-to-overhead",
-  "title": "Fast, from the floor to overhead",
-  "dek": "There are two lifts in the Olympics. The snatch: a barbell pulled from the floor to overhead in one movement.",
-  "day": 40,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "There are two lifts in the Olympics. The snatch: a barbell pulled from the floor to overhead in one movement. The clean and jerk: pulled to the shoulders, then driven overhead. Both are done with more weight than seems possible, by people who look like gymnasts rather than giants, and both are the purest expression of power, which is strength applied fast."
-   },
-   {
-    "k": "",
-    "t": "Bob Hoffman built the American version at York Barbell in Pennsylvania in the 1930s, and his lifters dominated the world until the Soviet system, with its sports science and its thousands of coached children, overtook them in the 1960s. The lifts themselves haven't changed. They're the most technical thing you can do with a barbell, and a good coach will spend months on the movement with an empty bar before adding a plate."
-   },
-   {
-    "k": "",
-    "t": "Why it's a key for everyone and not just athletes: power is the quality that leaves first. Strength holds into old age if you keep lifting. Power, the ability to move fast, goes earlier and quietly, and it's the thing that catches you when you trip. The research on falls in older adults keeps coming back to this. It's not just whether the legs are strong. It's whether they're fast."
-   },
-   {
-    "k": "",
-    "t": "So the key isn't the snatch. The key is fast. Something in your week where the body moves quickly against resistance: a jump, a throw, a kettlebell swing, a sprint up the stairs. The Olympic lifts are the graduate school of that idea, and if you want them, the door is a certified coach and an empty bar. The kindergarten is a jump."
-   },
-   {
-    "k": "",
-    "t": "This belongs in the month of Breathing because the lifts are a single breath. Brace, pull, catch, exhale. There's no room in a snatch for a second thought. Everything you've learned about the breath this month happens in one second."
    }
   ],
   "n": 60,
@@ -2174,40 +2174,10 @@ export const letters=[
   "chamber": 2
  },
  {
-  "slug": "cold-breath-and-the-decision-to-stay",
-  "title": "Cold, breath, and the decision to stay",
-  "dek": "In 2014 researchers at a Dutch university did something they expected to fail.",
-  "day": 42,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 2014 researchers at a Dutch university did something they expected to fail. They took healthy volunteers, trained them for ten days in a method of deep rhythmic breathing, cold exposure and meditation, and then injected them with a toxin that reliably produces fever and flu symptoms. The trained group had far fewer symptoms and a measurably different immune response than the untrained. It was published in a major journal. The man who trained them was a Dutch extreme athlete named Wim Hof."
-   },
-   {
-    "k": "",
-    "t": "Hof's method has three pillars: a breathing pattern of deep, fast rounds followed by a long hold; cold exposure, from a cold shower up to ice baths; and what he calls commitment, the simple decision to stay in it. He's climbed Kilimanjaro in shorts and holds records for sitting in ice. The science says the breathing produces a real, short-term shift in body chemistry, and that regular cold exposure trains the body's stress response the way lifting trains muscle."
-   },
-   {
-    "k": "",
-    "t": "I'll say the safety part plainly, because Hof himself does. Never do the breathing in or near water, in a car, or standing up. People have fainted and people have drowned. Cold exposure starts with thirty seconds at the end of a normal shower, not an ice bath, and anyone with a heart condition talks to a doctor first."
-   },
-   {
-    "k": "",
-    "t": "What belongs in the month of the Body is the third pillar. Everyone talks about the breath and the ice. Hof says the method is the decision. The cold water hits, every nerve says get out, and you stay for one more breath. That is a practice you can take anywhere, and I think it's the real gift. The body learns that the alarm is not an order. You can hear it, breathe through it, and choose."
-   }
-  ],
-  "n": 62,
-  "date": "June 26, 2026",
-  "iso": "2026-06-26",
-  "month": "June 2026",
-  "chamber": 2
- },
- {
   "slug": "hard-varied-and-scaled-to-you",
   "title": "Hard, varied, and scaled to you",
   "dek": "In 2000 a gymnastics coach named Greg Glassman opened a gym in Santa Cruz with a formula: constantly varied functional movement, done at high intensity, scaled to…",
-  "day": 42,
+  "day": 41,
   "vault": "body",
   "body": [
    {
@@ -2229,6 +2199,36 @@ export const letters=[
    {
     "k": "",
     "t": "For the month of Breathing, this key is about the three-on, one-off week. Glassman built the rest in. Three days of real work, one day of none. Most people get the ratio backward: six days of half effort and no real rest. Flip it."
+   }
+  ],
+  "n": 62,
+  "date": "June 25, 2026",
+  "iso": "2026-06-25",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
+  "slug": "cold-breath-and-the-decision-to-stay",
+  "title": "Cold, breath, and the decision to stay",
+  "dek": "In 2014 researchers at a Dutch university did something they expected to fail.",
+  "day": 42,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 2014 researchers at a Dutch university did something they expected to fail. They took healthy volunteers, trained them for ten days in a method of deep rhythmic breathing, cold exposure and meditation, and then injected them with a toxin that reliably produces fever and flu symptoms. The trained group had far fewer symptoms and a measurably different immune response than the untrained. It was published in a major journal. The man who trained them was a Dutch extreme athlete named Wim Hof."
+   },
+   {
+    "k": "",
+    "t": "Hof's method has three pillars: a breathing pattern of deep, fast rounds followed by a long hold; cold exposure, from a cold shower up to ice baths; and what he calls commitment, the simple decision to stay in it. He's climbed Kilimanjaro in shorts and holds records for sitting in ice. The science says the breathing produces a real, short-term shift in body chemistry, and that regular cold exposure trains the body's stress response the way lifting trains muscle."
+   },
+   {
+    "k": "",
+    "t": "I'll say the safety part plainly, because Hof himself does. Never do the breathing in or near water, in a car, or standing up. People have fainted and people have drowned. Cold exposure starts with thirty seconds at the end of a normal shower, not an ice bath, and anyone with a heart condition talks to a doctor first."
+   },
+   {
+    "k": "",
+    "t": "What belongs in the month of the Body is the third pillar. Everyone talks about the breath and the ice. Hof says the method is the decision. The cold water hits, every nerve says get out, and you stay for one more breath. That is a practice you can take anywhere, and I think it's the real gift. The body learns that the alarm is not an order. You can hear it, breathe through it, and choose."
    }
   ],
   "n": 63,
@@ -2272,40 +2272,10 @@ export const letters=[
   "chamber": 2
  },
  {
-  "slug": "change-the-frame",
-  "title": "Change the frame",
-  "dek": "In 1975 two men at the University of California, Santa Cruz, a linguist named John Grinder and a student named Richard Bandler, sat in on sessions with the best…",
-  "day": 44,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1975 two men at the University of California, Santa Cruz, a linguist named John Grinder and a student named Richard Bandler, sat in on sessions with the best therapists they could find and asked a question nobody had asked that way: not what do these people believe, but what exactly do they do, word by word, that works? They modeled a hypnotherapist, a family therapist and a Gestalt pioneer, wrote down the patterns, and called the result Neuro-Linguistic Programming."
-   },
-   {
-    "k": "",
-    "t": "NLP's scientific reputation is poor, and I won't dress that up. Its bigger claims about eye movements and sensory types haven't held up. What has held up, because it was borrowed from people who were genuinely good, are a few tools that nearly every coach on earth now uses without knowing where they came from."
-   },
-   {
-    "k": "",
-    "t": "Reframing is the one I'd keep above all. The same fact, placed in a different frame, means something different. \"I failed\" and \"I learned what doesn't work\" describe the same event. Anchoring is another: tying a state to a physical cue, a touch, a breath, a word, so you can call it back on purpose. And modeling itself: if someone does a thing well, watch exactly what they do and copy it before you theorize about it."
-   },
-   {
-    "k": "",
-    "t": "Why it's here, in the month of the Body: Bandler and Grinder's deepest insight was that the mind changes fastest through the body and the senses, not through argument. Change the posture, the breath, the picture, the tone of voice, and the feeling follows, before the thinking has a chance to object. Tony Robbins learned this from them and built an arena on it. You can use it at your desk."
-   }
-  ],
-  "n": 65,
-  "date": "June 28, 2026",
-  "iso": "2026-06-28",
-  "month": "June 2026",
-  "chamber": 2
- },
- {
   "slug": "muscle-is-medicine",
   "title": "Muscle is medicine",
   "dek": "In 2003 a Danish scientist named Bente Pedersen made a discovery that changed how medicine sees muscle.",
-  "day": 44,
+  "day": 43,
   "vault": "body",
   "body": [
    {
@@ -2327,6 +2297,36 @@ export const letters=[
    {
     "k": "",
     "t": "I'll say it the way I'd say it to someone I love. You don't have to lift heavy. You have to lift twice a week, for the rest of your life, because the organ that keeps you alive only works when you ask it to."
+   }
+  ],
+  "n": 65,
+  "date": "June 27, 2026",
+  "iso": "2026-06-27",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
+  "slug": "change-the-frame",
+  "title": "Change the frame",
+  "dek": "In 1975 two men at the University of California, Santa Cruz, a linguist named John Grinder and a student named Richard Bandler, sat in on sessions with the best…",
+  "day": 44,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1975 two men at the University of California, Santa Cruz, a linguist named John Grinder and a student named Richard Bandler, sat in on sessions with the best therapists they could find and asked a question nobody had asked that way: not what do these people believe, but what exactly do they do, word by word, that works? They modeled a hypnotherapist, a family therapist and a Gestalt pioneer, wrote down the patterns, and called the result Neuro-Linguistic Programming."
+   },
+   {
+    "k": "",
+    "t": "NLP's scientific reputation is poor, and I won't dress that up. Its bigger claims about eye movements and sensory types haven't held up. What has held up, because it was borrowed from people who were genuinely good, are a few tools that nearly every coach on earth now uses without knowing where they came from."
+   },
+   {
+    "k": "",
+    "t": "Reframing is the one I'd keep above all. The same fact, placed in a different frame, means something different. \"I failed\" and \"I learned what doesn't work\" describe the same event. Anchoring is another: tying a state to a physical cue, a touch, a breath, a word, so you can call it back on purpose. And modeling itself: if someone does a thing well, watch exactly what they do and copy it before you theorize about it."
+   },
+   {
+    "k": "",
+    "t": "Why it's here, in the month of the Body: Bandler and Grinder's deepest insight was that the mind changes fastest through the body and the senses, not through argument. Change the posture, the breath, the picture, the tone of voice, and the feeling follows, before the thinking has a chance to object. Tony Robbins learned this from them and built an arena on it. You can use it at your desk."
    }
   ],
   "n": 66,
@@ -2370,40 +2370,10 @@ export const letters=[
   "chamber": 2
  },
  {
-  "slug": "stop-doing-the-thing",
-  "title": "Stop doing the thing",
-  "dek": "F. M. Alexander was a young Shakespearean actor in Australia in the 1890s who kept losing his voice on stage.",
-  "day": 46,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "F. M. Alexander was a young Shakespearean actor in Australia in the 1890s who kept losing his voice on stage. The doctors found nothing. So he set up mirrors and watched himself speak, for months, and saw what no one else had: at the moment he began to recite, he pulled his head back and down, tightened his neck, and squeezed his breath. The habit was invisible to him and it was ruining him. When he learned to stop doing it, the voice came back."
-   },
-   {
-    "k": "",
-    "t": "The Alexander Technique grew out of that. It isn't exercise. It's the study of what you're doing to yourself without knowing it, mostly with your neck, head and spine, and the practice of not doing it. Teachers use their hands, lightly, to show a student what a free neck feels like. It has been taught to actors and musicians for a century, and a large British trial in 2008 found it one of the most effective things ever tested for chronic back pain."
-   },
-   {
-    "k": "",
-    "t": "The key, and it's a big one for the month of the Body, is the idea Alexander called inhibition. Not suppression. Pause. Between the impulse to act and the act itself, there's a gap, and in that gap you can notice the habit about to fire and decline it. He was teaching, in the body, exactly what Covey was teaching in the mind on day three: between stimulus and response there is a space."
-   },
-   {
-    "k": "",
-    "t": "Most of us tighten before we do anything. Before we stand up, before we speak, before we lift, before we open an email. Alexander's whole teaching is that the tightening isn't necessary, that it was learned, and that what was learned can be unlearned, one noticing at a time."
-   }
-  ],
-  "n": 68,
-  "date": "June 30, 2026",
-  "iso": "2026-06-30",
-  "month": "June 2026",
-  "chamber": 2
- },
- {
   "slug": "grip-balance-and-the-fall-that-doesn-t-happen",
   "title": "Grip, balance, and the fall that doesn't happen",
   "dek": "In 1990 a physician named Maria Fiatarone put ten people in a Boston nursing home, average age ninety, on a program of heavy leg strength training, eight weeks, three…",
-  "day": 46,
+  "day": 45,
   "vault": "body",
   "body": [
    {
@@ -2425,6 +2395,36 @@ export const letters=[
    {
     "k": "",
     "t": "Balance is the one most of us never train. Stand on one foot while you brush your teeth. That's the whole prescription to start. If you wobble, good; that's the muscle learning. If you can't do it at all, that's the most important thing you'll learn this month, and it's fixable."
+   }
+  ],
+  "n": 68,
+  "date": "June 29, 2026",
+  "iso": "2026-06-29",
+  "month": "June 2026",
+  "chamber": 2
+ },
+ {
+  "slug": "stop-doing-the-thing",
+  "title": "Stop doing the thing",
+  "dek": "F. M. Alexander was a young Shakespearean actor in Australia in the 1890s who kept losing his voice on stage.",
+  "day": 46,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "F. M. Alexander was a young Shakespearean actor in Australia in the 1890s who kept losing his voice on stage. The doctors found nothing. So he set up mirrors and watched himself speak, for months, and saw what no one else had: at the moment he began to recite, he pulled his head back and down, tightened his neck, and squeezed his breath. The habit was invisible to him and it was ruining him. When he learned to stop doing it, the voice came back."
+   },
+   {
+    "k": "",
+    "t": "The Alexander Technique grew out of that. It isn't exercise. It's the study of what you're doing to yourself without knowing it, mostly with your neck, head and spine, and the practice of not doing it. Teachers use their hands, lightly, to show a student what a free neck feels like. It has been taught to actors and musicians for a century, and a large British trial in 2008 found it one of the most effective things ever tested for chronic back pain."
+   },
+   {
+    "k": "",
+    "t": "The key, and it's a big one for the month of the Body, is the idea Alexander called inhibition. Not suppression. Pause. Between the impulse to act and the act itself, there's a gap, and in that gap you can notice the habit about to fire and decline it. He was teaching, in the body, exactly what Covey was teaching in the mind on day three: between stimulus and response there is a space."
+   },
+   {
+    "k": "",
+    "t": "Most of us tighten before we do anything. Before we stand up, before we speak, before we lift, before we open an email. Alexander's whole teaching is that the tightening isn't necessary, that it was learned, and that what was learned can be unlearned, one noticing at a time."
    }
   ],
   "n": 69,
@@ -2464,40 +2464,10 @@ export const letters=[
   "chamber": 2
  },
  {
-  "slug": "the-three-states",
-  "title": "The three states",
-  "dek": "In 1994 a scientist named Stephen Porges proposed a map of the nervous system that therapists have been using ever since, because it explains something every one of…",
-  "day": 48,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1994 a scientist named Stephen Porges proposed a map of the nervous system that therapists have been using ever since, because it explains something every one of us has felt and nobody had named."
-   },
-   {
-    "k": "",
-    "t": "He called it Polyvagal Theory. The vagus nerve, which runs from the brainstem to the gut, has two branches, and with the fight-or-flight system they give the body three states. The first is safe and social: the face is soft, the voice has music in it, you can connect. The second is mobilized: fight or flight, heart up, jaw set, ready. The third is shutdown: the body goes still, flat, far away, the way an animal plays dead. The body moves between the three not by deciding but by sensing, below thought, whether it's safe. Porges called that sensing neuroception."
-   },
-   {
-    "k": "",
-    "t": "The science has been argued about, and some of the anatomy is disputed. But as a map of lived experience it's the most useful thing I know. It explains why you can't think clearly in a fight. Why some people freeze instead of fighting and then feel ashamed of it, when it was the body doing exactly what bodies do. And why a kind face and a slow voice do more for a frightened person than any argument."
-   },
-   {
-    "k": "",
-    "t": "The key for the month of Breathing is this: the way back up the ladder, from shutdown to mobilized to safe, runs through the body. A long exhale. A hum, which vibrates the vagus. Eyes meeting kind eyes. Warmth. These are not soft extras. They are the switches. And the person who learns to read their own three states, and to move between them on purpose, has a kind of freedom most people never get."
-   }
-  ],
-  "n": 71,
-  "date": "July 2, 2026",
-  "iso": "2026-07-02",
-  "month": "July 2026",
-  "chamber": 2
- },
- {
   "slug": "the-man-who-did-it-on-television-for-thirty-four-years",
   "title": "The man who did it on television for thirty-four years",
   "dek": "In 1936 a young man in Oakland, California, opened what may have been the first modern health club in America.",
-  "day": 48,
+  "day": 47,
   "vault": "body",
   "body": [
    {
@@ -2519,6 +2489,36 @@ export const letters=[
    {
     "k": "",
     "t": "Six and a half weeks of walks and logs is the beginning of a LaLanne morning. You're not building a body. You're building a person who shows up. The body follows that person around."
+   }
+  ],
+  "n": 71,
+  "date": "July 1, 2026",
+  "iso": "2026-07-01",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
+  "slug": "the-three-states",
+  "title": "The three states",
+  "dek": "In 1994 a scientist named Stephen Porges proposed a map of the nervous system that therapists have been using ever since, because it explains something every one of…",
+  "day": 48,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1994 a scientist named Stephen Porges proposed a map of the nervous system that therapists have been using ever since, because it explains something every one of us has felt and nobody had named."
+   },
+   {
+    "k": "",
+    "t": "He called it Polyvagal Theory. The vagus nerve, which runs from the brainstem to the gut, has two branches, and with the fight-or-flight system they give the body three states. The first is safe and social: the face is soft, the voice has music in it, you can connect. The second is mobilized: fight or flight, heart up, jaw set, ready. The third is shutdown: the body goes still, flat, far away, the way an animal plays dead. The body moves between the three not by deciding but by sensing, below thought, whether it's safe. Porges called that sensing neuroception."
+   },
+   {
+    "k": "",
+    "t": "The science has been argued about, and some of the anatomy is disputed. But as a map of lived experience it's the most useful thing I know. It explains why you can't think clearly in a fight. Why some people freeze instead of fighting and then feel ashamed of it, when it was the body doing exactly what bodies do. And why a kind face and a slow voice do more for a frightened person than any argument."
+   },
+   {
+    "k": "",
+    "t": "The key for the month of Breathing is this: the way back up the ladder, from shutdown to mobilized to safe, runs through the body. A long exhale. A hum, which vibrates the vagus. Eyes meeting kind eyes. Warmth. These are not soft extras. They are the switches. And the person who learns to read their own three states, and to move between them on purpose, has a kind of freedom most people never get."
    }
   ],
   "n": 72,
@@ -2558,40 +2558,10 @@ export const letters=[
   "chamber": 2
  },
  {
-  "slug": "armor-you-forgot-you-were-wearing",
-  "title": "Armor you forgot you were wearing",
-  "dek": "Alexander Lowen was a lawyer who became a psychiatrist, a student of Wilhelm Reich in the 1940s, and in the 1950s the founder of a therapy that starts with the body…",
-  "day": 50,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Alexander Lowen was a lawyer who became a psychiatrist, a student of Wilhelm Reich in the 1940s, and in the 1950s the founder of a therapy that starts with the body instead of the story. He called it Bioenergetic Analysis. His idea is that the feelings we couldn't afford to feel as children didn't go away. They went into the muscles. The jaw that's always clenched. The shoulders that never come down. The chest that doesn't fully rise. He called it character armor, and he said you can read a life in how a person stands."
-   },
-   {
-    "k": "",
-    "t": "The practice he built is physical. Grounding: feet on the floor, knees soft, feeling your weight go down into the earth, because a person who can't feel their feet can't feel much else. Breathing into the belly, where most of us stopped breathing years ago. And expressive release: letting the body do what it's been holding back, which in his sessions could mean kicking, shouting, or sobbing, and in your living room can mean a long loud exhale and a shake of the arms."
-   },
-   {
-    "k": "",
-    "t": "I hold Lowen the way I hold every body therapy on this shelf. The deep work is for a trained practitioner. The map is for everyone. And the map is this: your body has been faithfully keeping feelings you asked it to keep, and it will give them back when you give it permission."
-   },
-   {
-    "k": "",
-    "t": "Here's what I love about this key, fifty days in. You've been walking, breathing, lifting. Your body has been getting stronger. Lowen asks a different question of that same body: what's it been carrying for you? Fifty days of attention is enough that you can start to feel the answer."
-   }
-  ],
-  "n": 74,
-  "date": "July 4, 2026",
-  "iso": "2026-07-04",
-  "month": "July 2026",
-  "chamber": 2
- },
- {
   "slug": "ten-minutes-of-maintenance",
   "title": "Ten minutes of maintenance",
   "dek": "Kelly Starrett is a physical therapist in San Francisco who in 2013 wrote <em>Becoming a Supple Leopard</em>, a large book with a small message: your body needs daily…",
-  "day": 50,
+  "day": 49,
   "vault": "body",
   "body": [
    {
@@ -2613,6 +2583,36 @@ export const letters=[
    {
     "k": "",
     "t": "It's in the month of the Body because the strength you've been building needs somewhere to go. A muscle that's getting stronger across a stiff joint is a problem being built. Mobility is what lets the strength be used."
+   }
+  ],
+  "n": 74,
+  "date": "July 3, 2026",
+  "iso": "2026-07-03",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
+  "slug": "armor-you-forgot-you-were-wearing",
+  "title": "Armor you forgot you were wearing",
+  "dek": "Alexander Lowen was a lawyer who became a psychiatrist, a student of Wilhelm Reich in the 1940s, and in the 1950s the founder of a therapy that starts with the body…",
+  "day": 50,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Alexander Lowen was a lawyer who became a psychiatrist, a student of Wilhelm Reich in the 1940s, and in the 1950s the founder of a therapy that starts with the body instead of the story. He called it Bioenergetic Analysis. His idea is that the feelings we couldn't afford to feel as children didn't go away. They went into the muscles. The jaw that's always clenched. The shoulders that never come down. The chest that doesn't fully rise. He called it character armor, and he said you can read a life in how a person stands."
+   },
+   {
+    "k": "",
+    "t": "The practice he built is physical. Grounding: feet on the floor, knees soft, feeling your weight go down into the earth, because a person who can't feel their feet can't feel much else. Breathing into the belly, where most of us stopped breathing years ago. And expressive release: letting the body do what it's been holding back, which in his sessions could mean kicking, shouting, or sobbing, and in your living room can mean a long loud exhale and a shake of the arms."
+   },
+   {
+    "k": "",
+    "t": "I hold Lowen the way I hold every body therapy on this shelf. The deep work is for a trained practitioner. The map is for everyone. And the map is this: your body has been faithfully keeping feelings you asked it to keep, and it will give them back when you give it permission."
+   },
+   {
+    "k": "",
+    "t": "Here's what I love about this key, fifty days in. You've been walking, breathing, lifting. Your body has been getting stronger. Lowen asks a different question of that same body: what's it been carrying for you? Fifty days of attention is enough that you can start to feel the answer."
    }
   ],
   "n": 75,
@@ -2652,6 +2652,40 @@ export const letters=[
   "chamber": 2
  },
  {
+  "slug": "spine-hygiene",
+  "title": "Spine hygiene",
+  "dek": "Stuart McGill spent thirty years at the University of Waterloo in Canada doing something nobody else was doing: measuring, in a lab, exactly what loads the human…",
+  "day": 51,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Stuart McGill spent thirty years at the University of Waterloo in Canada doing something nobody else was doing: measuring, in a lab, exactly what loads the human spine, what injures it, and what makes it resilient. He became the person the world's best athletes and the world's worst back pain cases both went to see. His findings are blunt and, for most people, a relief."
+   },
+   {
+    "k": "",
+    "t": "First: the spine is built to be stiff and strong while the hips move. Most back injuries come from bending the spine under load, repeatedly, which is what people do when they lift with their back, sit slumped for hours, and then do sit-ups to \"strengthen the core.\" McGill's rule is no loaded spine flexion. Hinge at the hips; keep the back neutral."
+   },
+   {
+    "k": "",
+    "t": "Second: endurance protects the back better than strength. The muscles around the spine need to hold, for a long time, more than they need to lift heavy. So his prescription, which he calls the Big Three, is three endurance exercises done daily: the modified curl-up, which trains the front without bending the spine; the side plank, for the sides; and the bird dog, for the back. Short holds, ten seconds, several reps, every day. It takes five minutes and it's the best-tested back program in existence."
+   },
+   {
+    "k": "",
+    "t": "Third, and this is the one I'd frame: most back pain is not a mystery and not a life sentence. It has a cause, usually a movement the person does all day without knowing, and it has a fix, which is to stop doing the movement and build the endurance."
+   },
+   {
+    "k": "",
+    "t": "It belongs in the second month because the brace you learned under the bar on day twenty-four is the same brace McGill teaches for picking up a child. The spine likes one shape. Keep it, and move everything else around it."
+   }
+  ],
+  "n": 77,
+  "date": "July 5, 2026",
+  "iso": "2026-07-05",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
   "slug": "breathe-less",
   "title": "Breathe less",
   "dek": "Here's a key that contradicts the one you learned on day forty-two, on purpose.",
@@ -2677,40 +2711,6 @@ export const letters=[
    {
     "k": "",
     "t": "For the month of Breathing, this key is about the exhale and the nose. Mouth breathing, especially at night, is one of the quiet health problems of our time, and the fix starts with closing the mouth during the day. Light, slow, nasal, low. That's the Buteyko breath, and you can do it in a meeting."
-   }
-  ],
-  "n": 77,
-  "date": "July 6, 2026",
-  "iso": "2026-07-06",
-  "month": "July 2026",
-  "chamber": 2
- },
- {
-  "slug": "spine-hygiene",
-  "title": "Spine hygiene",
-  "dek": "Stuart McGill spent thirty years at the University of Waterloo in Canada doing something nobody else was doing: measuring, in a lab, exactly what loads the human…",
-  "day": 52,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Stuart McGill spent thirty years at the University of Waterloo in Canada doing something nobody else was doing: measuring, in a lab, exactly what loads the human spine, what injures it, and what makes it resilient. He became the person the world's best athletes and the world's worst back pain cases both went to see. His findings are blunt and, for most people, a relief."
-   },
-   {
-    "k": "",
-    "t": "First: the spine is built to be stiff and strong while the hips move. Most back injuries come from bending the spine under load, repeatedly, which is what people do when they lift with their back, sit slumped for hours, and then do sit-ups to \"strengthen the core.\" McGill's rule is no loaded spine flexion. Hinge at the hips; keep the back neutral."
-   },
-   {
-    "k": "",
-    "t": "Second: endurance protects the back better than strength. The muscles around the spine need to hold, for a long time, more than they need to lift heavy. So his prescription, which he calls the Big Three, is three endurance exercises done daily: the modified curl-up, which trains the front without bending the spine; the side plank, for the sides; and the bird dog, for the back. Short holds, ten seconds, several reps, every day. It takes five minutes and it's the best-tested back program in existence."
-   },
-   {
-    "k": "",
-    "t": "Third, and this is the one I'd frame: most back pain is not a mystery and not a life sentence. It has a cause, usually a movement the person does all day without knowing, and it has a fix, which is to stop doing the movement and build the endurance."
-   },
-   {
-    "k": "",
-    "t": "It belongs in the second month because the brace you learned under the bar on day twenty-four is the same brace McGill teaches for picking up a child. The spine likes one shape. Keep it, and move everything else around it."
    }
   ],
   "n": 78,
@@ -2754,6 +2754,36 @@ export const letters=[
   "chamber": 2
  },
  {
+  "slug": "find-the-asymmetry-first",
+  "title": "Find the asymmetry first",
+  "dek": "Gray Cook and Lee Burton were two physical therapists who in 1997 got tired of watching athletes get hurt doing programs that were, on paper, perfectly designed.",
+  "day": 53,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Gray Cook and Lee Burton were two physical therapists who in 1997 got tired of watching athletes get hurt doing programs that were, on paper, perfectly designed. The problem wasn't the program. It was that nobody had checked whether the athlete could actually move well before loading them. So they built a screen: seven fundamental movement patterns, each scored from zero to three, that takes ten minutes and tells you where the body is compensating. The Functional Movement Screen."
+   },
+   {
+    "k": "",
+    "t": "The seven are a deep squat, a step over a hurdle, a lunge in line, a shoulder reach behind the back, a straight-leg raise lying down, a push-up with the trunk held stable, and a rotational stability test on hands and knees. A perfect score is twenty-one. What matters more than the total is two things: any pattern scored zero or one, which means pain or inability, and any asymmetry, where the left side scores differently from the right."
+   },
+   {
+    "k": "",
+    "t": "Asymmetry is the key. Cook's finding, repeated in studies on athletes, firefighters and soldiers, is that a body that moves differently on its two sides is a body headed for an injury. The weak side gets overloaded, the strong side compensates, and something eventually gives. Find the asymmetry before you train and you can fix it in weeks. Find it after and you're in rehab."
+   },
+   {
+    "k": "",
+    "t": "For the month of the Body, this key is the mirror the strength keys needed. You've been adding load for a month. Before you add more, ask: is the load going into a body that moves evenly? A certified screener can run the full seven in ten minutes. You can run the simplest version at home today."
+   }
+  ],
+  "n": 80,
+  "date": "July 7, 2026",
+  "iso": "2026-07-07",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
   "slug": "let-it-shake",
   "title": "Let it shake",
   "dek": "Watch a dog after something frightens it. It shakes, hard, head to tail, for a few seconds, and then it's fine.",
@@ -2779,36 +2809,6 @@ export const letters=[
    {
     "k": "",
     "t": "That's a key for the second month because it's the body doing its own work when the mind gets out of the way. And it rhymes with the whole month: the exhale, the release, the standing down."
-   }
-  ],
-  "n": 80,
-  "date": "July 8, 2026",
-  "iso": "2026-07-08",
-  "month": "July 2026",
-  "chamber": 2
- },
- {
-  "slug": "find-the-asymmetry-first",
-  "title": "Find the asymmetry first",
-  "dek": "Gray Cook and Lee Burton were two physical therapists who in 1997 got tired of watching athletes get hurt doing programs that were, on paper, perfectly designed.",
-  "day": 54,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Gray Cook and Lee Burton were two physical therapists who in 1997 got tired of watching athletes get hurt doing programs that were, on paper, perfectly designed. The problem wasn't the program. It was that nobody had checked whether the athlete could actually move well before loading them. So they built a screen: seven fundamental movement patterns, each scored from zero to three, that takes ten minutes and tells you where the body is compensating. The Functional Movement Screen."
-   },
-   {
-    "k": "",
-    "t": "The seven are a deep squat, a step over a hurdle, a lunge in line, a shoulder reach behind the back, a straight-leg raise lying down, a push-up with the trunk held stable, and a rotational stability test on hands and knees. A perfect score is twenty-one. What matters more than the total is two things: any pattern scored zero or one, which means pain or inability, and any asymmetry, where the left side scores differently from the right."
-   },
-   {
-    "k": "",
-    "t": "Asymmetry is the key. Cook's finding, repeated in studies on athletes, firefighters and soldiers, is that a body that moves differently on its two sides is a body headed for an injury. The weak side gets overloaded, the strong side compensates, and something eventually gives. Find the asymmetry before you train and you can fix it in weeks. Find it after and you're in rehab."
-   },
-   {
-    "k": "",
-    "t": "For the month of the Body, this key is the mirror the strength keys needed. You've been adding load for a month. Before you add more, ask: is the load going into a body that moves evenly? A certified screener can run the full seven in ten minutes. You can run the simplest version at home today."
    }
   ],
   "n": 81,
@@ -2852,6 +2852,40 @@ export const letters=[
   "chamber": 2
  },
  {
+  "slug": "the-way-we-moved-before-gyms",
+  "title": "The way we moved before gyms",
+  "dek": "Georges Hébert was a French naval officer who in 1902 helped evacuate hundreds of people from a volcanic eruption on Martinique and was struck by the islanders he…",
+  "day": 55,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Georges Hébert was a French naval officer who in 1902 helped evacuate hundreds of people from a volcanic eruption on Martinique and was struck by the islanders he worked beside: people who had never seen a gym and who ran, climbed, swam and carried with a grace and strength no trained European athlete could match. He went home and built a method around it. The natural method, from 1905: run, jump, climb, balance, crawl, lift, carry, throw, swim, defend, outdoors, for everyone, with the motto \"be strong to be useful.\""
+   },
+   {
+    "k": "",
+    "t": "A century later a Frenchman named Erwan Le Corre found Hébert's work, took it into the forests of Brazil, and in 2008 launched it again as MovNat, which has since spread across the world. The claim is the same: the body was built for a wide range of natural movements, modern life has narrowed that range to sitting and walking on flat ground, and most of what ails us is that narrowing."
+   },
+   {
+    "k": "",
+    "t": "Here's the key, and it's about where you train as much as how. Hébert insisted on outdoors, on uneven ground, in weather. The gym removes everything the body evolved to handle: the unpredictable surface, the thing that has to be lifted awkwardly, the branch you have to reach. The natural method puts it back."
+   },
+   {
+    "k": "",
+    "t": "Day one of Vault Human sent you outside, and every day since. This key explains why that was never just about fresh air. The outdoors is the original gym, and the body knows it."
+   },
+   {
+    "k": "",
+    "t": "I'll say it plainly for the people who've never climbed anything since childhood: start with a curb. Balance along it. Step up onto a bench. Crawl across the lawn on hands and feet for twenty feet. It will feel silly and it will feel wonderful, in that order."
+   }
+  ],
+  "n": 83,
+  "date": "July 9, 2026",
+  "iso": "2026-07-09",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
   "slug": "the-body-keeps-the-score",
   "title": "The body keeps the score",
   "dek": "Three teachers, one teaching: what happened to you lives in your body, and healing has to include the body.",
@@ -2877,40 +2911,6 @@ export const letters=[
    {
     "k": "",
     "t": "Maté's gift is the gentlest line in the chamber: the thing you're hardest on yourself about was probably once the thing that kept you safe."
-   }
-  ],
-  "n": 83,
-  "date": "July 10, 2026",
-  "iso": "2026-07-10",
-  "month": "July 2026",
-  "chamber": 2
- },
- {
-  "slug": "the-way-we-moved-before-gyms",
-  "title": "The way we moved before gyms",
-  "dek": "Georges Hébert was a French naval officer who in 1902 helped evacuate hundreds of people from a volcanic eruption on Martinique and was struck by the islanders he…",
-  "day": 56,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Georges Hébert was a French naval officer who in 1902 helped evacuate hundreds of people from a volcanic eruption on Martinique and was struck by the islanders he worked beside: people who had never seen a gym and who ran, climbed, swam and carried with a grace and strength no trained European athlete could match. He went home and built a method around it. The natural method, from 1905: run, jump, climb, balance, crawl, lift, carry, throw, swim, defend, outdoors, for everyone, with the motto \"be strong to be useful.\""
-   },
-   {
-    "k": "",
-    "t": "A century later a Frenchman named Erwan Le Corre found Hébert's work, took it into the forests of Brazil, and in 2008 launched it again as MovNat, which has since spread across the world. The claim is the same: the body was built for a wide range of natural movements, modern life has narrowed that range to sitting and walking on flat ground, and most of what ails us is that narrowing."
-   },
-   {
-    "k": "",
-    "t": "Here's the key, and it's about where you train as much as how. Hébert insisted on outdoors, on uneven ground, in weather. The gym removes everything the body evolved to handle: the unpredictable surface, the thing that has to be lifted awkwardly, the branch you have to reach. The natural method puts it back."
-   },
-   {
-    "k": "",
-    "t": "Day one of Vault Human sent you outside, and every day since. This key explains why that was never just about fresh air. The outdoors is the original gym, and the body knows it."
-   },
-   {
-    "k": "",
-    "t": "I'll say it plainly for the people who've never climbed anything since childhood: start with a curb. Balance along it. Step up onto a bench. Crawl across the lawn on hands and feet for twenty feet. It will feel silly and it will feel wonderful, in that order."
    }
   ],
   "n": 84,
@@ -2950,40 +2950,10 @@ export const letters=[
   "chamber": 2
  },
  {
-  "slug": "maps-we-hold-loosely",
-  "title": "Maps we hold loosely",
-  "dek": "The last key of the second month is three systems with large followings and little evidence, and I'm including them because people you know use them and you should…",
-  "day": 58,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "The last key of the second month is three systems with large followings and little evidence, and I'm including them because people you know use them and you should know what they mean."
-   },
-   {
-    "k": "",
-    "t": "David Hawkins, a psychiatrist, published <em>Power vs. Force</em> in 1995 with a Map of Consciousness: emotional states ranked on a scale from shame at the bottom through courage in the middle to enlightenment at the top, each with a number. He claimed the numbers could be tested with a muscle-response technique. That claim doesn't hold up. Gary Douglas's Access Consciousness, from 1990, is best known for \"the Bars,\" a light touch on thirty-two points on the head, said to release limiting beliefs. Vianna Stibal's ThetaHealing, from 1995, is belief work done in a meditative state. None of the three has scientific support for its mechanism."
-   },
-   {
-    "k": "",
-    "t": "So why the shelf? Because every one of them is pointing at something real, and the practitioners' clients are often sincere, thoughtful people who found something useful. Hawkins' map, held as a picture rather than a measurement, is a decent description of how a life feels moving from shame to courage to acceptance to peace. The courage line, in particular, is a useful threshold. Below it, life happens to you. Above it, you happen to life. Access and ThetaHealing, underneath their explanations, are people being touched gently, asked good questions about what they believe, and given permission to believe something kinder."
-   },
-   {
-    "k": "",
-    "t": "Vault Human holds these loosely and says so. We take the picture, leave the mechanism, and point to a practitioner if you want the experience."
-   }
-  ],
-  "n": 86,
-  "date": "July 12, 2026",
-  "iso": "2026-07-12",
-  "month": "July 2026",
-  "chamber": 2
- },
- {
   "slug": "move-all-day-not-for-an-hour",
   "title": "Move all day, not for an hour",
   "dek": "Katy Bowman is a biomechanist who in 2014 wrote <em>Move Your DNA</em> with a claim that upends the whole fitness conversation: an hour of exercise a day doesn't undo…",
-  "day": 58,
+  "day": 57,
   "vault": "body",
   "body": [
    {
@@ -3005,6 +2975,36 @@ export const letters=[
    {
     "k": "",
     "t": "A chair isn't the enemy. A chair for ten hours is. Bowman's practice starts with noticing how many hours, which most people have never counted."
+   }
+  ],
+  "n": 86,
+  "date": "July 11, 2026",
+  "iso": "2026-07-11",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
+  "slug": "maps-we-hold-loosely",
+  "title": "Maps we hold loosely",
+  "dek": "The last key of the second month is three systems with large followings and little evidence, and I'm including them because people you know use them and you should…",
+  "day": 58,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The last key of the second month is three systems with large followings and little evidence, and I'm including them because people you know use them and you should know what they mean."
+   },
+   {
+    "k": "",
+    "t": "David Hawkins, a psychiatrist, published <em>Power vs. Force</em> in 1995 with a Map of Consciousness: emotional states ranked on a scale from shame at the bottom through courage in the middle to enlightenment at the top, each with a number. He claimed the numbers could be tested with a muscle-response technique. That claim doesn't hold up. Gary Douglas's Access Consciousness, from 1990, is best known for \"the Bars,\" a light touch on thirty-two points on the head, said to release limiting beliefs. Vianna Stibal's ThetaHealing, from 1995, is belief work done in a meditative state. None of the three has scientific support for its mechanism."
+   },
+   {
+    "k": "",
+    "t": "So why the shelf? Because every one of them is pointing at something real, and the practitioners' clients are often sincere, thoughtful people who found something useful. Hawkins' map, held as a picture rather than a measurement, is a decent description of how a life feels moving from shame to courage to acceptance to peace. The courage line, in particular, is a useful threshold. Below it, life happens to you. Above it, you happen to life. Access and ThetaHealing, underneath their explanations, are people being touched gently, asked good questions about what they believe, and given permission to believe something kinder."
+   },
+   {
+    "k": "",
+    "t": "Vault Human holds these loosely and says so. We take the picture, leave the mechanism, and point to a practitioner if you want the experience."
    }
   ],
   "n": 87,
@@ -3048,6 +3048,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "movement-is-the-medicine-for-pain",
+  "title": "Movement is the medicine for pain",
+  "dek": "In 1921 a woman named Mary McMillan, who had treated wounded soldiers in the First World War with exercise and movement when the standard treatment was bed rest,…",
+  "day": 59,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1921 a woman named Mary McMillan, who had treated wounded soldiers in the First World War with exercise and movement when the standard treatment was bed rest, founded what became the American Physical Therapy Association. Her idea, radical then, is now the foundation of an entire profession: graded movement is the treatment for most pain, not the thing to avoid until the pain is gone."
+   },
+   {
+    "k": "",
+    "t": "Sixty years later a New Zealand physical therapist named Robin McKenzie found, almost by accident, that a patient with back pain who lay face down on a treatment table in a position everyone said was wrong got up pain-free. He built a method on it: for most back and neck pain, there's a direction of movement that makes it better and a direction that makes it worse, and the treatment is to find the better direction and do it, often. For most people with low back pain, that direction is extension, bending backward, which is why the McKenzie prescription is ten press-ups from lying face down, several times a day."
+   },
+   {
+    "k": "",
+    "t": "The key is the whole idea of exercise rehabilitation, and it reverses what most of us were taught. Pain says stop. Rehabilitation says: pain says adjust. Find the movement you can do without making it worse, do it, and let the body relearn that movement is safe. The research on this is as strong as anything in medicine. Rest is for the first day or two. After that, rest is usually the problem."
+   },
+   {
+    "k": "",
+    "t": "That's a key for the second month because sixty days of movement have probably surfaced something, somewhere: a knee, a shoulder, a back. The answer is rarely to stop. The answer is a physical therapist who finds your direction and gives you a graded path back."
+   }
+  ],
+  "n": 89,
+  "date": "July 13, 2026",
+  "iso": "2026-07-13",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
   "slug": "our-deepest-fear",
   "title": "Our deepest fear",
   "dek": "\"Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure.\"",
@@ -3079,41 +3109,11 @@ export const letters=[
     "t": "And the fear in her famous line is worth sitting with. Most of us are more afraid of our own light than our darkness. We play small because it's safer, and we call it humility. She says it isn't. Humility is being exactly as big as you are."
    }
   ],
-  "n": 89,
-  "date": "July 14, 2026",
-  "iso": "2026-07-14",
-  "month": "July 2026",
-  "chamber": 3
- },
- {
-  "slug": "movement-is-the-medicine-for-pain",
-  "title": "Movement is the medicine for pain",
-  "dek": "In 1921 a woman named Mary McMillan, who had treated wounded soldiers in the First World War with exercise and movement when the standard treatment was bed rest,…",
-  "day": 60,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1921 a woman named Mary McMillan, who had treated wounded soldiers in the First World War with exercise and movement when the standard treatment was bed rest, founded what became the American Physical Therapy Association. Her idea, radical then, is now the foundation of an entire profession: graded movement is the treatment for most pain, not the thing to avoid until the pain is gone."
-   },
-   {
-    "k": "",
-    "t": "Sixty years later a New Zealand physical therapist named Robin McKenzie found, almost by accident, that a patient with back pain who lay face down on a treatment table in a position everyone said was wrong got up pain-free. He built a method on it: for most back and neck pain, there's a direction of movement that makes it better and a direction that makes it worse, and the treatment is to find the better direction and do it, often. For most people with low back pain, that direction is extension, bending backward, which is why the McKenzie prescription is ten press-ups from lying face down, several times a day."
-   },
-   {
-    "k": "",
-    "t": "The key is the whole idea of exercise rehabilitation, and it reverses what most of us were taught. Pain says stop. Rehabilitation says: pain says adjust. Find the movement you can do without making it worse, do it, and let the body relearn that movement is safe. The research on this is as strong as anything in medicine. Rest is for the first day or two. After that, rest is usually the problem."
-   },
-   {
-    "k": "",
-    "t": "That's a key for the second month because sixty days of movement have probably surfaced something, somewhere: a knee, a shoulder, a back. The answer is rarely to stop. The answer is a physical therapist who finds your direction and gives you a graded path back."
-   }
-  ],
   "n": 90,
   "date": "July 14, 2026",
   "iso": "2026-07-14",
   "month": "July 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "may-you-be-well",
@@ -3150,44 +3150,10 @@ export const letters=[
   "chamber": 3
  },
  {
-  "slug": "the-examined-day",
-  "title": "The examined day",
-  "dek": "In 1548 a Spanish soldier turned priest named Ignatius of Loyola published a small manual he'd written during years of wandering and prayer.",
-  "day": 62,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1548 a Spanish soldier turned priest named Ignatius of Loyola published a small manual he'd written during years of wandering and prayer. <em>The Spiritual Exercises</em> were designed as a thirty-day retreat: structured imaginative prayer, discernment of what moves you toward life and what moves you away from it, and a daily practice he thought so important that he told his followers never to skip it, however busy they were. He called it the Examen."
-   },
-   {
-    "k": "",
-    "t": "The Examen takes ten minutes at the end of the day and has five steps. Become quiet and grateful. Ask for light to see the day honestly. Walk back through the day, hour by hour, noticing where you were most alive and where you were most closed. Face one thing you'd do differently, without drama. And look to tomorrow with intention."
-   },
-   {
-    "k": "",
-    "t": "That is the whole practice, and it's been done every night by Jesuits for nearly five hundred years. It's also, you may notice, the three-line log from day two with a soul added. You've been doing half of this for two months."
-   },
-   {
-    "k": "",
-    "t": "What Ignatius adds is discernment, and it's the gift of this key. He noticed that over a day, some moments leave you feeling more alive, more connected, more yourself, and others leave you flat, closed, and smaller. He called these consolation and desolation. He said they're information. If you track them, over weeks, they'll show you what you're for."
-   },
-   {
-    "k": "",
-    "t": "Vault Human holds the Examen as a practice anyone can do, whatever they believe. The vocabulary is Catholic; the method is human. You can do it with God, or with your own honesty, and it works either way."
-   }
-  ],
-  "n": 92,
-  "date": "July 16, 2026",
-  "iso": "2026-07-16",
-  "month": "July 2026",
-  "chamber": 3
- },
- {
   "slug": "hold-it-longer",
   "title": "Hold it longer",
   "dek": "Most stretching is done wrong, in a hurry, for thirty seconds, and it does almost nothing.",
-  "day": 62,
+  "day": 61,
   "vault": "body",
   "body": [
    {
@@ -3215,11 +3181,45 @@ export const letters=[
     "t": "Hatha on day thirty-five was steady and comfortable. Yin takes the comfortable away and keeps the steady. You find out what you're like when there's nothing to do but stay."
    }
   ],
+  "n": 92,
+  "date": "July 15, 2026",
+  "iso": "2026-07-15",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
+  "slug": "the-examined-day",
+  "title": "The examined day",
+  "dek": "In 1548 a Spanish soldier turned priest named Ignatius of Loyola published a small manual he'd written during years of wandering and prayer.",
+  "day": 62,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1548 a Spanish soldier turned priest named Ignatius of Loyola published a small manual he'd written during years of wandering and prayer. <em>The Spiritual Exercises</em> were designed as a thirty-day retreat: structured imaginative prayer, discernment of what moves you toward life and what moves you away from it, and a daily practice he thought so important that he told his followers never to skip it, however busy they were. He called it the Examen."
+   },
+   {
+    "k": "",
+    "t": "The Examen takes ten minutes at the end of the day and has five steps. Become quiet and grateful. Ask for light to see the day honestly. Walk back through the day, hour by hour, noticing where you were most alive and where you were most closed. Face one thing you'd do differently, without drama. And look to tomorrow with intention."
+   },
+   {
+    "k": "",
+    "t": "That is the whole practice, and it's been done every night by Jesuits for nearly five hundred years. It's also, you may notice, the three-line log from day two with a soul added. You've been doing half of this for two months."
+   },
+   {
+    "k": "",
+    "t": "What Ignatius adds is discernment, and it's the gift of this key. He noticed that over a day, some moments leave you feeling more alive, more connected, more yourself, and others leave you flat, closed, and smaller. He called these consolation and desolation. He said they're information. If you track them, over weeks, they'll show you what you're for."
+   },
+   {
+    "k": "",
+    "t": "Vault Human holds the Examen as a practice anyone can do, whatever they believe. The vocabulary is Catholic; the method is human. You can do it with God, or with your own honesty, and it works either way."
+   }
+  ],
   "n": 93,
   "date": "July 16, 2026",
   "iso": "2026-07-16",
   "month": "July 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "beginner-s-mind",
@@ -3256,44 +3256,10 @@ export const letters=[
   "chamber": 3
  },
  {
-  "slug": "ten-days-of-silence",
-  "title": "Ten days of silence",
-  "dek": "Somewhere near you, probably within a few hours' drive, there's a center where you can sit in silence for ten days, be fed and housed, and pay nothing unless you…",
-  "day": 64,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Somewhere near you, probably within a few hours' drive, there's a center where you can sit in silence for ten days, be fed and housed, and pay nothing unless you choose to at the end. Thousands of people do it every month. It's called Vipassana, and it's the deep end of this chamber."
-   },
-   {
-    "k": "",
-    "t": "The practice is Buddhist and old. It came through a Burmese lineage, Ledi Sayadaw in the nineteenth century, U Ba Khin in the twentieth, and then an Indian businessman named S. N. Goenka, who learned it in Burma to cure his migraines and in 1969 began teaching it to anyone who'd sit. He kept it free, donation-run, and stripped of ritual. The courses are identical everywhere: ten days, no talking, no phones, no reading, eleven hours a day of sitting."
-   },
-   {
-    "k": "",
-    "t": "The technique is simple to describe and hard to do. For three days you watch the breath at the nostrils. Then, for seven, you scan the body, part by part, observing every sensation, pleasant or painful, with the same even attention, without reacting. The word for that is equanimity. Goenka's teaching is that we spend our lives chasing pleasant sensations and fleeing unpleasant ones, and that this chasing and fleeing is the engine of most suffering. Sit still long enough to watch sensations rise and pass without doing either, and the engine starts to idle."
-   },
-   {
-    "k": "",
-    "t": "Vault Human points to the ten-day course for anyone who feels called. We don't run it. What we keep is the method in miniature: a few minutes of watching sensation rise and pass, without grabbing or pushing, as a daily rep."
-   },
-   {
-    "k": "",
-    "t": "Here's what I'll say about the ten days. People come back changed, and most say the third day was the hardest thing they've ever done. If this is your key, your coach will help you decide when."
-   }
-  ],
-  "n": 95,
-  "date": "July 18, 2026",
-  "iso": "2026-07-18",
-  "month": "July 2026",
-  "chamber": 3
- },
- {
   "slug": "pain-is-a-judgment-not-a-measurement",
   "title": "Pain is a judgment, not a measurement",
   "dek": "Here's a finding that changes how you hold every ache you'll ever have: pain is not a signal from damaged tissue.",
-  "day": 64,
+  "day": 63,
   "vault": "body",
   "body": [
    {
@@ -3321,11 +3287,45 @@ export const letters=[
     "t": "A plain line: new, sharp, or worsening pain, or pain with other symptoms, is a doctor's visit. This key is for the old, familiar ache that's been running your life."
    }
   ],
+  "n": 95,
+  "date": "July 17, 2026",
+  "iso": "2026-07-17",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
+  "slug": "ten-days-of-silence",
+  "title": "Ten days of silence",
+  "dek": "Somewhere near you, probably within a few hours' drive, there's a center where you can sit in silence for ten days, be fed and housed, and pay nothing unless you…",
+  "day": 64,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Somewhere near you, probably within a few hours' drive, there's a center where you can sit in silence for ten days, be fed and housed, and pay nothing unless you choose to at the end. Thousands of people do it every month. It's called Vipassana, and it's the deep end of this chamber."
+   },
+   {
+    "k": "",
+    "t": "The practice is Buddhist and old. It came through a Burmese lineage, Ledi Sayadaw in the nineteenth century, U Ba Khin in the twentieth, and then an Indian businessman named S. N. Goenka, who learned it in Burma to cure his migraines and in 1969 began teaching it to anyone who'd sit. He kept it free, donation-run, and stripped of ritual. The courses are identical everywhere: ten days, no talking, no phones, no reading, eleven hours a day of sitting."
+   },
+   {
+    "k": "",
+    "t": "The technique is simple to describe and hard to do. For three days you watch the breath at the nostrils. Then, for seven, you scan the body, part by part, observing every sensation, pleasant or painful, with the same even attention, without reacting. The word for that is equanimity. Goenka's teaching is that we spend our lives chasing pleasant sensations and fleeing unpleasant ones, and that this chasing and fleeing is the engine of most suffering. Sit still long enough to watch sensations rise and pass without doing either, and the engine starts to idle."
+   },
+   {
+    "k": "",
+    "t": "Vault Human points to the ten-day course for anyone who feels called. We don't run it. What we keep is the method in miniature: a few minutes of watching sensation rise and pass, without grabbing or pushing, as a daily rep."
+   },
+   {
+    "k": "",
+    "t": "Here's what I'll say about the ten days. People come back changed, and most say the third day was the hardest thing they've ever done. If this is your key, your coach will help you decide when."
+   }
+  ],
   "n": 96,
   "date": "July 18, 2026",
   "iso": "2026-07-18",
   "month": "July 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "eight-weeks-that-changed-medicine",
@@ -3362,6 +3362,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "the-first-gym",
+  "title": "The first gym",
+  "dek": "The word gymnasium comes from the Greek for naked, because that's how they trained.",
+  "day": 65,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The word gymnasium comes from the Greek for naked, because that's how they trained. In the city-states of classical Greece, every town had one: an open-air ground with a running track, a wrestling pit, baths, and a hall where philosophers taught, because Plato's Academy and Aristotle's Lyceum were both, literally, gyms. Fitness wasn't a hobby. It was a civic duty. The body was trained because a citizen needed to be useful, and the Games at Olympia, held every four years from 776 BCE, were a religious festival as much as a sporting one."
+   },
+   {
+    "k": "",
+    "t": "The training was simple and complete. Run. Jump. Throw. Wrestle. Box. The athletes oiled their skin, dusted it, and trained in sun and dirt. They ate meat, figs, cheese and bread. And one of them gave us the first recorded strength program: Milo of Croton, a wrestler who won six Olympic titles in the sixth century BCE and, the story goes, trained by carrying a calf every day until it was a bull. Whether or not it happened, it's the truest picture of progressive overload ever drawn, two and a half thousand years before anyone named it."
+   },
+   {
+    "k": "",
+    "t": "Why it's a key, in a month of modern methods: because the Greeks had the whole thing right. Train outside. Train the whole body. Train in community. Make it part of being a citizen, not an escape from the day. And join it to the mind: the same ground, the same hours, for the wrestler and the philosopher."
+   },
+   {
+    "k": "",
+    "t": "Vault Human's year is built on that model, whether or not we say so. The walk outside, the strength, the log, the sitting still. One institution for the whole person. The Greeks didn't separate them. We've spent two thousand years putting them in different buildings."
+   }
+  ],
+  "n": 98,
+  "date": "July 19, 2026",
+  "iso": "2026-07-19",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
   "slug": "thoughts-are-not-facts",
   "title": "Thoughts are not facts",
   "dek": "Three psychologists, Zindel Segal, Mark Williams and John Teasdale, had a problem in the 1990s.",
@@ -3385,41 +3415,11 @@ export const letters=[
     "t": "I'll say the clinical thing clearly. If you've had episodes of depression, the course is designed for you and your coach will point you to it, and to a therapist if you need one now. For everyone else, the method is the same. Every mind runs loops. The practice is to catch the first thought, call it a thought, and watch where it was trying to take you."
    }
   ],
-  "n": 98,
-  "date": "July 20, 2026",
-  "iso": "2026-07-20",
-  "month": "July 2026",
-  "chamber": 3
- },
- {
-  "slug": "the-first-gym",
-  "title": "The first gym",
-  "dek": "The word gymnasium comes from the Greek for naked, because that's how they trained.",
-  "day": 66,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "The word gymnasium comes from the Greek for naked, because that's how they trained. In the city-states of classical Greece, every town had one: an open-air ground with a running track, a wrestling pit, baths, and a hall where philosophers taught, because Plato's Academy and Aristotle's Lyceum were both, literally, gyms. Fitness wasn't a hobby. It was a civic duty. The body was trained because a citizen needed to be useful, and the Games at Olympia, held every four years from 776 BCE, were a religious festival as much as a sporting one."
-   },
-   {
-    "k": "",
-    "t": "The training was simple and complete. Run. Jump. Throw. Wrestle. Box. The athletes oiled their skin, dusted it, and trained in sun and dirt. They ate meat, figs, cheese and bread. And one of them gave us the first recorded strength program: Milo of Croton, a wrestler who won six Olympic titles in the sixth century BCE and, the story goes, trained by carrying a calf every day until it was a bull. Whether or not it happened, it's the truest picture of progressive overload ever drawn, two and a half thousand years before anyone named it."
-   },
-   {
-    "k": "",
-    "t": "Why it's a key, in a month of modern methods: because the Greeks had the whole thing right. Train outside. Train the whole body. Train in community. Make it part of being a citizen, not an escape from the day. And join it to the mind: the same ground, the same hours, for the wrestler and the philosopher."
-   },
-   {
-    "k": "",
-    "t": "Vault Human's year is built on that model, whether or not we say so. The walk outside, the strength, the log, the sitting still. One institution for the whole person. The Greeks didn't separate them. We've spent two thousand years putting them in different buildings."
-   }
-  ],
   "n": 99,
   "date": "July 20, 2026",
   "iso": "2026-07-20",
   "month": "July 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "treat-yourself-like-a-friend",
@@ -3450,6 +3450,40 @@ export const letters=[
   "iso": "2026-07-21",
   "month": "July 2026",
   "chamber": 3
+ },
+ {
+  "slug": "flow-not-force",
+  "title": "Flow, not force",
+  "dek": "Here's a family of martial arts kept on the shelf not for how they end a fight but for how they move a body.",
+  "day": 67,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Here's a family of martial arts kept on the shelf not for how they end a fight but for how they move a body."
+   },
+   {
+    "k": "",
+    "t": "Morihei Ueshiba spent decades mastering the hard Japanese arts and then, in the 1940s, built one around the opposite idea: blend with the attack, redirect it, and throw with the attacker's own momentum. Aikido. Systema, from Russia, taught by Mikhail Ryabko and Vladimir Vasiliev in the 1990s, is built on breathing, relaxation and movement under pressure; its training is largely learning to stay soft and breathing while being hit. Capoeira came out of Angola and the Brazilian state of Bahia, where enslaved Africans disguised a fighting art as a dance, and it's all flow, rhythm and music. And Brazilian jiu-jitsu, developed by the Gracie family in the 1920s, is grappling on the ground, where the smaller person wins by position, patience and angles rather than strength."
+   },
+   {
+    "k": "",
+    "t": "What they share is the key. In each, tension is the enemy. The beginner stiffens, holds the breath, muscles through, and loses. The master relaxes, breathes, blends, and wins. The whole training is unlearning the brace. Systema instructors will have you lie on the floor and breathe while someone presses on you, until you can stay loose under pressure. Jiu-jitsu's first lesson is to be calm while someone sits on your chest. Aikido's is the roll: how to fall without getting hurt."
+   },
+   {
+    "k": "",
+    "t": "For the month of Breathing, this is the breath practice you can't do sitting on a cushion. It's breath under real pressure, from a real person, and the body learns something there that nothing else teaches: you can be pushed, held, pressed, and stay calm. That lesson walks out of the dojo with you."
+   },
+   {
+    "k": "",
+    "t": "Vault Human points to a school. Any of the four, with a good teacher, will do this work."
+   }
+  ],
+  "n": 101,
+  "date": "July 21, 2026",
+  "iso": "2026-07-21",
+  "month": "July 2026",
+  "chamber": 2
  },
  {
   "slug": "what-s-in-your-control",
@@ -3487,45 +3521,11 @@ export const letters=[
     "t": "I'll add that Stoicism isn't about feeling nothing. Marcus wept. Seneca grieved. It's about not being ruled by what you can't rule."
    }
   ],
-  "n": 101,
-  "date": "July 22, 2026",
-  "iso": "2026-07-22",
-  "month": "July 2026",
-  "chamber": 3
- },
- {
-  "slug": "flow-not-force",
-  "title": "Flow, not force",
-  "dek": "Here's a family of martial arts kept on the shelf not for how they end a fight but for how they move a body.",
-  "day": 68,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Here's a family of martial arts kept on the shelf not for how they end a fight but for how they move a body."
-   },
-   {
-    "k": "",
-    "t": "Morihei Ueshiba spent decades mastering the hard Japanese arts and then, in the 1940s, built one around the opposite idea: blend with the attack, redirect it, and throw with the attacker's own momentum. Aikido. Systema, from Russia, taught by Mikhail Ryabko and Vladimir Vasiliev in the 1990s, is built on breathing, relaxation and movement under pressure; its training is largely learning to stay soft and breathing while being hit. Capoeira came out of Angola and the Brazilian state of Bahia, where enslaved Africans disguised a fighting art as a dance, and it's all flow, rhythm and music. And Brazilian jiu-jitsu, developed by the Gracie family in the 1920s, is grappling on the ground, where the smaller person wins by position, patience and angles rather than strength."
-   },
-   {
-    "k": "",
-    "t": "What they share is the key. In each, tension is the enemy. The beginner stiffens, holds the breath, muscles through, and loses. The master relaxes, breathes, blends, and wins. The whole training is unlearning the brace. Systema instructors will have you lie on the floor and breathe while someone presses on you, until you can stay loose under pressure. Jiu-jitsu's first lesson is to be calm while someone sits on your chest. Aikido's is the roll: how to fall without getting hurt."
-   },
-   {
-    "k": "",
-    "t": "For the month of Breathing, this is the breath practice you can't do sitting on a cushion. It's breath under real pressure, from a real person, and the body learns something there that nothing else teaches: you can be pushed, held, pressed, and stay calm. That lesson walks out of the dojo with you."
-   },
-   {
-    "k": "",
-    "t": "Vault Human points to a school. Any of the four, with a good teacher, will do this work."
-   }
-  ],
   "n": 102,
   "date": "July 22, 2026",
   "iso": "2026-07-22",
   "month": "July 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "lean-in",
@@ -3566,6 +3566,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "the-oldest-training-hall",
+  "title": "The oldest training hall",
+  "dek": "In the state of Kerala, on the southwest coast of India, there's a martial art that may be older than any other still practiced.",
+  "day": 69,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In the state of Kerala, on the southwest coast of India, there's a martial art that may be older than any other still practiced. Kalaripayattu. The tradition dates it to the third century BCE; the historical record is firmer from the eleventh. It's practiced in a kalari, a sunken pit dug into the earth, and it's as much a system of body conditioning and medicine as it is of fighting."
+   },
+   {
+    "k": "",
+    "t": "What makes it a key for this chamber is the conditioning sequence and the oil. Training begins, every day, with a full-body warm-up that is itself a complete workout: deep lunges, high kicks, leaps, animal postures, and a flowing sequence that takes the body through every range of motion it has. And it's preceded, traditionally, by an oil massage, given by the teacher, that loosens the joints and the muscles before they're asked to move. The art and the medicine are one thing. The masters are also healers, trained in a system of body therapy that treats the injuries the training produces."
+   },
+   {
+    "k": "",
+    "t": "Here's the idea underneath that I'd keep. In Kalaripayattu, preparation is not a quick stretch before the real thing. Preparation is the real thing. A body that's been oiled, warmed and moved through its full range before it's loaded is a body that doesn't break. Most Western training does the opposite: five minutes of half-hearted warm-up and then straight to the heavy work."
+   },
+   {
+    "k": "",
+    "t": "Vault Human points to a Kalaripayattu teacher for anyone who finds one; they're rare outside India but they exist. The principle is for everyone, today. Prepare the body as if preparation mattered. Because it does."
+   }
+  ],
+  "n": 104,
+  "date": "July 23, 2026",
+  "iso": "2026-07-23",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
   "slug": "twenty-minutes-twice-a-day",
   "title": "Twenty minutes, twice a day",
   "dek": "In 1955 an Indian teacher named Maharishi Mahesh Yogi began teaching a simple mantra meditation, and within fifteen years, after the Beatles visited his ashram, it…",
@@ -3589,41 +3619,11 @@ export const letters=[
     "t": "Vault Human points to a certified TM teacher for the real thing. The idea of two restful sits a day, bookending the work, is yours regardless."
    }
   ],
-  "n": 104,
-  "date": "July 24, 2026",
-  "iso": "2026-07-24",
-  "month": "July 2026",
-  "chamber": 3
- },
- {
-  "slug": "the-oldest-training-hall",
-  "title": "The oldest training hall",
-  "dek": "In the state of Kerala, on the southwest coast of India, there's a martial art that may be older than any other still practiced.",
-  "day": 70,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In the state of Kerala, on the southwest coast of India, there's a martial art that may be older than any other still practiced. Kalaripayattu. The tradition dates it to the third century BCE; the historical record is firmer from the eleventh. It's practiced in a kalari, a sunken pit dug into the earth, and it's as much a system of body conditioning and medicine as it is of fighting."
-   },
-   {
-    "k": "",
-    "t": "What makes it a key for this chamber is the conditioning sequence and the oil. Training begins, every day, with a full-body warm-up that is itself a complete workout: deep lunges, high kicks, leaps, animal postures, and a flowing sequence that takes the body through every range of motion it has. And it's preceded, traditionally, by an oil massage, given by the teacher, that loosens the joints and the muscles before they're asked to move. The art and the medicine are one thing. The masters are also healers, trained in a system of body therapy that treats the injuries the training produces."
-   },
-   {
-    "k": "",
-    "t": "Here's the idea underneath that I'd keep. In Kalaripayattu, preparation is not a quick stretch before the real thing. Preparation is the real thing. A body that's been oiled, warmed and moved through its full range before it's loaded is a body that doesn't break. Most Western training does the opposite: five minutes of half-hearted warm-up and then straight to the heavy work."
-   },
-   {
-    "k": "",
-    "t": "Vault Human points to a Kalaripayattu teacher for anyone who finds one; they're rare outside India but they exist. The principle is for everyone, today. Prepare the body as if preparation mattered. Because it does."
-   }
-  ],
   "n": 105,
   "date": "July 24, 2026",
   "iso": "2026-07-24",
   "month": "July 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "four-questions",
@@ -3664,6 +3664,40 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "stand-until-the-stance-holds-you",
+  "title": "Stand until the stance holds you",
+  "dek": "In the fifth century a Buddhist monastery was founded on a mountain in Henan province, China, and over the centuries it became the most famous training hall in the world.",
+  "day": 71,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In the fifth century a Buddhist monastery was founded on a mountain in Henan province, China, and over the centuries it became the most famous training hall in the world. Shaolin. The monks developed a discipline that joined meditation to physical conditioning so completely that it's impossible to say where one ends and the other begins."
+   },
+   {
+    "k": "",
+    "t": "The foundation is the stance. Before a Shaolin student learns a single technique, they stand. The horse stance: feet wide, knees bent until the thighs approach parallel, back straight, arms held in front. For minutes. For months. The legs shake, the mind rebels, the student wants to quit, and the teacher says: stand. That's the whole first year, in the traditional accounts."
+   },
+   {
+    "k": "",
+    "t": "Then the forms: long, memorized sequences of movement, practiced until the body knows them better than the mind. And the iron-body drills, the gradual conditioning of the limbs and trunk to take impact, which is the part the films love and the part that's least useful to most of us."
+   },
+   {
+    "k": "",
+    "t": "The key is in the stance, and it's a key for the second month because the stance is a breathing practice disguised as a leg exercise. A minute into horse stance, the only way to continue is the breath. Slow, low, into the belly, past the trembling. The monks understood that the body's complaint is not an order, and that a mind trained to stay in a shaking stance can stay in anything."
+   },
+   {
+    "k": "",
+    "t": "The Shaolin discipline is also the plainest illustration on the 180 of a truth every key keeps circling: mastery is boring. The thing that looks like magic in the film is ten thousand mornings of standing in a stance. There was never a shortcut, and the monks never pretended there was."
+   }
+  ],
+  "n": 107,
+  "date": "July 25, 2026",
+  "iso": "2026-07-25",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
   "slug": "recognize-allow-investigate-nurture",
   "title": "Recognize, allow, investigate, nurture",
   "dek": "Tara Brach is a psychologist and meditation teacher in Washington, D.C., who in 2003 wrote <em>Radical Acceptance</em>, a book about what she calls the trance of…",
@@ -3695,45 +3729,11 @@ export const letters=[
     "t": "Vault Human points to Brach's free guided practices online, which are generous and good."
    }
   ],
-  "n": 107,
-  "date": "July 26, 2026",
-  "iso": "2026-07-26",
-  "month": "July 2026",
-  "chamber": 3
- },
- {
-  "slug": "stand-until-the-stance-holds-you",
-  "title": "Stand until the stance holds you",
-  "dek": "In the fifth century a Buddhist monastery was founded on a mountain in Henan province, China, and over the centuries it became the most famous training hall in the world.",
-  "day": 72,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In the fifth century a Buddhist monastery was founded on a mountain in Henan province, China, and over the centuries it became the most famous training hall in the world. Shaolin. The monks developed a discipline that joined meditation to physical conditioning so completely that it's impossible to say where one ends and the other begins."
-   },
-   {
-    "k": "",
-    "t": "The foundation is the stance. Before a Shaolin student learns a single technique, they stand. The horse stance: feet wide, knees bent until the thighs approach parallel, back straight, arms held in front. For minutes. For months. The legs shake, the mind rebels, the student wants to quit, and the teacher says: stand. That's the whole first year, in the traditional accounts."
-   },
-   {
-    "k": "",
-    "t": "Then the forms: long, memorized sequences of movement, practiced until the body knows them better than the mind. And the iron-body drills, the gradual conditioning of the limbs and trunk to take impact, which is the part the films love and the part that's least useful to most of us."
-   },
-   {
-    "k": "",
-    "t": "The key is in the stance, and it's a key for the second month because the stance is a breathing practice disguised as a leg exercise. A minute into horse stance, the only way to continue is the breath. Slow, low, into the belly, past the trembling. The monks understood that the body's complaint is not an order, and that a mind trained to stay in a shaking stance can stay in anything."
-   },
-   {
-    "k": "",
-    "t": "The Shaolin discipline is also the plainest illustration on the 180 of a truth every key keeps circling: mastery is boring. The thing that looks like magic in the film is ten thousand mornings of standing in a stance. There was never a shortcut, and the monks never pretended there was."
-   }
-  ],
   "n": 108,
   "date": "July 26, 2026",
   "iso": "2026-07-26",
   "month": "July 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "sit-in-the-silence",
@@ -3770,6 +3770,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "clubs-maces-and-milk",
+  "title": "Clubs, maces, and milk",
+  "dek": "In the courtyards of Persia, for a thousand years, men have trained in a sunken octagonal pit called a zurkhaneh, the house of strength, to the beat of a drum and the…",
+  "day": 73,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In the courtyards of Persia, for a thousand years, men have trained in a sunken octagonal pit called a zurkhaneh, the house of strength, to the beat of a drum and the chanting of poetry. They swing heavy wooden clubs behind their heads, lift a bow strung with iron chain, push up on wooden boards, and spin. Across the border in India, the wrestlers of the pehlwani tradition train in earthen pits with the same tools, the gada mace and the Indian clubs, and eat the same way: milk, almonds, ghee, and chickpeas, in staggering quantities, as a sacred discipline."
+   },
+   {
+    "k": "",
+    "t": "The clubs are the key. For most of the history of strength training, before the barbell, the club and the mace were the tools, and they train something the barbell doesn't. A club swung behind the head takes the shoulder through its full rotation under load, in a circle, with the weight pulling away from the body. The grip has to hold. The core has to resist the spin. The shoulder, which spends modern life hunched over a keyboard, gets opened, strengthened and made resilient in a way almost nothing else does. Physical therapists have rediscovered this; you'll find Indian clubs in good clinics now."
+   },
+   {
+    "k": "",
+    "t": "And the training hall itself is a key. The zurkhaneh is communal, rhythmic, and ritual. The drum sets the pace, the poetry is epic, and the training is bound up with an ethic of humility and service. Nobody there is training for a mirror."
+   },
+   {
+    "k": "",
+    "t": "For the month of the Body, this is the key about the shoulders and about rhythm. Vault Human points to a coach who teaches clubs or maces, and they exist in most cities now. A light club, even a plastic one, is enough to start."
+   }
+  ],
+  "n": 110,
+  "date": "July 27, 2026",
+  "iso": "2026-07-27",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
   "slug": "the-three-who-brought-it-home",
   "title": "The three who brought it home",
   "dek": "In 1975 three young Americans who'd spent years in monasteries in Thailand, Burma and India bought an old Catholic seminary in Barre, Massachusetts, and opened a…",
@@ -3797,41 +3827,11 @@ export const letters=[
     "t": "Vault Human points to IMS and its sister centers for retreats, and to the three teachers' books, which are among the kindest ever written on this subject."
    }
   ],
-  "n": 110,
-  "date": "July 28, 2026",
-  "iso": "2026-07-28",
-  "month": "July 2026",
-  "chamber": 3
- },
- {
-  "slug": "clubs-maces-and-milk",
-  "title": "Clubs, maces, and milk",
-  "dek": "In the courtyards of Persia, for a thousand years, men have trained in a sunken octagonal pit called a zurkhaneh, the house of strength, to the beat of a drum and the…",
-  "day": 74,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In the courtyards of Persia, for a thousand years, men have trained in a sunken octagonal pit called a zurkhaneh, the house of strength, to the beat of a drum and the chanting of poetry. They swing heavy wooden clubs behind their heads, lift a bow strung with iron chain, push up on wooden boards, and spin. Across the border in India, the wrestlers of the pehlwani tradition train in earthen pits with the same tools, the gada mace and the Indian clubs, and eat the same way: milk, almonds, ghee, and chickpeas, in staggering quantities, as a sacred discipline."
-   },
-   {
-    "k": "",
-    "t": "The clubs are the key. For most of the history of strength training, before the barbell, the club and the mace were the tools, and they train something the barbell doesn't. A club swung behind the head takes the shoulder through its full rotation under load, in a circle, with the weight pulling away from the body. The grip has to hold. The core has to resist the spin. The shoulder, which spends modern life hunched over a keyboard, gets opened, strengthened and made resilient in a way almost nothing else does. Physical therapists have rediscovered this; you'll find Indian clubs in good clinics now."
-   },
-   {
-    "k": "",
-    "t": "And the training hall itself is a key. The zurkhaneh is communal, rhythmic, and ritual. The drum sets the pace, the poetry is epic, and the training is bound up with an ethic of humility and service. Nobody there is training for a mirror."
-   },
-   {
-    "k": "",
-    "t": "For the month of the Body, this is the key about the shoulders and about rhythm. Vault Human points to a coach who teaches clubs or maces, and they exist in most cities now. A light club, even a plastic one, is enough to start."
-   }
-  ],
   "n": 111,
   "date": "July 28, 2026",
   "iso": "2026-07-28",
   "month": "July 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "three-good-things",
@@ -3868,6 +3868,40 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "the-way-and-the-room-you-practice-it-in",
+  "title": "The way, and the room you practice it in",
+  "dek": "In 1882 a slight, bookish young Japanese educator named Jigoro Kano, who'd been bullied as a boy and had taken up the old jujutsu to defend himself, did something new.",
+  "day": 75,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1882 a slight, bookish young Japanese educator named Jigoro Kano, who'd been bullied as a boy and had taken up the old jujutsu to defend himself, did something new. He kept the throws and the holds but removed the techniques that maimed, built a system of ranks and belts so progress could be seen, insisted on etiquette and mutual welfare as the purpose, and called it judo: the gentle way. It became the first martial art in the Olympics and the model for how nearly every Asian art is now taught."
+   },
+   {
+    "k": "",
+    "t": "Kano's deeper invention was the dojo as a form of physical education. The word means the place of the way. You bow in. You practice falling before you practice throwing, a thousand times, until the ground is no longer frightening. You train with partners, not opponents, and each person's job is to make the other better. You rank, so you always know where you stand and what's next. And you come back tomorrow."
+   },
+   {
+    "k": "",
+    "t": "The key is the daily practice in a room with a code. Modern fitness is mostly solitary and mostly aimless: a gym full of people with earbuds in, each doing their own thing, no one responsible for anyone. Kano built the opposite. A room where you're known, where progress is marked, where you fall and are caught, where the first lesson is how to be thrown without being hurt. Seventy-six days of this year has been building your own way. The dojo is where you'd practice it with others."
+   },
+   {
+    "k": "",
+    "t": "And the breath: in judo, you exhale on the throw and you exhale on the fall. Breath on impact. That's a lesson for the second month in one word."
+   },
+   {
+    "k": "",
+    "t": "Vault Human points to a dojo, judo or otherwise. The gentle way is a good one to start with."
+   }
+  ],
+  "n": 113,
+  "date": "July 29, 2026",
+  "iso": "2026-07-29",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
   "slug": "now",
   "title": "Now",
   "dek": "Eckhart Tolle was a depressed graduate student in London in his late twenties when, one night in 1977, something broke.",
@@ -3895,45 +3929,11 @@ export const letters=[
     "t": "I hold Tolle's larger metaphysics lightly. The practice I hold tightly, because it has steadied a great many people when nothing else did. The present moment is always survivable. It's the past and the future that aren't."
    }
   ],
-  "n": 113,
-  "date": "July 30, 2026",
-  "iso": "2026-07-30",
-  "month": "July 2026",
-  "chamber": 3
- },
- {
-  "slug": "the-way-and-the-room-you-practice-it-in",
-  "title": "The way, and the room you practice it in",
-  "dek": "In 1882 a slight, bookish young Japanese educator named Jigoro Kano, who'd been bullied as a boy and had taken up the old jujutsu to defend himself, did something new.",
-  "day": 76,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1882 a slight, bookish young Japanese educator named Jigoro Kano, who'd been bullied as a boy and had taken up the old jujutsu to defend himself, did something new. He kept the throws and the holds but removed the techniques that maimed, built a system of ranks and belts so progress could be seen, insisted on etiquette and mutual welfare as the purpose, and called it judo: the gentle way. It became the first martial art in the Olympics and the model for how nearly every Asian art is now taught."
-   },
-   {
-    "k": "",
-    "t": "Kano's deeper invention was the dojo as a form of physical education. The word means the place of the way. You bow in. You practice falling before you practice throwing, a thousand times, until the ground is no longer frightening. You train with partners, not opponents, and each person's job is to make the other better. You rank, so you always know where you stand and what's next. And you come back tomorrow."
-   },
-   {
-    "k": "",
-    "t": "The key is the daily practice in a room with a code. Modern fitness is mostly solitary and mostly aimless: a gym full of people with earbuds in, each doing their own thing, no one responsible for anyone. Kano built the opposite. A room where you're known, where progress is marked, where you fall and are caught, where the first lesson is how to be thrown without being hurt. Seventy-six days of this year has been building your own way. The dojo is where you'd practice it with others."
-   },
-   {
-    "k": "",
-    "t": "And the breath: in judo, you exhale on the throw and you exhale on the fall. Breath on impact. That's a lesson for the second month in one word."
-   },
-   {
-    "k": "",
-    "t": "Vault Human points to a dojo, judo or otherwise. The gentle way is a good one to start with."
-   }
-  ],
   "n": 114,
   "date": "July 30, 2026",
   "iso": "2026-07-30",
   "month": "July 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "who-am-i",
@@ -3970,6 +3970,40 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "fitness-for-everyone-invented-twice",
+  "title": "Fitness for everyone, invented twice",
+  "dek": "In 1811 a German schoolteacher named Friedrich Jahn, humiliated by his country's defeat and convinced that a free people needed strong bodies, built the first outdoor…",
+  "day": 77,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1811 a German schoolteacher named Friedrich Jahn, humiliated by his country's defeat and convinced that a free people needed strong bodies, built the first outdoor gymnasium in a field outside Berlin: horizontal bars, parallel bars, vaulting horses, climbing ropes, and anyone was welcome. He called it Turnen. Within a generation there were clubs across Germany, and the immigrants who crossed the Atlantic brought them to America, where the Turners built halls in every city and gave the country its first gym teachers."
+   },
+   {
+    "k": "",
+    "t": "Two years later, in Sweden, a fencing master named Per Henrik Ling built the opposite system: no apparatus, just precise, graded calisthenics done in rows on command, designed on anatomical principles to develop every part of the body in order. Swedish gymnastics became the model for school physical education across Europe and America, and if you ever did jumping jacks in a gym class, you were doing Ling."
+   },
+   {
+    "k": "",
+    "t": "Together they invented the idea this whole chamber rests on: that fitness is for the whole population, not just soldiers and athletes, and that a society should build the places and train the teachers to make it so. Before Jahn and Ling, ordinary people didn't exercise. After them, nations did."
+   },
+   {
+    "k": "",
+    "t": "The key for the month of the Body is in the two halves. Jahn's apparatus, the bars and ropes, trains the body against gravity in the ways the calisthenics key on day thirty-six described. Ling's systematic calisthenics train it in order, every part, with precision. A complete practice has both: the pull-up bar in the park and the ten-minute routine done the same way every morning."
+   },
+   {
+    "k": "",
+    "t": "The deeper key is civic. Jahn built his field for free, outdoors, for everyone. The best fitness idea in history was a public park with a bar in it."
+   }
+  ],
+  "n": 116,
+  "date": "July 31, 2026",
+  "iso": "2026-07-31",
+  "month": "July 2026",
+  "chamber": 2
+ },
+ {
   "slug": "the-roommate-in-your-head",
   "title": "The roommate in your head",
   "dek": "There's a voice in your head that never stops talking. It comments on everything, argues with people who aren't there, replays yesterday and rehearses tomorrow.",
@@ -3997,45 +4031,11 @@ export const letters=[
     "t": "It's in the month of Awareness because it's awareness at its most practical. No cushion required. The roommate is talking right now, reading this. Notice that you can hear it. That's the whole key."
    }
   ],
-  "n": 116,
-  "date": "August 1, 2026",
-  "iso": "2026-08-01",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "fitness-for-everyone-invented-twice",
-  "title": "Fitness for everyone, invented twice",
-  "dek": "In 1811 a German schoolteacher named Friedrich Jahn, humiliated by his country's defeat and convinced that a free people needed strong bodies, built the first outdoor…",
-  "day": 78,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1811 a German schoolteacher named Friedrich Jahn, humiliated by his country's defeat and convinced that a free people needed strong bodies, built the first outdoor gymnasium in a field outside Berlin: horizontal bars, parallel bars, vaulting horses, climbing ropes, and anyone was welcome. He called it Turnen. Within a generation there were clubs across Germany, and the immigrants who crossed the Atlantic brought them to America, where the Turners built halls in every city and gave the country its first gym teachers."
-   },
-   {
-    "k": "",
-    "t": "Two years later, in Sweden, a fencing master named Per Henrik Ling built the opposite system: no apparatus, just precise, graded calisthenics done in rows on command, designed on anatomical principles to develop every part of the body in order. Swedish gymnastics became the model for school physical education across Europe and America, and if you ever did jumping jacks in a gym class, you were doing Ling."
-   },
-   {
-    "k": "",
-    "t": "Together they invented the idea this whole chamber rests on: that fitness is for the whole population, not just soldiers and athletes, and that a society should build the places and train the teachers to make it so. Before Jahn and Ling, ordinary people didn't exercise. After them, nations did."
-   },
-   {
-    "k": "",
-    "t": "The key for the month of the Body is in the two halves. Jahn's apparatus, the bars and ropes, trains the body against gravity in the ways the calisthenics key on day thirty-six described. Ling's systematic calisthenics train it in order, every part, with precision. A complete practice has both: the pull-up bar in the park and the ten-minute routine done the same way every morning."
-   },
-   {
-    "k": "",
-    "t": "The deeper key is civic. Jahn built his field for free, outdoors, for everyone. The best fitness idea in history was a public park with a bar in it."
-   }
-  ],
   "n": 117,
   "date": "August 1, 2026",
   "iso": "2026-08-01",
   "month": "August 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "your-right-is-to-the-work",
@@ -4072,6 +4072,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "the-first-fitness-industry",
+  "title": "The first fitness industry",
+  "dek": "In 1897 a Prussian strongman who'd become the most famous body in the world published a book, <em>Strength and How to Obtain It</em>, and with it invented an industry.",
+  "day": 79,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1897 a Prussian strongman who'd become the most famous body in the world published a book, <em>Strength and How to Obtain It</em>, and with it invented an industry. Eugen Sandow sold dumbbells, correspondence courses, and the idea that any man could look like him with enough effort. Two years later an American named Bernarr Macfadden launched a magazine called <em>Physical Culture</em>, and for the next fifty years he preached muscle, sunlight, fresh air, fasting and plain food to millions of readers, built a publishing empire, ran for president, and lived to eighty-seven."
+   },
+   {
+    "k": "",
+    "t": "They were showmen and salesmen, and some of what they sold was nonsense. But they were right about the main thing, decades before the science was: that the body thrives on strength training, outdoor light, air, simple food, and daily discipline, and that these things are available to anyone. Sandow's \"Grecian ideal\" was built on measurements of classical statues; Macfadden's magazine argued for women's strength training from its first years, when almost no one did."
+   },
+   {
+    "k": "",
+    "t": "I include them because they are the ancestors of everything you now see sold, and knowing the ancestor helps you see the pattern. Every fitness fad since Sandow is a version of the same promise: this body, with this method, in this many weeks. Sometimes the method is good. The promise is always the same, and it always sells, because the wish underneath it, to be strong and whole and seen, is real."
+   },
+   {
+    "k": "",
+    "t": "The key for the month of the Body is to separate the method from the sale. Sandow's dumbbells worked. Macfadden's sunlight worked. The timeline they promised was marketing. Take the method, forgive the salesman, and ignore the deadline. A hundred and twenty-nine years later, that's still the way to read any ad."
+   }
+  ],
+  "n": 119,
+  "date": "August 2, 2026",
+  "iso": "2026-08-02",
+  "month": "August 2026",
+  "chamber": 2
+ },
+ {
   "slug": "know-your-constitution",
   "title": "Know your constitution",
   "dek": "Three thousand years ago in India, physicians began writing down a system of medicine built on a single insight: people are not the same, and the same food, routine…",
@@ -4099,41 +4129,11 @@ export const letters=[
     "t": "Eighty days of a log has given you more data on your own constitution than most people ever gather. Ayurveda is the oldest framework for reading it."
    }
   ],
-  "n": 119,
-  "date": "August 3, 2026",
-  "iso": "2026-08-03",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "the-first-fitness-industry",
-  "title": "The first fitness industry",
-  "dek": "In 1897 a Prussian strongman who'd become the most famous body in the world published a book, <em>Strength and How to Obtain It</em>, and with it invented an industry.",
-  "day": 80,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1897 a Prussian strongman who'd become the most famous body in the world published a book, <em>Strength and How to Obtain It</em>, and with it invented an industry. Eugen Sandow sold dumbbells, correspondence courses, and the idea that any man could look like him with enough effort. Two years later an American named Bernarr Macfadden launched a magazine called <em>Physical Culture</em>, and for the next fifty years he preached muscle, sunlight, fresh air, fasting and plain food to millions of readers, built a publishing empire, ran for president, and lived to eighty-seven."
-   },
-   {
-    "k": "",
-    "t": "They were showmen and salesmen, and some of what they sold was nonsense. But they were right about the main thing, decades before the science was: that the body thrives on strength training, outdoor light, air, simple food, and daily discipline, and that these things are available to anyone. Sandow's \"Grecian ideal\" was built on measurements of classical statues; Macfadden's magazine argued for women's strength training from its first years, when almost no one did."
-   },
-   {
-    "k": "",
-    "t": "I include them because they are the ancestors of everything you now see sold, and knowing the ancestor helps you see the pattern. Every fitness fad since Sandow is a version of the same promise: this body, with this method, in this many weeks. Sometimes the method is good. The promise is always the same, and it always sells, because the wish underneath it, to be strong and whole and seen, is real."
-   },
-   {
-    "k": "",
-    "t": "The key for the month of the Body is to separate the method from the sale. Sandow's dumbbells worked. Macfadden's sunlight worked. The timeline they promised was marketing. Take the method, forgive the salesman, and ignore the deadline. A hundred and twenty-nine years later, that's still the way to read any ad."
-   }
-  ],
   "n": 120,
   "date": "August 3, 2026",
   "iso": "2026-08-03",
   "month": "August 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "examine-yourself-three-times-a-day",
@@ -4170,6 +4170,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "cold-water-and-bare-feet",
+  "title": "Cold water and bare feet",
+  "dek": "In the 1820s a farmer's son in the mountains of Silesia named Vincenz Priessnitz healed his own broken ribs with cold wet compresses, and then built a clinic that…",
+  "day": 81,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In the 1820s a farmer's son in the mountains of Silesia named Vincenz Priessnitz healed his own broken ribs with cold wet compresses, and then built a clinic that treated thousands of people with nothing but cold water, fresh air, exercise and plain food. The nature cure. Sixty years later a Bavarian priest named Sebastian Kneipp, who'd cured his own tuberculosis by bathing in the icy Danube, wrote <em>My Water Cure</em> and systematized it: cold water applications, barefoot walking on wet grass and snow, herbs, simple food, and a balanced life. Kneipp spas still operate across Germany, and his five pillars are taught in medical schools there."
+   },
+   {
+    "k": "",
+    "t": "I'll be careful here. Nature cure, pushed to its extremes, has included claims that no serious person should accept, and nothing in this letter is a substitute for medicine. But the core of Priessnitz and Kneipp has aged remarkably well. Cold water, which you met on day forty-two, trains the stress response. Barefoot walking, which you did on day one, wakes up the feet and the balance. Fresh air, sunlight, movement and unprocessed food are now, two centuries later, the consensus of every public-health body on earth."
+   },
+   {
+    "k": "",
+    "t": "The key is the system. Kneipp didn't prescribe cold water alone, or herbs alone. He prescribed a way of living, five things together, and he said the healing was in the whole. That's the oldest form of what this year is: not one fix, but a life arranged so the body can do what it already knows how to do."
+   },
+   {
+    "k": "",
+    "t": "Kneipp's barefoot walk on wet grass is the practice I'd keep, because it costs nothing and does something: the cold on the feet, the uneven ground, the five minutes of attention to where you're stepping."
+   }
+  ],
+  "n": 122,
+  "date": "August 4, 2026",
+  "iso": "2026-08-04",
+  "month": "August 2026",
+  "chamber": 2
+ },
+ {
   "slug": "yoga-is-the-stilling-of-the-mind",
   "title": "Yoga is the stilling of the mind",
   "dek": "Before yoga was postures, it was a map of the mind.",
@@ -4197,41 +4227,11 @@ export const letters=[
     "t": "Vault Human points to a teacher who teaches the eight limbs, not just the third. There's a reason the postures came with a whole ethical frame. A body on a mat in a person who's at war with everyone isn't yoga yet."
    }
   ],
-  "n": 122,
-  "date": "August 5, 2026",
-  "iso": "2026-08-05",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "cold-water-and-bare-feet",
-  "title": "Cold water and bare feet",
-  "dek": "In the 1820s a farmer's son in the mountains of Silesia named Vincenz Priessnitz healed his own broken ribs with cold wet compresses, and then built a clinic that…",
-  "day": 82,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In the 1820s a farmer's son in the mountains of Silesia named Vincenz Priessnitz healed his own broken ribs with cold wet compresses, and then built a clinic that treated thousands of people with nothing but cold water, fresh air, exercise and plain food. The nature cure. Sixty years later a Bavarian priest named Sebastian Kneipp, who'd cured his own tuberculosis by bathing in the icy Danube, wrote <em>My Water Cure</em> and systematized it: cold water applications, barefoot walking on wet grass and snow, herbs, simple food, and a balanced life. Kneipp spas still operate across Germany, and his five pillars are taught in medical schools there."
-   },
-   {
-    "k": "",
-    "t": "I'll be careful here. Nature cure, pushed to its extremes, has included claims that no serious person should accept, and nothing in this letter is a substitute for medicine. But the core of Priessnitz and Kneipp has aged remarkably well. Cold water, which you met on day forty-two, trains the stress response. Barefoot walking, which you did on day one, wakes up the feet and the balance. Fresh air, sunlight, movement and unprocessed food are now, two centuries later, the consensus of every public-health body on earth."
-   },
-   {
-    "k": "",
-    "t": "The key is the system. Kneipp didn't prescribe cold water alone, or herbs alone. He prescribed a way of living, five things together, and he said the healing was in the whole. That's the oldest form of what this year is: not one fix, but a life arranged so the body can do what it already knows how to do."
-   },
-   {
-    "k": "",
-    "t": "Kneipp's barefoot walk on wet grass is the practice I'd keep, because it costs nothing and does something: the cold on the feet, the uneven ground, the five minutes of attention to where you're stepping."
-   }
-  ],
   "n": 123,
   "date": "August 5, 2026",
   "iso": "2026-08-05",
   "month": "August 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "the-breath-lineages",
@@ -4268,6 +4268,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "faith-fitness-and-a-gym-with-a-chapel",
+  "title": "Faith, fitness and a gym with a chapel",
+  "dek": "In 1857 an English novel called <em>Tom Brown's School Days</em> made a case that sounds strange now and shaped the next century: that a strong body was a Christian duty,…",
+  "day": 83,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1857 an English novel called <em>Tom Brown's School Days</em> made a case that sounds strange now and shaped the next century: that a strong body was a Christian duty, that games built character, and that a church without a gymnasium was missing half of the person. Muscular Christianity. The idea crossed the Atlantic and found its home in a building that had been founded in London in 1844 for young men adrift in the city: the YMCA."
+   },
+   {
+    "k": "",
+    "t": "In the 1890s a physician and educator named Luther Gulick, working at the YMCA's training school in Springfield, Massachusetts, gave the movement its symbol, a triangle for spirit, mind and body, and its method: the whole person, trained together, in one building. He also had a problem. Winters in Massachusetts kept young men indoors and restless, so he asked one of his instructors to invent an indoor game. James Naismith nailed a peach basket to a balcony in December 1891, and basketball was born. Four years later, in the YMCA in Holyoke, William Morgan invented volleyball for the older men who found basketball too rough."
+   },
+   {
+    "k": "",
+    "t": "The key is Gulick's triangle. The YMCA was the first institution in America to say, in its architecture, that a person is one thing: a gym, a pool, a reading room and a chapel under one roof, and a membership that assumed you'd use all of them. That's the Vault Human thesis, built in brick, in 1890."
+   },
+   {
+    "k": "",
+    "t": "We've since separated them. The gym is here, the church is there, the library is somewhere else, and the person runs between them. Gulick would ask why."
+   }
+  ],
+  "n": 125,
+  "date": "August 6, 2026",
+  "iso": "2026-08-06",
+  "month": "August 2026",
+  "chamber": 2
+ },
+ {
   "slug": "walk-as-if-your-feet-are-kissing-the-earth",
   "title": "Walk as if your feet are kissing the earth",
   "dek": "Thich Nhat Hanh was a Vietnamese Buddhist monk who, in the 1960s, in the middle of a war, taught that meditation couldn't stay in the monastery.",
@@ -4295,41 +4325,11 @@ export const letters=[
     "t": "He's also the gentlest teacher on this shelf, and his gentleness was earned in a war. He had every reason to be bitter and chose, every day, not to be. \"Peace is every step,\" he wrote. That was the title of a book and the sum of a life."
    }
   ],
-  "n": 125,
-  "date": "August 7, 2026",
-  "iso": "2026-08-07",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "faith-fitness-and-a-gym-with-a-chapel",
-  "title": "Faith, fitness and a gym with a chapel",
-  "dek": "In 1857 an English novel called <em>Tom Brown's School Days</em> made a case that sounds strange now and shaped the next century: that a strong body was a Christian duty,…",
-  "day": 84,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1857 an English novel called <em>Tom Brown's School Days</em> made a case that sounds strange now and shaped the next century: that a strong body was a Christian duty, that games built character, and that a church without a gymnasium was missing half of the person. Muscular Christianity. The idea crossed the Atlantic and found its home in a building that had been founded in London in 1844 for young men adrift in the city: the YMCA."
-   },
-   {
-    "k": "",
-    "t": "In the 1890s a physician and educator named Luther Gulick, working at the YMCA's training school in Springfield, Massachusetts, gave the movement its symbol, a triangle for spirit, mind and body, and its method: the whole person, trained together, in one building. He also had a problem. Winters in Massachusetts kept young men indoors and restless, so he asked one of his instructors to invent an indoor game. James Naismith nailed a peach basket to a balcony in December 1891, and basketball was born. Four years later, in the YMCA in Holyoke, William Morgan invented volleyball for the older men who found basketball too rough."
-   },
-   {
-    "k": "",
-    "t": "The key is Gulick's triangle. The YMCA was the first institution in America to say, in its architecture, that a person is one thing: a gym, a pool, a reading room and a chapel under one roof, and a membership that assumed you'd use all of them. That's the Vault Human thesis, built in brick, in 1890."
-   },
-   {
-    "k": "",
-    "t": "We've since separated them. The gym is here, the church is there, the library is somewhere else, and the person runs between them. Gulick would ask why."
-   }
-  ],
   "n": 126,
   "date": "August 7, 2026",
   "iso": "2026-08-07",
   "month": "August 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "know-yourself-win-without-fighting",
@@ -4366,6 +4366,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "the-continent-s-own-regimen",
+  "title": "The continent's own regimen",
+  "dek": "For most of the people on the African continent, the first place they go when they're sick is not a hospital.",
+  "day": 85,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "For most of the people on the African continent, the first place they go when they're sick is not a hospital. It's a healer. The World Health Organization has estimated that the large majority of Africans rely on traditional medicine for primary care, and in 2002 it published a strategy to take that seriously: to study it, regulate it, and bring the best of it into health systems rather than dismissing it."
+   },
+   {
+    "k": "",
+    "t": "The traditions are many and old. Among the Zulu and other southern African peoples, the sangoma diagnoses, often through divination and conversation, and the inyanga prepares the plant medicines. In the Yoruba tradition of West Africa, a deep herbal pharmacology sits beside a spiritual practice that reads the whole person. Across the continent, the healer's method shares something Western medicine has only recently rediscovered: the diagnosis begins with the life. Who are you angry at? What did you eat? Who died? The illness is read inside the story."
+   },
+   {
+    "k": "",
+    "t": "I'll say the plain thing. Vault Human makes no claims about the efficacy of any specific traditional remedy, and the plant medicines are a healer's or a pharmacologist's domain, not a letter's. Some have been studied and work; some are dangerous. What we keep, and what belongs in the month of the Body, is the method of the first conversation. Before any treatment, the healer asks about the whole life."
+   },
+   {
+    "k": "",
+    "t": "That's exactly what the first month's log did, and what Hippocrates did, and what good physicians still do when they have the time. The African traditions kept it at the center when everyone else moved it to the edge."
+   }
+  ],
+  "n": 128,
+  "date": "August 8, 2026",
+  "iso": "2026-08-08",
+  "month": "August 2026",
+  "chamber": 2
+ },
+ {
   "slug": "do-nothing-and-nothing-is-left-undone",
   "title": "Do nothing, and nothing is left undone",
   "dek": "The <em>Tao Te Ching</em> is eighty-one short poems attributed to a man named Laozi, who may or may not have existed, from around the fourth century BCE.",
@@ -4397,41 +4427,11 @@ export const letters=[
     "t": "\"The tree that fills a man's arms grew from a tiny shoot.\" Small, patient, unforced. That's eighty-six days of a log."
    }
   ],
-  "n": 128,
-  "date": "August 9, 2026",
-  "iso": "2026-08-09",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "the-continent-s-own-regimen",
-  "title": "The continent's own regimen",
-  "dek": "For most of the people on the African continent, the first place they go when they're sick is not a hospital.",
-  "day": 86,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "For most of the people on the African continent, the first place they go when they're sick is not a hospital. It's a healer. The World Health Organization has estimated that the large majority of Africans rely on traditional medicine for primary care, and in 2002 it published a strategy to take that seriously: to study it, regulate it, and bring the best of it into health systems rather than dismissing it."
-   },
-   {
-    "k": "",
-    "t": "The traditions are many and old. Among the Zulu and other southern African peoples, the sangoma diagnoses, often through divination and conversation, and the inyanga prepares the plant medicines. In the Yoruba tradition of West Africa, a deep herbal pharmacology sits beside a spiritual practice that reads the whole person. Across the continent, the healer's method shares something Western medicine has only recently rediscovered: the diagnosis begins with the life. Who are you angry at? What did you eat? Who died? The illness is read inside the story."
-   },
-   {
-    "k": "",
-    "t": "I'll say the plain thing. Vault Human makes no claims about the efficacy of any specific traditional remedy, and the plant medicines are a healer's or a pharmacologist's domain, not a letter's. Some have been studied and work; some are dangerous. What we keep, and what belongs in the month of the Body, is the method of the first conversation. Before any treatment, the healer asks about the whole life."
-   },
-   {
-    "k": "",
-    "t": "That's exactly what the first month's log did, and what Hippocrates did, and what good physicians still do when they have the time. The African traditions kept it at the center when everyone else moved it to the edge."
-   }
-  ],
   "n": 129,
   "date": "August 9, 2026",
   "iso": "2026-08-09",
   "month": "August 2026",
-  "chamber": 2
+  "chamber": 3
  },
  {
   "slug": "you-are-that",
@@ -4472,6 +4472,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "the-third-of-your-life-you-ve-been-ignoring",
+  "title": "The third of your life you've been ignoring",
+  "dek": "Until the twentieth century, sleep was thought to be an absence, the brain switched off.",
+  "day": 87,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Until the twentieth century, sleep was thought to be an absence, the brain switched off. In 1939 a physiologist at the University of Chicago named Nathaniel Kleitman published <em>Sleep and Wakefulness</em>, the first scientific book on the subject, and in 1953 his student Eugene Aserinsky, watching his own son sleep, discovered that the eyes move rapidly at certain times and the brain is intensely active: REM. Sleep wasn't an absence. It was a sequence of stages, each doing work. In 1970 another of Kleitman's students, William Dement, opened the first sleep clinic at Stanford and founded sleep medicine as a field."
+   },
+   {
+    "k": "",
+    "t": "What they found is now the consensus. Sleep has stages, light, deep and REM, cycling about every ninety minutes. Deep sleep repairs the body and clears the brain. REM processes memory and emotion. Adults need seven to nine hours, and the research on short sleep is grim and consistent: it damages memory, mood, immunity, blood sugar, blood pressure and judgment, and it shortens life."
+   },
+   {
+    "k": "",
+    "t": "Here's the Awareness connection. Everything this chamber has taught about attention runs on sleep. A sleep-deprived brain can't attend. It can't regulate emotion. The person who meditates for twenty minutes and sleeps for five hours is pouring water into a bucket with a hole in it."
+   },
+   {
+    "k": "",
+    "t": "Your log has been asking about sleep since day two. Eighty-eight nights of data is more than most doctors ever see from a patient. Tonight, read it."
+   }
+  ],
+  "n": 131,
+  "date": "August 10, 2026",
+  "iso": "2026-08-10",
+  "month": "August 2026",
+  "chamber": 3
+ },
+ {
   "slug": "letting-go-practiced-early",
   "title": "Letting go, practiced early",
   "dek": "In the eighth century a teacher named Padmasambhava brought Buddhism to Tibet and, the tradition says, hid texts to be found when the world was ready.",
@@ -4493,36 +4523,6 @@ export const letters=[
    {
     "k": "",
     "t": "The teaching also makes death a teacher instead of a terror, which every tradition on the 360 does in its own way. A person who has looked at their own ending clearly tends to live the middle with more care and less fear. That's not morbid. It's the most practical awareness there is."
-   }
-  ],
-  "n": 131,
-  "date": "August 11, 2026",
-  "iso": "2026-08-11",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "the-third-of-your-life-you-ve-been-ignoring",
-  "title": "The third of your life you've been ignoring",
-  "dek": "Until the twentieth century, sleep was thought to be an absence, the brain switched off.",
-  "day": 88,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Until the twentieth century, sleep was thought to be an absence, the brain switched off. In 1939 a physiologist at the University of Chicago named Nathaniel Kleitman published <em>Sleep and Wakefulness</em>, the first scientific book on the subject, and in 1953 his student Eugene Aserinsky, watching his own son sleep, discovered that the eyes move rapidly at certain times and the brain is intensely active: REM. Sleep wasn't an absence. It was a sequence of stages, each doing work. In 1970 another of Kleitman's students, William Dement, opened the first sleep clinic at Stanford and founded sleep medicine as a field."
-   },
-   {
-    "k": "",
-    "t": "What they found is now the consensus. Sleep has stages, light, deep and REM, cycling about every ninety minutes. Deep sleep repairs the body and clears the brain. REM processes memory and emotion. Adults need seven to nine hours, and the research on short sleep is grim and consistent: it damages memory, mood, immunity, blood sugar, blood pressure and judgment, and it shortens life."
-   },
-   {
-    "k": "",
-    "t": "Here's the Awareness connection. Everything this chamber has taught about attention runs on sleep. A sleep-deprived brain can't attend. It can't regulate emotion. The person who meditates for twenty minutes and sleeps for five hours is pouring water into a bucket with a hole in it."
-   },
-   {
-    "k": "",
-    "t": "Your log has been asking about sleep since day two. Eighty-eight nights of data is more than most doctors ever see from a patient. Tonight, read it."
    }
   ],
   "n": 132,
@@ -4566,6 +4566,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "the-rules-of-the-bedroom",
+  "title": "The rules of the bedroom",
+  "dek": "In 1977 a sleep researcher at Dartmouth named Peter Hauri wrote a short list of rules for people who couldn't sleep, and called it sleep hygiene.",
+  "day": 89,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1977 a sleep researcher at Dartmouth named Peter Hauri wrote a short list of rules for people who couldn't sleep, and called it sleep hygiene. Forty years later a Berkeley neuroscientist named Matthew Walker put the science into a bestseller, <em>Why We Sleep</em>, and the list became common knowledge. The rules haven't changed much because they work."
+   },
+   {
+    "k": "",
+    "t": "Regular hours: same bedtime, same wake time, every day, weekends included. The body's clock is the single biggest lever on sleep quality, and nothing wrecks it like sleeping in on Saturday. A cool, dark, quiet room: sixty-five degrees or so, blackout curtains or a mask, earplugs if you need them. No screens in the last hour, because the light tells the brain it's morning. No caffeine after early afternoon; it lasts longer than you think. Alcohol kept away from bedtime, because it knocks you out and then fragments the second half of the night. Get morning light within an hour of waking, which sets the clock for tonight. And the bed is for sleep: if you can't sleep after twenty minutes, get up, do something dull in dim light, and come back when you're tired."
+   },
+   {
+    "k": "",
+    "t": "That's the list. Hauri would have said that the hard part isn't knowing it. It's that every one of the rules asks you to give up something you like: the late show, the glass of wine, the Saturday lie-in, the phone in bed."
+   },
+   {
+    "k": "",
+    "t": "For this chamber, I'd frame it this way. Sleep hygiene is attention applied to the hours you're not aware. You can't attend while you're asleep. So you attend before: to the room, the light, the clock, the hour. The night takes care of itself if the evening was taken care of."
+   }
+  ],
+  "n": 134,
+  "date": "August 12, 2026",
+  "iso": "2026-08-12",
+  "month": "August 2026",
+  "chamber": 3
+ },
+ {
   "slug": "the-way-of-the-sword-read-for-the-self",
   "title": "The way of the sword, read for the self",
   "dek": "In 1645, in a cave in southern Japan, an undefeated swordsman named Miyamoto Musashi wrote down, in the last weeks of his life, what sixty duels had taught him.",
@@ -4591,36 +4621,6 @@ export const letters=[
    {
     "k": "",
     "t": "And his famous nine principles end with the plainest: do nothing which is of no use. Ninety days in, you've cut a lot of what was of no use. Musashi would call that the beginning of the way."
-   }
-  ],
-  "n": 134,
-  "date": "August 13, 2026",
-  "iso": "2026-08-13",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "the-rules-of-the-bedroom",
-  "title": "The rules of the bedroom",
-  "dek": "In 1977 a sleep researcher at Dartmouth named Peter Hauri wrote a short list of rules for people who couldn't sleep, and called it sleep hygiene.",
-  "day": 90,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1977 a sleep researcher at Dartmouth named Peter Hauri wrote a short list of rules for people who couldn't sleep, and called it sleep hygiene. Forty years later a Berkeley neuroscientist named Matthew Walker put the science into a bestseller, <em>Why We Sleep</em>, and the list became common knowledge. The rules haven't changed much because they work."
-   },
-   {
-    "k": "",
-    "t": "Regular hours: same bedtime, same wake time, every day, weekends included. The body's clock is the single biggest lever on sleep quality, and nothing wrecks it like sleeping in on Saturday. A cool, dark, quiet room: sixty-five degrees or so, blackout curtains or a mask, earplugs if you need them. No screens in the last hour, because the light tells the brain it's morning. No caffeine after early afternoon; it lasts longer than you think. Alcohol kept away from bedtime, because it knocks you out and then fragments the second half of the night. Get morning light within an hour of waking, which sets the clock for tonight. And the bed is for sleep: if you can't sleep after twenty minutes, get up, do something dull in dim light, and come back when you're tired."
-   },
-   {
-    "k": "",
-    "t": "That's the list. Hauri would have said that the hard part isn't knowing it. It's that every one of the rules asks you to give up something you like: the late show, the glass of wine, the Saturday lie-in, the phone in bed."
-   },
-   {
-    "k": "",
-    "t": "For this chamber, I'd frame it this way. Sleep hygiene is attention applied to the hours you're not aware. You can't attend while you're asleep. So you attend before: to the room, the light, the clock, the hour. The night takes care of itself if the evening was taken care of."
    }
   ],
   "n": 135,
@@ -4664,6 +4664,40 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "the-treatment-that-works-for-insomnia",
+  "title": "The treatment that works for insomnia",
+  "dek": "If you lie awake at night, there is a treatment for it that works better than any pill, lasts after it's stopped, and is recommended first by every major medical…",
+  "day": 91,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "If you lie awake at night, there is a treatment for it that works better than any pill, lasts after it's stopped, and is recommended first by every major medical guideline. Almost nobody is offered it."
+   },
+   {
+    "k": "",
+    "t": "It's called cognitive behavioral therapy for insomnia, CBT-I, and it was built in pieces. In 1972 a psychologist named Richard Bootzin described stimulus control: the bed is for sleep only, so if you're not asleep in twenty minutes, get up, and come back only when sleepy, until the bed means sleep again. In 1993 Charles Morin at Laval University gathered that and two other pieces, sleep restriction and the correction of the anxious thoughts that keep people awake, into a structured program of about six sessions. It's been tested in dozens of trials. Most people who complete it sleep better, and keep sleeping better, without medication."
+   },
+   {
+    "k": "",
+    "t": "The counterintuitive core is sleep restriction. If you're spending nine hours in bed and sleeping six, you cut your time in bed to six, same wake time every day, no exceptions. It's miserable for a week. Then the sleep drive builds, you start falling asleep fast, and you gradually earn the time back. The bed stops being a place of anxious waiting and becomes a place where you sleep."
+   },
+   {
+    "k": "",
+    "t": "This is an Awareness key because insomnia is mostly a problem of attention: the mind, lying in the dark, watching itself not sleep. CBT-I breaks the watching."
+   },
+   {
+    "k": "",
+    "t": "Vault Human points to a CBT-I therapist, or to one of the several validated apps that deliver it, and I'd say this plainly: if sleep is your problem, this is your key, before anything else on the 180."
+   }
+  ],
+  "n": 137,
+  "date": "August 14, 2026",
+  "iso": "2026-08-14",
+  "month": "August 2026",
+  "chamber": 3
+ },
+ {
   "slug": "the-inner-fire",
   "title": "The inner fire",
   "dek": "In 1982 a Harvard cardiologist named Herbert Benson, the same man who gave us the Relaxation Response, traveled to the Himalayas with instruments and measured…",
@@ -4689,40 +4723,6 @@ export const letters=[
    {
     "k": "",
     "t": "Here's the modest practice I'd keep. Attention, placed on a part of the body with warmth and intention, changes that part. Try it on cold hands."
-   }
-  ],
-  "n": 137,
-  "date": "August 15, 2026",
-  "iso": "2026-08-15",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "the-treatment-that-works-for-insomnia",
-  "title": "The treatment that works for insomnia",
-  "dek": "If you lie awake at night, there is a treatment for it that works better than any pill, lasts after it's stopped, and is recommended first by every major medical…",
-  "day": 92,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "If you lie awake at night, there is a treatment for it that works better than any pill, lasts after it's stopped, and is recommended first by every major medical guideline. Almost nobody is offered it."
-   },
-   {
-    "k": "",
-    "t": "It's called cognitive behavioral therapy for insomnia, CBT-I, and it was built in pieces. In 1972 a psychologist named Richard Bootzin described stimulus control: the bed is for sleep only, so if you're not asleep in twenty minutes, get up, and come back only when sleepy, until the bed means sleep again. In 1993 Charles Morin at Laval University gathered that and two other pieces, sleep restriction and the correction of the anxious thoughts that keep people awake, into a structured program of about six sessions. It's been tested in dozens of trials. Most people who complete it sleep better, and keep sleeping better, without medication."
-   },
-   {
-    "k": "",
-    "t": "The counterintuitive core is sleep restriction. If you're spending nine hours in bed and sleeping six, you cut your time in bed to six, same wake time every day, no exceptions. It's miserable for a week. Then the sleep drive builds, you start falling asleep fast, and you gradually earn the time back. The bed stops being a place of anxious waiting and becomes a place where you sleep."
-   },
-   {
-    "k": "",
-    "t": "This is an Awareness key because insomnia is mostly a problem of attention: the mind, lying in the dark, watching itself not sleep. CBT-I breaks the watching."
-   },
-   {
-    "k": "",
-    "t": "Vault Human points to a CBT-I therapist, or to one of the several validated apps that deliver it, and I'd say this plainly: if sleep is your problem, this is your key, before anything else on the 180."
    }
   ],
   "n": 138,
@@ -4766,6 +4766,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "light-sets-the-clock",
+  "title": "Light sets the clock",
+  "dek": "Every cell in your body runs on a clock, and the clock is set by light.",
+  "day": 93,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Every cell in your body runs on a clock, and the clock is set by light. That finding is mostly the work of a Harvard researcher named Charles Czeisler, who through the 1980s showed that the human circadian rhythm, the roughly twenty-four-hour cycle that governs sleep, hormones, temperature and alertness, is reset each day by the light that reaches the eyes, and that the timing of that light is everything."
+   },
+   {
+    "k": "",
+    "t": "The practical rules are simple and most people break all of them. Daylight within an hour of waking: five to ten minutes outside, more on a cloudy day, no sunglasses, not through a window, which cuts the signal. That morning light tells the clock it's day and sets the time for tonight's sleepiness, about fourteen to sixteen hours later. Then dim light after dark: the brain reads bright light in the evening, especially the blue light of screens and overhead bulbs, as afternoon, and holds off the sleep hormone. Candles, lamps, warm bulbs, and screens off or dimmed in the last hour."
+   },
+   {
+    "k": "",
+    "t": "The shift worker, the frequent flyer and the teenager with a phone in bed are all fighting the same thing: a clock set wrong by light arriving at the wrong time. Czeisler's work made it possible to set it right on purpose."
+   },
+   {
+    "k": "",
+    "t": "It's a key for the third month because it's attention to something invisible. You don't feel the clock being set. You feel the result twelve hours later, as sleepiness that comes on time or doesn't. Morning light is the single cheapest, most powerful sleep intervention there is, and it costs nothing but stepping outside, which you've done every day for ninety-four days. Now do it earlier."
+   }
+  ],
+  "n": 140,
+  "date": "August 16, 2026",
+  "iso": "2026-08-16",
+  "month": "August 2026",
+  "chamber": 3
+ },
+ {
   "slug": "three-questions-about-anyone",
   "title": "Three questions about anyone",
   "dek": "In the 1940s a Japanese businessman named Yoshimoto Ishin, who'd practiced a severe form of Buddhist self-examination, built a version that anyone could do.",
@@ -4799,36 +4829,6 @@ export const letters=[
    {
     "k": "",
     "t": "Vault Human points to Naikan centers for the retreat, which exist in Japan and a few in the West. The three questions are free."
-   }
-  ],
-  "n": 140,
-  "date": "August 17, 2026",
-  "iso": "2026-08-17",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "light-sets-the-clock",
-  "title": "Light sets the clock",
-  "dek": "Every cell in your body runs on a clock, and the clock is set by light.",
-  "day": 94,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Every cell in your body runs on a clock, and the clock is set by light. That finding is mostly the work of a Harvard researcher named Charles Czeisler, who through the 1980s showed that the human circadian rhythm, the roughly twenty-four-hour cycle that governs sleep, hormones, temperature and alertness, is reset each day by the light that reaches the eyes, and that the timing of that light is everything."
-   },
-   {
-    "k": "",
-    "t": "The practical rules are simple and most people break all of them. Daylight within an hour of waking: five to ten minutes outside, more on a cloudy day, no sunglasses, not through a window, which cuts the signal. That morning light tells the clock it's day and sets the time for tonight's sleepiness, about fourteen to sixteen hours later. Then dim light after dark: the brain reads bright light in the evening, especially the blue light of screens and overhead bulbs, as afternoon, and holds off the sleep hormone. Candles, lamps, warm bulbs, and screens off or dimmed in the last hour."
-   },
-   {
-    "k": "",
-    "t": "The shift worker, the frequent flyer and the teenager with a phone in bed are all fighting the same thing: a clock set wrong by light arriving at the wrong time. Czeisler's work made it possible to set it right on purpose."
-   },
-   {
-    "k": "",
-    "t": "It's a key for the third month because it's attention to something invisible. You don't feel the clock being set. You feel the result twelve hours later, as sleepiness that comes on time or doesn't. Morning light is the single cheapest, most powerful sleep intervention there is, and it costs nothing but stepping outside, which you've done every day for ninety-four days. Now do it earlier."
    }
   ],
   "n": 141,
@@ -4872,6 +4872,40 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "the-nap-with-a-time-limit",
+  "title": "The nap, with a time limit",
+  "dek": "In 1995 a NASA researcher named Mark Rosekind ran a study on long-haul pilots that changed how aviation thinks about fatigue.",
+  "day": 95,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1995 a NASA researcher named Mark Rosekind ran a study on long-haul pilots that changed how aviation thinks about fatigue. Pilots on a transpacific route were given a forty-minute nap opportunity in the cockpit seat during the cruise phase. They slept, on average, about twenty-six minutes. Afterward, measured on reaction and alertness tests, they performed markedly better than the pilots who stayed awake, and the effect lasted through the landing. NASA called it the nap study, and it's why controlled rest is now permitted in cockpits around the world."
+   },
+   {
+    "k": "",
+    "t": "The key is in the numbers. A short nap, under thirty minutes, restores alertness without the grogginess that comes from waking out of deep sleep. Go longer than that, and you drop into the deeper stages and wake up worse than you started, for up to half an hour. So the rule is twenty to thirty minutes, early afternoon, when the body's clock naturally dips, and never after about three, which steals from the night."
+   },
+   {
+    "k": "",
+    "t": "Most cultures with a hot midday figured this out centuries ago. The siesta, the Chinese office nap, the Japanese inemuri. Industrial America decided sleep was for the weak, and we've been tired ever since."
+   },
+   {
+    "k": "",
+    "t": "It's a key for the third month because a nap is attention restored. The study measured exactly that: the ability to notice, react and stay present. Twenty-six minutes bought hours of it. If you've ever pushed through an afternoon on caffeine and willpower, you've been doing the thing the pilots were doing before NASA told them to lie down."
+   },
+   {
+    "k": "",
+    "t": "Vault Human holds the nap as a tool, not a daily rule. If your night sleep is good, you may never need it. If an afternoon finds you unable to attend, it's there."
+   }
+  ],
+  "n": 143,
+  "date": "August 18, 2026",
+  "iso": "2026-08-18",
+  "month": "August 2026",
+  "chamber": 3
+ },
+ {
   "slug": "the-butterfly-s-dream",
   "title": "The butterfly's dream",
   "dek": "Zhuangzi was a Chinese thinker of the fourth century BCE and the funniest philosopher who ever lived.",
@@ -4897,40 +4931,6 @@ export const letters=[
    {
     "k": "",
     "t": "I keep him for the humor. Every other key in this chamber is serious. Zhuangzi says awareness without lightness is just another trap, and that the person who can laugh at their own certainty is the freest person in the room."
-   }
-  ],
-  "n": 143,
-  "date": "August 19, 2026",
-  "iso": "2026-08-19",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "the-nap-with-a-time-limit",
-  "title": "The nap, with a time limit",
-  "dek": "In 1995 a NASA researcher named Mark Rosekind ran a study on long-haul pilots that changed how aviation thinks about fatigue.",
-  "day": 96,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1995 a NASA researcher named Mark Rosekind ran a study on long-haul pilots that changed how aviation thinks about fatigue. Pilots on a transpacific route were given a forty-minute nap opportunity in the cockpit seat during the cruise phase. They slept, on average, about twenty-six minutes. Afterward, measured on reaction and alertness tests, they performed markedly better than the pilots who stayed awake, and the effect lasted through the landing. NASA called it the nap study, and it's why controlled rest is now permitted in cockpits around the world."
-   },
-   {
-    "k": "",
-    "t": "The key is in the numbers. A short nap, under thirty minutes, restores alertness without the grogginess that comes from waking out of deep sleep. Go longer than that, and you drop into the deeper stages and wake up worse than you started, for up to half an hour. So the rule is twenty to thirty minutes, early afternoon, when the body's clock naturally dips, and never after about three, which steals from the night."
-   },
-   {
-    "k": "",
-    "t": "Most cultures with a hot midday figured this out centuries ago. The siesta, the Chinese office nap, the Japanese inemuri. Industrial America decided sleep was for the weak, and we've been tired ever since."
-   },
-   {
-    "k": "",
-    "t": "It's a key for the third month because a nap is attention restored. The study measured exactly that: the ability to notice, react and stay present. Twenty-six minutes bought hours of it. If you've ever pushed through an afternoon on caffeine and willpower, you've been doing the thing the pilots were doing before NASA told them to lie down."
-   },
-   {
-    "k": "",
-    "t": "Vault Human holds the nap as a tool, not a daily rule. If your night sleep is good, you may never need it. If an afternoon finds you unable to attend, it's there."
    }
   ],
   "n": 144,
@@ -4974,6 +4974,36 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "rest-that-isn-t-sleep",
+  "title": "Rest that isn't sleep",
+  "dek": "In 1976 an Indian teacher named Swami Satyananda published a method he'd drawn from older tantric practices and called yoga nidra, yogic sleep.",
+  "day": 97,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1976 an Indian teacher named Swami Satyananda published a method he'd drawn from older tantric practices and called yoga nidra, yogic sleep. You lie on your back and are guided, by a voice, through a sequence: an intention, a rotation of attention around the body, awareness of breath, pairs of opposite sensations, images, and back. Twenty to forty minutes. The body goes fully still. The mind stays, just barely, awake. People come out of it feeling as if they've slept for hours."
+   },
+   {
+    "k": "",
+    "t": "The modern name is non-sleep deep rest, NSDR, coined by a neuroscientist who noticed that the brain states during yoga nidra resemble the edge of sleep and that the practice restores attention and reduces stress in a way an ordinary rest doesn't. The research is early but consistent, and the practice is safe, free, and available as recordings everywhere."
+   },
+   {
+    "k": "",
+    "t": "Here's why it belongs in the sleep keys of this chamber. Sometimes you can't sleep, and sometimes you don't need to; what you need is the deep rest that sleep usually provides. Yoga nidra gives you a door to that rest without the sleep. People who can't nap use it in the afternoon. People lying awake use it at night, and often fall asleep inside it, which is fine. And it trains something the whole chamber has been about: the capacity to let the body go completely still while awareness stays."
+   },
+   {
+    "k": "",
+    "t": "Vault Human points to the recordings; there are many good ones, ten to thirty minutes, and your coach can suggest a few. The practice itself asks nothing but a floor and a blanket."
+   }
+  ],
+  "n": 146,
+  "date": "August 20, 2026",
+  "iso": "2026-08-20",
+  "month": "August 2026",
+  "chamber": 3
+ },
+ {
   "slug": "knowing-is-acting",
   "title": "Knowing is acting",
   "dek": "Wang Yangming was a Chinese official and general in the early 1500s who, in exile in a remote province, had a realization that reorganized Confucian thought for the…",
@@ -4999,36 +5029,6 @@ export const letters=[
    {
     "k": "",
     "t": "Here's the encouraging version. You don't need to understand a thing completely before you act. You act, and the understanding arrives through the action. The log you've kept is Wang's whole philosophy in practice: write what you did, not what you believe."
-   }
-  ],
-  "n": 146,
-  "date": "August 21, 2026",
-  "iso": "2026-08-21",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "rest-that-isn-t-sleep",
-  "title": "Rest that isn't sleep",
-  "dek": "In 1976 an Indian teacher named Swami Satyananda published a method he'd drawn from older tantric practices and called yoga nidra, yogic sleep.",
-  "day": 98,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1976 an Indian teacher named Swami Satyananda published a method he'd drawn from older tantric practices and called yoga nidra, yogic sleep. You lie on your back and are guided, by a voice, through a sequence: an intention, a rotation of attention around the body, awareness of breath, pairs of opposite sensations, images, and back. Twenty to forty minutes. The body goes fully still. The mind stays, just barely, awake. People come out of it feeling as if they've slept for hours."
-   },
-   {
-    "k": "",
-    "t": "The modern name is non-sleep deep rest, NSDR, coined by a neuroscientist who noticed that the brain states during yoga nidra resemble the edge of sleep and that the practice restores attention and reduces stress in a way an ordinary rest doesn't. The research is early but consistent, and the practice is safe, free, and available as recordings everywhere."
-   },
-   {
-    "k": "",
-    "t": "Here's why it belongs in the sleep keys of this chamber. Sometimes you can't sleep, and sometimes you don't need to; what you need is the deep rest that sleep usually provides. Yoga nidra gives you a door to that rest without the sleep. People who can't nap use it in the afternoon. People lying awake use it at night, and often fall asleep inside it, which is fine. And it trains something the whole chamber has been about: the capacity to let the body go completely still while awareness stays."
-   },
-   {
-    "k": "",
-    "t": "Vault Human points to the recordings; there are many good ones, ten to thirty minutes, and your coach can suggest a few. The practice itself asks nothing but a floor and a blanket."
    }
   ],
   "n": 147,
@@ -5072,6 +5072,40 @@ export const letters=[
   "chamber": 3
  },
  {
+  "slug": "train-by-readiness",
+  "title": "Train by readiness",
+  "dek": "In 1936 a young Hungarian-Canadian researcher named Hans Selye, injecting rats with various substances, noticed that whatever he injected, they responded the same…",
+  "day": 99,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1936 a young Hungarian-Canadian researcher named Hans Selye, injecting rats with various substances, noticed that whatever he injected, they responded the same way: a predictable sequence of alarm, resistance and, if the stress continued, exhaustion. He called it the general adaptation syndrome, and he gave the world the word stress in the sense we now use it. His key insight for anyone who trains: the body adapts to stress by getting stronger, but only if the stress is followed by recovery. Stress without recovery doesn't build. It breaks."
+   },
+   {
+    "k": "",
+    "t": "That's the science under every deload week, rest day and off-season in sport, and it's the reason the periodization key on day thirty-eight exists. The body doesn't get stronger in the gym. It gets stronger afterward, while it repairs. Skip the repair and you've just been breaking things."
+   },
+   {
+    "k": "",
+    "t": "The modern form is readiness. Instead of training by the calendar, you train by what the body reports. Heart rate variability, which you met on day fifty-five, is the usual measure: higher means the body has recovered and can take a hard day; lower means it's still repairing and today should be easy. Resting heart rate, sleep quality and simple mood work almost as well. The rule: hard days on ready days, easy days on the rest, and a full deload week every fourth week whether you think you need it or not."
+   },
+   {
+    "k": "",
+    "t": "It's a key for the third month because readiness is awareness applied to the body's state before you ask anything of it. A hundred days in, the walks and the log have made you a far better reader of your own readiness than any app. Trust that reading."
+   },
+   {
+    "k": "",
+    "t": "And Selye's deepest point is for life, not just training. Stress is not the enemy. Unrecovered stress is. The person who rests on purpose can carry more than the person who never stops."
+   }
+  ],
+  "n": 149,
+  "date": "August 22, 2026",
+  "iso": "2026-08-22",
+  "month": "August 2026",
+  "chamber": 3
+ },
+ {
   "slug": "the-skeptic-s-seat",
   "title": "The skeptic's seat",
   "dek": "The last key of the third month is the one that argues with all the others, and I've kept it on purpose.",
@@ -5097,40 +5131,6 @@ export const letters=[
    {
     "k": "",
     "t": "Vault Human's whole approach rests on a Charvaka rule: we tell you what the evidence supports and what it doesn't, every time, and we let you perceive the rest. A hundred days of a log is a hundred days of perception. That's the only authority this year has ever asked you to trust."
-   }
-  ],
-  "n": 149,
-  "date": "August 23, 2026",
-  "iso": "2026-08-23",
-  "month": "August 2026",
-  "chamber": 3
- },
- {
-  "slug": "train-by-readiness",
-  "title": "Train by readiness",
-  "dek": "In 1936 a young Hungarian-Canadian researcher named Hans Selye, injecting rats with various substances, noticed that whatever he injected, they responded the same…",
-  "day": 100,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1936 a young Hungarian-Canadian researcher named Hans Selye, injecting rats with various substances, noticed that whatever he injected, they responded the same way: a predictable sequence of alarm, resistance and, if the stress continued, exhaustion. He called it the general adaptation syndrome, and he gave the world the word stress in the sense we now use it. His key insight for anyone who trains: the body adapts to stress by getting stronger, but only if the stress is followed by recovery. Stress without recovery doesn't build. It breaks."
-   },
-   {
-    "k": "",
-    "t": "That's the science under every deload week, rest day and off-season in sport, and it's the reason the periodization key on day thirty-eight exists. The body doesn't get stronger in the gym. It gets stronger afterward, while it repairs. Skip the repair and you've just been breaking things."
-   },
-   {
-    "k": "",
-    "t": "The modern form is readiness. Instead of training by the calendar, you train by what the body reports. Heart rate variability, which you met on day fifty-five, is the usual measure: higher means the body has recovered and can take a hard day; lower means it's still repairing and today should be easy. Resting heart rate, sleep quality and simple mood work almost as well. The rule: hard days on ready days, easy days on the rest, and a full deload week every fourth week whether you think you need it or not."
-   },
-   {
-    "k": "",
-    "t": "It's a key for the third month because readiness is awareness applied to the body's state before you ask anything of it. A hundred days in, the walks and the log have made you a far better reader of your own readiness than any app. Trust that reading."
-   },
-   {
-    "k": "",
-    "t": "And Selye's deepest point is for life, not just training. Stress is not the enemy. Unrecovered stress is. The person who rests on purpose can carry more than the person who never stops."
    }
   ],
   "n": 150,
@@ -5174,6 +5174,40 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "breathe-through-your-nose",
+  "title": "Breathe through your nose",
+  "dek": "The last body letter of the third month returns to the breath, with a measurement and a rule.",
+  "day": 101,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The last body letter of the third month returns to the breath, with a measurement and a rule."
+   },
+   {
+    "k": "",
+    "t": "In 2015 an Irish breathing teacher named Patrick McKeown, who'd been a chronic mouth-breather with asthma until he found the Buteyko method, published <em>The Oxygen Advantage</em>, a book that brought reduced breathing into sport. In 2020 a journalist named James Nestor spent a month with his nose plugged, breathing only through his mouth, measured the damage, and wrote <em>Breath</em>, which made the case to millions: the nose is the organ of breathing, the mouth is for eating, and we've forgotten."
+   },
+   {
+    "k": "",
+    "t": "The science is older than both. In 1976 a Stanford physician named Christian Guilleminault described sleep apnea, the stopping of breath during sleep that was going undiagnosed in millions, and built the screen for it. Loud snoring, gasping, daytime exhaustion, waking with a dry mouth: those are signs, and they're a doctor's door, because untreated apnea damages the heart and the brain."
+   },
+   {
+    "k": "",
+    "t": "The practice is three words from McKeown: light, slow, deep. Breathe through the nose, always, awake and asleep. Breathe less, not more. Let the breath drop low into the belly. His measurement is the BOLT score: after a normal exhale, how many seconds until the first urge to breathe. Under ten is poor; twenty is average; forty is the goal. It's the Control Pause from day fifty-two, pointed at athletes. His training is breath holds, walking with the breath held, nasal-only running, to raise the body's tolerance for carbon dioxide and, with it, the efficiency of every breath."
+   },
+   {
+    "k": "",
+    "t": "A chamber about attention ends on the one thing you do twenty thousand times a day without noticing. Notice it. Close your mouth."
+   }
+  ],
+  "n": 152,
+  "date": "August 24, 2026",
+  "iso": "2026-08-24",
+  "month": "August 2026",
+  "chamber": 3
+ },
+ {
   "slug": "head-heart-and-hands",
   "title": "Head, heart and hands",
   "dek": "In 1919, in the ruins of the First World War, the owner of a cigarette factory in Stuttgart asked a philosopher named Rudolf Steiner to build a school for his…",
@@ -5201,45 +5235,11 @@ export const letters=[
     "t": "The month of Meaning will ask you to make things. Steiner would say meaning lives in the hands."
    }
   ],
-  "n": 152,
-  "date": "August 25, 2026",
-  "iso": "2026-08-25",
-  "month": "August 2026",
-  "chamber": 4
- },
- {
-  "slug": "breathe-through-your-nose",
-  "title": "Breathe through your nose",
-  "dek": "The last body letter of the third month returns to the breath, with a measurement and a rule.",
-  "day": 102,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "The last body letter of the third month returns to the breath, with a measurement and a rule."
-   },
-   {
-    "k": "",
-    "t": "In 2015 an Irish breathing teacher named Patrick McKeown, who'd been a chronic mouth-breather with asthma until he found the Buteyko method, published <em>The Oxygen Advantage</em>, a book that brought reduced breathing into sport. In 2020 a journalist named James Nestor spent a month with his nose plugged, breathing only through his mouth, measured the damage, and wrote <em>Breath</em>, which made the case to millions: the nose is the organ of breathing, the mouth is for eating, and we've forgotten."
-   },
-   {
-    "k": "",
-    "t": "The science is older than both. In 1976 a Stanford physician named Christian Guilleminault described sleep apnea, the stopping of breath during sleep that was going undiagnosed in millions, and built the screen for it. Loud snoring, gasping, daytime exhaustion, waking with a dry mouth: those are signs, and they're a doctor's door, because untreated apnea damages the heart and the brain."
-   },
-   {
-    "k": "",
-    "t": "The practice is three words from McKeown: light, slow, deep. Breathe through the nose, always, awake and asleep. Breathe less, not more. Let the breath drop low into the belly. His measurement is the BOLT score: after a normal exhale, how many seconds until the first urge to breathe. Under ten is poor; twenty is average; forty is the goal. It's the Control Pause from day fifty-two, pointed at athletes. His training is breath holds, walking with the breath held, nasal-only running, to raise the body's tolerance for carbon dioxide and, with it, the efficiency of every breath."
-   },
-   {
-    "k": "",
-    "t": "A chamber about attention ends on the one thing you do twenty thousand times a day without noticing. Notice it. Close your mouth."
-   }
-  ],
   "n": 153,
   "date": "August 25, 2026",
   "iso": "2026-08-25",
   "month": "August 2026",
-  "chamber": 3
+  "chamber": 4
  },
  {
   "slug": "the-cycle-of-learning",
@@ -5276,6 +5276,40 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "the-table-that-keeps-hearts-alive",
+  "title": "The table that keeps hearts alive",
+  "dek": "The fourth month's body letters are about the table. We begin with the most studied way of eating on earth.",
+  "day": 103,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The fourth month's body letters are about the table. We begin with the most studied way of eating on earth."
+   },
+   {
+    "k": "",
+    "t": "In 1958 an American physiologist named Ancel Keys began following twelve thousand men in seven countries, from Finland to Japan, to find out why heart disease killed so many in some places and so few in others. The Seven Countries Study ran for decades. The men on the island of Crete, eating olive oil, vegetables, beans, bread, fish, a little cheese, wine with meals, and very little meat, had the lowest rates of heart disease anyone had measured. Keys moved to Italy and lived to a hundred."
+   },
+   {
+    "k": "",
+    "t": "Half a century later a Spanish trial called PREDIMED tested the pattern directly: seven thousand people at high risk of heart disease, assigned either to a Mediterranean diet with extra olive oil or nuts, or to a low-fat diet. The Mediterranean groups had about thirty percent fewer heart attacks, strokes and cardiac deaths. The trial was published in 2013, retracted over a flaw in how some people were assigned, re-analyzed, and republished in 2018 with the same conclusion."
+   },
+   {
+    "k": "",
+    "t": "What the Mediterranean pattern is: mostly plants, olive oil as the main fat, fish and beans for protein, whole grains, nuts, fruit for dessert, and meat as an occasional thing rather than the center of the plate. Meals eaten slowly, with others, often with a glass of wine. What it isn't: a diet with rules. It's a way of eating that whole cultures have done for centuries, which is why it's sustainable where diets aren't."
+   },
+   {
+    "k": "",
+    "t": "It opens the Meaning chamber's body letters because meals are where meaning and body meet. A table is a practice. The Cretans didn't eat for their hearts. They ate for their families, slowly, outdoors, and their hearts came along."
+   }
+  ],
+  "n": 155,
+  "date": "August 26, 2026",
+  "iso": "2026-08-26",
+  "month": "August 2026",
+  "chamber": 4
+ },
+ {
   "slug": "prototype-your-life",
   "title": "Prototype your life",
   "dek": "In the 1990s a design firm in California called IDEO, and later a program at Stanford called the d.school, turned the way industrial designers work into a method…",
@@ -5301,40 +5335,6 @@ export const letters=[
    {
     "k": "",
     "t": "Vault Human points to the d.school's free resources and the book, and we use the method in coaching every week."
-   }
-  ],
-  "n": 155,
-  "date": "August 27, 2026",
-  "iso": "2026-08-27",
-  "month": "August 2026",
-  "chamber": 4
- },
- {
-  "slug": "the-table-that-keeps-hearts-alive",
-  "title": "The table that keeps hearts alive",
-  "dek": "The fourth month's body letters are about the table. We begin with the most studied way of eating on earth.",
-  "day": 104,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "The fourth month's body letters are about the table. We begin with the most studied way of eating on earth."
-   },
-   {
-    "k": "",
-    "t": "In 1958 an American physiologist named Ancel Keys began following twelve thousand men in seven countries, from Finland to Japan, to find out why heart disease killed so many in some places and so few in others. The Seven Countries Study ran for decades. The men on the island of Crete, eating olive oil, vegetables, beans, bread, fish, a little cheese, wine with meals, and very little meat, had the lowest rates of heart disease anyone had measured. Keys moved to Italy and lived to a hundred."
-   },
-   {
-    "k": "",
-    "t": "Half a century later a Spanish trial called PREDIMED tested the pattern directly: seven thousand people at high risk of heart disease, assigned either to a Mediterranean diet with extra olive oil or nuts, or to a low-fat diet. The Mediterranean groups had about thirty percent fewer heart attacks, strokes and cardiac deaths. The trial was published in 2013, retracted over a flaw in how some people were assigned, re-analyzed, and republished in 2018 with the same conclusion."
-   },
-   {
-    "k": "",
-    "t": "What the Mediterranean pattern is: mostly plants, olive oil as the main fat, fish and beans for protein, whole grains, nuts, fruit for dessert, and meat as an occasional thing rather than the center of the plate. Meals eaten slowly, with others, often with a glass of wine. What it isn't: a diet with rules. It's a way of eating that whole cultures have done for centuries, which is why it's sustainable where diets aren't."
-   },
-   {
-    "k": "",
-    "t": "It opens the Meaning chamber's body letters because meals are where meaning and body meet. A table is a practice. The Cretans didn't eat for their hearts. They ate for their families, slowly, outdoors, and their hearts came along."
    }
   ],
   "n": 156,
@@ -5378,6 +5378,36 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "the-trial-that-reversed-heart-disease",
+  "title": "The trial that reversed heart disease",
+  "dek": "In 1990 a young physician named Dean Ornish published a trial in a major medical journal that cardiologists found hard to believe.",
+  "day": 105,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1990 a young physician named Dean Ornish published a trial in a major medical journal that cardiologists found hard to believe. He took people with serious coronary artery disease and, instead of surgery or drugs, put them on a program: a very-low-fat plant-based diet, daily walking, an hour a day of stress management (yoga, breathing, meditation), and a weekly support group. A year later, their arteries, measured by angiogram, had opened. The control group's had narrowed. He called it the Lifestyle Heart Trial, and it was the first time anyone had shown heart disease going backward without a scalpel or a pill."
+   },
+   {
+    "k": "",
+    "t": "Later follow-ups held, and the program is now covered by Medicare as an alternative to surgery for some patients. What strikes me most, thirty-five years on, is which of the four parts mattered. People assumed it was the diet. Ornish's own analysis found that the patients who did best were the ones who attended the group. Connection moved the arteries."
+   },
+   {
+    "k": "",
+    "t": "I put it at the center of the Meaning chamber's table keys for that reason. The food matters. The walk matters. But Ornish's four-part program is a whole life, and the part that nobody expected, the weekly circle of people going through the same thing, was the part that healed. That's a Vault Human thesis in a cardiology journal."
+   },
+   {
+    "k": "",
+    "t": "The program is intensive and the diet is strict, ten percent of calories from fat, which most people can't sustain and don't need to. What everyone can take: all four pillars daily, and the group weekly. You've been doing three of them for a hundred and six days. The fourth begins when the circles do."
+   }
+  ],
+  "n": 158,
+  "date": "August 28, 2026",
+  "iso": "2026-08-28",
+  "month": "August 2026",
+  "chamber": 4
+ },
+ {
   "slug": "you-built-what-you-know",
   "title": "You built what you know",
   "dek": "Jean Piaget was a Swiss biologist who, in the 1920s, started watching his own three children with a scientist's patience, and spent the next fifty years showing that…",
@@ -5399,36 +5429,6 @@ export const letters=[
    {
     "k": "",
     "t": "A hundred and six days of a log is a record of the world not quite fitting. The number was higher than you thought. The walk changed your mood more than expected. The person you wrote about didn't act as you predicted. Piaget would say: those are the places you learned something. Everything else was just confirmation."
-   }
-  ],
-  "n": 158,
-  "date": "August 29, 2026",
-  "iso": "2026-08-29",
-  "month": "August 2026",
-  "chamber": 4
- },
- {
-  "slug": "the-trial-that-reversed-heart-disease",
-  "title": "The trial that reversed heart disease",
-  "dek": "In 1990 a young physician named Dean Ornish published a trial in a major medical journal that cardiologists found hard to believe.",
-  "day": 106,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1990 a young physician named Dean Ornish published a trial in a major medical journal that cardiologists found hard to believe. He took people with serious coronary artery disease and, instead of surgery or drugs, put them on a program: a very-low-fat plant-based diet, daily walking, an hour a day of stress management (yoga, breathing, meditation), and a weekly support group. A year later, their arteries, measured by angiogram, had opened. The control group's had narrowed. He called it the Lifestyle Heart Trial, and it was the first time anyone had shown heart disease going backward without a scalpel or a pill."
-   },
-   {
-    "k": "",
-    "t": "Later follow-ups held, and the program is now covered by Medicare as an alternative to surgery for some patients. What strikes me most, thirty-five years on, is which of the four parts mattered. People assumed it was the diet. Ornish's own analysis found that the patients who did best were the ones who attended the group. Connection moved the arteries."
-   },
-   {
-    "k": "",
-    "t": "I put it at the center of the Meaning chamber's table keys for that reason. The food matters. The walk matters. But Ornish's four-part program is a whole life, and the part that nobody expected, the weekly circle of people going through the same thing, was the part that healed. That's a Vault Human thesis in a cardiology journal."
-   },
-   {
-    "k": "",
-    "t": "The program is intensive and the diet is strict, ten percent of calories from fat, which most people can't sustain and don't need to. What everyone can take: all four pillars daily, and the group weekly. You've been doing three of them for a hundred and six days. The fourth begins when the circles do."
    }
   ],
   "n": 159,
@@ -5472,6 +5472,36 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "walk-forty-five-minutes-and-eat-real-food",
+  "title": "Walk forty-five minutes and eat real food",
+  "dek": "Nathan Pritikin was an engineer and inventor who, in his forties in the 1950s, was told he had serious heart disease and should take it easy.",
+  "day": 107,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Nathan Pritikin was an engineer and inventor who, in his forties in the 1950s, was told he had serious heart disease and should take it easy. He did the opposite. He read every study he could find on populations that didn't get heart disease, noticed they ate low-fat, high-fiber diets and moved all day, and built himself a program: whole grains, vegetables, beans, fruit, very little fat, almost no sugar, and a long daily walk. His cholesterol fell from nearly three hundred to about a hundred. In 1976 he opened a residential center in California where people with heart disease and diabetes came for a month to live the program, and thousands walked out with lower blood pressure, off medications, their numbers transformed."
+   },
+   {
+    "k": "",
+    "t": "When he died in 1985, the autopsy found arteries as clean as a young man's, and the finding was published in a medical journal as proof of concept."
+   },
+   {
+    "k": "",
+    "t": "Pritikin's program is simple and it's demanding. Eat food close to how it grew. Keep fat low. Keep fiber high. Walk forty-five minutes a day, every day. The residential form is still running, and it still works, because the method is just the first three weeks of a new life done under supervision until it sticks."
+   },
+   {
+    "k": "",
+    "t": "The key for the table chamber is the pairing. Pritikin never separated the plate from the walk. Food and movement were one prescription, and the walk was non-negotiable: forty-five minutes, daily, as part of the eating plan, not a separate fitness goal. A hundred and eight days of twenty minutes outside is more than halfway there. The question he'd ask is whether the plate has caught up to the walk."
+   }
+  ],
+  "n": 161,
+  "date": "August 30, 2026",
+  "iso": "2026-08-30",
+  "month": "August 2026",
+  "chamber": 4
+ },
+ {
   "slug": "eight-crises-each-with-a-gift",
   "title": "Eight crises, each with a gift",
   "dek": "In 1950 a psychoanalyst named Erik Erikson, who'd fled Germany and trained under Freud's daughter, published a map of the human life as eight stages, each with a…",
@@ -5497,36 +5527,6 @@ export const letters=[
    {
     "k": "",
     "t": "And the map forgives. A stage left unanswered early can be answered late. A person can learn to trust at forty. The questions stay open as long as you're alive to ask them."
-   }
-  ],
-  "n": 161,
-  "date": "August 31, 2026",
-  "iso": "2026-08-31",
-  "month": "August 2026",
-  "chamber": 4
- },
- {
-  "slug": "walk-forty-five-minutes-and-eat-real-food",
-  "title": "Walk forty-five minutes and eat real food",
-  "dek": "Nathan Pritikin was an engineer and inventor who, in his forties in the 1950s, was told he had serious heart disease and should take it easy.",
-  "day": 108,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Nathan Pritikin was an engineer and inventor who, in his forties in the 1950s, was told he had serious heart disease and should take it easy. He did the opposite. He read every study he could find on populations that didn't get heart disease, noticed they ate low-fat, high-fiber diets and moved all day, and built himself a program: whole grains, vegetables, beans, fruit, very little fat, almost no sugar, and a long daily walk. His cholesterol fell from nearly three hundred to about a hundred. In 1976 he opened a residential center in California where people with heart disease and diabetes came for a month to live the program, and thousands walked out with lower blood pressure, off medications, their numbers transformed."
-   },
-   {
-    "k": "",
-    "t": "When he died in 1985, the autopsy found arteries as clean as a young man's, and the finding was published in a medical journal as proof of concept."
-   },
-   {
-    "k": "",
-    "t": "Pritikin's program is simple and it's demanding. Eat food close to how it grew. Keep fat low. Keep fiber high. Walk forty-five minutes a day, every day. The residential form is still running, and it still works, because the method is just the first three weeks of a new life done under supervision until it sticks."
-   },
-   {
-    "k": "",
-    "t": "The key for the table chamber is the pairing. Pritikin never separated the plate from the walk. Food and movement were one prescription, and the walk was non-negotiable: forty-five minutes, daily, as part of the eating plan, not a separate fitness goal. A hundred and eight days of twenty minutes outside is more than halfway there. The question he'd ask is whether the plate has caught up to the walk."
    }
   ],
   "n": 162,
@@ -5570,6 +5570,36 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "all-plants-no-oil",
+  "title": "All plants, no oil",
+  "dek": "Two men, a biochemist and a surgeon, pushed the plant-based idea as far as it goes.",
+  "day": 109,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Two men, a biochemist and a surgeon, pushed the plant-based idea as far as it goes."
+   },
+   {
+    "k": "",
+    "t": "T. Colin Campbell was a nutrition researcher at Cornell who, from the 1980s, led a large study of diet and disease across rural China, where regional diets varied widely and so did cancer and heart disease rates. The counties eating the most animal food had the most disease. He wrote it up in 2005 as <em>The China Study</em>, and it became the founding text of the whole-food, plant-based movement. Caldwell Esselstyn was a surgeon at the Cleveland Clinic who put patients with advanced heart disease on a diet of vegetables, fruit, whole grains and beans, no oil, no animal products, and in 2007 published results showing their disease stopped and in many cases reversed. He kept following them for years."
+   },
+   {
+    "k": "",
+    "t": "The diet is the strictest on this part of the shelf. No meat, no dairy, no eggs, no fish, and, distinctively, no added oil, not even olive oil, which separates it from the Mediterranean pattern. Everything whole, everything plant. Campbell's epidemiology has been criticized, fairly, for drawing strong conclusions from correlations, and Esselstyn's studies were small. But the clinical results in heart patients are real, and the broader finding, that diets built mostly on whole plants reduce heart disease, diabetes and some cancers, is now mainstream."
+   },
+   {
+    "k": "",
+    "t": "Vault Human points to the approach without prescribing it. For some people, especially with serious heart disease, it's been the key that turned. For most, it's a direction: more plants, more whole, less packaged."
+   }
+  ],
+  "n": 164,
+  "date": "September 1, 2026",
+  "iso": "2026-09-01",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
   "slug": "i-can",
   "title": "I can",
   "dek": "Albert Bandura, a Stanford psychologist, spent the 1960s showing that people learn by watching others, and in 1977 he named the thing that decides whether what they…",
@@ -5595,36 +5625,6 @@ export const letters=[
    {
     "k": "",
     "t": "Here's the kind turn. If there's something you don't believe you can do, the answer isn't to believe harder. It's to do a smaller version until the belief catches up to the evidence."
-   }
-  ],
-  "n": 164,
-  "date": "September 2, 2026",
-  "iso": "2026-09-02",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
-  "slug": "all-plants-no-oil",
-  "title": "All plants, no oil",
-  "dek": "Two men, a biochemist and a surgeon, pushed the plant-based idea as far as it goes.",
-  "day": 110,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Two men, a biochemist and a surgeon, pushed the plant-based idea as far as it goes."
-   },
-   {
-    "k": "",
-    "t": "T. Colin Campbell was a nutrition researcher at Cornell who, from the 1980s, led a large study of diet and disease across rural China, where regional diets varied widely and so did cancer and heart disease rates. The counties eating the most animal food had the most disease. He wrote it up in 2005 as <em>The China Study</em>, and it became the founding text of the whole-food, plant-based movement. Caldwell Esselstyn was a surgeon at the Cleveland Clinic who put patients with advanced heart disease on a diet of vegetables, fruit, whole grains and beans, no oil, no animal products, and in 2007 published results showing their disease stopped and in many cases reversed. He kept following them for years."
-   },
-   {
-    "k": "",
-    "t": "The diet is the strictest on this part of the shelf. No meat, no dairy, no eggs, no fish, and, distinctively, no added oil, not even olive oil, which separates it from the Mediterranean pattern. Everything whole, everything plant. Campbell's epidemiology has been criticized, fairly, for drawing strong conclusions from correlations, and Esselstyn's studies were small. But the clinical results in heart patients are real, and the broader finding, that diets built mostly on whole plants reduce heart disease, diabetes and some cancers, is now mainstream."
-   },
-   {
-    "k": "",
-    "t": "Vault Human points to the approach without prescribing it. For some people, especially with serious heart disease, it's been the key that turned. For most, it's a direction: more plants, more whole, less packaged."
    }
   ],
   "n": 165,
@@ -5664,6 +5664,36 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "nutrients-per-calorie",
+  "title": "Nutrients per calorie",
+  "dek": "Joel Fuhrman is a physician who in 2003 wrote <em>Eat to Live</em> with one organizing idea: rank foods by how many micronutrients they deliver per calorie, and eat the ones…",
+  "day": 111,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Joel Fuhrman is a physician who in 2003 wrote <em>Eat to Live</em> with one organizing idea: rank foods by how many micronutrients they deliver per calorie, and eat the ones at the top. He called the approach nutritarian. By his ranking, leafy greens are at the summit, dense with vitamins, minerals and plant compounds for almost no calories; then other vegetables, beans, fruit, nuts and seeds; then whole grains; with meat, dairy, refined grains and oils far down the list."
+   },
+   {
+    "k": "",
+    "t": "His daily shorthand is an acronym, G-BOMBS: greens, beans, onions, mushrooms, berries, seeds. Eat some of each every day and, he argues, you've covered most of what the body needs and crowded out most of what hurts it. His results with patients, particularly with weight and diabetes, have been striking, though as with most diet approaches they rest more on clinical experience than on large trials."
+   },
+   {
+    "k": "",
+    "t": "What I keep from Fuhrman is the frame, which is different from counting calories or avoiding categories. Instead of asking what to cut, you ask what delivers the most. A plate built that way tends to be large, filling, and mostly plants, without any rule about portions, because the food itself regulates appetite. It's an abundance frame rather than a restriction frame, and for people who've spent decades on restriction, that shift alone can change the relationship with food."
+   },
+   {
+    "k": "",
+    "t": "Honest line: Fuhrman sells supplements and products, and we point to the idea, not the store. The six foods are at any grocery."
+   }
+  ],
+  "n": 167,
+  "date": "September 3, 2026",
+  "iso": "2026-09-03",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
   "slug": "speak-with-the-dying",
   "title": "Speak with the dying",
   "dek": "In the 1960s a Swiss-American psychiatrist at a Chicago hospital noticed that the dying were the loneliest people in the building.",
@@ -5689,36 +5719,6 @@ export const letters=[
    {
     "k": "",
     "t": "The practice she'd ask of you is to stop avoiding the room. The dying person in your life, or the aging one, or the one with the diagnosis: they're waiting for you to ask. Not to fix. To ask, and to stay."
-   }
-  ],
-  "n": 167,
-  "date": "September 4, 2026",
-  "iso": "2026-09-04",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
-  "slug": "nutrients-per-calorie",
-  "title": "Nutrients per calorie",
-  "dek": "Joel Fuhrman is a physician who in 2003 wrote <em>Eat to Live</em> with one organizing idea: rank foods by how many micronutrients they deliver per calorie, and eat the ones…",
-  "day": 112,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Joel Fuhrman is a physician who in 2003 wrote <em>Eat to Live</em> with one organizing idea: rank foods by how many micronutrients they deliver per calorie, and eat the ones at the top. He called the approach nutritarian. By his ranking, leafy greens are at the summit, dense with vitamins, minerals and plant compounds for almost no calories; then other vegetables, beans, fruit, nuts and seeds; then whole grains; with meat, dairy, refined grains and oils far down the list."
-   },
-   {
-    "k": "",
-    "t": "His daily shorthand is an acronym, G-BOMBS: greens, beans, onions, mushrooms, berries, seeds. Eat some of each every day and, he argues, you've covered most of what the body needs and crowded out most of what hurts it. His results with patients, particularly with weight and diabetes, have been striking, though as with most diet approaches they rest more on clinical experience than on large trials."
-   },
-   {
-    "k": "",
-    "t": "What I keep from Fuhrman is the frame, which is different from counting calories or avoiding categories. Instead of asking what to cut, you ask what delivers the most. A plate built that way tends to be large, filling, and mostly plants, without any rule about portions, because the food itself regulates appetite. It's an abundance frame rather than a restriction frame, and for people who've spent decades on restriction, that shift alone can change the relationship with food."
-   },
-   {
-    "k": "",
-    "t": "Honest line: Fuhrman sells supplements and products, and we point to the idea, not the store. The six foods are at any grocery."
    }
   ],
   "n": 168,
@@ -5758,6 +5758,36 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "the-daily-dozen",
+  "title": "The daily dozen",
+  "dek": "Michael Greger is a physician who, in 2015, took the evidence on diet and disease and wrote it into <em>How Not to Die</em>, a long book with a very short practical core: a…",
+  "day": 113,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Michael Greger is a physician who, in 2015, took the evidence on diet and disease and wrote it into <em>How Not to Die</em>, a long book with a very short practical core: a checklist. He called it the Daily Dozen. Twelve things, checked off each day. Beans. Berries. Other fruit. Cruciferous vegetables. Greens. Other vegetables. Flaxseed. Nuts and seeds. Herbs and spices. Whole grains. Beverages, mostly water. And exercise, ninety minutes moderate or forty vigorous."
+   },
+   {
+    "k": "",
+    "t": "The genius of it isn't the science, which is a summary of what the other keys in this stretch have already said: mostly plants, mostly whole. The genius is the format. A checklist is something a person can actually do. Most dietary advice is a philosophy; the Daily Dozen is a to-do list, and there's a free app that tracks it, and people use it, which is more than can be said for most nutrition books."
+   },
+   {
+    "k": "",
+    "t": "It's the table key that fits this year's method best. Every key you've received has come with one small action. Greger's whole approach is twelve small actions, repeated daily, until they're not actions but just what you eat. That's habit, the way Mandino and James meant it, applied to the plate."
+   },
+   {
+    "k": "",
+    "t": "I'll add the honest caveat. Greger argues the evidence further toward strict plant-based eating than many researchers would, and his nonprofit funds his work. The checklist is still a sound way to eat, and it's flexible: you don't need all twelve every day, and checking eight is better than checking three."
+   }
+  ],
+  "n": 170,
+  "date": "September 5, 2026",
+  "iso": "2026-09-05",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
   "slug": "prototype-don-t-plan",
   "title": "Prototype, don't plan",
   "dek": "In 2016 two Stanford professors, Bill Burnett and Dave Evans, published a book built from a course they'd taught for years to students terrified of choosing wrong.",
@@ -5783,36 +5813,6 @@ export const letters=[
    {
     "k": "",
     "t": "It's a Meaning key because it treats meaning as a design problem: not found, built, by iteration, with evidence. And it's hopeful in a way most career advice isn't. There's no wrong choice to fear. There's only the next prototype."
-   }
-  ],
-  "n": 170,
-  "date": "September 6, 2026",
-  "iso": "2026-09-06",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
-  "slug": "the-daily-dozen",
-  "title": "The daily dozen",
-  "dek": "Michael Greger is a physician who, in 2015, took the evidence on diet and disease and wrote it into <em>How Not to Die</em>, a long book with a very short practical core: a…",
-  "day": 114,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Michael Greger is a physician who, in 2015, took the evidence on diet and disease and wrote it into <em>How Not to Die</em>, a long book with a very short practical core: a checklist. He called it the Daily Dozen. Twelve things, checked off each day. Beans. Berries. Other fruit. Cruciferous vegetables. Greens. Other vegetables. Flaxseed. Nuts and seeds. Herbs and spices. Whole grains. Beverages, mostly water. And exercise, ninety minutes moderate or forty vigorous."
-   },
-   {
-    "k": "",
-    "t": "The genius of it isn't the science, which is a summary of what the other keys in this stretch have already said: mostly plants, mostly whole. The genius is the format. A checklist is something a person can actually do. Most dietary advice is a philosophy; the Daily Dozen is a to-do list, and there's a free app that tracks it, and people use it, which is more than can be said for most nutrition books."
-   },
-   {
-    "k": "",
-    "t": "It's the table key that fits this year's method best. Every key you've received has come with one small action. Greger's whole approach is twelve small actions, repeated daily, until they're not actions but just what you eat. That's habit, the way Mandino and James meant it, applied to the plate."
-   },
-   {
-    "k": "",
-    "t": "I'll add the honest caveat. Greger argues the evidence further toward strict plant-based eating than many researchers would, and his nonprofit funds his work. The checklist is still a sound way to eat, and it's flexible: you don't need all twelve every day, and checking eight is better than checking three."
    }
   ],
   "n": 171,
@@ -5852,6 +5852,40 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "seven-words",
+  "title": "Seven words",
+  "dek": "\"Eat food. Not too much. Mostly plants.\"",
+  "day": 115,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"Eat food. Not too much. Mostly plants.\" Michael Pollan, a journalist, put the whole of nutrition into seven words in 2008, in <em>In Defense of Food</em>, and I've never seen it improved on."
+   },
+   {
+    "k": "",
+    "t": "His argument was that we'd replaced eating with nutritionism: the idea that food is a delivery system for nutrients, that the nutrients can be studied one at a time, and that an expert can tell you which to add and which to cut. A century of that produced the most anxious, most medicalized, and least healthy eaters in human history. His alternative was to go back to food, by which he meant the things your great-grandmother would recognize as food, and to the way whole cultures have eaten for centuries without ever hearing the word antioxidant."
+   },
+   {
+    "k": "",
+    "t": "The seven words break down simply. Eat food: real food, not food-like products; if it has more than five ingredients, or ingredients you can't pronounce, or makes health claims on the package, it's probably not food. Not too much: eat slowly, stop when you're eighty percent full, eat at a table with others, and don't eat alone or in the car. Mostly plants: not exclusively, but plants at the center of the plate and everything else at the edges."
+   },
+   {
+    "k": "",
+    "t": "It sits here, near the end of the table keys, because it's the summary of all of them. Every program on this shelf, the Mediterranean, Pritikin, Ornish, the plant-based ones, DASH, agrees with the seven words. They differ on the details. The details matter less than people think."
+   },
+   {
+    "k": "",
+    "t": "For the month of Meaning: Pollan's deepest point was that eating is culture, not chemistry. A meal is a practice, shared, slow, and pleasurable, and the cultures that keep it that way are healthier than the ones that turned it into fuel."
+   }
+  ],
+  "n": 173,
+  "date": "September 7, 2026",
+  "iso": "2026-09-07",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
   "slug": "four-days-twenty-minutes",
   "title": "Four days, twenty minutes",
   "dek": "In 1986 a psychologist at the University of Texas named James Pennebaker ran an experiment that sounded too simple to work.",
@@ -5877,40 +5911,6 @@ export const letters=[
    {
     "k": "",
     "t": "A plain line: if the thing you'd write about is a trauma that's still raw, do this with a therapist, not alone. Pennebaker says so too."
-   }
-  ],
-  "n": 173,
-  "date": "September 8, 2026",
-  "iso": "2026-09-08",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
-  "slug": "seven-words",
-  "title": "Seven words",
-  "dek": "\"Eat food. Not too much. Mostly plants.\"",
-  "day": 116,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "\"Eat food. Not too much. Mostly plants.\" Michael Pollan, a journalist, put the whole of nutrition into seven words in 2008, in <em>In Defense of Food</em>, and I've never seen it improved on."
-   },
-   {
-    "k": "",
-    "t": "His argument was that we'd replaced eating with nutritionism: the idea that food is a delivery system for nutrients, that the nutrients can be studied one at a time, and that an expert can tell you which to add and which to cut. A century of that produced the most anxious, most medicalized, and least healthy eaters in human history. His alternative was to go back to food, by which he meant the things your great-grandmother would recognize as food, and to the way whole cultures have eaten for centuries without ever hearing the word antioxidant."
-   },
-   {
-    "k": "",
-    "t": "The seven words break down simply. Eat food: real food, not food-like products; if it has more than five ingredients, or ingredients you can't pronounce, or makes health claims on the package, it's probably not food. Not too much: eat slowly, stop when you're eighty percent full, eat at a table with others, and don't eat alone or in the car. Mostly plants: not exclusively, but plants at the center of the plate and everything else at the edges."
-   },
-   {
-    "k": "",
-    "t": "It sits here, near the end of the table keys, because it's the summary of all of them. Every program on this shelf, the Mediterranean, Pritikin, Ornish, the plant-based ones, DASH, agrees with the seven words. They differ on the details. The details matter less than people think."
-   },
-   {
-    "k": "",
-    "t": "For the month of Meaning: Pollan's deepest point was that eating is culture, not chemistry. A meal is a practice, shared, slow, and pleasurable, and the cultures that keep it that way are healthier than the ones that turned it into fuel."
    }
   ],
   "n": 174,
@@ -5950,40 +5950,10 @@ export const letters=[
   "chamber": 4
  },
  {
-  "slug": "the-base-of-the-pyramid",
-  "title": "The base of the pyramid",
-  "dek": "Abraham Maslow was a psychologist in New York who in 1943, when his field was mostly studying rats and the mentally ill, decided to study healthy people, the ones who…",
-  "day": 118,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Abraham Maslow was a psychologist in New York who in 1943, when his field was mostly studying rats and the mentally ill, decided to study healthy people, the ones who seemed fully alive, and ask what they had in common. His answer became the most famous diagram in psychology: a pyramid of needs. Physiological at the base, food, water, sleep. Safety above it. Then belonging and love. Then esteem, the respect of others and of yourself. And at the top, self-actualization: becoming everything you're capable of being."
-   },
-   {
-    "k": "",
-    "t": "The claim was that the lower needs press hardest, and that a person who's hungry or unsafe can't attend to belonging or purpose. Maslow himself said the pyramid was looser than the diagram suggests; people reach for meaning in famines and wars, and the levels overlap. But the picture has lasted because it's true enough to be useful. You can't build the top on a missing base."
-   },
-   {
-    "k": "",
-    "t": "Here's why it belongs in the chamber about meaning, late. A hundred and eighteen days ago this year began with sleep, food, a walk, and a log. That wasn't an accident. We built the base first, because Maslow was right: the person who wants meaning and isn't sleeping is trying to put a roof on air. Chambers One through Three were the bottom of the pyramid. This chamber is esteem and the beginning of the top."
-   },
-   {
-    "k": "",
-    "t": "What I'd keep from Maslow is his description of the people at the top. They weren't the richest or the most accomplished. They were the ones who'd accepted themselves, who had deep relationships with a few people, who were absorbed in work that mattered to them, and who had what he called peak experiences, moments of wonder that reorganized their sense of what life was for. That list is available to anyone with the base in place."
-   }
-  ],
-  "n": 176,
-  "date": "September 10, 2026",
-  "iso": "2026-09-10",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
   "slug": "the-diet-that-was-tested-for-blood-pressure",
   "title": "The diet that was tested for blood pressure",
   "dek": "Most diets are sold. This one was tested, by the government, on blood pressure, and it worked.",
-  "day": 118,
+  "day": 117,
   "vault": "body",
   "body": [
    {
@@ -6005,6 +5975,36 @@ export const letters=[
    {
     "k": "",
     "t": "And it closes this stretch of table keys with the number you wrote on day four. The cuff. DASH is the eating pattern with the best evidence for moving it."
+   }
+  ],
+  "n": 176,
+  "date": "September 9, 2026",
+  "iso": "2026-09-09",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
+  "slug": "the-base-of-the-pyramid",
+  "title": "The base of the pyramid",
+  "dek": "Abraham Maslow was a psychologist in New York who in 1943, when his field was mostly studying rats and the mentally ill, decided to study healthy people, the ones who…",
+  "day": 118,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Abraham Maslow was a psychologist in New York who in 1943, when his field was mostly studying rats and the mentally ill, decided to study healthy people, the ones who seemed fully alive, and ask what they had in common. His answer became the most famous diagram in psychology: a pyramid of needs. Physiological at the base, food, water, sleep. Safety above it. Then belonging and love. Then esteem, the respect of others and of yourself. And at the top, self-actualization: becoming everything you're capable of being."
+   },
+   {
+    "k": "",
+    "t": "The claim was that the lower needs press hardest, and that a person who's hungry or unsafe can't attend to belonging or purpose. Maslow himself said the pyramid was looser than the diagram suggests; people reach for meaning in famines and wars, and the levels overlap. But the picture has lasted because it's true enough to be useful. You can't build the top on a missing base."
+   },
+   {
+    "k": "",
+    "t": "Here's why it belongs in the chamber about meaning, late. A hundred and eighteen days ago this year began with sleep, food, a walk, and a log. That wasn't an accident. We built the base first, because Maslow was right: the person who wants meaning and isn't sleeping is trying to put a roof on air. Chambers One through Three were the bottom of the pyramid. This chamber is esteem and the beginning of the top."
+   },
+   {
+    "k": "",
+    "t": "What I'd keep from Maslow is his description of the people at the top. They weren't the richest or the most accomplished. They were the ones who'd accepted themselves, who had deep relationships with a few people, who were absorbed in work that mattered to them, and who had what he called peak experiences, moments of wonder that reorganized their sense of what life was for. That list is available to anyone with the base in place."
    }
   ],
   "n": 177,
@@ -6048,6 +6048,36 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "the-table-for-your-brain",
+  "title": "The table for your brain",
+  "dek": "In 2015 a nutritional epidemiologist at Rush University in Chicago named Martha Clare Morris published a diet designed for a single organ.",
+  "day": 119,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 2015 a nutritional epidemiologist at Rush University in Chicago named Martha Clare Morris published a diet designed for a single organ. She'd spent years following older adults in Chicago, tracking what they ate and how their minds aged, and she took the two best-studied patterns, Mediterranean and DASH, and kept only the parts that showed up again and again in the people whose thinking stayed sharp. She called it the MIND diet."
+   },
+   {
+    "k": "",
+    "t": "Its rules are specific in a way most diets aren't. Leafy greens, six servings a week, at least. Other vegetables daily. Berries, twice a week; specifically berries, not other fruit, because the evidence for them on the brain was strongest. Nuts most days. Beans several times a week. Whole grains daily. Fish once a week. Poultry twice. Olive oil as the main fat. Wine, one glass. And limits on the five things that hurt: butter, cheese, red meat, fried food, and sweets."
+   },
+   {
+    "k": "",
+    "t": "Her first study found that people who followed it closely had a substantially lower rate of Alzheimer's over several years, and that even moderate adherence helped. A larger randomized trial that followed found smaller effects, which is honest science doing its work. The pattern still stands as the best available guess at how to feed a brain."
+   },
+   {
+    "k": "",
+    "t": "It opens the second stretch of table keys because the Meaning chamber is about the mind, and the mind runs on what you eat. Six servings of greens a week isn't a diet. It's a habit, kept for decades, that keeps the organ you make meaning with."
+   }
+  ],
+  "n": 179,
+  "date": "September 11, 2026",
+  "iso": "2026-09-11",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
   "slug": "two-speeds-of-thought",
   "title": "Two speeds of thought",
   "dek": "Daniel Kahneman was a psychologist who won the Nobel Prize in economics for showing that people don't decide the way economists assumed, and in 2011 he wrote the book…",
@@ -6073,36 +6103,6 @@ export const letters=[
    {
     "k": "",
     "t": "A hundred and twenty days of a log is a hundred and twenty invitations for system two. The log is the slow system, writing down what the fast one did."
-   }
-  ],
-  "n": 179,
-  "date": "September 12, 2026",
-  "iso": "2026-09-12",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
-  "slug": "the-table-for-your-brain",
-  "title": "The table for your brain",
-  "dek": "In 2015 a nutritional epidemiologist at Rush University in Chicago named Martha Clare Morris published a diet designed for a single organ.",
-  "day": 120,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 2015 a nutritional epidemiologist at Rush University in Chicago named Martha Clare Morris published a diet designed for a single organ. She'd spent years following older adults in Chicago, tracking what they ate and how their minds aged, and she took the two best-studied patterns, Mediterranean and DASH, and kept only the parts that showed up again and again in the people whose thinking stayed sharp. She called it the MIND diet."
-   },
-   {
-    "k": "",
-    "t": "Its rules are specific in a way most diets aren't. Leafy greens, six servings a week, at least. Other vegetables daily. Berries, twice a week; specifically berries, not other fruit, because the evidence for them on the brain was strongest. Nuts most days. Beans several times a week. Whole grains daily. Fish once a week. Poultry twice. Olive oil as the main fat. Wine, one glass. And limits on the five things that hurt: butter, cheese, red meat, fried food, and sweets."
-   },
-   {
-    "k": "",
-    "t": "Her first study found that people who followed it closely had a substantially lower rate of Alzheimer's over several years, and that even moderate adherence helped. A larger randomized trial that followed found smaller effects, which is honest science doing its work. The pattern still stands as the best available guess at how to feed a brain."
-   },
-   {
-    "k": "",
-    "t": "It opens the second stretch of table keys because the Meaning chamber is about the mind, and the mind runs on what you eat. Six servings of greens a week isn't a diet. It's a habit, kept for decades, that keeps the organ you make meaning with."
    }
   ],
   "n": 180,
@@ -6146,6 +6146,40 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "four-foods-that-lower-cholesterol",
+  "title": "Four foods that lower cholesterol",
+  "dek": "In 2003 a Canadian physician named David Jenkins, who'd earlier invented the glycemic index, ran a trial that treated food like a drug.",
+  "day": 121,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 2003 a Canadian physician named David Jenkins, who'd earlier invented the glycemic index, ran a trial that treated food like a drug. He gave people with high cholesterol four things to eat every day: plant sterols, the compounds in margarines and some supplements that block cholesterol absorption; viscous fiber, from oats, barley, psyllium and okra, which carries cholesterol out; soy protein, in place of animal protein; and nuts, especially almonds. Together. Daily. He called it the Portfolio diet, after an investment portfolio: no single holding does the job, but the combination does."
+   },
+   {
+    "k": "",
+    "t": "The result, published in a major journal, was that the four foods together lowered LDL cholesterol by about as much as a starting dose of a statin drug. Later trials confirmed it, and the pattern is now in cardiology guidelines as a dietary option."
+   },
+   {
+    "k": "",
+    "t": "What I find useful isn't the specific four, though they're sound. It's the idea of a portfolio. Most diet advice is one thing: cut this, add that. Jenkins showed that modest changes, stacked, do more than any one dramatic change, and that the stacking is the strategy. A bowl of oats. A handful of almonds. Tofu instead of chicken twice a week. A spread with sterols. Each is small. The sum moved a lab value by a clinically meaningful amount."
+   },
+   {
+    "k": "",
+    "t": "That's this year's method, in a cholesterol trial. No single key changes a life. A hundred and twenty-two of them, stacked, do."
+   },
+   {
+    "k": "",
+    "t": "A plain line: if your cholesterol is high, this is a conversation with a physician, and the portfolio is something to bring to it, not a replacement for it."
+   }
+  ],
+  "n": 182,
+  "date": "September 13, 2026",
+  "iso": "2026-09-13",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
   "slug": "more-than-one-way-to-be-smart",
   "title": "More than one way to be smart",
   "dek": "In 1983 a Harvard psychologist named Howard Gardner published <em>Frames of Mind</em> and argued against the single number that had ruled a century of schooling.",
@@ -6171,40 +6205,6 @@ export const letters=[
    {
     "k": "",
     "t": "And it bears on what you'll make. Meaning comes from working in your strongest intelligence, not your most rewarded one. The mirrors in the first month asked a version of this. Gardner asks it about the mind itself."
-   }
-  ],
-  "n": 182,
-  "date": "September 14, 2026",
-  "iso": "2026-09-14",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
-  "slug": "four-foods-that-lower-cholesterol",
-  "title": "Four foods that lower cholesterol",
-  "dek": "In 2003 a Canadian physician named David Jenkins, who'd earlier invented the glycemic index, ran a trial that treated food like a drug.",
-  "day": 122,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 2003 a Canadian physician named David Jenkins, who'd earlier invented the glycemic index, ran a trial that treated food like a drug. He gave people with high cholesterol four things to eat every day: plant sterols, the compounds in margarines and some supplements that block cholesterol absorption; viscous fiber, from oats, barley, psyllium and okra, which carries cholesterol out; soy protein, in place of animal protein; and nuts, especially almonds. Together. Daily. He called it the Portfolio diet, after an investment portfolio: no single holding does the job, but the combination does."
-   },
-   {
-    "k": "",
-    "t": "The result, published in a major journal, was that the four foods together lowered LDL cholesterol by about as much as a starting dose of a statin drug. Later trials confirmed it, and the pattern is now in cardiology guidelines as a dietary option."
-   },
-   {
-    "k": "",
-    "t": "What I find useful isn't the specific four, though they're sound. It's the idea of a portfolio. Most diet advice is one thing: cut this, add that. Jenkins showed that modest changes, stacked, do more than any one dramatic change, and that the stacking is the strategy. A bowl of oats. A handful of almonds. Tofu instead of chicken twice a week. A spread with sterols. Each is small. The sum moved a lab value by a clinically meaningful amount."
-   },
-   {
-    "k": "",
-    "t": "That's this year's method, in a cholesterol trial. No single key changes a life. A hundred and twenty-two of them, stacked, do."
-   },
-   {
-    "k": "",
-    "t": "A plain line: if your cholesterol is high, this is a conversation with a physician, and the portfolio is something to bring to it, not a replacement for it."
    }
   ],
   "n": 183,
@@ -6248,6 +6248,40 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "eat-more-food-fewer-calories",
+  "title": "Eat more food, fewer calories",
+  "dek": "Barbara Rolls is a nutrition scientist at Penn State who spent decades on a question nobody had asked carefully: what makes people feel full?",
+  "day": 123,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Barbara Rolls is a nutrition scientist at Penn State who spent decades on a question nobody had asked carefully: what makes people feel full? Her answer, published in 2000 as <em>Volumetrics</em>, was surprising and useful. People eat roughly the same weight of food each day regardless of its calories. Fullness comes from volume, not from energy. So the way to eat less energy without feeling deprived is to eat foods that carry more water and fiber and fewer calories per bite."
+   },
+   {
+    "k": "",
+    "t": "Her ranking is by calorie density. At the bottom, nearly free: broth-based soups, most vegetables, fruit, which are mostly water. In the middle: whole grains, beans, lean protein, which are dense in nutrients and moderately dense in calories. At the top: dry foods, cheese, nuts, oils, crackers, chips, which pack enormous energy into a small volume and leave you hungry."
+   },
+   {
+    "k": "",
+    "t": "The practice follows. Start every meal with the low-density foods: a soup, a salad, a plate of vegetables. Fill up on them. Then eat the rest. A plate that looks and weighs the same as before carries a third fewer calories, and the body, which was counting weight, is satisfied."
+   },
+   {
+    "k": "",
+    "t": "It's a Meaning-chamber table key because it's the kindest weight approach on the shelf. No forbidden foods. No hunger. No willpower. Just a reordering of the plate so the body's own fullness signals do the work. For anyone who's spent years fighting appetite, Rolls says: stop fighting it. Feed it water and fiber first and it goes quiet."
+   },
+   {
+    "k": "",
+    "t": "It also rhymes with the set point from day six. The thermostat defends against hunger. Volumetrics is how you lose without triggering the alarm."
+   }
+  ],
+  "n": 185,
+  "date": "September 15, 2026",
+  "iso": "2026-09-15",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
   "slug": "the-mind-that-writes-its-own-script",
   "title": "The mind that writes its own script",
   "dek": "Robert Kegan is a Harvard developmental psychologist who, starting in 1982, mapped something Piaget had left out: how adults keep growing after the body has stopped.",
@@ -6273,40 +6307,6 @@ export const letters=[
    {
     "k": "",
     "t": "And the kind part: if you recognize yourself in the socialized mind, you're in the majority, and the next mind is reachable. It's not a verdict. It's a direction."
-   }
-  ],
-  "n": 185,
-  "date": "September 16, 2026",
-  "iso": "2026-09-16",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
-  "slug": "eat-more-food-fewer-calories",
-  "title": "Eat more food, fewer calories",
-  "dek": "Barbara Rolls is a nutrition scientist at Penn State who spent decades on a question nobody had asked carefully: what makes people feel full?",
-  "day": 124,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Barbara Rolls is a nutrition scientist at Penn State who spent decades on a question nobody had asked carefully: what makes people feel full? Her answer, published in 2000 as <em>Volumetrics</em>, was surprising and useful. People eat roughly the same weight of food each day regardless of its calories. Fullness comes from volume, not from energy. So the way to eat less energy without feeling deprived is to eat foods that carry more water and fiber and fewer calories per bite."
-   },
-   {
-    "k": "",
-    "t": "Her ranking is by calorie density. At the bottom, nearly free: broth-based soups, most vegetables, fruit, which are mostly water. In the middle: whole grains, beans, lean protein, which are dense in nutrients and moderately dense in calories. At the top: dry foods, cheese, nuts, oils, crackers, chips, which pack enormous energy into a small volume and leave you hungry."
-   },
-   {
-    "k": "",
-    "t": "The practice follows. Start every meal with the low-density foods: a soup, a salad, a plate of vegetables. Fill up on them. Then eat the rest. A plate that looks and weighs the same as before carries a third fewer calories, and the body, which was counting weight, is satisfied."
-   },
-   {
-    "k": "",
-    "t": "It's a Meaning-chamber table key because it's the kindest weight approach on the shelf. No forbidden foods. No hunger. No willpower. Just a reordering of the plate so the body's own fullness signals do the work. For anyone who's spent years fighting appetite, Rolls says: stop fighting it. Feed it water and fiber first and it goes quiet."
-   },
-   {
-    "k": "",
-    "t": "It also rhymes with the set point from day six. The thermostat defends against hunger. Volumetrics is how you lose without triggering the alarm."
    }
   ],
   "n": 186,
@@ -6346,40 +6346,10 @@ export const letters=[
   "chamber": 4
  },
  {
-  "slug": "a-different-voice",
-  "title": "A different voice",
-  "dek": "In 1982 a Harvard psychologist named Carol Gilligan published <em>In a Different Voice</em>, and it began with a problem in her own field.",
-  "day": 126,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1982 a Harvard psychologist named Carol Gilligan published <em>In a Different Voice</em>, and it began with a problem in her own field. The leading theory of moral development, built by her mentor, ranked people by how well they reasoned about justice and rights, abstractly, from principle. Women consistently scored lower. Gilligan went and listened to how women actually reasoned about moral questions, and found they weren't reasoning worse. They were reasoning differently: in terms of relationship, responsibility, and care for the particular people involved, rather than abstract rules."
-   },
-   {
-    "k": "",
-    "t": "She called it an ethic of care, and she argued that it wasn't a lesser form of morality but a second, equally mature one that the field had simply failed to hear. The book reorganized moral psychology, and it's been argued about ever since: whether the difference is really about gender, whether care and justice are separable at all. What's held up is the voice itself. There is a way of being good that asks not \"what's the rule?\" but \"who's affected, and what do they need?\""
-   },
-   {
-    "k": "",
-    "t": "It's in the Meaning chamber because how you decide what's right is most of how you decide what matters. A person reasoning only from principle can be right and cruel. A person reasoning only from care can be kind and unjust. Gilligan's gift was to name the second voice so that both could be heard."
-   },
-   {
-    "k": "",
-    "t": "I hear this one in my own work constantly. Legal reasoning is almost all justice voice: rules, rights, precedent. The families in front of me are almost all care voice: who gets hurt, who's been left out, what does Mom actually need. The best outcomes come when both voices are in the room."
-   }
-  ],
-  "n": 188,
-  "date": "September 18, 2026",
-  "iso": "2026-09-18",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
   "slug": "hunger-as-the-guide",
   "title": "Hunger as the guide",
   "dek": "In 1995 two dietitians, Evelyn Tribole and Elyse Resch, wrote a book for the people the diet industry had failed, which was most of their clients: people who'd lost…",
-  "day": 126,
+  "day": 125,
   "vault": "body",
   "body": [
    {
@@ -6401,6 +6371,36 @@ export const letters=[
    {
     "k": "",
     "t": "It belongs in the Meaning chamber because it returns authorship. Every other table key is someone else's plan. This one says: your body knows, if you'll listen, and the practice is learning to listen again. A hundred and twenty-six days of attention have made you a better listener. Point it at your plate."
+   }
+  ],
+  "n": 188,
+  "date": "September 17, 2026",
+  "iso": "2026-09-17",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
+  "slug": "a-different-voice",
+  "title": "A different voice",
+  "dek": "In 1982 a Harvard psychologist named Carol Gilligan published <em>In a Different Voice</em>, and it began with a problem in her own field.",
+  "day": 126,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1982 a Harvard psychologist named Carol Gilligan published <em>In a Different Voice</em>, and it began with a problem in her own field. The leading theory of moral development, built by her mentor, ranked people by how well they reasoned about justice and rights, abstractly, from principle. Women consistently scored lower. Gilligan went and listened to how women actually reasoned about moral questions, and found they weren't reasoning worse. They were reasoning differently: in terms of relationship, responsibility, and care for the particular people involved, rather than abstract rules."
+   },
+   {
+    "k": "",
+    "t": "She called it an ethic of care, and she argued that it wasn't a lesser form of morality but a second, equally mature one that the field had simply failed to hear. The book reorganized moral psychology, and it's been argued about ever since: whether the difference is really about gender, whether care and justice are separable at all. What's held up is the voice itself. There is a way of being good that asks not \"what's the rule?\" but \"who's affected, and what do they need?\""
+   },
+   {
+    "k": "",
+    "t": "It's in the Meaning chamber because how you decide what's right is most of how you decide what matters. A person reasoning only from principle can be right and cruel. A person reasoning only from care can be kind and unjust. Gilligan's gift was to name the second voice so that both could be heard."
+   },
+   {
+    "k": "",
+    "t": "I hear this one in my own work constantly. Legal reasoning is almost all justice voice: rules, rights, precedent. The families in front of me are almost all care voice: who gets hurt, who's been left out, what does Mom actually need. The best outcomes come when both voices are in the room."
    }
   ],
   "n": 189,
@@ -6444,6 +6444,36 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "cut-the-sugar-and-starch",
+  "title": "Cut the sugar and starch",
+  "dek": "In 1863 a London undertaker named William Banting, so heavy he had to walk downstairs backward, published a sixteen-page pamphlet describing how he'd lost fifty pounds.",
+  "day": 127,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1863 a London undertaker named William Banting, so heavy he had to walk downstairs backward, published a sixteen-page pamphlet describing how he'd lost fifty pounds. <em>Letter on Corpulence</em>. His doctor had told him to stop eating bread, sugar, potatoes and beer, and to eat meat, fish, vegetables and a little fruit instead. It worked, and for a century afterward in Britain, \"banting\" meant dieting. In 1972 an American cardiologist named Robert Atkins revived it for a new generation, and low-carbohydrate eating has been in and out of fashion ever since."
+   },
+   {
+    "k": "",
+    "t": "The idea is simple. Carbohydrates, sugars and starches, raise blood sugar and insulin; insulin stores fat and blocks its release. Cut the carbohydrate, and insulin falls, and the body runs more on fat. A moderate low-carb diet lands somewhere around fifty to a hundred grams of carbohydrate a day: no sugar, no bread, no pasta, no potatoes, but vegetables, fruit in moderation, nuts, dairy, meat, fish and eggs."
+   },
+   {
+    "k": "",
+    "t": "The research, after decades of argument, has mostly settled into something undramatic. Low-carb diets work well for weight loss, especially at first and especially for people with insulin resistance and type 2 diabetes, where the blood sugar effects are substantial. Over a year or two, they perform about as well as other sensible diets; what matters most is which one a person can keep. The scariest claims against them, on heart health, haven't held up; neither have the grandest claims for them."
+   },
+   {
+    "k": "",
+    "t": "Vault Human holds it as one sound door among several. For some bodies, particularly ones that struggle with blood sugar, it's the key that turns. The set point from day six still applies, and so does the thermostat."
+   }
+  ],
+  "n": 191,
+  "date": "September 19, 2026",
+  "iso": "2026-09-19",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
   "slug": "dialogue-on-the-page",
   "title": "Dialogue on the page",
   "dek": "Ira Progoff was a psychotherapist who in 1966 built a method of journaling so structured that it became a kind of therapy without a therapist.",
@@ -6469,36 +6499,6 @@ export const letters=[
    {
     "k": "",
     "t": "A hundred and twenty-eight days of three-line logs have built the daily-log section already. Today you add one dialogue, and you let the other side speak."
-   }
-  ],
-  "n": 191,
-  "date": "September 20, 2026",
-  "iso": "2026-09-20",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
-  "slug": "cut-the-sugar-and-starch",
-  "title": "Cut the sugar and starch",
-  "dek": "In 1863 a London undertaker named William Banting, so heavy he had to walk downstairs backward, published a sixteen-page pamphlet describing how he'd lost fifty pounds.",
-  "day": 128,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1863 a London undertaker named William Banting, so heavy he had to walk downstairs backward, published a sixteen-page pamphlet describing how he'd lost fifty pounds. <em>Letter on Corpulence</em>. His doctor had told him to stop eating bread, sugar, potatoes and beer, and to eat meat, fish, vegetables and a little fruit instead. It worked, and for a century afterward in Britain, \"banting\" meant dieting. In 1972 an American cardiologist named Robert Atkins revived it for a new generation, and low-carbohydrate eating has been in and out of fashion ever since."
-   },
-   {
-    "k": "",
-    "t": "The idea is simple. Carbohydrates, sugars and starches, raise blood sugar and insulin; insulin stores fat and blocks its release. Cut the carbohydrate, and insulin falls, and the body runs more on fat. A moderate low-carb diet lands somewhere around fifty to a hundred grams of carbohydrate a day: no sugar, no bread, no pasta, no potatoes, but vegetables, fruit in moderation, nuts, dairy, meat, fish and eggs."
-   },
-   {
-    "k": "",
-    "t": "The research, after decades of argument, has mostly settled into something undramatic. Low-carb diets work well for weight loss, especially at first and especially for people with insulin resistance and type 2 diabetes, where the blood sugar effects are substantial. Over a year or two, they perform about as well as other sensible diets; what matters most is which one a person can keep. The scariest claims against them, on heart health, haven't held up; neither have the grandest claims for them."
-   },
-   {
-    "k": "",
-    "t": "Vault Human holds it as one sound door among several. For some bodies, particularly ones that struggle with blood sugar, it's the key that turns. The set point from day six still applies, and so does the thermostat."
    }
   ],
   "n": 192,
@@ -6542,36 +6542,10 @@ export const letters=[
   "chamber": 4
  },
  {
-  "slug": "the-environment-is-the-third-teacher",
-  "title": "The environment is the third teacher",
-  "dek": "In 1945, in the ruins of a small town in northern Italy, the parents of Reggio Emilia built a school with their own hands from the rubble of the war, selling a tank…",
-  "day": 130,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1945, in the ruins of a small town in northern Italy, the parents of Reggio Emilia built a school with their own hands from the rubble of the war, selling a tank the Germans had left behind to pay for bricks. A young teacher named Loris Malaguzzi heard about it, rode over on his bicycle, and spent the rest of his life building what became the most admired approach to early education in the world."
-   },
-   {
-    "k": "",
-    "t": "Its principles. The child is capable: not an empty vessel but a researcher, full of theories, who deserves to be taken seriously. Learning is a collaboration: children work in small groups on long projects they help choose, and the teacher is a partner, not an authority. The hundred languages: children express understanding in drawing, clay, movement, music, building, and all of them count as thinking. Documentation: the teachers photograph, transcribe and display the children's work and words, so the children can see their own thinking and revisit it. And the environment is the third teacher: after the parent and the teacher, the room itself, which is built with light, beauty, real materials and spaces for small groups, because a beautiful space teaches that the work done in it matters."
-   },
-   {
-    "k": "",
-    "t": "For the Meaning chamber, three keys from Reggio. The hundred languages: meaning isn't only made in words; make it in whatever language is yours. Documentation: the log is your documentation, and reading it back is how you see your own thinking. And the third teacher: the space you make meaning in shapes the meaning you make. Montessori said it on day one hundred and one. Reggio says it with more beauty."
-   }
-  ],
-  "n": 194,
-  "date": "September 22, 2026",
-  "iso": "2026-09-22",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
   "slug": "running-on-ketones",
   "title": "Running on ketones",
   "dek": "In 1921 a physician at the Mayo Clinic named Russell Wilder proposed a diet for children with epilepsy that nothing else was helping.",
-  "day": 130,
+  "day": 129,
   "vault": "body",
   "body": [
    {
@@ -6589,6 +6563,32 @@ export const letters=[
    {
     "k": "",
     "t": "What I keep is Wilder's insight: the body has two fuels, and most of us have never used the second. Even without going fully ketogenic, the experience of letting the body burn fat for a stretch, through a lower-carb day or an overnight fast extended to lunch, teaches something about hunger that the sugar-fed body never learns: it passes."
+   }
+  ],
+  "n": 194,
+  "date": "September 21, 2026",
+  "iso": "2026-09-21",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
+  "slug": "the-environment-is-the-third-teacher",
+  "title": "The environment is the third teacher",
+  "dek": "In 1945, in the ruins of a small town in northern Italy, the parents of Reggio Emilia built a school with their own hands from the rubble of the war, selling a tank…",
+  "day": 130,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1945, in the ruins of a small town in northern Italy, the parents of Reggio Emilia built a school with their own hands from the rubble of the war, selling a tank the Germans had left behind to pay for bricks. A young teacher named Loris Malaguzzi heard about it, rode over on his bicycle, and spent the rest of his life building what became the most admired approach to early education in the world."
+   },
+   {
+    "k": "",
+    "t": "Its principles. The child is capable: not an empty vessel but a researcher, full of theories, who deserves to be taken seriously. Learning is a collaboration: children work in small groups on long projects they help choose, and the teacher is a partner, not an authority. The hundred languages: children express understanding in drawing, clay, movement, music, building, and all of them count as thinking. Documentation: the teachers photograph, transcribe and display the children's work and words, so the children can see their own thinking and revisit it. And the environment is the third teacher: after the parent and the teacher, the room itself, which is built with light, beauty, real materials and spaces for small groups, because a beautiful space teaches that the work done in it matters."
+   },
+   {
+    "k": "",
+    "t": "For the Meaning chamber, three keys from Reggio. The hundred languages: meaning isn't only made in words; make it in whatever language is yours. Documentation: the log is your documentation, and reading it back is how you see your own thinking. And the third teacher: the space you make meaning in shapes the meaning you make. Montessori said it on day one hundred and one. Reggio says it with more beauty."
    }
   ],
   "n": 195,
@@ -6632,6 +6632,40 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "eating-like-your-oldest-ancestors",
+  "title": "Eating like your oldest ancestors",
+  "dek": "In 1985 two scholars at Emory, a physician named Boyd Eaton and an anthropologist named Melvin Konner, published a paper in a major medical journal with a provocative…",
+  "day": 131,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1985 two scholars at Emory, a physician named Boyd Eaton and an anthropologist named Melvin Konner, published a paper in a major medical journal with a provocative idea: the human body was shaped by two million years of hunting and gathering, agriculture is only ten thousand years old, and many of our modern diseases come from eating foods our genes never met. They called it Paleolithic nutrition, and the paleo diet grew from it."
+   },
+   {
+    "k": "",
+    "t": "The pattern: meat, fish, eggs, vegetables, fruit, nuts and seeds. No grains, no dairy, no legumes, no refined sugar or oils, because those arrived with farming. The logic is evolutionary: eat what your ancestors ate, and the mismatch goes away."
+   },
+   {
+    "k": "",
+    "t": "The idea has been tested and argued over for forty years. The strongest finding is that people on a paleo pattern tend to eat more vegetables and protein and far less processed food than before, and they do well, with improvements in weight, blood pressure and blood sugar in short trials. The weakest part is the history: there was no single Paleolithic diet, ancestral humans ate wildly differently depending on where they lived, and the foods we have now, even the meat and vegetables, are nothing like what they ate. Grains and legumes, excluded by the rule, are in nearly every long-lived population on earth."
+   },
+   {
+    "k": "",
+    "t": "So Vault Human keeps the direction and drops the dogma. The direction is excellent: real food, lots of plants, quality protein, nothing from a factory. That's what every sensible key on this shelf says, and paleo says it with a story that helps some people stick to it."
+   },
+   {
+    "k": "",
+    "t": "For the Meaning chamber: Eaton and Konner's deeper point was about mismatch, and it applies beyond food. We have bodies built for one world living in another. Noticing the mismatch, in food, in movement, in sleep, in light, is most of what this year has been."
+   }
+  ],
+  "n": 197,
+  "date": "September 23, 2026",
+  "iso": "2026-09-23",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
   "slug": "the-second-half",
   "title": "The second half",
   "dek": "James Hollis is a Jungian analyst who in 2005 wrote <em>Finding Meaning in the Second Half of Life</em>, a book for the people who've done everything they were supposed to,…",
@@ -6657,40 +6691,6 @@ export const letters=[
    {
     "k": "",
     "t": "I'd add that you don't have to be fifty for this key. The second half of life, in Jung's sense, begins whenever the adapted self stops being enough. For some people that's thirty-five. For some it's seventy. The question is the same."
-   }
-  ],
-  "n": 197,
-  "date": "September 24, 2026",
-  "iso": "2026-09-24",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
-  "slug": "eating-like-your-oldest-ancestors",
-  "title": "Eating like your oldest ancestors",
-  "dek": "In 1985 two scholars at Emory, a physician named Boyd Eaton and an anthropologist named Melvin Konner, published a paper in a major medical journal with a provocative…",
-  "day": 132,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1985 two scholars at Emory, a physician named Boyd Eaton and an anthropologist named Melvin Konner, published a paper in a major medical journal with a provocative idea: the human body was shaped by two million years of hunting and gathering, agriculture is only ten thousand years old, and many of our modern diseases come from eating foods our genes never met. They called it Paleolithic nutrition, and the paleo diet grew from it."
-   },
-   {
-    "k": "",
-    "t": "The pattern: meat, fish, eggs, vegetables, fruit, nuts and seeds. No grains, no dairy, no legumes, no refined sugar or oils, because those arrived with farming. The logic is evolutionary: eat what your ancestors ate, and the mismatch goes away."
-   },
-   {
-    "k": "",
-    "t": "The idea has been tested and argued over for forty years. The strongest finding is that people on a paleo pattern tend to eat more vegetables and protein and far less processed food than before, and they do well, with improvements in weight, blood pressure and blood sugar in short trials. The weakest part is the history: there was no single Paleolithic diet, ancestral humans ate wildly differently depending on where they lived, and the foods we have now, even the meat and vegetables, are nothing like what they ate. Grains and legumes, excluded by the rule, are in nearly every long-lived population on earth."
-   },
-   {
-    "k": "",
-    "t": "So Vault Human keeps the direction and drops the dogma. The direction is excellent: real food, lots of plants, quality protein, nothing from a factory. That's what every sensible key on this shelf says, and paleo says it with a story that helps some people stick to it."
-   },
-   {
-    "k": "",
-    "t": "For the Meaning chamber: Eaton and Konner's deeper point was about mismatch, and it applies beyond food. We have bodies built for one world living in another. Noticing the mismatch, in food, in movement, in sleep, in light, is most of what this year has been."
    }
   ],
   "n": 198,
@@ -6734,6 +6734,36 @@ export const letters=[
   "chamber": 4
  },
  {
+  "slug": "the-year-on-meat-alone",
+  "title": "The year on meat alone",
+  "dek": "In 1928 an Arctic explorer named Vilhjalmur Stefansson, who'd lived for years among the Inuit eating nothing but meat and fat and claimed to have thrived, agreed to…",
+  "day": 133,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1928 an Arctic explorer named Vilhjalmur Stefansson, who'd lived for years among the Inuit eating nothing but meat and fat and claimed to have thrived, agreed to prove it under supervision. He and a companion checked into Bellevue Hospital in New York and ate only meat for a full year, monitored by physicians. They stayed healthy. The study was published, and it sat as a curiosity for ninety years until the carnivore diet revived it online in the 2010s: meat, organs, eggs and fat, nothing else, with beef as the staple."
+   },
+   {
+    "k": "",
+    "t": "I'll give you the honest picture, because this one needs it. Carnivore works for some people as an elimination diet: when every plant food is removed, people with certain digestive and autoimmune troubles sometimes feel dramatically better, and that tells them something useful about what they're reacting to. The long-term evidence for healthy people is nearly nonexistent, the online community has made claims far beyond anything tested, and the diet removes fiber, most vitamins C and K, and nearly every food that long-lived populations eat. Stefansson's year was two men, not a trial."
+   },
+   {
+    "k": "",
+    "t": "Vault Human holds it as a tool, not a way of life: a short, supervised elimination for someone with a specific problem, done with a physician, to learn something. Not a lifestyle."
+   },
+   {
+    "k": "",
+    "t": "Here's what I'd take from it for the Meaning chamber's table. Stefansson's story is really about trust in direct experience over received wisdom. He ate the way the Inuit ate and watched what happened to his own body. That's the Charvaka rule from day one hundred, pointed at a plate. The lesson isn't to eat only meat. It's to notice how you actually feel after what you actually eat."
+   }
+  ],
+  "n": 200,
+  "date": "September 25, 2026",
+  "iso": "2026-09-25",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
   "slug": "remade-in-his-own-voice",
   "title": "Remade in his own voice",
   "dek": "The last key of the fourth month is a book about a man who remade himself more than once, in public, and told the whole story in his own words.",
@@ -6759,36 +6789,6 @@ export const letters=[
    {
     "k": "",
     "t": "Every key in this year has asked for a small daily discipline. His life says what a small daily discipline can build, and what it can let a person become, and become again."
-   }
-  ],
-  "n": 200,
-  "date": "September 26, 2026",
-  "iso": "2026-09-26",
-  "month": "September 2026",
-  "chamber": 4
- },
- {
-  "slug": "the-year-on-meat-alone",
-  "title": "The year on meat alone",
-  "dek": "In 1928 an Arctic explorer named Vilhjalmur Stefansson, who'd lived for years among the Inuit eating nothing but meat and fat and claimed to have thrived, agreed to…",
-  "day": 134,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1928 an Arctic explorer named Vilhjalmur Stefansson, who'd lived for years among the Inuit eating nothing but meat and fat and claimed to have thrived, agreed to prove it under supervision. He and a companion checked into Bellevue Hospital in New York and ate only meat for a full year, monitored by physicians. They stayed healthy. The study was published, and it sat as a curiosity for ninety years until the carnivore diet revived it online in the 2010s: meat, organs, eggs and fat, nothing else, with beef as the staple."
-   },
-   {
-    "k": "",
-    "t": "I'll give you the honest picture, because this one needs it. Carnivore works for some people as an elimination diet: when every plant food is removed, people with certain digestive and autoimmune troubles sometimes feel dramatically better, and that tells them something useful about what they're reacting to. The long-term evidence for healthy people is nearly nonexistent, the online community has made claims far beyond anything tested, and the diet removes fiber, most vitamins C and K, and nearly every food that long-lived populations eat. Stefansson's year was two men, not a trial."
-   },
-   {
-    "k": "",
-    "t": "Vault Human holds it as a tool, not a way of life: a short, supervised elimination for someone with a specific problem, done with a physician, to learn something. Not a lifestyle."
-   },
-   {
-    "k": "",
-    "t": "Here's what I'd take from it for the Meaning chamber's table. Stefansson's story is really about trust in direct experience over received wisdom. He ate the way the Inuit ate and watched what happened to his own body. That's the Charvaka rule from day one hundred, pointed at a plate. The lesson isn't to eat only meat. It's to notice how you actually feel after what you actually eat."
    }
   ],
   "n": 201,
@@ -6828,40 +6828,10 @@ export const letters=[
   "chamber": 5
  },
  {
-  "slug": "the-rooms",
-  "title": "The rooms",
-  "dek": "In 1935 a New York stockbroker and an Ohio surgeon, both drinking themselves to death, sat down together in a house in Akron and found that the only thing that kept…",
-  "day": 136,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1935 a New York stockbroker and an Ohio surgeon, both drinking themselves to death, sat down together in a house in Akron and found that the only thing that kept either of them sober was talking to the other. Bill Wilson and Dr. Bob Smith built a fellowship out of that discovery. Alcoholics Anonymous. There are now millions of members in nearly every country, and the twelve steps they wrote have been adapted to almost every form of human trouble: drugs, food, gambling, debt, the families of addicts, and more."
-   },
-   {
-    "k": "",
-    "t": "The steps, in plain words. Admit you can't control it. Believe something larger than you can help. Decide to let it. Take an honest inventory of yourself. Tell someone all of it. Become willing to let the defects go. Ask for them to be removed. List everyone you've harmed. Make amends, except where it would hurt them. Keep taking inventory. Keep praying or meditating. Carry it to others."
-   },
-   {
-    "k": "",
-    "t": "Vault Human points to the rooms. We don't run them, and they don't need us. What I want to say about them is how much of this year they anticipated. The inventory is the log. The amends are the ledger from the first month turned outward. The daily practice is the key of the day. And the fellowship, the meeting, the person you call, is the circle that begins later this year. The rooms figured out, in 1935, that nobody gets better alone, and that the practice has to be daily, and that honesty with another person is the medicine. The research since has mostly agreed."
-   },
-   {
-    "k": "",
-    "t": "If this is your door, or someone you love's, there's a meeting tonight, in your town, and it's free."
-   }
-  ],
-  "n": 203,
-  "date": "September 28, 2026",
-  "iso": "2026-09-28",
-  "month": "September 2026",
-  "chamber": 5
- },
- {
   "slug": "enough-protein-at-every-meal",
   "title": "Enough protein, at every meal",
   "dek": "For decades the official advice on protein was a minimum: enough to prevent deficiency, about point-eight grams per kilogram of body weight.",
-  "day": 136,
+  "day": 135,
   "vault": "body",
   "body": [
    {
@@ -6885,11 +6855,41 @@ export const letters=[
     "t": "It's a Meaning-chamber key because it completes the muscle keys from months ago. Muscle is medicine; the lifting sends the signal; protein is what the body builds with. A hundred and thirty-six days of walking and lifting need this to show up on the frame."
    }
   ],
+  "n": 203,
+  "date": "September 27, 2026",
+  "iso": "2026-09-27",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
+  "slug": "the-rooms",
+  "title": "The rooms",
+  "dek": "In 1935 a New York stockbroker and an Ohio surgeon, both drinking themselves to death, sat down together in a house in Akron and found that the only thing that kept…",
+  "day": 136,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1935 a New York stockbroker and an Ohio surgeon, both drinking themselves to death, sat down together in a house in Akron and found that the only thing that kept either of them sober was talking to the other. Bill Wilson and Dr. Bob Smith built a fellowship out of that discovery. Alcoholics Anonymous. There are now millions of members in nearly every country, and the twelve steps they wrote have been adapted to almost every form of human trouble: drugs, food, gambling, debt, the families of addicts, and more."
+   },
+   {
+    "k": "",
+    "t": "The steps, in plain words. Admit you can't control it. Believe something larger than you can help. Decide to let it. Take an honest inventory of yourself. Tell someone all of it. Become willing to let the defects go. Ask for them to be removed. List everyone you've harmed. Make amends, except where it would hurt them. Keep taking inventory. Keep praying or meditating. Carry it to others."
+   },
+   {
+    "k": "",
+    "t": "Vault Human points to the rooms. We don't run them, and they don't need us. What I want to say about them is how much of this year they anticipated. The inventory is the log. The amends are the ledger from the first month turned outward. The daily practice is the key of the day. And the fellowship, the meeting, the person you call, is the circle that begins later this year. The rooms figured out, in 1935, that nobody gets better alone, and that the practice has to be daily, and that honesty with another person is the medicine. The research since has mostly agreed."
+   },
+   {
+    "k": "",
+    "t": "If this is your door, or someone you love's, there's a meeting tonight, in your town, and it's free."
+   }
+  ],
   "n": 204,
   "date": "September 28, 2026",
   "iso": "2026-09-28",
   "month": "September 2026",
-  "chamber": 4
+  "chamber": 5
  },
  {
   "slug": "test-the-thought",
@@ -6922,6 +6922,36 @@ export const letters=[
   "chamber": 5
  },
  {
+  "slug": "not-all-carbohydrates-are-the-same",
+  "title": "Not all carbohydrates are the same",
+  "dek": "In 1981 a Toronto researcher named David Jenkins, the same man who later built the Portfolio diet, ran an experiment that changed how people think about carbohydrate.",
+  "day": 137,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1981 a Toronto researcher named David Jenkins, the same man who later built the Portfolio diet, ran an experiment that changed how people think about carbohydrate. He fed volunteers equal amounts of carbohydrate from fifty different foods and measured how fast and how high their blood sugar rose. The differences were enormous. White bread and potatoes spiked it fast. Lentils and barley barely moved it. He ranked them on a scale and called it the glycemic index."
+   },
+   {
+    "k": "",
+    "t": "The index measures the speed of the rise. The load, added later, measures the amount: a carrot has a high index but so little carbohydrate that its load is tiny; a plate of pasta has a moderate index and a large load. Together they give a picture that the old categories, simple versus complex, never did. A baked potato can spike blood sugar faster than table sugar. A bowl of steel-cut oats, with the same carbohydrate, barely does."
+   },
+   {
+    "k": "",
+    "t": "The practical rules. At each meal, choose the slower carbohydrate: whole intact grains over flour, beans and lentils over potatoes, fruit over juice. Pair carbohydrate with protein, fat or fiber, which slow it down; an apple with almonds has a lower effect than an apple alone. And notice that processing, more than the food itself, is what raises the index: the more ground, puffed and refined, the faster it hits."
+   },
+   {
+    "k": "",
+    "t": "It's the table key that sits between the low-carb keys and the plant-based ones and makes peace between them. You don't have to cut carbohydrate. You have to choose the kind, and slow it down. For blood sugar, energy, and hunger, that one choice, made at every meal, does most of what the stricter diets do without the restriction."
+   }
+  ],
+  "n": 206,
+  "date": "September 29, 2026",
+  "iso": "2026-09-29",
+  "month": "September 2026",
+  "chamber": 4
+ },
+ {
   "slug": "the-part-you-can-t-see",
   "title": "The part you can't see",
   "dek": "Sigmund Freud was a Viennese neurologist who, in the 1890s, began listening to patients talk, for hours, about whatever came to mind, and concluded that most of what…",
@@ -6945,41 +6975,11 @@ export const letters=[
     "t": "Vault Human points to psychoanalytic and psychodynamic therapists for anyone who wants to go that deep, and some people need to. The modest practice for everyone is Freud's own first step: say what comes to mind, without editing, and notice what you didn't want to say."
    }
   ],
-  "n": 206,
-  "date": "September 30, 2026",
-  "iso": "2026-09-30",
-  "month": "September 2026",
-  "chamber": 5
- },
- {
-  "slug": "not-all-carbohydrates-are-the-same",
-  "title": "Not all carbohydrates are the same",
-  "dek": "In 1981 a Toronto researcher named David Jenkins, the same man who later built the Portfolio diet, ran an experiment that changed how people think about carbohydrate.",
-  "day": 138,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1981 a Toronto researcher named David Jenkins, the same man who later built the Portfolio diet, ran an experiment that changed how people think about carbohydrate. He fed volunteers equal amounts of carbohydrate from fifty different foods and measured how fast and how high their blood sugar rose. The differences were enormous. White bread and potatoes spiked it fast. Lentils and barley barely moved it. He ranked them on a scale and called it the glycemic index."
-   },
-   {
-    "k": "",
-    "t": "The index measures the speed of the rise. The load, added later, measures the amount: a carrot has a high index but so little carbohydrate that its load is tiny; a plate of pasta has a moderate index and a large load. Together they give a picture that the old categories, simple versus complex, never did. A baked potato can spike blood sugar faster than table sugar. A bowl of steel-cut oats, with the same carbohydrate, barely does."
-   },
-   {
-    "k": "",
-    "t": "The practical rules. At each meal, choose the slower carbohydrate: whole intact grains over flour, beans and lentils over potatoes, fruit over juice. Pair carbohydrate with protein, fat or fiber, which slow it down; an apple with almonds has a lower effect than an apple alone. And notice that processing, more than the food itself, is what raises the index: the more ground, puffed and refined, the faster it hits."
-   },
-   {
-    "k": "",
-    "t": "It's the table key that sits between the low-carb keys and the plant-based ones and makes peace between them. You don't have to cut carbohydrate. You have to choose the kind, and slow it down. For blood sugar, energy, and hunger, that one choice, made at every meal, does most of what the stricter diets do without the restriction."
-   }
-  ],
   "n": 207,
   "date": "September 30, 2026",
   "iso": "2026-09-30",
   "month": "September 2026",
-  "chamber": 4
+  "chamber": 5
  },
  {
   "slug": "the-shadow",
@@ -7012,40 +7012,10 @@ export const letters=[
   "chamber": 5
  },
  {
-  "slug": "three-conditions",
-  "title": "Three conditions",
-  "dek": "Carl Rogers was an American psychologist who in the 1940s turned therapy on its head.",
-  "day": 140,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Carl Rogers was an American psychologist who in the 1940s turned therapy on its head. The analyst had been the expert, interpreting the patient. Rogers said the client was the expert on their own life, and that the therapist's job was not to interpret or advise but to provide three conditions, and that if the conditions were present, growth would happen on its own, the way a plant grows if it has light and water."
-   },
-   {
-    "k": "",
-    "t": "The three. Empathy: understanding the person's world from inside, and showing that you do. Congruence: being real, genuine, the same person inside and out, with no professional mask. And unconditional positive regard: accepting the person fully, without judgment, whatever they bring. He called his approach person-centered, and the research since has found that those three conditions, wherever they appear, in therapy, teaching, parenting, management, predict growth better than almost any technique."
-   },
-   {
-    "k": "",
-    "t": "It's a Healing key because it names what heals. Not the method. The relationship. Nearly every therapy on this shelf works better when Rogers's three conditions are present and worse when they're absent, and the studies on what makes therapy work keep landing on the quality of the bond more than the brand of the treatment."
-   },
-   {
-    "k": "",
-    "t": "It's also the clearest description I know of what a coach is for, and of what Vault Human tries to be. Not an expert with answers. A person who understands you from inside, who's real with you, and who's on your side without conditions. Rogers believed that in that kind of presence, people find their own way. Eighty years of evidence agrees."
-   }
-  ],
-  "n": 209,
-  "date": "October 2, 2026",
-  "iso": "2026-10-02",
-  "month": "October 2026",
-  "chamber": 5
- },
- {
   "slug": "when-the-story-is-better-than-the-science",
   "title": "When the story is better than the science",
   "dek": "In 1996 a naturopathic physician named Peter D'Adamo published <em>Eat Right 4 Your Type</em>, which claimed that your blood group, O, A, B or AB, determines which foods…",
-  "day": 140,
+  "day": 139,
   "vault": "body",
   "body": [
    {
@@ -7069,11 +7039,41 @@ export const letters=[
     "t": "Vault Human's rule, which this key illustrates: keep the method when it's sound, hold the story lightly, and never confuse feeling chosen with being right. The set point from day six, the fullness from day one hundred and twenty-four, the protein from four days ago: those are the science. The rest is marketing."
    }
   ],
+  "n": 209,
+  "date": "October 1, 2026",
+  "iso": "2026-10-01",
+  "month": "October 2026",
+  "chamber": 4
+ },
+ {
+  "slug": "three-conditions",
+  "title": "Three conditions",
+  "dek": "Carl Rogers was an American psychologist who in the 1940s turned therapy on its head.",
+  "day": 140,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Carl Rogers was an American psychologist who in the 1940s turned therapy on its head. The analyst had been the expert, interpreting the patient. Rogers said the client was the expert on their own life, and that the therapist's job was not to interpret or advise but to provide three conditions, and that if the conditions were present, growth would happen on its own, the way a plant grows if it has light and water."
+   },
+   {
+    "k": "",
+    "t": "The three. Empathy: understanding the person's world from inside, and showing that you do. Congruence: being real, genuine, the same person inside and out, with no professional mask. And unconditional positive regard: accepting the person fully, without judgment, whatever they bring. He called his approach person-centered, and the research since has found that those three conditions, wherever they appear, in therapy, teaching, parenting, management, predict growth better than almost any technique."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because it names what heals. Not the method. The relationship. Nearly every therapy on this shelf works better when Rogers's three conditions are present and worse when they're absent, and the studies on what makes therapy work keep landing on the quality of the bond more than the brand of the treatment."
+   },
+   {
+    "k": "",
+    "t": "It's also the clearest description I know of what a coach is for, and of what Vault Human tries to be. Not an expert with answers. A person who understands you from inside, who's real with you, and who's on your side without conditions. Rogers believed that in that kind of presence, people find their own way. Eighty years of evidence agrees."
+   }
+  ],
   "n": 210,
   "date": "October 2, 2026",
   "iso": "2026-10-02",
   "month": "October 2026",
-  "chamber": 4
+  "chamber": 5
  },
  {
   "slug": "the-last-freedom",
@@ -7110,40 +7110,10 @@ export const letters=[
   "chamber": 5
  },
  {
-  "slug": "what-goes-right",
-  "title": "What goes right",
-  "dek": "In 1998 a psychologist named Martin Seligman became president of the American Psychological Association and used the position to make a complaint: his field had spent…",
-  "day": 142,
-  "vault": "mind",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1998 a psychologist named Martin Seligman became president of the American Psychological Association and used the position to make a complaint: his field had spent a century studying what goes wrong with people, depression, anxiety, disorder, and almost nothing on what goes right. He called for a positive psychology, the scientific study of what makes life worth living, and within a decade it was a field, with labs, journals, and findings."
-   },
-   {
-    "k": "",
-    "t": "His own frame is PERMA, five elements of flourishing that can each be measured and built. Positive emotion. Engagement, the absorption in a task that makes time vanish. Relationships. Meaning, belonging to something larger than yourself. And accomplishment. His earlier work gave the field learned optimism: the finding that pessimists explain bad events as permanent, pervasive and personal, optimists as temporary, specific and external, and that the explanatory style can be learned. And with Christopher Peterson he built the character strengths you met on day twenty-three."
-   },
-   {
-    "k": "",
-    "t": "It's a Healing key for a specific reason. Most of this chamber is about what's broken. Seligman's finding was that fixing what's broken gets you to zero, and zero isn't flourishing. The absence of depression isn't happiness. You have to build the other side, and the other side has its own practices: three good things, the gratitude visit, using a signature strength in a new way, savoring. Several of them you've already done this year."
-   },
-   {
-    "k": "",
-    "t": "Here's the honest caveat. The field has had its overclaims and its replication troubles, and some of its early findings shrank. The core has held: wellbeing can be built, on purpose, by practice, and it's not the same thing as the absence of illness."
-   }
-  ],
-  "n": 212,
-  "date": "October 4, 2026",
-  "iso": "2026-10-04",
-  "month": "October 2026",
-  "chamber": 5
- },
- {
   "slug": "a-chart-you-may-already-own-at-the-table",
   "title": "A chart you may already own, at the table",
   "dek": "On day twenty-seven you met Human Design, the chart system built in 1987 from a combination of astrology, the I Ching, the Kabbalah and the chakras.",
-  "day": 142,
+  "day": 141,
   "vault": "body",
   "body": [
    {
@@ -7167,11 +7137,41 @@ export const letters=[
     "t": "Vault Human points to a Human Design analyst for anyone who wants the chart read properly. The question about conditions is free."
    }
   ],
+  "n": 212,
+  "date": "October 3, 2026",
+  "iso": "2026-10-03",
+  "month": "October 2026",
+  "chamber": 4
+ },
+ {
+  "slug": "what-goes-right",
+  "title": "What goes right",
+  "dek": "In 1998 a psychologist named Martin Seligman became president of the American Psychological Association and used the position to make a complaint: his field had spent…",
+  "day": 142,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1998 a psychologist named Martin Seligman became president of the American Psychological Association and used the position to make a complaint: his field had spent a century studying what goes wrong with people, depression, anxiety, disorder, and almost nothing on what goes right. He called for a positive psychology, the scientific study of what makes life worth living, and within a decade it was a field, with labs, journals, and findings."
+   },
+   {
+    "k": "",
+    "t": "His own frame is PERMA, five elements of flourishing that can each be measured and built. Positive emotion. Engagement, the absorption in a task that makes time vanish. Relationships. Meaning, belonging to something larger than yourself. And accomplishment. His earlier work gave the field learned optimism: the finding that pessimists explain bad events as permanent, pervasive and personal, optimists as temporary, specific and external, and that the explanatory style can be learned. And with Christopher Peterson he built the character strengths you met on day twenty-three."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key for a specific reason. Most of this chamber is about what's broken. Seligman's finding was that fixing what's broken gets you to zero, and zero isn't flourishing. The absence of depression isn't happiness. You have to build the other side, and the other side has its own practices: three good things, the gratitude visit, using a signature strength in a new way, savoring. Several of them you've already done this year."
+   },
+   {
+    "k": "",
+    "t": "Here's the honest caveat. The field has had its overclaims and its replication troubles, and some of its early findings shrank. The core has held: wellbeing can be built, on purpose, by practice, and it's not the same thing as the absence of illness."
+   }
+  ],
   "n": 213,
   "date": "October 4, 2026",
   "iso": "2026-10-04",
   "month": "October 2026",
-  "chamber": 4
+  "chamber": 5
  },
  {
   "slug": "no-bad-parts",
@@ -7204,6 +7204,40 @@ export const letters=[
   "chamber": 5
  },
  {
+  "slug": "fuel-the-session-measure-with-your-hand",
+  "title": "Fuel the session, measure with your hand",
+  "dek": "Two keys in one: what the science says about eating for effort, and a way to measure portions without a scale.",
+  "day": 143,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Two keys in one: what the science says about eating for effort, and a way to measure portions without a scale."
+   },
+   {
+    "k": "",
+    "t": "In 2016 the American College of Sports Medicine and the Academy of Nutrition and Dietetics published a joint position on nutrition and athletic performance, and its core idea was periodization applied to the plate: match the fuel to the session. Carbohydrate before and during hard or long efforts, thirty to sixty grams an hour once you're past about ninety minutes, because the body's stores run down; protein after, to rebuild; and on easy days, less of both. Not one diet for all days. A diet that moves with the training, the way the training moves with the year."
+   },
+   {
+    "k": "",
+    "t": "The second key is from John Berardi, a nutrition coach who in 2005 built a method his clients could actually use. No scale, no app. Your hand. A palm of protein. A fist of vegetables. A cupped hand of carbohydrate. A thumb of fat. One to two of each per meal, depending on your size and your goals. The hand scales with the body, so a large man's palm is the right portion for a large man, and a small woman's for her. It's imprecise, and it's precise enough, and people keep doing it where they quit counting in a week."
+   },
+   {
+    "k": "",
+    "t": "Together they're a table key for anyone who moves. Most of the diet keys on this shelf are about what to eat in general. This one is about what to eat today, for what you're doing today, in portions you can see."
+   },
+   {
+    "k": "",
+    "t": "For the Meaning chamber: a hundred and forty-four days of walks and lifts have made you someone who trains. Someone who trains eats like it: fuel for the work, food for the rest."
+   }
+  ],
+  "n": 215,
+  "date": "October 5, 2026",
+  "iso": "2026-10-05",
+  "month": "October 2026",
+  "chamber": 4
+ },
+ {
   "slug": "make-room-and-move",
   "title": "Make room, and move",
   "dek": "Steven Hayes was a young psychologist in the 1980s having panic attacks in the middle of faculty meetings, and everything he'd been trained in told him to control the…",
@@ -7231,45 +7265,11 @@ export const letters=[
     "t": "Vault Human points to ACT therapists, and I'll say that of all the therapies in this chamber, this is the one whose methods a coach can most honestly borrow, because it's about living, not diagnosing."
    }
   ],
-  "n": 215,
-  "date": "October 6, 2026",
-  "iso": "2026-10-06",
-  "month": "October 2026",
-  "chamber": 5
- },
- {
-  "slug": "fuel-the-session-measure-with-your-hand",
-  "title": "Fuel the session, measure with your hand",
-  "dek": "Two keys in one: what the science says about eating for effort, and a way to measure portions without a scale.",
-  "day": 144,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Two keys in one: what the science says about eating for effort, and a way to measure portions without a scale."
-   },
-   {
-    "k": "",
-    "t": "In 2016 the American College of Sports Medicine and the Academy of Nutrition and Dietetics published a joint position on nutrition and athletic performance, and its core idea was periodization applied to the plate: match the fuel to the session. Carbohydrate before and during hard or long efforts, thirty to sixty grams an hour once you're past about ninety minutes, because the body's stores run down; protein after, to rebuild; and on easy days, less of both. Not one diet for all days. A diet that moves with the training, the way the training moves with the year."
-   },
-   {
-    "k": "",
-    "t": "The second key is from John Berardi, a nutrition coach who in 2005 built a method his clients could actually use. No scale, no app. Your hand. A palm of protein. A fist of vegetables. A cupped hand of carbohydrate. A thumb of fat. One to two of each per meal, depending on your size and your goals. The hand scales with the body, so a large man's palm is the right portion for a large man, and a small woman's for her. It's imprecise, and it's precise enough, and people keep doing it where they quit counting in a week."
-   },
-   {
-    "k": "",
-    "t": "Together they're a table key for anyone who moves. Most of the diet keys on this shelf are about what to eat in general. This one is about what to eat today, for what you're doing today, in portions you can see."
-   },
-   {
-    "k": "",
-    "t": "For the Meaning chamber: a hundred and forty-four days of walks and lifts have made you someone who trains. Someone who trains eats like it: fuel for the work, food for the rest."
-   }
-  ],
   "n": 216,
   "date": "October 6, 2026",
   "iso": "2026-10-06",
   "month": "October 2026",
-  "chamber": 4
+  "chamber": 5
  },
  {
   "slug": "their-own-reasons",
@@ -7306,6 +7306,36 @@ export const letters=[
   "chamber": 5
  },
  {
+  "slug": "drink-when-you-re-thirsty",
+  "title": "Drink when you're thirsty",
+  "dek": "For thirty years, athletes were told to drink before they were thirsty, as much as they could tolerate, because thirst was a lagging signal and dehydration was the enemy.",
+  "day": 145,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "For thirty years, athletes were told to drink before they were thirsty, as much as they could tolerate, because thirst was a lagging signal and dehydration was the enemy. Then runners started dying, and the cause wasn't dehydration. It was too much water."
+   },
+   {
+    "k": "",
+    "t": "Tim Noakes, a South African sports scientist, had been documenting the problem since the 1980s, and in 2012 he wrote <em>Waterlogged</em> to lay it out: exercise-associated hyponatremia, the dilution of the blood's sodium by over-drinking, had killed marathoners and hikers and soldiers, and the advice to drink ahead of thirst was the cause. His correction was the oldest one: drink to thirst. The body's thirst signal, he showed, is accurate, and it protects you in both directions. The American College of Sports Medicine's 2007 position stand had already moved in the same direction, and the guidelines now say roughly what Noakes said."
+   },
+   {
+    "k": "",
+    "t": "The practical rules. Drink when thirsty; don't force it. In long efforts in heat, somewhere around four hundred to eight hundred milliliters an hour is the typical range, with sodium, because sweat carries salt out and plain water alone can tip the balance. Weigh yourself before and after a long session once; losing a little is normal, gaining is a warning. And the old eight-glasses-a-day rule for ordinary life has no evidence behind it; food and thirst handle it."
+   },
+   {
+    "k": "",
+    "t": "It closes the table keys of this chamber because it's a story about trusting the body over the rule. The same body that tells you it's full, that tells you it's tired, that tells you it needs protein after a lift, tells you when to drink. The whole table chamber has been about learning to hear it."
+   }
+  ],
+  "n": 218,
+  "date": "October 7, 2026",
+  "iso": "2026-10-07",
+  "month": "October 2026",
+  "chamber": 4
+ },
+ {
   "slug": "both-things-are-true",
   "title": "Both things are true",
   "dek": "Marsha Linehan was a psychologist at the University of Washington in the 1980s trying to treat the patients nobody could help: chronically suicidal women with what…",
@@ -7329,41 +7359,11 @@ export const letters=[
     "t": "Vault Human points to DBT therapists for anyone whose emotions are running their life. The skills belong to everyone."
    }
   ],
-  "n": 218,
-  "date": "October 8, 2026",
-  "iso": "2026-10-08",
-  "month": "October 2026",
-  "chamber": 5
- },
- {
-  "slug": "drink-when-you-re-thirsty",
-  "title": "Drink when you're thirsty",
-  "dek": "For thirty years, athletes were told to drink before they were thirsty, as much as they could tolerate, because thirst was a lagging signal and dehydration was the enemy.",
-  "day": 146,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "For thirty years, athletes were told to drink before they were thirsty, as much as they could tolerate, because thirst was a lagging signal and dehydration was the enemy. Then runners started dying, and the cause wasn't dehydration. It was too much water."
-   },
-   {
-    "k": "",
-    "t": "Tim Noakes, a South African sports scientist, had been documenting the problem since the 1980s, and in 2012 he wrote <em>Waterlogged</em> to lay it out: exercise-associated hyponatremia, the dilution of the blood's sodium by over-drinking, had killed marathoners and hikers and soldiers, and the advice to drink ahead of thirst was the cause. His correction was the oldest one: drink to thirst. The body's thirst signal, he showed, is accurate, and it protects you in both directions. The American College of Sports Medicine's 2007 position stand had already moved in the same direction, and the guidelines now say roughly what Noakes said."
-   },
-   {
-    "k": "",
-    "t": "The practical rules. Drink when thirsty; don't force it. In long efforts in heat, somewhere around four hundred to eight hundred milliliters an hour is the typical range, with sodium, because sweat carries salt out and plain water alone can tip the balance. Weigh yourself before and after a long session once; losing a little is normal, gaining is a warning. And the old eight-glasses-a-day rule for ordinary life has no evidence behind it; food and thirst handle it."
-   },
-   {
-    "k": "",
-    "t": "It closes the table keys of this chamber because it's a story about trusting the body over the rule. The same body that tells you it's full, that tells you it's tired, that tells you it needs protein after a lift, tells you when to drink. The whole table chamber has been about learning to hear it."
-   }
-  ],
   "n": 219,
   "date": "October 8, 2026",
   "iso": "2026-10-08",
   "month": "October 2026",
-  "chamber": 4
+  "chamber": 5
  },
  {
   "slug": "the-eyes",
@@ -7396,6 +7396,36 @@ export const letters=[
   "chamber": 5
  },
  {
+  "slug": "what-the-old-diets-had-in-common",
+  "title": "What the old diets had in common",
+  "dek": "In the 1930s a Cleveland dentist named Weston Price closed his practice and spent a decade traveling to the most isolated peoples he could reach: villages in the…",
+  "day": 147,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In the 1930s a Cleveland dentist named Weston Price closed his practice and spent a decade traveling to the most isolated peoples he could reach: villages in the Swiss Alps, the Outer Hebrides, Inuit communities, Pacific islands, African tribes, Aboriginal Australians. He went to look at their teeth. What he found, and photographed, and published in 1939 as <em>Nutrition and Physical Degeneration</em>, was that people eating their traditional diets had almost no tooth decay and broad, well-formed faces, and that within a generation of switching to white flour, sugar and canned goods, their children had crowded teeth, cavities and narrow jaws."
+   },
+   {
+    "k": "",
+    "t": "The traditional diets varied enormously, fish and seal fat in one place, dairy and rye in another, root vegetables and insects in a third. What they shared was that nothing came from a factory, that animal foods were eaten whole, including organs and bones, that much of the food was fermented or aged, and that fat from healthy animals was prized rather than feared."
+   },
+   {
+    "k": "",
+    "t": "I'll say the plain thing. The seat here is Price's 1939 book, which is a remarkable piece of observation, and not the foundation that later took his name and campaigns for raw milk and against vaccines, which Price had nothing to do with. The book's lesson is sound and modest: traditional diets, whatever their content, were whole, and the degeneration he saw followed the processed foods, not any particular macronutrient."
+   },
+   {
+    "k": "",
+    "t": "For the table chamber, Price is the ancestor of Pollan's seven words. Eat food, by which he'd mean food your great-grandmother in any country would recognize."
+   }
+  ],
+  "n": 221,
+  "date": "October 9, 2026",
+  "iso": "2026-10-09",
+  "month": "October 2026",
+  "chamber": 4
+ },
+ {
   "slug": "act-it-out",
   "title": "Act it out",
   "dek": "Jacob Moreno was a Viennese psychiatrist who in the 1920s noticed that his patients could say things on a stage, in a role, that they couldn't say in a chair.",
@@ -7419,41 +7449,11 @@ export const letters=[
     "t": "Vault Human points to psychodrama groups for anyone drawn to it. The reversal you can do at a kitchen table with two chairs."
    }
   ],
-  "n": 221,
-  "date": "October 10, 2026",
-  "iso": "2026-10-10",
-  "month": "October 2026",
-  "chamber": 5
- },
- {
-  "slug": "what-the-old-diets-had-in-common",
-  "title": "What the old diets had in common",
-  "dek": "In the 1930s a Cleveland dentist named Weston Price closed his practice and spent a decade traveling to the most isolated peoples he could reach: villages in the…",
-  "day": 148,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In the 1930s a Cleveland dentist named Weston Price closed his practice and spent a decade traveling to the most isolated peoples he could reach: villages in the Swiss Alps, the Outer Hebrides, Inuit communities, Pacific islands, African tribes, Aboriginal Australians. He went to look at their teeth. What he found, and photographed, and published in 1939 as <em>Nutrition and Physical Degeneration</em>, was that people eating their traditional diets had almost no tooth decay and broad, well-formed faces, and that within a generation of switching to white flour, sugar and canned goods, their children had crowded teeth, cavities and narrow jaws."
-   },
-   {
-    "k": "",
-    "t": "The traditional diets varied enormously, fish and seal fat in one place, dairy and rye in another, root vegetables and insects in a third. What they shared was that nothing came from a factory, that animal foods were eaten whole, including organs and bones, that much of the food was fermented or aged, and that fat from healthy animals was prized rather than feared."
-   },
-   {
-    "k": "",
-    "t": "I'll say the plain thing. The seat here is Price's 1939 book, which is a remarkable piece of observation, and not the foundation that later took his name and campaigns for raw milk and against vaccines, which Price had nothing to do with. The book's lesson is sound and modest: traditional diets, whatever their content, were whole, and the degeneration he saw followed the processed foods, not any particular macronutrient."
-   },
-   {
-    "k": "",
-    "t": "For the table chamber, Price is the ancestor of Pollan's seven words. Eat food, by which he'd mean food your great-grandmother in any country would recognize."
-   }
-  ],
   "n": 222,
   "date": "October 10, 2026",
   "iso": "2026-10-10",
   "month": "October 2026",
-  "chamber": 4
+  "chamber": 5
  },
  {
   "slug": "the-empty-chair",
@@ -7486,6 +7486,40 @@ export const letters=[
   "chamber": 5
  },
  {
+  "slug": "the-suspect-that-was-ignored",
+  "title": "The suspect that was ignored",
+  "dek": "In 1972 a British physiologist named John Yudkin published a book with a title that told you where he stood: <em>Pure, White and Deadly</em>.",
+  "day": 149,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1972 a British physiologist named John Yudkin published a book with a title that told you where he stood: <em>Pure, White and Deadly</em>. His claim, built on decades of research, was that sugar, not fat, was the dietary cause of the heart disease, obesity and diabetes rising across the West. He was ridiculed, his career was damaged, and the field went on to spend forty years blaming fat."
+   },
+   {
+    "k": "",
+    "t": "He was mostly right. In 2012 a pediatric endocrinologist named Robert Lustig picked the argument back up in <em>Fat Chance</em>, and by 2015 the World Health Organization had put a number on it: free sugars, meaning added sugars and the sugar in juice and honey, should be under ten percent of daily calories, with five percent as the better target. For most adults that's about twenty-five to fifty grams a day. A single can of soda is about forty."
+   },
+   {
+    "k": "",
+    "t": "The science that vindicated Yudkin is now broad. Added sugar, especially in drinks, drives weight gain, insulin resistance, fatty liver and the whole cluster of metabolic disease, and it does it partly by bypassing the fullness signals that solid food triggers. Fat, meanwhile, turned out to be a far more complicated story than the low-fat decades allowed."
+   },
+   {
+    "k": "",
+    "t": "It's a table key because sugar is the single ingredient whose removal does the most for the most people, and because it hides. Bread, sauces, yogurt, cereal, anything labeled low-fat: the sugar is in there, by the gram, and most people have no idea how much they eat. The honest number, counted for a day, is usually a shock."
+   },
+   {
+    "k": "",
+    "t": "And it's a story about how long a right answer can be ignored. Yudkin died in 1995, before the field came round."
+   }
+  ],
+  "n": 224,
+  "date": "October 11, 2026",
+  "iso": "2026-10-11",
+  "month": "October 2026",
+  "chamber": 4
+ },
+ {
   "slug": "a-b-c",
   "title": "A, B, C",
   "dek": "Albert Ellis was a New York psychologist who in 1955, a few years before Beck, built the first of the cognitive therapies, and he built it from the Stoics.",
@@ -7513,45 +7547,11 @@ export const letters=[
     "t": "Vault Human points to REBT and CBT therapists; the ABC is a tool for everyone, and it fits on an index card."
    }
   ],
-  "n": 224,
-  "date": "October 12, 2026",
-  "iso": "2026-10-12",
-  "month": "October 2026",
-  "chamber": 5
- },
- {
-  "slug": "the-suspect-that-was-ignored",
-  "title": "The suspect that was ignored",
-  "dek": "In 1972 a British physiologist named John Yudkin published a book with a title that told you where he stood: <em>Pure, White and Deadly</em>.",
-  "day": 150,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1972 a British physiologist named John Yudkin published a book with a title that told you where he stood: <em>Pure, White and Deadly</em>. His claim, built on decades of research, was that sugar, not fat, was the dietary cause of the heart disease, obesity and diabetes rising across the West. He was ridiculed, his career was damaged, and the field went on to spend forty years blaming fat."
-   },
-   {
-    "k": "",
-    "t": "He was mostly right. In 2012 a pediatric endocrinologist named Robert Lustig picked the argument back up in <em>Fat Chance</em>, and by 2015 the World Health Organization had put a number on it: free sugars, meaning added sugars and the sugar in juice and honey, should be under ten percent of daily calories, with five percent as the better target. For most adults that's about twenty-five to fifty grams a day. A single can of soda is about forty."
-   },
-   {
-    "k": "",
-    "t": "The science that vindicated Yudkin is now broad. Added sugar, especially in drinks, drives weight gain, insulin resistance, fatty liver and the whole cluster of metabolic disease, and it does it partly by bypassing the fullness signals that solid food triggers. Fat, meanwhile, turned out to be a far more complicated story than the low-fat decades allowed."
-   },
-   {
-    "k": "",
-    "t": "It's a table key because sugar is the single ingredient whose removal does the most for the most people, and because it hides. Bread, sauces, yogurt, cereal, anything labeled low-fat: the sugar is in there, by the gram, and most people have no idea how much they eat. The honest number, counted for a day, is usually a shock."
-   },
-   {
-    "k": "",
-    "t": "And it's a story about how long a right answer can be ignored. Yudkin died in 1995, before the field came round."
-   }
-  ],
   "n": 225,
   "date": "October 12, 2026",
   "iso": "2026-10-12",
   "month": "October 2026",
-  "chamber": 4
+  "chamber": 5
  },
  {
   "slug": "use-what-s-there",
@@ -7584,6 +7584,32 @@ export const letters=[
   "chamber": 5
  },
  {
+  "slug": "the-organ-you-didn-t-know-you-had",
+  "title": "The organ you didn't know you had",
+  "dek": "In 2007 the National Institutes of Health launched the Human Microbiome Project to catalog the trillions of bacteria, fungi and other organisms that live in and on a…",
+  "day": 151,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 2007 the National Institutes of Health launched the Human Microbiome Project to catalog the trillions of bacteria, fungi and other organisms that live in and on a human body, most of them in the gut. The findings reorganized medicine. The gut's microbes outnumber your own cells, they weigh about as much as your brain, they make vitamins, train the immune system, regulate inflammation, and produce compounds that reach the brain. They're an organ. And unlike your other organs, you feed this one directly, three times a day, and what you feed it changes what it becomes within days."
+   },
+   {
+    "k": "",
+    "t": "What the microbes want is fiber. Not the fiber on a cereal box, but the whole range of plant fibers that human digestion can't break down and that bacteria can: in beans, whole grains, vegetables, fruit, nuts and seeds. The guideline is about thirty grams a day. Most people in the West eat about fifteen. The research links the gap to everything from inflammation to mood, and the fix is the plainest on the shelf: more plants, more kinds of them. One large study found that people who ate thirty different plant foods a week had markedly more diverse microbiomes than people who ate ten."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because the gut is where a great deal of healing turns out to happen, and because it's the organ the table keys have been feeding all along without naming. The Mediterranean plate, the daily dozen, the greens: they were microbiome diets before anyone had the word."
+   }
+  ],
+  "n": 227,
+  "date": "October 13, 2026",
+  "iso": "2026-10-13",
+  "month": "October 2026",
+  "chamber": 5
+ },
+ {
   "slug": "the-family-is-the-patient",
   "title": "The family is the patient",
   "dek": "Salvador Minuchin was an Argentine psychiatrist who in the 1960s worked with delinquent boys in New York and realized he couldn't treat them.",
@@ -7609,32 +7635,6 @@ export const letters=[
    {
     "k": "",
     "t": "Vault Human points to family therapists for the family work, which a coach can't do. The map belongs to anyone with a family."
-   }
-  ],
-  "n": 227,
-  "date": "October 14, 2026",
-  "iso": "2026-10-14",
-  "month": "October 2026",
-  "chamber": 5
- },
- {
-  "slug": "the-organ-you-didn-t-know-you-had",
-  "title": "The organ you didn't know you had",
-  "dek": "In 2007 the National Institutes of Health launched the Human Microbiome Project to catalog the trillions of bacteria, fungi and other organisms that live in and on a…",
-  "day": 152,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 2007 the National Institutes of Health launched the Human Microbiome Project to catalog the trillions of bacteria, fungi and other organisms that live in and on a human body, most of them in the gut. The findings reorganized medicine. The gut's microbes outnumber your own cells, they weigh about as much as your brain, they make vitamins, train the immune system, regulate inflammation, and produce compounds that reach the brain. They're an organ. And unlike your other organs, you feed this one directly, three times a day, and what you feed it changes what it becomes within days."
-   },
-   {
-    "k": "",
-    "t": "What the microbes want is fiber. Not the fiber on a cereal box, but the whole range of plant fibers that human digestion can't break down and that bacteria can: in beans, whole grains, vegetables, fruit, nuts and seeds. The guideline is about thirty grams a day. Most people in the West eat about fifteen. The research links the gap to everything from inflammation to mood, and the fix is the plainest on the shelf: more plants, more kinds of them. One large study found that people who ate thirty different plant foods a week had markedly more diverse microbiomes than people who ate ten."
-   },
-   {
-    "k": "",
-    "t": "It's a Healing key because the gut is where a great deal of healing turns out to happen, and because it's the organ the table keys have been feeding all along without naming. The Mediterranean plate, the daily dozen, the greens: they were microbiome diets before anyone had the word."
    }
   ],
   "n": 228,
@@ -7678,6 +7678,36 @@ export const letters=[
   "chamber": 5
  },
  {
+  "slug": "the-second-brain",
+  "title": "The second brain",
+  "dek": "In 1998 a Columbia University physician named Michael Gershon published a book with a title that sounded like a metaphor and wasn't: <em>The Second Brain</em>.",
+  "day": 153,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1998 a Columbia University physician named Michael Gershon published a book with a title that sounded like a metaphor and wasn't: <em>The Second Brain</em>. The gut, he showed, has its own nervous system, the enteric nervous system, with about five hundred million neurons, more than the spinal cord, that can run digestion entirely on its own. It makes most of the body's serotonin. And it's connected to the brain in the head by the vagus nerve, which carries far more traffic up from the gut than down to it."
+   },
+   {
+    "k": "",
+    "t": "That last fact is the key. The gut talks to the brain constantly, and the brain listens. The phrases we use, gut feeling, butterflies, can't stomach it, sick with worry, are not figures of speech. They're reports from the second brain, delivered up the vagus, and they shape mood, judgment and stress in ways the research is only now measuring. The microbiome from two days ago is part of the conversation: the bacteria produce compounds the gut's neurons respond to, and the whole system, microbes, gut, vagus, brain, is now called the gut-brain axis."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because so many of the wounds this chamber has been honoring are stored, as the body-therapy keys said, below the neck. Gershon put anatomy under that claim. The knot in the stomach before the hard conversation is five hundred million neurons doing their job."
+   },
+   {
+    "k": "",
+    "t": "And it's a practical key. What settles the gut settles the mind: slow eating, fiber, fermented foods, the long exhale that stimulates the vagus, which you've been practicing since the second month. Chronic gut trouble is a physician's door, and so is anything that's lasted more than a few weeks. The daily conversation with the second brain is yours."
+   }
+  ],
+  "n": 230,
+  "date": "October 15, 2026",
+  "iso": "2026-10-15",
+  "month": "October 2026",
+  "chamber": 5
+ },
+ {
   "slug": "how-you-were-wired-to-love",
   "title": "How you were wired to love",
   "dek": "In the 1940s a British psychiatrist named John Bowlby watched children separated from their parents in wartime London and in hospitals, and saw a pattern of protest,…",
@@ -7703,36 +7733,6 @@ export const letters=[
    {
     "k": "",
     "t": "It's a Healing key because it's where most of the chamber's wounds began, before memory. Vault Human points to attachment-focused therapists, and a coach can help you name the pattern, which is the beginning."
-   }
-  ],
-  "n": 230,
-  "date": "October 16, 2026",
-  "iso": "2026-10-16",
-  "month": "October 2026",
-  "chamber": 5
- },
- {
-  "slug": "the-second-brain",
-  "title": "The second brain",
-  "dek": "In 1998 a Columbia University physician named Michael Gershon published a book with a title that sounded like a metaphor and wasn't: <em>The Second Brain</em>.",
-  "day": 154,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1998 a Columbia University physician named Michael Gershon published a book with a title that sounded like a metaphor and wasn't: <em>The Second Brain</em>. The gut, he showed, has its own nervous system, the enteric nervous system, with about five hundred million neurons, more than the spinal cord, that can run digestion entirely on its own. It makes most of the body's serotonin. And it's connected to the brain in the head by the vagus nerve, which carries far more traffic up from the gut than down to it."
-   },
-   {
-    "k": "",
-    "t": "That last fact is the key. The gut talks to the brain constantly, and the brain listens. The phrases we use, gut feeling, butterflies, can't stomach it, sick with worry, are not figures of speech. They're reports from the second brain, delivered up the vagus, and they shape mood, judgment and stress in ways the research is only now measuring. The microbiome from two days ago is part of the conversation: the bacteria produce compounds the gut's neurons respond to, and the whole system, microbes, gut, vagus, brain, is now called the gut-brain axis."
-   },
-   {
-    "k": "",
-    "t": "It's a Healing key because so many of the wounds this chamber has been honoring are stored, as the body-therapy keys said, below the neck. Gershon put anatomy under that claim. The knot in the stomach before the hard conversation is five hundred million neurons doing their job."
-   },
-   {
-    "k": "",
-    "t": "And it's a practical key. What settles the gut settles the mind: slow eating, fiber, fermented foods, the long exhale that stimulates the vagus, which you've been practicing since the second month. Chronic gut trouble is a physician's door, and so is anything that's lasted more than a few weeks. The daily conversation with the second brain is yours."
    }
   ],
   "n": 231,
@@ -7772,6 +7772,40 @@ export const letters=[
   "chamber": 5
  },
  {
+  "slug": "your-own-curve",
+  "title": "Your own curve",
+  "dek": "The last body letter before today is the one that undoes the premise of every diet before it.",
+  "day": 155,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The last body letter before today is the one that undoes the premise of every diet before it."
+   },
+   {
+    "k": "",
+    "t": "In 2015 two researchers at the Weizmann Institute in Israel, Eran Segal and Eran Elinav, put continuous glucose monitors on eight hundred people and tracked their blood sugar after every meal for a week. The finding was startling. The same food produced wildly different responses in different people. One person's blood sugar spiked after a banana and stayed flat after a cookie; another's did the reverse. The glycemic index, which ranks foods as if everyone responds alike, was wrong for a large share of people. The responses were personal, and they were predictable from the person's microbiome, body and history. In 2020 a British researcher named Tim Spector repeated it at larger scale with the PREDICT study, measuring fat and sugar responses in thousands of people, including identical twins, and found the same: even twins responded differently to the same meal."
+   },
+   {
+    "k": "",
+    "t": "The lesson is personalized nutrition, and I'll say the honest thing about it. Both groups have founded companies that sell personalized diet advice from these measurements, and the field is young; the evidence that eating by your own curve improves long-term health is promising but not settled. Vault Human points to the science, not the products."
+   },
+   {
+    "k": "",
+    "t": "What's free, and what I'd keep, is the principle. The right diet for you is the one your body measurably responds well to, and the only way to know is to look. A continuous glucose monitor, worn for two weeks, is one way. A log of how you felt ninety minutes after what you ate, which you started on day one hundred and thirty-four, is another, and it's been under your pen the whole time."
+   },
+   {
+    "k": "",
+    "t": "It's the right close for the table keys. A hundred and fifty-six days of letters have offered every sensible way of eating on earth. The last one says: now watch your own body, and eat by what it tells you."
+   }
+  ],
+  "n": 233,
+  "date": "October 17, 2026",
+  "iso": "2026-10-17",
+  "month": "October 2026",
+  "chamber": 5
+ },
+ {
   "slug": "a-self-inside-the-relationship",
   "title": "A self inside the relationship",
   "dek": "In 1986 a woman named Melody Beattie, who'd been through addiction and recovery and then found herself consumed by the addictions of the people around her, wrote a…",
@@ -7797,40 +7831,6 @@ export const letters=[
    {
     "k": "",
     "t": "Vault Human points to Al-Anon and to therapists who work with codependency; the daily questions belong to anyone who's ever managed another adult's life instead of living their own."
-   }
-  ],
-  "n": 233,
-  "date": "October 18, 2026",
-  "iso": "2026-10-18",
-  "month": "October 2026",
-  "chamber": 5
- },
- {
-  "slug": "your-own-curve",
-  "title": "Your own curve",
-  "dek": "The last body letter before today is the one that undoes the premise of every diet before it.",
-  "day": 156,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "The last body letter before today is the one that undoes the premise of every diet before it."
-   },
-   {
-    "k": "",
-    "t": "In 2015 two researchers at the Weizmann Institute in Israel, Eran Segal and Eran Elinav, put continuous glucose monitors on eight hundred people and tracked their blood sugar after every meal for a week. The finding was startling. The same food produced wildly different responses in different people. One person's blood sugar spiked after a banana and stayed flat after a cookie; another's did the reverse. The glycemic index, which ranks foods as if everyone responds alike, was wrong for a large share of people. The responses were personal, and they were predictable from the person's microbiome, body and history. In 2020 a British researcher named Tim Spector repeated it at larger scale with the PREDICT study, measuring fat and sugar responses in thousands of people, including identical twins, and found the same: even twins responded differently to the same meal."
-   },
-   {
-    "k": "",
-    "t": "The lesson is personalized nutrition, and I'll say the honest thing about it. Both groups have founded companies that sell personalized diet advice from these measurements, and the field is young; the evidence that eating by your own curve improves long-term health is promising but not settled. Vault Human points to the science, not the products."
-   },
-   {
-    "k": "",
-    "t": "What's free, and what I'd keep, is the principle. The right diet for you is the one your body measurably responds well to, and the only way to know is to look. A continuous glucose monitor, worn for two weeks, is one way. A log of how you felt ninety minutes after what you ate, which you started on day one hundred and thirty-four, is another, and it's been under your pen the whole time."
-   },
-   {
-    "k": "",
-    "t": "It's the right close for the table keys. A hundred and fifty-six days of letters have offered every sensible way of eating on earth. The last one says: now watch your own body, and eat by what it tells you."
    }
   ],
   "n": 234,
@@ -7874,6 +7874,36 @@ export const letters=[
   "chamber": 5
  },
  {
+  "slug": "the-test-in-the-mail",
+  "title": "The test in the mail",
+  "dek": "Since 2017 you've been able to order a kit, mail a sample of your stool to a lab, and get back a list of foods your gut supposedly wants and a list it supposedly doesn't.",
+  "day": 157,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Since 2017 you've been able to order a kit, mail a sample of your stool to a lab, and get back a list of foods your gut supposedly wants and a list it supposedly doesn't. The science underneath is real and the letters of the last week have told it: the Human Microbiome Project mapped the trillions of organisms in the gut, and the methods it used, sequencing the genes of everything living there, are what the consumer kits borrow. What the kits add is the promise that your personal list can be read from one sample."
+   },
+   {
+    "k": "",
+    "t": "I'd like to tell you plainly where that stands. The microbiome changes day to day with what you ate, how you slept and whether you were sick; a single sample is a photograph of a river. Two kits from the same person on the same day have returned different lists. And the gastroenterology societies that review this evidence have said, as recently as 2024, that commercial microbiome tests shouldn't be used to make clinical decisions, because there isn't yet a validated way to turn the sequencing into advice for one person. That may change. The field is moving fast and some of the companies are doing serious work. But today the honest reading is: the science is strong and the mail-order version isn't ready."
+   },
+   {
+    "k": "",
+    "t": "It sits in the Healing month anyway, because Healing is the month for the hidden numbers, and this is a lesson about which hidden numbers to trust. The gut keys that are proven are the plain ones you've already been handed: thirty plant foods a week, fermented food daily, fiber near thirty grams, and a log of how you feel after you eat. Those move the microbiome measurably, in trials, in weeks. If you have real symptoms, bloating, pain, change in your bowels, the door is a gastroenterologist, not a kit; there are validated tests for the things that matter, and a physician knows which."
+   },
+   {
+    "k": "",
+    "t": "Vault Human coaches and doesn't treat, and it won't sell you a test. It will ask you to read the one instrument you own."
+   }
+  ],
+  "n": 236,
+  "date": "October 19, 2026",
+  "iso": "2026-10-19",
+  "month": "October 2026",
+  "chamber": 5
+ },
+ {
   "slug": "the-tyranny-of-the-should",
   "title": "The tyranny of the should",
   "dek": "\"I should be further along by now.\" \"I should be a better parent.\"",
@@ -7895,36 +7925,6 @@ export const letters=[
    {
     "k": "",
     "t": "It belongs in the Healing month because the should is one of the quietest wounds we carry, and one of the oldest. Vault Human coaches, and doesn't treat; a therapist who works with the inner critic is a good door if the voice is loud. What anyone can do is catch the word. Every should is a demand pretending to be a fact. Underneath it there is nearly always a want, and a want can be chosen, or not, like a free person."
-   }
-  ],
-  "n": 236,
-  "date": "October 20, 2026",
-  "iso": "2026-10-20",
-  "month": "October 2026",
-  "chamber": 5
- },
- {
-  "slug": "the-test-in-the-mail",
-  "title": "The test in the mail",
-  "dek": "Since 2017 you've been able to order a kit, mail a sample of your stool to a lab, and get back a list of foods your gut supposedly wants and a list it supposedly doesn't.",
-  "day": 158,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "Since 2017 you've been able to order a kit, mail a sample of your stool to a lab, and get back a list of foods your gut supposedly wants and a list it supposedly doesn't. The science underneath is real and the letters of the last week have told it: the Human Microbiome Project mapped the trillions of organisms in the gut, and the methods it used, sequencing the genes of everything living there, are what the consumer kits borrow. What the kits add is the promise that your personal list can be read from one sample."
-   },
-   {
-    "k": "",
-    "t": "I'd like to tell you plainly where that stands. The microbiome changes day to day with what you ate, how you slept and whether you were sick; a single sample is a photograph of a river. Two kits from the same person on the same day have returned different lists. And the gastroenterology societies that review this evidence have said, as recently as 2024, that commercial microbiome tests shouldn't be used to make clinical decisions, because there isn't yet a validated way to turn the sequencing into advice for one person. That may change. The field is moving fast and some of the companies are doing serious work. But today the honest reading is: the science is strong and the mail-order version isn't ready."
-   },
-   {
-    "k": "",
-    "t": "It sits in the Healing month anyway, because Healing is the month for the hidden numbers, and this is a lesson about which hidden numbers to trust. The gut keys that are proven are the plain ones you've already been handed: thirty plant foods a week, fermented food daily, fiber near thirty grams, and a log of how you feel after you eat. Those move the microbiome measurably, in trials, in weeks. If you have real symptoms, bloating, pain, change in your bowels, the door is a gastroenterologist, not a kit; there are validated tests for the things that matter, and a physician knows which."
-   },
-   {
-    "k": "",
-    "t": "Vault Human coaches and doesn't treat, and it won't sell you a test. It will ask you to read the one instrument you own."
    }
   ],
   "n": 237,
@@ -7964,6 +7964,36 @@ export const letters=[
   "chamber": 5
  },
  {
+  "slug": "the-sour-milk-cure",
+  "title": "The sour milk cure",
+  "dek": "In 1907 a Russian-born zoologist at the Pasteur Institute in Paris, Élie Metchnikoff, published a book called <em>The Prolongation of Life</em>, and in it he made a claim…",
+  "day": 159,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1907 a Russian-born zoologist at the Pasteur Institute in Paris, Élie Metchnikoff, published a book called <em>The Prolongation of Life</em>, and in it he made a claim that made him a celebrity and, for a century, something of a joke. The peasants of Bulgaria, he'd read, lived unusually long, and they drank soured milk every day. Metchnikoff decided the lactic-acid bacteria in that milk were crowding out the putrefying microbes in the gut, and that the gut's rot was what aged a person. So he drank sour milk daily and told Europe to do the same. Yogurt sales rose. He won the Nobel Prize the next year, for other work, the discovery of the cells that swallow invaders, and died in 1916 at seventy-one, which the newspapers noted was not the century he'd promised."
+   },
+   {
+    "k": "",
+    "t": "Here is the part that's not a joke. In 2021 a team at Stanford, Justin and Erica Sonnenburg with Christopher Gardner, ran a trial in which thirty-six healthy adults ate, for ten weeks, either a diet high in fiber or a diet high in fermented food: yogurt, kefir, kimchi, sauerkraut, kombucha, fermented vegetables, building up to about six servings a day. The fermented-food group's gut microbiomes became measurably more diverse, and nineteen markers of inflammation in their blood went down. The fiber group's diversity, on average, didn't rise in ten weeks. Metchnikoff's mechanism was wrong and his instinct was right."
+   },
+   {
+    "k": "",
+    "t": "I'll say the plain thing about probiotics, the capsules. The evidence for particular strains in particular conditions is real; the evidence that a pill does much for a healthy person is thin, and the supplement shelf is lightly regulated. The trial was food. Food is where the evidence is."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because the gut keys this month are the hidden numbers, and this one is the easiest to move: diversity rose in weeks, in people who were already well. Live-culture food is fine for nearly everyone. If your immune system is suppressed, or your gut has been wrong for more than a month, the door is your physician; Vault Human coaches and doesn't treat."
+   }
+  ],
+  "n": 239,
+  "date": "October 21, 2026",
+  "iso": "2026-10-21",
+  "month": "October 2026",
+  "chamber": 5
+ },
+ {
   "slug": "the-problem-is-the-problem",
   "title": "The problem is the problem",
   "dek": "\"The person is not the problem. The problem is the problem.\"",
@@ -7985,36 +8015,6 @@ export const letters=[
    {
     "k": "",
     "t": "It's a Healing key because this month is for naming what's hidden, and the most hidden thing of all is often the story we didn't know we were telling. Vault Human coaches and doesn't treat; if the story is heavy, the door is a narrative therapist. The practice is for everyone, and it begins with grammar. Not \"I am anxious\" but \"anxiety has been visiting.\" Not \"I'm a mess\" but \"the mess has been winning lately.\" Say it that way and watch the distance open between you and it."
-   }
-  ],
-  "n": 239,
-  "date": "October 22, 2026",
-  "iso": "2026-10-22",
-  "month": "October 2026",
-  "chamber": 5
- },
- {
-  "slug": "the-sour-milk-cure",
-  "title": "The sour milk cure",
-  "dek": "In 1907 a Russian-born zoologist at the Pasteur Institute in Paris, Élie Metchnikoff, published a book called <em>The Prolongation of Life</em>, and in it he made a claim…",
-  "day": 160,
-  "vault": "body",
-  "body": [
-   {
-    "k": "lead",
-    "t": "In 1907 a Russian-born zoologist at the Pasteur Institute in Paris, Élie Metchnikoff, published a book called <em>The Prolongation of Life</em>, and in it he made a claim that made him a celebrity and, for a century, something of a joke. The peasants of Bulgaria, he'd read, lived unusually long, and they drank soured milk every day. Metchnikoff decided the lactic-acid bacteria in that milk were crowding out the putrefying microbes in the gut, and that the gut's rot was what aged a person. So he drank sour milk daily and told Europe to do the same. Yogurt sales rose. He won the Nobel Prize the next year, for other work, the discovery of the cells that swallow invaders, and died in 1916 at seventy-one, which the newspapers noted was not the century he'd promised."
-   },
-   {
-    "k": "",
-    "t": "Here is the part that's not a joke. In 2021 a team at Stanford, Justin and Erica Sonnenburg with Christopher Gardner, ran a trial in which thirty-six healthy adults ate, for ten weeks, either a diet high in fiber or a diet high in fermented food: yogurt, kefir, kimchi, sauerkraut, kombucha, fermented vegetables, building up to about six servings a day. The fermented-food group's gut microbiomes became measurably more diverse, and nineteen markers of inflammation in their blood went down. The fiber group's diversity, on average, didn't rise in ten weeks. Metchnikoff's mechanism was wrong and his instinct was right."
-   },
-   {
-    "k": "",
-    "t": "I'll say the plain thing about probiotics, the capsules. The evidence for particular strains in particular conditions is real; the evidence that a pill does much for a healthy person is thin, and the supplement shelf is lightly regulated. The trial was food. Food is where the evidence is."
-   },
-   {
-    "k": "",
-    "t": "It's a Healing key because the gut keys this month are the hidden numbers, and this one is the easiest to move: diversity rose in weeks, in people who were already well. Live-culture food is fine for nearly everyone. If your immune system is suppressed, or your gut has been wrong for more than a month, the door is your physician; Vault Human coaches and doesn't treat."
    }
   ],
   "n": 240,
