@@ -8052,5 +8052,65 @@ export const letters=[
   "iso": "2026-10-23",
   "month": "October 2026",
   "chamber": 5
+ },
+ {
+  "slug": "one-food-at-a-time",
+  "title": "One food at a time",
+  "dek": "In 1926 an Oakland physician named Albert Rowe published the first elimination diets, and gave the idea its name.",
+  "day": 161,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1926 an Oakland physician named Albert Rowe published the first elimination diets, and gave the idea its name. His patients came in with hives, headaches, a stomach that was never right, and no test could tell him why. So he stopped testing and started subtracting. Take the suspect foods off the plate for a few weeks. If the trouble leaves, bring them back one at a time and see which one brings it with it. The body, he figured, would answer a question the laboratory couldn't, as long as you asked it one food at a time."
+   },
+   {
+    "k": "",
+    "t": "Nearly eighty years later a team at Monash University in Melbourne, led by the gastroenterologist Peter Gibson with the dietitian Sue Shepherd, put Rowe's method on a firmer footing for one condition in particular. In 2005 they named a family of short-chain carbohydrates that the small intestine absorbs poorly: certain sugars in wheat, onions, garlic, beans, milk, apples, honey and the sweeteners that end in -ol. In most people these pass through unnoticed. In a gut that's already irritable, the bacteria ferment them, the bowel fills with gas and water, and the day is lost to bloating and pain. They called the family FODMAPs, and they built a three-part plan: strip them out for two to six weeks, return them one group at a time over the next month or two, then keep only the limits you actually need. In the trials since, roughly half to three-quarters of people with irritable bowel syndrome have found real relief, and the gastroenterology guidelines in Britain and elsewhere now list the diet as a standard option, with a dietitian in the room."
+   },
+   {
+    "k": "",
+    "t": "Here is the part the enthusiasts skip. The first phase is not a way to eat. It narrows the plate hard, and it starves some of the good bacteria along with the gas. Monash's own instruction is that the strict weeks end on schedule and the reintroduction is the point. The goal is the shortest list of foods you truly have to avoid, not the longest list you can."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because this month is for naming the hidden thing, and a food that's been quietly hurting you for years is as hidden as anything gets. I spent a decade in restaurants in every role, and the table that asks for no onion and no garlic is not being difficult. Somebody there has done this work. If there's blood, fever, weight you didn't mean to lose, or a gut that wakes you at night, the door is a gastroenterologist first and a registered dietitian beside them; Vault Human coaches and doesn't treat."
+   }
+  ],
+  "n": 242,
+  "date": "October 23, 2026",
+  "iso": "2026-10-23",
+  "month": "October 2026",
+  "chamber": 5
+ },
+ {
+  "slug": "suppose-a-miracle-happened",
+  "title": "Suppose a miracle happened",
+  "dek": "\"If it isn't broken, don't fix it. If it works, do more of it. If it's not working, do something different.\"",
+  "day": 162,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"If it isn't broken, don't fix it. If it works, do more of it. If it's not working, do something different.\" Steve de Shazer gave those three rules to a whole school of therapy, and they are today's key."
+   },
+   {
+    "k": "",
+    "t": "De Shazer was a jazz saxophonist from Milwaukee who became a social worker. Insoo Kim Berg grew up in Korea, trained as a pharmacist, and came to the United States in 1957, where she traded pharmacy for social work in Wisconsin. They married, and in 1978 they opened the Brief Family Therapy Center in Milwaukee, where over the next decade they did something nearly backward from the field around them. Therapy at the time went looking for the problem, its roots and its reasons. De Shazer and Berg watched for the exceptions. The Tuesday the couple didn't fight. The morning the drinking didn't start. If the problem wasn't happening every minute of every day, then the person already knew how to do something else, and the work was to notice what, and do more of it. \"Problem talk creates problems,\" de Shazer liked to say. \"Solution talk creates solutions.\""
+   },
+   {
+    "k": "",
+    "t": "Berg's story of the method's best-known question is that it came from a client, not from a textbook. A woman worn down by everything said that only a miracle would help, and Berg, instead of arguing, asked her to suppose one did. Tonight, while you sleep, the problem is gone. You don't know it yet. What's the first small thing you'd notice tomorrow morning that tells you? The woman began to describe an ordinary day, in detail, and in the describing she found she already had pieces of it. That became the miracle question. With it came the scale: on a line from zero to ten, where ten is the morning after the miracle, where are you today, and what would half a step up look like? Sessions ran short, often a handful in all, and the second one opened with two words: what's better? De Shazer died in Vienna in 2005, at sixty-five, and Berg in Milwaukee two years later, at seventy-two; the approach they built is taught now in clinics and schools on several continents. The research on it is fair rather than spectacular: modest, consistent gains, strongest for ordinary troubles of behavior and mood."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because this month is for naming what's hidden, and the most overlooked thing in a hard season is the evidence that it isn't total. Vault Human coaches and doesn't treat; if the trouble is deep or long, the door is a solution-focused therapist. The practice is for everyone. Stop asking why the problem is here. Ask when it isn't, and what you're doing then."
+   }
+  ],
+  "n": 243,
+  "date": "October 24, 2026",
+  "iso": "2026-10-24",
+  "month": "October 2026",
+  "chamber": 5
  }
 ];
