@@ -41,6 +41,8 @@ const year = new Date().getFullYear();
     .btn{display:inline-block;background:var(--acc);color:#121715;font-weight:700;text-decoration:none;padding:18px 30px;border-radius:6px;font-size:15px;letter-spacing:.1em;text-transform:uppercase;text-align:center;border:0;cursor:pointer;font-family:Inter,sans-serif}
     .btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
     .fine{font-size:14px;color:var(--muted);margin-top:12px}
+    .two{display:flex;gap:12px;flex-wrap:wrap}.btn2{background:transparent;color:var(--acc);border:2px solid var(--acc);padding:16px 28px}
+    @media (max-width:760px){.two{flex-direction:column}}
     section{padding:56px 0}.alt{background:var(--bg2)}
     h2{font-size:clamp(34px,4.6vw,52px);margin-bottom:22px}
     .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:24px}
@@ -68,10 +70,10 @@ const year = new Date().getFullYear();
   <div class="top"><div class="wrap"><span class="brand">Vault <b>Human</b></span><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div></div>
   <div class="hero" role="img" aria-label="Three people of different generations talking easily together on a couch"><div class="wrap">
     <p class="eyebrow">Life coaching · online</p>
-    <h1>Get unstuck.<br><em>Start with a free call.</em></h1>
+    <h1>Get unstuck.<br><em>Start with a free call, or start today.</em></h1>
     <p class="lede">Thirty minutes to talk about where you are and where you want to be. No payment. No obligation.</p>
   </div></div>
-  <div class="wrap cta"><a class="btn" id="bookbtn" href="#book">Book my free 30-minute call</a><p class="fine">Online, anywhere in the US · Your first week is on us</p></div>
+  <div class="wrap cta"><div class="two"><a class="btn" id="bookbtn" href="#book">Book my free 30-minute call</a><a class="btn btn2" id="trialbtn" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00" onclick="try{gtag('event','trial_click')}catch(_){}">Start your first week free</a></div><p class="fine">Online, anywhere in the US · Talk first, or begin today · Cancel any time</p></div>
 
   <section id="call"><div class="wrap">
     <p class="eyebrow">What happens on the call</p>
