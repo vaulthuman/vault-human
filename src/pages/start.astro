@@ -14,25 +14,25 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
   <meta name="robots" content="noindex" />
   <link rel="icon" href="/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" />
   <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18371546487"></script>
   <script is:inline>
     window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
     gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD');
   </script>
   <style is:inline>
-    :root{--bg:#141A16;--bg2:#1A2420;--ink:#F1EDE4;--soft:#CFC9BC;--mute:#8E9A90;--acc:#C9A24A;--green:#8FA67E;--line:rgba(241,237,228,.14)}
+    :root{--bg:#141A16;--bg2:#1A2420;--ink:#F1EDE4;--soft:#CFC9BC;--mute:#8E9A90;--acc:#C9A24A;--green:#8FA67E;--line:rgba(241,237,228,.14);--disp:'Bebas Neue',Inter,sans-serif}
     *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
     a{color:inherit}
     .wrap{max-width:560px;margin:0 auto;padding:0 20px}
     .top{display:flex;justify-content:space-between;align-items:baseline;padding:18px 20px 0;max-width:980px;margin:0 auto}
-    .brand{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:19px;letter-spacing:5px;text-transform:uppercase;color:var(--ink)}.brand b{color:var(--green);font-weight:400}
+    .brand{font-family:var(--disp);font-weight:400;font-size:34px;letter-spacing:2px;line-height:1;text-transform:uppercase;color:var(--ink)}.brand b{color:var(--green);font-weight:400}
     .brand small{display:block;font:12px/1.3 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-top:3px}
     .tel{font-weight:600;text-decoration:none;font-size:14px;color:var(--soft)}
     /* hero */
     .hero .wrap{padding-top:28px;padding-bottom:36px}
     .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700;color:var(--acc);margin:0 0 10px}
-    h1{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:clamp(34px,8.6vw,46px);line-height:1.08;margin:0 0 12px;letter-spacing:-.01em}
+    h1{font-family:var(--disp);font-weight:400;font-size:clamp(46px,11vw,64px);line-height:.95;margin:0 0 14px;letter-spacing:.01em}
     .lede{font-size:17px;color:var(--soft);margin:0 0 18px}
     .lede b{color:var(--ink);font-weight:600}
     .hv{border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;margin:0 0 20px;position:relative}
@@ -50,7 +50,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     .err{color:#e0a08f;font-size:14px;margin:0;text-align:center}.err:empty{display:none}
     /* sections */
     section{padding:34px 0;border-top:1px solid var(--line)}
-    h2{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:28px;line-height:1.15;margin:0 0 10px}
+    h2{font-family:var(--disp);font-weight:400;font-size:38px;line-height:.95;margin:0 0 10px;letter-spacing:.01em;color:var(--acc)}
     p{margin:0 0 12px;color:var(--soft)}
     .film{position:relative;border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;margin:14px 0 0}
     .film video{width:100%;height:100%;display:block}
@@ -60,7 +60,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     .film.on .play{display:none}
     .coach{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center}
     .coach img{width:150px;height:170px;object-fit:cover;object-position:60% 20%;border-radius:12px}
-    .coach p{margin:0;color:var(--ink);font-size:18px}.g{color:var(--green);font-weight:600}
+    .coach p{margin:0;color:var(--ink);font-size:18px;text-wrap:pretty}.coach .nm{font-family:var(--disp);font-size:32px;letter-spacing:.02em;color:var(--acc);line-height:1;margin:0 0 8px}
     .q{margin:0 0 18px;padding:20px 22px;border-radius:12px;background:#1A2420;border:1px solid var(--line);opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}
     .q:nth-child(even){transform:translateX(40px)}
     .q:nth-child(2){background:#2A2616}
@@ -71,7 +71,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     .q p{font-size:17px;line-height:1.55;color:var(--ink);margin:0 0 8px}
     .q cite{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
     .fine{font-size:13px;color:var(--mute);margin:28px 0 0}
-    .why{font-size:18px;line-height:1.55;color:var(--ink);margin:0}
+    .why{font-size:18px;line-height:1.55;color:var(--ink);margin:0;text-wrap:pretty}
     .whybox{margin:18px 0 0}
     footer{margin-top:24px;padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute);border-top:1px solid var(--line)}
     footer a{text-decoration:none}
@@ -86,7 +86,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
       .hv{grid-column:2;grid-row:1;margin:0;aspect-ratio:16/10;height:auto}
       .whybox{grid-column:2;grid-row:2;margin:0;align-self:start}
       .hv video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-      h1{font-size:46px}
+      h1{font-size:64px}
     }
   </style>
 </head>
@@ -100,7 +100,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
       <p class="lede">Vault Human is an online coaching program. Each morning your coach sends you a short note we call a <b>key</b>: two minutes to read, and one small thing to do that day. Over a year the keys work through every part of your life: your past, your present and your future.</p>
     </div>
     <div class="hv"><video autoplay muted loop playsinline preload="metadata" poster="/video/start-hero-fire.jpg" aria-hidden="true"><source src="/video/start-hero-fire.mp4" type="video/mp4" /></video></div>
-    <div class="whybox"><p class="eyebrow">Why Vault Human exists</p><p class="why">Most of us were handed the pieces of ourselves, never the whole. We believe every person carries more than they've been told, and that a coach in your corner, one day at a time, is how you grow into it.</p></div>
+    <div class="whybox"><p class="eyebrow">Why Vault Human exists</p><p class="why">Most of us were handed the pieces of ourselves, never the whole. We believe every person carries more than they've been told, and that growing into it takes a coach in your corner, one day at a time.</p></div>
     <form id="cap" novalidate>
       <div class="f2">
         <input name="firstname" type="text" placeholder="First name" autocomplete="given-name" required aria-label="First name" />
@@ -116,7 +116,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
   <section><div class="wrap">
     <div class="coach">
       <img src="/img/russ/coach/coach-point.jpg" alt="" />
-      <p>Behind every key is a coach. <b class="g">Russ Michaels</b>, the founder of Vault Human, has spent decades leading people through hard decisions, and there's a live call with him every month.</p>
+      <div><p class="nm">Russ Michaels</p><p>The founder of Vault Human has spent decades leading people through hard decisions, and there's a live call with him every month. Behind every key, there's a coach.</p></div>
     </div>
   </div></section>
 
@@ -124,7 +124,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
   </div></section>
 
   <section><div class="wrap">
-    <h2>Watch the first Key.</h2>
+    <h2>Watch the 1st Key.</h2>
     <p>This is what arrives on your first morning.</p>
     <div class="film" id="film">
       <video id="fv" playsinline preload="none" poster="/img/keys/key01-go-outside-cover.jpg"><source src="/video/key01-go-outside.mp4" type="video/mp4" /></video>
@@ -141,7 +141,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
     <p class="fine">Names withheld at their request. Shared with permission.</p>
   </div></section>
 
-  <footer>© 2026 Vault Human, LLC · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a><br/>Coaching, not therapy. Not legal, medical, financial or therapeutic advice.</footer>
+  <footer><a href="https://www.vaulthuman.com/" id="sitelink">vaulthuman.com</a> · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a><br/>© 2026 Vault Human, LLC · Coaching, not therapy. Not legal, medical, financial or therapeutic advice.</footer>
 
   <script is:inline>
     (function(){
@@ -162,6 +162,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
         .catch(function(){go.disabled=false;go.textContent='Send me my key, free';msg.textContent="That didn't go through. Try again, or call (888) 833-2510.";});
       });
       var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});document.querySelectorAll('.q').forEach(function(q){io.observe(q)});
+      document.getElementById('sitelink').addEventListener('click',function(){try{gtag('event','site_link_click')}catch(e){}});
       var film=document.getElementById('film'),fv=document.getElementById('fv');
       document.getElementById('playbtn').addEventListener('click',function(){film.classList.add('on');fv.setAttribute('controls','');fv.play();try{gtag('event','video_play',{title:'go-outside'})}catch(e){}});
     })();
