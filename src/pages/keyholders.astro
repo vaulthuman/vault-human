@@ -86,6 +86,13 @@ const year = new Date().getFullYear();
     .ar b{color:var(--c)}
     @keyframes arpulse{0%,60%,100%{background:var(--card)}15%,35%{background:color-mix(in srgb,var(--c) 22%,var(--card))}}
     .wheelbox{background:#121715;border:1px solid var(--line);border-radius:16px;padding:28px 24px 12px}
+    @media (max-width:700px){
+      .wheelbox{padding:10px 0 2px;margin:0 -12px;border-radius:12px;transform:perspective(900px) rotateX(16deg);transform-origin:50% 62%}
+      .wheel .wn{font-size:15.5px}.wheel .wv{font-size:11.5px}.wheel .wm{font-size:11px}
+      .wheel text.wal{font-size:30px}.wheel text.wals{font-size:15px}.wheel text.wal-start{font-size:21px}.wheel text.wal-in{font-size:21px}
+      .wheel .wc1{font-size:38px}.wheel .wc0{font-size:13px}.wheel .wc2{font-size:13px}
+      .wheel text.wal-in{display:none}.wheel text.wals{font-size:13px}
+    }
     .wheel{width:100%;height:auto;display:block;--w-self:#3A4F36;--w-now:#2F3A30;--w-more:#26302B;--w-past:#4A3B2C;--w-present:#2B3A47;--w-future:#2F4430;--w-rest:#1A201C;--w-core:#121715}
     .wheel text{text-anchor:middle;font-family:Inter,system-ui,sans-serif}
     .wn{font-size:13px;font-weight:600;fill:#F1EDE4}.wn.rest{fill:rgba(241,237,228,.6)}
@@ -116,8 +123,8 @@ const year = new Date().getFullYear();
     .inset{position:absolute;right:18px;bottom:-1px;width:26%;border-radius:12px 12px 0 0;border:2px solid var(--line);border-bottom:0;box-shadow:0 10px 30px rgba(0,0,0,.5)}
     .who{margin-top:32px}
     .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,21,17,.15),rgba(16,21,17,.55))}
-    .inset.two{width:24%;right:auto}
-    .inset.a{left:22%}.inset.b{left:52%}
+    .inset.two{width:31%;right:auto}
+    .inset.a{left:16%}.inset.b{left:53%}
     .mail{position:absolute;left:6%;right:6%;bottom:-1px;background:rgba(246,241,232,.72);backdrop-filter:blur(2px);color:#1F2A33;border-radius:10px 10px 0 0;padding:14px 18px 16px;font-size:13px;line-height:1.5;box-shadow:0 12px 30px rgba(0,0,0,.5)}
     .mail .mh{font-size:12px;color:#4A5B6B;border-bottom:1px solid #e3ddd1;padding:3px 0}
     .mail .mh span{display:inline-block;width:58px;color:#8f988f;letter-spacing:1px;text-transform:uppercase;font-size:10px}
@@ -228,7 +235,7 @@ const year = new Date().getFullYear();
   <div class="wrap">
     <p class="eyebrow">What you get · two</p>
     <h2>You get the keys<br>to unlock your life.</h2>
-    <p class="lede">Every chamber opens with keys: short teachings, each with one small practice. There are 360 keys for the mind and 180 for the body. Here is one of them.</p>
+    <p class="lede">Every chamber opens with keys. There are 360 keys for the mind and 180 for the body to turn things around. A key is a short teaching with one small practice. Here is an example of one of them, the key titled <i>Who Made You?</i></p>
     <div class="keyrow">
       <img src="/img/inside/booklet-cover.jpg" alt="Who Made You, the first key" />
       <div>
@@ -241,15 +248,15 @@ const year = new Date().getFullYear();
 <section class="alt" id="get-3">
   <div class="wrap">
     <p class="eyebrow">What you get · three</p>
-    <h2>A letter every morning,<br>and a Vault Human app.</h2>
+    <h2>The Vault Human app,<br>and a daily letter.</h2>
     <div class="grid2 duo">
       <div class="tile">
-        <div class="ph" style="aspect-ratio:16/10;background-image:url(https://images.unsplash.com/photo-1545945774-73922eb27813?w=1400&q=80&auto=format&fit=crop);background-position:center 40%"><div class="mail"><div class="mh"><span>From</span> Vault Human</div><div class="mh"><span>Subject</span> Who made you</div><div class="mb">Someone believed in you before you believed in yourself. Maybe it was a teacher who kept you after class, a coach who wouldn't let you quit on a bad day&hellip;</div></div></div>
-        <div class="t"><h3>The letter</h3><p>Each morning, a short letter from your coach. Read it in your inbox, at your desk, or on your phone with your coffee. One teaching, one practice, before the day takes you.</p></div>
+        <div class="ph" style="aspect-ratio:16/10;background-image:url(https://images.unsplash.com/photo-1522125670776-3c7abb882bc2?w=1400&q=80&auto=format&fit=crop);background-position:center 40%"><div class="shade"></div><img class="inset two a" src="/img/inside/app-capture.jpg" alt="" /><img class="inset two b" src="/img/inside/app-folder.jpg" alt="" /></div>
+        <div class="t"><h3>The Vault Human app</h3><p>The capture tool you always wanted. Track your own words in the moment, and watch the numbers add up. Any hour, from anywhere.</p></div>
       </div>
       <div class="tile">
-        <div class="ph" style="aspect-ratio:16/10;background-image:url(https://images.unsplash.com/photo-1522125670776-3c7abb882bc2?w=1400&q=80&auto=format&fit=crop);background-position:center 40%"><div class="shade"></div><img class="inset two a" src="/img/inside/app-capture.jpg" alt="" /><img class="inset two b" src="/img/inside/app-folder.jpg" alt="" /></div>
-        <div class="t"><h3>The app</h3><p>Capture what you notice in your own words the moment it lands, and watch the numbers add up: days showed up, keys turned, gates opened. Any hour, from anywhere.</p></div>
+        <div class="ph" style="aspect-ratio:16/10;background-image:url(https://images.unsplash.com/photo-1545945774-73922eb27813?w=1400&q=80&auto=format&fit=crop);background-position:center 40%"><div class="mail"><div class="mh"><span>From</span> Vault Human</div><div class="mh"><span>Subject</span> Who made you</div><div class="mb">Someone believed in you before you believed in yourself. Maybe it was a teacher who kept you after class, a coach who wouldn't let you quit on a bad day&hellip;</div></div></div>
+        <div class="t"><h3>A daily letter</h3><p>Each morning, a short letter from your coach. Read it in your inbox, at your desk, or on your phone with your coffee. One teaching, one practice, before the day takes you.</p></div>
       </div>
     </div>
   </div>
@@ -416,5 +423,8 @@ const year = new Date().getFullYear();
   </div>
 </footer>
 
+<script is:inline>
+  (function(){var w=document.querySelector('.wheel');if(!w)return;function fit(){if(window.innerWidth<700){w.setAttribute('viewBox','-150 -40 800 600');}else{w.setAttribute('viewBox','-175 -40 870 610');}}fit();window.addEventListener('resize',fit);})();
+</script>
 </body>
 </html>
