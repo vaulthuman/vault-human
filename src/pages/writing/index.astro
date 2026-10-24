@@ -2,6 +2,7 @@
 import '../../styles/home.css';
 import '../../styles/nature.css';
 import { letters, BORN } from '../../data/letters.js';
+import { letterVideos } from '../../data/letter-videos.js';
 const year = new Date().getFullYear();
 // Newest first: the most recent day at the top, down to the first scroll on the day Vault Human began.
 const run = [...letters].sort((a, b) => b.day - a.day || (a.vault === 'mind' ? -1 : 1));
@@ -87,6 +88,12 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
     .rl-t{font-family:var(--disp);font-size:clamp(26px,2.4vw,34px);line-height:1;margin:0 0 8px;letter-spacing:.5px}
     .rl-d{font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;line-height:1.5;color:rgba(241,237,228,.8);margin:0}
     .rl-d em{font-style:italic}
+    .rl-row{display:flex;gap:16px;align-items:flex-start}
+    .rl-txt{min-width:0;flex:1}
+    .rl-vt{flex:0 0 auto;width:120px;height:68px;border-radius:8px;background-size:cover;background-position:center;position:relative;margin-top:4px;box-shadow:0 2px 10px rgba(0,0,0,.35);border:1px solid rgba(143,166,126,.35)}
+    .rl-vt i{position:absolute;left:50%;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:rgba(18,23,21,.72);border:1px solid rgba(241,237,228,.7)}
+    .rl-vt i:after{content:"";position:absolute;left:10px;top:7px;border-left:9px solid var(--ink);border-top:6px solid transparent;border-bottom:6px solid transparent}
+    @media(max-width:760px){.rl-vt{width:96px;height:54px}}
     .rl.rv{opacity:0}
     .rl.rv:nth-of-type(odd){transform:translateX(-26px)}
     .rl.rv:nth-of-type(even){transform:translateX(26px)}
@@ -135,8 +142,10 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
             {it.m && <div class={`rm${it.i === 0 ? ' first' : ''}`}><span>{it.m}</span></div>}
             <a class={`rl rv${it.l.day === 1 && it.l.vault === 'mind' ? ' origin' : ''}`} data-iso={it.l.iso} data-vault={it.l.vault} href={`/writing/${it.l.slug}/`}>
               <p class="rl-date">{it.l.date}</p>
-              <p class="rl-t">{it.l.title}</p>
-              <p class="rl-d" set:html={it.l.dek}></p>
+              <div class="rl-row">
+                <div class="rl-txt"><p class="rl-t">{it.l.title}</p><p class="rl-d" set:html={it.l.dek}></p></div>
+                {letterVideos[it.l.slug] && <span class="rl-vt" style={`background-image:url('${letterVideos[it.l.slug].poster}')`} aria-label="This key has a short film"><i></i></span>}
+              </div>
             </a>
           </>
         ))}

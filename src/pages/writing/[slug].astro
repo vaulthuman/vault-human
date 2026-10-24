@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { articles } from '../../data/writing.js';
 import { letters } from '../../data/letters.js';
+import { letterVideos } from '../../data/letter-videos.js';
 export function getStaticPaths() {
   const ess = articles.map((a) => ({ params: { slug: a.slug }, props: { a, kind: 'essay' } }));
   const let_ = letters.map((l, i) => ({ params: { slug: l.slug }, props: { a: l, kind: 'letter', prev: i > 0 ? letters[i-1] : null, next: i < letters.length-1 ? letters[i+1] : null } }));
@@ -11,6 +12,7 @@ const { a, kind, prev, next } = Astro.props;
 const WITH_PDF = ['the-fracture', 'the-warmer-intelligence', 'the-mirror', 'decision-points', 'how-do-we-grow-leaders-now'];
 const pdf = kind === 'essay' && WITH_PDF.includes(a.slug) ? `/${a.slug}.pdf` : null;
 const plainDek = (a.dek || '').replace(/<[^>]+>/g, '');
+const vid = kind === 'letter' ? letterVideos[a.slug] : null;
 ---
 <Base title={`${a.title} — Vault Human`} description={plainDek}>
   <div class="wrap">
@@ -25,6 +27,12 @@ const plainDek = (a.dek || '').replace(/<[^>]+>/g, '');
       <div class="abody">
         {a.body.map((b) => b.k === "h" ? <h3 class="ah" set:html={b.t}></h3> : <p class={b.k} set:html={b.t}></p>)}
       </div>
+      {vid && (
+        <div class="lvid" id="film">
+          <p class="lvid-k">Watch this key</p>
+          <video controls playsinline preload="metadata" poster={vid.poster}><source src={vid.src} type="video/mp4" /></video>
+        </div>
+      )}
       {kind === 'essay' ? (
         <div class="article-cta">
           <p class="closing" style="font-size:22px">You were never a set of separate problems. One coach. One method. The whole of you.</p>
@@ -50,6 +58,9 @@ const plainDek = (a.dek || '').replace(/<[^>]+>/g, '');
     </article>
   </div>
   <style is:inline>
+    .lvid{margin:40px 0 8px}
+    .lvid-k{font-family:var(--sans);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--acc-soft);margin:0 0 10px}
+    .lvid video{display:block;width:100%;max-width:560px;aspect-ratio:16/9;border-radius:12px;background:#000;border:1px solid rgba(143,166,126,.3)}
     .lnav{display:flex;justify-content:space-between;gap:16px;margin:30px 0 0;font-family:var(--sans);font-size:13px;text-align:left}
     .lnav a{text-decoration:none;opacity:.8}
     .lnav a:hover{opacity:1;text-decoration:underline}
