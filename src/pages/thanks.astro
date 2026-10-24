@@ -1,29 +1,98 @@
 ---
-// Deploy to: vault-human/src/pages/thanks.astro  → serves at https://www.vaulthuman.com/thanks
-// Set the shared HubSpot form (3f225ab5-…) to redirect here on submit.
-// gtag base lives in Base.astro <head>, so the conversion fires reliably on page load
-// — independent of the form embed's messaging (this is the bulletproof conversion fix).
-import Base from '../layouts/Base.astro';
+// https://www.vaulthuman.com/thanks — lands after the /start form posts to HubSpot.
+// Lesson confirmation first. The call is a quiet second option. The Google Ads
+// lead conversion fires on page load (independent of any embed).
+const title = 'Your first lesson is on its way — Vault Human';
+const desc = 'Check your inbox. Your first lesson lands in the next few minutes.';
 ---
-<Base title="Your first lesson is on its way — Vault Human" description="Your first lesson is on its way. If you want to talk it through, pick a time for a free call with Russ.">
-  <div class="wrap" style="text-align:center;max-width:760px;margin:0 auto;padding:70px 20px 30px">
-    <p class="eyebrow" style="letter-spacing:2px;text-transform:uppercase;opacity:.6;font-size:14px">Your first lesson is on its way</p>
-    <h1 style="font-size:38px;margin:10px 0 14px">Check your inbox. Then, if you want, let's talk.</h1>
-    <p style="font-size:18px;line-height:1.6;opacity:.85">Your first lesson lands in the next few minutes (check promotions or spam if it doesn't). If you'd like a real conversation about where you are and where you want to be, pick a free 30-minute slot with Russ below. No payment, no obligation.</p>
-  </div>
-  <div class="wrap" style="max-width:1000px;margin:0 auto;padding:0 12px 80px">
-    <div class="calendly-inline-widget" data-url="https://calendly.com/vaulthuman/free-call?hide_gdpr_banner=1&hide_landing_page_details=1" style="min-width:320px;height:760px;border-radius:12px;overflow:hidden;background:#F4F1EA"></div>
-    <p style="text-align:center;margin-top:18px;font-size:15px;opacity:.75">Calendar not loading? <a href="https://calendly.com/vaulthuman/free-call" target="_blank" rel="noopener">Open it here</a> or call (888) 833-2510.</p>
-  </div>
-  <script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={desc} />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600;700&display=swap" />
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18371546487"></script>
   <script is:inline>
-    // Order-independent: queue straight onto dataLayer. gtag.js drains the queue
-    // when it loads, so this works even though Astro defers the head module that
-    // defines window.gtag. (A `typeof window.gtag === "function"` guard here
-    // silently no-ops, because this body script parses BEFORE that module runs.)
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ window.dataLayer.push(arguments); }
-    gtag('event','conversion',{ send_to:'AW-18371546487/r4eECOKGw9wcEPeanrhE' });
-    gtag('event','generate_lead');
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD');
+    gtag('event','conversion',{send_to:'AW-18371546487/r4eECOKGw9wcEPeanrhE'});
+    gtag('event','generate_lead',{method:'free_week'});
   </script>
-</Base>
+  <style is:inline>
+    :root{--paper:#F6F3EC;--paper2:#EEE9DF;--ink:#1B231D;--soft:#4A544C;--mute:#6E776F;--acc:#4F6B4C;--acc2:#8FA67E;--line:#D9D3C6}
+    *{box-sizing:border-box}html,body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    .wrap{max-width:560px;margin:0 auto;padding:0 20px}
+    .top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px 4px;max-width:560px;margin:0 auto}
+    .brand{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:22px;text-decoration:none;color:var(--ink)}.brand b{color:var(--acc)}
+    .tel{font-weight:600;text-decoration:none;font-size:14px;color:var(--soft)}
+    section{padding:34px 0}
+    .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700;color:var(--acc);margin:0 0 10px}
+    h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(32px,8vw,42px);line-height:1.1;margin:0 0 14px;letter-spacing:-.01em}
+    h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;line-height:1.2;margin:0 0 10px}
+    p{margin:0 0 14px;color:var(--soft)}
+    .box{background:#fff;border:1.5px solid var(--acc2);border-radius:12px;padding:16px 18px;margin:18px 0 0}
+    .box b{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:6px}
+    .box ol{margin:0;padding-left:20px;color:var(--ink)}.box li{margin:4px 0}
+    .tint{background:var(--paper2)}
+    .quiet{border:1px solid var(--line);background:#fff;border-radius:12px;padding:18px}
+    .quiet p{margin:0 0 12px}
+    .btn2{display:inline-block;background:transparent;color:var(--acc);border:1.5px solid var(--acc);border-radius:8px;padding:12px 18px;font-weight:700;font-size:16px;text-decoration:none;cursor:pointer;font-family:Inter,sans-serif}
+    .cal{display:none;margin-top:16px}
+    .cal.on{display:block}
+    .calendly-inline-widget{min-width:300px;height:700px;border-radius:12px;overflow:hidden}
+    .small{font-size:14px;color:var(--mute)}
+    .ready{margin-top:6px}
+    .ready a{color:var(--acc);font-weight:600}
+    footer{padding:26px 20px 34px;text-align:center;font-size:13px;color:var(--mute);border-top:1px solid var(--line)}
+    footer a{text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="top"><a class="brand" href="/">Vault <b>Human</b></a><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
+
+  <section><div class="wrap">
+    <p class="eyebrow">You're in</p>
+    <h1>Your first lesson is on its way.</h1>
+    <p>It lands in your inbox in the next few minutes, from vault@vaulthuman.com. If it isn't there, check Promotions or Spam and drag it to your inbox so tomorrow's arrives on time.</p>
+    <div class="box"><b>What to do now</b>
+      <ol><li>Open the email. It takes about two minutes to read.</li><li>Do the one small step at the bottom. Today, not later.</li><li>Tomorrow at 7, the next one arrives. Your first week is free.</li></ol>
+    </div>
+  </div></section>
+
+  <section class="tint"><div class="wrap">
+    <div class="quiet">
+      <h2>Want to talk it through?</h2>
+      <p>If you'd rather start with a real conversation about where you are, there's a free 30-minute call with the coach. One question to answer when you book, nothing to prepare.</p>
+      <button class="btn2" id="showcal" type="button">Pick a time for a free call</button>
+      <div class="cal" id="cal">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/vaulthuman/free-call?hide_gdpr_banner=1&hide_landing_page_details=1"></div>
+        <p class="small" style="margin-top:10px">Calendar not loading? <a href="https://calendly.com/vaulthuman/free-call" target="_blank" rel="noopener">Open it here</a> or call (888) 833-2510.</p>
+      </div>
+    </div>
+    <p class="small ready" style="margin-top:18px">Ready now? <a href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Start your membership</a>, $99 a month, first week free.</p>
+  </div></section>
+
+  <footer>© 2026 Vault Human, LLC · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a><br/>Coaching, not therapy. Not legal, medical, financial or therapeutic advice.</footer>
+
+  <script is:inline>
+    (function(){
+      var b=document.getElementById('showcal'),c=document.getElementById('cal'),loaded=false;
+      b.addEventListener('click',function(){
+        c.classList.add('on');b.style.display='none';
+        if(!loaded){loaded=true;var s=document.createElement('script');s.src='https://assets.calendly.com/assets/external/widget.js';s.async=true;document.body.appendChild(s);}
+        gtag('event','call_open');
+        c.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+      window.addEventListener('message',function(e){
+        if(e.data&&e.data.event==='calendly.event_scheduled'){gtag('event','call_booked');}
+      });
+    })();
+  </script>
+</body>
+</html>
