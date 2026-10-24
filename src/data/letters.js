@@ -20,7 +20,7 @@ export const letters=[
    },
    {
     "k": "",
-    "t": "Mandino knew that from the inside. In his thirties he was broke, drinking, and standing outside a pawn shop one winter with no plan to see spring. He walked into a library instead and read for years. In 1968 he wrote a short story about a camel boy handed ten scrolls, one at a time, with a rule: read each one out loud three times a day for thirty days before you open the next. Tens of millions of people have read it since."
+    "t": "Mandino knew that from the inside. In his thirties he had lost his job, his marriage and most of his hope, and one winter he came close to giving up on all of it. He walked into a library instead and read for years. In 1968 he wrote a short story about a camel boy handed ten scrolls, one at a time, with a rule: read each one out loud three times a day for thirty days before you open the next. Tens of millions of people have read it since."
    },
    {
     "k": "",
