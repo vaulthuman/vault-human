@@ -9,8 +9,8 @@ const year = new Date().getFullYear();
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your first key, free · Vault Human</title>
-  <meta name="description" content="Online life coaching for the whole of you. Your first key arrives in minutes, free. One short teaching and one small practice." />
+  <title>Online life coaching · start free today · Vault Human</title>
+  <meta name="description" content="Online life coaching. A coach sends you one short lesson and one small thing to do, every morning. Your first one is free, in your inbox in minutes." />
   <meta name="robots" content="noindex" />
   <link rel="canonical" href="https://www.vaulthuman.com/start/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -59,15 +59,15 @@ const year = new Date().getFullYear();
     <div class="wrap top"><span class="brand">Vault <b>Human</b></span><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
     <main><div class="wrap card">
       <p class="eyebrow">Life coaching · online</p>
-      <h1>Your first key, <em>free.</em></h1>
-      <p class="lede">One short teaching and one small thing to do today, in your inbox in minutes. Then one every morning, with a coach in your corner.</p>
+      <h1>Life coaching, online. <em>Start free today.</em></h1>
+      <p class="lede">Here's how it works. Every morning, a coach sends you one short lesson and one small thing to do that day: about work, relationships, habits, or what's next. Your first one is free, in your inbox in minutes. Put in your name and email to get it.</p>
       <form id="cap" novalidate>
         <div><label for="fn">First name</label><input id="fn" name="firstname" type="text" autocomplete="given-name" required /></div>
         <div><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" inputmode="email" required /></div>
-        <button class="btn" id="go" type="submit">Send me the first key</button>
+        <button class="btn" id="go" type="submit">Send me my first lesson, free</button>
         <p class="err" id="msg"></p>
       </form>
-      <ul class="trust"><li>Free. No card.</li><li>Anywhere in the US</li><li>Coaching, not therapy</li><li>Unsubscribe any time</li></ul>
+      <ul class="trust"><li>Free to start. No card.</li><li>Online, anywhere in the US</li><li>A real coach, Russ Michaels</li><li>Unsubscribe any time</li></ul>
       <blockquote>I've walked into conversations with Russ feeling completely stuck and walked out wondering why the answer had seemed so far away.<cite>Business partner · names withheld at their request, shared with permission</cite></blockquote>
     </div></main>
     <footer>© {year} Vault Human, LLC · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · Coaching is not legal, medical, financial or therapeutic advice.</footer>
@@ -87,8 +87,8 @@ const year = new Date().getFullYear();
         fetch('https://api-na2.hsforms.com/submissions/v3/integration/submit/246947446/3f225ab5-5a70-46d9-a497-29e6256b1e52',{
           method:'POST',headers:{'Content-Type':'application/json'},
           body:JSON.stringify({fields:[{name:'firstname',value:fn},{name:'email',value:em}],context:ctx})
-        }).then(function(r){if(!r.ok)throw new Error(r.status);try{gtag('event','generate_lead',{method:'first_key'})}catch(_){}location.href='/thanks/';})
-        .catch(function(){go.disabled=false;go.textContent='Send me the first key';msg.textContent="That didn't go through. Try again, or call (888) 833-2510.";});
+        }).then(function(r){if(!r.ok)throw new Error(r.status);try{gtag('event','generate_lead',{method:'first_lesson'})}catch(_){}location.href='/thanks/';})
+        .catch(function(){go.disabled=false;go.textContent='Send me my first lesson, free';msg.textContent="That didn't go through. Try again, or call (888) 833-2510.";});
       });
     })();
   </script>
