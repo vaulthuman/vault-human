@@ -68,14 +68,15 @@ const year = new Date().getFullYear();
     .cap{font-size:12.5px;color:var(--mute);margin-top:10px;line-height:1.4}
     .phone{border-radius:22px;border:2px solid var(--line);overflow:hidden}
     .svgw svg{width:100%;height:auto}
-    .coachgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;grid-template-rows:290px 290px;gap:14px}
-    .coachgrid .wide{grid-column:2/5}
-    .coachgrid > div{border-radius:12px;overflow:hidden;position:relative}
-    .coachgrid img,.coachgrid video{width:100%;height:100%;object-fit:cover;object-position:center 25%}
-    .coachgrid .big{grid-row:1/3}
+    .cvid{border-radius:14px;overflow:hidden;aspect-ratio:960/456;background:#000}
+    .cvid video{width:100%;height:100%;display:block;object-fit:cover}
+    .jwrap{display:flex;gap:12px;margin-top:12px}
+    .jrow{display:flex;gap:12px;min-width:0}
+    .jrow > div{min-width:0;border-radius:12px;overflow:hidden}
+    .jrow img{width:100%;height:auto;display:block}
     .vid{position:relative;border-radius:16px;overflow:hidden;background:#000;aspect-ratio:16/9}
     .vid video{width:100%;height:100%;display:block}
-    .fine{padding:90px 0 60px}
+    .fine{padding:0 0 60px}
     .fine p{font-size:12px;color:var(--mute);max-width:820px;line-height:1.6}
     .step{display:flex;gap:18px;align-items:flex-start}
     .step .num{font-size:40px;min-width:40px}
@@ -129,9 +130,6 @@ const year = new Date().getFullYear();
     .stack{display:grid;gap:14px}
     .stack .card{padding:16px 20px}
     .stack .num{font-size:40px}
-    .cap-card{background-size:cover;background-position:center;position:relative;overflow:hidden}
-    .cap-card:before{content:"";position:absolute;inset:0;background:rgba(14,20,26,.82)}
-    .cap-card > *{position:relative}
     .tint{background:#0f161a}
     .band{height:220px;background-size:cover;background-position:center 45%;margin:-96px 0 56px;opacity:.9}
     .hubm{display:none}
@@ -143,7 +141,7 @@ const year = new Date().getFullYear();
     .hubm-core{border:2.5px solid var(--sage);background:rgba(143,166,126,.16);border-radius:16px;padding:22px;text-align:center}
     .hubm-core b{display:block;font-family:'Bebas Neue';font-weight:400;font-size:38px;letter-spacing:2px}
     .hubm-core span{font-size:14px;color:var(--soft)}
-    .addr{font-size:17px!important;line-height:1.8;color:#A9C397!important;letter-spacing:.3px;margin-bottom:40px;max-width:none!important}
+    .addr{font-size:17px!important;line-height:1.75;color:#A9C397!important;letter-spacing:.3px;margin-bottom:44px;max-width:none!important}
     .addr a{color:#A9C397}
     .runcards .card p{font-size:14px}
     .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,21,17,.15),rgba(16,21,17,.55))}
@@ -167,9 +165,7 @@ const year = new Date().getFullYear();
       .grid2,.grid3,.grid4{grid-template-columns:1fr 1fr}
       .letter{grid-template-columns:1fr}
       .letter img{max-width:260px}
-      .coachgrid{grid-template-columns:1fr 1fr 1fr;grid-template-rows:260px 200px 170px}
-      .coachgrid .big{grid-column:1/4;grid-row:1}
-      .coachgrid .wide{grid-column:1/4;grid-row:2}
+      .jwrap{flex-direction:column}
       .hero{min-height:80vh}
       .why{background-size:100% auto;background-position:top center;background-repeat:no-repeat;background-color:var(--bg)}
       .why:before{background:linear-gradient(180deg,rgba(16,21,17,0) 0,rgba(16,21,17,0) 44vw,rgba(16,21,17,1) 66vw)}
@@ -177,8 +173,7 @@ const year = new Date().getFullYear();
     }
     @media (max-width:560px){
       .grid2,.grid3,.grid4{grid-template-columns:1fr}
-      .coachgrid{grid-template-columns:1fr 1fr 1fr;grid-template-rows:220px 160px 140px}
-      .hubsvg{display:none} .hubm{display:block;margin-top:24px}
+      .hubsvg{margin:28px -20px 0!important;max-width:none!important}
       .photo-tile{min-height:220px}
       .band{height:150px;margin:-72px 0 40px}
       .keyrow{grid-template-columns:1fr}
@@ -301,12 +296,12 @@ const year = new Date().getFullYear();
     <p class="eyebrow">What you get · four</p>
     <h2>A real person<br>in your corner.</h2>
     <p class="lede">Russ Michaels created Vault Human. He coaches members and trains the coaches. More than twenty years leading organizations, more than ten as a chief executive and board president, more than ten as an attorney, and over a decade in hospitality, where he learned that people wait patiently when they know they have been seen.</p>
-    <div class="coachgrid" style="margin-top:36px">
-      <div class="big"><video autoplay muted loop playsinline poster="/img/russ/coach/coach-point.jpg" aria-label="Russ on stage"><source src="/img/russ/coach/coach-point.mp4" type="video/mp4" /></video></div>
-      <div class="wide"><img src="/img/russ/v2/home-marianne.jpg" alt="" style="object-position:center 45%" /></div>
-      <div><img src="/img/russ/v2/home-rohr.jpg" alt="" style="object-position:center 30%" /></div>
-      <div><img src="/img/russ/v2/lived-africa.jpg" alt="" style="object-position:center 40%" /></div>
-      <div><img src="/img/russ/coach/coach-field.jpg" alt="" style="object-position:left 40%" /></div>
+    <div class="coachwrap" style="margin-top:36px">
+      <div class="cvid"><video autoplay muted loop playsinline poster="/img/russ/coach/coach-point.jpg" aria-label="Russ on stage"><source src="/img/russ/coach/coach-point.mp4" type="video/mp4" /></video></div>
+      <div class="jwrap">
+        <div class="jrow" style="flex:2.283 1 0"><div style="flex:1.513 1 0"><img src="/img/russ/v2/home-marianne.jpg" alt="" /></div><div style="flex:0.77 1 0"><img src="/img/russ/v2/home-rohr.jpg" alt="" /></div></div>
+        <div class="jrow" style="flex:2.333 1 0"><div style="flex:1 1 0"><img src="/img/russ/v2/lived-africa.jpg" alt="" /></div><div style="flex:1.333 1 0"><img src="/img/russ/coach/coach-field.jpg" alt="" /></div></div>
+      </div>
     </div>
 
     <div style="margin-top:80px">
@@ -335,20 +330,17 @@ const year = new Date().getFullYear();
       <div class="card"><div class="num">25 to 95%</div><p>A 5% rise in customer retention lifts profit by 25% to 95%. Keeping a customer costs a fraction of finding a new one.<br><span class="cite">Frederick Reichheld, Bain &amp; Company, in Harvard Business Review</span></p></div>
       <div class="card"><div class="num">92%</div><p>Twelve-month retention on annual plans, against 68% on monthly plans. Annual members stay, and failed payments almost disappear.<br><span class="cite">Baremetrics, subscription benchmarks</span></p></div>
     </div>
-    <div class="grid2 photostats" style="margin-top:20px">
-      <div class="photo-tile" style="background-image:url(https://images.unsplash.com/photo-1609260840244-22b52bfc6664?w=1200&q=80&auto=format&fit=crop)"></div>
-      <div class="stack">
+    <div class="grid3" style="margin-top:20px">
       <div class="card"><div class="num">$51B</div><p>The personal development market in 2025, projected near $80B by 2033.<br><span class="cite">Grand View Research</span></p></div>
       <div class="card"><div class="num">122,974</div><p>Coaches worldwide, up 15% since 2023, in a $5.34B coaching industry.<br><span class="cite">ICF Global Coaching Study, 2025, with PwC</span></p><p class="pop">In an industry this crowded, Vault Human stands apart: one guided year, one method, a real coach.</p></div>
       <div class="card"><div class="num">Under 5%</div><p>Monthly churn for memberships that mix content, community and live calls, against 8% to 12% for a course library alone. The coach is what keeps people.<br><span class="cite">Kourses, member retention benchmarks, 2026</span></p></div>
-      </div>
     </div>
     <div class="grid2" style="margin-top:20px">
       <div class="card"><h3>What the books say</h3><p>Robbie Kellman Baxter calls it the <i>forever transaction</i> in <i>The Membership Economy</i>: a relationship, not a sale. Tien Tzuo, who built Zuora, shows in <i>Subscribed</i> why recurring relationships beat one-time purchases. John Warrillow, in <i>The Automatic Customer</i>, shows how recurring revenue makes a company itself more valuable.</p></div>
       <div class="card"><h3>The closest working model</h3><p>Mindvalley, a global personal-growth membership: every program, community and author sessions for $99 a month or $499 a year, with a tier that adds live sessions with its founder. Brendon Burchard's GrowthDay runs a daily-coaching membership on the same idea.</p></div>
     </div>
     <div class="card" style="margin-top:20px;border-left:3px solid var(--sage)"><p style="color:var(--ink)"><b>Where Vault Human is different:</b> a single guided year instead of a library to browse, a real coach inside every membership, and a capture tool that turns each day's practice into a record of who you are becoming. Nobody else walks a person through their past, present and future in one year, with one method and one relationship. It is built to leave people bigger than it found them, and that is what people come back for.</p></div>
-    <div class="card cap-card" style="margin-top:20px;background-image:url(/video/desert-night-poster.jpg)"><h3 style="color:var(--now)">What it could be worth</h3><p>Memberships like Mindvalley and GrowthDay are valued on recurring revenue, and businesses built this way get bought. Vault Human adds something they lack: a complete method, the keys, the chambers and the coaching patterns, that could one day help train the AI coaches and companions a modernizing world will want. That makes it a candidate for a capital event, from the multi-millions upward.</p><p class="calc">A simple way to size it: subscription businesses commonly change hands at 3 to 6 times annual recurring revenue. At year five's $2.1 million, that is roughly $6 to $13 million. At 20,000 members, about $24 million a year, the same multiples reach $70 to $140 million. Illustrative, not a promise.</p></div>
+    <div class="card cap-card" style="margin-top:20px"><h3 style="color:var(--now)">What it could be worth</h3><p>Memberships like Mindvalley and GrowthDay are valued on recurring revenue, and businesses built this way get bought. Vault Human adds something they lack: a complete method, the keys, the chambers and the coaching patterns, that could one day help train the AI coaches and companions a modernizing world will want. That makes it a candidate for a capital event, from the multi-millions upward.</p><p class="calc">A simple way to size it: subscription businesses commonly change hands at 3 to 6 times annual recurring revenue. At year five's $2.1 million, that is roughly $6 to $13 million. At 20,000 members, about $24 million a year, the same multiples reach $70 to $140 million. Illustrative, not a promise.</p></div>
   </div>
 </section>
 
@@ -358,15 +350,6 @@ const year = new Date().getFullYear();
     <h2>Every path runs<br>through the membership.</h2>
     <p class="lede">However someone finds us, they begin as a member. Deeper coaching is added on top, and the membership keeps renewing underneath.</p>
     <div class="svgw hubsvg" style="margin:36px auto 0;max-width:760px"><svg viewBox="0 0 700 520" width="700" height="520"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9aa39b"/></marker><marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8FA67E"/></marker></defs><circle cx="350" cy="270" r="118" fill="none" stroke="#8FA67E" stroke-width="1.2" stroke-dasharray="5 6"/><circle cx="350" cy="270" r="92" fill="#8FA67E" fill-opacity="0.18" stroke="#8FA67E" stroke-width="2.5"/><text x="350" y="254" text-anchor="middle" font-family="Bebas Neue" font-size="30" fill="#EDEBE4">MEMBERSHIP</text><text x="350" y="278" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#dfe3dc">$99 a month · $750 a year</text><text x="350" y="298" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#dfe3dc">renews every month</text><text x="350" y="142" text-anchor="middle" font-family="Inter" font-size="11" fill="#8FA67E" letter-spacing="2">RECURRING</text><rect x="24" y="50" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="75" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">LinkedIn &amp; social media</text><path d="M224 70 L283.5 167.7" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="24" y="122" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="147" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">Google Ads &amp; search</text><path d="M224 142 L263.1 184.4" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="24" y="194" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="219" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">The free first week</text><path d="M224 214 L238.0 221.7" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="24" y="266" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="291" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">Group sessions &amp; weekends</text><path d="M224 286 L228.9 284.9" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="24" y="338" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="363" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">Tercet Law clients</text><path d="M224 358 L249.0 338.4" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="24" y="410" width="196" height="40" rx="20" fill="#1b231d" stroke="#5d675f"/><text x="122.0" y="435" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#EDEBE4">Friends &amp; referrals</text><path d="M224 430 L273.1 364.7" stroke="#9aa39b" stroke-width="1.3" marker-end="url(#ar)"/><rect x="486" y="108" width="190" height="44" rx="10" fill="#8FA67E" fill-opacity="0.12" stroke="#8FA67E"/><text x="581.0" y="135" text-anchor="middle" font-family="Inter" font-weight="600" font-size="12.5" fill="#EDEBE4">One-on-one coaching</text><path d="M435.0 182.5 L482 130" stroke="#8FA67E" stroke-width="1.5" marker-end="url(#ag)"/><rect x="486" y="200" width="190" height="44" rx="10" fill="#8FA67E" fill-opacity="0.12" stroke="#8FA67E"/><text x="581.0" y="227" text-anchor="middle" font-family="Inter" font-weight="600" font-size="12.5" fill="#EDEBE4">Groups</text><path d="M465.0 229.4 L482 222" stroke="#8FA67E" stroke-width="1.5" marker-end="url(#ag)"/><rect x="486" y="292" width="190" height="44" rx="10" fill="#8FA67E" fill-opacity="0.12" stroke="#8FA67E"/><text x="581.0" y="319" text-anchor="middle" font-family="Inter" font-weight="600" font-size="12.5" fill="#EDEBE4">Families &amp; teens</text><path d="M466.1 307.6 L482 314" stroke="#8FA67E" stroke-width="1.5" marker-end="url(#ag)"/><rect x="486" y="384" width="190" height="44" rx="10" fill="#8FA67E" fill-opacity="0.12" stroke="#8FA67E"/><text x="581.0" y="411" text-anchor="middle" font-family="Inter" font-weight="600" font-size="12.5" fill="#EDEBE4">Teams &amp; business</text><path d="M436.3 356.3 L482 406" stroke="#8FA67E" stroke-width="1.5" marker-end="url(#ag)"/><text x="122" y="22" text-anchor="middle" font-family="Inter" font-size="11" letter-spacing="2" fill="#9aa39b">WAYS IN</text><text x="581" y="80" text-anchor="middle" font-family="Inter" font-size="11" letter-spacing="2" fill="#8FA67E">WAYS UP</text></svg></div>
-    <div class="hubm">
-      <p class="hubm-h">Ways in</p>
-      <div class="hubm-list"><span>LinkedIn and social media</span><span>Google Ads and search</span><span>The free first week</span><span>Group sessions and weekends</span><span>Tercet Law clients</span><span>Friends and referrals</span></div>
-      <div class="hubm-arrow">&#8595;</div>
-      <div class="hubm-core"><b>Membership</b><span>$99 a month or $750 a year. Renews every month.</span></div>
-      <div class="hubm-arrow">&#8595;</div>
-      <p class="hubm-h">Ways up</p>
-      <div class="hubm-list up"><span>One-on-one coaching</span><span>Groups</span><span>Families and teens</span><span>Teams and business</span></div>
-    </div>
     <div class="grid2" style="margin-top:28px">
       <div class="card"><h3>Events feed the year</h3><p>A weekend or group day is a powerful start, but no one can walk eleven chambers in two days. Every event closes with an invitation into membership, so the work continues at each person's own pace.</p></div>
       <div class="card"><h3>Members become clients</h3><p>One-on-one, groups and team coaching grow out of members who want more. The warmest client is someone already doing the work.</p></div>
@@ -375,7 +358,6 @@ const year = new Date().getFullYear();
 </section>
 
 <section id="revenue">
-  <div class="band" style="background-image:url(https://images.unsplash.com/photo-1542323228-002ac256e7b8?w=1200&q=80&auto=format&fit=crop)"></div>
   <div class="wrap">
     <p class="eyebrow">The plan · how revenue works</p>
     <h2>Recurring by design.</h2>
@@ -465,7 +447,7 @@ const year = new Date().getFullYear();
 
 <footer class="fine">
   <div class="wrap">
-    <p class="addr">Vault Human, LLC &middot; 1401 Lavaca St #211, Austin, Texas 78701<br><a href="https://www.vaulthuman.com/">vaulthuman.com</a> &middot; <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a></p>
+    <p class="addr">Vault Human, LLC<br>1401 Lavaca St #211<br>Austin, Texas 78701<br><a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a><br><a href="https://www.vaulthuman.com/">vaulthuman.com</a></p>
     <p>Vault Human, its method, keys, chambers and materials were created by Russ Michaels and are original works of Vault Human, LLC. © {year} Vault Human, LLC. All rights reserved. Vault Human™ and related marks are trademarks of Vault Human, LLC; registration is planned.</p>
     <p style="margin-top:12px">Vault Human is coaching, not therapy or medical care. This page is for information only. It is not an offer to sell or a solicitation of an offer to buy any security or interest in any company. Figures are illustrative examples, not forecasts or promises of results. The family plan is planned and not yet available.</p>
   </div>
