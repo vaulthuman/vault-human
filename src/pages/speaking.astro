@@ -1,4 +1,5 @@
 ---
+import Voices from '../components/Voices.astro';
 import '../styles/home.css';
 import '../styles/nature.css';
 const year = new Date().getFullYear();
@@ -39,6 +40,8 @@ const year = new Date().getFullYear();
       <div class="sec-head"><p class="eyebrow">Russ offers</p><h2>Keynotes and rooms.</h2></div>
       <ul class="sp-offers"><li>Keynotes</li><li>Moderated conversations</li><li>Workshops</li><li>Fireside chats</li><li>Leadership offsites</li><li>Guided practices</li></ul>
     </div></section>
+
+    <Voices />
 
     <section class="sec gallery-sec"><div class="wrap"><p class="strip-head">On stage and in the room</p><div class="gallery">
       <figure><img src="/img/russ/v2/home-mic.jpg" alt="Russ speaking with a microphone on a lit stage" style="object-position:50% 28%" loading="lazy" /><figcaption>Keynotes</figcaption></figure>
