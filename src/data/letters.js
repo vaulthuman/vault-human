@@ -8112,5 +8112,65 @@ export const letters=[
   "iso": "2026-10-24",
   "month": "October 2026",
   "chamber": 5
+ },
+ {
+  "slug": "the-pattern-underneath",
+  "title": "The pattern underneath",
+  "dek": "Jeffrey Young was a psychologist working beside Aaron Beck in Philadelphia in the early 1980s, when cognitive therapy was proving it could lift a depression in a few…",
+  "day": 163,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Jeffrey Young was a psychologist working beside Aaron Beck in Philadelphia in the early 1980s, when cognitive therapy was proving it could lift a depression in a few months. Most patients got better. Some didn't. They did the homework, could argue a gloomy thought to the ground, and then walked back into the same relationship, the same job, the same fight. Young decided the method wasn't wrong; it was aimed too shallow. Under the day's thoughts sat something older and quieter, laid down in childhood, that the thoughts were only obeying."
+   },
+   {
+    "k": "",
+    "t": "He called those things schemas, and over the next decade, in a 1990 book for clinicians and a 1993 one for the rest of us written with Janet Klosko, he named eighteen. Each begins as a child's reasonable answer to a need that went unmet. If no one stayed, you learn that people leave, and spend forty years bracing for it or leaving first. If love came only with performance, you learn you're worth what you produce. If the house wasn't safe, you learn to watch. Abandonment, mistrust, defectiveness, failure, subjugation, unrelenting standards: sentences people carry without knowing they carry them. Each has three ways of running a life. We give in to it, we steer around anything that might wake it, or we fight it so hard the overcorrection becomes the problem. Later Young added modes, the parts that take the wheel in turn: the hurt child, the stern inner parent, the detached one who feels nothing, and the healthy adult whose job is to hold the rest."
+   },
+   {
+    "k": "",
+    "t": "The evidence is better than most. In a Dutch trial published in 2006, people with borderline personality disorder did better after three years of schema therapy than with a strong rival treatment, and far fewer quit along the way. That is slow, serious work, and its door is a schema therapist; Vault Human coaches and doesn't treat."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because this month is for naming what's hidden, and a schema is the hidden thing itself. I've taken Culture Index and Birkman, and the gift of a good instrument was never the news; it was a word for a thing I'd been doing for years. Young's gift is the same. You can't out-argue a pattern you haven't named. Named, it loosens."
+   }
+  ],
+  "n": 244,
+  "date": "October 25, 2026",
+  "iso": "2026-10-25",
+  "month": "October 2026",
+  "chamber": 5
+ },
+ {
+  "slug": "the-gene-and-the-plate",
+  "title": "The gene and the plate",
+  "dek": "The human genome was read out in full in 2003, and almost at once people asked the obvious question: if my genes differ from yours, shouldn't my dinner?",
+  "day": 163,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The human genome was read out in full in 2003, and almost at once people asked the obvious question: if my genes differ from yours, shouldn't my dinner? In 2004 Jim Kaput and Raymond Rodriguez gave the new field its charter in a paper on nutritional genomics, and José Ordovás, a Spaniard who directs the nutrition and genomics laboratory at Tufts in Boston, has spent the years since finding the places where the answer is yes. His best-known one came in 2009: a common variant in a gene called APOA2 raised the odds of obesity, but only in people who also ate a lot of saturated fat. Same food, different body, different result."
+   },
+   {
+    "k": "",
+    "t": "Two genes come up more than any others. APOE has three forms, and about one person in four carries the fourth kind, e4. It raises the risk of Alzheimer's disease later in life and, less famously, tends to send cholesterol higher on a diet heavy in saturated fat, one of the few places a letter in your genome changes what belongs on your plate. MTHFR is the other. A common variant slows an enzyme that handles folate, and the fix the body wants is ordinary: folate from leafy greens, beans and lentils, with folic acid where the diet falls short. The internet has made MTHFR a diagnosis and a supplement aisle; the medical genetics societies have said plainly that for most people the test adds nothing to care."
+   },
+   {
+    "k": "",
+    "t": "Here is the plain thing. The dream of a diet read off your genome has mostly not come true yet. In Stanford's DIETFITS trial, published in 2018, 609 adults ate low-fat or low-carbohydrate for a year, and the gene patterns meant to predict who would thrive on which predicted nothing. Europe's Food4Me study found that personal advice beat generic advice, and that adding a person's genes to it added nothing more. The science is real and young. Most of the consumer reports sold in its name are ahead of it."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because this month is for the hidden number, and your genes are the most hidden of all. The honest use of them is small and specific, and worth knowing. If you've had a genetic test, or are weighing one, the door is a genetic counselor to read it with you, and your physician before you change a supplement; Vault Human coaches and doesn't treat."
+   }
+  ],
+  "n": 245,
+  "date": "October 25, 2026",
+  "iso": "2026-10-25",
+  "month": "October 2026",
+  "chamber": 5
  }
 ];
