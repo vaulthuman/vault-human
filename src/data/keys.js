@@ -8,9 +8,9 @@ export const letters=[
   "vault": "mind",
   "day": 1,
   "key": 1,
-  "title": "The first scroll",
+  "title": "Choose your life",
   "paras": [
-   "\"Today I begin a new life.\" That is the first line of the first scroll in Og Mandino's *The Greatest Salesman in the World*, and it is where Vault Human begins too.",
+   "\"Today I begin a new life.\" That is the opening vow of Og Mandino's *The Greatest Salesman in the World*, and it is where Vault Human begins too.",
    "You don't need a new life. You need one habit that is yours, kept long enough to change your mind about who you are.",
    "Mandino knew that from the inside. In his thirties he was broke, drinking, and standing outside a pawn shop one winter with no plan to see spring. He walked into a library instead and read for years. In 1968 he wrote a short story about a camel boy handed ten scrolls, one at a time, with a rule: read each one out loud three times a day for thirty days before you open the next. Tens of millions of people have read it since.",
    "His idea is gentler than it sounds. You do not argue your way out of an old habit. You out-repeat it. A page read aloud morning, noon and night for a month replaces, by sheer repetition and sheer kindness, the voice that was there before.",

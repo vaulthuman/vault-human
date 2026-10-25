@@ -4,15 +4,15 @@ export const BORN='2026-05-16';
 export const PUBLISHED='October 19, 2026';
 export const letters=[
  {
-  "slug": "the-first-scroll",
-  "title": "The first scroll",
-  "dek": "\"Today I begin a new life.\" That is the first line of the first scroll in Og Mandino's <em>The Greatest Salesman in the World</em>, and it is where Vault Human begins too.",
+  "slug": "choose-your-life",
+  "title": "Choose your life",
+  "dek": "\"Today I begin a new life.\" That is the opening vow of Og Mandino's <em>The Greatest Salesman in the World</em>, and it is where Vault Human begins too.",
   "day": 1,
   "vault": "mind",
   "body": [
    {
     "k": "lead",
-    "t": "\"Today I begin a new life.\" That is the first line of the first scroll in Og Mandino's <em>The Greatest Salesman in the World</em>, and it is where Vault Human begins too."
+    "t": "\"Today I begin a new life.\" That is the opening vow of Og Mandino's <em>The Greatest Salesman in the World</em>, and it is where Vault Human begins too."
    },
    {
     "k": "",
