@@ -1,7 +1,7 @@
 ---
 // https://www.vaulthuman.com/key/1/ — where the Day 1 email's film opens. Same design as /start and /thanks.
 // The film starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
-const title = 'Key 1: Choose a new life — Vault Human';
+const title = 'Your first Key: Choose a life of your own — Vault Human';
 const desc = 'Your first Key. A two-minute film and one small step for today.';
 ---
 <!doctype html>
@@ -51,6 +51,15 @@ const desc = 'Your first Key. A two-minute film and one small step for today.';
     .call h3{font:700 20px/1.3 Inter,sans-serif;color:var(--acc);margin:0 0 6px}
     .btn{display:inline-block;background:var(--acc);color:#15190f;font-weight:700;padding:15px 24px;border-radius:8px;font-size:16px;text-decoration:none;margin-top:6px}
     .more{font-size:15px;color:var(--mute)}.more a{color:var(--acc)}
+.read{display:grid;grid-template-columns:180px 1fr;gap:18px;align-items:center;margin-top:22px;background:var(--bg2);border:1px solid #2c3a33;border-radius:12px;overflow:hidden;text-decoration:none;transition:border-color .2s}
+    .read:hover,.read:focus-visible{border-color:var(--acc);outline:none}
+    .read img{width:100%;height:100%;min-height:130px;object-fit:cover;display:block}
+    .read span{display:flex;flex-direction:column;gap:4px;padding:16px 18px 16px 0}
+    .read small{font:700 11px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+    .read b{font-family:var(--disp);font-weight:400;font-size:28px;line-height:1;color:var(--ink);letter-spacing:.02em}
+    .read em{font-style:normal;font-size:15px;color:var(--soft);line-height:1.45}
+    .read u{text-decoration:none;color:var(--acc);font-weight:600;font-size:15px;margin-top:2px}
+    @media (max-width:520px){.read{grid-template-columns:1fr}.read img{height:150px}.read span{padding:0 18px 18px}}
     footer{border-top:1px solid var(--line);padding:24px 20px 36px;text-align:center;font-size:13px;color:var(--mute)}
   </style>
 </head>
@@ -62,8 +71,8 @@ const desc = 'Your first Key. A two-minute film and one small step for today.';
 
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow">Key 1 · Chamber One: You</p>
-      <h1>Choose a new life.</h1>
+      <p class="eyebrow">Your first Key</p>
+      <h1>Choose a life of your own.</h1>
       <div class="film">
         <video id="v" src="/video/key01-choose-a-new-life.mp4" poster="/img/keys/key01-choose-a-new-life-cover.jpg" autoplay muted playsinline preload="auto"></video>
         <button class="snd" id="snd" type="button"><i></i><span>Tap for sound</span></button>
@@ -88,7 +97,8 @@ const desc = 'Your first Key. A two-minute film and one small step for today.';
         <p><b>2.</b> Go outside for twenty minutes. Walk at talking pace, or just sit in the open air.</p>
         <p><b>3.</b> Before bed, write one line: what you said, and who heard it.</p>
       </div>
-      <p class="more" style="margin-top:16px">Your next Key arrives tomorrow at 7 a.m. Want the longer read? <a href="/writing/the-first-scroll/">The first scroll</a>.</p>
+      <p class="more" style="margin-top:16px">Your next Key arrives tomorrow at 7 a.m.</p>
+      <a class="read" href="/writing/the-first-scroll/"><img src="/img/keys/first-scroll-card.jpg" alt="" loading="lazy" /><span><small>The longer read</small><b>The first scroll</b><em>The book this Key comes from, and why Vault Human begins with its first line.</em><u>Read it &rarr;</u></span></a>
     </div>
   </section>
 
