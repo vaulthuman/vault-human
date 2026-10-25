@@ -32,9 +32,9 @@ const desc = 'Check your inbox. Your first Key lands in the next few minutes.';
     .brand{font-family:var(--disp);font-weight:400;font-size:34px;letter-spacing:2px;line-height:1;text-transform:uppercase;color:var(--ink);text-decoration:none}.brand b{color:var(--green);font-weight:400}
     .brand small{display:block;font:12px/1.3 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-top:3px}
     .tel{font-weight:600;text-decoration:none;font-size:14px;color:var(--soft)}
-    .band{position:relative;height:300px;margin-top:16px;background:url(/img/start/circle.jpg) center 62%/cover}
-    .band:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,26,22,0) 55%,var(--bg) 100%)}
-    .hero .wrap{padding-top:6px;padding-bottom:30px;max-width:720px}
+    .hv{border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;margin:0 0 26px}
+    .hv video{width:100%;height:100%;object-fit:cover;display:block}
+    .hero .wrap{padding-top:28px;padding-bottom:36px}
     .lead{font-size:19px;color:var(--ink)}
     .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700;color:var(--acc);margin:0 0 10px}
     h1{font-family:var(--disp);font-weight:400;font-size:clamp(46px,11vw,64px);line-height:.95;margin:0 0 14px;letter-spacing:.01em}
@@ -44,7 +44,7 @@ const desc = 'Check your inbox. Your first Key lands in the next few minutes.';
     .box b{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
     .box ol{margin:0;padding-left:20px;color:var(--ink)}.box li{margin:6px 0}
     section{padding:34px 0;border-top:1px solid var(--line)}
-    section .wrap{max-width:720px}
+    section .wrap p,section .wrap h2{max-width:640px}
     .btn2{display:inline-block;background:var(--acc);color:#15190f;border:0;border-radius:8px;padding:14px 20px;font-weight:700;font-size:16px;text-decoration:none;cursor:pointer;font-family:Inter,sans-serif}
     .cal{display:none;margin-top:16px}.cal.on{display:block}
     .calendly-inline-widget{min-width:300px;height:700px;border-radius:12px;overflow:hidden;background:#fff}
@@ -52,20 +52,22 @@ const desc = 'Check your inbox. Your first Key lands in the next few minutes.';
     .ready a{color:var(--acc);font-weight:600}
     footer{margin-top:24px;padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute);border-top:1px solid var(--line)}
     footer a{text-decoration:none}
-    @media (min-width:900px){.band{height:440px;max-width:1180px;margin:20px auto 0;border-radius:14px;overflow:hidden}.band:after{background:linear-gradient(180deg,rgba(20,26,22,0) 70%,rgba(20,26,22,.6) 100%)}.hero .wrap{padding-top:28px}}
+    @media (min-width:900px){.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;padding-top:40px}.hv{grid-column:2;grid-row:1;margin:0;aspect-ratio:16/10}.hc{grid-column:1;grid-row:1}h1{font-size:56px}}
   </style>
 </head>
 <body>
   <div class="top"><a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
 
-  <div class="band" role="img" aria-label="Friends sitting around a campfire at night"></div>
   <div class="hero"><div class="wrap">
+    <div class="hv"><video autoplay muted loop playsinline preload="metadata" poster="/video/thanks-table.jpg" aria-hidden="true"><source src="/video/thanks-table.mp4" type="video/mp4" /></video></div>
+    <div class="hc">
     <p class="eyebrow">You're in</p>
     <h1>Your first Key is on its way.</h1>
     <p class="lead">Welcome. You just did the hardest part, which is starting.</p>
     <p>It lands in your inbox in the next few minutes, from vault@vaulthuman.com. If it isn't there, check Promotions or Spam and drag it to your inbox so tomorrow's arrives on time.</p>
     <div class="box"><b>What to do now</b>
       <ol><li>Open the email. It takes about two minutes to read.</li><li>Do the one small step at the bottom. Today, not later.</li><li>Tomorrow at 7, the next Key arrives. Your first week is free.</li></ol>
+    </div>
     </div>
   </div></div>
 
