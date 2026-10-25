@@ -160,7 +160,7 @@ const desc = 'A two-minute key and one thing to do, every morning, from a real c
         var fields=[{name:'firstname',value:fn},{name:'lastname',value:ln},{name:'email',value:em}];if(ph)fields.push({name:'phone',value:ph});
         fetch('https://api-na2.hsforms.com/submissions/v3/integration/submit/246947446/3f225ab5-5a70-46d9-a497-29e6256b1e52',{
           method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fields:fields,context:ctx})
-        }).then(function(r){if(!r.ok)throw new Error(r.status);try{gtag('event','generate_lead',{method:'free_week'})}catch(_){}location.href='/thanks/';})
+        }).then(function(r){if(!r.ok)throw new Error(r.status);try{localStorage.setItem('vh_person',JSON.stringify({fn:fn,ln:ln,em:em,ph:ph}))}catch(_){}try{gtag('event','generate_lead',{method:'free_week'})}catch(_){}location.href='/thanks/';})
         .catch(function(){go.disabled=false;go.textContent='Send me my key, free';msg.textContent="That didn't go through. Try again, or call (888) 833-2510.";});
       });
       var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});document.querySelectorAll('.q').forEach(function(q){io.observe(q)});

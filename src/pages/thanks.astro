@@ -20,7 +20,6 @@ const desc = 'Your first Key is on its way.';
     window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
     gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD');
     gtag('event','conversion',{send_to:'AW-18371546487/r4eECOKGw9wcEPeanrhE'});
-    gtag('event','generate_lead',{method:'free_week'});
   </script>
   <style is:inline>
     :root{--bg:#141A16;--bg2:#1A2420;--ink:#F1EDE4;--soft:#CFC9BC;--mute:#8E9A90;--acc:#C9A24A;--green:#8FA67E;--line:rgba(241,237,228,.14);--disp:'Bebas Neue',Inter,sans-serif}
@@ -141,7 +140,7 @@ const desc = 'Your first Key is on its way.';
     <h2>A free call with a Vault&nbsp;Human coach</h2>
     <p>Russ Michaels keeps his calendar open to everyone at Vault Human. Choose any time that suits you below. Thirty minutes, no cost, and just one question when you book.</p>
     <div class="cal"><div class="calendly-inline-widget" data-url="https://calendly.com/vaulthuman/free-call?hide_gdpr_banner=1&hide_landing_page_details=1&hide_event_type_details=1&background_color=1a2420&text_color=f1ede4&primary_color=c9a24a"></div></div>
-    <p class="ready">Ready now? <a href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Start your membership</a>.</p>
+    <p class="ready">Ready now? <a id="join" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Start your membership</a>.</p>
   </div></section>
 
   <footer><a href="https://www.vaulthuman.com/">vaulthuman.com</a> · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a><br/>© 2026 Vault Human, LLC · Coaching, not therapy. Not legal, medical, financial or therapeutic advice.</footer>
@@ -153,6 +152,8 @@ const desc = 'Your first Key is on its way.';
       document.getElementById('go').addEventListener('click',function(){load();try{gtag('event','call_open')}catch(e){}});
       var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(e.target.id==='call')load();else e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
       document.querySelectorAll('.q').forEach(function(q){io.observe(q)});io.observe(document.getElementById('call'));
+      try{var P=JSON.parse(localStorage.getItem('vh_person')||'null');if(P&&P.em){var j=document.getElementById('join');j.href+='?prefilled_email='+encodeURIComponent(P.em);
+        var c=document.querySelector('.calendly-inline-widget');c.setAttribute('data-url',c.getAttribute('data-url')+'&name='+encodeURIComponent((P.fn+' '+P.ln).trim())+'&email='+encodeURIComponent(P.em));}}catch(_){}
       window.addEventListener('message',function(e){if(e.data&&e.data.event==='calendly.event_scheduled'){try{gtag('event','call_booked')}catch(_){}}});
     })();
   </script>
