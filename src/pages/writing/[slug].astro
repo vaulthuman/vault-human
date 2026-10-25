@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import fs from 'node:fs';
 import { articles } from '../../data/writing.js';
 import { letters } from '../../data/letters.js';
 import { letterVideos } from '../../data/letter-videos.js';
@@ -13,8 +14,9 @@ const WITH_PDF = ['the-fracture', 'the-warmer-intelligence', 'the-mirror', 'deci
 const pdf = kind === 'essay' && WITH_PDF.includes(a.slug) ? `/${a.slug}.pdf` : null;
 const plainDek = (a.dek || '').replace(/<[^>]+>/g, '');
 const vid = kind === 'letter' ? letterVideos[a.slug] : null;
+const ogImage = fs.existsSync(`${process.cwd()}/public/og/w/${a.slug}.jpg`) ? `https://www.vaulthuman.com/og/w/${a.slug}.jpg` : 'https://www.vaulthuman.com/og/vh.jpg';
 ---
-<Base title={`${a.title} — Vault Human`} description={plainDek}>
+<Base title={`${a.title} — Vault Human`} description={plainDek} image={ogImage}>
   <div class="wrap">
     <article class="article">
       {kind === 'essay' ? (
