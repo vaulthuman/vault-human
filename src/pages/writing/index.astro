@@ -4,7 +4,7 @@ import '../../styles/nature.css';
 import { letters, BORN } from '../../data/letters.js';
 import { letterVideos } from '../../data/letter-videos.js';
 const year = new Date().getFullYear();
-// Newest first: the most recent day at the top, down to the first scroll on the day Vault Human began.
+// Newest first: the most recent day at the top, down to the first key on the day Vault Human began.
 const run = [...letters].sort((a, b) => b.day - a.day || (a.vault === 'mind' ? -1 : 1));
 const newest = run[0];
 const first = run[run.length - 1];
@@ -51,7 +51,7 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
     gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD',{linker:{domains:['vaulthuman.com','tercetlaw.com','fretworksystems.com','triplicityadvisory.com']}});
   </script>
   <style is:inline>
-    /* Writing: the run of letters, newest first, down a spine to the first scroll */
+    /* Writing: the run of letters, newest first, down a spine to the first key */
     .wr-hero .veil{background:linear-gradient(180deg,rgba(18,23,21,.6) 0%,rgba(18,23,21,.38) 50%,rgba(18,23,21,.97) 100%)}
     .wr-hero{min-height:78vh}
     .wr-hero .bgvid{object-position:50% 45%}
