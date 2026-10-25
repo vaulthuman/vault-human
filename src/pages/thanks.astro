@@ -1,9 +1,8 @@
 ---
-// https://www.vaulthuman.com/thanks — lands after the /start form posts to HubSpot.
-// Same skin as /start. Key confirmation first; the call is a quiet second option.
-// The Google Ads lead conversion fires on page load.
-const title = 'Your first Key is on its way — Vault Human';
-const desc = 'Check your inbox. Your first Key lands in the next few minutes.';
+// https://www.vaulthuman.com/thanks — after the /start form. Same design system as /start.
+// The one call to action here is the free call. The Google Ads lead conversion fires on load.
+const title = 'You\'re in — Vault Human';
+const desc = 'Your first Key is on its way.';
 ---
 <!doctype html>
 <html lang="en">
@@ -27,75 +26,123 @@ const desc = 'Check your inbox. Your first Key lands in the next few minutes.';
     :root{--bg:#141A16;--bg2:#1A2420;--ink:#F1EDE4;--soft:#CFC9BC;--mute:#8E9A90;--acc:#C9A24A;--green:#8FA67E;--line:rgba(241,237,228,.14);--disp:'Bebas Neue',Inter,sans-serif}
     *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
     a{color:inherit}
-    .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+    .wrap{max-width:560px;margin:0 auto;padding:0 20px}
     .top{display:flex;justify-content:space-between;align-items:baseline;padding:18px 20px 0;max-width:980px;margin:0 auto}
-    .brand{font-family:var(--disp);font-weight:400;font-size:34px;letter-spacing:2px;line-height:1;text-transform:uppercase;color:var(--ink);text-decoration:none}.brand b{color:var(--green);font-weight:400}
+    .brand{font-family:var(--disp);font-weight:400;font-size:34px;letter-spacing:2px;line-height:1;text-transform:uppercase;color:var(--ink)}.brand b{color:var(--green);font-weight:400}
     .brand small{display:block;font:12px/1.3 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-top:3px}
     .tel{font-weight:600;text-decoration:none;font-size:14px;color:var(--soft)}
-    .hv{border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;margin:0 0 26px}
-    .hv video{width:100%;height:100%;object-fit:cover;display:block}
+    /* hero */
     .hero .wrap{padding-top:28px;padding-bottom:36px}
-    .lead{font-size:19px;color:var(--ink)}
     .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700;color:var(--acc);margin:0 0 10px}
     h1{font-family:var(--disp);font-weight:400;font-size:clamp(46px,11vw,64px);line-height:.95;margin:0 0 14px;letter-spacing:.01em}
-    h2{font-family:var(--disp);font-weight:400;font-size:34px;line-height:.95;margin:0 0 10px;letter-spacing:.01em;color:var(--acc)}
-    p{margin:0 0 14px;color:var(--soft);text-wrap:pretty}
-    .box{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:18px 0 0}
-    .box b{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
-    .box ol{margin:0;padding-left:20px;color:var(--ink)}.box li{margin:6px 0}
-    section{padding:34px 0;border-top:1px solid var(--line)}
-    section .wrap p,section .wrap h2{max-width:640px}
-    .btn2{display:inline-block;background:var(--acc);color:#15190f;border:0;border-radius:8px;padding:14px 20px;font-weight:700;font-size:16px;text-decoration:none;cursor:pointer;font-family:Inter,sans-serif}
-    .cal{display:none;margin-top:16px}.cal.on{display:block}
-    .calendly-inline-widget{min-width:300px;height:700px;border-radius:12px;overflow:hidden;background:#fff}
-    .small{font-size:14px;color:var(--mute)}
-    .ready a{color:var(--acc);font-weight:600}
+    .lede{font-size:17px;color:var(--soft);margin:0 0 18px}
+    .lede b{color:var(--ink);font-weight:600}
+    .hv{border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;margin:0 0 20px;position:relative}
+    .hv video{width:100%;height:100%;object-fit:cover;display:block}
+    /* form */
+    .ask{padding:0 0 36px}
+    form{display:grid;gap:10px}
+    .f2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    input{width:100%;padding:14px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.05);color:var(--ink);font:16px Inter,system-ui,sans-serif}
+    input::placeholder{color:#7f897f}
+    input:focus{outline:2px solid var(--acc);border-color:var(--acc)}
+    .btn{display:block;width:100%;background:var(--acc);color:#15190f;font-weight:700;border:0;padding:16px 22px;border-radius:8px;font-size:17px;cursor:pointer;font-family:Inter,sans-serif;margin-top:2px}
+    .btn:disabled{opacity:.7}
+    .under{font-size:13.5px;color:var(--mute);margin:10px 0 0;text-align:center}
+    .err{color:#e0a08f;font-size:14px;margin:0;text-align:center}.err:empty{display:none}
+    /* sections */
+    section{padding:34px 0;border-top:1px solid var(--line);scroll-margin-top:12px}
+    h2{font-family:var(--disp);font-weight:400;font-size:38px;line-height:.95;margin:0 0 10px;letter-spacing:.01em;color:var(--acc)}
+    p{margin:0 0 12px;color:var(--soft)}
+    .film{position:relative;border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;margin:14px 0 0}
+    .film video{width:100%;height:100%;display:block}
+    .film .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.2);cursor:pointer;border:0}
+    .film .play i{width:64px;height:64px;border-radius:50%;background:var(--acc);display:inline-block;position:relative}
+    .film .play i:after{content:"";position:absolute;left:25px;top:20px;border-left:20px solid #15190f;border-top:12px solid transparent;border-bottom:12px solid transparent}
+    .film.on .play{display:none}
+    .coach{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center}
+    .coach img{width:150px;height:170px;object-fit:cover;object-position:60% 20%;border-radius:12px}
+    .coach p{margin:0;color:var(--ink);font-size:18px;text-wrap:pretty}.coach .nm{font-family:var(--disp);font-size:32px;letter-spacing:.02em;color:var(--acc);line-height:1;margin:0 0 8px}
+    .q{margin:0 0 18px;padding:20px 22px;border-radius:12px;background:#1A2420;border:1px solid var(--line);opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}
+    .q:nth-child(even){transform:translateX(40px)}
+    .q:nth-child(2){background:#2A2616}
+    .q:nth-child(3){background:#2B211B}
+    .q:nth-child(4){background:#1E2A2A}
+    .q:nth-child(5){background:#2A2420}
+    .q.in{opacity:1;transform:none}
+    .q p{font-size:17px;line-height:1.55;color:var(--ink);margin:0 0 8px}
+    .q cite{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
+    .fine{font-size:13px;color:var(--mute);margin:28px 0 0}
+    .why{font-size:18px;line-height:1.55;color:var(--ink);margin:0;text-wrap:pretty}
+    .whybox{margin:22px 0 0}
+    @media (max-width:899px){.hero .wrap{display:flex;flex-direction:column}.hc{order:1}.hv{order:2}.hero form{order:3}.whybox{order:4}}
     footer{margin-top:24px;padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute);border-top:1px solid var(--line)}
     footer a{text-decoration:none}
-    @media (min-width:900px){.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;padding-top:40px}.hv{grid-column:2;grid-row:1;margin:0;aspect-ratio:16/10}.hc{grid-column:1;grid-row:1}h1{font-size:56px}}
+    @media (min-width:900px){
+      .wrap{max-width:980px}
+      section .wrap{max-width:980px}
+      .why{max-width:760px}
+      .coach p{max-width:760px}
+      .hero .wrap{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:14px 40px;align-items:start;padding-top:40px}
+      .hc{grid-column:1;grid-row:1}
+      .hero form{grid-column:1;grid-row:2}
+      .hv{grid-column:2;grid-row:1;margin:0;aspect-ratio:16/10;height:auto}
+      .whybox{grid-column:2;grid-row:2;margin:0;align-self:start}
+      .hv video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+      h1{font-size:64px}
+    }
+  
+    /* thanks-only */
+    .hero .btn{display:block;text-align:center;padding:16px 28px;text-decoration:none;margin:6px 0 22px}
+    @media (min-width:900px){.hero .btn{display:inline-block;margin-bottom:0}}
+    .steps{display:grid;gap:14px}
+    .steps .q{margin:0;padding:18px 20px}
+    .steps .q b{display:block;font-family:var(--disp);font-weight:400;font-size:26px;letter-spacing:.02em;line-height:1;color:var(--acc);margin:0 0 6px}
+    .steps .q p{margin:0}
+    .cal{margin-top:16px;border-radius:12px;overflow:hidden;background:#141A16;min-height:700px}
+    .calendly-inline-widget{min-width:300px;height:700px}
+    .ready{font-size:14px;color:var(--mute);margin:22px 0 0}.ready a{color:var(--acc);font-weight:600}
+    @media (min-width:900px){.steps{grid-template-columns:repeat(3,1fr)}}
   </style>
 </head>
 <body>
-  <div class="top"><a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
+  <div class="top"><a class="brand" href="/" style="text-decoration:none">Vault <b>Human</b><small>Online life coaching</small></a><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
 
   <div class="hero"><div class="wrap">
-    <div class="hv"><video autoplay muted loop playsinline preload="metadata" poster="/video/thanks-table.jpg" aria-hidden="true"><source src="/video/thanks-table.mp4" type="video/mp4" /></video></div>
     <div class="hc">
-    <p class="eyebrow">You're in</p>
-    <h1>Your first Key is on its way.</h1>
-    <p class="lead">Welcome. You just did the hardest part, which is starting.</p>
-    <p>It lands in your inbox in the next few minutes, from vault@vaulthuman.com. If it isn't there, check Promotions or Spam and drag it to your inbox so tomorrow's arrives on time.</p>
-    <div class="box"><b>What to do now</b>
-      <ol><li>Open the email. It takes about two minutes to read.</li><li>Do the one small step at the bottom. Today, not later.</li><li>Tomorrow at 7, the next Key arrives. Your first week is free.</li></ol>
+      <p class="eyebrow">You're in</p>
+      <h1>Your first Key is on its way.</h1>
+      <p class="lede">Welcome. You just did the hardest part, which is starting. Want to talk it through with a real coach?</p>
+      <a class="btn" href="#call" id="go">Free 30-minute call</a>
     </div>
-    </div>
+    <div class="hv"><video autoplay muted loop playsinline preload="metadata" poster="/video/thanks-table.jpg" aria-hidden="true"><source src="/video/thanks-table.mp4" type="video/mp4" /></video></div>
   </div></div>
 
   <section><div class="wrap">
-    <h2>Want to talk it through?</h2>
-    <p>If you'd rather start with a real conversation about where you are, there's a free 30-minute call with the coach. One question to answer when you book, nothing to prepare.</p>
-    <button class="btn2" id="showcal" type="button">Pick a time for a free call</button>
-    <div class="cal" id="cal">
-      <div class="calendly-inline-widget" data-url="https://calendly.com/vaulthuman/free-call?hide_gdpr_banner=1&hide_landing_page_details=1&background_color=141a16&text_color=f1ede4&primary_color=c9a24a"></div>
-      <p class="small" style="margin-top:10px">Calendar not loading? <a href="https://calendly.com/vaulthuman/free-call" target="_blank" rel="noopener">Open it here</a> or call (888) 833-2510.</p>
+    <div class="steps">
+      <div class="q"><b>In minutes</b><p>Your first Key, by email.</p></div>
+      <div class="q"><b>Today</b><p>One small step. Two minutes.</p></div>
+      <div class="q"><b>Tomorrow at 7</b><p>The next Key. All week, free.</p></div>
     </div>
-    <p class="small ready" style="margin-top:22px">Ready now? <a href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Start your membership</a>, $99 a month, first week free.</p>
+  </div></section>
+
+  <section id="call"><div class="wrap">
+    <h2>Pick a time</h2>
+    <p>Thirty minutes with the coach. One question when you book.</p>
+    <div class="cal"><div class="calendly-inline-widget" data-url="https://calendly.com/vaulthuman/free-call?hide_gdpr_banner=1&hide_landing_page_details=1&background_color=141a16&text_color=f1ede4&primary_color=c9a24a"></div></div>
+    <p class="ready">Ready now? <a href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Start your membership</a>.</p>
   </div></section>
 
   <footer><a href="https://www.vaulthuman.com/">vaulthuman.com</a> · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a><br/>© 2026 Vault Human, LLC · Coaching, not therapy. Not legal, medical, financial or therapeutic advice.</footer>
 
   <script is:inline>
     (function(){
-      var b=document.getElementById('showcal'),c=document.getElementById('cal'),loaded=false;
-      b.addEventListener('click',function(){
-        c.classList.add('on');b.style.display='none';
-        if(!loaded){loaded=true;var s=document.createElement('script');s.src='https://assets.calendly.com/assets/external/widget.js';s.async=true;document.body.appendChild(s);}
-        try{gtag('event','call_open')}catch(e){}
-        c.scrollIntoView({behavior:'smooth',block:'start'});
-      });
-      window.addEventListener('message',function(e){
-        if(e.data&&e.data.event==='calendly.event_scheduled'){try{gtag('event','call_booked')}catch(_){}}
-      });
+      document.querySelectorAll('.hv video').forEach(function(v){v.playbackRate=0.8;});
+      var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='https://assets.calendly.com/assets/external/widget.js';s.async=true;document.body.appendChild(s);}
+      document.getElementById('go').addEventListener('click',function(){load();try{gtag('event','call_open')}catch(e){}});
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(e.target.id==='call')load();else e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+      document.querySelectorAll('.q').forEach(function(q){io.observe(q)});io.observe(document.getElementById('call'));
+      window.addEventListener('message',function(e){if(e.data&&e.data.event==='calendly.event_scheduled'){try{gtag('event','call_booked')}catch(_){}}});
     })();
   </script>
 </body>
