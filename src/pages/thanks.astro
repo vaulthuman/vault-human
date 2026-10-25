@@ -102,7 +102,13 @@ const desc = 'Your first Key is on its way.';
     .cal{margin-top:16px;border-radius:12px;overflow:hidden;background:#141A16;min-height:700px}
     .calendly-inline-widget{min-width:300px;height:700px}
     .ready{font-size:14px;color:var(--mute);margin:22px 0 0}.ready a{color:var(--acc);font-weight:600}
-    @media (min-width:900px){.steps{grid-template-columns:repeat(3,1fr)}}
+    @media (min-width:900px){.steps{grid-template-columns:repeat(3,1fr)}
+      .hero .wrap{grid-template-rows:auto;align-items:stretch}
+      .hero .hc{display:flex;flex-direction:column}
+      .hero .hc .btn{margin-top:auto;align-self:flex-start}
+      .hero .hv{aspect-ratio:auto;min-height:280px}}
+    .hero .hv{margin-bottom:0}
+    .opens{font-size:18px;line-height:1.55;color:var(--ink);margin:0 0 22px;max-width:760px;text-wrap:pretty}
   </style>
 </head>
 <body>
@@ -119,10 +125,12 @@ const desc = 'Your first Key is on its way.';
   </div></div>
 
   <section><div class="wrap">
+    <h2>Every Key opens something</h2>
+    <p class="opens">Each Key is one small practice. Keep a few and a gate opens. Behind the gates are eleven chambers, the rooms of a whole life: where you've been, who you are now, where you're going. Your first Key opens Chamber One, and Chamber One is simply called You.</p>
     <div class="steps">
-      <div class="q"><b>In minutes</b><p>Your first Key, by email.</p></div>
-      <div class="q"><b>Today</b><p>One small step. Two minutes.</p></div>
-      <div class="q"><b>Tomorrow at 7</b><p>The next Key. All week, free.</p></div>
+      <div class="q"><b>Today</b><p>Open your first Key. Take one step.</p></div>
+      <div class="q"><b>Tomorrow</b><p>Your next Key arrives at 7 a.m.</p></div>
+      <div class="q"><b>This week</b><p>A Key every morning, free.</p></div>
     </div>
   </div></section>
 
