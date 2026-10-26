@@ -8172,5 +8172,39 @@ export const letters=[
   "iso": "2026-10-25",
   "month": "October 2026",
   "chamber": 5
+ },
+ {
+  "slug": "finish-the-run",
+  "title": "Finish the run",
+  "dek": "In 1969 a young researcher named Peter Levine was sitting with a graduate student in the grip of a panic attack.",
+  "day": 164,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1969 a young researcher named Peter Levine was sitting with a graduate student in the grip of a panic attack. By his own account, an image of a crouching tiger came into his mind, and he said out loud, almost without meaning to, that a tiger was coming and she should run. Her legs began to move as if she were running in place, and she shook for most of an hour. When it stopped, the worst of her symptoms were gone, and stayed gone. He spent decades working out why; his 1997 book <em>Waking the Tiger</em> gave the method its name, Somatic Experiencing."
+   },
+   {
+    "k": "",
+    "t": "What he'd worked out was this. An animal that outruns a lion doesn't trot off and get on with its day. It trembles until the run has been run all the way through, and then it grazes. When something overwhelming happens to us, the body does the same thing: it gets ready to fight or to run. If it can't, because you were pinned, or small, or it was over too fast, all of that stays loaded and never fires. We are the one creature that can stop the shaking, be embarrassed by it, tighten against it and say I'm fine. The charge stays: the startle, the clenched jaw, the stomach that won't settle twenty years later. Levine's line is that trauma is not in the event; it's in the nervous system."
+   },
+   {
+    "k": "",
+    "t": "So his method doesn't ask you to relive the story. You met the tremor in the second month, in Berceli's exercises; Levine's work is quieter and slower. It asks you to notice, in small doses, what the body is doing right now, to move between the tight place and a place that feels fine, and to let the run that never happened finish itself, in a shiver, a long breath, a warmth, with someone trained beside you."
+   },
+   {
+    "k": "",
+    "t": "The evidence is young. One randomized trial, in 2017, found real but modest gains for people with post-traumatic stress; a 2021 review found the studies few and uneven. The practice has outrun the proof, and I'd rather say so. What survives is this: your body's shaking was never a failure of nerve. It was a run that got interrupted."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because this month is for naming what's hidden, and the most hidden thing of all may be a charge stored below words. Vault Human coaches and doesn't treat; if the startle has lasted years, the door is a Somatic Experiencing practitioner."
+   }
+  ],
+  "n": 246,
+  "date": "October 26, 2026",
+  "iso": "2026-10-26",
+  "month": "October 2026",
+  "chamber": 5
  }
 ];
