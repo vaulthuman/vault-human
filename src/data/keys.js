@@ -45,7 +45,7 @@ export const letters=[
   "vault": "mind",
   "day": 2,
   "key": 2,
-  "title": "Yours, or handed to you",
+  "title": "Read the label",
   "paras": [
    "Yesterday a man told you to form a habit. Today two men tell you the habit has to be yours.",
    "Ralph Waldo Emerson and Henry David Thoreau were neighbors in Concord, Massachusetts, in the 1840s. Emerson had left the pulpit and wrote an essay, *Self-Reliance*, that said the thing nobody in a church was saying out loud: \"Trust thyself.\" The thought you dismiss because it is yours is usually the one worth keeping, and the reason you don't keep it is that you are watching everyone else to see if it is allowed. Thoreau took him at his word, borrowed an axe, built a cabin by Walden Pond, and lived there two years to find out what a life needs and what it doesn't. He kept the receipts. The cabin cost twenty-eight dollars and change.",
@@ -68,8 +68,7 @@ export const letters=[
    "Four people stand up to speak. Someone from your family. A friend. Someone from work. Someone from your church, your team, your street. What do you want each of them to say? Not what they would say now. What you want them to be able to say, truthfully, in three years.",
    "That exercise comes from Stephen Covey, who had read two hundred years of American success writing and noticed it changed around 1920, from character to personality, from who you are to how you come across. In 1989 he wrote *The 7 Habits of Highly Effective People* to put character back, and he kept the habits in order on purpose: the first three are about you alone, and he would not let anyone skip them. The second one is this. \"Begin with the end in mind.\"",
    "I know it sounds morbid. It isn't. It is the most practical thing you will do this month. A eulogy you write while you are alive is a plan you can still change. Almost every hard decision gets easier once you know which of those four voices you are trying to earn.",
-   "Covey died at seventy-nine after a bicycle accident. His eulogies were already written. He had done the exercise, and the people who stood up to speak had the easiest job in the room.",
-   "**Today:** write your eulogy in six lines. One line from each of the four people, and two from you. Keep it in the place you'll see it, not the drawer. Then take it outside and read it to yourself while you walk, twenty minutes, same as yesterday. Note which line surprised you. That one is the work."
+   "**Today:** write your eulogy in six lines. One line from each of the four people, and two from you. Keep it in the place you'll see it, not the drawer. Then take it outside and read it to yourself while you walk, twenty minutes, same as yesterday. Note which line surprised you. That one is the work. If this lands heavy right now, write the toast someone gives at your next big birthday instead. Same six lines."
   ],
   "written": "2026-10-19",
   "chamber": 1,

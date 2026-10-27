@@ -77,7 +77,7 @@ export const letters=[
  },
  {
   "slug": "yours-or-handed-to-you",
-  "title": "Yours, or handed to you",
+  "title": "Read the label",
   "dek": "Yesterday a man told you to form a habit. Today two men tell you the habit has to be yours.",
   "day": 2,
   "vault": "mind",
@@ -131,10 +131,6 @@ export const letters=[
    {
     "k": "",
     "t": "I know it sounds morbid. It isn't. It is the most practical thing you will do this month. A eulogy you write while you are alive is a plan you can still change. Almost every hard decision gets easier once you know which of those four voices you are trying to earn."
-   },
-   {
-    "k": "",
-    "t": "Covey died at seventy-nine after a bicycle accident. His eulogies were already written. He had done the exercise, and the people who stood up to speak had the easiest job in the room."
    }
   ],
   "n": 4,
