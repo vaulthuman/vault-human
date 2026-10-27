@@ -1,0 +1,128 @@
+---
+// https://www.vaulthuman.com/key/stay-in-love/ — where the H001 Stay in love email's film opens (free week, Day 1 evening). Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
+// The film starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+const title = 'Stay in love — Vault Human';
+const desc = 'Your first Heart Key. A two-minute film and one small step for tonight.';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" /><link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={desc} />
+  <meta property="og:type" content="website" /><meta property="og:site_name" content="Vault Human" /><meta property="og:title" content={title} /><meta property="og:description" content={desc} /><meta property="og:image" content="https://www.vaulthuman.com/img/keys/h001-stay-in-love-cover.jpg" /><meta property="og:image:width" content="1280" /><meta property="og:image:height" content="720" /><meta property="og:url" content="https://www.vaulthuman.com/key/stay-in-love/" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="https://www.vaulthuman.com/img/keys/h001-stay-in-love-cover.jpg" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" />
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-B2NDY58EKD"></script>
+  <script is:inline>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','G-B2NDY58EKD');
+  </script>
+  <style is:inline>
+    :root{--bg:#141A16;--bg2:#1A2420;--ink:#F1EDE4;--soft:#CFC9BC;--mute:#8E9A90;--acc:#C9A24A;--green:#8FA67E;--line:rgba(241,237,228,.14);--disp:'Bebas Neue',Inter,sans-serif}
+    *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    section{overflow-x:clip}
+    .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+    .top{display:flex;justify-content:space-between;align-items:baseline;padding:18px 20px 0;max-width:980px;margin:0 auto}
+    .brand{font-family:var(--disp);font-weight:400;font-size:34px;letter-spacing:2px;line-height:1;text-transform:uppercase;color:var(--ink);text-decoration:none}.brand b{color:var(--green);font-weight:400}
+    .brand small{display:block;font:12px/1.3 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-top:3px}
+    .tel{font-weight:600;text-decoration:none;font-size:14px;color:var(--soft)}
+    .hero{padding:26px 0 30px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700;color:var(--acc);margin:0 0 10px}
+    h1{font-family:var(--disp);font-weight:400;font-size:clamp(46px,11vw,72px);line-height:.95;margin:0 0 18px;letter-spacing:.01em;text-wrap:balance}
+    .film{position:relative;border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9}
+    .film video{width:100%;height:100%;display:block;object-fit:cover}
+    .snd{position:absolute;left:14px;bottom:14px;display:flex;align-items:center;gap:10px;background:rgba(14,18,15,.78);color:var(--ink);border:1px solid rgba(201,162,74,.6);border-radius:999px;padding:9px 16px 9px 10px;font:600 15px Inter,sans-serif;cursor:pointer}
+    .snd i{width:30px;height:30px;border-radius:50%;background:var(--acc);display:inline-block;position:relative;flex:none}
+    .snd i:after{content:"";position:absolute;left:11px;top:8px;border-left:11px solid #15190f;border-top:7px solid transparent;border-bottom:7px solid transparent}
+    .snd[hidden]{display:none}
+    section.b{padding:30px 0;border-top:1px solid var(--line)}
+    h2{font-family:var(--disp);font-weight:400;font-size:38px;line-height:.95;margin:0 0 12px;letter-spacing:.01em;color:var(--acc);text-wrap:balance}
+    p{margin:0 0 12px;color:var(--soft);text-wrap:pretty}
+    blockquote{margin:0 0 16px;border-left:3px solid var(--acc);padding:2px 0 2px 18px;font:italic 26px/1.3 Georgia,'Times New Roman',serif;color:var(--ink)}
+    .who{font:600 12px/1.4 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:-6px 0 18px 21px}
+    .step{background:#2A2616;border:1px solid var(--acc);border-radius:12px;padding:22px 24px}
+    .step .k{font:700 12px/1 Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin:0 0 12px}
+    .step p{color:var(--ink);margin:0 0 10px}.step p:last-child{margin:0}
+    .call{background:var(--bg2);border:1px solid #2c3a33;border-radius:12px;padding:22px 24px}
+    .call h3{font:700 20px/1.3 Inter,sans-serif;color:var(--acc);margin:0 0 6px}
+    .btn{display:inline-block;background:var(--acc);color:#15190f;font-weight:700;padding:15px 24px;border-radius:8px;font-size:16px;text-decoration:none;margin-top:6px}
+    .more{font-size:15px;color:var(--mute)}.more a{color:var(--acc)}
+.read{display:grid;grid-template-columns:180px 1fr;gap:18px;align-items:center;margin-top:22px;background:var(--bg2);border:1px solid #2c3a33;border-radius:12px;overflow:hidden;text-decoration:none;transition:border-color .2s}
+    .read:hover,.read:focus-visible{border-color:var(--acc);outline:none}
+    .read img{width:100%;height:100%;min-height:130px;object-fit:cover;display:block}
+    .read span{display:flex;flex-direction:column;gap:4px;padding:16px 18px 16px 0}
+    .read small{font:700 11px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+    .read b{font-family:var(--disp);font-weight:400;font-size:28px;line-height:1;color:var(--ink);letter-spacing:.02em}
+    .read em{font-style:normal;font-size:15px;color:var(--soft);line-height:1.45}
+    .read u{text-decoration:none;color:var(--acc);font-weight:600;font-size:15px;margin-top:2px}
+    @media (max-width:520px){.read{grid-template-columns:1fr}.read img{height:150px}.read span{padding:0 18px 18px}}
+    footer{border-top:1px solid var(--line);padding:24px 20px 36px;text-align:center;font-size:13px;color:var(--mute)}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a>
+    <a class="tel" href="tel:+18888332510">(888) 833-2510</a>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow" style="color:#D9A38F">Heart Key 1</p>
+      <h1>Stay in love.</h1>
+      <div class="film">
+        <video id="v" src="/video/h001-stay-in-love.mp4" poster="/img/keys/h001-stay-in-love-cover.jpg" autoplay muted playsinline preload="auto"></video>
+        <button class="snd" id="snd" type="button"><i></i><span>Tap for sound</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="b">
+    <div class="wrap">
+      <blockquote>"The sun doesn't care whether the grass appreciates its rays. It just keeps on shining."</blockquote>
+      <p class="who">Ethan Hawke · Oscars red carpet</p>
+      <p>Love here isn't a feeling. Feelings move. You'll be tired, angry, sad or scared, sometimes all in one afternoon, and none of that is wrong. Love is underneath all of it.</p>
+      <p>The mind and the body are the two doors back into the heart.</p>
+    </div>
+  </section>
+
+  <section class="b">
+    <div class="wrap">
+      <div class="step">
+        <p class="k" style="color:#D9A38F">Tonight's step</p>
+        <p><b>1.</b> Tomorrow, before you walk into a room, take one breath and drop into your heart.</p>
+        <p><b>2.</b> Tonight, write two lines. Where did I come back to love today? Where did I see it in someone else?</p>
+        <p><b>3.</b> Then one thing you're thankful for.</p>
+      </div>
+      <p class="more" style="margin-top:16px">Your next Key arrives tomorrow at 8 a.m. Central.</p>
+    </div>
+  </section>
+
+  <section class="b">
+    <div class="wrap">
+      <div class="call">
+        <h3>Want to talk it through?</h3>
+        <p>A free 30-minute call with a Vault Human coach. No cost and no obligation.</p>
+        <a class="btn" href="https://calendly.com/vaulthuman/free-call">Pick a time</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>vaulthuman.com · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · Coaching, not therapy. <a href="/privacy/">Privacy</a>.</footer>
+
+  <script is:inline>
+    (function(){
+      var v=document.getElementById('v'),b=document.getElementById('snd');
+      function on(){v.muted=false;v.currentTime=0;v.controls=true;var p=v.play();if(p&&p.catch)p.catch(function(){});b.hidden=true;try{gtag('event','film_sound',{key:'h1'})}catch(e){}}
+      b.addEventListener('click',on);
+      v.addEventListener('click',function(){if(v.muted)on();});
+      var p=v.play();if(p&&p.catch)p.catch(function(){b.querySelector('span').textContent='Play the film';});
+    })();
+  </script>
+</body>
+</html>
