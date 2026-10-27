@@ -8206,5 +8206,65 @@ export const letters=[
   "iso": "2026-10-26",
   "month": "October 2026",
   "chamber": 5
+ },
+ {
+  "slug": "notice-what-happens",
+  "title": "Notice what happens",
+  "dek": "Ron Kurtz liked to begin with one short sentence. Sit with a person until they've gone quiet and turned inward, then say, gently, \"You're safe here,\"",
+  "day": 165,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Ron Kurtz liked to begin with one short sentence. Sit with a person until they've gone quiet and turned inward, then say, gently, \"You're safe here,\" and watch. A shoulder drops. A jaw sets. The eyes fill before the person has any idea why. That small, careful experiment is the heart of Hakomi, and it's today's key."
+   },
+   {
+    "k": "",
+    "t": "Kurtz had come up through the body therapies of the 1960s and seventies, and by his own account most of them pushed too hard: breathe harder, hit the cushion, say it louder. People, he noticed, told the truth more easily when nobody was pushing. Around 1980 he put his own pieces together, and in 1981, in Boulder, Colorado, he founded the Hakomi Institute to teach it. The name arrived, the story goes, when a member of the group dreamed the word and they found it in a Hopi dictionary, where it carried the sense of \"Who are you?\" and \"How do you stand in relation to these many realms?\" I can't vouch for the Hopi. I can vouch for the question."
+   },
+   {
+    "k": "",
+    "t": "We carry beliefs we never chose, laid down before we had words, and they don't live in the head. They live in how we hold the chest, where the breath stops, what the hands do when someone is kind. Kurtz called it core material, and his first rule for approaching it he called nonviolence. Never push against a defense; support it, and it will tell you what it's been protecting. If a person tightens, the therapist doesn't say relax. Sometimes they'll hold the tight shoulder up for the person, so the person can feel what it's been doing all along. Kurtz died in 2011, at seventy-six, still teaching."
+   },
+   {
+    "k": "",
+    "t": "I'll say the plain thing. Hakomi has been taught for more than forty years and studied very little; the evidence is thin, and the method's own gentleness is most of the case for it. It's a Healing key because this month is for naming what's hidden, and this one hides in the body's posture rather than in a story. Vault Human coaches and doesn't treat; if what rises is old and heavy, the door is a Hakomi therapist. The practice is for everyone. You don't have to figure yourself out. You have to get quiet, hear one true sentence, and notice what happens."
+   }
+  ],
+  "n": 247,
+  "date": "October 27, 2026",
+  "iso": "2026-10-27",
+  "month": "October 2026",
+  "chamber": 5
+ },
+ {
+  "slug": "run-the-experiment",
+  "title": "Run the experiment",
+  "dek": "In 2015 Eran Segal and Eran Elinav, at the Weizmann Institute in Israel, put glucose sensors on eight hundred people who did not have diabetes and read the curves for…",
+  "day": 165,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 2015 Eran Segal and Eran Elinav, at the Weizmann Institute in Israel, put glucose sensors on eight hundred people who did not have diabetes and read the curves for a week, nearly forty-seven thousand meals in all. You met them a few weeks ago, in the key on your own curve. The same slice of bread sent one person's blood sugar up like a flare and barely moved the next person's; one woman in the study rose sharply after tomatoes. The sensor had been built for diabetes. The idea that a well person might wear one to learn their own body was, in that paper, mostly new."
+   },
+   {
+    "k": "",
+    "t": "The thing itself is a filament the width of a hair, set just under the skin of the arm, reading the sugar between cells every few minutes for about two weeks. The first continuous monitor was approved in the United States in 1999, and it kept its numbers for the doctor to read afterward; the ones that show you the curve as it happens came through the 2000s and 2010s, and the stick-on arm patch most people picture arrived in the U.S. in 2017. In 2024 the first versions for people not on insulin were cleared to be sold without a prescription. Companies now sell two weeks of data to healthy people for about the price of a good dinner out, with an app that grades every meal."
+   },
+   {
+    "k": "",
+    "t": "Here is the plain thing. For diabetes the sensor is one of the best tools of the last thirty years. For the well, the evidence that wearing one changes anything is thin. A healthy body rises after a meal and comes back down; that is a pancreas doing its work, not a verdict. The sensors are least exact in the hour after eating, which is exactly where the apps hand out grades, and at least one recent study found them reading higher than blood from a fingertip in healthy adults. What's real is the experiment underneath: eat the thing, walk or don't, sleep or don't, and watch what your own body does. A number you've seen with your own eyes is a different kind of knowing than one you've read."
+   },
+   {
+    "k": "",
+    "t": "It's a Healing key because this month is for the hidden number, and this is the last of them: the curve that runs in you all day, unseen. If you have diabetes, or are pregnant, or take anything that moves blood sugar, the sensor belongs with your doctor, not an app; Vault Human coaches and doesn't treat, and the door is your physician."
+   }
+  ],
+  "n": 248,
+  "date": "October 27, 2026",
+  "iso": "2026-10-27",
+  "month": "October 2026",
+  "chamber": 5
  }
 ];
