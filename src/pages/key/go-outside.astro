@@ -1,8 +1,8 @@
 ---
-// https://www.vaulthuman.com/key/go-outside/ — where the B001 Go outside email's film opens (the sign-up welcome). Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
-// The film starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+// https://www.vaulthuman.com/key/go-outside/ — where the B001 Go outside email's video opens (the sign-up welcome). Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
+// The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
 const title = 'Go outside — Vault Human';
-const desc = 'Your first Body Key. A short film and one small step for today.';
+const desc = 'Your first Key. A short video and one small step for today.';
 ---
 <!doctype html>
 <html lang="en">
@@ -128,7 +128,7 @@ const desc = 'Your first Body Key. A short film and one small step for today.';
       function on(){v.muted=false;v.currentTime=0;v.controls=true;var p=v.play();if(p&&p.catch)p.catch(function(){});b.hidden=true;try{gtag('event','film_sound',{key:'go'})}catch(e){}}
       b.addEventListener('click',on);
       v.addEventListener('click',function(){if(v.muted)on();});
-      var p=v.play();if(p&&p.catch)p.catch(function(){b.querySelector('span').textContent='Play the film';});
+      var p=v.play();if(p&&p.catch)p.catch(function(){b.querySelector('span').textContent='Play the video';});
     })();
   </script>
 </body>

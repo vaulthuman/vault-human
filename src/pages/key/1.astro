@@ -1,8 +1,8 @@
 ---
-// https://www.vaulthuman.com/key/1/ — where the Day 1 email's film opens. Same design as /start and /thanks.
-// The film starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+// https://www.vaulthuman.com/key/1/ — where the Day 1 email's video opens. Same design as /start and /thanks.
+// The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
 const title = 'Choose your life — Vault Human';
-const desc = 'Your first Key. A two-minute film and one small step for today.';
+const desc = 'Your first Key. A two-minute video and one small step for today.';
 ---
 <!doctype html>
 <html lang="en">
@@ -132,7 +132,7 @@ const desc = 'Your first Key. A two-minute film and one small step for today.';
       function on(){v.muted=false;v.currentTime=0;v.controls=true;var p=v.play();if(p&&p.catch)p.catch(function(){});b.hidden=true;try{gtag('event','film_sound',{key:1})}catch(e){}}
       b.addEventListener('click',on);
       v.addEventListener('click',function(){if(v.muted)on();});
-      var p=v.play();if(p&&p.catch)p.catch(function(){b.querySelector('span').textContent='Play the film';});
+      var p=v.play();if(p&&p.catch)p.catch(function(){b.querySelector('span').textContent='Play the video';});
     })();
   </script>
 </body>

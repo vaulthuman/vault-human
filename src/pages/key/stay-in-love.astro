@@ -1,8 +1,8 @@
 ---
-// https://www.vaulthuman.com/key/stay-in-love/ — where the H001 Stay in love email's film opens (free week, Day 1 evening). Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
-// The film starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+// https://www.vaulthuman.com/key/stay-in-love/ — where the H001 Stay in love email's video opens (free week, Day 1 evening). Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
+// The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
 const title = 'Stay in love — Vault Human';
-const desc = 'Your first Heart Key. A two-minute film and one small step for tonight.';
+const desc = 'Your first Key. A two-minute video and one small step for tonight.';
 ---
 <!doctype html>
 <html lang="en">
@@ -132,7 +132,7 @@ const desc = 'Your first Heart Key. A two-minute film and one small step for ton
       function on(){v.muted=false;v.currentTime=0;v.controls=true;var p=v.play();if(p&&p.catch)p.catch(function(){});b.hidden=true;try{gtag('event','film_sound',{key:'h1'})}catch(e){}}
       b.addEventListener('click',on);
       v.addEventListener('click',function(){if(v.muted)on();});
-      var p=v.play();if(p&&p.catch)p.catch(function(){b.querySelector('span').textContent='Play the film';});
+      var p=v.play();if(p&&p.catch)p.catch(function(){b.querySelector('span').textContent='Play the video';});
     })();
   </script>
 </body>
