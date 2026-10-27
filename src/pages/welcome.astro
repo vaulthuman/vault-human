@@ -162,7 +162,7 @@ const title = 'Welcome — Vault Human';
     <h2>What your membership brings</h2>
     <p class="opens">A Key is a short email from your coach: two minutes to read and one small thing to do that day.</p>
     <div class="steps">
-      <div class="q"><b>Every morning</b><p>A new Key in your inbox at 7 a.m.</p></div>
+      <div class="q"><b>Every morning</b><p>A new Key at 8 a.m., and a short one at 8 p.m.</p></div>
       <div class="q"><b>This week</b><p>Your first call with your coach.</p></div>
       <div class="q"><b>Every month</b><p>A live call with your coach.</p></div>
     </div>
@@ -179,7 +179,7 @@ const title = 'Welcome — Vault Human';
       <div id="s1">
         <p class="stepk">Step 1 of 2</p>
         <h2 id="t1">Where should we send your daily Keys?</h2>
-        <p>Each morning at 7 you'll get a Key: two minutes to read and one small step to take. Your first one arrives in a few minutes.</p>
+        <p>Each day you'll get a Key at 8 a.m. and a short one at 8 p.m. Central, each with one small step. Your first one arrives in a few minutes.</p>
         <div class="known" id="known" hidden>
           <p>We'll send them to <b id="kem"></b>.</p>
           <div class="row"><button class="btn" type="button" id="yes">That's right</button><button class="ghost" type="button" id="change">Use a different email</button></div>
@@ -204,7 +204,7 @@ const title = 'Welcome — Vault Human';
       <div id="s3" hidden>
         <div class="tick" aria-hidden="true"></div>
         <h2>You're all set</h2>
-        <p id="donetext">Your first Key is on its way. The next one arrives tomorrow at 7 a.m.</p>
+        <p id="donetext">Your first Key is on its way. The next one arrives tomorrow at 8 a.m.</p>
         <button class="btn" type="button" id="close2">Done</button>
       </div>
     </div>
@@ -237,7 +237,7 @@ const title = 'Welcome — Vault Human';
         to(2);go.textContent='Book my first call';
       }
       function finish(booked){
-        document.getElementById('donetext').textContent=(booked?'Your call is booked and the invite is in your inbox. ':'')+'Your first Key is on its way'+(P&&P.em?' to '+P.em:'')+'. The next one arrives tomorrow at 7 a.m.';
+        document.getElementById('donetext').textContent=(booked?'Your call is booked and the invite is in your inbox. ':'')+'Your first Key is on its way'+(P&&P.em?' to '+P.em:'')+'. The next one arrives tomorrow at 8 a.m.';
         to(3);go.hidden=true;document.getElementById('donenote').hidden=false;
         document.getElementById('lede').textContent='Your receipt is on its way from Stripe, and your daily Keys are set up.';
       }
