@@ -6,3 +6,13 @@
 /fretwork/ / 301
 /triplicity / 301
 /triplicity/ / 301
+
+# 10/27: key video pages named by code (M001 etc.)
+/key/1/ /key/m001/ 301
+/key/1 /key/m001/ 301
+/key/2/ /key/m002/ 301
+/key/2 /key/m002/ 301
+/key/go-outside/ /key/b001/ 301
+/key/go-outside /key/b001/ 301
+/key/stay-in-love/ /key/h001/ 301
+/key/stay-in-love /key/h001/ 301
