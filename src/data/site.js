@@ -10,7 +10,7 @@ export const hero = {
   subline: "Two vaults. Eleven chambers. Nine gates. The keys come to you one a day.",
   lede: [
     "A life has a past, a present and a future, and most help only looks at one of them. Vault Human holds the whole line. Three companies stand on it, one for each stretch, and one method runs across all three.",
-    "You do not walk it alone. A key arrives every morning. A coach reads the log with you. A circle of six keeps the hour. The year is designed so the habit holds.",
+    "You do not walk it alone. A key arrives every morning and evening. A coach reads the log with you. A circle of six keeps the hour. The year is designed so the habit holds.",
   ],
   cta: "Start with the Keys",
   cta2: "Apply for the Coached Year",
@@ -127,12 +127,12 @@ export const family = {
 export const plan = {
   eyebrow: "How it works",
   steps: [
-    { n: "1", title: "Start with the Keys", body: "One key a day, in your inbox, from tomorrow morning." },
+    { n: "1", title: "Start with the Keys", body: "A key every morning and evening, in your inbox, from tomorrow morning." },
     { n: "2", title: "The first touch", body: "Thirty minutes with a person inside 48 hours." },
     { n: "3", title: "The year", body: "Eleven chambers, nine gates, a coach and a circle if you want them." },
   ],
 };
-export const turn = "The field sells a weekend. Nobody walks eleven chambers in a weekend. Vault Human sells a year, one key a day, with a person on the other end of the log.";
+export const turn = "The field sells a weekend. Nobody walks eleven chambers in a weekend. Vault Human sells a year, a key every morning and evening, with a person on the other end of the log.";
 export const paradox = {
   eyebrow: "Whole, not fragmented",
   line: "Fragmented help fails at the seams. Whole help holds.",
