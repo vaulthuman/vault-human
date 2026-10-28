@@ -1,0 +1,30 @@
+---
+// One Key, laid out like https://www.vaulthuman.com/key/b003/: eyebrow, title, video, paragraphs, the gold step box.
+import type { Key } from '../lib/keys';
+interface Props { k: Key }
+const { k } = Astro.props;
+---
+<p class="eyebrow">Key</p>
+<h1>{k.title}.</h1>
+<div class="video">
+  <video src={k.video} poster={k.poster} controls playsinline preload="metadata"></video>
+</div>
+<section class="b">
+  {k.paragraphs.map((p) => <p>{p}</p>)}
+</section>
+<section class="b">
+  <div class="step">
+    <p class="k">{k.stepLabel}</p>
+    {k.steps.map((s, i) => <p><b>{i + 1}.</b> {s}</p>)}
+  </div>
+  {k.note && <p style="margin-top:16px">{k.note}</p>}
+</section>
+<slot />
+<style>
+  .video{border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9}
+  .video video{width:100%;height:100%;display:block;object-fit:cover}
+  section.b:first-of-type{margin-top:26px}
+  .step{background:#2A2616;border:1px solid var(--acc);border-radius:12px;padding:22px 24px}
+  .step .k{font:700 12px/1 Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin:0 0 12px}
+  .step p{color:var(--ink);margin:0 0 10px}.step p:last-child{margin:0}
+</style>

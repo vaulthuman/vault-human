@@ -1,0 +1,22 @@
+---
+import KeyView from '../../components/KeyView.astro';
+import Layout from '../../layouts/Layout.astro';
+import { memberState } from '../../lib/member';
+
+const s = await memberState(Astro.locals.runtime.env.DB, Astro.locals.member!);
+const k = s.received.find((r) => r.id.toLowerCase() === Astro.params.id?.toLowerCase());
+if (!k) return Astro.redirect('/keys');
+if (k.id === s.key.id) return Astro.redirect('/today');
+const lines = s.logs.filter((l) => l.key_id === k.id);
+---
+<Layout title={k.title} nav="keys">
+  <KeyView k={k}>
+    <section class="b">
+      <div class="card">
+        <p class="eyebrow" style="margin-bottom:8px">What I did, and what it did.</p>
+        {lines.length ? lines.map((l) => <p style="color:var(--ink);margin:0 0 6px">{l.line}</p>) : <p style="margin:0">Nothing logged for this Key.</p>}
+      </div>
+      <p class="more" style="margin-top:16px"><a href="/keys">All my keys</a></p>
+    </section>
+  </KeyView>
+</Layout>

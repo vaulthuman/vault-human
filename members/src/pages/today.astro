@@ -1,0 +1,61 @@
+---
+import KeyView from '../components/KeyView.astro';
+import Layout from '../layouts/Layout.astro';
+import { isValidTz, localDay } from '../lib/dates';
+import { saveLog, setTz } from '../lib/db';
+import { currentKey } from '../lib/keys';
+import { daysInARow, memberState } from '../lib/member';
+
+const env = Astro.locals.runtime.env;
+const member = Astro.locals.member!;
+let error = '';
+
+if (Astro.request.method === 'POST') {
+  const form = await Astro.request.formData();
+  const line = String(form.get('line') ?? '').replace(/\s+/g, ' ').trim();
+  const tz = form.get('tz');
+  if (isValidTz(tz) && tz !== member.tz) {
+    await setTz(env.DB, member.id, tz);
+    member.tz = tz;
+  }
+  if (!line) error = 'Write one line first.';
+  else if (line.length > 280) error = 'Keep it to one line (280 characters).';
+  else {
+    const today = localDay(new Date(), member.tz);
+    await saveLog(env.DB, member.id, currentKey(member.started_on, today).id, today, line);
+    return Astro.redirect('/today?saved=1', 303);
+  }
+}
+
+const s = await memberState(env.DB, member);
+const saved = Astro.url.searchParams.get('saved') === '1' && s.todayLog;
+---
+<Layout title={s.key.title} nav="today">
+  <KeyView k={s.key}>
+    <section class="b">
+      <form method="post" class="card log" id="log">
+        <label class="k" for="line">What I did, and what it did.</label>
+        <input id="line" name="line" type="text" maxlength="280" required autocomplete="off"
+          value={s.todayLog?.line ?? ''} placeholder="One line is enough." />
+        <input type="hidden" name="tz" id="tz" />
+        {error && <p style="color:#e3a08a;margin:10px 0 0">{error}</p>}
+        <div class="row">
+          <button class="btn" type="submit">Save</button>
+          {s.todayLog && (
+            <p class="done" role="status"><b>Logged.</b> <span>Streak: {daysInARow(s.streak)}</span></p>
+          )}
+        </div>
+      </form>
+    </section>
+  </KeyView>
+  <script is:inline>
+    try{document.getElementById('tz').value=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
+  </script>
+  {saved && <script is:inline>document.getElementById('log').scrollIntoView({block:'center'})</script>}
+</Layout>
+<style>
+  .row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:14px}
+  .done{margin:0;color:var(--ink)}
+  .done b{color:var(--green)}
+  .done span{color:var(--soft)}
+</style>

@@ -1,0 +1,18 @@
+/// <reference types="astro/client" />
+
+type Env = {
+  DB: import('./lib/db').Db;
+  SESSION_SECRET: string;
+  APP_URL?: string;
+  STRIPE_SECRET_KEY?: string;
+  STRIPE_WEBHOOK_SECRET?: string;
+  DEV_LOG_LINKS?: string;
+};
+
+type Runtime = import('@astrojs/cloudflare').Runtime<Env>;
+
+declare namespace App {
+  interface Locals extends Runtime {
+    member: import('./lib/db').Member | null;
+  }
+}

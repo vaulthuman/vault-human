@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { YEAR } from '../lib/chamber';
+import { memberState } from '../lib/member';
+
+const s = await memberState(Astro.locals.runtime.env.DB, Astro.locals.member!);
+const c = s.chamber;
+---
+<Layout title="Progress" nav="progress">
+  <p class="eyebrow">Progress</p>
+  <h1>Where you are.</h1>
+  <div class="stats">
+    <div class="card stat"><small>Streak</small><b>{s.streak}</b><span>{s.streak === 1 ? 'day' : 'days'} in a row with a logged line</span></div>
+    <div class="card stat"><small>Chamber</small>
+      {c.pause ? <><b class="word">Pause</b><span>Integration · {c.title}</span></> : <><b>{c.n}<i> of 11</i></b><span>{c.name} · {c.title}</span></>}
+    </div>
+    <div class="card stat"><small>Keys turned</small><b>{s.keysTurned}</b><span>of {s.received.length} received</span></div>
+  </div>
+  <section class="b" style="margin-top:26px">
+    <h2>The year</h2>
+    <ol class="year">
+      {YEAR.map((y) => (
+        <li class:list={[{ now: y.month === c.month, past: y.month < c.month, rest: y.n === 0 }]}>
+          <span>{y.n === 0 ? '·' : y.n}</span>{y.name}
+        </li>
+      ))}
+    </ol>
+  </section>
+</Layout>
+<style>
+  .stats{display:grid;gap:12px}
+  @media (min-width:620px){.stats{grid-template-columns:repeat(3,1fr)}}
+  .stat small{display:block;font:700 12px/1 Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
+  .stat b{display:block;font-family:var(--disp);font-weight:400;font-size:64px;line-height:.9;color:var(--ink)}
+  .stat b i{font-style:normal;font-size:28px;color:var(--mute)}
+  .stat b.word{font-size:52px}
+  .stat span{display:block;margin-top:6px;font-size:15px;color:var(--soft)}
+  .year{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+  .year li{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;color:var(--mute)}
+  .year li span{width:26px;height:26px;flex:none;border-radius:50%;display:grid;place-items:center;font:700 12px Inter,sans-serif;border:1px solid var(--line)}
+  .year li.past{color:var(--soft)}.year li.past span{background:var(--green);color:#141A16;border-color:var(--green)}
+  .year li.now{color:var(--ink);border-color:var(--acc)}.year li.now span{background:var(--acc);color:#15190f;border-color:var(--acc)}
+  .year li.rest{font-style:italic}
+</style>
