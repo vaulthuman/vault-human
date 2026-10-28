@@ -1,0 +1,12 @@
+{
+  "_how": "One line per event. Recurring events need cadence; one-time events need date (YYYY-MM-DD) and optional end. Set show:false to keep an entry off the page (e.g. a proposal not yet accepted). Past one-time events move to Where we've been automatically on the next build.",
+  "recurring": [
+    { "title": "The Vault Human gathering", "cadence": "Once a month", "time": "Evening, Central Time", "place": "Online, for members", "about": "A live evening with Russ and the members: one Key taken deeper, questions answered, and the month ahead.", "link": "/plans/", "linkText": "Become a member", "show": true },
+    { "title": "The free Thursday session", "cadence": "Every Thursday", "time": "Noon, Central Time", "place": "Online, open to anyone", "about": "A live session with Russ on one practice you can use that afternoon. No selling.", "link": "/first-key/", "linkText": "Start with your first key", "show": true },
+    { "title": "Walk with Russ", "cadence": "First Saturday of the month", "time": "Morning", "place": "Austin, Texas", "about": "An unhurried walk outside, a few people, one good question.", "link": "/book/", "linkText": "Ask to join", "show": true }
+  ],
+  "events": [
+    { "title": "SXSW 2027", "date": "2027-03-13", "end": "2027-03-21", "place": "Austin, Texas", "about": "Proposal: Who Sings the We? Optimized Out of Your Own World.", "link": "/sxsw/", "linkText": "The proposal", "show": false },
+    { "title": "SXSW London 2027", "date": "2027-05-24", "end": "2027-05-29", "place": "London", "about": "Proposal: Undue Influence by Design.", "link": "", "linkText": "", "show": false }
+  ]
+}
