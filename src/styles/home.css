@@ -114,6 +114,7 @@ body.ready .hero h1{opacity:1;transform:none}
 .tlc.brown{border-color:var(--brown)} .tlc.brown .when{color:#D2A071}
 .tlc.green{border-color:var(--green)} .tlc.green .when{color:#7FD1A9}
 .tlc.navy{border-color:var(--navy)} .tlc.navy .when{color:#8FB5E6}
+.tlc.heart{border-color:#C98A7A} .tlc.heart .when{color:#E4A99A}
 .tlc.me{outline:2px solid rgba(255,255,255,.35)}
 .constant{text-align:center;margin:36px 0 0;font-family:var(--disp);font-size:clamp(22px,2.4vw,30px);letter-spacing:2px;color:#fff}
 .constant a{color:var(--blue);text-decoration:none}
