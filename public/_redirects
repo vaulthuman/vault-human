@@ -16,3 +16,13 @@
 /key/go-outside /key/b001/ 301
 /key/stay-in-love/ /key/h001/ 301
 /key/stay-in-love /key/h001/ 301
+
+# 10/28: old preview pages retired
+/preview /start/ 301
+/preview/ /start/ 301
+/preview-as-learned /as-learned/ 301
+/preview-as-learned/ /as-learned/ 301
+/preview-as-lived /as-lived/ 301
+/preview-as-lived/ /as-lived/ 301
+/preview-as-loved /as-loved/ 301
+/preview-as-loved/ /as-loved/ 301
