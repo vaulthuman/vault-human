@@ -8262,5 +8262,39 @@ export const letters=[
   "iso": "2026-10-27",
   "month": "October 2026",
   "chamber": 5
+ },
+ {
+  "slug": "tell-the-story",
+  "title": "Tell the story",
+  "dek": "On the tenth of May, 1994, Nelson Mandela was sworn in as president of South Africa, and among the guests he had asked for was a man who had been one of his warders.",
+  "day": 166,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "On the tenth of May, 1994, Nelson Mandela was sworn in as president of South Africa, and among the guests he had asked for was a man who had been one of his warders. He had spent twenty-seven years as a prisoner, eighteen of them on Robben Island, and had used some of those years to learn his guards' language so he could speak to them as men. That seat is today's key, and it opens a new month."
+   },
+   {
+    "k": "",
+    "t": "Five months of keys are behind you, and the method asks for a month of rest after them. What comes next is Circle, the month for your people, and its one sentence: you grow in a circle; no one changes alone. Its first key belongs to two men who practiced that at the scale of a country."
+   },
+   {
+    "k": "",
+    "t": "The second was Desmond Tutu, the Anglican archbishop of Cape Town, who had won the Nobel Peace Prize in 1984 for saying out loud, year after year, what apartheid was. In 1995 the new parliament created the Truth and Reconciliation Commission, and Mandela asked Tutu to chair it. The bargain was unusual: people who had tortured and killed could ask for amnesty, but only by telling the whole truth in public, with the families in the room. More than twenty thousand victims gave statements; about seven thousand people asked for amnesty, and fewer than one in eight got it. Tutu wept at the hearings and was criticized for it. The commission was criticized too, and fairly: many families felt a confession was a poor trade for a conviction, and the reparations came slow and small. Tutu never called it justice. He called it a way forward, and titled his account of it <em>No Future Without Forgiveness</em>."
+   },
+   {
+    "k": "",
+    "t": "Years later, with his daughter Mpho, he wrote down what he had learned in a short book called <em>The Book of Forgiving</em>. Forgiveness, they said, is a path with four steps, the same for a nation as for a kitchen table. Tell the story. Name the hurt. Grant forgiveness. Then choose: renew the relationship, or release it. The order matters. Most of us start at step three, and it won't hold, because you can't set down a weight you haven't lifted and looked at."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the first thing a circle asks of you is to tell the truth inside it. Tutu explained his country's word ubuntu as \"a person is a person through other persons.\" What was done to you happened among people; it heals among people too. We're not asking you to forgive today. We're asking for step one."
+   }
+  ],
+  "n": 249,
+  "date": "October 28, 2026",
+  "iso": "2026-10-28",
+  "month": "October 2026",
+  "chamber": 6
  }
 ];
