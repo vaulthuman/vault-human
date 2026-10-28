@@ -1,0 +1,109 @@
+---
+// https://www.vaulthuman.com/events/ — "Where we'll be". HIDDEN until Russ says go:
+// noindex, not in nav, footer or sitemap. Entries live in src/data/events.json (one line each).
+// Turning it on: remove the robots meta, add /events/ to the footer and public/sitemap.xml.
+import '../styles/home.css';
+import '../styles/nature.css';
+import data from '../data/events.json';
+const year = new Date().getFullYear();
+const today = new Date().toISOString().slice(0, 10);
+const recurring = data.recurring.filter((e) => e.show);
+const shown = data.events.filter((e) => e.show).sort((a, b) => a.date.localeCompare(b.date));
+const upcoming = shown.filter((e) => (e.end || e.date) >= today);
+const past = shown.filter((e) => (e.end || e.date) < today).reverse();
+const fmt = (d) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+const when = (e) => {
+  if (!e.end) return fmt(e.date);
+  const a = new Date(e.date + 'T12:00:00Z'), b = new Date(e.end + 'T12:00:00Z');
+  const sameMonth = a.getUTCMonth() === b.getUTCMonth() && a.getUTCFullYear() === b.getUTCFullYear();
+  return sameMonth
+    ? `${a.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' })} ${a.getUTCDate()} to ${b.getUTCDate()}, ${b.getUTCFullYear()}`
+    : `${fmt(e.date)} to ${fmt(e.end)}`;
+};
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" /><link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Where we'll be — Vault Human</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Where to find Russ Michaels and Vault Human: the monthly members' gathering, the free Thursday session, walks, talks and stages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style is:inline>
+.page-events .sec{padding:56px 0}.page-events main>.sec:first-child{padding-top:72px;padding-bottom:0}.ev-list{max-width:900px;margin:0;list-style:none;padding:0}
+.ev{display:grid;grid-template-columns:220px 1fr;gap:6px 28px;padding:28px 4px;border-top:1px solid var(--line-d,rgba(255,255,255,.12))}
+.ev:last-child{border-bottom:1px solid var(--line-d,rgba(255,255,255,.12))}
+.ev-when{font-family:'Bebas Neue',Inter,sans-serif;font-size:24px;letter-spacing:.5px;line-height:1.1;color:#E2C98A}
+.ev-when small{display:block;font-family:Inter,system-ui,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#B3C6A3;margin-top:6px}
+.ev h3{font-family:'Bebas Neue',Inter,sans-serif;font-weight:400;font-size:32px;letter-spacing:.5px;line-height:1;margin:0 0 6px}
+.ev .ev-place{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B3C6A3;margin:0 0 8px;font-weight:600}
+.ev p{margin:0;font-size:17px;line-height:1.55;color:rgba(241,237,228,.84)}
+.ev a.ev-link{display:inline-block;margin-top:10px;color:#E2C98A;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(226,201,138,.5)}
+.ev-empty{max-width:900px;margin:0;text-align:left;color:rgba(241,237,228,.7);font-size:17px}
+.ev-past .ev{opacity:.75}
+@media(max-width:720px){.ev{grid-template-columns:1fr;gap:10px}}
+</style>
+</head>
+<body data-time="all" class="page-events">
+  <header class="site"><div class="wrap bar">
+    <a class="brand" href="/">Vault <b>Human</b></a>
+    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div></header>
+  <main>
+    <section class="sec dark"><div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Where we'll be</p><h2>Come find us.</h2><p class="lede">Some of it is online, some of it is outside, and some of it is on a stage. All of it is the same work: one practice, one person, one day at a time.</p></div>
+    </div></section>
+
+    <section class="sec dark" id="every"><div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Week by week</p><h2>The steady ones.</h2></div>
+      <ul class="ev-list">
+        {recurring.map((e) => (
+          <li class="ev">
+            <div class="ev-when">{e.cadence}<small>{e.time}</small></div>
+            <div><h3>{e.title}</h3><p class="ev-place">{e.place}</p><p>{e.about}</p>{e.link && <a class="ev-link" href={e.link}>{e.linkText}</a>}</div>
+          </li>
+        ))}
+      </ul>
+    </div></section>
+
+    <section class="sec dark" id="coming"><div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Coming up</p><h2>Talks and stages.</h2></div>
+      {upcoming.length ? (
+        <ul class="ev-list">
+          {upcoming.map((e) => (
+            <li class="ev">
+              <div class="ev-when">{when(e)}</div>
+              <div><h3>{e.title}</h3><p class="ev-place">{e.place}</p><p>{e.about}</p>{e.link && <a class="ev-link" href={e.link}>{e.linkText}</a>}</div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="ev-empty">New dates are added here as they are confirmed. To bring Russ to your event, <a class="ev-link" href="/speaking/#book">tell us about it</a>.</p>
+      )}
+    </div></section>
+
+    {past.length > 0 && (
+      <section class="sec dark ev-past" id="been"><div class="wrap">
+        <div class="sec-head"><p class="eyebrow">Where we've been</p><h2>Rooms we've stood in.</h2></div>
+        <ul class="ev-list">
+          {past.map((e) => (
+            <li class="ev">
+              <div class="ev-when">{when(e)}</div>
+              <div><h3>{e.title}</h3><p class="ev-place">{e.place}</p><p>{e.about}</p>{e.link && <a class="ev-link" href={e.link}>{e.linkText}</a>}</div>
+            </li>
+          ))}
+        </ul>
+      </div></section>
+    )}
+  </main>
+  <footer class="site"><div class="wrap foot">
+    <div><a class="brand" href="/">Vault <b>Human</b></a><p>Daily coaching with Russ Michaels.</p><p><a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a></p></div>
+    <ul><li><a href="/as-learned/">As Learned · the past</a></li><li><a href="/as-loved/">As Loved · the present</a></li><li><a href="/as-lived/">As Lived · the future</a></li><li><a href="/plans/">Plans and pricing</a></li><li><a href="/book/">Free 30-minute call</a></li><li><a href="/writing">Writing</a></li><li><a href="/speaking/">Speaking</a></li></ul>
+    <ul><li><a href="https://www.tercetlaw.com">Tercet Law</a> · wills and trusts</li></ul>
+  </div><div class="wrap legal"><span>&copy; {year} Vault Human, LLC. Coaching is not legal, medical, financial or therapeutic advice.</span><span><a href="/privacy/">Privacy</a> · Learn · Love · Live · Listen</span></div></footer>
+<script is:inline>(function(){var b=document.querySelector(".navtoggle"),n=document.getElementById("navlinks");if(!b||!n)return;function set(o){document.body.classList.toggle("nav-open",o);b.setAttribute("aria-expanded",o?"true":"false");b.setAttribute("aria-label",o?"Close menu":"Open menu");}b.addEventListener("click",function(){set(!document.body.classList.contains("nav-open"));});n.addEventListener("click",function(e){if(e.target.closest("a"))set(false);});document.addEventListener("keydown",function(e){if(e.key==="Escape")set(false);});})();</script>
+<script is:inline>(function(){var h=document.querySelector("header.site");function f(){if(h)h.classList.toggle("scrolled",scrollY>40)}addEventListener("scroll",f,{passive:true});f();document.querySelectorAll(".navdrop__btn").forEach(function(b){b.addEventListener("click",function(e){e.stopPropagation();var d=b.parentNode,o=!d.classList.contains("open");d.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false")})});document.addEventListener("click",function(e){document.querySelectorAll(".navdrop.open").forEach(function(d){if(!d.contains(e.target))d.classList.remove("open")})});})();</script>
+<script is:inline>addEventListener('DOMContentLoaded',function(){document.body.classList.add('ready');});</script>
+</body></html>
