@@ -10,6 +10,9 @@
   "vars": {
     "APP_URL": "https://members.vaulthuman.com"
   },
+  "r2_buckets": [
+    { "binding": "FILES", "bucket_name": "vault-human-member-files" }
+  ],
   "d1_databases": [
     {
       "binding": "DB",

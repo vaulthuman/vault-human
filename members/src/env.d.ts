@@ -2,6 +2,7 @@
 
 type Env = {
   DB: import('./lib/db').Db;
+  FILES?: import('./lib/files').Bucket;
   SESSION_SECRET: string;
   APP_URL?: string;
   STRIPE_SECRET_KEY?: string;

@@ -33,8 +33,11 @@ export const memberByEmail = (db: Db, email: string) =>
 export const memberByCustomer = (db: Db, customerId: string) =>
   db.prepare('SELECT * FROM members WHERE stripe_customer_id = ?').bind(customerId).first<Member>();
 
-export async function createMember(db: Db, email: string, startedOn: string): Promise<Member> {
-  await db.prepare('INSERT INTO members (email, started_on) VALUES (?, ?)').bind(email.trim().toLowerCase(), startedOn).run();
+export async function createMember(db: Db, email: string, startedOn: string, name?: string | null): Promise<Member> {
+  await db
+    .prepare('INSERT INTO members (email, started_on, name) VALUES (?, ?, ?)')
+    .bind(email.trim().toLowerCase(), startedOn, name?.trim() || null)
+    .run();
   return (await memberByEmail(db, email))!;
 }
 

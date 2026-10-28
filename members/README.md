@@ -12,9 +12,10 @@ Pages build from `main` does not read this folder.
 | Page | Path | What it does |
 | --- | --- | --- |
 | Sign in | `/signin` | Email field, "Send me a sign-in link". Passwordless: a signed link that expires after 15 minutes and works once. Same answer for any address, member or not. |
-| Today | `/today` | The member's current Key: eyebrow "Key", title, the video, the paragraphs, the gold step box with 3 numbered steps, and a one-line box "What I did, and what it did." Save shows "Logged." and the streak. Saving again the same day replaces that day's line. |
+| Today | `/today` | Greets the member by first name ("Good evening, Russ.", in their time zone) and shows where they are: chamber (or the Integration pause) and Key number (their 1st, 2nd, ... Key, with its id). Then the current Key: eyebrow "Key", title, the video, the paragraphs, the gold step box with 3 numbered steps, and a one-line box "What I did, and what it did." Save shows "Logged." and the streak. Saving again the same day replaces that day's line. |
 | My keys | `/keys` | Keys received so far, newest first, each with its line if one was logged. Tapping an older Key opens it at `/keys/<id>`. |
 | Progress | `/progress` | Streak (days in a row with a logged line), chamber (1 to 11, plus the Integration pause in month six), keys turned (Keys with at least one logged line). |
+| Downloads | `/downloads` | Member files: the guide (a placeholder PDF for now) and the B003 video. Private: see "Downloads and file storage" below. |
 | Membership | `/membership` | One button to the Stripe Customer Portal (test mode only). Stubbed with a plain message when no test key is set. Sign out. |
 | Stripe webhook | `/api/stripe/webhook` | Verifies the `Stripe-Signature` header (HMAC-SHA256, 5-minute tolerance), refuses live-mode events, handles each event id once. |
 
@@ -26,6 +27,27 @@ Access rules (in `src/lib/stripe.ts`):
 - `customer.subscription.deleted` closes access.
 - `customer.subscription.updated` closes access when the status is `unpaid` or `canceled`; other statuses are recorded only.
 - A signed-in member without access can still reach Membership (to fix billing), but not Today, My keys or Progress.
+
+## Downloads and file storage
+
+Files live in a private Cloudflare R2 bucket, `vault-human-member-files`, bound to the Worker as `FILES`.
+The bucket has no public URL and no public domain.
+
+- The list of files is `src/data/downloads.json`: id, title, line of text, type, R2 object key, download filename, content type.
+- `/downloads` shows each file with its size (read from R2), or "Coming soon" if it isn't uploaded yet.
+- Each Download button is a link signed for that member and that file, valid for 10 minutes:
+  `/files/<id>?x=<expiry>&s=<HMAC of file id, member id and expiry>`.
+- `/files/<id>` (a Worker route, `src/pages/files/[id].ts` → `serveFile` in `src/lib/files.ts`) serves the file only when
+  all of these hold: signed in, membership active, signature valid for *this* member and *this* file, not expired.
+  A link copied to someone else fails (their session is a different member, or they have none).
+  Responses are `private, no-store`, `noindex`, sent as attachments, and support byte ranges (206/416) so videos can seek.
+- Locally, Wrangler's on-disk R2 stands in for the bucket (the "stub"): `npm run files:seed:local` puts the placeholder
+  guide (`storage-seed/vault-human-member-guide.pdf`, made by `scripts/make-placeholder-pdf.mjs`) and the B003 video
+  (read from the public site's `public/video/`, unchanged) into it. If no bucket is bound at all, Downloads shows
+  "Coming soon" and `/files/...` answers 503.
+
+To add a file: add an entry to `downloads.json`, then upload the object to R2 under the same key
+(`npx wrangler r2 object put vault-human-member-files/<key> --remote --file=<path> --content-type=<type>`).
 
 Other details:
 
@@ -45,6 +67,8 @@ Other details:
   connected yet." Live keys (`sk_live_`) are refused on purpose in v1.
 - **invoice.paid without a key.** Opening access needs the subscription status from Stripe, so with no
   test key the webhook records the event but opens nothing.
+- **File storage.** Locally, Wrangler's on-disk R2 holds the files (`npm run files:seed:local`). The real bucket is
+  created at deploy time. The guide is a one-page placeholder PDF.
 - **Content.** Five sample Keys only. No guide, tracker or coach features yet.
 
 ## Run it locally
@@ -57,6 +81,7 @@ npm install
 cp .dev.vars.example .dev.vars        # then put a long random string in SESSION_SECRET
 npm run db:migrate:local              # creates the local D1 database in .wrangler/
 npm run db:seed:local                 # test member: test@example.com, all five Keys received
+npm run files:seed:local              # placeholder guide + B003 video into the local R2 bucket
 npm run dev                           # http://localhost:4321
 ```
 
@@ -65,7 +90,7 @@ Sign in with `test@example.com`; the sign-in link appears in the terminal runnin
 Checks:
 
 ```bash
-npm test          # streak, chamber, schedule, tokens, webhook signature and access rules (39 tests)
+npm test          # streak, chamber, schedule, greeting, tokens, signed file links, webhook (56 tests)
 npm run check     # TypeScript and Astro diagnostics
 npm run build     # production Worker bundle in dist/
 ```
@@ -73,7 +98,7 @@ npm run build     # production Worker bundle in dist/
 Screenshots: with the dev server writing to a log (`npm run dev > dev.log 2>&1 &`) and a fresh seed,
 `DEV_LOG=dev.log node scripts/screenshots.cjs` signs in as the test member, saves a line, checks
 "Logged. Streak: 1 day in a row", and saves phone-width (390px) screenshots of every page to
-`docs/screenshots/`. Add `LOCAL_SITE=1` if the machine can't reach www.vaulthuman.com; it then serves
+`docs/screenshots/`. It also checks the greeting line and downloads the guide through a signed link. Add `LOCAL_SITE=1` if the machine can't reach www.vaulthuman.com; it then serves
 the videos and posters from the repo's `public/` folder (read only).
 
 ### Webhook, locally, with the Stripe CLI (test mode)
@@ -96,6 +121,8 @@ Vault Human Cloudflare account.
    Copy the `database_id` it prints into `wrangler.jsonc` (replacing the zeros) and commit that change.
    The id is not a secret.
 3. Create the tables: `npm run db:migrate:remote`
+   and the file bucket: `npx wrangler r2 bucket create vault-human-member-files` (leave public access off),
+   then upload the files listed in `src/data/downloads.json` (see "Downloads and file storage").
 4. Set the secrets (each command prompts for the value; nothing goes in git):
    ```bash
    npx wrangler secret put SESSION_SECRET          # long random string, e.g. `openssl rand -hex 32`
@@ -111,6 +138,7 @@ Vault Human Cloudflare account.
    `https://members.vaulthuman.com/api/stripe/webhook`, events `invoice.paid`,
    `customer.subscription.updated`, `customer.subscription.deleted`. Put its signing secret in step 4.
 8. Stripe (test mode) → Settings → Billing → Customer portal: turn it on and choose what members may change.
+   Stripe sends the customer's name with the invoice; the app uses its first word to greet new members.
 9. Do not run `db:seed:local` against the remote database; the seed is test data.
 
 Before real members: an email sender (below), and Stripe live mode, which v1 deliberately refuses.
@@ -133,3 +161,66 @@ Before real members: an email sender (below), and Stripe live mode, which v1 del
 8. **Membership start.** The chamber counts from the member's first payment. Is that the right day one?
    What happens after month twelve (v1 stays on Chamber 11)?
 9. **Going live with Stripe:** when, and the live product and portal settings.
+10. **Downloads:** the real guide PDF, which other files members get, and whether a file should only appear once
+    the member has received that Key (v1 shows every file to every active member).
+11. **Member login link on the public site:** when to switch it on (see below), and whether the Key pages should
+    keep the phone number next to it.
+
+## "Member login" link for the public site (ready to apply, hidden)
+
+This PR does not touch the public site. When you're ready, apply the patch below from the repo root. It adds one
+component and puts it in the top-right of the header on every page that has the site header (the home page,
+`Base.astro`, the other `header.site` pages, and the `/key/*` pages):
+
+```bash
+git apply members/docs/member-login-link.patch
+```
+
+It ships **hidden**: while `LIVE` is `false` the component renders nothing, and the built site is byte-for-byte the
+same as before (checked: all 454 pages identical). To go live, change one line in
+`src/components/MemberLogin.astro`:
+
+```diff
+-const LIVE = false;
++const LIVE = true;
+```
+
+The component it adds, `src/components/MemberLogin.astro`:
+
+```astro
+---
+// "Member login" in the top-right of the public site header, pointing to the members' app.
+// Hidden until the members' app goes live: while LIVE is false this renders nothing at all,
+// so the built pages are byte-for-byte what they were. Flip LIVE to true to show it everywhere.
+const LIVE = false;
+---
+{LIVE && (
+  <>
+    <a class="member-login" href="https://members.vaulthuman.com/">Member login</a>
+    <style is:inline>
+      .member-login{flex:none;display:inline-block;margin-left:14px;padding:8px 14px;border:1px solid rgba(201,162,74,.75);border-radius:999px;color:#F1EDE4 !important;font:600 14px/1 Inter,system-ui,sans-serif;text-decoration:none;white-space:nowrap}
+      .member-login:hover,.member-login:focus-visible{background:#C9A24A;color:#15190f !important;outline:none}
+      header.site .navlinks{margin-left:auto}
+      .top .member-login{margin-left:auto;margin-right:16px;align-self:center}
+      @media (max-width:1120px){header.site .member-login{margin-left:auto;margin-right:10px}}
+      @media (max-width:480px){.top{flex-wrap:wrap}.top .brand,.top .tel{white-space:nowrap}.top .member-login{order:3;margin:12px 0 0 auto}}
+    </style>
+  </>
+)}
+```
+
+and in each header (the patch does all 23 files, including the import line):
+
+```astro
+---
+import MemberLogin from '../components/MemberLogin.astro';   // path relative to the page
+---
+<!-- pages with <header class="site">: just before the menu button -->
+<MemberLogin /><button class="navtoggle" ...>
+
+<!-- /key/* pages with <header class="top">: just before the phone number, on the same line -->
+<MemberLogin /><a class="tel" href="tel:+18888332510">(888) 833-2510</a>
+```
+
+Preview with `LIVE = true` (phone and desktop) is in `docs/screenshots/public-site-preview/`.
+

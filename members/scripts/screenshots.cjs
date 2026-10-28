@@ -49,6 +49,9 @@ const EMAIL = 'test@example.com';
   await page.goto(link);
   await page.waitForSelector('video');
   if (!page.url().endsWith('/today')) throw new Error(`Expected /today, got ${page.url()}`);
+  const hello = (await page.textContent('.hello')).replace(/\s+/g, ' ').trim();
+  console.log('greeting:', hello);
+  if (!/^Good (morning|afternoon|evening), Test\. Chamber 1 · You Key 5 · B003$/.test(hello)) throw new Error(`Unexpected greeting: ${hello}`);
   await shot('3-today');
 
   await page.fill('#line', 'Wrote the list and the sentence. Felt lighter, and slept better.');
@@ -65,10 +68,18 @@ const EMAIL = 'test@example.com';
   const streakNum = (await page.textContent('.stat b')).trim();
   if (streakNum !== '1') throw new Error(`Progress streak shows ${streakNum}`);
   await shot('6-progress');
+  await page.goto(`${BASE}/downloads`);
+  await shot('7-downloads');
+  const [download] = await Promise.all([page.waitForEvent('download'), page.click('a[href^="/files/guide"]')]);
+  const saved = await download.path();
+  const head = fs.readFileSync(saved).subarray(0, 5).toString();
+  console.log('downloaded:', download.suggestedFilename(), fs.statSync(saved).size, 'bytes');
+  if (head !== '%PDF-') throw new Error('Downloaded guide is not a PDF');
+
   await page.goto(`${BASE}/membership`);
-  await shot('7-membership');
+  await shot('8-membership');
   await page.click('form[method=post]:not([action]) button');
-  await shot('8-membership-stub');
+  await shot('9-membership-stub');
 
   await browser.close();
 })().catch((e) => { console.error(e); process.exit(1); });

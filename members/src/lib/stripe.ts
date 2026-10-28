@@ -65,7 +65,8 @@ async function apply(event: StripeEvent, { db, subscriptionStatus, now = new Dat
       if (status !== 'active') return { action: 'ignored', reason: `subscription status ${status ?? 'unknown'}` };
       let member: Member | null = await q.memberByCustomer(db, customer);
       const email = typeof obj.customer_email === 'string' ? obj.customer_email : null;
-      if (!member && email) member = (await q.memberByEmail(db, email)) ?? (await q.createMember(db, email, localDay(now)));
+      const name = typeof obj.customer_name === 'string' ? obj.customer_name : null;
+      if (!member && email) member = (await q.memberByEmail(db, email)) ?? (await q.createMember(db, email, localDay(now), name));
       if (!member) return { action: 'ignored', reason: 'no member or email for customer' };
       await q.setBilling(db, member.id, { access: true, customer, subscription: sub, status });
       return { action: 'opened', memberId: member.id };

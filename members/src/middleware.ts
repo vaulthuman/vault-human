@@ -4,7 +4,7 @@ import { COOKIE } from './lib/session';
 import { readSessionToken } from './lib/tokens';
 
 const PUBLIC = ['/signin', '/auth/', '/api/'];
-const NEEDS_ACCESS = ['/today', '/keys', '/progress'];
+const NEEDS_ACCESS = ['/today', '/keys', '/progress', '/downloads', '/files/'];
 
 export const onRequest = defineMiddleware(async (ctx, next) => {
   const env = ctx.locals.runtime.env;

@@ -46,7 +46,7 @@ describe('access rules', () => {
   };
   const paid = (id: string, extra: object = {}) => ({
     id, type: 'invoice.paid',
-    data: { object: { customer: 'cus_1', customer_email: 'New@Example.com', subscription: 'sub_1', ...extra } },
+    data: { object: { customer: 'cus_1', customer_email: 'New@Example.com', customer_name: 'Nell Example', subscription: 'sub_1', ...extra } },
   });
   const subEvent = (id: string, type: string, status: string) => ({
     id, type, data: { object: { id: 'sub_1', customer: 'cus_1', status } },
@@ -55,7 +55,7 @@ describe('access rules', () => {
   it('opens access on invoice.paid with an active subscription, creating the member', async () => {
     const { deps, member } = setup();
     expect(await handleEvent(paid('evt_1'), deps)).toMatchObject({ action: 'opened' });
-    expect(member()).toMatchObject({ access: 1, stripe_customer_id: 'cus_1', stripe_subscription_id: 'sub_1', started_on: '2026-10-28' });
+    expect(member()).toMatchObject({ access: 1, name: 'Nell Example', stripe_customer_id: 'cus_1', stripe_subscription_id: 'sub_1', started_on: '2026-10-28' });
   });
 
   it('links an existing member by email', async () => {

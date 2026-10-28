@@ -7,12 +7,15 @@ Read these before changing anything in this repo.
   root `package.json`, `astro.config.mjs`, `src/`, `public/` or any other existing file outside this folder.
   Cloudflare Pages builds the public site from `main`, and branch builds must keep passing.
 - `/members` stays self-contained: its own `package.json` and lockfile, no imports from the root site.
+- Changes the public site needs (like the Member login link) go in as a ready-to-apply patch under `docs/`, not as edits.
 - Work on a branch and open a draft pull request. Never merge.
 
 ## Data, money and email
 - Test data only. Seeds use `@example.com` addresses.
 - Stripe TEST mode only. The code refuses keys that are not `sk_test_` / `rk_test_` and live-mode events; keep it that way.
 - Never send email to anyone. In development, print sign-in links to the console (`DEV_LOG_LINKS=1`).
+- Member files stay private: R2 with no public URL, served only through short-lived signed links to a signed-in
+  member with access (`src/lib/files.ts`). Never link a member file from anywhere public.
 - The repo is public: commit no secrets. Real values live in `.dev.vars` (git-ignored) or `wrangler secret put`.
   `.dev.vars.example` holds placeholder names only.
 
