@@ -1,6 +1,6 @@
-// Stripe webhook (test mode). Verifies the signature, then opens or closes access.
+// Stripe webhook. Verifies the signature and that the event's mode matches the key, then opens or closes access.
 import type { APIRoute } from 'astro';
-import { handleEvent, subscriptionStatusFrom, verifySignature } from '../../../lib/stripe';
+import { eventMatchesKey, handleEvent, subscriptionStatusFrom, verifySignature } from '../../../lib/stripe';
 
 export const POST: APIRoute = async ({ request, locals }) => {
   const env = locals.runtime.env;
@@ -10,7 +10,9 @@ export const POST: APIRoute = async ({ request, locals }) => {
     return new Response('Bad signature', { status: 400 });
   }
   const event = JSON.parse(payload);
-  if (event.livemode) return new Response('Live events are not accepted', { status: 400 });
+  if (!eventMatchesKey(event.livemode, env.STRIPE_SECRET_KEY)) {
+    return new Response('Event mode does not match the configured Stripe key', { status: 400 });
+  }
   const outcome = await handleEvent(event, { db: env.DB, subscriptionStatus: subscriptionStatusFrom(env.STRIPE_SECRET_KEY) });
   console.log('[stripe]', event.type, event.id, outcome);
   return Response.json({ received: true, ...outcome });
