@@ -27,8 +27,8 @@ if (Astro.request.method === 'POST') {
   <h1>Your membership.</h1>
   <div class="card">
     <p style="margin:0 0 4px;color:var(--ink)"><b>{member.email}</b></p>
-    <p style="margin:0">{member.access ? 'Your membership is active.' : 'Your membership is paused. Update your billing to open your Keys again.'}</p>
-    {member.access && member.subscription_status === 'past_due' && (
+    <p style="margin:0">{member.access ? 'Your membership is active.' : member.subscription_status === 'canceled' ? 'Your membership has ended. You can rejoin any time to open your Keys again.' : 'Your membership is paused. Update your billing to open your Keys again.'}</p>
+    {!!member.access && member.subscription_status === 'past_due' && (
       <p class="note" style="margin:12px 0 0">Your last payment didn’t go through. Stripe will try again, and your Keys stay open meanwhile. Updating your card below sorts it out.</p>
     )}
   </div>
