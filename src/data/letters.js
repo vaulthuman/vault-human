@@ -8296,5 +8296,69 @@ export const letters=[
   "iso": "2026-10-28",
   "month": "October 2026",
   "chamber": 6
+ },
+ {
+  "slug": "say-the-need",
+  "title": "Say the need",
+  "dek": "Marshall Rosenberg was nine in the summer of 1943 when his family moved to Detroit, and within days the city was in a race riot that killed more than thirty people.",
+  "day": 167,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Marshall Rosenberg was nine in the summer of 1943 when his family moved to Detroit, and within days the city was in a race riot that killed more than thirty people. He remembered being kept inside for three days while it burned. That fall, boys at school beat him up for his last name. He said later that those weeks gave him the question he spent his life on: what lets some people stay kind when everything around them says hit back?"
+   },
+   {
+    "k": "",
+    "t": "He trained as a clinical psychologist, finishing his doctorate at the University of Wisconsin in 1961, with Carl Rogers among his teachers, and then he left the office. Through the 1960s he mediated in schools and towns being desegregated, and he noticed that nearly every fight was built from the same few parts. Somebody judged. Somebody judged back. Nobody said what they needed. So he took the language apart and rebuilt it with four pieces: what I observed, with no verdict in it; what I feel; what I need; and what I'm asking for, specifically, now. In 1984 he founded the Center for Nonviolent Communication and spent thirty years teaching the method in some sixty countries, in classrooms and jails, in Rwanda after the genocide and in Israel and the West Bank, often with two hand puppets: a jackal for the voice that blames, and a giraffe, the animal with the largest heart on land, for the voice that doesn't. He died in 2015, at eighty."
+   },
+   {
+    "k": "",
+    "t": "His hardest sentence is the one to keep. Every criticism, judgment and burst of anger, he said, is the tragic expression of an unmet need. Tragic because it gets the opposite of what it wants. \"You never listen\" is a need to be heard, delivered in the one form that guarantees it won't be. I practice estate and elder law, and the hardest meetings in that work are rarely about the money. They're about who felt unseen."
+   },
+   {
+    "k": "",
+    "t": "I'll say the plain thing: the method has been taught for sixty years and studied very little, and what research there is runs small and favorable. The case for it is the room where somebody finally says, \"I need to know I matter to you,\" and the argument stops. It's a Circle key because this month is for your people, and the fastest way to lose one is to tell them what they are instead of what you need. If the conflict is old, or has lawyers in it, the door is a certified trainer or a mediator."
+   }
+  ],
+  "n": 250,
+  "date": "October 29, 2026",
+  "iso": "2026-10-29",
+  "month": "October 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "share-the-table",
+  "title": "Share the table",
+  "dek": "The body letters have spent a month on the hidden numbers.",
+  "day": 167,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The body letters have spent a month on the hidden numbers. From here they go to other people's tables, to learn how the longest-lived people on earth ate and, as much, how they shared it. We begin on an island."
+   },
+   {
+    "k": "",
+    "t": "In 1949, four years after the war that leveled it, American officials surveyed what the people of Okinawa were eating. The answer was mostly one thing. Sweet potato, the purple and orange kind, supplied the bulk of their calories, by the most careful later count around two-thirds. Rice was a small share. Soy came as tofu nearly every day; bitter melon, called goya, was stir-fried with egg; kombu seaweed went into the pot; a little fish, and pork mostly on festival days, the whole animal, nothing wasted. The island ate about a tenth fewer calories than mainland Japan, and far less fat, sugar and salt. Before a meal the old people said a Confucian phrase, hara hachi bu: eat until you are eight parts full. You met that phrase in the key on the Blue Zones; this is the table it came from."
+   },
+   {
+    "k": "",
+    "t": "In 1975 a Japanese cardiologist named Makoto Suzuki began following the island's oldest people, and his study, carried on with the brothers Bradley and Craig Willcox, became the longest record of its kind. For decades Okinawa had more hundred-year-olds per head than anywhere in Japan, and Japan more than anywhere on earth, with low rates of heart disease, stroke and the cancers that fill Western hospitals."
+   },
+   {
+    "k": "",
+    "t": "Here is the part the diet books skip. It ended. The American bases came in 1945 and the drive-ins after them, and the generation raised on canned pork and hamburgers did not inherit its grandparents' numbers. By 2000 Okinawan men had slipped to the middle of Japan's prefectures for life expectancy. The table was never the island. It was the generation that kept it, and they kept it together, in the one thing the surveys counted least: the moai, small circles of friends formed in childhood who met, ate and looked after each other for life. Nobody on that island ate alone."
+   },
+   {
+    "k": "",
+    "t": "It's a Sharing key because a people's food is the simplest door into their life, and this month the body letters walk through it. If you have a thyroid condition, the seaweed belongs in a conversation with your physician first; kombu is heavy in iodine. Vault Human coaches and doesn't treat."
+   }
+  ],
+  "n": 251,
+  "date": "October 29, 2026",
+  "iso": "2026-10-29",
+  "month": "October 2026",
+  "chamber": 11
  }
 ];
