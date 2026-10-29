@@ -89,6 +89,27 @@ describe('access rules', () => {
     expect(member()).toBeUndefined();
   });
 
+  it('opens access during a free-week trial (trialing)', async () => {
+    const { deps, member } = setup({ sub_1: 'trialing' });
+    expect(await handleEvent(paid('evt_1'), deps)).toMatchObject({ action: 'opened' });
+    expect(member()).toMatchObject({ access: 1, subscription_status: 'trialing' });
+  });
+
+  it('keeps access when a trial converts to active', async () => {
+    const statuses: Record<string, string> = { sub_1: 'trialing' };
+    const { deps, member } = setup(statuses);
+    await handleEvent(paid('evt_1'), deps);
+    await handleEvent(subEvent('evt_2', 'customer.subscription.updated', 'active'), deps);
+    expect(member()).toMatchObject({ access: 1, subscription_status: 'active' });
+  });
+
+  it('closes access when a trial ends without payment (canceled)', async () => {
+    const { deps, member } = setup({ sub_1: 'trialing' });
+    await handleEvent(paid('evt_1'), deps);
+    await handleEvent(subEvent('evt_2', 'customer.subscription.deleted', 'canceled'), deps);
+    expect(member()).toMatchObject({ access: 0, subscription_status: 'canceled' });
+  });
+
   it('does not open access when Stripe cannot be asked (no key)', async () => {
     const { deps } = setup({});
     expect(await handleEvent(paid('evt_1'), deps)).toMatchObject({ action: 'ignored' });
