@@ -1,5 +1,5 @@
 // Cloudflare Workers config for members.vaulthuman.com.
-// D1 database created 2026-10-28 (vault-human-members). R2 (member files) is off until R2 is enabled on the account.
+// D1 database created 2026-10-28 (vault-human-members). R2 bucket vault-human-member-files created 2026-10-29 (member files, private).
 // Preview runs at https://vault-human-members.vaulthumanadmin.workers.dev until members.vaulthuman.com is pointed here.
 {
   "name": "vault-human-members",
@@ -18,5 +18,8 @@
       "database_id": "70f9913a-c51b-4699-aacf-f48e47e6ad2c",
       "migrations_dir": "migrations"
     }
+  ],
+  "r2_buckets": [
+    { "binding": "FILES", "bucket_name": "vault-human-member-files" }
   ]
 }
