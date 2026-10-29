@@ -1,6 +1,6 @@
 import { createHmac } from 'node:crypto';
 import { describe, expect, it } from 'vitest';
-import { handleEvent, isTestKey, verifySignature } from '../src/lib/stripe';
+import { eventMatchesKey, handleEvent, isTestKey, stripeMode, verifySignature } from '../src/lib/stripe';
 import { testDb } from './sqlite-d1';
 
 const SECRET = 'whsec_test_placeholder';
@@ -27,7 +27,18 @@ describe('webhook signature', () => {
 });
 
 describe('test-mode keys only', () => {
-  it('accepts test keys and refuses live ones', () => {
+  it('reads the mode from the key and matches events to it', () => {
+    expect(stripeMode('sk_test_abc')).toBe('test');
+    expect(stripeMode('rk_live_abc')).toBe('live');
+    expect(stripeMode('')).toBe(null);
+    expect(eventMatchesKey(false, 'sk_test_abc')).toBe(true);
+    expect(eventMatchesKey(true, 'sk_test_abc')).toBe(false);
+    expect(eventMatchesKey(true, 'sk_live_abc')).toBe(true);
+    expect(eventMatchesKey(false, 'sk_live_abc')).toBe(false);
+    expect(eventMatchesKey(false, undefined)).toBe(false);
+  });
+
+  it('recognizes test keys', () => {
     expect(isTestKey('sk_test_abc')).toBe(true);
     expect(isTestKey('rk_test_abc')).toBe(true);
     expect(isTestKey('sk_live_abc')).toBe(false);
