@@ -1,4 +1,5 @@
-// Stripe, test mode only: webhook signature checks, access rules, and the Customer Portal.
+// Stripe: webhook signature checks, access rules, and the Customer Portal.
+// The mode (test or live) follows the secret key; a webhook event must match it.
 import { hmacHex, safeEqual } from './crypto';
 import { localDay } from './dates';
 import * as q from './db';
@@ -8,6 +9,14 @@ export const SIGNATURE_TOLERANCE_S = 300;
 
 /** Only test-mode keys are accepted in v1. */
 export const isTestKey = (key?: string) => !!key && /^(sk|rk)_test_/.test(key);
+export const isLiveKey = (key?: string) => !!key && /^(sk|rk)_live_/.test(key);
+/** 'test' or 'live' from the secret key, or null when no usable key is set. */
+export const stripeMode = (key?: string): 'test' | 'live' | null => (isTestKey(key) ? 'test' : isLiveKey(key) ? 'live' : null);
+/** True when the event's mode matches the key's mode (test events with a test key, live with live). */
+export const eventMatchesKey = (livemode: unknown, key?: string) => {
+  const mode = stripeMode(key);
+  return mode !== null && (mode === 'live') === (livemode === true);
+};
 
 /** Verifies a Stripe-Signature header ("t=...,v1=...") against the raw body. */
 export async function verifySignature(
@@ -102,7 +111,7 @@ async function stripeApi(key: string, path: string, init: RequestInit = {}) {
 
 export function subscriptionStatusFrom(key?: string) {
   return async (sub: string): Promise<string | null> => {
-    if (!isTestKey(key)) return null;
+    if (!stripeMode(key)) return null;
     return (await stripeApi(key!, `subscriptions/${encodeURIComponent(sub)}`)).status ?? null;
   };
 }
