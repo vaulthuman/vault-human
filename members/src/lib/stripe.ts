@@ -49,6 +49,8 @@ export type Deps = {
 export type Outcome = { action: 'opened' | 'closed' | 'updated' | 'ignored' | 'duplicate'; reason?: string; memberId?: number };
 
 const CLOSING = new Set(['unpaid', 'canceled']);
+// A free-week trial counts as membership: the member has given a card and Stripe charges on day 8.
+const OPENING = new Set(['active', 'trialing']);
 const id = (v: any): string | null => (typeof v === 'string' ? v : v?.id ?? null);
 
 // Older API versions put the subscription on the invoice; 2025+ versions put it under `parent`.
@@ -71,7 +73,7 @@ async function apply(event: StripeEvent, { db, subscriptionStatus, now = new Dat
       const sub = invoiceSubscription(obj);
       if (!customer || !sub) return { action: 'ignored', reason: 'not a subscription invoice' };
       const status = await subscriptionStatus(sub);
-      if (status !== 'active') return { action: 'ignored', reason: `subscription status ${status ?? 'unknown'}` };
+      if (!status || !OPENING.has(status)) return { action: 'ignored', reason: `subscription status ${status ?? 'unknown'}` };
       let member: Member | null = await q.memberByCustomer(db, customer);
       const email = typeof obj.customer_email === 'string' ? obj.customer_email : null;
       const name = typeof obj.customer_name === 'string' ? obj.customer_name : null;
