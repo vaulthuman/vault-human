@@ -13,7 +13,9 @@ Read these before changing anything in this repo.
 ## Data, money and email
 - Test data only. Seeds use `@example.com` addresses.
 - Stripe TEST mode only. The code refuses keys that are not `sk_test_` / `rk_test_` and live-mode events; keep it that way.
-- Never send email to anyone. In development, print sign-in links to the console (`DEV_LOG_LINKS=1`).
+- Never send email from a session, a test or development. Sign-in emails go through Resend only when
+  `RESEND_API_KEY` is set, which is a production secret: never put a real key in `.dev.vars` or a test.
+  Tests mock `fetch`. In development, sign-in links are printed to the console (`DEV_LOG_LINKS=1`).
 - Member files stay private: R2 with no public URL, served only through short-lived signed links to a signed-in
   member with access (`src/lib/files.ts`). Never link a member file from anywhere public.
 - The repo is public: commit no secrets. Real values live in `.dev.vars` (git-ignored) or `wrangler secret put`.

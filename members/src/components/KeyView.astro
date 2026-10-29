@@ -1,6 +1,6 @@
 ---
 // One Key, laid out like https://www.vaulthuman.com/key/b003/: eyebrow, title, video, paragraphs, the gold step box.
-import type { Key } from '../lib/keys';
+import { type Key, stepLabel } from '../lib/keys';
 interface Props { k: Key }
 const { k } = Astro.props;
 ---
@@ -14,7 +14,7 @@ const { k } = Astro.props;
 </section>
 <section class="b">
   <div class="step">
-    <p class="k">{k.stepLabel}</p>
+    <p class="k">{stepLabel(k)}</p>
     {k.steps.map((s, i) => <p><b>{i + 1}.</b> {s}</p>)}
   </div>
   {k.note && <p style="margin-top:16px">{k.note}</p>}

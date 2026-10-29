@@ -112,6 +112,30 @@ describe('access rules', () => {
     expect(member().access).toBe(0);
   });
 
+  it('keeps access open through past_due while Stripe retries, then closes on unpaid', async () => {
+    const statuses: Record<string, string> = { sub_1: 'active' };
+    const { deps, member } = setup(statuses);
+    await handleEvent(paid('evt_1'), deps);
+    // A renewal fails: Stripe sends invoice.payment_failed and marks the subscription past_due.
+    expect(await handleEvent({ id: 'evt_2', type: 'invoice.payment_failed', data: { object: { customer: 'cus_1', subscription: 'sub_1' } } }, deps))
+      .toMatchObject({ action: 'ignored' });
+    expect(await handleEvent(subEvent('evt_3', 'customer.subscription.updated', 'past_due'), deps)).toMatchObject({ action: 'updated' });
+    expect(member()).toMatchObject({ access: 1, subscription_status: 'past_due' });
+    // Retries run out.
+    expect(await handleEvent(subEvent('evt_4', 'customer.subscription.updated', 'unpaid'), deps)).toMatchObject({ action: 'closed' });
+    expect(member()).toMatchObject({ access: 0, subscription_status: 'unpaid' });
+  });
+
+  it('stays open when a past_due retry succeeds', async () => {
+    const statuses: Record<string, string> = { sub_1: 'active' };
+    const { deps, member } = setup(statuses);
+    await handleEvent(paid('evt_1'), deps);
+    await handleEvent(subEvent('evt_2', 'customer.subscription.updated', 'past_due'), deps);
+    await handleEvent(paid('evt_3'), deps); // the retry is paid; the subscription is active again
+    await handleEvent(subEvent('evt_4', 'customer.subscription.updated', 'active'), deps);
+    expect(member()).toMatchObject({ access: 1, subscription_status: 'active' });
+  });
+
   it('handles each event once', async () => {
     const { deps, member } = setup();
     await handleEvent(paid('evt_1'), deps);

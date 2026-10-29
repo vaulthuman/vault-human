@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { memberByEmail } from '../lib/db';
+import { deliverSignInLink } from '../lib/email';
 import { makeLinkToken } from '../lib/tokens';
 
 const env = Astro.locals.runtime.env;
@@ -8,7 +9,7 @@ if (Astro.locals.member) return Astro.redirect('/today');
 
 let sent = false;
 let error = '';
-const devLog = env.DEV_LOG_LINKS === '1';
+const devLog = env.DEV_LOG_LINKS === '1' && !env.RESEND_API_KEY;
 
 if (Astro.request.method === 'POST') {
   const email = String((await Astro.request.formData()).get('email') ?? '').trim().toLowerCase();
@@ -19,9 +20,12 @@ if (Astro.request.method === 'POST') {
     if (member) {
       const base = (env.APP_URL || Astro.url.origin).replace(/\/$/, '');
       const link = `${base}/auth/verify?token=${encodeURIComponent(await makeLinkToken(env.SESSION_SECRET, email))}`;
-      // v1 never sends email. With DEV_LOG_LINKS=1 the link goes to the console instead.
-      if (devLog) console.log(`\n[sign-in link for ${email}]\n${link}\n`);
-      else console.log(`[sign-in] link requested for a member; email sending is not set up, nothing sent`);
+      // Resend when RESEND_API_KEY is set; otherwise the dev console (DEV_LOG_LINKS=1).
+      // Sent after the response, so members and non-members get the same answer just as fast.
+      const delivery = deliverSignInLink(env, email, link);
+      const ctx = Astro.locals.runtime.ctx;
+      if (ctx?.waitUntil) ctx.waitUntil(delivery);
+      else await delivery;
     }
     // Same answer whether or not the address belongs to a member.
     sent = true;

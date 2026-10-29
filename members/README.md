@@ -11,10 +11,10 @@ Pages build from `main` does not read this folder.
 
 | Page | Path | What it does |
 | --- | --- | --- |
-| Sign in | `/signin` | Email field, "Send me a sign-in link". Passwordless: a signed link that expires after 15 minutes and works once. Same answer for any address, member or not. |
+| Sign in | `/signin` | Email field, "Send me a sign-in link". Passwordless: a signed link that expires after 15 minutes and works once, emailed through Resend (see "Sign-in email (Resend)"). Same answer for any address, member or not. |
 | Today | `/today` | Greets the member by first name ("Good evening, Russ.", in their time zone) and shows where they are: chamber (or the Integration pause) and Key number (their 1st, 2nd, ... Key, with its id). Then the current Key: eyebrow "Key", title, the video, the paragraphs, the gold step box with 3 numbered steps, and a one-line box "What I did, and what it did." Save shows "Logged." and the streak. Saving again the same day replaces that day's line. |
 | My keys | `/keys` | Keys received so far, newest first, each with its line if one was logged. Tapping an older Key opens it at `/keys/<id>`. |
-| Progress | `/progress` | Streak (days in a row with a logged line), chamber (1 to 11, plus the Integration pause in month six), keys turned (Keys with at least one logged line). |
+| Progress | `/progress` | Streak (days in a row with a logged line; one missed day in any rolling 7 days is forgiven), chamber (1 to 11, plus the Integration pause in month six), keys turned (Keys with at least one logged line). |
 | Downloads | `/downloads` | Member files: the guide (a placeholder PDF for now) and the B003 video. Private: see "Downloads and file storage" below. |
 | Membership | `/membership` | One button to the Stripe Customer Portal (test mode only). Stubbed with a plain message when no test key is set. Sign out. |
 | Stripe webhook | `/api/stripe/webhook` | Verifies the `Stripe-Signature` header (HMAC-SHA256, 5-minute tolerance), refuses live-mode events, handles each event id once. |
@@ -26,6 +26,10 @@ Access rules (in `src/lib/stripe.ts`):
   (their first day is the day of that payment).
 - `customer.subscription.deleted` closes access.
 - `customer.subscription.updated` closes access when the status is `unpaid` or `canceled`; other statuses are recorded only.
+- **`past_due` keeps access open** while Stripe retries the card (Russ's decision; this was already v1's behaviour, and
+  `tests/webhook.test.ts` now walks the whole sequence: payment failed → `past_due` (still open) → `unpaid` (closed),
+  and past_due → retry paid → still open). `invoice.payment_failed` changes nothing. Membership shows a short note
+  asking a `past_due` member to update their card.
 - A signed-in member without access can still reach Membership (to fix billing), but not Today, My keys or Progress.
 
 ## Downloads and file storage
@@ -49,10 +53,49 @@ The bucket has no public URL and no public domain.
 To add a file: add an entry to `downloads.json`, then upload the object to R2 under the same key
 (`npx wrangler r2 object put vault-human-member-files/<key> --remote --file=<path> --content-type=<type>`).
 
+## Sign-in email (Resend)
+
+Sign-in links go out through [Resend](https://resend.com) from **Vault Human &lt;keys@vaulthuman.com&gt;**
+(`src/lib/email.ts`), using the API key in `RESEND_API_KEY`.
+
+- Key set: the app posts the email to `https://api.resend.com/emails` (plain text and a simple dark HTML version
+  with a Sign in button). The send runs after the page answers, so members and non-members see the same reply
+  in the same time. If Resend refuses, the app logs the status, never the link.
+- Key missing: the console fallback. With `DEV_LOG_LINKS=1` the link is printed to the server console; otherwise
+  nothing is sent or printed. Keep `RESEND_API_KEY` empty in `.dev.vars` so development never emails anyone.
+
+### DNS records Resend needs for vaulthuman.com
+
+In Resend → Domains → Add domain → `vaulthuman.com` (pick the region, e.g. North Virginia, us-east-1), Resend
+lists the records to add. Add them in Cloudflare → vaulthuman.com → DNS → Records. They look like this; **copy the
+exact values from Resend**, because the DKIM key is unique to the account and the mail host depends on the region:
+
+| Type | Name (in Cloudflare) | Value | Priority | Purpose |
+| --- | --- | --- | --- | --- |
+| TXT | `resend._domainkey` | `p=MIGfMA0GCSqGSIb3DQEB...` (long key from Resend) | | DKIM: proves Resend may sign mail for vaulthuman.com |
+| MX | `send` | `feedback-smtp.us-east-1.amazonses.com` | 10 | Bounces and complaints come back to Resend |
+| TXT | `send` | `v=spf1 include:amazonses.com ~all` | | SPF for the `send` bounce subdomain |
+| TXT | `_dmarc` | `v=DMARC1; p=none;` | | Recommended DMARC, only if vaulthuman.com has no `_dmarc` record yet |
+
+Notes:
+
+- The MX and SPF records sit on the `send` subdomain, so they do not touch the root `vaulthuman.com` MX or SPF that
+  deliver vault@vaulthuman.com today. Don't edit the root records.
+- If a `_dmarc` record already exists, keep it rather than adding a second one. (This sandbox couldn't look up
+  vaulthuman.com's current DNS, so check in Cloudflare.)
+- TXT and MX records are never proxied, so there is no orange cloud to switch off.
+- Click Verify in Resend; once it shows Verified, create an API key with "Sending access" restricted to
+  vaulthuman.com and store it with `npx wrangler secret put RESEND_API_KEY`.
+
 Other details:
 
 - Key content lives in one file, `src/data/keys.json` (B001, M001, H001, B002, B003, copied from
   `src/pages/key/*.astro` at the repo root). Videos and posters load from https://www.vaulthuman.com/.
+- Each Key has a `time`, `morning` or `evening`. The gold box says "Today's step" for morning Keys and
+  "Tonight's step" for evening Keys (Russ's decision). B001 and M001 are morning; H001, B002 and B003 evening.
+- Streak (`src/lib/streak.ts`): counts logged days in a row, ending today. If today has no line yet, a run ending
+  yesterday still counts. One missed day in any rolling 7 days is forgiven (Russ's decision): a single gap doesn't
+  reset the run, but two missed days in a row, or two gaps less than 7 days apart, do. Forgiven days aren't counted.
 - Schedule: one Key a day in `keys.json` order from the member's first day. When the list runs out, the last Key stays on Today.
 - Days are counted in the member's time zone, taken from their browser when they save a line (default America/Chicago).
 - Session: an HttpOnly, Secure, SameSite=Lax cookie holding a signed token, valid 30 days.
@@ -60,9 +103,9 @@ Other details:
 
 ## What is stubbed
 
-- **Email.** No email is ever sent. With `DEV_LOG_LINKS=1` the sign-in link is printed to the server
-  console. Without it, the app logs that a link was requested and sends nothing. So in production, no
-  member can sign in until an email sender is added (see decisions below).
+- **Email.** Resend is built in but only sends when `RESEND_API_KEY` is set, and no key exists anywhere in
+  this repo or its test runs, so nothing has been emailed. Without a key, `DEV_LOG_LINKS=1` prints the link to
+  the server console; without either, the app logs that a link was requested and sends nothing.
 - **Customer Portal.** Without a `sk_test_`/`rk_test_` key the button shows "The membership portal isn't
   connected yet." Live keys (`sk_live_`) are refused on purpose in v1.
 - **invoice.paid without a key.** Opening access needs the subscription status from Stripe, so with no
@@ -90,7 +133,7 @@ Sign in with `test@example.com`; the sign-in link appears in the terminal runnin
 Checks:
 
 ```bash
-npm test          # streak, chamber, schedule, greeting, tokens, signed file links, webhook (56 tests)
+npm test          # streak + grace day, chamber, schedule, step label, greeting, tokens, Resend email, file links, webhook (76 tests)
 npm run check     # TypeScript and Astro diagnostics
 npm run build     # production Worker bundle in dist/
 ```
@@ -128,6 +171,7 @@ Vault Human Cloudflare account.
    npx wrangler secret put SESSION_SECRET          # long random string, e.g. `openssl rand -hex 32`
    npx wrangler secret put STRIPE_SECRET_KEY       # sk_test_... (test mode)
    npx wrangler secret put STRIPE_WEBHOOK_SECRET   # whsec_... from step 7
+   npx wrangler secret put RESEND_API_KEY          # re_... after the DNS records verify (see "Sign-in email (Resend)")
    ```
    Do not set `DEV_LOG_LINKS` in production.
 5. Deploy: `npm run deploy` (builds, then `wrangler deploy`). Wrangler prints a `*.workers.dev` URL.
@@ -141,29 +185,28 @@ Vault Human Cloudflare account.
    Stripe sends the customer's name with the invoice; the app uses its first word to greet new members.
 9. Do not run `db:seed:local` against the remote database; the seed is test data.
 
-Before real members: an email sender (below), and Stripe live mode, which v1 deliberately refuses.
+Before real members: the Resend domain verified and its key set, and Stripe live mode, which v1 deliberately refuses.
+
+## Decided by Russ
+
+- **Email sender:** Resend, from Vault Human <keys@vaulthuman.com>. Built; see "Sign-in email (Resend)".
+- **Step box label:** follows the Key's time: morning Keys say "Today's step", evening Keys "Tonight's step".
+- **Streak:** one grace day per rolling 7 days.
+- **Access during `past_due`:** stays open while Stripe retries; closes only on `unpaid` or `canceled` (already v1's behaviour).
 
 ## What Russ must decide
 
-1. **Email sender for sign-in links.** Which service sends them (Cloudflare Email Routing/Workers email,
-   Postmark, Resend, or the Google Apps Script already used for Keys) and the from-address. Until then
-   no one can sign in on the live site.
-2. **Key schedule.** v1 gives one Key a day in file order. Is it daily? Does the mind, body and heart
-   order follow the chambers? What happens when the list runs out?
-3. **Which Keys go in `keys.json`,** and who adds new ones (by hand, or generated like `src/data/keys.js`).
-4. **Step box label.** The source pages use "Today's step" for B001 and M001 and "Tonight's step" for
-   the rest; v1 copies each page. One label for all?
-5. **Streak rule.** v1 keeps a streak alive until the end of today if yesterday was logged. Should a missed
-   day ever be forgiven?
-6. **Time zone.** v1 takes it from the member's browser, defaulting to America/Chicago.
-7. **Who gets access.** Only `active` subscriptions open access. Should `trialing` count? Should
-   `past_due` close access straight away (v1 keeps it open until `unpaid` or `canceled`)?
-8. **Membership start.** The chamber counts from the member's first payment. Is that the right day one?
+1. **Key schedule.** v1 gives one Key a day in file order. Is it daily, or a morning and an evening Key each day?
+   Does the mind, body and heart order follow the chambers? What happens when the list runs out?
+2. **Which Keys go in `keys.json`,** and who adds new ones (by hand, or generated like `src/data/keys.js`).
+3. **Time zone.** v1 takes it from the member's browser, defaulting to America/Chicago.
+4. **Trials.** Only `active` subscriptions open access. Should `trialing` count?
+5. **Membership start.** The chamber counts from the member's first payment. Is that the right day one?
    What happens after month twelve (v1 stays on Chamber 11)?
-9. **Going live with Stripe:** when, and the live product and portal settings.
-10. **Downloads:** the real guide PDF, which other files members get, and whether a file should only appear once
+6. **Going live with Stripe:** when, and the live product and portal settings.
+7. **Downloads:** the real guide PDF, which other files members get, and whether a file should only appear once
     the member has received that Key (v1 shows every file to every active member).
-11. **Member login link on the public site:** when to switch it on (see below), and whether the Key pages should
+8. **Member login link on the public site:** when to switch it on (see below), and whether the Key pages should
     keep the phone number next to it.
 
 ## "Member login" link for the public site (ready to apply, hidden)

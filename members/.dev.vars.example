@@ -10,7 +10,11 @@ STRIPE_SECRET_KEY=
 # Signing secret of the test-mode webhook endpoint (whsec_...).
 STRIPE_WEBHOOK_SECRET=
 
-# 1 = print sign-in links to the console instead of emailing them. No email is ever sent in v1.
+# Resend API key for sign-in emails (from: Vault Human <keys@vaulthuman.com>).
+# Leave EMPTY in development: with no key, nothing is emailed and the link is printed instead.
+RESEND_API_KEY=
+
+# 1 = print sign-in links to the console when RESEND_API_KEY is empty. Never set in production.
 DEV_LOG_LINKS=1
 
 # Where sign-in links point. Local dev: http://localhost:4321

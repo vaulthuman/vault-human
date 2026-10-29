@@ -8,6 +8,7 @@ type Env = {
   STRIPE_SECRET_KEY?: string;
   STRIPE_WEBHOOK_SECRET?: string;
   DEV_LOG_LINKS?: string;
+  RESEND_API_KEY?: string;
 };
 
 type Runtime = import('@astrojs/cloudflare').Runtime<Env>;

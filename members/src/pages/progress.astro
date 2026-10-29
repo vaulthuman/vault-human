@@ -10,7 +10,7 @@ const c = s.chamber;
   <p class="eyebrow">Progress</p>
   <h1>Where you are.</h1>
   <div class="stats">
-    <div class="card stat"><small>Streak</small><b>{s.streak}</b><span>{s.streak === 1 ? 'day' : 'days'} in a row with a logged line</span></div>
+    <div class="card stat"><small>Streak</small><b>{s.streak}</b><span>{s.streak === 1 ? 'day' : 'days'} in a row with a logged line</span><span class="fine">One missed day in any seven is forgiven.</span></div>
     <div class="card stat"><small>Chamber</small>
       {c.pause ? <><b class="word">Pause</b><span>Integration · {c.title}</span></> : <><b>{c.n}<i> of 11</i></b><span>{c.name} · {c.title}</span></>}
     </div>
@@ -35,6 +35,7 @@ const c = s.chamber;
   .stat b i{font-style:normal;font-size:28px;color:var(--mute)}
   .stat b.word{font-size:52px}
   .stat span{display:block;margin-top:6px;font-size:15px;color:var(--soft)}
+  .stat span.fine{margin-top:4px;font-size:13px;color:var(--mute)}
   .year{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
   .year li{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;color:var(--mute)}
   .year li span{width:26px;height:26px;flex:none;border-radius:50%;display:grid;place-items:center;font:700 12px Inter,sans-serif;border:1px solid var(--line)}

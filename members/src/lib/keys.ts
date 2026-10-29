@@ -4,16 +4,19 @@ import { daysBetween } from './dates';
 export type Key = {
   id: string;
   title: string;
+  /** When the Key arrives: morning Keys say "Today's step", evening Keys "Tonight's step". */
+  time: 'morning' | 'evening';
   video: string;
   poster: string;
   paragraphs: string[];
-  stepLabel: string;
   steps: string[];
   note?: string;
   source: string;
 };
 
-export const KEYS: Key[] = keys;
+export const KEYS = keys as Key[];
+
+export const stepLabel = (k: Pick<Key, 'time'>) => (k.time === 'morning' ? "Today's step" : "Tonight's step");
 
 export function keyById(id: string): Key | undefined {
   return KEYS.find((k) => k.id.toLowerCase() === id.toLowerCase());
