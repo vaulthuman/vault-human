@@ -1,5 +1,6 @@
 // Cloudflare Workers config for members.vaulthuman.com.
-// database_id is a placeholder until Russ creates the D1 database (see README.md).
+// D1 database created 2026-10-28 (vault-human-members). R2 (member files) is off until R2 is enabled on the account.
+// Preview runs at https://vault-human-members.vaulthumanadmin.workers.dev until members.vaulthuman.com is pointed here.
 {
   "name": "vault-human-members",
   "main": "./dist/_worker.js/index.js",
@@ -8,16 +9,13 @@
   "assets": { "binding": "ASSETS", "directory": "./dist" },
   "observability": { "enabled": true },
   "vars": {
-    "APP_URL": "https://members.vaulthuman.com"
+    "APP_URL": "https://vault-human-members.vaulthumanadmin.workers.dev"
   },
-  "r2_buckets": [
-    { "binding": "FILES", "bucket_name": "vault-human-member-files" }
-  ],
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "vault-human-members",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "70f9913a-c51b-4699-aacf-f48e47e6ad2c",
       "migrations_dir": "migrations"
     }
   ]
