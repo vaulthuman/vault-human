@@ -8360,5 +8360,35 @@ export const letters=[
   "iso": "2026-10-29",
   "month": "October 2026",
   "chamber": 11
+ },
+ {
+  "slug": "find-the-interest",
+  "title": "Find the interest",
+  "dek": "Two men are reading in a library. One wants the window open; the other wants it shut.",
+  "day": 168,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Two men are reading in a library. One wants the window open; the other wants it shut. They argue it up and down, a crack, halfway, all the way, and get nowhere. The librarian comes over and asks the first man why he wants it open. For the fresh air, he says. She asks the second why he wants it closed. To keep the draft off my pages. She walks into the next room and opens a window there. Mary Parker Follett told that story in the 1920s; Roger Fisher and William Ury set it near the heart of <em>Getting to Yes</em> in 1981, and it is today's key."
+   },
+   {
+    "k": "",
+    "t": "Fisher came to the work the hard way. He flew weather reconnaissance for the Army Air Forces in the Second World War and came home to find that a good many of the men he'd gone to school with had not. He worked on the Marshall Plan in Paris, then taught at Harvard Law School for more than thirty years, and in 1979 he founded the Harvard Negotiation Project with Ury, a young anthropologist, to ask one plain question: how do people who disagree reach an agreement that holds?"
+   },
+   {
+    "k": "",
+    "t": "Their answer had four parts. Separate the people from the problem: soft on the person, hard on the matter. Focus on interests, not positions: a position is what you say you want; an interest is why, and two positions that can't both win often sit on interests that can. Invent options before you judge them. And measure the result against something fair that stands outside both of you, a market price, a precedent, a rule you'd accept if the sides were switched. Under it all sat the idea that gives you your footing: know what you'll do if no agreement comes. They called it your best alternative, and the person who knows theirs can afford to be generous at the table. The method's most famous outing came at Camp David in 1978, where the American team carried one draft between the Egyptian and Israeli delegations and rewrote it more than twenty times until both could sign. Fisher taught it the rest of his life, and died in 2012, at ninety."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because this month is for your people, and most of what wears a circle thin is two positions pressing on each other while the interests underneath go unasked. I spent a decade in restaurants in every role, and I've watched a standoff over a Saturday shift dissolve the moment somebody asked what the Saturday was for. If what you're negotiating has a contract or a court in it, the door is a trained mediator, or a lawyer who does this for a living. The practice is for everyone with a window to argue over."
+   }
+  ],
+  "n": 252,
+  "date": "October 30, 2026",
+  "iso": "2026-10-30",
+  "month": "October 2026",
+  "chamber": 6
  }
 ];
