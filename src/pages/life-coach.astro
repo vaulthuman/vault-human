@@ -1,6 +1,6 @@
 ---
 // https://www.vaulthuman.com/life-coach/ — coach-first Google Ads landing page (Russ, 10/31/26).
-// Same design as /start; leads with Russ as the coach. A/B tested against /start. Form → HubSpot → /thanks.
+// Same design as /start; leads with Russ as the coach (hero = the moving clip of Russ pointing on stage, Russ's call 10/31). A/B tested against /start. Form → HubSpot → /thanks.
 const title = 'Russ Michaels, Life Coach — Vault Human · First week free';
 const desc = 'Work with life coach Russ Michaels: a short video and one small step at 8 each morning and 8 each evening, a monthly live call, and a coach who reads your replies. Your first week is free.';
 ---
@@ -99,6 +99,8 @@ const desc = 'Work with life coach Russ Michaels: a short video and one small st
     .pq blockquote{margin:0 0 6px;font-size:15px;line-height:1.5;color:var(--ink);text-wrap:pretty}
     .pq figcaption{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
     @media (max-width:480px){.f2{grid-template-columns:1fr}}
+    .hv.clip{aspect-ratio:960/500;background:#000;border-radius:12px}
+    .coach img.nocrop{height:auto;object-fit:contain}
     .hv.photo{aspect-ratio:auto;background:none}.hv.photo img{width:100%;height:auto;display:block;border-radius:12px}
     @media (min-width:900px){.hero .wrap{grid-template-rows:auto auto auto}.hc{grid-row:1}.act{grid-column:1;grid-row:2 / span 2;align-self:start}.hv{grid-column:2;grid-row:1 / span 2}.whybox{grid-column:2;grid-row:3}}
     @media (max-width:899px){.main,.side{display:contents}}
@@ -132,7 +134,7 @@ const desc = 'Work with life coach Russ Michaels: a short video and one small st
     </div>
     </div>
     <div class="side">
-    <div class="hv photo"><img src="/img/russ/v2/russ-humanize.jpg" alt="Russ Michaels, smiling, in a Heart. Habit. Humanize. sweatshirt" width="1400" height="1389" /></div>
+    <div class="hv clip"><video autoplay muted loop playsinline preload="auto" poster="/img/russ/coach/coach-point.jpg" width="960" height="500" aria-label="Russ Michaels coaching on stage, pointing toward the audience"><source src="/img/russ/coach/coach-point.mp4" type="video/mp4" /></video></div>
     <div class="whybox" id="why"><p class="eyebrow">Why I coach</p><p class="why">I spent a decade working every job in restaurants, then twenty years leading organizations through hard decisions. Most of us were handed the pieces of ourselves, never the whole. I coach because every person carries more than they've&nbsp;been&nbsp;told.</p></div>
     </div>
   </div></div>
@@ -148,7 +150,7 @@ const desc = 'Work with life coach Russ Michaels: a short video and one small st
 
   <section id="coach"><div class="wrap">
     <div class="coach">
-      <img src="/img/russ/coach/coach-point.jpg" alt="" />
+      <img class="nocrop" src="/img/russ/v2/russ-humanize.jpg" alt="Russ Michaels, smiling" width="1400" height="1389" />
       <div><p class="nm">What comes with your coach</p><p>A short video from me at 8 each morning and 8 each evening, each with one small step. I read your replies. We meet live once a month. Want one-on-one time? That's&nbsp;available&nbsp;too.</p></div>
     </div>
   </div></section>
@@ -166,7 +168,6 @@ const desc = 'Work with life coach Russ Michaels: a short video and one small st
 
   <script is:inline>
     (function(){
-      document.querySelectorAll('.hv video').forEach(function(v){v.playbackRate=0.6;v.addEventListener('loadedmetadata',function(){v.playbackRate=0.6;});});
       var f=document.getElementById('cap'),go=document.getElementById('go'),msg=document.getElementById('msg'),started=false;
       f.addEventListener('input',function(){if(!started){started=true;try{gtag('event','form_start')}catch(e){}}});
       f.addEventListener('submit',function(e){
