@@ -76,7 +76,7 @@ const desc = 'Work with life coach Russ Michaels: a short video and one small st
     .fine{font-size:13px;color:var(--mute);margin:28px 0 0}
     .why{font-size:18px;line-height:1.55;color:var(--ink);margin:0;text-wrap:pretty}
     .whybox{margin:22px 0 0}
-    @media (max-width:899px){.hero .wrap{display:flex;flex-direction:column}.hc{order:1}.hv{order:2}.hero form{order:3}.whybox{order:4}}
+    @media (max-width:899px){.hero .wrap{display:flex;flex-direction:column}.hc{order:1}.hv{order:2}.act{order:3}.whybox{order:4}}
     footer{margin-top:24px;padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute);border-top:1px solid var(--line)}
     footer a{text-decoration:none}
     @media (min-width:900px){
@@ -93,39 +93,49 @@ const desc = 'Work with life coach Russ Michaels: a short video and one small st
       h1{font-size:64px}
     }
     h1{text-wrap:balance}.lede,.why,.coach p{text-wrap:pretty}
+    .under{color:var(--soft)}
+    .proof{display:grid;gap:10px;margin:22px 0 0}
+    .pq{margin:0;padding:14px 16px;border-radius:10px;background:var(--bg2);border:1px solid var(--line)}
+    .pq blockquote{margin:0 0 6px;font-size:15px;line-height:1.5;color:var(--ink);text-wrap:pretty}
+    .pq figcaption{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
+    @media (max-width:480px){.f2{grid-template-columns:1fr}}
     .hv.photo{aspect-ratio:auto;background:none}.hv.photo img{width:100%;height:auto;display:block;border-radius:12px}
-    @media (min-width:900px){.hero .wrap{grid-template-rows:auto auto auto}.hc{grid-row:1}.hero form{grid-column:1;grid-row:2 / span 2;align-self:start}.hv{grid-column:2;grid-row:1 / span 2}.whybox{grid-column:2;grid-row:3}}
+    @media (min-width:900px){.hero .wrap{grid-template-rows:auto auto auto}.hc{grid-row:1}.act{grid-column:1;grid-row:2 / span 2;align-self:start}.hv{grid-column:2;grid-row:1 / span 2}.whybox{grid-column:2;grid-row:3}}
+    @media (max-width:899px){.main,.side{display:contents}}
+    @media (min-width:900px){.main{grid-column:1;grid-row:1}.side{grid-column:2;grid-row:1}.main>*,.side>*{grid-column:auto;grid-row:auto}.side .whybox{margin:24px 0 0}.act{margin-top:6px}}
   </style>
 </head>
 <body>
   <div class="top"><span class="brand">Vault <b>Human</b><small>Online life coaching</small></span><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
 
   <div class="hero" id="top"><div class="wrap">
+    <div class="main">
     <div class="hc">
       <p class="eyebrow">Your life coach · First week free</p>
       <h1>Your life coach, Russ Michaels.</h1>
-      <p class="lede">Work with me, one day at a time. At 8 each morning and 8 each evening I send you a short video and <b>one small step</b>. Reply any time; I read every note. Once a month we meet live. The program comes with me: a year that works through every part of&nbsp;your&nbsp;life.</p>
+      <p class="lede">Stuck at work, at home, or in what's next? Work with me, one day at a time. At 8 each morning and 8 each evening I send you a short video and <b>one small step</b>. Reply any time; I read every note. Once a month we meet live. The program comes with me: a year that works through every part of&nbsp;your&nbsp;life.</p>
     </div>
-    <div class="hv photo"><img src="/img/russ/v2/russ-elsol.jpg" alt="Russ Michaels on the beach" width="1400" height="1180" /></div>
-    <div class="whybox" id="why"><p class="eyebrow">Why I coach</p><p class="why">I spent a decade working every job in restaurants, then twenty years leading organizations through hard decisions. Most of us were handed the pieces of ourselves, never the whole. I coach because every person carries more than they've&nbsp;been&nbsp;told.</p></div>
+    <div class="act">
     <form id="cap" novalidate>
       <div class="f2">
         <input name="firstname" type="text" placeholder="First name" autocomplete="given-name" required aria-label="First name" />
-        <input name="lastname" type="text" placeholder="Last name" autocomplete="family-name" required aria-label="Last name" />
+        <input name="email" type="email" placeholder="Email" autocomplete="email" inputmode="email" required aria-label="Email" />
       </div>
-      <input name="email" type="email" placeholder="Email" autocomplete="email" inputmode="email" required aria-label="Email" />
-      <input name="phone" type="tel" placeholder="Mobile (optional)" autocomplete="tel" inputmode="tel" aria-label="Mobile" />
       <button class="btn" id="go" type="submit">Start my free week with Russ</button>
+      <p class="under">7 days free, no card needed. Then $99 a month if&nbsp;it&nbsp;fits.</p>
       <p class="err" id="msg"></p>
     </form>
-  </div></div>
-
-  <section id="coach"><div class="wrap">
-    <div class="coach">
-      <img src="/img/russ/coach/coach-point.jpg" alt="" />
-      <div><p class="nm">What comes with your coach</p><p>A short video from me at 8 each morning and 8 each evening, each with one small step. I read your replies. We meet live once a month. Want one-on-one time? That's&nbsp;available&nbsp;too.</p></div>
+    <div class="proof">
+      <figure class="pq"><blockquote>He sees things in people they often can't see in themselves, and asks the questions no one else is willing to ask, with enough warmth that you actually want&nbsp;to&nbsp;answer.</blockquote><figcaption>Coaching client · CEO</figcaption></figure>
+      <figure class="pq"><blockquote>I've never once questioned whether he had my back. Sometimes he was the one most willing to tell me what I didn't want&nbsp;to&nbsp;hear.</blockquote><figcaption>Former colleague</figcaption></figure>
     </div>
-  </div></section>
+    </div>
+    </div>
+    <div class="side">
+    <div class="hv photo"><img src="/img/russ/v2/russ-elsol.jpg" alt="Russ Michaels on the beach" width="1400" height="1180" /></div>
+    <div class="whybox" id="why"><p class="eyebrow">Why I coach</p><p class="why">I spent a decade working every job in restaurants, then twenty years leading organizations through hard decisions. Most of us were handed the pieces of ourselves, never the whole. I coach because every person carries more than they've&nbsp;been&nbsp;told.</p></div>
+    </div>
+  </div></div>
 
   <section id="film-sec"><div class="wrap">
     <h2>See how I coach.</h2>
@@ -136,14 +146,19 @@ const desc = 'Work with life coach Russ Michaels: a short video and one small st
     </div>
   </div></section>
 
+  <section id="coach"><div class="wrap">
+    <div class="coach">
+      <img src="/img/russ/coach/coach-point.jpg" alt="" />
+      <div><p class="nm">What comes with your coach</p><p>A short video from me at 8 each morning and 8 each evening, each with one small step. I read your replies. We meet live once a month. Want one-on-one time? That's&nbsp;available&nbsp;too.</p></div>
+    </div>
+  </div></section>
+
   <section id="people"><div class="wrap">
     <p class="eyebrow">What people say about Russ</p>
     <h2 style="color:var(--green);margin-bottom:18px">In their own words.</h2>
-    <div class="q"><p>He sees things in people they often can't see in themselves, and asks the questions no one else is willing to ask, with enough warmth that you actually want to answer.</p><cite>Coaching client · CEO</cite></div>
     <div class="q"><p>He draws people in, challenges how they think, and makes space for things that don't ordinarily get said. You leave thinking differently about yourself.</p><cite>Workshop participant</cite></div>
     <div class="q"><p>He can walk straight into the most uncomfortable conversation in the room without making anyone feel attacked, and leave everyone's dignity intact.</p><cite>Board chair</cite></div>
     <div class="q"><p>I've seen him in situations where almost anyone else would have lost their composure. There's a steadiness to him that changes the room.</p><cite>Executive colleague</cite></div>
-    <div class="q"><p>I've never once questioned whether he had my back. Sometimes he was the one most willing to tell me what I didn't want to hear.</p><cite>Former colleague</cite></div>
     <p class="fine">Names withheld at their request. Shared with permission.</p>
   </div></section>
 
@@ -156,12 +171,12 @@ const desc = 'Work with life coach Russ Michaels: a short video and one small st
       f.addEventListener('input',function(){if(!started){started=true;try{gtag('event','form_start')}catch(e){}}});
       f.addEventListener('submit',function(e){
         e.preventDefault();
-        var fn=f.firstname.value.trim(),ln=f.lastname.value.trim(),em=f.email.value.trim(),ph=f.phone.value.trim();
-        if(!fn||!ln||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){f.reportValidity();msg.textContent=(fn&&ln)?'Please check the email address.':'Please add your name.';return;}
+        var fn=f.firstname.value.trim(),ln='',em=f.email.value.trim(),ph='';
+        if(!fn||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){f.reportValidity();msg.textContent=fn?'Please check the email address.':'Please add your first name.';return;}
         go.disabled=true;go.textContent='Sending…';msg.textContent='';
         var hutk=(document.cookie.match(/(?:^|; )hubspotutk=([^;]+)/)||[])[1];
         var ctx={pageUri:location.href,pageName:document.title};if(hutk)ctx.hutk=hutk;
-        var fields=[{name:'firstname',value:fn},{name:'lastname',value:ln},{name:'email',value:em}];if(ph)fields.push({name:'phone',value:ph});
+        var fields=[{name:'firstname',value:fn},{name:'email',value:em}];
         fetch('https://api-na2.hsforms.com/submissions/v3/integration/submit/246947446/3f225ab5-5a70-46d9-a497-29e6256b1e52',{
           method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fields:fields,context:ctx})
         }).then(function(r){if(!r.ok)throw new Error(r.status);try{localStorage.setItem('vh_person',JSON.stringify({fn:fn,ln:ln,em:em,ph:ph}))}catch(_){}try{gtag('event','generate_lead',{method:'free_week'})}catch(_){}location.href='/thanks/';})
