@@ -1,0 +1,20 @@
+[
+  {
+    "id": "guide",
+    "title": "The member guide",
+    "about": "A placeholder PDF until the real guide is ready.",
+    "type": "PDF",
+    "object": "guides/vault-human-member-guide.pdf",
+    "filename": "vault-human-member-guide.pdf",
+    "contentType": "application/pdf"
+  },
+  {
+    "id": "b003-video",
+    "title": "Thank your body",
+    "about": "The B003 Key video, to keep.",
+    "type": "Video",
+    "object": "videos/b003-thank-your-body.mp4",
+    "filename": "vault-human-b003-thank-your-body.mp4",
+    "contentType": "video/mp4"
+  }
+]

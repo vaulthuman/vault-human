@@ -1,0 +1,21 @@
+# Copy to .dev.vars (never commit .dev.vars). Placeholders only.
+# In production set these with: npx wrangler secret put <NAME>
+
+# Long random string used to sign sign-in links and session cookies.
+SESSION_SECRET=replace-with-a-long-random-string
+
+# Stripe TEST mode only. The app refuses any key that is not sk_test_ / rk_test_.
+# Leave empty to keep the Customer Portal button stubbed.
+STRIPE_SECRET_KEY=
+# Signing secret of the test-mode webhook endpoint (whsec_...).
+STRIPE_WEBHOOK_SECRET=
+
+# Resend API key for sign-in emails (from: Vault Human <keys@vaulthuman.com>).
+# Leave EMPTY in development: with no key, nothing is emailed and the link is printed instead.
+RESEND_API_KEY=
+
+# 1 = print sign-in links to the console when RESEND_API_KEY is empty. Never set in production.
+DEV_LOG_LINKS=1
+
+# Where sign-in links point. Local dev: http://localhost:4321
+APP_URL=http://localhost:4321

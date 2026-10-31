@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { DOWNLOADS, FILE_LINK_TTL_MS, signedFileUrl } from '../lib/files';
+
+const env = Astro.locals.runtime.env;
+const member = Astro.locals.member!;
+Astro.response.headers.set('Cache-Control', 'private, no-store');
+
+const mb = (n: number) => (n < 1_000_000 ? `${Math.max(1, Math.round(n / 1000))} KB` : `${(n / 1_000_000).toFixed(1)} MB`);
+const files = await Promise.all(
+  DOWNLOADS.map(async (d) => {
+    const head = env.FILES ? await env.FILES.head(d.object) : null;
+    return { ...d, size: head?.size ?? null, href: head ? await signedFileUrl(env.SESSION_SECRET, d.id, member.id) : null };
+  }),
+);
+---
+<Layout title="Downloads" nav="downloads">
+  <p class="eyebrow">Downloads</p>
+  <h1>Yours to keep.</h1>
+  <p>Files for members. Each link is made for you and works for {FILE_LINK_TTL_MS / 60000} minutes; open this page again for fresh ones.</p>
+  <ul class="files">
+    {files.map((f) => (
+      <li class="card">
+        <div>
+          <small>{f.type}{f.size !== null && ` · ${mb(f.size)}`}</small>
+          <b>{f.title}</b>
+          <span>{f.about}</span>
+        </div>
+        {f.href ? <a class="btn" href={f.href} download={f.filename}>Download</a> : <em>Coming soon</em>}
+      </li>
+    ))}
+  </ul>
+</Layout>
+<style>
+  .files{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:12px}
+  .files li{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px}
+  .files div{display:flex;flex-direction:column;gap:3px;min-width:0}
+  .files small{font:700 11px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+  .files b{font-family:var(--disp);font-weight:400;font-size:28px;line-height:1;color:var(--ink);letter-spacing:.02em}
+  .files span{font-size:15px;color:var(--soft)}
+  .files .btn{padding:12px 20px;font-size:15px}
+  .files em{font-style:normal;font-size:14px;color:var(--mute)}
+</style>
