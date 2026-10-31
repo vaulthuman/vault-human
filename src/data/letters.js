@@ -8390,5 +8390,65 @@ export const letters=[
   "iso": "2026-10-30",
   "month": "October 2026",
   "chamber": 6
+ },
+ {
+  "slug": "turn-toward",
+  "title": "Turn toward",
+  "dek": "In 1986 a psychologist at the University of Washington built an apartment.",
+  "day": 169,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1986 a psychologist at the University of Washington built an apartment. It had a kitchen, a couch, a window on the ship canal, and it was wired: cameras in the corners, sensors in the chairs, monitors on the fingertips of the couples who agreed to spend a weekend there living as they did at home. The newspapers called it the Love Lab. John Gottman called it research; he had been watching couples since the 1970s, when the field ran mostly on theory and he decided somebody ought to look."
+   },
+   {
+    "k": "",
+    "t": "What he found, over thousands of couples and decades, was plainer than anyone expected. Happy couples argued. The difference was the ratio: in a disagreement, the couples who lasted made about five warm moves, a joke, a touch, a nod, for every sharp one. And four ways of fighting predicted the end better than anything else: criticism, defensiveness, stonewalling and, worst by far, contempt, the eye-roll, the sneer, the sentence delivered from above. He named them the Four Horsemen. With his wife Julie Schwartz Gottman, a clinical psychologist, he founded the Gottman Institute in 1996, and together they drew their way of working as a house: know each other's inner world, say out loud what you admire, handle the problems that will never be solved, which is most of them, with humor instead of war, and build a meaning you share."
+   },
+   {
+    "k": "",
+    "t": "A fair word on the evidence. The famous claim that the lab could predict divorce with better than 90 percent accuracy came from studies that fitted the formula to couples whose outcomes were already known; tested forward, the numbers are more modest, and critics have said so. The practice holds up anyway, because the smallest finding is the sturdiest. The Gottmans watched newlyweds over ordinary evenings and counted the bids: \"look at that bird,\" \"listen to this,\" a sigh that wants a question. Couples still married six years later had turned toward those bids nearly nine times in ten. Couples who had split had turned toward them about a third of the time."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the people closest to you are making bids all day, and every one is a small door that opens or shuts. Vault Human coaches and doesn't treat; if a marriage is in trouble, the door is a couples therapist trained in the Gottman Method, and going early isn't failure, it's the method."
+   }
+  ],
+  "n": 253,
+  "date": "October 31, 2026",
+  "iso": "2026-10-31",
+  "month": "October 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "receive-the-meal",
+  "title": "Receive the meal",
+  "dek": "In December 2013 UNESCO added a way of eating to its list of the world's intangible cultural heritage.",
+  "day": 169,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In December 2013 UNESCO added a way of eating to its list of the world's intangible cultural heritage. Not a dish; a table. The Japanese call it washoku, and the entry describes a meal built on respect for nature and the turn of the seasons, eaten together, with the New Year's table as its fullest form. Yesterday's letter sat at the Okinawan table; today we go to the mainland."
+   },
+   {
+    "k": "",
+    "t": "The shape is simple enough to say in four words: ichiju sansai, one soup, three sides. A bowl of rice, a bowl of miso soup, a piece of fish or a block of tofu, two small vegetable dishes, a few pickles, and tea. The portions are small and the colors are counted; a cook aims for five on the table, and for whatever is in season. The soup rests on dashi, a broth of kombu seaweed and dried bonito flakes that takes minutes to make. In 1908 a Tokyo chemist named Kikunae Ikeda went looking for why kombu broth tasted the way it did, found glutamate, and named the taste umami."
+   },
+   {
+    "k": "",
+    "t": "Japan's life expectancy has sat at or near the top of the world for decades, about 87 years for women and 81 for men, and diet is one thread of that. The largest test came in 2016, when researchers who had followed about 80,000 Japanese adults for fifteen years found that the people who ate closest to Japan's own dietary guidelines, the spinning top of rice, vegetables, fish and soy, died at a rate about 15 percent lower, with fewer deaths from stroke. A fair word: the traditional table is salty. Miso, soy sauce and pickles helped carry Japan to some of the highest stroke rates in the world in the 1960s, and the fall since came with less salt, not more. If your blood pressure or your kidneys are a conversation, have it with your physician before the pickles become a habit. Vault Human coaches and doesn't treat."
+   },
+   {
+    "k": "",
+    "t": "The part that belongs to this month isn't on the plate. Before the first bite a Japanese table says itadakimasu, I humbly receive, hands together; after the last, gochisōsama deshita, thank you for the trouble taken. Receiving is said out loud, and a meal that begins that way is already shared before anyone has eaten."
+   }
+  ],
+  "n": 254,
+  "date": "October 31, 2026",
+  "iso": "2026-10-31",
+  "month": "October 2026",
+  "chamber": 11
  }
 ];
