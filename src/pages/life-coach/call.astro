@@ -1,0 +1,188 @@
+---
+// https://www.vaulthuman.com/life-coach/call/ — free-call variant of the coach-first page (Russ, 10/31/26 red team).
+// Third arm of the Google Ads test: book a free 15-minute call (Calendly vaulthuman/free-15).
+// The Google Ads lead conversion fires when a call is booked (calendly.event_scheduled).
+const title = 'Free Call With Life Coach Russ Michaels — Vault Human';
+const desc = 'Book a free 15-minute call with life coach Russ Michaels. Tell him where you are and where you want to go, and see if coaching together fits. No cost, no obligation.';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" /><link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={desc} />
+  <meta property="og:type" content="website" /><meta property="og:site_name" content="Vault Human" /><meta property="og:title" content={title} /><meta property="og:description" content={desc} /><meta property="og:image" content="https://www.vaulthuman.com/og/vh.jpg" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:url" content="https://www.vaulthuman.com/life-coach/call/" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="https://www.vaulthuman.com/og/vh.jpg" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" />
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18371546487"></script>
+  <script is:inline>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD');
+  </script>
+  <style is:inline>
+    :root{--bg:#141A16;--bg2:#1A2420;--ink:#F1EDE4;--soft:#CFC9BC;--mute:#8E9A90;--acc:#C9A24A;--green:#8FA67E;--line:rgba(241,237,228,.14);--disp:'Bebas Neue',Inter,sans-serif}
+    *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    section{overflow-x:clip}
+    .wrap{max-width:560px;margin:0 auto;padding:0 20px}
+    .top{display:flex;justify-content:space-between;align-items:baseline;padding:18px 20px 0;max-width:980px;margin:0 auto}
+    .brand{font-family:var(--disp);font-weight:400;font-size:34px;letter-spacing:2px;line-height:1;text-transform:uppercase;color:var(--ink)}.brand b{color:var(--green);font-weight:400}
+    .brand small{display:block;font:12px/1.3 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-top:3px}
+    .tel{font-weight:600;text-decoration:none;font-size:14px;color:var(--soft)}
+    /* hero */
+    .hero .wrap{padding-top:28px;padding-bottom:36px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700;color:var(--acc);margin:0 0 10px}
+    h1{font-family:var(--disp);font-weight:400;font-size:clamp(46px,11vw,64px);line-height:.95;margin:0 0 14px;letter-spacing:.01em}
+    .lede{font-size:17px;color:var(--soft);margin:0 0 18px}
+    .lede b{color:var(--ink);font-weight:600}
+    .hv{border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;margin:0 0 20px;position:relative}
+    .hv video{width:100%;height:100%;object-fit:cover;display:block}
+    /* form */
+    .ask{padding:0 0 36px}
+    form{display:grid;gap:10px}
+    .f2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    input{width:100%;padding:14px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.05);color:var(--ink);font:16px Inter,system-ui,sans-serif}
+    input::placeholder{color:#7f897f}
+    input:focus{outline:2px solid var(--acc);border-color:var(--acc)}
+    .btn{display:block;width:100%;background:var(--acc);color:#15190f;font-weight:700;border:0;padding:16px 22px;border-radius:8px;font-size:17px;cursor:pointer;font-family:Inter,sans-serif;margin-top:2px}
+    .btn:disabled{opacity:.7}
+    .under{font-size:13.5px;color:var(--mute);margin:10px 0 0;text-align:center}
+    .err{color:#e0a08f;font-size:14px;margin:0;text-align:center}.err:empty{display:none}
+    /* sections */
+    section{padding:34px 0;border-top:1px solid var(--line);scroll-margin-top:12px}
+    h2{font-family:var(--disp);font-weight:400;font-size:38px;line-height:.95;margin:0 0 10px;letter-spacing:.01em;color:var(--acc)}
+    p{margin:0 0 12px;color:var(--soft)}
+    .film{position:relative;border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;margin:14px 0 0}
+    .film video{width:100%;height:100%;display:block}
+    .film .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.2);cursor:pointer;border:0}
+    .film .play i{width:64px;height:64px;border-radius:50%;background:var(--acc);display:inline-block;position:relative}
+    .film .play i:after{content:"";position:absolute;left:25px;top:20px;border-left:20px solid #15190f;border-top:12px solid transparent;border-bottom:12px solid transparent}
+    .film.on .play{display:none}
+    .coach{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center}
+    .coach img{width:150px;height:170px;object-fit:cover;object-position:60% 20%;border-radius:12px}
+    .coach p{margin:0;color:var(--ink);font-size:18px;text-wrap:pretty}.coach .nm{font-family:var(--disp);font-size:32px;letter-spacing:.02em;color:var(--acc);line-height:1;margin:0 0 8px}
+    .q{margin:0 0 18px;padding:20px 22px;border-radius:12px;background:#1A2420;border:1px solid var(--line);opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}
+    .q:nth-child(even){transform:translateX(40px)}
+    .q:nth-child(2){background:#2A2616}
+    .q:nth-child(3){background:#2B211B}
+    .q:nth-child(4){background:#1E2A2A}
+    .q:nth-child(5){background:#2A2420}
+    .q.in{opacity:1;transform:none}
+    .q p{font-size:17px;line-height:1.55;color:var(--ink);margin:0 0 8px}
+    .q cite{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
+    .fine{font-size:13px;color:var(--mute);margin:28px 0 0}
+    .why{font-size:18px;line-height:1.55;color:var(--ink);margin:0;text-wrap:pretty}
+    .whybox{margin:22px 0 0}
+    @media (max-width:899px){.hero .wrap{display:flex;flex-direction:column}.hc{order:1}.hv{order:2}.act{order:3}.whybox{order:4}}
+    footer{margin-top:24px;padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute);border-top:1px solid var(--line)}
+    footer a{text-decoration:none}
+    @media (min-width:900px){
+      .wrap{max-width:980px}
+      section .wrap{max-width:980px}
+      .why{max-width:760px}
+      .coach p{max-width:760px}
+      .hero .wrap{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:14px 40px;align-items:start;padding-top:40px}
+      .hc{grid-column:1;grid-row:1}
+      .hero form{grid-column:1;grid-row:2}
+      .hv{grid-column:2;grid-row:1;margin:0;aspect-ratio:16/10;height:auto}
+      .whybox{grid-column:2;grid-row:2;margin:0;align-self:start}
+      .hv video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+      h1{font-size:64px}
+    }
+    h1{text-wrap:balance}.lede,.why,.coach p{text-wrap:pretty}
+    .under{color:var(--soft)}
+    a.btn{text-align:center;text-decoration:none}
+    #call p a{color:var(--acc)}
+    .cal{margin:16px 0 0}
+    .calendly-inline-widget{min-width:300px;height:700px;margin:0 auto;border-radius:12px;overflow:hidden}
+    .booked{color:var(--ink);font-size:18px;margin:16px 0 0}
+    .proof{display:grid;gap:10px;margin:22px 0 0}
+    .pq{margin:0;padding:14px 16px;border-radius:10px;background:var(--bg2);border:1px solid var(--line)}
+    .pq blockquote{margin:0 0 6px;font-size:15px;line-height:1.5;color:var(--ink);text-wrap:pretty}
+    .pq figcaption{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
+    @media (max-width:480px){.f2{grid-template-columns:1fr}}
+    .hv.photo{aspect-ratio:auto;background:none}.hv.photo img{width:100%;height:auto;display:block;border-radius:12px}
+    @media (min-width:900px){.hero .wrap{grid-template-rows:auto auto auto}.hc{grid-row:1}.act{grid-column:1;grid-row:2 / span 2;align-self:start}.hv{grid-column:2;grid-row:1 / span 2}.whybox{grid-column:2;grid-row:3}}
+    @media (max-width:899px){.main,.side{display:contents}}
+    @media (min-width:900px){.main{grid-column:1;grid-row:1}.side{grid-column:2;grid-row:1}.main>*,.side>*{grid-column:auto;grid-row:auto}.side .whybox{margin:24px 0 0}.act{margin-top:6px}}
+  </style>
+</head>
+<body>
+  <div class="top"><span class="brand">Vault <b>Human</b><small>Online life coaching</small></span><a class="tel" href="tel:+18888332510">(888) 833-2510</a></div>
+
+  <div class="hero" id="top"><div class="wrap">
+    <div class="main">
+    <div class="hc">
+      <p class="eyebrow">Your life coach · Free 15-minute call</p>
+      <h1>Your life coach, Russ Michaels.</h1>
+      <p class="lede">Stuck at work, at home, or in what's next? Let's talk. Book a <b>free 15-minute call</b> with me. Tell me where you are and where you want to go, and we'll see whether coaching together is the right&nbsp;next&nbsp;step.</p>
+    </div>
+    <div class="act">
+    <a class="btn" id="go" href="#call">Book a free 15-minute call with Russ</a>
+    <p class="under">Pick any time that suits you. No cost, no&nbsp;obligation.</p>
+    <div class="proof">
+      <figure class="pq"><blockquote>He sees things in people they often can't see in themselves, and asks the questions no one else is willing to ask, with enough warmth that you actually want&nbsp;to&nbsp;answer.</blockquote><figcaption>Coaching client · CEO</figcaption></figure>
+      <figure class="pq"><blockquote>I've never once questioned whether he had my back. Sometimes he was the one most willing to tell me what I didn't want&nbsp;to&nbsp;hear.</blockquote><figcaption>Former colleague</figcaption></figure>
+    </div>
+    </div>
+    </div>
+    <div class="side">
+    <div class="hv photo"><img src="/img/russ/v2/russ-elsol.jpg" alt="Russ Michaels on the beach" width="1400" height="1180" /></div>
+    <div class="whybox" id="why"><p class="eyebrow">Why I coach</p><p class="why">I spent a decade working every job in restaurants, then twenty years leading organizations through hard decisions. Most of us were handed the pieces of ourselves, never the whole. I coach because every person carries more than they've&nbsp;been&nbsp;told.</p></div>
+    </div>
+  </div></div>
+
+  <section id="call"><div class="wrap">
+    <h2>Pick a time to talk.</h2>
+    <p>Fifteen minutes on video or phone, just you and me. Prefer to start on your own first? <a href="/life-coach/" id="weeklink">Start the free week</a>; it's $99 a month after that if&nbsp;it&nbsp;fits.</p>
+    <div class="cal"><div class="calendly-inline-widget" data-url="https://calendly.com/vaulthuman/free-15?hide_gdpr_banner=1&hide_landing_page_details=1&hide_event_type_details=1&background_color=1a2420&text_color=f1ede4&primary_color=c9a24a"></div></div>
+    <p class="booked" id="booked" hidden>You're booked. Watch your email for the details, and I'll talk to you&nbsp;soon.&nbsp;— Russ</p>
+  </div></section>
+
+  <section id="film-sec"><div class="wrap">
+    <h2>See how I coach.</h2>
+    <p>One of the first keys from my daily program: a short video from me and one small&nbsp;step.</p>
+    <div class="film" id="film">
+      <video id="fv" playsinline preload="none" poster="/img/keys/key01-go-outside-cover.jpg"><source src="/video/key01-go-outside.mp4" type="video/mp4" /></video>
+      <button class="play" id="playbtn" type="button" aria-label="Play the first key"><i></i></button>
+    </div>
+  </div></section>
+
+  <section id="coach"><div class="wrap">
+    <div class="coach">
+      <img src="/img/russ/coach/coach-point.jpg" alt="" />
+      <div><p class="nm">Two ways to work with me</p><p>One-on-one coaching with me. Or my daily program: a short video and one small step at 8 each morning and 8 each evening, replies I read, and a live call once a month. We'll find what fits on&nbsp;the&nbsp;call.</p></div>
+    </div>
+  </div></section>
+
+  <section id="people"><div class="wrap">
+    <p class="eyebrow">What people say about Russ</p>
+    <h2 style="color:var(--green);margin-bottom:18px">In their own words.</h2>
+    <div class="q"><p>He draws people in, challenges how they think, and makes space for things that don't ordinarily get said. You leave thinking differently about yourself.</p><cite>Workshop participant</cite></div>
+    <div class="q"><p>He can walk straight into the most uncomfortable conversation in the room without making anyone feel attacked, and leave everyone's dignity intact.</p><cite>Board chair</cite></div>
+    <div class="q"><p>I've seen him in situations where almost anyone else would have lost their composure. There's a steadiness to him that changes the room.</p><cite>Executive colleague</cite></div>
+    <p class="fine">Names withheld at their request. Shared with permission.</p>
+  </div></section>
+
+  <footer><a href="https://www.vaulthuman.com/" id="sitelink">vaulthuman.com</a> · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a><br/>© 2026 Vault Human, LLC · Coaching, not therapy. <a href="/privacy/">Privacy</a>. Not legal, medical, financial or therapeutic advice.</footer>
+
+  <script is:inline>
+    (function(){
+      document.querySelectorAll('.hv video').forEach(function(v){v.playbackRate=0.6;v.addEventListener('loadedmetadata',function(){v.playbackRate=0.6;});});
+      var loaded=false;function load(){if(loaded)return;loaded=true;var sc=document.createElement('script');sc.src='https://assets.calendly.com/assets/external/widget.js';sc.async=true;document.body.appendChild(sc);}
+      document.getElementById('go').addEventListener('click',function(){load();try{gtag('event','call_open')}catch(e){}});
+      document.getElementById('weeklink').addEventListener('click',function(){try{gtag('event','free_week_click',{from:'call_page'})}catch(e){}});
+      var booked=false;
+      window.addEventListener('message',function(e){if(e.data&&e.data.event==='calendly.event_scheduled'&&!booked){booked=true;try{gtag('event','conversion',{send_to:'AW-18371546487/r4eECOKGw9wcEPeanrhE'});gtag('event','generate_lead',{method:'free_call'});gtag('event','call_booked')}catch(_){}document.getElementById('booked').hidden=false;}});
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(e.target.id==='call')load();else e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});document.querySelectorAll('.q').forEach(function(q){io.observe(q)});io.observe(document.getElementById('call'));
+      document.getElementById('sitelink').addEventListener('click',function(){try{gtag('event','site_link_click')}catch(e){}});
+      var film=document.getElementById('film'),fv=document.getElementById('fv');
+      document.getElementById('playbtn').addEventListener('click',function(){film.classList.add('on');fv.setAttribute('controls','');fv.play();try{gtag('event','video_play',{title:'go-outside'})}catch(e){}});
+    })();
+  </script>
+</body>
+</html>
