@@ -8450,5 +8450,35 @@ export const letters=[
   "iso": "2026-10-31",
   "month": "October 2026",
   "chamber": 11
+ },
+ {
+  "slug": "grieve-out-loud",
+  "title": "Grieve out loud",
+  "dek": "When a boy was four years old in Dano, a village of the Dagara people in what is now Burkina Faso, a Jesuit priest took him away to a seminary.",
+  "day": 170,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "When a boy was four years old in Dano, a village of the Dagara people in what is now Burkina Faso, a Jesuit priest took him away to a seminary. He stayed about fifteen years. At twenty he walked out and walked home, days on foot, to a village that half remembered him and a language he had mostly lost. The elders argued over whether a young man raised by the French could still be initiated. They decided to try, and he spent a month in the bush with boys of his village. His grandfather had named him Malidoma: be friends with the stranger. Malidoma Patrice Somé, born January 30, 1956, spent the rest of his life being exactly that."
+   },
+   {
+    "k": "",
+    "t": "He took degrees at the Sorbonne and at Brandeis, and from the late 1980s stood beside Robert Bly and Michael Meade at the men's gatherings that were trying to give American men something older than a self-help book. <em>Ritual: Power, Healing and Community</em> came out of those talks in 1993; <em>Of Water and the Spirit</em> told his own story in 1994. A fair word: the memoir's visions are told as he lived them and can't be checked. The practice he carried doesn't depend on them."
+   },
+   {
+    "k": "",
+    "t": "Here it is. In his village, grief was never private. A death brought everyone to the funeral ground: drummers, singers, mourners wailing in the open, for days, and nobody left to cry alone. Somé said the Dagara believed grief that isn't let out sits in the body and goes bad, harming the person first and the community after. He looked at the West and saw people carrying losses for decades with the lid on. So he built a version Americans could stand: a room, a shrine of branches and photographs, people walking up to it to weep while the rest of the room sang and held the line behind them. He died on December 9, 2021. The people he trained still hold those rooms."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the thing we do least in this country is grieve where anyone can see. I run an estate and elder law firm, and a good share of what comes through the door is grief wearing paperwork. Many hospices run free grief groups open to anyone in town, not just their own families, and if a loss has stopped your sleep or your eating for weeks, the door is a grief counselor. Vault Human coaches and doesn't treat."
+   }
+  ],
+  "n": 255,
+  "date": "November 1, 2026",
+  "iso": "2026-11-01",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
