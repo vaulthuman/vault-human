@@ -86,3 +86,37 @@ export const eventSeen = async (db: Db, id: string) =>
 
 export const recordEvent = (db: Db, id: string, type: string) =>
   db.prepare('INSERT OR IGNORE INTO stripe_events (id, type) VALUES (?, ?)').bind(id, type).run();
+
+// Push reminders: one row per device that turned them on.
+export type PushRow = { id: number; member_id: number; endpoint: string; p256dh: string; auth: string };
+
+export const PUSH_DEVICES_PER_MEMBER = 5;
+
+/** Saves a device, moving it to this member if someone else had it, and keeps only the member's newest few devices. */
+export async function savePushSub(db: Db, memberId: number, endpoint: string, p256dh: string, auth: string) {
+  await db
+    .prepare('DELETE FROM push_subs WHERE endpoint = ?')
+    .bind(endpoint)
+    .run();
+  await db
+    .prepare('INSERT INTO push_subs (member_id, endpoint, p256dh, auth) VALUES (?, ?, ?, ?)')
+    .bind(memberId, endpoint, p256dh, auth)
+    .run();
+  await db
+    .prepare('DELETE FROM push_subs WHERE member_id = ? AND id NOT IN (SELECT id FROM push_subs WHERE member_id = ? ORDER BY id DESC LIMIT ?)')
+    .bind(memberId, memberId, PUSH_DEVICES_PER_MEMBER)
+    .run();
+}
+
+export const deletePushSub = (db: Db, memberId: number, endpoint: string) =>
+  db.prepare('DELETE FROM push_subs WHERE member_id = ? AND endpoint = ?').bind(memberId, endpoint).run();
+
+export const dropPushSub = (db: Db, id: number) => db.prepare('DELETE FROM push_subs WHERE id = ?').bind(id).run();
+
+/** Devices of members who currently have access. */
+export const openPushSubs = async (db: Db) =>
+  (
+    await db
+      .prepare('SELECT p.id, p.member_id, p.endpoint, p.p256dh, p.auth FROM push_subs p JOIN members m ON m.id = p.member_id WHERE m.access = 1')
+      .all<PushRow>()
+  ).results;

@@ -46,7 +46,7 @@ export type Deps = {
   subscriptionStatus: (id: string) => Promise<string | null>;
   now?: Date;
 };
-export type Outcome = { action: 'opened' | 'closed' | 'updated' | 'ignored' | 'duplicate'; reason?: string; memberId?: number };
+export type Outcome = { action: 'opened' | 'closed' | 'updated' | 'ignored' | 'duplicate'; reason?: string; memberId?: number; welcome?: boolean };
 
 const CLOSING = new Set(['unpaid', 'canceled']);
 // A free-week trial counts as membership: the member has given a card and Stripe charges on day 8.
@@ -77,10 +77,21 @@ async function apply(event: StripeEvent, { db, subscriptionStatus, now = new Dat
       let member: Member | null = await q.memberByCustomer(db, customer);
       const email = typeof obj.customer_email === 'string' ? obj.customer_email : null;
       const name = typeof obj.customer_name === 'string' ? obj.customer_name : null;
-      if (!member && email) member = (await q.memberByEmail(db, email)) ?? (await q.createMember(db, email, localDay(now), name));
+      let created = false;
+      if (!member && email) {
+        member = await q.memberByEmail(db, email);
+        if (!member) { member = await q.createMember(db, email, localDay(now), name); created = true; }
+        else if (!mayLinkByEmail(member, customer)) {
+          // Someone else paid with this member's email while the member already has an open membership.
+          // Never move their billing to another customer: that would let a stranger cancel them.
+          console.warn('[stripe] refused to relink open member', member.id, 'to another customer');
+          return { action: 'ignored', reason: 'email belongs to an open member with another customer' };
+        }
+      }
       if (!member) return { action: 'ignored', reason: 'no member or email for customer' };
+      const wasOpen = !!member.access;
       await q.setBilling(db, member.id, { access: true, customer, subscription: sub, status });
-      return { action: 'opened', memberId: member.id };
+      return { action: 'opened', memberId: member.id, welcome: created || !wasOpen };
     }
     case 'customer.subscription.deleted':
     case 'customer.subscription.updated': {
@@ -121,4 +132,30 @@ export function subscriptionStatusFrom(key?: string) {
 export async function portalUrl(key: string, customer: string, returnUrl: string): Promise<string> {
   const body = new URLSearchParams({ customer, return_url: returnUrl });
   return (await stripeApi(key, 'billing_portal/sessions', { method: 'POST', body })).url;
+}
+
+/**
+ * Finds a current subscriber by email directly in Stripe (active or in the free-week trial).
+ * Used at sign-in so anyone who paid before the webhook was connected, or whose webhook was missed, still gets in.
+ */
+/** A member may be linked to a customer by email only when unlinked, already linked to it, or not currently open. */
+export const mayLinkByEmail = (member: { stripe_customer_id: string | null; access: number }, customer: string) =>
+  !member.stripe_customer_id || member.stripe_customer_id === customer || !member.access;
+
+export async function findSubscriber(key: string | undefined, email: string): Promise<
+  { customer: string; subscription: string; status: string; name: string | null } | null
+> {
+  if (!stripeMode(key)) return null;
+  // Stripe's email filter is case-sensitive: try the address as typed and in lower case.
+  const variants = [...new Set([email.trim(), email.trim().toLowerCase()])];
+  for (const e of variants) {
+    const customers = await stripeApi(key!, `customers?limit=10&email=${encodeURIComponent(e)}`);
+    for (const c of customers.data ?? []) {
+      const subs = await stripeApi(key!, `subscriptions?limit=10&status=all&customer=${encodeURIComponent(c.id)}`);
+      // Same rule as the webhook: only active or trialing subscriptions open access.
+      const open = (subs.data ?? []).find((s: any) => OPENING.has(s.status));
+      if (open) return { customer: c.id, subscription: open.id, status: open.status, name: c.name ?? null };
+    }
+  }
+  return null;
 }
