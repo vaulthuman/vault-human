@@ -4,7 +4,7 @@ import { COOKIE } from './lib/session';
 import { readSessionToken } from './lib/tokens';
 
 const PUBLIC = ['/signin', '/auth/', '/api/', '/install'];
-const NEEDS_ACCESS = ['/today', '/keys', '/progress', '/downloads', '/files/'];
+const NEEDS_ACCESS = ['/today', '/keys', '/progress', '/documents', '/downloads', '/files/'];
 
 // Locked-down browser rules for every page the app serves.
 const CSP = [
@@ -12,7 +12,7 @@ const CSP = [
   "script-src 'self' 'unsafe-inline'",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src https://fonts.gstatic.com",
-  "img-src 'self' data: https://www.vaulthuman.com",
+  "img-src 'self' data: https://www.vaulthuman.com https://members.vaulthuman.com",
   "media-src 'self' blob: https://www.vaulthuman.com",
   "connect-src 'self'",
   "worker-src 'self'",
