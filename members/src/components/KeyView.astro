@@ -7,7 +7,7 @@ const { k } = Astro.props;
 <p class="eyebrow">Key</p>
 <h1>{k.title}.</h1>
 <div class="video">
-  <video src={k.video} poster={k.poster} controls playsinline preload="metadata"></video>
+  <video src={k.video} poster={k.poster} controls controlslist="nodownload noremoteplayback" disablepictureinpicture playsinline preload="metadata" oncontextmenu="return false"></video>
 </div>
 <section class="b">
   {k.paragraphs.map((p) => <p>{p}</p>)}
