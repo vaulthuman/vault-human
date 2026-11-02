@@ -195,8 +195,19 @@ Before real members: the Resend domain verified and its key set, and Stripe live
 - The app installs to a phone's home screen (`public/manifest.webmanifest`, `public/sw.js`); steps for members are at `/install`.
 - The service worker never caches member pages; offline it shows `public/offline.html`.
 - Reminders: a member taps **Turn on reminders** on Today. Devices are saved in `push_subs` (newest 5 per member).
-- To send: `POST /api/push/send` with `Authorization: Bearer $PUSH_SEND_SECRET` and `{"kind":"morning"}` or `{"kind":"evening"}`.
-  Any scheduler can call it (Apps Script `UrlFetchApp`, a cron Worker). Only members with access get them; dead devices are removed.
+- The reminder clock is built in: an hourly cron (`wrangler.jsonc` → `triggers`) runs `scheduled` in `src/worker.ts`.
+  At 8 a.m. and 8 p.m. in each member's own time zone it names the Key that just opened; after the member week,
+  8 p.m. becomes "One line before bed", only when nothing is logged that day. It does nothing until the VAPID keys are set.
+- Manual send: `POST /api/push/send` with `Authorization: Bearer $PUSH_SEND_SECRET` and `{"kind":"morning"}`, `{"kind":"evening"}`
+  or a title and body. Only members with access get them; dead devices are removed.
+
+## Member week
+
+- `src/data/keys.json` holds the 15 Keys of the member week, copied from the live pages at https://www.vaulthuman.com/key/.
+  Each Key has a `day` and a `time`: morning Keys open at 8 a.m., evening Keys at 8 p.m., in the member's time zone.
+  The first morning (Go outside, then Choose your life) opens the moment someone joins.
+- Today shows the current Key, any Key that opened with it, when the next one opens, and (for the first seven days)
+  the card to book the first session with Russ (`src/data/coaching.json`).
 
 ## Security
 

@@ -9,6 +9,8 @@
   "compatibility_flags": ["nodejs_compat"],
   "assets": { "binding": "ASSETS", "directory": "./dist" },
   "observability": { "enabled": true },
+  // Hourly: each member gets their reminder at 8 a.m. and 8 p.m. in their own time zone.
+  "triggers": { "crons": ["0 * * * *"] },
   "vars": {
     "APP_URL": "https://members.vaulthuman.com"
   },
