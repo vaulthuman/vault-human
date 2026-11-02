@@ -120,3 +120,16 @@ export const openPushSubs = async (db: Db) =>
       .prepare('SELECT p.id, p.member_id, p.endpoint, p.p256dh, p.auth FROM push_subs p JOIN members m ON m.id = p.member_id WHERE m.access = 1')
       .all<PushRow>()
   ).results;
+
+/** Devices of open members, with what the reminder clock needs to know about each member. */
+export type DueRow = PushRow & { tz: string; started_on: string; logged_days: string | null };
+export const openPushSubsWithMembers = async (db: Db) =>
+  (
+    await db
+      .prepare(
+        'SELECT p.id, p.member_id, p.endpoint, p.p256dh, p.auth, m.tz, m.started_on, ' +
+          '(SELECT group_concat(day) FROM logs l WHERE l.member_id = m.id AND l.day >= date(\'now\', \'-2 days\')) AS logged_days ' +
+          'FROM push_subs p JOIN members m ON m.id = p.member_id WHERE m.access = 1',
+      )
+      .all<DueRow>()
+  ).results;
