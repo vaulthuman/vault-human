@@ -132,3 +132,26 @@ export const openPushSubsWithMembers = async (db: Db) =>
       )
       .all<DueRow>()
   ).results;
+
+// Answers: what a member wrote in each Key's boxes.
+export type AnswerRow = { key_id: string; prompt_id: string; value: string; day: string };
+
+export const answersFor = async (db: Db, memberId: number) =>
+  (await db.prepare('SELECT key_id, prompt_id, value, day FROM answers WHERE member_id = ?').bind(memberId).all<AnswerRow>()).results;
+
+/** Saves one Key's boxes: filled boxes are written, emptied boxes are removed. */
+export async function saveAnswers(db: Db, memberId: number, keyId: string, day: string, entries: { prompt: string; value: string }[]) {
+  for (const e of entries) {
+    if (e.value) {
+      await db
+        .prepare(
+          'INSERT INTO answers (member_id, key_id, prompt_id, value, day) VALUES (?, ?, ?, ?, ?) ' +
+            "ON CONFLICT (member_id, key_id, prompt_id) DO UPDATE SET value = excluded.value, day = excluded.day, updated_at = datetime('now')",
+        )
+        .bind(memberId, keyId, e.prompt, e.value, day)
+        .run();
+    } else {
+      await db.prepare('DELETE FROM answers WHERE member_id = ? AND key_id = ? AND prompt_id = ?').bind(memberId, keyId, e.prompt).run();
+    }
+  }
+}
