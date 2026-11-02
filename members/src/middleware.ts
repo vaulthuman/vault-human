@@ -49,12 +49,20 @@ const route = async (ctx: Parameters<Parameters<typeof defineMiddleware>[0]>[0],
   const path = ctx.url.pathname;
   ctx.locals.member = null;
 
-  // Form posts must come from this site. Stripe's webhook is checked by signature, the push sender by its secret.
-  if (ctx.request.method !== 'GET' && ctx.request.method !== 'HEAD' && !path.startsWith('/api/stripe/') && path !== '/api/push/send') {
+  // Form posts must come from this site. Stripe's webhook is checked by signature, the push sender by its secret,
+  // and the phone app's API by a Bearer token (never the cookie, so a cross-site page can't act for a member).
+  if (ctx.request.method !== 'GET' && ctx.request.method !== 'HEAD' && !path.startsWith('/api/stripe/') && path !== '/api/push/send' && !path.startsWith('/api/app/')) {
     const origin = ctx.request.headers.get('origin');
     if (origin !== ctx.url.origin) return new Response('Cross-site request refused', { status: 403 });
   }
   if (!env.SESSION_SECRET) throw new Error('SESSION_SECRET is not set. Copy .dev.vars.example to .dev.vars.');
+
+  if (path.startsWith('/api/app/')) {
+    const bearer = /^Bearer (.+)$/.exec(ctx.request.headers.get('authorization') ?? '')?.[1];
+    const s = bearer ? await readSessionToken(env.SESSION_SECRET, bearer) : null;
+    ctx.locals.member = s ? await memberById(env.DB, s.m) : null;
+    return next();
+  }
 
   const token = ctx.cookies.get(COOKIE)?.value;
   const session = token ? await readSessionToken(env.SESSION_SECRET, token) : null;

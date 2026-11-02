@@ -17,7 +17,6 @@ export function createExports(manifest: SSRManifest) {
         return handle(manifest, app, request as any, env as any, ctx as any);
       },
       async scheduled(_event: Scheduled, env: Env, ctx: Ctx) {
-        if (!env.VAPID_PUBLIC_KEY || !env.VAPID_PRIVATE_JWK) return; // reminders not switched on yet
         ctx.waitUntil(sendDue(env.DB, env).then((r) => console.log('[reminders]', r)));
       },
     },
