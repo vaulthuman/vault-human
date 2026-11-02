@@ -55,6 +55,15 @@ const saved = Astro.url.searchParams.get('saved') === '1' && s.todayLog;
       </form>
     </section>
   </KeyView>
+  <section class="b remind">
+    <p class="eyebrow">Reminders</p>
+    <p>A nudge when your key opens and one before bed.</p>
+    <div class="row">
+      <button class="btn ghost" type="button" data-push hidden>Turn on reminders</button>
+      <p class="more" data-push-status role="status"></p>
+    </div>
+    <p class="more"><a href="/install">Put the app on your phone</a></p>
+  </section>
   <script is:inline>
     try{document.getElementById('tz').value=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
   </script>
