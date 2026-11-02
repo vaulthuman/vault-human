@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { chamberFor } from '../src/lib/chamber';
 import { addDays, localDay } from '../src/lib/dates';
-import { currentKey, KEYS, receivedKeys, stepLabel } from '../src/lib/keys';
+import { alsoOpen, currentKey, isOpen, KEYS, memberDay, nextKey, receivedKeys, stepLabel } from '../src/lib/keys';
 import { streak } from '../src/lib/streak';
 
 const T = '2026-10-28';
@@ -70,19 +70,67 @@ describe('chamber', () => {
 });
 
 describe('step label follows the Key’s time', () => {
-  it('every Key has a time', () => KEYS.forEach((k) => expect(['morning', 'evening']).toContain(k.time)));
+  it('every Key has a time and a day', () => KEYS.forEach((k) => {
+    expect(['morning', 'evening']).toContain(k.time);
+    expect(k.day).toBeGreaterThanOrEqual(1);
+  }));
   it('morning says Today’s step, evening says Tonight’s step', () => {
     expect(stepLabel({ time: 'morning' })).toBe("Today's step");
     expect(stepLabel({ time: 'evening' })).toBe("Tonight's step");
-    expect(KEYS.map((k) => `${k.id}:${k.time}`)).toEqual(['B001:morning', 'M001:morning', 'H001:evening', 'B002:evening', 'B003:evening']);
   });
 });
 
-describe('keys received', () => {
-  it('gives one Key a day, newest first', () => {
-    expect(receivedKeys(T, T).map((k) => k.id)).toEqual(['B001']);
-    expect(receivedKeys(addDays(T, -2), T).map((k) => k.id)).toEqual(['H001', 'M001', 'B001']);
+describe('the member week', () => {
+  it('is the free week in full: a morning and an evening Key for seven days, starting at the door', () => {
+    expect(KEYS.map((k) => `${k.day}${k.time[0]}:${k.id}`)).toEqual([
+      '1m:B001', '1m:M001', '1e:H001', '2m:M002', '2e:B002', '3m:M003', '3e:H002', '4m:M004',
+      '4e:B003', '5m:M005', '5e:H003', '6m:M006', '6e:B004', '7m:M007', '7e:H004',
+    ]);
   });
-  it('keeps the last Key current when the list runs out', () =>
-    expect(currentKey(addDays(T, -30), T).id).toBe('B003'));
+  it('every Key has a video, a poster, three or four steps and a www source', () => KEYS.forEach((k) => {
+    expect(k.video).toMatch(/^https:\/\/www\.vaulthuman\.com\/video\/.+\.mp4$/);
+    expect(k.poster).toMatch(/^https:\/\/www\.vaulthuman\.com\/img\/keys\/.+\.jpg$/);
+    expect(k.steps.length).toBeGreaterThanOrEqual(3);
+    expect(k.source).toBe(`https://www.vaulthuman.com/key/${k.id.toLowerCase()}/`);
+  }));
+  it('keeps free-week-only wording out of the member Keys', () => {
+    const all = JSON.stringify(KEYS);
+    expect(all).not.toMatch(/free week/i);
+    expect(all).not.toMatch(/\bfilms?\b/i);
+  });
+});
+
+describe('keys open on time', () => {
+  it('opens the first morning the moment someone joins, at any hour', () => {
+    expect(receivedKeys(T, T, 3).map((k) => k.id)).toEqual(['M001', 'B001']);
+    expect(currentKey(T, T, 3).id).toBe('B001');
+    expect(alsoOpen(currentKey(T, T, 3)).map((k) => k.id)).toEqual(['M001']);
+  });
+  it('opens the evening Key at 8 p.m.', () => {
+    expect(currentKey(T, T, 19).id).toBe('B001');
+    expect(currentKey(T, T, 20).id).toBe('H001');
+  });
+  it('opens later mornings at 8 a.m., not before', () => {
+    const start = addDays(T, -1);
+    expect(currentKey(start, T, 7).id).toBe('H001');
+    expect(currentKey(start, T, 8).id).toBe('M002');
+    expect(receivedKeys(start, T, 7).map((k) => k.id)).not.toContain('M002');
+  });
+  it('never opens a Key ahead of its time', () => {
+    for (let d = 1; d <= 9; d++) for (let h = 0; h < 24; h++) {
+      const day = memberDay(T, addDays(T, d - 1));
+      receivedKeys(T, addDays(T, d - 1), h).forEach((k) => expect(isOpen(k, day, h)).toBe(true));
+      KEYS.filter((k) => k.day > d).forEach((k) => expect(isOpen(k, day, h)).toBe(false));
+    }
+  });
+  it('says when the next Key opens, in words that never date the page', () => {
+    expect(nextKey(T, T, 10)).toMatchObject({ key: { id: 'H001' }, when: 'tonight at 8' });
+    expect(nextKey(T, T, 21)).toMatchObject({ key: { id: 'M002' }, when: 'tomorrow at 8 a.m.' });
+    expect(nextKey(addDays(T, -1), T, 6)).toMatchObject({ key: { id: 'M002' }, when: 'this morning at 8' });
+  });
+  it('keeps the last Key current once every Key is open, with nothing next', () => {
+    expect(currentKey(addDays(T, -30), T, 12).id).toBe('H004');
+    expect(nextKey(addDays(T, -30), T, 12)).toBeNull();
+    expect(receivedKeys(addDays(T, -30), T, 12)).toHaveLength(KEYS.length);
+  });
 });
