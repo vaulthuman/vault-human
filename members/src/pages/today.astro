@@ -1,9 +1,8 @@
 ---
 import KeyView from '../components/KeyView.astro';
 import Layout from '../layouts/Layout.astro';
-import { isValidTz, localDay, localHour } from '../lib/dates';
-import { saveLog, setTz } from '../lib/db';
-import { currentKey } from '../lib/keys';
+import KeyForm from '../components/KeyForm.astro';
+import { saveKeyForm } from '../lib/key-form';
 import { daysInARow, memberState } from '../lib/member';
 
 const env = Astro.locals.runtime.env;
@@ -11,24 +10,14 @@ const member = Astro.locals.member!;
 let error = '';
 
 if (Astro.request.method === 'POST') {
-  const form = await Astro.request.formData();
-  const line = String(form.get('line') ?? '').replace(/\s+/g, ' ').trim();
-  const tz = form.get('tz');
-  if (isValidTz(tz) && tz !== member.tz) {
-    await setTz(env.DB, member.id, tz);
-    member.tz = tz;
-  }
-  if (!line) error = 'Write one line first.';
-  else if (line.length > 280) error = 'Keep it to one line (280 characters).';
-  else {
-    const today = localDay(new Date(), member.tz);
-    await saveLog(env.DB, member.id, currentKey(member.started_on, today, localHour(new Date(), member.tz)).id, today, line);
-    return Astro.redirect('/today?saved=1', 303);
-  }
+  const before = await memberState(env.DB, member);
+  const r = await saveKeyForm(env.DB, member, await Astro.request.formData(), before.received);
+  if ('keyId' in r) return Astro.redirect(`/today?saved=${r.keyId}#form`, 303);
+  error = r.error;
 }
 
 const s = await memberState(env.DB, member);
-const saved = Astro.url.searchParams.get('saved') === '1' && s.todayLog;
+const saved = Astro.url.searchParams.get('saved') === s.key.id;
 ---
 <Layout title={s.key.title} nav="today">
   <div class="hello">
@@ -40,19 +29,9 @@ const saved = Astro.url.searchParams.get('saved') === '1' && s.todayLog;
   </div>
   <KeyView k={s.key}>
     <section class="b">
-      <form method="post" class="card log" id="log">
-        <label class="k" for="line">What I did, and what it did.</label>
-        <input id="line" name="line" type="text" maxlength="280" required autocomplete="off"
-          value={s.todayLog?.line ?? ''} placeholder="One line is enough." />
-        <input type="hidden" name="tz" id="tz" />
-        {error && <p style="color:#e3a08a;margin:10px 0 0">{error}</p>}
-        <div class="row">
-          <button class="btn" type="submit">Save</button>
-          {s.todayLog && (
-            <p class="done" role="status"><b>Logged.</b> <span>Streak: {daysInARow(s.streak)}</span></p>
-          )}
-        </div>
-      </form>
+      <KeyForm k={s.key} values={s.answers.get(s.key.id)} status={s.status.get(s.key.id)!} saved={saved} error={error}
+        legacy={s.logs.filter((l) => l.key_id === s.key.id).map((l) => l.line)} />
+      {s.activeToday && <p class="streak">Streak: {daysInARow(s.streak)}</p>}
     </section>
     {s.also.length > 0 && (
       <section class="b">
@@ -60,7 +39,7 @@ const saved = Astro.url.searchParams.get('saved') === '1' && s.todayLog;
         {s.also.map((k) => (
           <a class="also" href={`/keys/${k.id.toLowerCase()}`}>
             <img src={k.poster} alt="" loading="lazy" width="112" height="63" />
-            <span><small>{k.id}</small><b>{k.title}</b></span>
+            <span><small>{k.id} · {({ done: 'Done', started: 'Started', open: 'To do' } as const)[s.status.get(k.id) ?? 'open']}</small><b>{k.title}</b></span>
           </a>
         ))}
       </section>
@@ -87,17 +66,13 @@ const saved = Astro.url.searchParams.get('saved') === '1' && s.todayLog;
     </div>
     <p class="more"><a href="/install">Put the app on your phone</a></p>
   </section>
-  <script is:inline>
-    try{document.getElementById('tz').value=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
-  </script>
-  {saved && <script is:inline>document.getElementById('log').scrollIntoView({block:'center'})</script>}
 </Layout>
 <style>
   .hello{margin:0 0 22px}
   .greet{font:600 20px/1.3 Inter,sans-serif;color:var(--ink);margin:0 0 8px}
   .where{display:flex;flex-wrap:wrap;gap:8px;margin:0}
   .where span{font:600 13px/1 Inter,sans-serif;color:var(--green);border:1px solid rgba(143,166,126,.45);border-radius:999px;padding:7px 12px}
-  .row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:14px}
+  .streak{margin:12px 0 0;color:var(--soft);font-size:15px}
   .done{margin:0;color:var(--ink)}
   .done b{color:var(--green)}
   .done span{color:var(--soft)}

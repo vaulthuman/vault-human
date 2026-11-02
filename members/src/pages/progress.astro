@@ -1,45 +1,132 @@
 ---
+// Progress: what's done, what's still to do (tap to finish), the streak, and where you are in the year.
 import Layout from '../layouts/Layout.astro';
-import { YEAR } from '../lib/chamber';
-import { memberState } from '../lib/member';
+import { STATUS_WORD } from '../lib/answers';
+import { YEAR, memberMonth } from '../lib/chamber';
+import { KEYS } from '../lib/keys';
+import { daysInARow, memberState } from '../lib/member';
 
 const s = await memberState(Astro.locals.runtime.env.DB, Astro.locals.member!);
 const c = s.chamber;
+const month = memberMonth(Astro.locals.member!.started_on, s.today);
+const opened = [...s.received].reverse(); // oldest first
+const done = opened.filter((k) => s.status.get(k.id) === 'done');
+const todo = opened.filter((k) => s.status.get(k.id) !== 'done');
+const locked = KEYS.length - opened.length;
+
+// The year as a wheel: twelve months, one Chamber each, with the Integration pause in month six.
+const R = 140, r = 96, C = 150;
+const pt = (rad: number, deg: number) => [C + rad * Math.cos((deg * Math.PI) / 180), C + rad * Math.sin((deg * Math.PI) / 180)];
+const seg = (i: number) => {
+  const a0 = -90 + i * 30 + 1.2, a1 = -90 + (i + 1) * 30 - 1.2;
+  const [x0, y0] = pt(R, a0), [x1, y1] = pt(R, a1), [x2, y2] = pt(r, a1), [x3, y3] = pt(r, a0);
+  return `M${x0},${y0} A${R},${R} 0 0 1 ${x1},${y1} L${x2},${y2} A${r},${r} 0 0 0 ${x3},${y3} Z`;
+};
+const wheel = YEAR.map((y, i) => {
+  const [lx, ly] = pt((R + r) / 2, -90 + i * 30 + 15);
+  return { d: seg(i), lx, ly, label: y.n === 0 ? '·' : String(y.n), state: y.month < month ? 'past' : y.month === month ? 'now' : 'next', y };
+});
 ---
 <Layout title="Progress" nav="progress">
   <p class="eyebrow">Progress</p>
   <h1>Where you are.</h1>
-  <div class="stats">
-    <div class="card stat"><small>Streak</small><b>{s.streak}</b><span>{s.streak === 1 ? 'day' : 'days'} in a row with a logged line</span><span class="fine">One missed day in any seven is forgiven.</span></div>
-    <div class="card stat"><small>Chamber</small>
-      {c.pause ? <><b class="word">Pause</b><span>Integration · {c.title}</span></> : <><b>{c.n}<i> of 11</i></b><span>{c.name} · {c.title}</span></>}
+
+  <section class="card block">
+    <p class="k">Your Keys</p>
+    <p class="big"><b>{done.length}</b> of {opened.length} done</p>
+    <div class="bar" aria-hidden="true">
+      {opened.map((k) => <span class={s.status.get(k.id)} title={k.title}></span>)}
+      {Array.from({ length: locked }, () => <span class="locked"></span>)}
     </div>
-    <div class="card stat"><small>Keys turned</small><b>{s.keysTurned}</b><span>of {s.received.length} received</span></div>
-  </div>
-  <section class="b" style="margin-top:26px">
-    <h2>The year</h2>
-    <ol class="year">
-      {YEAR.map((y) => (
-        <li class:list={[{ now: y.month === c.month, past: y.month < c.month, rest: y.n === 0 }]}>
-          <span>{y.n === 0 ? '·' : y.n}</span>{y.name}
-        </li>
-      ))}
-    </ol>
+    <p class="legend"><i class="done"></i>Done <i class="started"></i>Started <i class="open"></i>To do <i class="locked"></i>Not open yet</p>
+
+    {todo.length > 0 ? (
+      <>
+        <p class="sub">Still to do</p>
+        <ul class="list">
+          {todo.map((k) => (
+            <li><a href={`/keys/${k.id.toLowerCase()}#form`}>
+              <span><small>{k.id} · {k.time === 'morning' ? 'Morning Key' : 'Evening Key'}</small><b>{k.title}</b></span>
+              <em class={s.status.get(k.id)}>{s.status.get(k.id) === 'started' ? 'Finish' : 'Start'}</em>
+            </a></li>
+          ))}
+        </ul>
+      </>
+    ) : <p class="note" style="margin-top:14px">Every open Key is done. Nicely kept.</p>}
+    {s.next && <p class="more">Next: {s.next.key.title} opens {s.next.when}.</p>}
+
+    {done.length > 0 && (
+      <details class="donelist">
+        <summary>Done ({done.length})</summary>
+        <ul class="list">
+          {done.map((k) => <li><a href={`/keys/${k.id.toLowerCase()}`}><span><small>{k.id}</small><b>{k.title}</b></span><em class="done">{STATUS_WORD.done}</em></a></li>)}
+        </ul>
+      </details>
+    )}
+  </section>
+
+  <section class="card block">
+    <p class="k">Streak</p>
+    <p class="big"><b>{s.streak}</b> {s.streak === 1 ? 'day' : 'days'} in a row</p>
+    <p>A day counts when you fill in any Key, old or new. Miss one day in a week and the streak keeps going.</p>
+  </section>
+
+  <section class="card block">
+    <p class="k">Your year</p>
+    <div class="wheelwrap">
+      <svg viewBox="0 0 300 300" class="wheel" role="img" aria-label={`Month ${month} of 12. ${c.pause ? 'The Integration pause' : `Chamber ${c.n}, ${c.name}`}.`}>
+        {wheel.map((w) => (
+          <g class={w.state}>
+            <path d={w.d}><title>{w.y.n === 0 ? `Month ${w.y.month}: Integration pause` : `Month ${w.y.month}: Chamber ${w.y.n}, ${w.y.name}`}</title></path>
+            <text x={w.lx} y={w.ly} text-anchor="middle" dominant-baseline="central">{w.label}</text>
+          </g>
+        ))}
+        <text x="150" y="122" text-anchor="middle" class="c1">Month {month} of 12</text>
+        <text x="150" y="160" text-anchor="middle" class="c2">{c.pause ? 'Pause' : `Chamber ${c.n}`}</text>
+        <text x="150" y="190" text-anchor="middle" class="c3">{c.pause ? 'Integration' : c.name}</text>
+      </svg>
+      <div>
+        <p>Your year runs twelve months: one Chamber each month, with a month to pause and take it all in after Healing.</p>
+        <p class="here">{c.pause ? <>You're in the Integration pause: {c.title}.</> : <>You're in Chamber {c.n}, {c.name}: {c.title.toLowerCase()}.</>}</p>
+        <ol class="chambers">
+          {YEAR.map((y) => <li class:list={[{ now: y.month === month, past: y.month < month }]}><span>{y.n === 0 ? '·' : y.n}</span>{y.n === 0 ? 'Pause' : y.name}</li>)}
+        </ol>
+      </div>
+    </div>
   </section>
 </Layout>
 <style>
-  .stats{display:grid;gap:12px}
-  @media (min-width:620px){.stats{grid-template-columns:repeat(3,1fr)}}
-  .stat small{display:block;font:700 12px/1 Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
-  .stat b{display:block;font-family:var(--disp);font-weight:400;font-size:64px;line-height:.9;color:var(--ink)}
-  .stat b i{font-style:normal;font-size:28px;color:var(--mute)}
-  .stat b.word{font-size:52px}
-  .stat span{display:block;margin-top:6px;font-size:15px;color:var(--soft)}
-  .stat span.fine{margin-top:4px;font-size:13px;color:var(--mute)}
-  .year{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
-  .year li{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;color:var(--mute)}
-  .year li span{width:26px;height:26px;flex:none;border-radius:50%;display:grid;place-items:center;font:700 12px Inter,sans-serif;border:1px solid var(--line)}
-  .year li.past{color:var(--soft)}.year li.past span{background:var(--green);color:#141A16;border-color:var(--green)}
-  .year li.now{color:var(--ink);border-color:var(--acc)}.year li.now span{background:var(--acc);color:#15190f;border-color:var(--acc)}
-  .year li.rest{font-style:italic}
+  .block{margin:0 0 16px}
+  .k{font:700 12px/1 Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin:0 0 10px}
+  .big{margin:0 0 12px;color:var(--soft);font-size:18px}
+  .big b{font-family:var(--disp);font-weight:400;font-size:56px;line-height:.9;color:var(--ink);margin-right:6px}
+  .bar{display:flex;gap:3px;margin:4px 0 8px}
+  .bar span{flex:1;height:12px;border-radius:3px;background:#2c3a33}
+  .bar .done{background:var(--green)} .bar .started{background:var(--acc)} .bar .open{background:#55625a} .bar .locked{background:transparent;border:1px dashed #3a4a41}
+  .legend{font-size:13px;color:var(--mute);display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
+  .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+  .legend .done{background:var(--green)} .legend .started{background:var(--acc)} .legend .open{background:#55625a} .legend .locked{border:1px dashed #55625a}
+  .sub{font:700 12px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:18px 0 8px}
+  .list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  .list a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none}
+  .list a:hover,.list a:focus-visible{border-color:var(--acc);outline:none}
+  .list small{display:block;font:700 11px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:4px}
+  .list b{font-family:var(--disp);font-weight:400;font-size:24px;line-height:1;color:var(--ink)}
+  .list em{font-style:normal;font:700 13px Inter,sans-serif;padding:8px 12px;border-radius:8px;white-space:nowrap}
+  .list em.open{background:var(--acc);color:#15190f} .list em.started{border:1px solid var(--acc);color:var(--acc)} .list em.done{color:var(--green)}
+  .donelist{margin-top:16px} .donelist summary{cursor:pointer;color:var(--soft);font-size:15px;margin-bottom:8px}
+  .wheelwrap{display:grid;gap:16px;align-items:center}
+  @media (min-width:620px){.wheelwrap{grid-template-columns:260px 1fr}}
+  .wheel{width:100%;max-width:280px;margin:0 auto;display:block}
+  .wheel path{fill:#26322c;stroke:none}
+  .wheel .past path{fill:var(--green)} .wheel .now path{fill:var(--acc)}
+  .wheel g text{font:700 13px Inter,sans-serif;fill:var(--mute)}
+  .wheel .past text{fill:#141A16} .wheel .now text{fill:#15190f}
+  .wheel .c1{font:600 12px Inter,sans-serif;fill:var(--mute);letter-spacing:.12em;text-transform:uppercase}
+  .wheel .c2{font:400 34px 'Bebas Neue',Inter,sans-serif;fill:var(--ink)}
+  .wheel .c3{font:400 24px 'Bebas Neue',Inter,sans-serif;fill:var(--acc)}
+  .here{color:var(--ink)}
+  .chambers{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:4px 12px;font-size:14px;color:var(--mute)}
+  .chambers span{display:inline-block;width:18px;font-weight:700}
+  .chambers .past{color:var(--soft)} .chambers .now{color:var(--acc);font-weight:600}
 </style>
