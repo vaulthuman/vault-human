@@ -54,27 +54,48 @@ const EMAIL = 'test@example.com';
   if (!/^Good (morning|afternoon|evening), Test\. Chamber 1 · You Key \d+ · [BMH]\d{3}$/.test(hello)) throw new Error(`Unexpected greeting: ${hello}`);
   await shot('3-today');
 
-  await page.fill('#line', 'Wrote the list and the sentence. Felt lighter, and slept better.');
-  await page.click('#log button[type=submit]');
-  await page.waitForURL('**/today?saved=1');
-  const status = (await page.textContent('.done')).replace(/\s+/g, ' ').trim();
-  console.log('after save:', status);
-  if (!/Logged\. Streak: 1 day in a row/.test(status)) throw new Error(`Unexpected status: ${status}`);
-  await shot('4-today-logged');
+  // Fill in today's Key's own boxes, whatever Key today is.
+  const boxes = await page.$$('#form input[type=text], #form textarea');
+  for (const b of boxes) await b.fill('Walked to the creek and let it settle.');
+  for (const c of await page.$$('#form input[type=checkbox]')) await c.check();
+  for (const name of await page.$$eval('#form input[type=radio]', (rs) => [...new Set(rs.map((r) => r.name))])) await page.check(`#form input[name="${name}"][value="7"]`);
+  await page.click('#form button[type=submit]');
+  await page.waitForURL('**/today?saved=*');
+  const ok = (await page.textContent('#form .ok')).trim();
+  console.log('after save:', ok, '|', (await page.textContent('.streak')).trim());
+  if (!/^Saved\./.test(ok)) throw new Error(`Unexpected status: ${ok}`);
+  await page.locator('#form').scrollIntoViewIfNeeded();
+  await page.screenshot({ path: path.join(OUT, '4-today-logged.png'), fullPage: false });
+  console.log('saved 4-today-logged');
 
   await page.goto(`${BASE}/keys`);
   await shot('5-my-keys');
+
+  // Go back to an earlier Key and start it: any open Key can be filled in, in any order.
+  await page.goto(`${BASE}/keys/b001`);
+  await page.check('#form input[name="p_before"][value="4"]');
+  await page.check('#form input[name="p_outside"]');
+  await page.click('#form button[type=submit]');
+  await page.waitForURL('**/keys/b001?saved=1*');
+  await page.locator('#form').scrollIntoViewIfNeeded();
+  await page.screenshot({ path: path.join(OUT, '5b-earlier-key.png'), fullPage: false });
+  console.log('saved 5b-earlier-key');
+
   await page.goto(`${BASE}/progress`);
-  const streakNum = (await page.textContent('.stat b')).trim();
-  if (streakNum !== '1') throw new Error(`Progress streak shows ${streakNum}`);
+  const doneNum = (await page.textContent('.big b')).trim();
+  console.log('progress done:', doneNum);
+  if (doneNum !== '1') throw new Error(`Progress shows ${doneNum} done`);
   await shot('6-progress');
   await page.goto(`${BASE}/downloads`);
-  await shot('7-downloads');
-  const [download] = await Promise.all([page.waitForEvent('download'), page.click('a[href^="/files/guide"]')]);
-  const saved = await download.path();
-  const head = fs.readFileSync(saved).subarray(0, 5).toString();
-  console.log('downloaded:', download.suggestedFilename(), fs.statSync(saved).size, 'bytes');
-  if (head !== '%PDF-') throw new Error('Downloaded guide is not a PDF');
+  if (!page.url().endsWith('/documents')) throw new Error(`Downloads did not move to Documents: ${page.url()}`);
+  await shot('7-documents');
+  await page.click('a[href="/documents/guide"]');
+  await page.waitForFunction(() => { const i = document.querySelector('.page img'); return i && i.complete && i.naturalWidth > 0; });
+  if (await page.locator('a[download], a[href$=".pdf"]').count()) throw new Error('Documents offers a download');
+  const disp = await page.evaluate(async () => (await fetch(document.querySelector('.page img').src)).headers.get('content-disposition'));
+  console.log('page served as:', disp);
+  if (disp !== 'inline') throw new Error('Document page is not inline');
+  await shot('7b-document-reader');
 
   await page.goto(`${BASE}/membership`);
   await shot('8-membership');
