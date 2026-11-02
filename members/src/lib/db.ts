@@ -75,10 +75,9 @@ export const saveLog = (db: Db, memberId: number, keyId: string, day: string, li
 
 /** Marks a sign-in link as used. Returns false if it had been used already. */
 export async function useLinkNonce(db: Db, nonce: string): Promise<boolean> {
-  const seen = await db.prepare('SELECT nonce FROM used_links WHERE nonce = ?').bind(nonce).first();
-  if (seen) return false;
-  await db.prepare('INSERT INTO used_links (nonce) VALUES (?)').bind(nonce).run();
-  return true;
+  // One statement, so two requests racing with the same link or code can't both succeed (or error).
+  const r = await db.prepare('INSERT OR IGNORE INTO used_links (nonce) VALUES (?)').bind(nonce).run();
+  return Number((r as any)?.meta?.changes ?? (r as any)?.changes ?? 0) === 1;
 }
 
 export const eventSeen = async (db: Db, id: string) =>

@@ -40,3 +40,30 @@ export function makeSessionToken(secret: string, memberId: number, now = Date.no
 export function readSessionToken(secret: string, token: string, now = Date.now()) {
   return verify<SessionToken>(secret, 'session', token, now);
 }
+
+// Sign-in by emailed code, for the phone app. The server keeps nothing: the app holds a signed challenge
+// that carries a keyed hash of the code, and the challenge's nonce is used once (same table as links).
+export const CODE_TTL_MS = 10 * 60 * 1000;
+export type CodeChallenge = { e: string; h: string; n: string; x: number };
+
+/** A random six-digit code, without modulo bias. */
+export function makeCode(): string {
+  const buf = new Uint32Array(1);
+  for (;;) {
+    crypto.getRandomValues(buf);
+    if (buf[0] < 4_294_000_000) return String(buf[0] % 1_000_000).padStart(6, '0');
+  }
+}
+
+const codeHash = (secret: string, email: string, code: string) => hmacHex(secret, `code:${email.toLowerCase()}:${code}`);
+
+export async function makeCodeChallenge(secret: string, email: string, code: string, now = Date.now()) {
+  return sign(secret, 'code', { e: email.toLowerCase(), h: await codeHash(secret, email, code), n: randomId(), x: now + CODE_TTL_MS });
+}
+
+/** The challenge's data when it is genuine, unexpired, for this email and this code; otherwise null. */
+export async function checkCode(secret: string, challenge: string, email: string, code: string, now = Date.now()) {
+  const c = await verify<CodeChallenge>(secret, 'code', challenge, now);
+  if (!c || c.e !== email.toLowerCase() || !/^\d{6}$/.test(code)) return null;
+  return safeEqual(c.h, await codeHash(secret, email, code)) ? c : null;
+}

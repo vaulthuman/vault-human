@@ -2,7 +2,11 @@
 import { localDay, localHour } from './dates';
 import { dropPushSub, openPushSubs, openPushSubsWithMembers, type Db } from './db';
 import { KEYS, memberDay, OPENS_AT } from './keys';
-import { sendPush, type PushEnv } from './webpush';
+import { isExpo, sendExpo } from './expo';
+import { sendPush, type PushEnv, type PushSub } from './webpush';
+
+/** One message to one device: Web Push for browsers and home-screen apps, Expo for the phone app. */
+export const deliver = (env: PushEnv, sub: PushSub, msg: Message) => (isExpo(sub) ? sendExpo(sub, msg) : sendPush(env, sub, msg));
 
 export type Message = { title: string; body: string; url: string; tag: string };
 
@@ -34,7 +38,7 @@ export function messageFrom(input: any): Message | null {
 }
 
 /** Sends to every device of every member with access. Removes devices the push service says are gone. */
-export async function broadcast(db: Db, env: PushEnv, msg: Message, send = sendPush) {
+export async function broadcast(db: Db, env: PushEnv, msg: Message, send = deliver) {
   const subs = await openPushSubs(db);
   let sent = 0, removed = 0, failed = 0;
   for (const s of subs) {
@@ -74,12 +78,13 @@ export function dueMessage(member: { tz: string; started_on: string; loggedDays:
 }
 
 /** The hourly clock: sends each open member's due reminder to their devices. */
-export async function sendDue(db: Db, env: PushEnv, now = new Date(), send = sendPush) {
+export async function sendDue(db: Db, env: PushEnv, now = new Date(), send = deliver) {
   const rows = await openPushSubsWithMembers(db);
   let sent = 0, removed = 0, failed = 0, due = 0;
   for (const r of rows) {
     const msg = dueMessage({ tz: r.tz, started_on: r.started_on, loggedDays: (r.logged_days ?? '').split(',').filter(Boolean) }, now);
     if (!msg) continue;
+    if (!isExpo(r) && !(env.VAPID_PUBLIC_KEY && env.VAPID_PRIVATE_JWK)) continue; // browser reminders not switched on yet
     due++;
     try {
       const status = await send(env, r, msg);

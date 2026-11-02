@@ -105,3 +105,49 @@ export async function deliverWelcome(
   log(`[welcome] Resend refused the email (${res.status}): ${(await res.text()).slice(0, 200)}`);
   return 'failed';
 }
+
+export const CODE_SUBJECT = 'Your Vault Human sign-in code';
+
+export function signInCodeEmail(code: string) {
+  const text = [
+    `Your Vault Human sign-in code is ${code}.`,
+    '',
+    'Type it into the app. It works once, for 10 minutes. If you didn’t ask for it, you can ignore this email.',
+    '',
+    'Vault Human · https://www.vaulthuman.com/',
+  ].join('\n');
+  const html = `<!doctype html><html><body style="margin:0;background:#141A16;padding:32px 20px;font:16px/1.55 Inter,Arial,sans-serif;color:#F1EDE4">
+<div style="max-width:480px;margin:0 auto">
+<p style="font:700 12px/1 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#C9A24A;margin:0 0 14px">Vault Human</p>
+<p style="margin:0 0 16px;color:#CFC9BC">Your sign-in code:</p>
+<p style="margin:0 0 24px;font:700 34px/1 Arial,sans-serif;letter-spacing:.3em;color:#F1EDE4">${esc(code)}</p>
+<p style="margin:0 0 8px;font-size:14px;color:#8E9A90">Type it into the app. It works once, for 10 minutes. If you didn’t ask for it, you can ignore this email.</p>
+<p style="margin:0;font-size:14px;color:#8E9A90"><a href="https://www.vaulthuman.com/" style="color:#8E9A90">www.vaulthuman.com</a></p>
+</div></body></html>`;
+  return { text, html };
+}
+
+export async function deliverSignInCode(
+  env: { RESEND_API_KEY?: string; DEV_LOG_LINKS?: string },
+  to: string,
+  code: string,
+  deps: { fetch?: typeof fetch; log?: (...a: unknown[]) => void } = {},
+): Promise<Delivery> {
+  const log = deps.log ?? console.log;
+  if (!env.RESEND_API_KEY) {
+    if (env.DEV_LOG_LINKS === '1') {
+      log(`\n[sign-in code for ${to}] ${code}\n`);
+      return 'logged';
+    }
+    log('[sign-in] code requested; RESEND_API_KEY is not set, nothing sent');
+    return 'not-configured';
+  }
+  const res = await (deps.fetch ?? fetch)(RESEND_URL, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ from: FROM, to: [to], subject: CODE_SUBJECT, ...signInCodeEmail(code) }),
+  }).catch((e: Error) => ({ ok: false, status: 0, text: async () => e.message }) as Response);
+  if (res.ok) return 'sent';
+  log(`[sign-in] Resend refused the code email (${res.status}): ${(await res.text()).slice(0, 200)}`);
+  return 'failed';
+}
