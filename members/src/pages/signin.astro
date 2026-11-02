@@ -1,10 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { createMember, memberByEmail, setBilling } from '../lib/db';
-import { localDay } from '../lib/dates';
 import { deliverSignInLink } from '../lib/email';
 import { allowSignIn, hashIp } from '../lib/ratelimit';
-import { findSubscriber, mayLinkByEmail } from '../lib/stripe';
+import { memberForSignIn, validEmail } from '../lib/signin';
 import { makeLinkToken } from '../lib/tokens';
 
 const env = Astro.locals.runtime.env;
@@ -17,7 +15,7 @@ const devLog = env.DEV_LOG_LINKS === '1' && !env.RESEND_API_KEY;
 if (Astro.request.method === 'POST') {
   const typed = String((await Astro.request.formData()).get('email') ?? '').trim();
   const email = typed.toLowerCase();
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 254) {
+  if (!validEmail(email)) {
     error = 'That email address doesn’t look right.';
   } else if (!(await allowSignIn(env.DB, email, await hashIp(env.SESSION_SECRET, Astro.request.headers.get('cf-connecting-ip') ?? 'local')))) {
     error = 'Too many sign-in requests. Wait a little while, then try again.';
@@ -25,19 +23,7 @@ if (Astro.request.method === 'POST') {
     const base = (env.APP_URL || Astro.url.origin).replace(/\/$/, '');
     // Everything after this point runs after the response, so members and non-members get the same answer just as fast.
     const work = (async () => {
-      let member = await memberByEmail(env.DB, email);
-      if (!member || !member.access) {
-        // Paid in Stripe but not here yet (joined before the app was connected, or a missed webhook): bring them in.
-        try {
-          const sub = await findSubscriber(env.STRIPE_SECRET_KEY, typed);
-          if (sub && (!member || mayLinkByEmail(member, sub.customer))) {
-            member = member ?? (await createMember(env.DB, email, localDay(new Date()), sub.name));
-            await setBilling(env.DB, member.id, { access: true, customer: sub.customer, subscription: sub.subscription, status: sub.status });
-          }
-        } catch (e) {
-          console.error('[signin] Stripe lookup failed', (e as Error).message);
-        }
-      }
+      const member = await memberForSignIn(env, typed);
       if (!member) return;
       const link = `${base}/auth/verify?token=${encodeURIComponent(await makeLinkToken(env.SESSION_SECRET, email))}`;
       // Resend when RESEND_API_KEY is set; otherwise the dev console (DEV_LOG_LINKS=1).
