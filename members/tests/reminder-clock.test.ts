@@ -50,7 +50,18 @@ describe('the clock run', () => {
     await savePushSub(db, 3, 'https://fcm.googleapis.com/c', 'k', 'a');
     const sent: string[] = [];
     const fake = async (_e: any, s: any, m: any) => { sent.push(`${s.endpoint}|${m.title}`); return s.endpoint.endsWith('gone') ? 410 : 201; };
-    expect(await sendDue(db, {}, at('2026-11-03T14:00:00Z'), fake)).toEqual({ devices: 3, due: 2, sent: 1, removed: 1, failed: 0 });
+    expect(await sendDue(db, { VAPID_PUBLIC_KEY: 'k', VAPID_PRIVATE_JWK: '{}' }, at('2026-11-03T14:00:00Z'), fake)).toEqual({ devices: 3, due: 2, sent: 1, removed: 1, failed: 0 });
     expect(sent).toEqual(['https://fcm.googleapis.com/a|Your Key is open', 'https://fcm.googleapis.com/gone|Your Key is open']);
+  });
+
+  it('reaches the phone app without browser keys, and skips browsers until those keys exist', async () => {
+    const db = testDb();
+    db.raw.exec("INSERT INTO members (id, email, started_on, tz, access) VALUES (1, 'due@example.com', '2026-11-02', 'America/Chicago', 1)");
+    await savePushSub(db, 1, 'https://fcm.googleapis.com/a', 'k', 'a');
+    await savePushSub(db, 1, 'expo:ExponentPushToken[abcdefghijklmnop]', '', '');
+    const sent: string[] = [];
+    const fake = async (_e: any, s: any) => { sent.push(s.endpoint); return 200; };
+    expect(await sendDue(db, {}, at('2026-11-03T14:00:00Z'), fake)).toMatchObject({ due: 1, sent: 1 });
+    expect(sent).toEqual(['expo:ExponentPushToken[abcdefghijklmnop]']);
   });
 });

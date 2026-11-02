@@ -31,10 +31,10 @@ describe('sign-in rate limits', () => {
     expect(n).toBe(PER_EMAIL_PER_HOUR);
   });
 
-  it('forgets requests older than a day', async () => {
+  it('forgets requests older than two days', async () => {
     const db = testDb();
     await allowSignIn(db, 'a@example.com', 'ip', T);
-    await allowSignIn(db, 'b@example.com', 'ip', T + 25 * 3_600_000);
+    await allowSignIn(db, 'b@example.com', 'ip', T + 49 * 3_600_000);
     const n = (db.raw.prepare('SELECT COUNT(*) AS n FROM signin_requests').get() as any).n;
     expect(n).toBe(1);
   });
