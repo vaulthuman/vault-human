@@ -33,3 +33,8 @@ export function addDays(day: string, n: number): string {
 export function daysBetween(a: string, b: string): number {
   return Math.round((Date.parse(`${b}T00:00:00Z`) - Date.parse(`${a}T00:00:00Z`)) / 86_400_000);
 }
+
+/** The hour (0-23) it is at `now` in time zone `tz`. */
+export function localHour(now: Date, tz: string = DEFAULT_TZ): number {
+  return Number(new Intl.DateTimeFormat('en-US', { timeZone: isValidTz(tz) ? tz : DEFAULT_TZ, hour: 'numeric', hourCycle: 'h23' }).format(now));
+}
