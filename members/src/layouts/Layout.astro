@@ -3,6 +3,7 @@
 interface Props { title: string; nav?: string }
 const { title, nav } = Astro.props;
 const member = Astro.locals.member;
+const pushKey = Astro.locals.runtime?.env?.VAPID_PUBLIC_KEY ?? '';
 const tabs = [
   ['today', '/today', 'Today'],
   ['keys', '/keys', 'My keys'],
@@ -18,12 +19,22 @@ const tabs = [
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex" />
   <title>{title} · Vault Human</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="https://www.vaulthuman.com/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  <meta name="theme-color" content="#141A16" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Vault Human" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  {member && pushKey && <meta name="vh-push-key" content={pushKey} />}
+  <script src="/app.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" />
   <style is:global>
     :root{--bg:#141A16;--bg2:#1A2420;--ink:#F1EDE4;--soft:#CFC9BC;--mute:#8E9A90;--acc:#C9A24A;--green:#8FA67E;--line:rgba(241,237,228,.14);--disp:'Bebas Neue',Inter,sans-serif}
-    *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    [hidden]{display:none!important}
+    *{box-sizing:border-box}body{padding-top:env(safe-area-inset-top)}html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
     a{color:inherit}
     .wrap{max-width:760px;margin:0 auto;padding:0 20px}
     .top{display:flex;justify-content:space-between;align-items:baseline;padding:18px 20px 0;max-width:760px;margin:0 auto}
