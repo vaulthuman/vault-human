@@ -1,24 +1,22 @@
-// Today: the current Key, the daily line, what else is open, when the next Key opens, and the first session.
+// Today: the current Key and its own boxes, what else is open, when the next Key opens, and the first session.
 import { useFocusEffect, Link } from 'expo-router';
 import * as WebBrowser from 'expo-web-browser';
 import { useCallback, useState } from 'react';
-import { Image, Pressable, RefreshControl, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Image, Pressable, RefreshControl, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { KeyForm, StatusPill } from '../../components/KeyForm';
 import { KeyView } from '../../components/KeyView';
 import { Button, Card, Eyebrow, Loading, P, Rule } from '../../components/ui';
-import { ApiError, fetchToday, saveLine, type Member, type Today } from '../../lib/api';
+import { ApiError, fetchToday, type Member, type Today } from '../../lib/api';
 import { useAuth } from '../../lib/auth';
 import { remindersAllowed, turnOnReminders } from '../../lib/push';
 import { C, F } from '../../lib/theme';
 
 const daysInARow = (n: number) => `${n} ${n === 1 ? 'day' : 'days'} in a row`;
-const deviceTz = () => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone; } catch { return ''; } };
 
 export default function TodayScreen() {
   const { signOut } = useAuth();
   const [data, setData] = useState<{ member: Member; today: Today | null } | null>(null);
-  const [line, setLine] = useState('');
-  const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const [reminders, setReminders] = useState<'unknown' | 'on' | 'off' | 'denied' | 'unavailable'>('unknown');
 
@@ -27,7 +25,6 @@ export default function TodayScreen() {
     try {
       const d = await fetchToday();
       setData(d);
-      setLine(d.today?.todayLine ?? '');
     } catch (e) {
       if ((e as ApiError).status === 401) return signOut();
       setError((e as ApiError).message);
@@ -36,12 +33,6 @@ export default function TodayScreen() {
   }, [signOut]);
   useFocusEffect(useCallback(() => { load(); }, [load]));
 
-  const save = async () => {
-    setBusy(true); setError('');
-    try { const r = await saveLine(line, deviceTz()); setData((d) => (d ? { ...d, today: r.today } : d)); }
-    catch (e) { setError((e as ApiError).message); }
-    finally { setBusy(false); }
-  };
 
   if (!data) return error ? <SafeAreaView style={s.screen}><View style={s.wrap}><P>{error}</P><Button label="Try again" onPress={load} /></View></SafeAreaView> : <Loading />;
   const t = data.today;
@@ -65,15 +56,10 @@ export default function TodayScreen() {
             </View>
             <KeyView k={t.key} />
             <Rule />
-            <Card>
-              <Text style={s.label}>What I did, and what it did.</Text>
-              <TextInput style={s.input} value={line} onChangeText={setLine} placeholder="One line is enough." placeholderTextColor={C.mute} maxLength={280} returnKeyType="done" onSubmitEditing={save} />
-              <View style={s.row}>
-                <Button label="Save" onPress={save} busy={busy} disabled={!line.trim()} />
-                {t.todayLine ? <Text style={s.done}><Text style={{ color: C.green, fontFamily: F.bold }}>Logged. </Text>Streak: {daysInARow(t.streak)}</Text> : null}
-              </View>
-              {error ? <P style={{ color: C.error, marginTop: 10, marginBottom: 0 }}>{error}</P> : null}
-            </Card>
+            <KeyForm k={t.key} onSaved={(today) => setData((d) => (d ? { ...d, today } : d))} />
+            <P style={{ marginTop: 14, color: C.mute, fontSize: 15 }}>
+              {t.streak ? `Streak: ${daysInARow(t.streak)}. ` : ''}Any Key you’ve opened can be filled in later, in any order.
+            </P>
             {t.also.length > 0 && (
               <View style={{ marginTop: 24 }}>
                 <Eyebrow>Also open now</Eyebrow>
@@ -85,6 +71,7 @@ export default function TodayScreen() {
                         <Text style={s.alsoId}>{k.id}</Text>
                         <Text style={s.alsoTitle}>{k.title}</Text>
                       </View>
+                      <View style={{ paddingRight: 12 }}><StatusPill status={k.status} /></View>
                     </Pressable>
                   </Link>
                 ))}
