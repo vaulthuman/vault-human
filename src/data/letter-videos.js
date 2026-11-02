@@ -3,4 +3,5 @@
 export const letterVideos = {
   'choose-your-life': { src: '/video/key01-choose-a-new-life.mp4', poster: '/img/keys/key01-choose-a-new-life-cover.jpg' },
   'go-outside': { src: '/video/key01-go-outside.mp4', poster: '/img/keys/key01-go-outside-cover.jpg' },
+  'grieve-out-loud': { src: '/video/grieve-out-loud.mp4', poster: '/img/keys/grieve-out-loud-cover.jpg' },
 };
