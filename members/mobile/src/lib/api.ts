@@ -8,16 +8,19 @@ const TOKEN = 'vh_token';
 
 export type Key = {
   id: string; day: number; time: 'morning' | 'evening'; title: string; video: string; poster: string;
-  paragraphs: string[]; steps: string[]; note: string | null;
+  paragraphs: string[]; steps: string[]; note: string | null; prompts: Prompt[];
 };
+export type Prompt = { id: string; kind: 'check' | 'scale' | 'text' | 'long'; label: string };
+export type Status = 'done' | 'started' | 'open';
+export type KeyWithAnswers = Key & { answers: Record<string, string>; status: Status; lines?: { day: string; line: string }[] };
 export type Member = { name: string | null; email: string; access: boolean; startedOn: string; tz: string };
 export type Today = {
   greeting: string; day: string; chamber: { name: string; n: number }; keyNumber: number;
-  key: Key; also: Key[]; next: { id: string; title: string; when: string } | null;
+  key: KeyWithAnswers; also: KeyWithAnswers[]; next: { id: string; title: string; when: string } | null;
   todayLine: string | null; streak: number; keysTurned: number;
   firstWeek: { lastDay: boolean; bookingUrl: string } | null;
 };
-export type KeyWithLines = Key & { lines: { day: string; line: string }[] };
+export type KeyWithLines = KeyWithAnswers & { lines: { day: string; line: string }[] };
 
 // The secure store on phones; the browser's session storage only for the web preview.
 const web = Platform.OS === 'web';
@@ -52,6 +55,8 @@ export const verifyCode = (email: string, code: string, challenge: string) =>
   call<{ token: string; member: Member }>('/api/app/verify', { method: 'POST', body: { email, code, challenge }, auth: false });
 export const fetchToday = () => call<{ member: Member; today: Today | null }>('/api/app/today');
 export const saveLine = (line: string, tz: string) => call<{ today: Today }>('/api/app/log', { method: 'POST', body: { line, tz } });
-export const fetchKeys = () => call<{ current: string; keys: KeyWithLines[] }>('/api/app/keys');
+export const saveAnswers = (keyId: string, answers: Record<string, string>, tz: string) =>
+  call<{ today: Today }>('/api/app/answers', { method: 'POST', body: { keyId, answers, tz } });
+export const fetchKeys = () => call<{ current: string; total: number; streak: number; next: { id: string; title: string; when: string } | null; keys: KeyWithLines[] }>('/api/app/keys');
 export const savePushToken = (token: string) => call<{ ok: true }>('/api/app/push', { method: 'POST', body: { token } });
 export const removePushToken = (token: string) => call<{ ok: true }>('/api/app/push', { method: 'DELETE', body: { token } });
