@@ -9,6 +9,9 @@ type Env = {
   STRIPE_WEBHOOK_SECRET?: string;
   DEV_LOG_LINKS?: string;
   RESEND_API_KEY?: string;
+  VAPID_PUBLIC_KEY?: string;
+  VAPID_PRIVATE_JWK?: string;
+  PUSH_SEND_SECRET?: string;
 };
 
 type Runtime = import('@astrojs/cloudflare').Runtime<Env>;
