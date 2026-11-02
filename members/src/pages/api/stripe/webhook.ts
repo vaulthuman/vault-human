@@ -1,5 +1,7 @@
 // Stripe webhook. Verifies the signature and that the event's mode matches the key, then opens or closes access.
 import type { APIRoute } from 'astro';
+import { memberById } from '../../../lib/db';
+import { deliverWelcome } from '../../../lib/email';
 import { eventMatchesKey, handleEvent, subscriptionStatusFrom, verifySignature } from '../../../lib/stripe';
 
 export const POST: APIRoute = async ({ request, locals }) => {
@@ -15,5 +17,14 @@ export const POST: APIRoute = async ({ request, locals }) => {
   }
   const outcome = await handleEvent(event, { db: env.DB, subscriptionStatus: subscriptionStatusFrom(env.STRIPE_SECRET_KEY) });
   console.log('[stripe]', event.type, event.id, outcome);
+  if (outcome.action === 'opened' && outcome.welcome && outcome.memberId) {
+    const m = await memberById(env.DB, outcome.memberId);
+    if (m) {
+      const sending = deliverWelcome(env, m.email, m.name);
+      const ctx = locals.runtime.ctx;
+      if (ctx?.waitUntil) ctx.waitUntil(sending);
+      else await sending;
+    }
+  }
   return Response.json({ received: true, ...outcome });
 };
