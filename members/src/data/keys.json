@@ -15,7 +15,29 @@
       "Step outside for twenty minutes, in whatever form your body has today. Nothing in your hands, and nothing in your ears for the first five minutes.",
       "When you come back, give yourself a number again and write one thing you saw, heard and felt."
     ],
-    "source": "https://www.vaulthuman.com/key/b001/"
+    "source": "https://www.vaulthuman.com/key/b001/",
+    "prompts": [
+      {
+        "id": "before",
+        "kind": "scale",
+        "label": "How I felt before I went out (1 to 10)"
+      },
+      {
+        "id": "outside",
+        "kind": "check",
+        "label": "I went outside for twenty minutes"
+      },
+      {
+        "id": "after",
+        "kind": "scale",
+        "label": "How I felt when I came back (1 to 10)"
+      },
+      {
+        "id": "noticed",
+        "kind": "text",
+        "label": "One thing I saw, heard and felt"
+      }
+    ]
   },
   {
     "id": "M001",
@@ -33,7 +55,24 @@
       "Go outside for twenty minutes. Walk at talking pace, or just sit in the open air.",
       "Before bed, write one line: what you said, and who heard it."
     ],
-    "source": "https://www.vaulthuman.com/key/m001/"
+    "source": "https://www.vaulthuman.com/key/m001/",
+    "prompts": [
+      {
+        "id": "read",
+        "kind": "check",
+        "label": "I read the line out loud: Today I begin a new life."
+      },
+      {
+        "id": "outside",
+        "kind": "check",
+        "label": "I went outside for twenty minutes"
+      },
+      {
+        "id": "said",
+        "kind": "text",
+        "label": "What I said, and who heard it"
+      }
+    ]
   },
   {
     "id": "H001",
@@ -52,7 +91,24 @@
       "Tonight, write two lines. Where did I come back to love today? Where did I see it in someone else?",
       "Then one thing you're thankful for."
     ],
-    "source": "https://www.vaulthuman.com/key/h001/"
+    "source": "https://www.vaulthuman.com/key/h001/",
+    "prompts": [
+      {
+        "id": "came_back",
+        "kind": "text",
+        "label": "Where I came back to love today"
+      },
+      {
+        "id": "saw",
+        "kind": "text",
+        "label": "Where I saw it in someone else"
+      },
+      {
+        "id": "thanks",
+        "kind": "text",
+        "label": "One thing I’m thankful for"
+      }
+    ]
   },
   {
     "id": "M002",
@@ -60,7 +116,7 @@
     "title": "Read the label",
     "time": "morning",
     "video": "https://www.vaulthuman.com/video/key02-read-the-label.mp4",
-    "poster": "https://www.vaulthuman.com/img/keys/key02-read-the-label-cover.jpg",
+    "poster": "https://members.vaulthuman.com/img/keys/m002-read-the-label.jpg",
     "paragraphs": [
       "Ralph Waldo Emerson wrote a whole essay on trusting yourself. Most of what you believe arrived before you could vote on it. Your family's idea of money. Your town's idea of success. The line someone said about you once, when you were nine.",
       "Some of it is gold. Some of it is a coat that never fit. This Key doesn't ask you to throw anything out. It asks you to look at the label."
@@ -70,7 +126,24 @@
       "Write where you got it. Can't find one? Take the belief you hold most loudly and trace it back to the room you learned it in.",
       "Go outside for twenty minutes and carry the sentence with you."
     ],
-    "source": "https://www.vaulthuman.com/key/m002/"
+    "source": "https://www.vaulthuman.com/key/m002/",
+    "prompts": [
+      {
+        "id": "belief",
+        "kind": "text",
+        "label": "A sentence I believe that no one around me does"
+      },
+      {
+        "id": "source",
+        "kind": "text",
+        "label": "Where I got it"
+      },
+      {
+        "id": "outside",
+        "kind": "check",
+        "label": "I went outside and carried it with me"
+      }
+    ]
   },
   {
     "id": "B002",
@@ -89,7 +162,19 @@
       "Lie on your back, hug your knees, then let them fall to one side, then the other. Then write one line: something you're thankful your body did today."
     ],
     "note": "If something is injured or sore, skip that one, or do it seated. The breathing counts on its own.",
-    "source": "https://www.vaulthuman.com/key/b002/"
+    "source": "https://www.vaulthuman.com/key/b002/",
+    "prompts": [
+      {
+        "id": "stretched",
+        "kind": "check",
+        "label": "I did the three stretches"
+      },
+      {
+        "id": "thanks",
+        "kind": "text",
+        "label": "Something I’m thankful my body did today"
+      }
+    ]
   },
   {
     "id": "M003",
@@ -109,7 +194,24 @@
       "Notice which line surprises you. That one is the work."
     ],
     "note": "If this lands heavy right now, write the toast someone gives at your next big birthday instead. Same six lines.",
-    "source": "https://www.vaulthuman.com/key/m003/"
+    "source": "https://www.vaulthuman.com/key/m003/",
+    "prompts": [
+      {
+        "id": "six",
+        "kind": "long",
+        "label": "My six lines"
+      },
+      {
+        "id": "walked",
+        "kind": "check",
+        "label": "I read them on a twenty-minute walk"
+      },
+      {
+        "id": "surprise",
+        "kind": "text",
+        "label": "The line that surprised me"
+      }
+    ]
   },
   {
     "id": "H002",
@@ -128,7 +230,24 @@
       "Write what you'd want to come out next time.",
       "Then one thing you're thankful for."
     ],
-    "source": "https://www.vaulthuman.com/key/h002/"
+    "source": "https://www.vaulthuman.com/key/h002/",
+    "prompts": [
+      {
+        "id": "squeezed",
+        "kind": "text",
+        "label": "When I got squeezed, and what came out"
+      },
+      {
+        "id": "next",
+        "kind": "text",
+        "label": "What I’d want to come out next time"
+      },
+      {
+        "id": "thanks",
+        "kind": "text",
+        "label": "One thing I’m thankful for"
+      }
+    ]
   },
   {
     "id": "M004",
@@ -146,7 +265,29 @@
       "Use their name twice.",
       "Then write three lines: who it was, the three questions, and the moment it was hardest not to talk."
     ],
-    "source": "https://www.vaulthuman.com/key/m004/"
+    "source": "https://www.vaulthuman.com/key/m004/",
+    "prompts": [
+      {
+        "id": "who",
+        "kind": "text",
+        "label": "Who it was"
+      },
+      {
+        "id": "questions",
+        "kind": "long",
+        "label": "My three questions"
+      },
+      {
+        "id": "named",
+        "kind": "check",
+        "label": "I used their name twice"
+      },
+      {
+        "id": "hardest",
+        "kind": "text",
+        "label": "The moment it was hardest not to talk"
+      }
+    ]
   },
   {
     "id": "B003",
@@ -165,7 +306,24 @@
       "Put a hand on your chest and thank your body for keeping you here."
     ],
     "note": "If food has been hard for you, skip the list and write only the sentence.",
-    "source": "https://www.vaulthuman.com/key/b003/"
+    "source": "https://www.vaulthuman.com/key/b003/",
+    "prompts": [
+      {
+        "id": "diets",
+        "kind": "long",
+        "label": "The diets I’ve tried, roughly when, and what happened"
+      },
+      {
+        "id": "sentence",
+        "kind": "check",
+        "label": "I wrote: It was not me. It was the thermostat."
+      },
+      {
+        "id": "thanked",
+        "kind": "check",
+        "label": "I put a hand on my chest and thanked my body"
+      }
+    ]
   },
   {
     "id": "M005",
@@ -184,7 +342,29 @@
       "Give it a cue. Do your habit right after something you already do every day, like the morning coffee.",
       "Give it a reward. Write it down, check the box, and let yourself feel good about it. Then go outside for twenty minutes."
     ],
-    "source": "https://www.vaulthuman.com/key/m005/"
+    "source": "https://www.vaulthuman.com/key/m005/",
+    "prompts": [
+      {
+        "id": "again",
+        "kind": "text",
+        "label": "The small thing I did again"
+      },
+      {
+        "id": "didnt_want",
+        "kind": "text",
+        "label": "The thing I didn’t want to do, and did"
+      },
+      {
+        "id": "cue",
+        "kind": "text",
+        "label": "My cue: right after…"
+      },
+      {
+        "id": "outside",
+        "kind": "check",
+        "label": "I went outside for twenty minutes"
+      }
+    ]
   },
   {
     "id": "H003",
@@ -203,7 +383,19 @@
       "Name one where love was, in them or in what passed between you.",
       "Write one line of thanks to them, even if you never send it."
     ],
-    "source": "https://www.vaulthuman.com/key/h003/"
+    "source": "https://www.vaulthuman.com/key/h003/",
+    "prompts": [
+      {
+        "id": "where",
+        "kind": "text",
+        "label": "Where love was today"
+      },
+      {
+        "id": "thanks",
+        "kind": "text",
+        "label": "My line of thanks to them"
+      }
+    ]
   },
   {
     "id": "M006",
@@ -222,7 +414,19 @@
       "Next to each one, write one thing they gave you. Then write one thing you did with it.",
       "If one of them is still here, tell them."
     ],
-    "source": "https://www.vaulthuman.com/key/m006/"
+    "source": "https://www.vaulthuman.com/key/m006/",
+    "prompts": [
+      {
+        "id": "three",
+        "kind": "long",
+        "label": "Three people who helped make me, what each gave me, and what I did with it"
+      },
+      {
+        "id": "told",
+        "kind": "check",
+        "label": "I told one of them"
+      }
+    ]
   },
   {
     "id": "B004",
@@ -242,7 +446,19 @@
       "If you're a man, write the name of the woman in your life this Key is for, and one way you'll honor her rhythm this month, by asking instead of assuming."
     ],
     "note": "Anything clinical, like pain, bleeding or missed cycles, is a doctor's door, not ours.",
-    "source": "https://www.vaulthuman.com/key/b004/"
+    "source": "https://www.vaulthuman.com/key/b004/",
+    "prompts": [
+      {
+        "id": "cycle",
+        "kind": "text",
+        "label": "My cycle day or stage, or the woman this Key is for"
+      },
+      {
+        "id": "felt",
+        "kind": "text",
+        "label": "How my body felt today, or one way I’ll honor her rhythm"
+      }
+    ]
   },
   {
     "id": "M007",
@@ -261,7 +477,24 @@
       "Write its other side in three sentences, as if it had happened to someone you respect.",
       "Walk it off, then notice how the second version felt. If it felt like lying, or a little inauthentic, write that down too."
     ],
-    "source": "https://www.vaulthuman.com/key/m007/"
+    "source": "https://www.vaulthuman.com/key/m007/",
+    "prompts": [
+      {
+        "id": "complaint",
+        "kind": "text",
+        "label": "What I complained about"
+      },
+      {
+        "id": "other_side",
+        "kind": "long",
+        "label": "Its other side, in three sentences"
+      },
+      {
+        "id": "felt",
+        "kind": "text",
+        "label": "How the second version felt"
+      }
+    ]
   },
   {
     "id": "H004",
@@ -280,6 +513,18 @@
       "Find the moment you were most yourself and write it in one line.",
       "Then write one thing you're thankful for."
     ],
-    "source": "https://www.vaulthuman.com/key/h004/"
+    "source": "https://www.vaulthuman.com/key/h004/",
+    "prompts": [
+      {
+        "id": "myself",
+        "kind": "text",
+        "label": "The moment I was most myself"
+      },
+      {
+        "id": "thanks",
+        "kind": "text",
+        "label": "One thing I’m thankful for"
+      }
+    ]
   }
 ]
