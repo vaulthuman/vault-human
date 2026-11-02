@@ -12,7 +12,8 @@ Read these before changing anything in this repo.
 
 ## Data, money and email
 - Test data only. Seeds use `@example.com` addresses.
-- Stripe TEST mode only. The code refuses keys that are not `sk_test_` / `rk_test_` and live-mode events; keep it that way.
+- Stripe is LIVE in production (Russ's go-ahead, 2026-11-02). The mode follows the key and the webhook rejects events of the other mode;
+  keep that check. Tests and development use test keys only, never a live key.
 - Never send email from a session, a test or development. Sign-in emails go through Resend only when
   `RESEND_API_KEY` is set, which is a production secret: never put a real key in `.dev.vars` or a test.
   Tests mock `fetch`. In development, sign-in links are printed to the console (`DEV_LOG_LINKS=1`).

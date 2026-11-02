@@ -15,7 +15,7 @@ Pages build from `main` does not read this folder.
 | Today | `/today` | Greets the member by first name ("Good evening, Russ.", in their time zone) and shows where they are: chamber (or the Integration pause) and Key number (their 1st, 2nd, ... Key, with its id). Then the current Key: eyebrow "Key", title, the video, the paragraphs, the gold step box with 3 numbered steps, and a one-line box "What I did, and what it did." Save shows "Logged." and the streak. Saving again the same day replaces that day's line. |
 | My keys | `/keys` | Keys received so far, newest first, each with its line if one was logged. Tapping an older Key opens it at `/keys/<id>`. |
 | Progress | `/progress` | Streak (days in a row with a logged line; one missed day in any rolling 7 days is forgiven), chamber (1 to 11, plus the Integration pause in month six), keys turned (Keys with at least one logged line). |
-| Downloads | `/downloads` | Member files: the guide (a placeholder PDF for now) and the B003 video. Private: see "Downloads and file storage" below. |
+| Documents | `/documents` | The guide and other member papers, read on the site page by page. Nothing to download. See "Documents and file storage" below. |
 | Membership | `/membership` | One button to the Stripe Customer Portal (test mode only). Stubbed with a plain message when no test key is set. Sign out. |
 | Stripe webhook | `/api/stripe/webhook` | Verifies the `Stripe-Signature` header (HMAC-SHA256, 5-minute tolerance), refuses live-mode events, handles each event id once. |
 
@@ -32,26 +32,27 @@ Access rules (in `src/lib/stripe.ts`):
   asking a `past_due` member to update their card.
 - A signed-in member without access can still reach Membership (to fix billing), but not Today, My keys or Progress.
 
-## Downloads and file storage
+## Documents and file storage
 
-Files live in a private Cloudflare R2 bucket, `vault-human-member-files`, bound to the Worker as `FILES`.
-The bucket has no public URL and no public domain.
+Members read documents on the site; nothing is offered as a download (the videos play on the site too, with
+download, picture-in-picture and casting turned off). Documents live in a private Cloudflare R2 bucket,
+`vault-human-member-files`, bound to the Worker as `FILES`. The bucket has no public URL and no public domain.
 
-- The list of files is `src/data/downloads.json`: id, title, line of text, type, R2 object key, download filename, content type.
-- `/downloads` shows each file with its size (read from R2), or "Coming soon" if it isn't uploaded yet.
-- Each Download button is a link signed for that member and that file, valid for 10 minutes:
-  `/files/<id>?x=<expiry>&s=<HMAC of file id, member id and expiry>`.
-- `/files/<id>` (a Worker route, `src/pages/files/[id].ts` → `serveFile` in `src/lib/files.ts`) serves the file only when
-  all of these hold: signed in, membership active, signature valid for *this* member and *this* file, not expired.
-  A link copied to someone else fails (their session is a different member, or they have none).
-  Responses are `private, no-store`, `noindex`, sent as attachments, and support byte ranges (206/416) so videos can seek.
-- Locally, Wrangler's on-disk R2 stands in for the bucket (the "stub"): `npm run files:seed:local` puts the placeholder
-  guide (`storage-seed/vault-human-member-guide.pdf`, made by `scripts/make-placeholder-pdf.mjs`) and the B003 video
-  (read from the public site's `public/video/`, unchanged) into it. If no bucket is bound at all, Downloads shows
-  "Coming soon" and `/files/...` answers 503.
+- Each document is stored as page images, not a PDF: `<folder>/p1.png`, `p2.png`, ... The list is
+  `src/data/documents.json`: id, title, line of text, type, page count, R2 folder.
+- `/documents` lists them, or "Coming soon" while page 1 isn't uploaded. `/downloads` redirects there.
+- `/documents/<id>` shows the pages one under another, with the member's email faintly across each page,
+  right-click, drag and selection off, hidden when printed, and a © Vault Human, LLC line.
+- Each page image is a link signed for that member, that document and that page, valid for 30 minutes:
+  `/files/<id>?p=<page>&x=<expiry>&s=<HMAC>`. `/files/<id>` (`servePage` in `src/lib/files.ts`) serves it only when
+  signed in, membership active and the signature fits; it is sent `inline`, `private, no-store`, `noindex`.
+- No web page can stop a screenshot. The email across each page is what makes a shared copy traceable.
+- Locally, `npm run files:seed:local` puts the placeholder guide's page (`storage-seed/documents/guide/p1.png`)
+  into Wrangler's on-disk R2. If no bucket is bound, Documents shows "Coming soon" and `/files/...` answers 503.
 
-To add a file: add an entry to `downloads.json`, then upload the object to R2 under the same key
-(`npx wrangler r2 object put vault-human-member-files/<key> --remote --file=<path> --content-type=<type>`).
+To add a document: turn the PDF into pages (`pdftoppm -png -r 110 file.pdf storage-seed/documents/<id>/p`, then
+rename `p-1.png` to `p1.png` and so on), add an entry to `documents.json`, then upload each page under its key
+(`npx wrangler r2 object put vault-human-member-files/documents/<id>/p1.png --remote --file=<path> --content-type=image/png`).
 
 ## Sign-in email (Resend)
 
@@ -141,7 +142,7 @@ npm run build     # production Worker bundle in dist/
 Screenshots: with the dev server writing to a log (`npm run dev > dev.log 2>&1 &`) and a fresh seed,
 `DEV_LOG=dev.log node scripts/screenshots.cjs` signs in as the test member, saves a line, checks
 "Logged. Streak: 1 day in a row", and saves phone-width (390px) screenshots of every page to
-`docs/screenshots/`. It also checks the greeting line and downloads the guide through a signed link. Add `LOCAL_SITE=1` if the machine can't reach www.vaulthuman.com; it then serves
+`docs/screenshots/`. It also checks the greeting line, that Downloads moved to Documents, and that the guide's page is shown inline with no download link. Add `LOCAL_SITE=1` if the machine can't reach www.vaulthuman.com; it then serves
 the videos and posters from the repo's `public/` folder (read only).
 
 ### Webhook, locally, with the Stripe CLI (test mode)
@@ -165,7 +166,7 @@ Vault Human Cloudflare account.
    The id is not a secret.
 3. Create the tables: `npm run db:migrate:remote`
    and the file bucket: `npx wrangler r2 bucket create vault-human-member-files` (leave public access off),
-   then upload the files listed in `src/data/downloads.json` (see "Downloads and file storage").
+   then upload the document pages listed in `src/data/documents.json` (see "Documents and file storage").
 4. Set the secrets (each command prompts for the value; nothing goes in git):
    ```bash
    npx wrangler secret put SESSION_SECRET          # long random string, e.g. `openssl rand -hex 32`
@@ -233,7 +234,7 @@ Before real members: the Resend domain verified and its key set, and Stripe live
 5. **Membership start.** The chamber counts from the member's first payment. Is that the right day one?
    What happens after month twelve (v1 stays on Chamber 11)?
 6. **Going live with Stripe:** when, and the live product and portal settings.
-7. **Downloads:** the real guide PDF, which other files members get, and whether a file should only appear once
+7. **Documents:** the real guide, the brochures and other papers members read, and whether a file should only appear once
     the member has received that Key (v1 shows every file to every active member).
 8. **Member login link on the public site:** when to switch it on (see below), and whether the Key pages should
     keep the phone number next to it.
