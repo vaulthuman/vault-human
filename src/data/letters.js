@@ -8480,5 +8480,65 @@ export const letters=[
   "iso": "2026-11-01",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "be-kind-and-firm",
+  "title": "Be kind and firm",
+  "dek": "In 1981 a school counselor in Elk Grove, California, with seven children of her own, wrote a book and printed two thousand copies herself.",
+  "day": 171,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1981 a school counselor in Elk Grove, California, with seven children of her own, wrote a book and printed two thousand copies herself. They sold in a year. She printed five thousand more, then ten thousand, and in 1987 Ballantine took it on; it has sold more than a million since. Jane Nelsen called it <em>Positive Discipline</em>, and she was honest about where it came from: she had five kids, two of them teenagers, and she was yelling, threatening and spanking, and none of it worked. Then a college class on Alfred Adler and Rudolf Dreikurs handed her a different idea. A child who misbehaves is a child who has lost the feeling of belonging, and the way back is to be kind and firm at the same time. Not kind or firm. Both, in the same sentence."
+   },
+   {
+    "k": "",
+    "t": "Two more belong beside her. In Spokane, Washington, three psychotherapists, Glen Cooper, Kent Hoffman and Bert Powell, who had shared a practice since 1985, spent the 1990s consulting for Head Start, and in 1998 a grant let them build what they called the Circle of Security. It is a drawing of a circle: the child leaves the parent's hands to go out and explore, and comes back to the parent's hands to be comforted, and the parent's whole job is to be there at both ends. Their rule fits on a card: always be bigger, stronger, wiser and kind. Then in 2010 Shefali Tsabary, a clinical psychologist raised in Mumbai and trained at Columbia, published <em>The Conscious Parent</em> and turned the camera around. The child, she said, is a mirror; what sets you off in your kid is the unfinished part of you."
+   },
+   {
+    "k": "",
+    "t": "A fair word on the evidence. Nelsen's method rests on Adler and four decades of classrooms, not trials. The Circle's parenting program was tested in Head Start in 2017 with 141 mothers; it did not move the children's attachment on the main measure, though the mothers answered their children's distress less harshly. Tsabary's claims are her clinical judgment. Take the practice; hold the promises loosely."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the first circle any of us stood in was a family, and most people are still working out the one they were raised in while raising the next one. I run an estate and elder law firm, and the people across my desk are, fifty years on, the children somebody raised, and the parents are still in the room. Vault Human coaches and doesn't treat; if a child in your house is struggling, the door is a child and family therapist. For the ordinary work, the door is a Positive Discipline class or a Circle of Security Parenting group, run in most towns by a registered facilitator."
+   }
+  ],
+  "n": 256,
+  "date": "November 2, 2026",
+  "iso": "2026-11-02",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "make-the-kimchi",
+  "title": "Make the kimchi",
+  "dek": "In the first week of December 2013, UNESCO's committee, meeting in Baku, added two tables to the world's intangible heritage within a day of each other.",
+  "day": 171,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In the first week of December 2013, UNESCO's committee, meeting in Baku, added two tables to the world's intangible heritage within a day of each other. Saturday's letter sat at one, the Japanese washoku. The other was not a cuisine but a chore: kimjang, the Korean custom of neighbors gathering in late autumn to make the winter's kimchi together, hundreds of heads of cabbage salted, rinsed, rubbed with chili, garlic and salted shrimp, and packed into jars that used to be buried in the yard. It is November. Across Korea, this is the month it happens."
+   },
+   {
+    "k": "",
+    "t": "The table it feeds is old. A Chinese record of the third century says the people of Goguryeo, in the north of the peninsula, were skilled at pickles and sauces, and the earliest Korean record lists radish, chives and bamboo shoot set out in rites for the dead. For most of that history kimchi was white. The chili came after the Japanese invasion of 1592 and took about two centuries to become the rule, and the fat napa cabbage we picture was only widely grown from the early twentieth century. Beside the kimchi sit the pastes: doenjang, soybeans boiled and pressed into blocks and left to grow their mold through the winter, and gochujang, the chili paste. A Korean meal, the bapsang, is a bowl of rice, a soup, kimchi, and the banchan, the small side dishes, three or five or seven or nine of them by the household's means, all set out at once and shared from the middle."
+   },
+   {
+    "k": "",
+    "t": "A fair word. The table is salty. Kimchi, the pastes and the salted fish that season them put Korea among the highest-sodium diets in the world, and its stomach cancer rate has been among the highest too, with salted food one of the studied reasons. The fermented vegetables are good for the gut; the sodium is real. If your blood pressure or your kidneys are a conversation, have it with your physician before kimchi becomes a daily habit. Vault Human coaches and doesn't treat."
+   },
+   {
+    "k": "",
+    "t": "The part that belongs to this month is a word. The Korean word for family, sikgu, is built from two characters that mean mouths that eat. Your family is whoever eats with you. The everyday greeting isn't how are you; it's have you eaten? I spent a decade in restaurants in every role, and a kitchen is exactly that: a family of mouths, fed together, usually standing up."
+   }
+  ],
+  "n": 257,
+  "date": "November 2, 2026",
+  "iso": "2026-11-02",
+  "month": "November 2026",
+  "chamber": 11
  }
 ];
