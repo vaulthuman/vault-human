@@ -1,0 +1,530 @@
+[
+  {
+    "id": "B001",
+    "day": 1,
+    "title": "Go outside",
+    "time": "morning",
+    "video": "https://www.vaulthuman.com/video/key01-go-outside.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/key01-go-outside-cover.jpg",
+    "paragraphs": [
+      "Your first Key is the one we've found matters most, so everyone starts here.",
+      "It sounds too small to matter. That's why it works. Every Key after this one starts at the door."
+    ],
+    "steps": [
+      "Before you go, give yourself a number from 1 to 10 for how you feel.",
+      "Step outside for twenty minutes, in whatever form your body has today. Nothing in your hands, and nothing in your ears for the first five minutes.",
+      "When you come back, give yourself a number again and write one thing you saw, heard and felt."
+    ],
+    "source": "https://www.vaulthuman.com/key/b001/",
+    "prompts": [
+      {
+        "id": "before",
+        "kind": "scale",
+        "label": "How I felt before I went out (1 to 10)"
+      },
+      {
+        "id": "outside",
+        "kind": "check",
+        "label": "I went outside for twenty minutes"
+      },
+      {
+        "id": "after",
+        "kind": "scale",
+        "label": "How I felt when I came back (1 to 10)"
+      },
+      {
+        "id": "noticed",
+        "kind": "text",
+        "label": "One thing I saw, heard and felt"
+      }
+    ]
+  },
+  {
+    "id": "M001",
+    "day": 1,
+    "title": "Choose your life",
+    "time": "morning",
+    "video": "https://www.vaulthuman.com/video/key01-choose-a-new-life.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/key01-choose-a-new-life-cover.jpg",
+    "paragraphs": [
+      "Og Mandino believed you don't argue your way out of an old habit. You out-repeat it. A line read aloud every morning, kindly and over and over, slowly replaces the voice that was there before.",
+      "You don't need a new life. You need one habit that is yours, kept long enough to change your mind about who you are."
+    ],
+    "steps": [
+      "Read this line out loud, once: Today I begin a new life.",
+      "Go outside for twenty minutes. Walk at talking pace, or just sit in the open air.",
+      "Before bed, write one line: what you said, and who heard it."
+    ],
+    "source": "https://www.vaulthuman.com/key/m001/",
+    "prompts": [
+      {
+        "id": "read",
+        "kind": "check",
+        "label": "I read the line out loud: Today I begin a new life."
+      },
+      {
+        "id": "outside",
+        "kind": "check",
+        "label": "I went outside for twenty minutes"
+      },
+      {
+        "id": "said",
+        "kind": "text",
+        "label": "What I said, and who heard it"
+      }
+    ]
+  },
+  {
+    "id": "H001",
+    "day": 1,
+    "title": "Stay in love",
+    "time": "evening",
+    "video": "https://www.vaulthuman.com/video/h001-stay-in-love.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/h001-stay-in-love-cover.jpg",
+    "paragraphs": [
+      "Ethan Hawke once said the sun doesn't care whether the grass appreciates its rays. It just keeps on shining. That's the kind of love we mean.",
+      "Love here isn't a feeling. Feelings move. You'll be tired, angry, sad or scared, sometimes all in one afternoon, and none of that is wrong. Love is underneath all of it.",
+      "The mind and the body are the two doors back into the heart."
+    ],
+    "steps": [
+      "Tomorrow, before you walk into a room, take one breath and drop into your heart.",
+      "Tonight, write two lines. Where did I come back to love today? Where did I see it in someone else?",
+      "Then one thing you're thankful for."
+    ],
+    "source": "https://www.vaulthuman.com/key/h001/",
+    "prompts": [
+      {
+        "id": "came_back",
+        "kind": "text",
+        "label": "Where I came back to love today"
+      },
+      {
+        "id": "saw",
+        "kind": "text",
+        "label": "Where I saw it in someone else"
+      },
+      {
+        "id": "thanks",
+        "kind": "text",
+        "label": "One thing I’m thankful for"
+      }
+    ]
+  },
+  {
+    "id": "M002",
+    "day": 2,
+    "title": "Read the label",
+    "time": "morning",
+    "video": "https://www.vaulthuman.com/video/key02-read-the-label.mp4",
+    "poster": "https://members.vaulthuman.com/img/keys/m002-read-the-label.jpg",
+    "paragraphs": [
+      "Ralph Waldo Emerson wrote a whole essay on trusting yourself. Most of what you believe arrived before you could vote on it. Your family's idea of money. Your town's idea of success. The line someone said about you once, when you were nine.",
+      "Some of it is gold. Some of it is a coat that never fit. This Key doesn't ask you to throw anything out. It asks you to look at the label."
+    ],
+    "steps": [
+      "Write one sentence you believe that no one around you does.",
+      "Write where you got it. Can't find one? Take the belief you hold most loudly and trace it back to the room you learned it in.",
+      "Go outside for twenty minutes and carry the sentence with you."
+    ],
+    "source": "https://www.vaulthuman.com/key/m002/",
+    "prompts": [
+      {
+        "id": "belief",
+        "kind": "text",
+        "label": "A sentence I believe that no one around me does"
+      },
+      {
+        "id": "source",
+        "kind": "text",
+        "label": "Where I got it"
+      },
+      {
+        "id": "outside",
+        "kind": "check",
+        "label": "I went outside and carried it with me"
+      }
+    ]
+  },
+  {
+    "id": "B002",
+    "day": 2,
+    "title": "Stretch before bed",
+    "time": "evening",
+    "video": "https://www.vaulthuman.com/video/b002-stretch-before-bed.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/b002-stretch-before-bed-cover.jpg",
+    "paragraphs": [
+      "Your body carried you through the whole day. Most nights we thank it by collapsing on the couch with a screen. Tonight, give it five minutes instead.",
+      "Nothing fancy, and nothing that hurts. Slow is the point. Breathe out a little longer than you breathe in, and let each stretch get a few breaths."
+    ],
+    "steps": [
+      "Stand and reach both arms up, then let them float down.",
+      "Fold forward with soft knees and let your head hang.",
+      "Lie on your back, hug your knees, then let them fall to one side, then the other. Then write one line: something you're thankful your body did today."
+    ],
+    "note": "If something is injured or sore, skip that one, or do it seated. The breathing counts on its own.",
+    "source": "https://www.vaulthuman.com/key/b002/",
+    "prompts": [
+      {
+        "id": "stretched",
+        "kind": "check",
+        "label": "I did the three stretches"
+      },
+      {
+        "id": "thanks",
+        "kind": "text",
+        "label": "Something I’m thankful my body did today"
+      }
+    ]
+  },
+  {
+    "id": "M003",
+    "day": 3,
+    "title": "Begin at the end",
+    "time": "morning",
+    "video": "https://www.vaulthuman.com/video/m003-begin-at-the-end.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/m003-begin-at-the-end-cover.jpg",
+    "paragraphs": [
+      "Stephen Covey asked people to begin with the end in mind. Picture four people standing up to speak about you, three years from today. Someone from your family. A friend. Someone you work with. Someone from your street.",
+      "What do you want each of them to be able to say? Not what they'd say now. What you want to be true.",
+      "It sounds heavy. It isn't. A eulogy you write while you're alive is a plan you can still change."
+    ],
+    "steps": [
+      "Write six lines: one from each of those four people, and two from you.",
+      "Take them outside. Walk twenty minutes and read them to yourself.",
+      "Notice which line surprises you. That one is the work."
+    ],
+    "note": "If this lands heavy right now, write the toast someone gives at your next big birthday instead. Same six lines.",
+    "source": "https://www.vaulthuman.com/key/m003/",
+    "prompts": [
+      {
+        "id": "six",
+        "kind": "long",
+        "label": "My six lines"
+      },
+      {
+        "id": "walked",
+        "kind": "check",
+        "label": "I read them on a twenty-minute walk"
+      },
+      {
+        "id": "surprise",
+        "kind": "text",
+        "label": "The line that surprised me"
+      }
+    ]
+  },
+  {
+    "id": "H002",
+    "day": 3,
+    "title": "Squeeze the orange",
+    "time": "evening",
+    "video": "https://www.vaulthuman.com/video/h002-squeeze-the-orange.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/h002-squeeze-the-orange-cover.jpg",
+    "paragraphs": [
+      "Wayne Dyer liked to ask what comes out when you squeeze an orange. Orange juice, of course. Not apple, not grapefruit. What comes out is what's inside.",
+      "When life squeezes you, when someone cuts you off or says the wrong thing at the wrong time, what comes out of you is whatever is inside. Not what they did. What you're carrying.",
+      "That isn't a reason to be hard on yourself. It's good news. The work is on the inside, where you can actually reach it."
+    ],
+    "steps": [
+      "Write down one moment today when you got squeezed, and what came out.",
+      "Write what you'd want to come out next time.",
+      "Then one thing you're thankful for."
+    ],
+    "source": "https://www.vaulthuman.com/key/h002/",
+    "prompts": [
+      {
+        "id": "squeezed",
+        "kind": "text",
+        "label": "When I got squeezed, and what came out"
+      },
+      {
+        "id": "next",
+        "kind": "text",
+        "label": "What I’d want to come out next time"
+      },
+      {
+        "id": "thanks",
+        "kind": "text",
+        "label": "One thing I’m thankful for"
+      }
+    ]
+  },
+  {
+    "id": "M004",
+    "day": 4,
+    "title": "Ask, then listen",
+    "time": "morning",
+    "video": "https://www.vaulthuman.com/video/m004-ask-then-listen.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/m004-ask-then-listen-cover.jpg",
+    "paragraphs": [
+      "Dale Carnegie wrote about being a good listener and encouraging other people to talk about themselves. He told a story about a dinner party where he asked a botanist about his work, said almost nothing all night, and was called a brilliant conversationalist afterward. All he did was listen.",
+      "The way you listen is the fastest mirror you own. If you can't go three questions without turning it back to yourself, that tells you something about you, not about them."
+    ],
+    "steps": [
+      "Give up your turn once, on purpose. Ask one person three questions about themselves, and none about you.",
+      "Use their name twice.",
+      "Then write three lines: who it was, the three questions, and the moment it was hardest not to talk."
+    ],
+    "source": "https://www.vaulthuman.com/key/m004/",
+    "prompts": [
+      {
+        "id": "who",
+        "kind": "text",
+        "label": "Who it was"
+      },
+      {
+        "id": "questions",
+        "kind": "long",
+        "label": "My three questions"
+      },
+      {
+        "id": "named",
+        "kind": "check",
+        "label": "I used their name twice"
+      },
+      {
+        "id": "hardest",
+        "kind": "text",
+        "label": "The moment it was hardest not to talk"
+      }
+    ]
+  },
+  {
+    "id": "B003",
+    "day": 4,
+    "title": "Thank your body",
+    "time": "evening",
+    "video": "https://www.vaulthuman.com/video/b003-thank-your-body.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/b003-thank-your-body-cover.jpg",
+    "paragraphs": [
+      "In 1995 researchers at Rockefeller University showed that after you lose about ten percent of your weight, your body burns noticeably fewer calories than someone who was always that size. Hunger goes up. Burn goes down. The weight comes back.",
+      "Not because you failed. Your body defends its weight the way a house defends its temperature. Every diet you tried and regained was the thermostat doing its job."
+    ],
+    "steps": [
+      "Write the diets you've tried, roughly when, and what happened.",
+      "Under the list, write one sentence: It was not me. It was the thermostat.",
+      "Put a hand on your chest and thank your body for keeping you here."
+    ],
+    "note": "If food has been hard for you, skip the list and write only the sentence.",
+    "source": "https://www.vaulthuman.com/key/b003/",
+    "prompts": [
+      {
+        "id": "diets",
+        "kind": "long",
+        "label": "The diets I’ve tried, roughly when, and what happened"
+      },
+      {
+        "id": "sentence",
+        "kind": "check",
+        "label": "I wrote: It was not me. It was the thermostat."
+      },
+      {
+        "id": "thanked",
+        "kind": "check",
+        "label": "I put a hand on my chest and thanked my body"
+      }
+    ]
+  },
+  {
+    "id": "M005",
+    "day": 5,
+    "title": "Keep the streak",
+    "time": "morning",
+    "video": "https://www.vaulthuman.com/video/m005-keep-the-streak.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/m005-keep-the-streak-cover.jpg",
+    "paragraphs": [
+      "Most habits don't fail on the big day. They fail on the small one, the day you skip just this once.",
+      "More than a century ago, William James gave two simple rules for making a habit stick: keep the momentum, and do one small thing every day that you don't want to do. People who study habits have added two more since: give the habit a cue, and give it a reward."
+    ],
+    "steps": [
+      "Keep the momentum. Pick one small thing you did yesterday and do it again today.",
+      "Do one small thing you don't want to do: the call you've put off, the dish in the sink.",
+      "Give it a cue. Do your habit right after something you already do every day, like the morning coffee.",
+      "Give it a reward. Write it down, check the box, and let yourself feel good about it. Then go outside for twenty minutes."
+    ],
+    "source": "https://www.vaulthuman.com/key/m005/",
+    "prompts": [
+      {
+        "id": "again",
+        "kind": "text",
+        "label": "The small thing I did again"
+      },
+      {
+        "id": "didnt_want",
+        "kind": "text",
+        "label": "The thing I didn’t want to do, and did"
+      },
+      {
+        "id": "cue",
+        "kind": "text",
+        "label": "My cue: right after…"
+      },
+      {
+        "id": "outside",
+        "kind": "check",
+        "label": "I went outside for twenty minutes"
+      }
+    ]
+  },
+  {
+    "id": "H003",
+    "day": 5,
+    "title": "Find where love is",
+    "time": "evening",
+    "video": "https://www.vaulthuman.com/video/h003-find-where-love-is.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/h003-find-where-love-is-cover.jpg",
+    "paragraphs": [
+      "In 1885 Leo Tolstoy wrote a story about a shoemaker named Martin. One night Martin dreamed that a holy visitor would come to his door the next day. So he waited, and he watched. No one holy came.",
+      "An old man shoveling snow came in for tea. A young mother with no coat got a hot meal and a cloak. A boy who stole an apple got peace instead of punishment. That night Martin understood: the visitor had come three times, in the ordinary people at his door.",
+      "We wait for love to arrive like a guest of honor, and we miss it in the people who actually show up. Love rarely arrives looking like love. It's usually small: a held door, a hot meal, someone who listened past the point they had to. And noticing it changes you. Writing even a short note of thanks, sent or not, tends to leave people happier and more connected."
+    ],
+    "steps": [
+      "Think back over the ordinary people in your day.",
+      "Name one where love was, in them or in what passed between you.",
+      "Write one line of thanks to them, even if you never send it."
+    ],
+    "source": "https://www.vaulthuman.com/key/h003/",
+    "prompts": [
+      {
+        "id": "where",
+        "kind": "text",
+        "label": "Where love was today"
+      },
+      {
+        "id": "thanks",
+        "kind": "text",
+        "label": "My line of thanks to them"
+      }
+    ]
+  },
+  {
+    "id": "M006",
+    "day": 6,
+    "title": "Credit both sides",
+    "time": "morning",
+    "video": "https://www.vaulthuman.com/video/m006-credit-both-sides.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/m006-credit-both-sides-cover.jpg",
+    "paragraphs": [
+      "Frederick Douglass was born enslaved in Maryland. When he was a boy, the woman of the house began teaching him the alphabet, until her husband made her stop. So he carried bread in his pocket and traded it to hungry boys on the street for lessons. He called what they gave him the more valuable bread of knowledge.",
+      "He escaped to freedom at twenty and became one of the great voices of his century. For decades he gave one lecture, Self-Made Men, and told every audience the truth: there are no self-made men. He used the word men; he meant all of us. A teacher, a neighbor, a stranger who opened a door, the ones who came before and cleared the road. Every one of us stands on someone.",
+      "That isn't small. It's freeing. You were never doing this alone. He believed in hard work, too. Every life has two sides: what was given to you, and what you did with it. Honor both."
+    ],
+    "steps": [
+      "Write the names of three people who helped make you.",
+      "Next to each one, write one thing they gave you. Then write one thing you did with it.",
+      "If one of them is still here, tell them."
+    ],
+    "source": "https://www.vaulthuman.com/key/m006/",
+    "prompts": [
+      {
+        "id": "three",
+        "kind": "long",
+        "label": "Three people who helped make me, what each gave me, and what I did with it"
+      },
+      {
+        "id": "told",
+        "kind": "check",
+        "label": "I told one of them"
+      }
+    ]
+  },
+  {
+    "id": "B004",
+    "day": 6,
+    "title": "Honor her cycle",
+    "time": "evening",
+    "video": "https://www.vaulthuman.com/video/b004-honor-her-cycle.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/b004-honor-her-cycle-cover.jpg",
+    "paragraphs": [
+      "Long before calendars, people kept time by the moon. The words month and menstruation both trace back to the old word for moon. Her cycle keeps that time. It's where every one of us began.",
+      "For centuries it was kept quiet and out of sight. Some traditions never forgot, and still mark a girl's first cycle with a celebration: moon time, a time of power and a time of rest. Man and woman here mean the long story between them; masculine and feminine are energies every one of us carries. If those words don't fit how you see yourself, nothing here is meant to leave you out.",
+      "The science is catching up. Stacy Sims, an exercise physiologist, got tired of training plans built from studies on young men. Her work shows the cycle, pregnancy and menopause change how a woman's body uses fuel, recovers and builds strength. Not a weakness. Information her body has been giving all along."
+    ],
+    "steps": [
+      "If you're a woman, write today's cycle day, or the stage you're in.",
+      "Add one line on how your body felt today. Treat it as sacred, not as an inconvenience.",
+      "If you're a man, write the name of the woman in your life this Key is for, and one way you'll honor her rhythm this month, by asking instead of assuming."
+    ],
+    "note": "Anything clinical, like pain, bleeding or missed cycles, is a doctor's door, not ours.",
+    "source": "https://www.vaulthuman.com/key/b004/",
+    "prompts": [
+      {
+        "id": "cycle",
+        "kind": "text",
+        "label": "My cycle day or stage, or the woman this Key is for"
+      },
+      {
+        "id": "felt",
+        "kind": "text",
+        "label": "How my body felt today, or one way I’ll honor her rhythm"
+      }
+    ]
+  },
+  {
+    "id": "M007",
+    "day": 7,
+    "title": "See it differently",
+    "time": "morning",
+    "video": "https://www.vaulthuman.com/video/m007-see-it-differently.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/m007-see-it-differently-cover.jpg",
+    "paragraphs": [
+      "Wayne Dyer said one thing so often it became his: when you change the way you look at things, the things you look at change. In 1976 he loaded his car with copies of Your Erroneous Zones and drove it town to town, to bookstores and radio stations, until it became one of the best-selling books of its time.",
+      "The facts of what happened don't move. Someone cut you off. The meeting went badly. The story you tell about it does move, and the story is the part that's yours.",
+      "This isn't positive thinking. It's ownership. Psychologists call it reappraisal: people who retell a hard moment, instead of pushing the feeling down, tend to feel less of the sting and recover sooner, especially when they see it the way someone outside it would."
+    ],
+    "steps": [
+      "Take one thing you complained about recently.",
+      "Write its other side in three sentences, as if it had happened to someone you respect.",
+      "Walk it off, then notice how the second version felt. If it felt like lying, or a little inauthentic, write that down too."
+    ],
+    "source": "https://www.vaulthuman.com/key/m007/",
+    "prompts": [
+      {
+        "id": "complaint",
+        "kind": "text",
+        "label": "What I complained about"
+      },
+      {
+        "id": "other_side",
+        "kind": "long",
+        "label": "Its other side, in three sentences"
+      },
+      {
+        "id": "felt",
+        "kind": "text",
+        "label": "How the second version felt"
+      }
+    ]
+  },
+  {
+    "id": "H004",
+    "day": 7,
+    "title": "Be love now",
+    "time": "evening",
+    "video": "https://www.vaulthuman.com/video/h004-be-love-now.mp4",
+    "poster": "https://www.vaulthuman.com/img/keys/h004-be-love-now-cover.jpg",
+    "paragraphs": [
+      "Richard Alpert was a Harvard psychology professor. In 1967 he went to India looking for something his work hadn't given him, and a teacher there gave him a new name: Ram Dass, servant of God. The instructions were short. Love everyone, serve everyone, remember God.",
+      "Ram Dass spent the rest of his life on the first one, and late in life he put it in the title of a book, Be Love Now. Not feel love. Be it. Love isn't a mood that visits you. It's who you are underneath the moods.",
+      "You don't wait for it. You practice coming back to it until coming back is simply what you do. Every Key is a door back: the walk, the label, the six lines, the questions, the streak, the story you turned around. Looking back is part of it, too. Psychologists who study gratitude found that people who wrote down what they were thankful for, week after week, felt better about their lives and more hopeful than people who wrote about their hassles."
+    ],
+    "steps": [
+      "Read back over what you've written.",
+      "Find the moment you were most yourself and write it in one line.",
+      "Then write one thing you're thankful for."
+    ],
+    "source": "https://www.vaulthuman.com/key/h004/",
+    "prompts": [
+      {
+        "id": "myself",
+        "kind": "text",
+        "label": "The moment I was most myself"
+      },
+      {
+        "id": "thanks",
+        "kind": "text",
+        "label": "One thing I’m thankful for"
+      }
+    ]
+  }
+]

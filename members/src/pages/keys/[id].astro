@@ -1,0 +1,42 @@
+---
+// Any Key already opened: watch it again and fill in or finish its boxes, in any order.
+import KeyForm from '../../components/KeyForm.astro';
+import KeyView from '../../components/KeyView.astro';
+import Layout from '../../layouts/Layout.astro';
+import { saveKeyForm } from '../../lib/key-form';
+import { memberState } from '../../lib/member';
+
+const env = Astro.locals.runtime.env;
+const member = Astro.locals.member!;
+let error = '';
+if (Astro.request.method === 'POST') {
+  const before = await memberState(env.DB, member);
+  const r = await saveKeyForm(env.DB, member, await Astro.request.formData(), before.received);
+  if ('keyId' in r) return Astro.redirect(`/keys/${r.keyId.toLowerCase()}?saved=1#form`, 303);
+  error = r.error;
+}
+const s = await memberState(env.DB, member);
+const k = s.received.find((r) => r.id.toLowerCase() === Astro.params.id?.toLowerCase());
+if (!k) return Astro.redirect('/keys');
+const idx = s.received.findIndex((r) => r.id === k.id);
+const newer = s.received[idx - 1];
+const older = s.received[idx + 1];
+---
+<Layout title={k.title} nav="keys">
+  <p class="more back"><a href="/keys">← My keys</a></p>
+  <KeyView k={k}>
+    <section class="b">
+      <KeyForm k={k} values={s.answers.get(k.id)} status={s.status.get(k.id)!} saved={Astro.url.searchParams.get('saved') === '1'} error={error}
+        legacy={s.logs.filter((l) => l.key_id === k.id).map((l) => l.line)} />
+    </section>
+    <nav class="pager">
+      {older ? <a href={`/keys/${older.id.toLowerCase()}`}>← {older.title}</a> : <span></span>}
+      {newer ? <a href={`/keys/${newer.id.toLowerCase()}`}>{newer.title} →</a> : <span></span>}
+    </nav>
+  </KeyView>
+</Layout>
+<style>
+  .back{margin:0 0 14px}
+  .pager{display:flex;justify-content:space-between;gap:12px;padding:8px 0 0;font-size:15px}
+  .pager a{color:var(--acc);text-decoration:none}
+</style>

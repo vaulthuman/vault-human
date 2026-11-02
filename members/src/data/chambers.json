@@ -1,0 +1,74 @@
+[
+  {
+    "n": 1,
+    "name": "You",
+    "month": 1,
+    "title": "Getting to know myself"
+  },
+  {
+    "n": 2,
+    "name": "Body",
+    "month": 2,
+    "title": "Coming into my body"
+  },
+  {
+    "n": 3,
+    "name": "Awareness",
+    "month": 3,
+    "title": "Paying attention"
+  },
+  {
+    "n": 4,
+    "name": "Meaning",
+    "month": 4,
+    "title": "Finding my why"
+  },
+  {
+    "n": 5,
+    "name": "Healing",
+    "month": 5,
+    "title": "Saying the unsaid"
+  },
+  {
+    "n": 0,
+    "name": "Integration",
+    "month": 6,
+    "title": "A pause after Healing"
+  },
+  {
+    "n": 6,
+    "name": "Circle",
+    "month": 7,
+    "title": "Finding my people"
+  },
+  {
+    "n": 7,
+    "name": "Rhythm",
+    "month": 8,
+    "title": "Keeping a rhythm"
+  },
+  {
+    "n": 8,
+    "name": "Freedom",
+    "month": 9,
+    "title": "Letting go"
+  },
+  {
+    "n": 9,
+    "name": "Future",
+    "month": 10,
+    "title": "Facing the future"
+  },
+  {
+    "n": 10,
+    "name": "Service",
+    "month": 11,
+    "title": "Handing it on: of service to others, and to yourself"
+  },
+  {
+    "n": 11,
+    "name": "Sharing",
+    "month": 12,
+    "title": "Sharing it: with others, and of yourself"
+  }
+]

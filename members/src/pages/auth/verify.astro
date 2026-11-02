@@ -1,0 +1,20 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { memberByEmail, useLinkNonce } from '../../lib/db';
+import { startSession } from '../../lib/session';
+import { readLinkToken } from '../../lib/tokens';
+
+const env = Astro.locals.runtime.env;
+const token = await readLinkToken(env.SESSION_SECRET, Astro.url.searchParams.get('token') ?? '');
+const member = token ? await memberByEmail(env.DB, token.e) : null;
+if (token && member && (await useLinkNonce(env.DB, token.n))) {
+  await startSession(Astro.cookies, env.SESSION_SECRET, member.id, Astro.url.protocol === 'https:');
+  return Astro.redirect('/today');
+}
+---
+<Layout title="Link expired">
+  <p class="eyebrow">Members</p>
+  <h1>That link has expired.</h1>
+  <p>Sign-in links work once, for 15 minutes. Ask for a fresh one and it will be waiting.</p>
+  <a class="btn" href="/signin" style="margin-top:8px">Send a new link</a>
+</Layout>

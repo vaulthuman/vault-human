@@ -1,0 +1,86 @@
+---
+import KeyView from '../components/KeyView.astro';
+import Layout from '../layouts/Layout.astro';
+import KeyForm from '../components/KeyForm.astro';
+import { saveKeyForm } from '../lib/key-form';
+import { daysInARow, memberState } from '../lib/member';
+
+const env = Astro.locals.runtime.env;
+const member = Astro.locals.member!;
+let error = '';
+
+if (Astro.request.method === 'POST') {
+  const before = await memberState(env.DB, member);
+  const r = await saveKeyForm(env.DB, member, await Astro.request.formData(), before.received);
+  if ('keyId' in r) return Astro.redirect(`/today?saved=${r.keyId}#form`, 303);
+  error = r.error;
+}
+
+const s = await memberState(env.DB, member);
+const saved = Astro.url.searchParams.get('saved') === s.key.id;
+---
+<Layout title={s.key.title} nav="today">
+  <div class="hello">
+    <p class="greet">{s.greeting}</p>
+    <p class="where">
+      {s.chamber.pause ? <span>The Integration pause</span> : <span>Chamber {s.chamber.n} · {s.chamber.name}</span>}
+      <span>Key {s.keyNumber} · {s.key.id}</span>
+    </p>
+  </div>
+  <KeyView k={s.key}>
+    <section class="b">
+      <KeyForm k={s.key} values={s.answers.get(s.key.id)} status={s.status.get(s.key.id)!} saved={saved} error={error}
+        legacy={s.logs.filter((l) => l.key_id === s.key.id).map((l) => l.line)} />
+      {s.activeToday && <p class="streak">Streak: {daysInARow(s.streak)}</p>}
+    </section>
+    {s.also.length > 0 && (
+      <section class="b">
+        <p class="eyebrow">Also open now</p>
+        {s.also.map((k) => (
+          <a class="also" href={`/keys/${k.id.toLowerCase()}`}>
+            <img src={k.poster} alt="" loading="lazy" width="112" height="63" />
+            <span><small>{k.id} · {({ done: 'Done', started: 'Started', open: 'To do' } as const)[s.status.get(k.id) ?? 'open']}</small><b>{k.title}</b></span>
+          </a>
+        ))}
+      </section>
+    )}
+    {s.next && <p class="more">Your next Key, {s.next.key.title}, opens {s.next.when}.</p>}
+  </KeyView>
+  {s.firstWeek && (
+    <section class="b">
+      <div class="card coach">
+        <p class="eyebrow">Your first session with Russ</p>
+        <p>{s.lastDayOfFirstWeek
+          ? 'Your first seven days of Keys end today. Bring what they showed you to your session with Russ.'
+          : 'Your membership includes a one-on-one session with Russ to look at what the Keys are showing you.'}</p>
+        <a class="btn" href={s.bookingUrl} target="_blank" rel="noopener">Pick a time</a>
+      </div>
+    </section>
+  )}
+  <section class="b remind">
+    <p class="eyebrow">Reminders</p>
+    <p>A nudge when your key opens and one before bed.</p>
+    <div class="row">
+      <button class="btn ghost" type="button" data-push hidden>Turn on reminders</button>
+      <p class="more" data-push-status role="status"></p>
+    </div>
+    <p class="more"><a href="/install">Put the app on your phone</a></p>
+  </section>
+</Layout>
+<style>
+  .hello{margin:0 0 22px}
+  .greet{font:600 20px/1.3 Inter,sans-serif;color:var(--ink);margin:0 0 8px}
+  .where{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+  .where span{font:600 13px/1 Inter,sans-serif;color:var(--green);border:1px solid rgba(143,166,126,.45);border-radius:999px;padding:7px 12px}
+  .streak{margin:12px 0 0;color:var(--soft);font-size:15px}
+  .done{margin:0;color:var(--ink)}
+  .done b{color:var(--green)}
+  .done span{color:var(--soft)}
+  .also{display:grid;grid-template-columns:112px 1fr;gap:14px;align-items:center;background:var(--bg2);border:1px solid #2c3a33;border-radius:12px;overflow:hidden;text-decoration:none;margin-bottom:10px}
+  .also:hover,.also:focus-visible{border-color:var(--acc);outline:none}
+  .also img{width:112px;height:100%;min-height:63px;object-fit:cover;display:block;background:#000}
+  .also span{display:flex;flex-direction:column;gap:3px;padding:10px 14px 10px 0}
+  .also small{font:700 11px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+  .also b{font-family:var(--disp);font-weight:400;font-size:26px;line-height:1;color:var(--ink)}
+  .coach .btn{margin-top:4px}
+</style>

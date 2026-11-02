@@ -1,0 +1,36 @@
+---
+// Documents: the guide and other member papers, read here on the site. Nothing to download.
+import Layout from '../../layouts/Layout.astro';
+import { DOCUMENTS, pageObject } from '../../lib/files';
+
+const env = Astro.locals.runtime.env;
+Astro.response.headers.set('Cache-Control', 'private, no-store');
+const docs = await Promise.all(DOCUMENTS.map(async (d) => ({ ...d, ready: env.FILES ? !!(await env.FILES.head(pageObject(d, 1))) : false })));
+---
+<Layout title="Documents" nav="documents">
+  <p class="eyebrow">Documents</p>
+  <h1>To read and come back to.</h1>
+  <p>The guide and other papers that go with your Keys. Read them here, any time you're signed in.</p>
+  <ul class="files">
+    {docs.map((d) => (
+      <li class="card">
+        <div>
+          <small>{d.type} · {d.pages} {d.pages === 1 ? 'page' : 'pages'}</small>
+          <b>{d.title}</b>
+          <span>{d.about}</span>
+        </div>
+        {d.ready ? <a class="btn" href={`/documents/${d.id}`}>Read</a> : <em>Coming soon</em>}
+      </li>
+    ))}
+  </ul>
+</Layout>
+<style>
+  .files{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:12px}
+  .files li{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px}
+  .files div{display:flex;flex-direction:column;gap:3px;min-width:0}
+  .files small{font:700 11px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+  .files b{font-family:var(--disp);font-weight:400;font-size:28px;line-height:1;color:var(--ink);letter-spacing:.02em}
+  .files span{font-size:15px;color:var(--soft)}
+  .files .btn{padding:12px 20px;font-size:15px}
+  .files em{font-style:normal;font-size:14px;color:var(--mute)}
+</style>
