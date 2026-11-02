@@ -10,14 +10,14 @@ const lineFor = (id: string) => s.logs.find((l) => l.key_id === id)?.line;
   <h1>Keys received.</h1>
   <p>{s.received.length} so far, newest first.</p>
   <ul class="list">
-    {s.received.map((k, i) => {
+    {s.received.map((k) => {
       const line = lineFor(k.id);
       return (
         <li>
           <a href={`/keys/${k.id.toLowerCase()}`} class="item">
             <img src={k.poster} alt="" loading="lazy" width="128" height="72" />
             <span>
-              <small>{k.id}{i === 0 && ' · Current'}</small>
+              <small>{k.id}{k.id === s.key.id && ' · Current'}</small>
               <b>{k.title}</b>
               {line ? <em>{line}</em> : <em class="open">Not logged yet</em>}
             </span>
