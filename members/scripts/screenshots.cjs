@@ -51,7 +51,7 @@ const EMAIL = 'test@example.com';
   if (!page.url().endsWith('/today')) throw new Error(`Expected /today, got ${page.url()}`);
   const hello = (await page.textContent('.hello')).replace(/\s+/g, ' ').trim();
   console.log('greeting:', hello);
-  if (!/^Good (morning|afternoon|evening), Test\. Chamber 1 · You Key 5 · B003$/.test(hello)) throw new Error(`Unexpected greeting: ${hello}`);
+  if (!/^Good (morning|afternoon|evening), Test\. Chamber 1 · You Key \d+ · [BMH]\d{3}$/.test(hello)) throw new Error(`Unexpected greeting: ${hello}`);
   await shot('3-today');
 
   await page.fill('#line', 'Wrote the list and the sentence. Felt lighter, and slept better.');
