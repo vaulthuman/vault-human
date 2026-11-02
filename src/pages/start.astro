@@ -17,10 +17,13 @@ const desc = 'A short video and one small step at 8 each morning and 8 each even
   <link rel="icon" href="/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" />
-  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18371546487"></script>
   <script is:inline>
     window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
     gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD');
+    // Google tag loads after the page has painted (on load, or the first touch/scroll), so it doesn't slow the first screen on phones.
+    (function(){var done=false;function L(){if(done)return;done=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=AW-18371546487';document.head.appendChild(s);}
+    ['touchstart','scroll','keydown','pointerdown'].forEach(function(e){addEventListener(e,L,{once:true,passive:true})});
+    if(document.readyState==='complete'){L()}else{addEventListener('load',L)}})();
   </script>
   <style is:inline>
     :root{--bg:#141A16;--bg2:#1A2420;--ink:#F1EDE4;--soft:#CFC9BC;--mute:#8E9A90;--acc:#C9A24A;--green:#8FA67E;--line:rgba(241,237,228,.14);--disp:'Bebas Neue',Inter,sans-serif}
@@ -92,6 +95,9 @@ const desc = 'A short video and one small step at 8 each morning and 8 each even
       .hv video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
       h1{font-size:64px}
     }
+    .mcta{display:none}
+    @media (max-width:899px){.mcta{display:block;text-align:center;text-decoration:none;margin:18px 0 16px}}
+    #cap,#call{scroll-margin-top:16px}
   </style>
 </head>
 <body>
@@ -101,6 +107,7 @@ const desc = 'A short video and one small step at 8 each morning and 8 each even
     <div class="hc">
       <p class="eyebrow">First week free</p>
       <h1>A real coach. One small step, morning and evening.</h1>
+      <a class="btn mcta" id="mcta" href="#cap">Send me my key, free</a>
       <p class="lede">Vault Human is an online coaching program. At 8 each morning and 8 each evening your coach sends you a short video we call a <b>key</b>, with one small thing to do. Over a year the keys work through every part of your life: your past, your present and your future.</p>
     </div>
     <div class="hv"><video autoplay muted loop playsinline preload="metadata" poster="/video/start-hero-fire.jpg" aria-hidden="true"><source src="/video/start-hero-fire.mp4" type="video/mp4" /></video></div>
@@ -165,6 +172,7 @@ const desc = 'A short video and one small step at 8 each morning and 8 each even
         .catch(function(){go.disabled=false;go.textContent='Send me my key, free';msg.textContent="That didn't go through. Try again, or call (888) 833-2510.";});
       });
       var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});document.querySelectorAll('.q').forEach(function(q){io.observe(q)});
+      document.getElementById('mcta').addEventListener('click',function(){try{gtag('event','cta_tap',{where:'top'})}catch(e){}});
       document.getElementById('sitelink').addEventListener('click',function(){try{gtag('event','site_link_click')}catch(e){}});
       var film=document.getElementById('film'),fv=document.getElementById('fv');
       document.getElementById('playbtn').addEventListener('click',function(){film.classList.add('on');fv.setAttribute('controls','');fv.play();try{gtag('event','video_play',{title:'go-outside'})}catch(e){}});
