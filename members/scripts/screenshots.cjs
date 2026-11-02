@@ -16,7 +16,7 @@ const EMAIL = 'test@example.com';
 (async () => {
   fs.mkdirSync(OUT, { recursive: true });
   const browser = await chromium.launch();
-  const page = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
+  const page = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, permissions: ['notifications'] });
   if (process.env.LOCAL_SITE) {
     const root = path.join(__dirname, '..', '..', 'public');
     await page.route('https://www.vaulthuman.com/**', (route) => {
@@ -80,6 +80,18 @@ const EMAIL = 'test@example.com';
   await shot('8-membership');
   await page.click('form[method=post]:not([action]) button');
   await shot('9-membership-stub');
+
+  // Home-screen app: install steps, the manifest and the reminders control.
+  await page.goto(`${BASE}/install`);
+  await shot('10-install');
+  const manifest = await (await page.request.get(`${BASE}/manifest.webmanifest`)).json();
+  if (manifest.start_url !== '/today' || manifest.display !== 'standalone') throw new Error('Manifest is wrong');
+  await page.goto(`${BASE}/today`);
+  const sw = await page.evaluate(() => navigator.serviceWorker.ready.then((r) => !!r.active));
+  console.log('service worker active:', sw);
+  await page.locator('.remind').scrollIntoViewIfNeeded();
+  await page.screenshot({ path: path.join(OUT, '11-today-reminders.png'), fullPage: false });
+  console.log('saved 11-today-reminders');
 
   await browser.close();
 })().catch((e) => { console.error(e); process.exit(1); });
