@@ -6,7 +6,7 @@ import { fromB64u, validEndpoint } from '../../../lib/webpush';
 const bad = (msg: string, status = 400) => new Response(msg, { status });
 
 async function readSub(request: Request) {
-  if (!(request.headers.get('content-type') ?? '').includes('application/json')) return null;
+  if ((request.headers.get('content-type') ?? '').split(';')[0].trim().toLowerCase() !== 'application/json') return null;
   const text = await request.text();
   if (text.length > 4096) return null;
   try { return JSON.parse(text); } catch { return null; }
