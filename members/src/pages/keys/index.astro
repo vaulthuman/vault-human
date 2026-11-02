@@ -3,23 +3,26 @@ import Layout from '../../layouts/Layout.astro';
 import { memberState } from '../../lib/member';
 
 const s = await memberState(Astro.locals.runtime.env.DB, Astro.locals.member!);
-const lineFor = (id: string) => s.logs.find((l) => l.key_id === id)?.line;
+import { STATUS_WORD } from '../../lib/answers';
+const firstAnswer = (id: string) => Object.values(s.answers.get(id) ?? {}).find((v) => v && v !== 'yes' && !/^\d+$/.test(v)) ?? s.logs.find((l) => l.key_id === id)?.line;
+const done = s.received.filter((k) => s.status.get(k.id) === 'done').length;
 ---
 <Layout title="My keys" nav="keys">
   <p class="eyebrow">My keys</p>
   <h1>Keys received.</h1>
-  <p>{s.received.length} so far, newest first.</p>
+  <p>{s.received.length} open so far, newest first. {done} done. Tap any Key to watch it again or finish it, in any order.</p>
   <ul class="list">
     {s.received.map((k) => {
-      const line = lineFor(k.id);
+      const line = firstAnswer(k.id);
+      const st = s.status.get(k.id) ?? 'open';
       return (
         <li>
           <a href={`/keys/${k.id.toLowerCase()}`} class="item">
             <img src={k.poster} alt="" loading="lazy" width="128" height="72" />
             <span>
-              <small>{k.id}{k.id === s.key.id && ' · Current'}</small>
+              <small>{k.id}{k.id === s.key.id && ' · Current'} <i class:list={['st', st]}>{STATUS_WORD[st]}</i></small>
               <b>{k.title}</b>
-              {line ? <em>{line}</em> : <em class="open">Not logged yet</em>}
+              {line ? <em>{line}</em> : <em class="open">{st === 'open' ? 'Not started' : 'Started'}</em>}
             </span>
           </a>
         </li>
@@ -37,4 +40,7 @@ const lineFor = (id: string) => s.logs.find((l) => l.key_id === id)?.line;
   .item b{font-family:var(--disp);font-weight:400;font-size:26px;line-height:1;color:var(--ink);letter-spacing:.02em}
   .item em{font-style:normal;font-size:14px;color:var(--soft);line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .item em.open{color:var(--mute)}
+  .st{font-style:normal;margin-left:6px;padding:3px 7px;border-radius:999px;border:1px solid var(--line);color:var(--mute);letter-spacing:.1em}
+  .st.done{background:var(--green);border-color:var(--green);color:#141A16}
+  .st.started{border-color:var(--acc);color:var(--acc)}
 </style>
