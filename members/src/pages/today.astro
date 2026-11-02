@@ -1,7 +1,7 @@
 ---
 import KeyView from '../components/KeyView.astro';
 import Layout from '../layouts/Layout.astro';
-import { isValidTz, localDay } from '../lib/dates';
+import { isValidTz, localDay, localHour } from '../lib/dates';
 import { saveLog, setTz } from '../lib/db';
 import { currentKey } from '../lib/keys';
 import { daysInARow, memberState } from '../lib/member';
@@ -22,7 +22,7 @@ if (Astro.request.method === 'POST') {
   else if (line.length > 280) error = 'Keep it to one line (280 characters).';
   else {
     const today = localDay(new Date(), member.tz);
-    await saveLog(env.DB, member.id, currentKey(member.started_on, today).id, today, line);
+    await saveLog(env.DB, member.id, currentKey(member.started_on, today, localHour(new Date(), member.tz)).id, today, line);
     return Astro.redirect('/today?saved=1', 303);
   }
 }
@@ -54,7 +54,30 @@ const saved = Astro.url.searchParams.get('saved') === '1' && s.todayLog;
         </div>
       </form>
     </section>
+    {s.also.length > 0 && (
+      <section class="b">
+        <p class="eyebrow">Also open now</p>
+        {s.also.map((k) => (
+          <a class="also" href={`/keys/${k.id.toLowerCase()}`}>
+            <img src={k.poster} alt="" loading="lazy" width="112" height="63" />
+            <span><small>{k.id}</small><b>{k.title}</b></span>
+          </a>
+        ))}
+      </section>
+    )}
+    {s.next && <p class="more">Your next Key, {s.next.key.title}, opens {s.next.when}.</p>}
   </KeyView>
+  {s.firstWeek && (
+    <section class="b">
+      <div class="card coach">
+        <p class="eyebrow">Your first session with Russ</p>
+        <p>{s.lastDayOfFirstWeek
+          ? 'Your first seven days of Keys end today. Bring what they showed you to your session with Russ.'
+          : 'Your membership includes a one-on-one session with Russ to look at what the Keys are showing you.'}</p>
+        <a class="btn" href={s.bookingUrl} target="_blank" rel="noopener">Pick a time</a>
+      </div>
+    </section>
+  )}
   <section class="b remind">
     <p class="eyebrow">Reminders</p>
     <p>A nudge when your key opens and one before bed.</p>
@@ -78,4 +101,11 @@ const saved = Astro.url.searchParams.get('saved') === '1' && s.todayLog;
   .done{margin:0;color:var(--ink)}
   .done b{color:var(--green)}
   .done span{color:var(--soft)}
+  .also{display:grid;grid-template-columns:112px 1fr;gap:14px;align-items:center;background:var(--bg2);border:1px solid #2c3a33;border-radius:12px;overflow:hidden;text-decoration:none;margin-bottom:10px}
+  .also:hover,.also:focus-visible{border-color:var(--acc);outline:none}
+  .also img{width:112px;height:100%;min-height:63px;object-fit:cover;display:block;background:#000}
+  .also span{display:flex;flex-direction:column;gap:3px;padding:10px 14px 10px 0}
+  .also small{font:700 11px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+  .also b{font-family:var(--disp);font-weight:400;font-size:26px;line-height:1;color:var(--ink)}
+  .coach .btn{margin-top:4px}
 </style>
