@@ -172,8 +172,11 @@ Vault Human Cloudflare account.
    npx wrangler secret put STRIPE_SECRET_KEY       # sk_test_... (test mode)
    npx wrangler secret put STRIPE_WEBHOOK_SECRET   # whsec_... from step 7
    npx wrangler secret put RESEND_API_KEY          # re_... after the DNS records verify (see "Sign-in email (Resend)")
+   npx wrangler secret put VAPID_PUBLIC_KEY        # from `node scripts/vapid-keys.mjs` (push reminders)
+   npx wrangler secret put VAPID_PRIVATE_JWK       # same run; secret
+   npx wrangler secret put PUSH_SEND_SECRET        # same run; the scheduler sends it as a Bearer token
    ```
-   Do not set `DEV_LOG_LINKS` in production.
+   Do not set `DEV_LOG_LINKS` in production. Run `npm run db:migrate:remote` again whenever `migrations/` gains a file.
 5. Deploy: `npm run deploy` (builds, then `wrangler deploy`). Wrangler prints a `*.workers.dev` URL.
 6. Custom domain: Cloudflare dashboard → Workers & Pages → vault-human-members → Settings →
    Domains & Routes → Add → Custom domain → `members.vaulthuman.com`. `APP_URL` in `wrangler.jsonc`
@@ -186,6 +189,21 @@ Vault Human Cloudflare account.
 9. Do not run `db:seed:local` against the remote database; the seed is test data.
 
 Before real members: the Resend domain verified and its key set, and Stripe live mode, which v1 deliberately refuses.
+
+## Home-screen app and reminders
+
+- The app installs to a phone's home screen (`public/manifest.webmanifest`, `public/sw.js`); steps for members are at `/install`.
+- The service worker never caches member pages; offline it shows `public/offline.html`.
+- Reminders: a member taps **Turn on reminders** on Today. Devices are saved in `push_subs` (newest 5 per member).
+- To send: `POST /api/push/send` with `Authorization: Bearer $PUSH_SEND_SECRET` and `{"kind":"morning"}` or `{"kind":"evening"}`.
+  Any scheduler can call it (Apps Script `UrlFetchApp`, a cron Worker). Only members with access get them; dead devices are removed.
+
+## Security
+
+- Sign-in: 5 links per email and 20 per network (IPv6 grouped by /64) each hour, enforced in one statement.
+  Every request answers in the same time; Stripe lookups and email run after the response.
+- A payment made with an open member's email but a different Stripe customer never moves that member's billing.
+- Headers on every page: CSP, HSTS, `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy: same-origin`, `private, no-store`.
 
 ## Decided by Russ
 

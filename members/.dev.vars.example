@@ -19,3 +19,10 @@ DEV_LOG_LINKS=1
 
 # Where sign-in links point. Local dev: http://localhost:4321
 APP_URL=http://localhost:4321
+
+# Push reminders (home-screen app). Generate with: node scripts/vapid-keys.mjs
+# VAPID_PUBLIC_KEY is public; VAPID_PRIVATE_JWK is a secret (wrangler secret put VAPID_PRIVATE_JWK).
+VAPID_PUBLIC_KEY=
+VAPID_PRIVATE_JWK=
+# Bearer secret the scheduler sends to POST /api/push/send (at least 32 characters).
+PUSH_SEND_SECRET=
