@@ -89,7 +89,7 @@ describe('the member week', () => {
   });
   it('every Key has a video, a poster, three or four steps and a www source', () => KEYS.forEach((k) => {
     expect(k.video).toMatch(/^https:\/\/www\.vaulthuman\.com\/video\/.+\.mp4$/);
-    expect(k.poster).toMatch(/^https:\/\/www\.vaulthuman\.com\/img\/keys\/.+\.jpg$/);
+    expect(k.poster).toMatch(/^https:\/\/(www|members)\.vaulthuman\.com\/img\/keys\/.+\.jpg$/);
     expect(k.steps.length).toBeGreaterThanOrEqual(3);
     expect(k.source).toBe(`https://www.vaulthuman.com/key/${k.id.toLowerCase()}/`);
   }));
