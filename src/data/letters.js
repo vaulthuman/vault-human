@@ -8540,5 +8540,39 @@ export const letters=[
   "iso": "2026-11-02",
   "month": "November 2026",
   "chamber": 11
+ },
+ {
+  "slug": "say-it-straight",
+  "title": "Say it straight",
+  "dek": "When Virginia Satir was five years old, on a farm outside Neillsville, Wisconsin, she decided what she would be when she grew up: a detective on parents.",
+  "day": 172,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "When Virginia Satir was five years old, on a farm outside Neillsville, Wisconsin, she decided what she would be when she grew up: a detective on parents. She said so for the rest of her life, and she meant it exactly. At five she had noticed that what the grown-ups said and what was going on in the house were two different things, and somebody ought to find out which was true. She trained as a teacher in Milwaukee, took a social work degree at the University of Chicago in 1948, and in 1951, with a troubled young woman in her office, did what almost nobody did then: she asked the mother in too, then the father, and watched the whole family change shape in the room."
+   },
+   {
+    "k": "",
+    "t": "In 1959 she helped found the Mental Research Institute in Palo Alto; in 1964 she wrote <em>Conjoint Family Therapy</em>, the first textbook the field had, and <em>Peoplemaking</em> followed in 1972. She ran the training at Esalen, carried the work across the world, and died of pancreatic cancer in September 1988, at seventy-two."
+   },
+   {
+    "k": "",
+    "t": "Here is what the detective found. Under stress, people fall into one of four stances. The placater says yes to everything so nobody gets upset. The blamer points the finger so nobody sees that he's afraid. The computer goes cool and reasonable and leaves the body behind. The distracter changes the subject, makes a joke, knocks over the water. She had people act them out, placater on one knee with a palm up, blamer with a finger in someone's face, and everyone laughed, and then everyone recognized themselves. The fifth stance she called leveling: your words, your face, your voice and what is going on inside you all saying the same thing. Not nicer. Straighter. Under the other four, she said, is a low pot, her family's word for self-worth, and the pot fills when a person is seen and heard, which she called the greatest gift she could imagine receiving."
+   },
+   {
+    "k": "",
+    "t": "A fair word: her way of working was proved in rooms more than in trials, and the research behind it is thin. Keep the practice; it costs nothing."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because every family runs on these four stances, and most of us learned ours before we could read. I run an estate and elder law firm, and the families across my desk have often been placating and blaming each other for forty years; the will is just where it surfaces. Vault Human coaches and doesn't treat; if a family is stuck, the door is a marriage and family therapist."
+   }
+  ],
+  "n": 258,
+  "date": "November 3, 2026",
+  "iso": "2026-11-03",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
