@@ -8574,5 +8574,61 @@ export const letters=[
   "iso": "2026-11-03",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "take-the-key",
+  "title": "Take the key",
+  "dek": "\"Where a man's wound is, that is where his genius will be.\"",
+  "day": 173,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"Where a man's wound is, that is where his genius will be.\" Robert Bly wrote that in 1990, at sixty-three, in a book about a fairy tale, and the book sat on the New York Times bestseller list for more than a year. Bly was a poet, born in 1926 on a farm in Lac qui Parle County, Minnesota. When <em>The Light Around the Body</em> won the National Book Award in 1968, he used the ceremony to say what he thought of the war in Vietnam and handed the prize money to young men refusing the draft. From the early 1980s he had been gathering men in the woods with the storyteller Michael Meade and the psychologist James Hillman, and <em>Iron John</em> came out in the fall of 1990."
+   },
+   {
+    "k": "",
+    "t": "The tale is from the Grimms. A wild man, rust-colored, hair to his knees, is pulled from a forest pond, and the king has him kept in the courtyard under lock and gives the key to the queen. The king's son, eight years old, loses his golden ball to the wild man. You can have it back, the wild man says, if you let me out. The key is under your mother's pillow. The boy takes it. He doesn't ask. And because he'll be punished, he goes into the forest on the wild man's shoulders, and the rest of the story is what growing up costs him: a finger turned gold he can't hide, kitchen work in the ashes at a stranger's court, a war, and a long way home."
+   },
+   {
+    "k": "",
+    "t": "Bly read it as a map. The fathers of his generation had gone off to the factory and the office and come home with nothing to hand on, and the sons grew up either hard or, by the 1970s, soft, \"life-preserving but not life-giving,\" he wrote. The wild man wasn't the savage. He was the part of a man that had been shut away, and the key was never going to be handed over; you had to take it. And no one did it alone: in every culture he could find, older men had initiated younger ones, and the modern world had simply stopped. His own father was a farmer who drank, Bly said, and he never wrote as if from a cured place. He became Minnesota's first poet laureate in 2008 and died in November 2021, at ninety-four. A fair word: it's a story, not a method, and no trial measures it. Take the practice."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because a circle with nobody older in it is just a crowd. I spent a decade in restaurants in every role, and a kitchen is where a lot of young men get the only initiation anyone gives them: an older cook who tells them the truth and hands them the knife. Tomorrow is the women's side of the same story. If what's under the ashes is a depression, the door is a therapist. For the rest, the door is an older man who has been where you're going, and a room of men who meet on purpose."
+   }
+  ],
+  "n": 259,
+  "date": "November 4, 2026",
+  "iso": "2026-11-04",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "start-with-food",
+  "title": "Start with food",
+  "dek": "Thirteen hundred years ago a physician in Tang-dynasty China wrote down a rule for his trade: a good doctor first finds the root of the illness, then treats it with…",
+  "day": 173,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Thirteen hundred years ago a physician in Tang-dynasty China wrote down a rule for his trade: a good doctor first finds the root of the illness, then treats it with food, and only when food has failed does he reach for drugs. His name was Sun Simiao. He was born around 581 in Shaanxi, a sickly boy whose own doctors' bills, he said, sent him to medicine, and he turned down posts at two imperial courts to keep working among ordinary people. Around 652 he finished <em>Essential Formulas Worth a Thousand Gold</em>, named for his belief that a human life is worth more than that, with the oldest surviving Chinese chapter on treating with food, and a chapter on the character of a great physician: treat rich and poor, friend and enemy, exactly alike. China still calls him the King of Medicine. A fair word: the records give him an age at death anywhere from 101 to 141, which tells you how much legend has grown around the man. The rule is his, whatever the number."
+   },
+   {
+    "k": "",
+    "t": "The kitchen he stood for is still in use in a billion homes. Food and medicine come from one source, the saying goes, and the cook sorts by season and by nature: ginger, lamb, cinnamon and scallion warm you and belong to winter; mung bean, cucumber, watermelon and bitter melon cool you and belong to summer. Vegetables are cooked, not raw. Soup opens the meal. Grain sits at the base; a medical text from around 300 BCE put it as the grains to nourish, the fruits to assist, the meats to benefit, the vegetables to fill out. And at the center is congee: rice simmered in eight or ten times its water until it falls apart, the breakfast of half of China and the first thing a family makes for anyone who is ill. Another fair word: nobody has run a trial on \"warming\" and \"cooling,\" so take those as a cook's language, not a chemistry. The kernel holds anyway. If you take medication or manage a condition, medicinal soups and herbs can interact with it; ask your physician or pharmacist first. Vault Human coaches and doesn't treat."
+   },
+   {
+    "k": "",
+    "t": "The part that belongs to this month is how the table is set. Nothing is plated for one. The dishes go in the middle, everyone has a bowl of rice, the eldest lifts chopsticks first, and the host's job is to put the best piece in the guest's bowl before taking one. When someone in the house is sick, a bowl of congee carried to the bedside is the most ordinary act of care that kitchen knows. Food first, Sun Simiao said. He meant it as medicine. It works as love."
+   }
+  ],
+  "n": 260,
+  "date": "November 4, 2026",
+  "iso": "2026-11-04",
+  "month": "November 2026",
+  "chamber": 11
  }
 ];
