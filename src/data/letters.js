@@ -8630,5 +8630,35 @@ export const letters=[
   "iso": "2026-11-04",
   "month": "November 2026",
   "chamber": 11
+ },
+ {
+  "slug": "sing-over-the-bones",
+  "title": "Sing over the bones",
+  "dek": "An old woman lives in a hidden place in the dry country between Mexico and the American Southwest.",
+  "day": 174,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "An old woman lives in a hidden place in the dry country between Mexico and the American Southwest. They call her La Loba, the wolf woman, and her one work is gathering bones. She crawls the arroyos and the dry washes for whatever has been lost, and when she has a whole skeleton laid out on the ground, a wolf's most often, she sits by her fire and thinks about what song to sing. Then she sings over the bones. As she sings, the bones flesh out, the fur comes in, the chest begins to rise, and the wolf leaps up and runs down the canyon, and somewhere in the running it becomes a laughing woman. Clarissa Pinkola Estés opened <em>Women Who Run With the Wolves</em> with that story in 1992, and it is today's key. Yesterday was Iron John, the men's side. This is the other half."
+   },
+   {
+    "k": "",
+    "t": "Estés was born in 1945 in Indiana, of Mexican and Spanish blood, she says, and raised by an immigrant Hungarian family in a countryside of woods and lakes where the old stories were told, not read. She grew up to be a cantadora, a keeper of the tales in the Latina tradition, a poet, and a Jungian psychoanalyst with a doctorate in ethno-clinical psychology. She worked on the book for more than twenty years. When Ballantine published it, it sat on the New York Times bestseller list for 145 weeks, nearly three years, and has since been translated into more than thirty languages. She later served as a post-trauma specialist with the Columbine community after the 1999 shootings, and in 2006 Colorado placed her in its Women's Hall of Fame."
+   },
+   {
+    "k": "",
+    "t": "Her idea is in the title's one hard word. Wild, she said, does not mean out of control. It means living in a natural way, the way a healthy animal does, with your own senses and your own boundaries intact. She noticed that healthy wolves and healthy women share certain traits: keen sensing, a playful spirit, a deep capacity for devotion, and a long history of being hounded and misnamed. Nearly every woman, she said, is told early to be quieter, smaller, nicer, and the part of her that hears it goes somewhere and waits, like bones in a dry wash. The old tales know where. Bluebeard, the Red Shoes, Vasalisa and her doll, the seal woman who must go back to the sea: each one is a map home. A fair word: this is Jungian depth psychology told through fairy tales, and no trial measures an archetype. Take it as a lens, and keep the practice."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because these stories were never meant to be read alone. They were told, by one woman to others, around a fire, and for thirty years the book has been read aloud in that kind of room. I run an estate and elder law firm, and most of the people who outlive a spouse are women; the years after are often the first that are entirely their own. If what's under the bones is a depression, the door is a therapist; Vault Human coaches and doesn't treat. For the rest, the door is a circle of women who meet on purpose. Men: hand this one to someone, and read it anyway."
+   }
+  ],
+  "n": 261,
+  "date": "November 5, 2026",
+  "iso": "2026-11-05",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
