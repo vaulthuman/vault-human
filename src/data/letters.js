@@ -8660,5 +8660,69 @@ export const letters=[
   "iso": "2026-11-05",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "meet-the-person",
+  "title": "Meet the person",
+  "dek": "\"All real living is meeting.\" Martin Buber wrote that in 1923, at forty-five, in a short book called <em>I and Thou</em>, and it is today's key.",
+  "day": 175,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"All real living is meeting.\" Martin Buber wrote that in 1923, at forty-five, in a short book called <em>I and Thou</em>, and it is today's key. The book reads more like a poem than a philosophy, and philosophers have argued over it for a century, but the idea at its center fits in a sentence: there are two ways to stand in front of anything alive, and which one you choose decides what you are."
+   },
+   {
+    "k": "",
+    "t": "Buber was born in Vienna in 1878. When he was three his mother left, and he was sent to his grandparents in Lemberg, in what was then Austrian Galicia, where his grandfather Solomon was a scholar of the old rabbinic texts. At about four, standing on a balcony with a neighbor girl, he was told plainly that his mother was never coming back. He said later that he made up a private word for what he lost that day, \"mismeeting,\" and that everything he wrote afterward was an answer to it. At eleven, summers on the family estate, he would slip into the stable and stroke the neck of a dapple-grey horse, and he remembered the moment the horse stopped being a thing he was stroking and became a someone, under his hand. He also remembered the day he noticed his own hand doing it, and the moment was gone."
+   },
+   {
+    "k": "",
+    "t": "That is the book. We have two basic words, he said. I-It is how we handle the world: measure it, use it, file it, know it from the outside. We need it; nobody eats without it. I-Thou is the other way. You stand in front of a person, or a tree, or a line of music, with your whole being, holding nothing back and taking nothing for use, and for as long as that lasts, the other is not an object to you. \"Without It man cannot live,\" he wrote. \"But he who lives with It alone is not a man.\" Nobody stays there; every Thou turns back into an It, and the work is to keep returning. In the summer of 1914 a young man came to see him, and Buber, still glowing from a morning of religious ecstasy, was polite, answered his questions, and never noticed what he had come for. Not long after, with the war begun, the young man was dead, and a friend told Buber what the question had been: whether there was any reason to go on. Buber gave up the ecstasy that year and said so in print. From then on the holy was the person in front of you."
+   },
+   {
+    "k": "",
+    "t": "He taught at Frankfurt until the Nazis came in 1933, ran Jewish adult education inside Germany until 1938, then went to Jerusalem and taught at the Hebrew University, arguing to the end for a country shared by Jews and Arabs. He died there in June 1965, at eighty-seven. A fair word: <em>I and Thou</em> is philosophy, not a method, and no study measures a meeting. Take it anyway."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because a circle is where you practice the other word. I spent a decade in restaurants in every role, and every server knows the second a guest becomes \"table twelve,\" and the rarer second when table twelve becomes a man who was just told something hard at lunch. The whole trade turns on which. The door is the person in front of you."
+   }
+  ],
+  "n": 262,
+  "date": "November 6, 2026",
+  "iso": "2026-11-06",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "taste-all-six",
+  "title": "Taste all six",
+  "dek": "The oldest book of Indian medicine says a meal should carry six tastes.",
+  "day": 175,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The oldest book of Indian medicine says a meal should carry six tastes. It was written down in Sanskrit somewhere around the first centuries of the common era, scholars still argue about the date, as the <em>Charaka Samhita</em>, and Charaka himself is more name than man. The text says it records the teaching of a sage called Agnivesha, revised by Charaka and revised again later, and nobody can put a birth year on any of them. So a fair word at the top: the man is a legend. The rule is not. The six tastes are sweet, sour, salty, pungent, bitter and astringent; every food carries some of them, the book says, and a meal should carry all six. He also set food among the three supports of life, beside sleep and a measured way of living. In that book, health is cooked."
+   },
+   {
+    "k": "",
+    "t": "Two thousand years on, the six tastes are still on the plate, and the plate has a name: the thali, a round steel or brass tray with small bowls set around the rim. Rice or flatbread in the middle. A dal, lentils simmered with turmeric and finished with cumin seeds crackled in hot ghee. A vegetable or two. A spoon of yogurt. A pickle, sharp and salty. A chutney. A papad. Something sweet, often taken first, because Charaka said to begin with sweet and end with astringent. Go around the tray and you have the six: sweet in the rice and the kheer, sour in the yogurt and the lime, salt in the pickle, pungent in the chili and the ginger, bitter in the fenugreek and the bitter gourd and the turmeric itself, astringent in the lentils. Nothing on it is large. Everything on it is different from the thing beside it. In the south the tray is a banana leaf, and at a Kerala feast two dozen dishes go down on it in a set order. In most of India the fork is the right hand, and a cook will tell you the fingers taste first."
+   },
+   {
+    "k": "",
+    "t": "A fair word on the spices. Turmeric's famous molecule, curcumin, is poorly absorbed, and the trials behind the big claims are small; cumin and ginger are good food, and ginger has real evidence for nausea and not much else. Eat the spices for what they are, a daily way of making lentils and vegetables taste like something. The harder word is sugar and white rice. India has more than a hundred million people with diabetes, and a thali built on polished rice, fried bread and sweets does the opposite of what Charaka meant. If your blood sugar is a conversation, have it with your physician before the sweets. Vault Human coaches and doesn't treat."
+   },
+   {
+    "k": "",
+    "t": "The part that belongs to this month is who eats. An old Sanskrit line says the guest is to be treated as God, and the table still runs that way: the guest is served first and the host last, and in a Sikh gurdwara anywhere in the world a free kitchen called the langar seats anyone who comes, side by side on the floor, no questions asked; the Golden Temple in Amritsar feeds tens of thousands a day. I spent a decade in restaurants in every role, and the thali is the one plate I know where the kitchen has balanced the meal for you, so the only job left at the table is to pass it."
+   }
+  ],
+  "n": 263,
+  "date": "November 6, 2026",
+  "iso": "2026-11-06",
+  "month": "November 2026",
+  "chamber": 11
  }
 ];
