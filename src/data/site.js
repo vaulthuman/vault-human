@@ -89,7 +89,7 @@ export const intake = {
   eyebrow: "What happens when you sign up",
   steps: [
     { n: "1", title: "Held, within the minute", body: "A reply in Russ's voice with the first key attached and a link to book the first touch." },
-    { n: "2", title: "The first touch, inside 48 hours", body: "Thirty minutes with Russ or Jasmine. Never a bot. The story in three parts begins; the log is handed over." },
+    { n: "2", title: "The first touch, inside 48 hours", body: "Fifteen minutes with Russ or Jasmine. Never a bot. The story in three parts begins; the log is handed over." },
     { n: "3", title: "Fourteen days, then session one", body: "Two weeks of three lines a night and the walk. On day fifteen, the first coaching session. Chamber One begins properly." },
   ],
 };
@@ -128,7 +128,7 @@ export const plan = {
   eyebrow: "How it works",
   steps: [
     { n: "1", title: "Start with the Keys", body: "A key every morning and evening, in your inbox, from tomorrow morning." },
-    { n: "2", title: "The first touch", body: "Thirty minutes with a person inside 48 hours." },
+    { n: "2", title: "The first touch", body: "Fifteen minutes with a person inside 48 hours." },
     { n: "3", title: "The year", body: "Eleven chambers, nine gates, a coach and a circle if you want them." },
   ],
 };
