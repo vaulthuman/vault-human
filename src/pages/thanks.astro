@@ -1,8 +1,8 @@
 ---
-// https://www.vaulthuman.com/thanks — after the /start form. Same design system as /start.
+// https://www.vaulthuman.com/thanks — after the /life-coach and /start forms. 11/5 night: plain words, matches /life-coach (15-min call, $99 after day 7, link to the Day 1 video).
 // The one call to action here is the free call. The Google Ads lead conversion fires on load.
 const title = 'You\'re in — Vault Human';
-const desc = 'Your first Key is on its way.';
+const desc = 'Your free week with Russ has started.';
 ---
 <!doctype html>
 <html lang="en">
@@ -121,27 +121,26 @@ const desc = 'Your first Key is on its way.';
   <div class="hero"><div class="wrap">
     <div class="hc">
       <p class="eyebrow">You're in</p>
-      <h1>Your first Key is on its way.</h1>
-      <p class="lede">Welcome. You just did the hardest part, which is starting. Want to talk it through with a real coach?</p>
-      <a class="btn" href="#call" id="go">Free 30-minute call</a>
+      <h1>Your free week has started.</h1>
+      <p class="lede">Welcome. You just did the hardest part, which is starting. Your first short video from Russ is ready now.</p>
+      <a class="btn" href="/key/m001/" id="first">Watch your first video</a>
     </div>
     <div class="hv"><video autoplay muted loop playsinline preload="metadata" poster="/video/thanks-friends.jpg" aria-hidden="true"><source src="/video/thanks-friends.mp4" type="video/mp4" /></video></div>
   </div></div>
 
   <section><div class="wrap">
-    <h2>Every Key opens something</h2>
-    <p class="opens">Each Key is one small practice that helps a gate swing open. Behind the gates are eleven chambers, the rooms of a whole life: where you've been, who you are now, where you're going. Your first set of Keys begins to open them, and the first chamber is simply called You.</p>
+    <h2>What happens next</h2>
     <div class="steps">
-      <div class="q"><b>Today</b><p>Open your first Key and begin.</p></div>
-      <div class="q"><b>Tomorrow</b><p>Your first keys arrive at 8 a.m. and 8 p.m. Central.</p></div>
-      <div class="q"><b>This week</b><p>A Key at 8 each morning and 8 each evening, free.</p></div>
+      <div class="q"><b>Today</b><p><a href="/key/m001/" style="color:var(--acc);font-weight:600">Watch your first video</a> and take one small step.</p></div>
+      <div class="q"><b>Tomorrow</b><p>A short video and one small step arrive by email at 8 a.m. and 8 p.m. Central. Reply any time; Russ reads every note.</p></div>
+      <div class="q"><b>Day 7</b><p>Decide if it fits. Stay for $99 a month, or simply stop. No card was needed to start.</p></div>
     </div>
   </div></section>
 
   <section id="call"><div class="wrap">
-    <h2>A free call with a Vault&nbsp;Human coach</h2>
-    <p>Russ Michaels keeps his calendar open to everyone at Vault Human. Choose any time that suits you below. Thirty minutes, no cost, and just one question when you book.</p>
-    <div class="cal"><div class="calendly-inline-widget" data-url="https://calendly.com/vaulthuman/free-call?hide_gdpr_banner=1&hide_landing_page_details=1&hide_event_type_details=1&background_color=1a2420&text_color=f1ede4&primary_color=c9a24a"></div></div>
+    <h2>Want to talk first? A free call with Russ</h2>
+    <p>Fifteen minutes, no cost, no obligation. Pick any time that suits you below.</p>
+    <div class="cal"><div class="calendly-inline-widget" data-url="https://calendly.com/vaulthuman/free-15?hide_gdpr_banner=1&hide_landing_page_details=1&hide_event_type_details=1&background_color=1a2420&text_color=f1ede4&primary_color=c9a24a"></div></div>
     <p class="ready">Ready now? <a id="join" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Start your membership</a>.</p>
   </div></section>
 
@@ -151,7 +150,7 @@ const desc = 'Your first Key is on its way.';
     (function(){
       document.querySelectorAll('.hv video').forEach(function(v){v.playbackRate=0.8;});
       var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='https://assets.calendly.com/assets/external/widget.js';s.async=true;document.body.appendChild(s);}
-      document.getElementById('go').addEventListener('click',function(){load();try{gtag('event','call_open')}catch(e){}});
+      
       var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(e.target.id==='call')load();else e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
       document.querySelectorAll('.q').forEach(function(q){io.observe(q)});io.observe(document.getElementById('call'));
       try{var P=JSON.parse(localStorage.getItem('vh_person')||'null');if(P&&P.em){var j=document.getElementById('join');j.href+='?prefilled_email='+encodeURIComponent(P.em);
