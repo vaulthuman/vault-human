@@ -1,5 +1,5 @@
 ---
-// https://www.vaulthuman.com/thanks — after the /life-coach and /start forms. 11/5 night: plain words, matches /life-coach (15-min call, $99 after day 7, link to the Day 1 video).
+// https://www.vaulthuman.com/thanks — after the /life-coach and /start forms. 11/5 night: plain words, matches /life-coach (15-min call, $99 after day 7, link to the Day 1 video). 11/6: added "A person, not an app" film (Russ's audio) above the free call.
 // The one call to action here is the free call. The Google Ads lead conversion fires on load.
 const title = 'You\'re in — Vault Human';
 const desc = 'Your free week with Russ has started.';
@@ -137,6 +137,12 @@ const desc = 'Your free week with Russ has started.';
     </div>
   </div></section>
 
+  <section id="person"><div class="wrap">
+    <h2>There's a person here.</h2>
+    <p class="opens">Ninety seconds from Russ on what this is, and who reads what you write.</p>
+    <div class="film" id="pf" style="max-width:760px"><video playsinline preload="none" poster="/video/vh-person-not-an-app.jpg"><source src="/video/vh-person-not-an-app.mp4" type="video/mp4" /></video><button class="play" aria-label="Play the video"><i></i></button></div>
+  </div></section>
+
   <section id="call"><div class="wrap">
     <h2>Want to talk first? A free call with Russ</h2>
     <p>Fifteen minutes, no cost, no obligation. Pick any time that suits you below.</p>
@@ -155,6 +161,7 @@ const desc = 'Your free week with Russ has started.';
       document.querySelectorAll('.q').forEach(function(q){io.observe(q)});io.observe(document.getElementById('call'));
       try{var P=JSON.parse(localStorage.getItem('vh_person')||'null');if(P&&P.em){var j=document.getElementById('join');j.href+='?prefilled_email='+encodeURIComponent(P.em);
         var c=document.querySelector('.calendly-inline-widget');c.setAttribute('data-url',c.getAttribute('data-url')+'&name='+encodeURIComponent((P.fn+' '+P.ln).trim())+'&email='+encodeURIComponent(P.em));}}catch(_){}
+      var pf=document.getElementById('pf');if(pf){pf.querySelector('.play').addEventListener('click',function(){var v=pf.querySelector('video');pf.classList.add('on');v.controls=true;v.play();try{gtag('event','video_play',{video_title:'A person, not an app'})}catch(_){}});}
       window.addEventListener('message',function(e){if(e.data&&e.data.event==='calendly.event_scheduled'){try{gtag('event','call_booked')}catch(_){}}});
     })();
   </script>
