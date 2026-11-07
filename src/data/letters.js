@@ -8724,5 +8724,35 @@ export const letters=[
   "iso": "2026-11-06",
   "month": "November 2026",
   "chamber": 11
+ },
+ {
+  "slug": "be-seen",
+  "title": "Be seen",
+  "dek": "\"It is not the critic who counts.\"",
+  "day": 176,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"It is not the critic who counts.\" Theodore Roosevelt said that in Paris in April 1910, in a speech most people know by its best line: the credit belongs to the one actually in the arena, face marred by dust and sweat and blood, who at the worst, if he fails, at least fails while daring greatly. A century later a social work professor in Houston took those last two words for the title of a book, and it is today's key."
+   },
+   {
+    "k": "",
+    "t": "Brené Brown was born in San Antonio in 1965 and took all three of her degrees at the University of Houston, where she still teaches. She set out to study connection. The method was old-fashioned: sit with people, hundreds and then more than a thousand of them, let them talk, and sort what they say until a pattern holds. What came back first was shame, the fear that something about us makes us unworthy of connection. And under the people who had the most connection sat one thing she hadn't ordered: they let themselves be seen. They had the courage to be imperfect, the kindness to treat themselves gently first, and a willingness to be vulnerable that she, by her own account, had always filed under weakness. She said so from a stage in Houston in June 2010, in a twenty-minute talk that also admitted the finding had sent her, a researcher who liked things measured, to a therapist for about a year. The talk has been watched tens of millions of times. <em>The Gifts of Imperfection</em> came that same year, <em>Daring Greatly</em> in 2012, <em>Rising Strong</em> in 2015."
+   },
+   {
+    "k": "",
+    "t": "Her definition fits on a card. Vulnerability is uncertainty, risk and emotional exposure. It isn't weakness; it is the truest measure of courage we have, and it is where love, belonging, joy and creativity begin, because none of them can be had without the risk of being turned down. Shame and guilt are different animals: guilt says I did something bad; shame says I am bad, and shame can't survive being spoken to someone who answers with empathy. And the rules run by sex. The men she interviewed carried one: never be seen as weak. The women carried a web of them: do it all, do it perfectly, and never let anyone see the strain. A fair word on the evidence: this is theory built from interviews, not trials, and no one has measured a room of people daring greatly against a room that didn't. The practice costs nothing to test."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the people you want closest are the ones you work hardest to be impressive for. I spent a decade in restaurants in every role, and nobody learns a line or a floor without being seen getting it wrong, nightly, in front of the whole crew; the ones who lasted were the ones who could stand that. Vault Human coaches and doesn't treat; if shame has gone to ground as a depression, the door is a therapist."
+   }
+  ],
+  "n": 264,
+  "date": "November 7, 2026",
+  "iso": "2026-11-07",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
