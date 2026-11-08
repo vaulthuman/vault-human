@@ -8754,5 +8754,69 @@ export const letters=[
   "iso": "2026-11-07",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "change-your-steps",
+  "title": "Change your steps",
+  "dek": "\"Anger is a signal, and one worth listening to.\" Harriet Lerner opened a book with that sentence in 1985, at forty, and called it <em>The Dance of Anger</em>.",
+  "day": 177,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"Anger is a signal, and one worth listening to.\" Harriet Lerner opened a book with that sentence in 1985, at forty, and called it <em>The Dance of Anger</em>. She wrote it for women, because the women across her desk had been taught two ways to handle anger and both of them kept everything exactly as it was. It is today's key, and it is for everyone."
+   },
+   {
+    "k": "",
+    "t": "Lerner was born in Brooklyn on November 30, 1944, took her degrees at Wisconsin, Columbia and the City University of New York, and in 1972 went to Topeka, Kansas, for a postdoctoral year at the Menninger Clinic. She stayed twenty-nine years, on the staff and teaching in its school of psychiatry, and wrote the book there. The thinking under it came from Murray Bowen, the psychiatrist who taught that a family is a system and a person is a self inside it; his own letter comes in two days. Lerner carried his map into kitchens and marriages and wrote it so a person could use it without a doctorate. The book was the first published in this country on women's anger, was still on the New York Times paperback list four years later, and has been translated into more than thirty-five languages."
+   },
+   {
+    "k": "",
+    "t": "Here is the dance. The first way to handle anger is to swallow it: the nice lady, who keeps the peace, apologizes for taking up room, and gives away so much of herself to keep a relationship calm that Lerner coined a word for it, de-selfing. The second is to vent it: the one who fights, blames, cries, gets written off as too much, and then nothing changes either, because venting is not the same as moving. Both are steps in the same old dance, and the dance keeps both people where they were. The third way is the key. Use the anger as information: what is it telling you that you want, that you won't do anymore, that isn't right? Then say that, plainly, as a statement about yourself and not a charge against the other person, and change your own steps. And here is the part nobody warns you about: the other person will push back. Lerner called it the countermove, and its message is always the same: change back. If you hold your position without attacking and without folding, the pattern has to change, because a dance takes two."
+   },
+   {
+    "k": "",
+    "t": "A fair word: Lerner's work came out of three decades of practice and Bowen's theory, not trials, and no one has measured a countermove. The practice holds anyway."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the people closest to you are the ones you've been dancing with longest, and the steps are worn deep. I run an estate and elder law firm, and most of what gets argued over at my conference table was swallowed for thirty years first; the will is just where it surfaces. Vault Human coaches and doesn't treat; if a relationship is coming apart over this, the door is a therapist who works with families as systems."
+   }
+  ],
+  "n": 265,
+  "date": "November 8, 2026",
+  "iso": "2026-11-08",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "eat-at-the-source",
+  "title": "Eat at the source",
+  "dek": "In 1948 the Rockefeller Foundation sent a team to Crete to find out how badly the island was eating after the war.",
+  "day": 177,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1948 the Rockefeller Foundation sent a team to Crete to find out how badly the island was eating after the war. Leland Allbaugh's report came out in 1953, and it was puzzled. The islanders lived on wild greens, legumes, bread and barley rusks, fruit, olives and olive oil, with meat so scarce that some households went weeks without it; the surveyors called the diet poor, and the people, by every measure they could take, were unusually well. A few years later Ancel Keys arrived with a bigger question. His Seven Countries Study, begun in 1958, followed nearly thirteen thousand men in sixteen places, and the men of Crete came out with the lowest rate of death from heart disease of all of them, on about forty percent of their calories from fat, nearly all of it olive oil. An earlier letter here told the story of the pattern Keys drew from that. Today's key goes back to the three tables it was drawn from."
+   },
+   {
+    "k": "",
+    "t": "Crete first. The old table there was horta, the wild greens, eighty kinds and more, gathered on the hillsides, boiled and dressed with oil and lemon; lentils, chickpeas and fava; a barley rusk softened with water and oil under a grated tomato; olives, a little goat cheese, snails after rain, fish on the coast, wine with the meal; meat at Easter and on the saint's day. Then Ikaria, an island in the eastern Aegean where a University of Athens team and, later, Dan Buettner's Blue Zones researchers went to find out why so many people were reaching ninety; Buettner's count put it at about one in three, and the table they found was the Cretan one with goat milk, potatoes, honey and a sage tea in place of coffee, plus an afternoon nap. Then the Cilento, south of Salerno, where Keys himself went to live in 1963, in a house above the sea at Pioppi he named Minnelea, and stayed thirty-five years, eating beans, greens, bread, figs and anchovies with his neighbors until 1998; he died in Minneapolis in 2004, two months short of a hundred and one. In November 2010 UNESCO put the Mediterranean diet on its list of the world's heritage, naming the Cilento and Koroni in Greece among the four communities that stand for it, and in the same December week of 2013 that it added washoku and kimjang, it widened the listing to three more countries."
+   },
+   {
+    "k": "",
+    "t": "A fair word. This was the table of poor people who walked everywhere, and it is largely gone; the children of Greece are now among the heaviest in Europe. The wine is the piece the evidence has moved against, and a glass with the meal is a custom, not a prescription. If you take a blood thinner, a plate of greens changes your dose; have that conversation with your physician first. Vault Human coaches and doesn't treat."
+   },
+   {
+    "k": "",
+    "t": "The part that belongs to this month is the panigyri. All summer on Ikaria, a village cooks goat in great pots on a saint's night, the wine comes out of the barrel, the whole island eats at long tables and dances until dawn, and the money raised fixes the road or the church. Nobody eats alone at that table because there is no table for one. I spent a decade in restaurants in every role, and the closest thing an American kitchen has to it is the staff meal, eaten standing up before the doors open; the cooks who made it well were feeding a village."
+   }
+  ],
+  "n": 266,
+  "date": "November 8, 2026",
+  "iso": "2026-11-08",
+  "month": "November 2026",
+  "chamber": 11
  }
 ];
