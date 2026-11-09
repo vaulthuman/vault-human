@@ -59,10 +59,12 @@ const BAD = [
   r => ({ reply: 'You should take 50 mg of magnesium.', key_id: r[0].id, flag: 'none' }),
 ];
 
+const LIVE = process.argv.includes('--live') && !!process.env.ANTHROPIC_API_KEY;
+if (LIVE) console.log('LIVE mode: every case also goes through the real model + validator');
 let pass = 0, fail = 0; const bad = [];
 const group = {};
 for (const [g, text, expect, answers] of C) {
-  const r = await guideTurn({}, { answers: answers || A(), text, turn: 1 });
+  const r = await guideTurn(LIVE ? { ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY } : {}, { answers: answers || A(), text, turn: 1 });
   const got = r.type === 'crisis' ? 'crisis' : r.type === 'stop' ? 'stop' : r.fixed || (g === 'woman' ? r.offer : 'reply');
   const ok = got === expect && (r.type !== 'reply' || !!r.key);
   group[g] = group[g] || [0, 0]; group[g][ok ? 0 : 1]++;
