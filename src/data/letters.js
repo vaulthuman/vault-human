@@ -8818,5 +8818,39 @@ export const letters=[
   "iso": "2026-11-08",
   "month": "November 2026",
   "chamber": 11
+ },
+ {
+  "slug": "see-the-mind",
+  "title": "See the mind",
+  "dek": "\"Where attention goes, neural firing flows, and neural connection grows.\"",
+  "day": 178,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"Where attention goes, neural firing flows, and neural connection grows.\" Dan Siegel has been saying that sentence for years, to rooms of parents, teachers and therapists, and it is as close as he comes to a slogan. He is a psychiatrist, and the field he named in 1999 is today's key."
+   },
+   {
+    "k": "",
+    "t": "Siegel was born in 1957 and trained at Harvard Medical School. By his own account he left for a time, because what he was being taught treated the person on the table as a body with a problem, and the patient's inner life, the fear, the hope, the story they were telling themselves about what was happening, was nobody's business. He came back, finished, trained in pediatrics and then in psychiatry at UCLA, and spent a research fellowship there studying how the stories parents told about their own childhoods shaped the way they attached to their children. In the early 1990s he gathered about forty scientists from different fields and found they could not agree on what a mind was; most had never been asked. The definition he worked out from those meetings is the one he still uses: a mind is a process, carried in the body and shared between people, that regulates the flow of energy and information. In 1999 he put it in <em>The Developing Mind</em> and called the field interpersonal neurobiology. <em>Mindsight</em> followed in 2010, written for the rest of us, and <em>The Whole-Brain Child</em> with Tina Payne Bryson in 2011. He teaches psychiatry at UCLA and founded the Mindsight Institute."
+   },
+   {
+    "k": "",
+    "t": "The idea underneath all of it fits in one word: integration. A healthy mind, Siegel says, is one whose parts are different and connected, the way a choir is: distinct voices, one sound. Where that is missing, a life runs to one of two banks. On one side is chaos, the flood, the outburst, the panic. On the other is rigidity, the stuck pattern, the rule that can't bend, the life on rails. The river between the banks is where well-being flows. And the mind that does the integrating isn't kept inside one skull. The brain, the body and your relationships are three points of one triangle, and what passes between two people, a look, a tone, the feeling of being understood, changes the wiring on both sides. He calls the skill mindsight: seeing your own mind, and someone else's, clearly enough to steer. His smallest tool is four words long: name it to tame it. Put a feeling into words and it loses some of its grip. A UCLA colleague, Matthew Lieberman, showed in 2007 that simply labeling an emotion quiets the brain's alarm center."
+   },
+   {
+    "k": "",
+    "t": "A fair word: interpersonal neurobiology is a framework that gathers other people's findings into one picture, not a treatment tested in trials of its own, and the definition of mind is a definition, not a discovery. The practice holds without the theory."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the people around you are not the audience for your mind; they are part of how it works. I spent a decade in restaurants in every role, and the fastest way I know to watch one nervous system settle another is a calm voice at the pass on a Friday night: the whole line borrows the steadiness, and nobody has to be told to. Vault Human coaches and doesn't treat; if the chaos or the rigidity has become a way of life, the door is a therapist, and a psychiatrist if medication is the question."
+   }
+  ],
+  "n": 267,
+  "date": "November 9, 2026",
+  "iso": "2026-11-09",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
