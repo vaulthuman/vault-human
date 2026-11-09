@@ -1,4 +1,5 @@
 ---
+import VaultGuide from '../components/VaultGuide.astro';
 // https://www.vaulthuman.com/life-coach/ — coach-first Google Ads landing page (Russ, 10/31/26). 11/6: hero = Russ's 87-s welcome video (Reelful), tap to play with sound.
 // Same design as /start; leads with Russ as the coach (hero = the moving clip of Russ pointing on stage, Russ's call 10/31). A/B tested against /start. Form → HubSpot → /thanks.
 const title = 'Russ Michaels, Life Coach — Vault Human · First week free';
@@ -196,5 +197,6 @@ const desc = 'Work with life coach Russ Michaels: a short video and one small st
       document.getElementById('playbtn').addEventListener('click',function(){film.classList.add('on');fv.setAttribute('controls','');fv.play();try{gtag('event','video_play',{title:'go-outside'})}catch(e){}});
     })();
   </script>
+<VaultGuide />
 </body>
 </html>

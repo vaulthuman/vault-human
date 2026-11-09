@@ -1,4 +1,5 @@
 ---
+import VaultGuide from '../components/VaultGuide.astro';
 import Voices from '../components/Voices.astro';
 import '../styles/home.css';
 import '../styles/nature.css';
@@ -319,5 +320,6 @@ go(0);})();
 <script is:inline>(function(){var t=document.getElementById('vk-toast');if(!t)return;function g(k){try{return localStorage.getItem(k)}catch(e){return null}}function s(k,v){try{localStorage.setItem(k,v)}catch(e){}}if(g('dk_sub')||(+g('vk_toast')||0)>Date.now()-3*864e5)return;var shown=false;function show(){if(shown)return;shown=true;t.hidden=false;requestAnimationFrame(function(){t.classList.add('in')});s('vk_toast',String(Date.now()))}function hide(){t.classList.remove('in');setTimeout(function(){t.hidden=true},300)}t.querySelector('.vk-toast__x').addEventListener('click',hide);t.querySelector('a').addEventListener('click',hide);addEventListener('scroll',function f(){var h=document.documentElement;if((h.scrollTop+innerHeight)/h.scrollHeight>0.35){removeEventListener('scroll',f);show()}},{passive:true});var dk=document.getElementById('daily-key');if(dk&&'IntersectionObserver' in window){new IntersectionObserver(function(e){if(e[0].isIntersecting)hide()}).observe(dk)}})();</script>
 <script is:inline src="/vh-dock.js" defer></script>
 <script is:inline>(function(){var q=document.getElementById("qt");if(!q||!("IntersectionObserver"in window))return;var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){q.classList.add("in");o.disconnect()}})},{threshold:.35});o.observe(q)})();</script>
+<VaultGuide />
 </body>
 </html>
