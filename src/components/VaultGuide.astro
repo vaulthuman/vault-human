@@ -1,0 +1,120 @@
+---
+// The Vault Guide ("Find your Key"). Policy: https://claude.ai/artifact/JLyfwF8nk48BZxcr3viqxR
+// No trackers inside this widget: it sends nothing to GA, Google Ads or Meta, and nothing is stored unless "Send this to Russ".
+const SITEKEY = import.meta.env.PUBLIC_TURNSTILE_SITEKEY || '';
+---
+<div id="vg-root" data-sitekey={SITEKEY} hidden>
+  <button id="vg-open" class="vg-launch" type="button" aria-haspopup="dialog">
+    <span class="vg-l1">Find your Key</span><span class="vg-l2">Russ's AI guide</span>
+  </button>
+  <div id="vg-panel" class="vg-panel" role="dialog" aria-modal="true" aria-labelledby="vg-title" hidden>
+    <header class="vg-head">
+      <div><p id="vg-title" class="vg-t">Find your Key</p><p class="vg-ai">Russ's AI guide, not Russ</p></div>
+      <button id="vg-close" class="vg-x" type="button" aria-label="Close">×</button>
+    </header>
+    <div id="vg-body" class="vg-body" aria-live="polite"></div>
+    <footer class="vg-foot">
+      <button type="button" class="vg-fb" data-go="book">Book 15 minutes</button>
+      <a class="vg-fb" href="tel:+18888332510">Talk to Russ</a>
+    </footer>
+  </div>
+</div>
+<style is:global>
+#vg-root[hidden],.vg-panel[hidden],.vg-launch[hidden]{display:none!important}
+#vg-root{--vbg:#141A16;--vbg2:#1A2420;--vink:#F1EDE4;--vsoft:#CFC9BC;--vmute:#8E9A90;--vacc:#C9A24A;--vline:rgba(241,237,228,.14);font-family:Inter,system-ui,sans-serif}
+.vg-launch{position:fixed;right:16px;bottom:16px;z-index:9998;background:var(--vacc);color:#15190f;border:0;border-radius:999px;padding:12px 20px;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.35);display:flex;flex-direction:column;align-items:flex-start;line-height:1.1;font-family:Inter,sans-serif}
+.vg-l1{font-weight:700;font-size:15px}.vg-l2{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.75;margin-top:2px}
+.vg-panel{position:fixed;right:16px;bottom:16px;z-index:9999;width:min(420px,calc(100vw - 32px));height:min(640px,calc(100vh - 32px));background:var(--vbg);color:var(--vink);border:1px solid var(--vline);border-radius:16px;display:flex;flex-direction:column;box-shadow:0 18px 50px rgba(0,0,0,.5);overflow:hidden}
+@media (max-width:520px){.vg-panel{right:0;bottom:0;width:100vw;height:100dvh;border-radius:0}}
+.vg-head{display:flex;justify-content:space-between;align-items:flex-start;padding:14px 16px 10px;border-bottom:1px solid var(--vline)}
+.vg-t{font-family:'Bebas Neue',Inter,sans-serif;font-size:28px;letter-spacing:.02em;margin:0;line-height:1;color:var(--vink)}
+.vg-ai{margin:3px 0 0;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--vacc);font-weight:700}
+.vg-x{background:none;border:0;color:var(--vsoft);font-size:28px;line-height:1;cursor:pointer;padding:0 4px}
+.vg-body{flex:1;overflow:auto;padding:16px}
+.vg-body p{margin:0 0 12px;color:var(--vsoft);font-size:16px;line-height:1.5}
+.vg-say{background:var(--vbg2);border:1px solid var(--vline);border-radius:12px;padding:14px;margin:0 0 14px}
+.vg-say p{color:var(--vink)}.vg-say small{display:block;color:var(--vmute);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.vg-opts{display:grid;gap:8px;margin:4px 0 12px}
+.vg-opt{text-align:left;background:rgba(255,255,255,.04);color:var(--vink);border:1px solid var(--vline);border-radius:10px;padding:12px 14px;font:15px Inter,sans-serif;cursor:pointer}
+.vg-opt:hover,.vg-opt:focus{border-color:var(--vacc);outline:none}
+.vg-btn{display:block;width:100%;background:var(--vacc);color:#15190f;font-weight:700;border:0;padding:14px;border-radius:10px;font-size:16px;cursor:pointer;font-family:Inter,sans-serif;text-align:center;text-decoration:none;margin:6px 0}
+.vg-ghost{background:none;border:1px solid var(--vline);color:var(--vsoft)}
+.vg-in{width:100%;padding:12px;border:1px solid var(--vline);border-radius:10px;background:rgba(255,255,255,.05);color:var(--vink);font:16px Inter,sans-serif;resize:vertical;min-height:70px}
+.vg-row{display:flex;gap:8px}.vg-row>*{flex:1}
+.vg-fine{font-size:12.5px!important;color:var(--vmute)!important;line-height:1.45!important}
+.vg-key{border:1px solid var(--vacc);border-radius:12px;padding:14px;margin:0 0 14px;background:#2A2616}
+.vg-key h4{margin:0 0 6px;font-family:'Bebas Neue',Inter,sans-serif;font-size:24px;letter-spacing:.02em;color:var(--vacc);font-weight:400}
+.vg-key p{color:var(--vink)}.vg-key a{color:var(--vacc);font-weight:600;font-size:14px}
+.vg-crisis{border:1px solid #e0a08f;border-radius:12px;padding:14px;background:#2B211B}
+.vg-crisis h4{margin:0 0 8px;font-size:18px;color:var(--vink)}.vg-crisis p{color:var(--vink)}
+.vg-foot{display:flex;gap:8px;padding:10px 16px 14px;border-top:1px solid var(--vline)}
+.vg-fb{flex:1;background:none;border:1px solid var(--vline);color:var(--vink);border-radius:999px;padding:10px;font:600 14px Inter,sans-serif;cursor:pointer;text-align:center;text-decoration:none}
+.vg-cal{width:100%;height:560px;border:0;border-radius:10px;background:#fff}
+.vg-chk{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--vsoft);margin:6px 0}
+.vg-mic{flex:0 0 auto!important;width:auto;padding:0 14px}
+</style>
+<script is:inline>
+(function(){
+  var root=document.getElementById('vg-root'); if(!root) return;
+  // ---- A/B: half of visitors see it (cookie). Preview hosts and ?guide=1 always show; ?guide=0 hides.
+  var q=new URLSearchParams(location.search), arm=null;
+  try{ arm=(document.cookie.match(/(?:^|; )vg_arm=([ab])/)||[])[1]||null; if(!arm){arm=Math.random()<.5?'a':'b';document.cookie='vg_arm='+arm+'; Max-Age=7776000; Path=/; SameSite=Lax; Secure';} }catch(e){arm='b'}
+  var visible = q.get('guide')==='1' || /\.pages\.dev$/.test(location.hostname) || (arm==='a' && q.get('guide')!=='0');
+  if(!visible) return; root.hidden=false;
+  var CAL='https://calendly.com/vaulthuman/free-15?embed_type=Inline&hide_gdpr_banner=1&hide_event_type_details=1';
+  var WEEK='/life-coach/';
+  var PRIVACY="What you type goes to our AI provider to write a reply, and isn't saved unless you send it to Russ. If you do, he reads it before your call. We never sell it or use it to train AI, and we'll delete it if you ask.";
+  var HELLO="Hi, I'm Russ. This is my guide, not me, but the questions are mine. Three quick taps, and it'll hand you one Key that fits where you are. If you'd rather just talk, book 15 minutes with me any time.";
+  var Q=[
+    {k:'topic',say:"What's going on for you right now?",o:[['work','Work'],['relationships','Relationships'],['habits','Habits and energy'],['stuck','Feeling stuck'],['else','Something else']]},
+    {k:'different',say:"What would you like to be different?",o:[['more calm','More calm'],['more energy','More energy'],['a clear direction','A clear direction'],['closer connection','Closer connection with people'],['following through','Following through on what I start']]},
+    {k:'inway',say:"What's been in the way?",o:[['no time','Time'],['not sure where to start','Not sure where to start'],['old habits','Old habits'],['other people','Other people'],['not sure yet',"I don't know yet"]]}
+  ];
+  var S={step:'age',answers:{},text:'',turn:1,replies:0,last:null,session:null,offer:'call',ts:null};
+  var body=document.getElementById('vg-body'), panel=document.getElementById('vg-panel'), launch=document.getElementById('vg-open');
+  function h(tag,attrs,kids){var e=document.createElement(tag);for(var a in (attrs||{})){if(a==='text')e.textContent=attrs[a];else if(a.slice(0,2)==='on')e.addEventListener(a.slice(2),attrs[a]);else e.setAttribute(a,attrs[a]);}(kids||[]).forEach(function(k){if(k)e.appendChild(typeof k==='string'?document.createTextNode(k):k)});return e;}
+  function say(t,label){return h('div',{class:'vg-say'},[label?h('small',{text:label}):null,h('p',{text:t})]);}
+  function opt(label,fn){return h('button',{type:'button',class:'vg-opt',onclick:fn,text:label});}
+  function btn(label,fn,ghost){return h('button',{type:'button',class:'vg-btn'+(ghost?' vg-ghost':''),onclick:fn,text:label});}
+  function draw(nodes){body.innerHTML='';nodes.forEach(function(n){if(n)body.appendChild(n)});body.scrollTop=0;}
+  function crisis(r){draw([h('div',{class:'vg-crisis'},[h('h4',{text:r.title})].concat(r.lines.map(function(l){return h('p',{text:l})})).concat(r.links.map(function(l){return l.href.indexOf('http')===0?btn(l.label,function(){window.open(l.href,'_blank','noopener')}):h('a',{class:'vg-btn',href:l.href,text:l.label})}))),h('p',{class:'vg-fine'},[h('a',{href:'/guide-safety/',text:'How this guide handles safety'})])]);S.step='end';}
+  function stop(t){draw([say(t),btn('Close',close,true)]);S.step='end';}
+  function keyCard(k){if(!k)return null;return h('div',{class:'vg-key'},[h('h4',{text:k.name}),h('p',{text:k.idea}),h('p',{text:'Two minutes: '+k.practice}),h('a',{href:k.url,target:'_blank',rel:'noopener',text:'Read the full Key'})]);}
+  // ---- screens
+  function age(){draw([say(HELLO,'Russ · recorded hello (text until recorded)'),h('p',{text:'First, are you 18 or older?'}),h('div',{class:'vg-opts'},[opt("Yes, I'm 18 or older",function(){question(0)}),opt("No, I'm under 18",function(){stop("Thanks for being honest. This guide is for adults 18 and over. If something feels heavy, a parent, a school counselor, or 988 (call or text) can help.")})]),h('p',{class:'vg-fine',text:"Russ's AI guide is coaching, not therapy. It's labeled AI on every screen."})]);}
+  function question(i){var x=Q[i];draw([say(x.say,'Russ · question '+(i+1)+' of 3'),h('div',{class:'vg-opts'},x.o.map(function(o){return opt(o[1],function(){S.answers[x.k]=o[0];if(i<2)question(i+1);else words();})}))]);}
+  function words(){var ta=h('textarea',{class:'vg-in',maxlength:'240',placeholder:'One line in your own words (optional)'}),mic=null;
+    var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+    if(SR){mic=h('button',{type:'button',class:'vg-btn vg-ghost vg-mic',text:'🎙 Speak',onclick:function(){try{var r=new SR();r.lang='en-US';r.onresult=function(e){ta.value=(ta.value+' '+e.results[0][0].transcript).trim()};r.start();}catch(e){}}});}
+    draw([say("Anything you'd add, in your own words? One line is plenty.",'Optional'),ta,h('div',{class:'vg-row'},[mic,btn('Find my Key',function(){S.text=ta.value;ask(S.text)}),btn('Skip',function(){S.text='';ask('')},true)]),h('p',{class:'vg-fine',text:PRIVACY}),SR?h('p',{class:'vg-fine',text:'If you speak, your browser turns your voice into text (it may use its provider, like Apple or Google).'}):null,h('p',{class:'vg-fine'},['Please don’t share health details, money details or other people’s private details. ',h('a',{href:'/guide-safety/',text:'Safety'})])]);}
+  function thinking(){draw([h('p',{text:'Finding a Key that fits…'})]);}
+  function ts(cb){var sk=root.dataset.sitekey; if(!sk||S.session) return cb(null);
+    function go(){try{var d=h('div',{style:'display:none'});document.body.appendChild(d);window.turnstile.render(d,{sitekey:sk,size:'invisible',callback:function(t){cb(t)},'error-callback':function(){cb(null)}});}catch(e){cb(null)}}
+    if(window.turnstile) return go(); var s=h('script',{src:'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit',async:''});s.onload=go;s.onerror=function(){cb(null)};document.head.appendChild(s);}
+  var CR=/suicid|kill(ing)? myself|hurt(ing)? myself|self[-\s]?harm|want to die|end it all|end my life|better off dead|better off without me|can'?t go on|overdose|abus|not safe at home|in danger|don'?t want to (be here|be alive|live|wake up)/i;
+  var CRISIS={title:'Please reach a person right now',lines:['If you are thinking about ending your life or hurting yourself, call or text 988 (the Suicide & Crisis Lifeline, free, any time, in the U.S.).','If you or someone else is in immediate danger, call 911.',"We're coaches. This is beyond what we do, and you deserve someone who can help right now."],links:[{label:'Call or text 988',href:'tel:988'},{label:'Chat at 988lifeline.org',href:'https://988lifeline.org/'},{label:'Call 911',href:'tel:911'}]};
+  function ask(text){if(CR.test(text||''))return crisis(CRISIS);thinking();ts(function(token){
+    fetch('/api/guide',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({answers:S.answers,text:text,turn:S.turn,turnstile:token,session:S.session})})
+      .then(function(r){return r.json()}).then(show).catch(function(){show({type:'reply',text:"Thanks for putting that into words. The next step is yours below.",key:null,offer:'call',end:true})});});}
+  function show(r){if(r.session)S.session=r.session; if(r.type==='crisis')return crisis(r); if(r.type==='stop')return stop(r.text); if(r.type==='offer'){if(r.offer)S.offer=r.offer;return offer();}
+    if(r.offer)S.offer=r.offer; S.last=r; S.replies++; S.turn++;
+    var more=!r.end && S.replies<3, ta=h('textarea',{class:'vg-in',maxlength:'240',placeholder:'Add one more line (optional)'});
+    var nodes=[r.text?say(r.text,"Russ's AI guide"):null,keyCard(r.key)];
+    if(more){nodes.push(ta,h('div',{class:'vg-row'},[btn('Add this',function(){if(ta.value.trim()){S.text=(S.text+' '+ta.value).trim();ask(ta.value)}}),btn("I'm ready",offer,true)]));}
+    else nodes.push(btn("What's next",offer));
+    draw(nodes);}
+  function offer(){S.step='offer';var o=S.offer==='week';
+    draw([say(o?"The free week is a good place to start: a short Key every morning and evening for seven days, from a real coach.":"The next step is a free 15-minute call with Russ himself. Pick a time below.","Russ's AI guide"),
+      o?h('a',{class:'vg-btn',href:WEEK,text:'Start my free week'}):h('iframe',{class:'vg-cal',src:CAL,title:'Book a free 15-minute call',loading:'lazy'}),
+      o?btn('Or book a free 15-minute call',book,true):null, sendForm()]);}
+  function book(){draw([h('iframe',{class:'vg-cal',src:CAL,title:'Book a free 15-minute call'}),btn('Back',offer,true)]);}
+  function sendForm(){var n=h('input',{class:'vg-in',style:'min-height:0',placeholder:'First and last name',autocomplete:'name'}),e=h('input',{class:'vg-in',style:'min-height:0',type:'email',placeholder:'Email',autocomplete:'email'}),p=h('input',{class:'vg-in',style:'min-height:0',type:'tel',placeholder:'Mobile (optional)',autocomplete:'tel'}),c=h('input',{type:'checkbox'}),msg=h('p',{class:'vg-fine'});
+    return h('div',{style:'margin-top:16px;border-top:1px solid var(--vline);padding-top:14px'},[h('p',{text:'Want Russ to see this before you talk? (optional)'}),n,e,p,h('label',{class:'vg-chk'},[c,'OK to text me about my call. Reply STOP any time.']),
+      btn('Send this to Russ',function(){msg.textContent='Sending…';fetch('/api/guide-send',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name:n.value,email:e.value,phone:p.value,textOk:c.checked,answers:S.answers,text:S.text,key:S.last&&S.last.key&&S.last.key.name,offer:S.offer})}).then(function(r){return r.json()}).then(function(j){msg.textContent=j.ok?(j.dryRun?'Preview only: nothing was sent.':'Sent. Russ will read it before your call.'):(j.error||'Please check your name and email.')}).catch(function(){msg.textContent='That didn’t go through. You can still book above.'})},true),msg,h('p',{class:'vg-fine',text:PRIVACY})]);}
+  function open(){panel.hidden=false;launch.hidden=true;if(S.step==='age')age();}
+  function close(){panel.hidden=true;launch.hidden=false;}
+  launch.addEventListener('click',open);document.getElementById('vg-close').addEventListener('click',close);
+  root.querySelector('[data-go="book"]').addEventListener('click',function(){S.step='offer';book();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden)close();});
+})();
+</script>
