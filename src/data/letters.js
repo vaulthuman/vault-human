@@ -8852,5 +8852,73 @@ export const letters=[
   "iso": "2026-11-09",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "leave-the-triangle",
+  "title": "Leave the triangle",
+  "dek": "Two days ago Harriet Lerner promised that the man she learned from would get his own letter.",
+  "day": 179,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Two days ago Harriet Lerner promised that the man she learned from would get his own letter. Here he is. Murray Bowen was a psychiatrist from Waverly, Tennessee, the eldest of five children in a town where his family had lived for generations, and he gave the rest of us a way to see what a family actually is. He was born in 1913, took his medical degree at Tennessee in 1937, meant to be a surgeon, and came out of five years of Army service in the Second World War wanting to understand people instead. He trained at the Menninger Clinic in Topeka, and in 1954 he went to the National Institute of Mental Health and did something nobody had done: he admitted whole families to live on a research ward for months, parents alongside their grown and very ill children, and watched. What he saw was that no one in a family was sick alone. Anxiety moved through the house like weather. In 1959 he went to Georgetown, where he taught until his death in 1990, and in 1978 he gathered thirty years of papers into <em>Family Therapy in Clinical Practice</em>."
+   },
+   {
+    "k": "",
+    "t": "The piece of Bowen that is today's key is the triangle. Two people under strain, he found, almost never stay two. When the tension between them gets high enough, one of them reaches for a third, a child, a mother-in-law, a friend who gets the phone call, a bottle, a job, and the strain drains into that third point. The two feel better. Nothing is solved. Bowen said the two-person relationship is unstable and the triangle is the smallest stable unit of human life, which is why every family has them, and why you can usually name yours in a minute. The parent who complains to you about the other parent. The sibling you both talk about but never to. The grievance that is really about someone who isn't in the room."
+   },
+   {
+    "k": "",
+    "t": "His answer was a word he called differentiation of self: the ability to stay in warm contact with the people you came from while keeping your own mind, so that their anxiety doesn't become your instructions. In 1967 he did the thing himself. At a research conference he presented a long paper about an anonymous family that the room slowly realized was his own; he had gone home to Waverly, written letters that put the family's unspoken alliances on the table, and then stayed, calm, in the room, refusing every invitation to take a side. He said afterward that it was the most useful thing he had done in his own life, and it became the heart of his training."
+   },
+   {
+    "k": "",
+    "t": "A fair word: Bowen built a theory from close observation, not from trials, and the research that has followed is mostly questionnaire studies that find what he'd have expected. The practice stands without the scale."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the circle you were born into is the one you carry into every other. I work in an estate and elder law firm, and I have watched a family's oldest triangle arrive in a conference room a generation after it was formed, still looking for a third point. Vault Human coaches and doesn't treat; if the pattern has you by the throat, the door is a therapist trained in Bowen family systems."
+   }
+  ],
+  "n": 268,
+  "date": "November 10, 2026",
+  "iso": "2026-11-10",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "eat-from-one-bowl",
+  "title": "Eat from one bowl",
+  "dek": "In Senegal, at midday, a family sits on the floor around a single wide bowl of thieboudienne, rice cooked red in tomato with a whole fish and vegetables set on top,…",
+  "day": 179,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In Senegal, at midday, a family sits on the floor around a single wide bowl of thieboudienne, rice cooked red in tomato with a whole fish and vegetables set on top, and eats from it together with the right hand, each person working the wedge of the bowl in front of them. The mother breaks the fish and pushes the best pieces toward the guest and the children. In December 2021 UNESCO put that dish, ceebu jën, on its list of the world's living heritage, and the Wolof word that goes with it is teranga, which means roughly that a stranger at your door is fed first and asked questions later. Today's key is the table that bowl sits on, the West African one, and what the rest of the world ate once it left."
+   },
+   {
+    "k": "",
+    "t": "Start with the grains. Fonio is a tiny millet grown in the Sahel for thousands of years, one of the oldest cultivated cereals in Africa, ready in six to eight weeks on soil that will grow little else, and it cooks in about five minutes; the Senegalese chef Pierre Thiam, who brought it to American shelves, likes a saying from the Bambara that fonio never embarrasses the cook. Beside it stand pearl millet and sorghum, and African rice, a separate species from the Asian one, domesticated in the bend of the Niger some three thousand years ago. Then the yam, the real one, the great tuber of the Nigerian yam belt, pounded into fufu, with a festival for its harvest; then black-eyed peas, which are a West African bean; okra; the leaves of cassava, amaranth, bitterleaf and jute cooked into soups; peanuts, which arrived from South America and were adopted whole; red palm oil from a tree native to the coast; fish, smoked and dried; a little meat, on the feast day. In 2011 the nonprofit Oldways gathered a committee of cooks, nutritionists and historians and drew that table as the African Heritage Diet pyramid, greens and tubers and beans at the wide bottom, meat and sweets at the narrow top. The point they were making was plain: this is what the ancestors of the African diaspora ate before sugar and refined flour, and much of what went wrong with health in the diaspora arrived with the change."
+   },
+   {
+    "k": "",
+    "t": "The table crossed the ocean. Okra, black-eyed peas, rice, sesame and watermelon came through the Middle Passage with the people carried across it against their will, and from them came gumbo, whose name is a Bantu word for okra, Hoppin' John, Carolina red rice, which is jollof with a sea between. The geographer Judith Carney spent a book, <em>Black Rice</em> in 2001, showing that the rice plantations of the Carolinas ran on West African knowledge, not just West African labor."
+   },
+   {
+    "k": "",
+    "t": "A fair word. Red palm oil is about half saturated fat and the evidence on it is mixed; a spoonful for color is the old way, not a cupful. The modern West African kitchen leans on bouillon cubes, and salt is the enemy of a region, and a diaspora, with some of the highest blood pressure in the world; if yours runs high, that conversation belongs with your physician. Oldways' own six-week cooking class has been studied, but as before-and-after measurements, not a trial. Vault Human coaches and doesn't treat."
+   },
+   {
+    "k": "",
+    "t": "The catalog had no door for this key, so here is a real one: a Senegalese, Nigerian or Ghanaian restaurant in your city, where you can ask what the cook's mother made, and, if one runs near you, Oldways' A Taste of African Heritage class, taught by volunteers in church halls and libraries. I spent a decade in restaurants in every role, and the one bowl in the middle of the floor was never on a menu I worked; it may be the whole lesson of this chamber in a single dish."
+   }
+  ],
+  "n": 269,
+  "date": "November 10, 2026",
+  "iso": "2026-11-10",
+  "month": "November 2026",
+  "chamber": 11
  }
 ];
