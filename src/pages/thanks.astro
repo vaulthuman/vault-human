@@ -1,6 +1,6 @@
 ---
 // https://www.vaulthuman.com/thanks — after the /life-coach and /start forms. 11/5 night: plain words, matches /life-coach (15-min call, $99 after day 7, link to the Day 1 video). 11/6: added "A person, not an app" film (Russ's audio) above the free call.
-// The one call to action here is the free call. The Google Ads lead conversion fires on load.
+// The one call to action here is the free call. The Google Ads lead conversion fires only after a real form submit (sessionStorage vh_lead set by /start, /life-coach, vh-capture.js; IT 11/10).
 const title = 'You\'re in — Vault Human';
 const desc = 'Your free week with Russ has started.';
 ---
@@ -21,7 +21,7 @@ const desc = 'Your free week with Russ has started.';
   <script is:inline>
     window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
     gtag('js',new Date());gtag('config','AW-18371546487');gtag('config','G-B2NDY58EKD');
-    gtag('event','conversion',{send_to:'AW-18371546487/r4eECOKGw9wcEPeanrhE'});
+    try{if(sessionStorage.getItem('vh_lead')==='1'){sessionStorage.removeItem('vh_lead');gtag('event','conversion',{send_to:'AW-18371546487/r4eECOKGw9wcEPeanrhE'});}}catch(_){}
   </script>
   <style is:inline>
     :root{--bg:#141A16;--bg2:#1A2420;--ink:#F1EDE4;--soft:#CFC9BC;--mute:#8E9A90;--acc:#C9A24A;--green:#8FA67E;--line:rgba(241,237,228,.14);--disp:'Bebas Neue',Inter,sans-serif}
@@ -147,7 +147,7 @@ const desc = 'Your free week with Russ has started.';
     <h2>Want to talk first? A free call with Russ</h2>
     <p>Fifteen minutes, no cost, no obligation. Pick any time that suits you below.</p>
     <div class="cal"><div class="calendly-inline-widget" data-url="https://calendly.com/vaulthuman/free-15?hide_gdpr_banner=1&hide_landing_page_details=1&hide_event_type_details=1&background_color=1a2420&text_color=f1ede4&primary_color=c9a24a"></div></div>
-    <p class="ready">Ready now? <a id="join" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Start your membership</a>.</p>
+    <p class="ready">Ready now? <a id="join" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Add your card and keep going</a>: free through day 7, then $99 a month.</p>
   </div></section>
 
   <footer><a href="https://www.vaulthuman.com/">vaulthuman.com</a> · <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> · <a href="tel:+18888332510">(888) 833-2510</a><br/>© 2026 Vault Human, LLC · Coaching, not therapy. <a href="/privacy/">Privacy</a>. Not legal, medical, financial or therapeutic advice.</footer>
