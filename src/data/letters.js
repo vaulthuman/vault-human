@@ -8920,5 +8920,39 @@ export const letters=[
   "iso": "2026-11-10",
   "month": "November 2026",
   "chamber": 11
+ },
+ {
+  "slug": "keep-your-light",
+  "title": "Keep your light",
+  "dek": "\"Caring for myself is not self-indulgence, it is self-preservation, and that is an act of political warfare.\"",
+  "day": 180,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"Caring for myself is not self-indulgence, it is self-preservation, and that is an act of political warfare.\" Audre Lorde wrote that line in a journal she kept while she was dying slowly of cancer and living fully anyway, and nearly every use of the words self-care you hear today, the serious and the silly alike, descends from it. Today's key is what she meant, which is not what the words have come to mean."
+   },
+   {
+    "k": "",
+    "t": "She was born in Harlem in February 1934, the youngest of three daughters of parents from Barbados and Grenada, so nearsighted as a small child that she was legally blind, and so late to talk that she learned to read and to speak at about the same time; she said afterward that as a girl she answered questions by reciting poems. Hunter College, a library degree from Columbia, years as a librarian; a marriage and two children; a first book of poems in 1968, the year she went to teach at Tougaloo College in Mississippi and found the work of her life. She described herself in a sentence she never shortened: \"Black, lesbian, mother, warrior, poet.\" In 1978 she had a mastectomy and wrote <em>The Cancer Journals</em> about it rather than hiding it. In 1984, teaching for a term in Berlin, she learned the cancer had reached her liver. She declined the biopsy she was urged to have at once, read everything she could find, chose her own doctors, and kept a journal for three years that became the title essay of <em>A Burst of Light</em> in 1988. It won an American Book Award. She died in St. Croix in November 1992, at fifty-eight, having taken a new name that means, she said, she who makes her meaning known."
+   },
+   {
+    "k": "",
+    "t": "Read the sentence again and notice what it is not. It is not permission to spend a Saturday on yourself. It was written by a woman carrying an illness, a movement and a family at once, who had worked out that if she let herself be used up there would be no one left to do the carrying. Self-care, in the sentence that started it, is what keeps you able to show up. The rest for the sake of the work. The meal so you can be at the table. She wrote in another essay that your silence will not protect you, and the two belong together: say what is true, and keep yourself well enough to go on saying it."
+   },
+   {
+    "k": "",
+    "t": "A fair word: Lorde was a poet, not a researcher, and the sentence is a conviction, not a finding. The practice holds anyway."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because a circle only works if the people in it are still standing. I spent a decade in restaurants in every role, and the cook who skipped staff meal to keep working was never the strong one in the rush; the strong one had eaten. Vault Human coaches and doesn't treat; if what you have been calling tired has lasted months, the door is your physician, and a therapist if the weight is the kind that lives in the mind."
+   }
+  ],
+  "n": 270,
+  "date": "November 11, 2026",
+  "iso": "2026-11-11",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
