@@ -8954,5 +8954,73 @@ export const letters=[
   "iso": "2026-11-11",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "be-whole-not-perfect",
+  "title": "Be whole, not perfect",
+  "dek": "Marion Woodman taught high school English in London, Ontario, for more than twenty years before she became the analyst whose books women passed hand to hand through…",
+  "day": 181,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Marion Woodman taught high school English in London, Ontario, for more than twenty years before she became the analyst whose books women passed hand to hand through the 1980s, and she said more than once that she had spent the first half of her life trying to be perfect and that it had very nearly killed her. Today's key is what she found on the far side of that."
+   },
+   {
+    "k": "",
+    "t": "She was born in 1928, a minister's daughter in small-town Ontario, and she loved the theatre and the body's way of knowing before she had words for either; her students put on plays, and she drove them hard, as she drove herself. By her own account she was a woman who ran on will: the right weight, the right lesson, the right marriage, the right everything, and underneath it a body she was not listening to, fed too little and called it discipline. In her account a trip to India in her forties turned into a grave illness, and in a room where she expected to die she stopped fighting; something in her let go, and she lived. She went to Zurich, trained at the Jung Institute, and came home an analyst. <em>Addiction to Perfection</em> came out in 1982, <em>The Pregnant Virgin</em> in 1985. With the voice teacher Ann Skinner and the dancer Mary Hamilton she built workshops where women worked through the body and not only the talk, and with Robert Bly she wrote about the Russian tale of the maiden king. When cancer came in 1993 she kept a journal of it and published it as <em>Bone</em>, as plainly as she had written everything else. She died in London, Ontario, in July 2018, at eighty-nine."
+   },
+   {
+    "k": "",
+    "t": "Perfection, she taught, is a standard with no body in it. It lives in the head, measures everything, is never satisfied, and gets its way by starving whatever is actually there: hunger, tiredness, anger, wanting, the plain mess of being a creature. Her word for the alternative was wholeness, and it is not a lower bar. A whole life has room for the part of you that fails, eats, weeps, wants and does not know. The pregnant virgin of her second title is not a figure from church; in the old sense of the word a virgin is a woman who belongs to herself, and pregnant means she is carrying something new that has not been born yet and cannot say what it is. That in-between, she said, is where real change lives, and the perfectionist cannot bear to stand in it, because nothing there can be graded."
+   },
+   {
+    "k": "",
+    "t": "A fair word: Woodman was a Jungian analyst working from dreams, the body and her own life, not a researcher, and nothing here was tested in a trial. The practice stands without the theory."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the perfectionist is alone by definition; no one can be let close enough to see the flaw. I spent a decade in restaurants in every role, and the cooks who demanded a flawless plate every time were not the ones the line trusted. The ones the line trusted knew which flaw the guest would never taste, and sent the plate. Vault Human coaches and doesn't treat; if the standard has reached your plate or your scale, the door is a physician and a therapist who treats eating disorders, and if perfect has become a way of life, a therapist, full stop."
+   }
+  ],
+  "n": 271,
+  "date": "November 12, 2026",
+  "iso": "2026-11-12",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "share-the-catch",
+  "title": "Share the catch",
+  "dek": "In the summer of 1970 two Danish doctors, Hans Olaf Bang and Jørn Dyerberg, went by ship to the Uummannaq district of northwest Greenland to draw blood from Inuit who…",
+  "day": 181,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In the summer of 1970 two Danish doctors, Hans Olaf Bang and Jørn Dyerberg, went by ship to the Uummannaq district of northwest Greenland to draw blood from Inuit who still ate the way their grandparents had: seal, whale, fish and birds, much of it raw, frozen or fermented, almost none of it from a plant. What they found, published in <em>The Lancet</em> in 1971, was blood fat lower than in Danes eating a Danish diet, and on later trips they worked out that the fat in seal and whale was heavy with what we now call omega-3. The oily-fish advice on every clinic wall, and the fish-oil capsule in half the medicine cabinets in America, come from those trips. Today's key is the table they visited, which is older and wiser than the capsule."
+   },
+   {
+    "k": "",
+    "t": "The Inuit call it country food. Seal, with its liver and blubber; whale skin and blubber, maktaaq, chewed raw and so rich in vitamin C that a people with no fruit did not get scurvy; caribou; Arctic char and whitefish, often eaten frozen, cut in slices; eggs and birds in season; berries and a few greens in the short summer; meat and fish left to ferment in a skin or under stones. Eaten raw or barely cooked, because heat destroys the vitamin C and fuel was scarce. It is the most animal-based table on this list, and the people who ate it were lean and strong on it for thousands of years."
+   },
+   {
+    "k": "",
+    "t": "Here is the heart of the key. A seal was never only the hunter's. By custom the catch was divided through the camp by rules everyone knew, a young hunter's first seal given away entirely, the elders and the widowed fed first and not last, so that a good hunt meant every household ate. That custom is alive: in Nunavut and Greenland today a hunter's share still moves through community freezers and kitchen doors to relatives, elders and whoever asks. The rule underneath is as plain as a rule gets: no one eats while a neighbor is hungry."
+   },
+   {
+    "k": "",
+    "t": "A fair word, and it is a long one. Bang and Dyerberg's claim that the Inuit had little heart disease rested on death records from a region with few doctors, and a 2014 review in the <em>Canadian Journal of Cardiology</em> found no good evidence that Inuit heart-disease rates were ever lower than anyone else's. Omega-3 has had a mixed run in trials since, some positive, several that found nothing. In 2015 a study in <em>Science</em> found that Greenland Inuit carry gene variants that change how they handle fat, which means their results may not be yours. Arctic marine mammals carry mercury and industrial chemicals that drifted north. And the table itself is under strain: store food and sugar have arrived, diabetes with them, and Nunavut's rates of households without enough food are among the highest in Canada. If you take a blood thinner, talk to your physician before fish oil in any dose. Vault Human coaches and doesn't treat."
+   },
+   {
+    "k": "",
+    "t": "I spent a decade in restaurants in every role, and the one rule of this table I never saw on a line is the one worth carrying home: the cook eats last."
+   }
+  ],
+  "n": 272,
+  "date": "November 12, 2026",
+  "iso": "2026-11-12",
+  "month": "November 2026",
+  "chamber": 11
  }
 ];
