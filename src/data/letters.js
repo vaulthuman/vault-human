@@ -9022,5 +9022,39 @@ export const letters=[
   "iso": "2026-11-12",
   "month": "November 2026",
   "chamber": 11
+ },
+ {
+  "slug": "know-who-s-driving",
+  "title": "Know who's driving",
+  "dek": "Jean Shinoda Bolen was a psychiatrist and Jungian analyst in San Francisco when she noticed that the women in her consulting room kept asking the same question in…",
+  "day": 182,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Jean Shinoda Bolen was a psychiatrist and Jungian analyst in San Francisco when she noticed that the women in her consulting room kept asking the same question in different words: why do I want what I want? One wanted a child more than the career she had built. One wanted the career and felt a stranger around babies. One wanted a husband so badly she had made herself small for three of them. One wanted the woods and her own company, and had been told all her life that something was wrong with her. The theory she had been trained in said a woman's wants came from her upbringing or her hormones. Bolen thought there was something older underneath, and in 1984 she wrote <em>Goddesses in Everywoman</em> to give it names. Today's key is that naming."
+   },
+   {
+    "k": "",
+    "t": "She was born in Los Angeles in 1936, a Japanese American girl in a country that went to war with Japan when she was five, and by her own account her family moved from town to town through those years. She took her medical degree at the University of California in San Francisco in 1962, trained in psychiatry, became an analyst at the Jung Institute there, and taught psychiatry at the university for decades. Her idea is simple to say. The Greeks put seven goddesses on Olympus, and each one is a pattern that still runs in women, whether or not anyone believes in Olympus. Artemis, the hunter, who belongs to herself, her sisters and the wild. Athena, the strategist, who thinks clearly and loves the work. Hestia, keeper of the hearth, at home in solitude and the ordinary. Hera, who lives for the marriage. Demeter, who lives for the children. Persephone, the daughter, open and unformed, who goes down into the dark and comes back knowing something. And Aphrodite, who turns her whole attention on whatever she loves and changes it. Gloria Steinem wrote the foreword, and women passed the book hand to hand, because for the first time the thing they had been apologizing for had a name and a lineage. Five years later she wrote <em>Gods in Everyman</em> so the men would have theirs."
+   },
+   {
+    "k": "",
+    "t": "Here is the part that is ours. Which goddess is at the wheel is not a verdict; it is a fact to notice. There is a part of a woman, Bolen says, that can watch the Hera in her grip tighter as the marriage strains, or the Athena who has not cried in years, and ask whether that one should be driving today. A pattern you can see is a pattern you can choose. The woman who knows she is mostly Artemis can stop treating her want for solitude as a flaw, and can treat her Demeter, when a child arrives, as a guest she will have to learn to host. And a man who can see which goddess is speaking in his wife, his daughter or his mother stops asking why she can't be more like him."
+   },
+   {
+    "k": "",
+    "t": "A fair word: archetypes are a lens, not a measurement. Nothing here was tested, no questionnaire would survive the attempt, and Bolen does not claim otherwise. The practice holds without the Greeks."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because recognition is how circles form; Bolen gave her later years to exactly that, writing <em>The Millionth Circle</em> in 1999 and arguing that small circles of women who see each other clearly change the world from the kitchen table out. I spent a decade in restaurants in every role, and every good floor I worked ran because the women on it were let be what they were, the one who ran the room like a general and the one who kept the back of the house warm, and it came apart the week a manager tried to make them all the same."
+   }
+  ],
+  "n": 273,
+  "date": "November 13, 2026",
+  "iso": "2026-11-13",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
