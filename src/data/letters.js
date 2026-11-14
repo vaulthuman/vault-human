@@ -9056,5 +9056,73 @@ export const letters=[
   "iso": "2026-11-13",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "drop-the-mask",
+  "title": "Drop the mask",
+  "dek": "Ten days ago Robert Bly's letter was about a story.",
+  "day": 183,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Ten days ago Robert Bly's letter was about a story. Today's key is about what happened when men who had read that story decided a story was not enough and went looking for a room."
+   },
+   {
+    "k": "",
+    "t": "In 1985, in Milwaukee, three men built one. Rich Tosi had been a Marine, Bill Kauth was a therapist, Ron Hering taught at the university, and the weekend they put together became the New Warrior Training Adventure, and the organization around it the ManKind Project. Men arrive on a Friday not knowing the schedule, hand over their watches and phones, and spend two days being asked, by other men, what they actually feel, until the answer stops being \"fine.\" Then comes the part that matters more than the weekend: they go home to a small group that meets every week or two, for years, and does the same thing on an ordinary Tuesday. By the Project's own count tens of thousands of men have taken the weekend. Two younger groups grew from the same soil. Sacred Sons began in 2016 with weekends and large gatherings it calls Convergence. EVRYMAN began in 2017, started by a television producer named Dan Doty and three partners, and set out to be a men's group with no mystery about it, run in living rooms and on video calls. Their words differ. The practice underneath is one practice: a man says where he is, in his body, in a sentence, and the men around him do not fix it, argue with it or change the subject."
+   },
+   {
+    "k": "",
+    "t": "Here is the part that is ours. Most men carry a face for the world and have no room where they can set it down, and the face gets heavy in a way they stop noticing. A circle is a room with one rule: here, you don't have to carry it. One man says \"I'm afraid, and I've been afraid for a year,\" and six men nod, and something held for a year by one person is held by seven. Men who have sat in such a room will tell you the strangest thing about it is how fast it works, and how long they waited."
+   },
+   {
+    "k": "",
+    "t": "A fair word, and an honest one. The evidence is a handful of small survey studies, mostly done with the groups' help; the practice is older than the research and stands without it. And the weekend is not for everyone. In 2005 a young Houston man took his own life in the days after a Texas weekend; his family sued the Project and the case was settled. A man in crisis belongs with a clinician before any weekend. Vault Human coaches and doesn't treat; if what you are carrying is depression, or the wish to not be here, the door is a therapist, today, and in the United States you can call or text 988."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the mask comes off in company or not at all. I spent a decade in restaurants in every role, and a kitchen full of men will talk about everything, all night, except what is happening inside them. The initiation weekend is not ours to run; for that door the ManKind Project is the one with forty years on it. The weekly seat we can point to anywhere: an EVRYMAN group, a ManKind integration group, or any room of men who meet on purpose and keep the one rule."
+   }
+  ],
+  "n": 274,
+  "date": "November 14, 2026",
+  "iso": "2026-11-14",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "cook-the-three-sisters",
+  "title": "Cook the three sisters",
+  "dek": "Plant corn in a low mound. When it stands a hand high, plant beans at its feet, and they will climb the stalk as it rises.",
+  "day": 183,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Plant corn in a low mound. When it stands a hand high, plant beans at its feet, and they will climb the stalk as it rises. Then plant squash around the edge and let its broad leaves spread. The corn gives the beans a pole. The beans, through the bacteria in their roots, pull nitrogen from the air and feed the soil the corn is draining. The squash shades the ground, holds the water in, keeps the weeds down, and its prickly stems turn the raccoons away. Eaten together the three make a meal a body can live on: the corn's starch, the beans' protein, the squash's flesh and oily seeds. The Haudenosaunee called them the sustainers, and the farming peoples of this continent grew them together for thousands of years before anyone from Europe saw a cornfield. Today's key is their table, and the people setting it again."
+   },
+   {
+    "k": "",
+    "t": "Corn was bred from a wild grass in the valleys of southern Mexico some nine thousand years ago; squash seeds from a cave in Oaxaca are older still. The people who grew corn learned early to soak it in water made alkaline with wood ash or limestone, which loosens the hull, frees a vitamin the kernel otherwise keeps to itself, and adds calcium; masa, the tortilla and hominy all come from that. Where corn traveled without the knowledge, to the mills of the American South, a wasting disease called pellagra followed, and it took a public-health doctor, Joseph Goldberger, until 1914 to show it was a lack in the diet and not a germ. The old kitchen knew what the new one had to rediscover. To the north the Anishinaabe still harvest wild rice, manoomin, from canoes in late summer, one poling and one knocking the grain into the hull with two sticks; their migration story told them to travel until they found the food that grows on water. On the Plains tens of millions of bison fed a people until the herds were cut to a few hundred animals in a few decades of the 1800s. Since 1992 a council of tribes has been putting buffalo back on tribal land, and some eighty tribes now keep herds."
+   },
+   {
+    "k": "",
+    "t": "The man who put this table back on a menu is Sean Sherman, Oglala Lakota, raised on the Pine Ridge reservation, who started in restaurant kitchens at thirteen and came up through them the way I did. He founded The Sioux Chef in Minneapolis in 2014; his 2017 cookbook won the James Beard award for best American cookbook the next year. His kitchen keeps one rule, no wheat flour, dairy, cane sugar, beef, pork or chicken, nothing that arrived with the colonists, and what is left is corn, beans, squash, wild rice, bison, venison, fish, duck, berries, maple, sunflower, cedar and sage. In 2021 he opened Owamni on the Mississippi, cooking only that, and it was named the country's best new restaurant the following spring. His nonprofit trains cooks from the tribes to open kitchens of their own. The point, he has said, is not to eat like 1491; it is to go forward with what grew here."
+   },
+   {
+    "k": "",
+    "t": "A fair word. American Indian and Alaska Native adults have the highest rate of diabetes of any group in the United States, and the cause is not the three sisters but a century of rations, flour, lard and sugar, and the frybread usually said to have been born of them. If your blood sugar is a question, that conversation belongs with your physician and a dietitian; Vault Human coaches and doesn't treat. The food itself asks nothing of you but a pot."
+   },
+   {
+    "k": "",
+    "t": "The catalog had no door for this key, so here is a real one: a Native-owned restaurant or food truck in your region, Owamni if you are ever in Minneapolis, and a bag of hand-harvested manoomin bought from a tribal harvester rather than the paddy-grown kind at the supermarket. I spent a decade in restaurants in every role and never once saw this continent's own food on a menu I worked. That is changing, and your grocery money can help it change."
+   }
+  ],
+  "n": 275,
+  "date": "November 14, 2026",
+  "iso": "2026-11-14",
+  "month": "November 2026",
+  "chamber": 11
  }
 ];
