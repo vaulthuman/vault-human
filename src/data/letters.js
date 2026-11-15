@@ -9124,5 +9124,39 @@ export const letters=[
   "iso": "2026-11-14",
   "month": "November 2026",
   "chamber": 11
+ },
+ {
+  "slug": "say-it-back",
+  "title": "Say it back",
+  "dek": "\"We are born in relationship, we are wounded in relationship, and we can be healed in relationship.\"",
+  "day": 184,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"We are born in relationship, we are wounded in relationship, and we can be healed in relationship.\" Harville Hendrix has been saying some version of that sentence since the 1980s, and it holds the whole of his teaching in one line. Today's key is the method he and his wife, Helen LaKelly Hunt, built on it."
+   },
+   {
+    "k": "",
+    "t": "Hendrix was born in rural Georgia in 1935, the youngest of a large family, and by his own account his father died before he was a year old and his mother when he was six; his older sisters raised him. He trained as a minister and then as a pastoral counselor, took a doctorate at the University of Chicago, and was teaching therapists in Dallas when his own marriage ended in divorce in the mid-1970s, after sixteen years. He has said that the shame of it, a marriage counselor who could not keep his marriage, sent him to the question he spent the rest of his life on: why do two people who chose each other in love end up hurting each other in exactly the places where they are most tender? Helen LaKelly Hunt, a Dallas philanthropist who would later take her own doctorate and give her working life to funds run by and for women, met him in 1977; they married in 1982 and worked the answer out together. In 1988 they put it in <em>Getting the Love You Want</em>. Oprah Winfrey gave the book a show, had them back again and again, and it sold in the millions. The therapy they founded is called Imago, from the Latin for image, and therapists trained in it now work in dozens of countries."
+   },
+   {
+    "k": "",
+    "t": "The idea is this. Each of us carries an image, put together in childhood out of the people who raised us, of what love feels like, their warmth and their failures in one picture. We fall for the person who matches it. That is why the one you chose turns out to have, uncannily, the very trait that hurt you young: the distance, the temper, the way of not quite listening. Hendrix and Hunt say the power struggle that follows the romance is not the marriage failing. It is the marriage arriving at its real work, because the partner who presses on the old wound is the one standing in the right place to help it heal. The tool for that is a conversation with rules, which they call the Imago dialogue. One person speaks, in short pieces. The other does not answer; they say it back, as close to word for word as they can, and ask, \"Did I get it? Is there more?\" Only when the speaker has nothing left does the listener say, \"That makes sense, because…\" and then, \"I imagine you might feel…\" Then they switch. It is slow, it feels foolish for the first five minutes, and couples who do it find that being heard all the way to the end is a thing they had not had in years."
+   },
+   {
+    "k": "",
+    "t": "A fair word: the evidence is a few small studies, most of them run by people who teach the method, and the couple's later pledge of \"zero negativity\" is a discipline, not a finding. The dialogue holds without the theory of the image."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because, in this teaching, the person across the table is not the obstacle to your growth; they are the door to it. I spent a decade in restaurants in every role, and the one habit that separated the servers you could trust from the ones you couldn't was the read-back: say the order back before you walk away, and the kitchen gets it right. A marriage is not a table, but the habit is the same. Vault Human coaches and doesn't treat; if the power struggle has gone on for years, the door is a couples therapist trained in Imago."
+   }
+  ],
+  "n": 276,
+  "date": "November 15, 2026",
+  "iso": "2026-11-15",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
