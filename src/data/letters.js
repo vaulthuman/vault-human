@@ -9158,5 +9158,73 @@ export const letters=[
   "iso": "2026-11-15",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "take-your-place",
+  "title": "Take your place",
+  "dek": "Bert Hellinger liked to say that a family is held together by a love that doesn't know it is love, and that most of what goes wrong in one is loyalty with the wrong…",
+  "day": 185,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Bert Hellinger liked to say that a family is held together by a love that doesn't know it is love, and that most of what goes wrong in one is loyalty with the wrong address. He was a German priest and then a therapist, and the method he gave the world in the 1990s is today's key, offered with more caution than most."
+   },
+   {
+    "k": "",
+    "t": "He was born Anton Hellinger in 1925 in Leimen, near Heidelberg, into a Catholic family, and by his own account his church youth group kept him out of the Hitler Youth until the army took him at seventeen. He was captured near the end of the war, held in a prisoner-of-war camp in Belgium, walked away from it, and came home to enter a missionary order. Ordained a priest, he was sent to South Africa and spent some sixteen years among the Zulu, learning the language, teaching, running schools. There, in the late 1960s, he sat in on group-dynamics training run by Anglican clergy and heard a question he never put down: which matters more to you, your ideals or people? He left the priesthood around 1971, went back to Germany, married, and trained in nearly everything the next twenty years offered: psychoanalysis, primal therapy, Gestalt, hypnotherapy, and the family work of Virginia Satir, whose letter came two weeks ago, and of Ivan Boszormenyi-Nagy, who had written about the invisible loyalties that bind one generation to the last. Out of all of it he made something of his own. A colleague, Gunthard Weber, took down his seminars and published them in 1993 as <em>Zweierlei Glück</em>, two kinds of happiness, and the method spread across Germany and far beyond. He died in 2019, at ninety-three."
+   },
+   {
+    "k": "",
+    "t": "Here is what a constellation is. In a room of strangers you say a sentence or two about what weighs on you. You choose people from the group to stand for your mother, your father, the brother who died, yourself, and you place them in the room by feel, facing where it seems they should face, as far apart as seems true. Then something happens that no one has fully explained: the people standing in say what they feel in those spots, and it often fits. The facilitator moves them, slowly, and gives them short sentences to say. \"I honor what was yours, and I leave it with you.\" \"I'm the little one; you are the big ones.\" Hellinger said every family runs on three orders. Everyone who belongs, belongs, including the dead, the divorced and the disgraced, and whoever is pushed out of the picture gets carried, blindly, by someone born later. Those who came first stand ahead of those who came after. And giving and taking have to balance. Take your own place, he said, your right size, no bigger than your parents and no smaller than your own life, and the weight you have been carrying for someone else turns out to have an owner."
+   },
+   {
+    "k": "",
+    "t": "A fair word, and this one is long. Hellinger worked in large public halls, said what he saw in a tone that allowed no argument, and said things about victims and the people who harmed them that many of his colleagues could not accept. In 2003 the German society for systemic and family therapy put out a statement distancing itself from his way of working, and he never answered it to their satisfaction. The evidence is thin: one randomized trial from Heidelberg, published in 2013 with 208 adults, found gains in well-being at four months and again at a year, run by researchers who believe in the work. Nobody knows why the stand-ins feel what they feel. Vault Human coaches and doesn't treat. If you go, go with a licensed family therapist who uses constellations as one tool among several and will see you afterward, not a weekend with a charismatic stranger and no follow-up; and if the family story has grief or harm in it, the door is a therapist first."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the oldest circle you stand in was drawn before you were born, and you cannot see your place in it alone. I work in an estate and elder law firm, and I have watched a family's arrangement show itself across a conference table, who sits where, who isn't named, the sibling everyone talks past, before a word is said about the will. The order is there whether or not anyone draws it."
+   }
+  ],
+  "n": 277,
+  "date": "November 16, 2026",
+  "iso": "2026-11-16",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "walk-for-your-food",
+  "title": "Walk for your food",
+  "dek": "Near a salt lake in northern Tanzania live the Hadza.",
+  "day": 185,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Near a salt lake in northern Tanzania live the Hadza. There are a thousand or so of them, and a few hundred still get most of their food the way our kind did for nearly all of its time on earth: the women walk out each morning with digging sticks and come back with tubers, berries and baobab fruit; the men go out with bows and poisoned arrows for meat, and climb for honey, often led to the hive by a small bird called the honeyguide that waits for its share of the comb. Camps of twenty or thirty people move with the seasons. Today's key is the last of the world's tables in this chamber, and it is less about what they eat than about how far they walk to eat it, and what happens to the food when they get home."
+   },
+   {
+    "k": "",
+    "t": "In 2012 an anthropologist named Herman Pontzer, with David Raichlen and Brian Wood, published a study of thirty Hadza adults that surprised nearly everyone. Using a tracer in drinking water that measures how many calories a body actually burns, they found that Hadza men and women, who walk and dig and carry for most of the day, burn about the same number of calories as office workers in Europe and America. Not more. The body, it seems, adjusts; it spends on movement and trims elsewhere, which is one reason an hour at the gym has never made anyone thin by itself. Then in 2017 the same team strapped heart monitors on Hadza adults and counted: about 135 minutes a day of moderate to vigorous activity, roughly fourteen times the American average, most of it walking, something like fifteen thousand steps, and the rest of the day light work, digging, carrying, pounding, building. Their blood pressure stayed low into old age, and the markers of heart-disease risk that climb with every decade here did not climb there. And when they rested, which they did for nearly as many hours a day as we do, they squatted or knelt, so that the muscles kept quietly working; Raichlen measured that too, in 2020. Katy Bowman said it in a Body letter months ago, move all day, not for an hour; the Hadza have been living it for longer than there has been a word for exercise."
+   },
+   {
+    "k": "",
+    "t": "Here is the part that belongs in the Sharing chamber. A Hadza hunter who brings down a large animal does not own it. The meat is carried into camp and divided until every hearth has some; a man who tried to keep his kill would be the strangest person anyone had ever met. Honey, which they love above everything, is harder to share and often eaten where it is found; the anthropologists note that too, honestly. But the big food, the food that took a day of walking, is everyone's. The walk is private. The table is not."
+   },
+   {
+    "k": "",
+    "t": "A fair word. Thirty people is a small study, and the finding that calories level out has been argued over since. The Hadza are not a museum; herders and farmers have taken much of their land, tourists arrive by jeep, and many families now eat maize for part of the year. And what they actually eat, mostly tubers, berries, baobab and honey with meat when the hunt goes well, looks nothing like the steak-and-bacon diet sold under the word primitive. If you have a heart condition or bad joints and you mean to double your walking, your physician first; Vault Human coaches and doesn't treat."
+   },
+   {
+    "k": "",
+    "t": "The catalog had no door for this key, and it needs none but your own two feet. I spent a decade in restaurants in every role, and the people I worked beside were on their feet from open to close, a Hadza day of steps on a tile floor; nobody counted them, the work did. From here the body keys turn from the tables of peoples to the fasts and food laws that living faiths keep, and a new chamber."
+   }
+  ],
+  "n": 278,
+  "date": "November 16, 2026",
+  "iso": "2026-11-16",
+  "month": "November 2026",
+  "chamber": 11
  }
 ];
