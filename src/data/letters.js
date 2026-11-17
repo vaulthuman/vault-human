@@ -9226,5 +9226,39 @@ export const letters=[
   "iso": "2026-11-16",
   "month": "November 2026",
   "chamber": 11
+ },
+ {
+  "slug": "grow-all-the-way-up",
+  "title": "Grow all the way up",
+  "dek": "Bill Plotkin has guided people into the wilderness for more than forty years, and the conclusion he came back with is blunt: most of us never finish growing up, and…",
+  "day": 186,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Bill Plotkin has guided people into the wilderness for more than forty years, and the conclusion he came back with is blunt: most of us never finish growing up, and the culture we live in is built so that we don't have to. He is a psychologist in Durango, Colorado, the founder of the Animas Valley Institute, and today's key is his map of a whole human life."
+   },
+   {
+    "k": "",
+    "t": "He did not begin outdoors. By his own account he was a research psychologist studying dreams and other states of mind, a professor, a psychotherapist, a rock musician and a whitewater river guide, and it was a solo fast in the Colorado mountains, in his late twenties, that ended the academic career and started the other one. In 1980 he founded the Institute, and since then he and his guides have taken thousands of women and men into the desert and the high country for the oldest practice there is: several days alone, without food, with the land as the only company, and then a return to people who are waiting to hear what you found. He learned the form of it from guides who had been reviving it since the 1970s, and he has never claimed to be anyone's shaman. In 2003 he put the practice in <em>Soulcraft</em>, with a foreword by the cultural historian Thomas Berry, and in 2008 he put the map in <em>Nature and the Human Soul</em>."
+   },
+   {
+    "k": "",
+    "t": "The map has eight stages, and he gave each one a place: the Innocent in the nest, the Explorer in the garden, the Thespian at the oasis, the Wanderer in the cocoon, the Apprentice at the wellspring, the Artisan in the wild orchard, the Master in the grove of elders, the Sage in the mountain cave. The first four are childhood and adolescence. The last four are adulthood and elderhood. His hard sentence is that in a culture organized around consuming and being looked at, nearly everyone stops at stage three, the Thespian, the one who is still working out how to be seen, and stays there into their sixties with a mortgage. Real adulthood, he says, begins when you have found what you alone are here to give to your people, and it is not something you decide; it is something you go out alone and listen for. He draws a line between spirit, which lifts you toward what everyone shares, and soul, which draws you down toward what only you are. Both matter. Almost all of the self-help on the shelf is about the first."
+   },
+   {
+    "k": "",
+    "t": "A fair word: this is a map drawn from decades of guiding, not a finding from research, and nobody has tested whether the stages are real or only useful. Fasting alone outdoors is not for everyone; if you have a medical condition, your physician first, and if what you are carrying is depression, the door is a therapist, not a mountain. Vault Human coaches and doesn't treat."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because, in this teaching, you grow up so that you have something to bring back to the circle, and a circle with no grown-ups in it has no elders either. I work in an estate and elder law firm, and I meet people in their eighties every week; some are old and some are elders, and the difference has nothing to do with the year on the birth certificate. The catalog had no door for this key. The real one is a guided fast with people who have run them for decades, Plotkin's Institute among them, and before that, the far simpler door below."
+   }
+  ],
+  "n": 279,
+  "date": "November 17, 2026",
+  "iso": "2026-11-17",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
