@@ -9260,5 +9260,77 @@ export const letters=[
   "iso": "2026-11-17",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "speak-their-language",
+  "title": "Speak their language",
+  "dek": "\"People tend to criticize their spouse most loudly in the area where they themselves have the deepest emotional need.\"",
+  "day": 187,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"People tend to criticize their spouse most loudly in the area where they themselves have the deepest emotional need.\" Gary Chapman wrote that in 1992 after twenty years of listening to married people, and if I could keep one sentence from his book it would be that one. Today's key is the rest of it."
+   },
+   {
+    "k": "",
+    "t": "Chapman was born in 1938 in China Grove, North Carolina, a small mill town, and has spent his whole working life as a Baptist pastor; by his own account he meant to be a missionary, studied anthropology on the way, and settled instead at a church in Winston-Salem, where he counseled couples for decades. He married Karolyn in 1961, and he has said plainly that their first years were hard: two people who loved each other and could not make the other one feel it. In his counseling room he kept hearing the same complaint in different clothes, \"I just don't feel loved,\" from people whose partners swore they were doing everything. So he went back through years of his notes and sorted what people were actually asking for. It came to five piles. Words of affirmation. Time, undivided. Gifts. Acts of service. Touch. He called them love languages, and in 1992 a small Chicago publisher put out <em>The Five Love Languages</em>. It sold slowly, then by word of mouth for years, reached the bestseller lists more than a decade after it came out, and has passed twenty million copies in some fifty languages."
+   },
+   {
+    "k": "",
+    "t": "The idea is simple enough to carry in a pocket. Each of us has a way we most readily hear \"I love you,\" and it is usually the way we most readily say it, so most of us spend years speaking our own language to someone who speaks another. He fixes the car and clears the gutters and cannot understand why she says he never shows love; she wanted an hour of his attention and got a clean gutter. Neither is wrong. They are speaking past each other. Chapman's picture is a tank: when it is full, the small things stay small, and when it has run dry, everything is a fight about something else."
+   },
+   {
+    "k": "",
+    "t": "Here is the part that is ours. Don't guess. Ask the person how they receive it, not how you like to give it, and then do that thing, on purpose, whether or not it comes naturally, because the part that doesn't come naturally is the part that makes it love instead of habit."
+   },
+   {
+    "k": "",
+    "t": "A fair word, and it matters. In 2024 three psychologists, Emily Impett, Haeyoung Gideon Park and Amy Muise, went through the research in <em>Current Directions in Psychological Science</em> and found little support for the book's three big claims: that each of us has one primary language, that there are exactly five, and that couples who match do better. What the studies do find is plainer: people who get all five, in some measure, are happier than people who don't, and the picture they offered in place of a language was a balanced diet. The online quiz is not a measurement. The practice holds without the theory: ask, listen, do."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because a circle is made of people who have learned each other's language. I spent a decade in restaurants in every role, and the regulars who came back were not the ones we gave the most to; they were the ones we had learned to give the right thing, the quiet table, the extra bread, the name remembered. Vault Human coaches and doesn't treat; if the tank has been empty for years and no one is asking, the door is a couples therapist."
+   }
+  ],
+  "n": 280,
+  "date": "November 18, 2026",
+  "iso": "2026-11-18",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "eat-what-is-fit",
+  "title": "Eat what is fit",
+  "dek": "The word kosher is Hebrew, kashér, and it means fit, or proper.",
+  "day": 187,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "The word kosher is Hebrew, kashér, and it means fit, or proper. It applies to more than food, but food is where the rest of the world learned it. For well over two thousand years Jews have kept a set of rules at every meal, built from a few verses in the Torah and from the rabbis who spent centuries working out what the verses meant. Yesterday the body letters finished with the tables of peoples. Today they turn to the food laws and fasts that living faiths keep, and this is the first."
+   },
+   {
+    "k": "",
+    "t": "The rules themselves come from the eleventh chapter of Leviticus and the fourteenth of Deuteronomy. Of the land animals, only those that both chew the cud and have a split hoof: cattle, sheep, goats, deer; not the pig, the camel or the rabbit. Of what lives in water, only what has fins and scales: no shellfish, no catfish, no eel. The Torah names the forbidden birds, mostly hunters and scavengers; chicken, duck, goose and turkey are eaten. Blood is not: an animal is slaughtered by a trained person with one swift cut from a knife that must be without a nick, and the meat is soaked and salted to draw out what remains. And three times the Torah says, \"You shall not boil a kid in its mother's milk,\" and from those nine words the rabbis built the rule most people know. Meat and dairy are not eaten together, cooked together or served from the same dishes; many households keep two sets of pots and plates, and wait after meat before milk, one hour, three or six, depending on where your grandparents came from. Fish, eggs, grain, fruit and vegetables are pareve, neither one, and go with either."
+   },
+   {
+    "k": "",
+    "t": "The Torah gives no reason beyond \"you shall be holy.\" Maimonides, in the twelfth century, suggested the forbidden foods were unwholesome, and most rabbis since have disagreed with him: the point is not health but attention, a people reminded at every bite who they are. Say it plainly, then. There is no evidence that kosher food is healthier than any other food. What there is, is watching. In 1923 the Orthodox Union put its mark on a can of Heinz vegetarian beans, and kosher supervision has grown from there into the largest food-certification system in America; a great share of the packaged food on the shelf carries a kosher symbol, and most of the people who look for it are not Jewish: vegetarians, people with a milk allergy who trust a pareve label, Muslims, and people who simply believe a watched kitchen is a cleaner one."
+   },
+   {
+    "k": "",
+    "t": "Here is why it sits in the Circle. A food law draws a line around a table, and a line around a table does two things: it keeps some things out, and it tells the people inside who they are sitting with. A family that keeps kosher cannot eat just anywhere, so it eats together, and on Friday night the law turns into hospitality. In the tradition, welcoming guests is counted among the greatest of the commandments; the story goes back to Abraham running to feed three strangers at his tent. Across the country, Chabad houses set Friday tables where anyone may sit, and a nonprofit called OneTable has, since 2014, helped people in their twenties and thirties host Shabbat dinners for whoever will come."
+   },
+   {
+    "k": "",
+    "t": "A fair word. Salted meat carries salt; if your blood pressure runs high, ask your physician before kosher meat becomes a habit. Kosher means fit under the law, not low in anything, and it is not a diet. Vault Human coaches and doesn't treat. The practice we are pointing at is for anyone: one rule kept at every meal turns every meal from a reflex into a choice. I spent a decade in restaurants in every role, and a kitchen that keeps one rule for one guest, the ticket that says no dairy, keeps every other rule better. The catalog had no door for this key, so here is a real one: a seat at someone's Shabbat table, asked for plainly, or a kosher deli where you ask the cook what the rules mean to him."
+   }
+  ],
+  "n": 281,
+  "date": "November 18, 2026",
+  "iso": "2026-11-18",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
