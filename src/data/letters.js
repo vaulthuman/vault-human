@@ -9332,5 +9332,103 @@ export const letters=[
   "iso": "2026-11-18",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "give-it-air",
+  "title": "Give it air",
+  "dek": "Esther Perel grew up in Antwerp among people who had survived the camps, her own parents first of all.",
+  "day": 188,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Esther Perel grew up in Antwerp among people who had survived the camps, her own parents first of all. She has said that as a girl she learned to sort the survivors into two kinds: those who didn't die, and those who came back to life. The ones who came back to life laughed, dressed well, took pleasure at the table and in each other, and refused to let what had been done to them have the last word. She has spent her working life asking what that second kind knew, and in 2006 she put the answer in a book. Today's key is that answer."
+   },
+   {
+    "k": "",
+    "t": "She was born in Belgium in 1958 to Polish Jews who were, by her account, the only ones of their families to come through, and she grew up speaking several languages in a house where joy was a decision. She studied educational psychology and French literature at the Hebrew University of Jerusalem, then took a master's in expressive arts therapy at Lesley University in Cambridge, Massachusetts, where she met the psychologist Jack Saul; they married in 1985. She trained in family therapy in Boston, taught at the New York University School of Medicine for thirteen years, and built a couples practice in New York. <em>Mating in Captivity</em> came out in 2006 and has been translated into some two dozen languages; a short talk she gave in 2013 carried the idea to millions more, and since 2017 her podcast has let strangers listen in on real couples in her office, with the names taken off."
+   },
+   {
+    "k": "",
+    "t": "Here is the idea, as plainly as I can put it. Love wants closeness: to know and be known, to have no secrets, to be safe. Desire wants something else: a little distance, a little mystery, someone to look at who is not simply an extension of you. Most of us pour everything into the first and then wonder where the second went. Her line for it is three words long: fire needs air. For years she has asked people in long marriages when they feel most drawn to their partner, and the answers come back the same from every country. When they are away. When they are in their element, doing the thing they are good at, absorbed and not looking at you. When they surprise you. When you see them through someone else's eyes, across a room, being admired. Not one of those answers is about being closer. Every one of them is about seeing the other person as a person again, with a life that is theirs."
+   },
+   {
+    "k": "",
+    "t": "The part that is ours is this. The best thing you can do for a long love is to keep being someone, and to let the one you love keep being someone too: a friend they see without you, a craft they go off to, a day you don't ask them to account for. A fair word: Perel is a clinician writing from her consulting room, not a researcher, and nothing here has been tested in a trial; some therapists think she goes easy on the harm an affair does. The practice holds without the argument."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the smallest circle in your life is two people, and even that one needs room in it. I spent a decade in restaurants in every role, and nobody is more drawn to a cook than the person watching from the bar on a Friday night while he runs the line; the same person meets him at midnight with the apron still on and sees only the tired one. Both are true. Only one of them is a choice about where you stand. Vault Human coaches and doesn't treat; if the air went out of it years ago, or someone else is in the picture, the door is a couples therapist."
+   }
+  ],
+  "n": 282,
+  "date": "November 19, 2026",
+  "iso": "2026-11-19",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "mark-the-turning",
+  "title": "Mark the turning",
+  "dek": "On the last night of October 1979, a book came out of San Francisco called <em>The Spiral Dance</em>.",
+  "day": 189,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "On the last night of October 1979, a book came out of San Francisco called <em>The Spiral Dance</em>. Its author was twenty-eight, born Miriam Simos in St. Paul and raised in a Jewish home in Los Angeles, and she wrote under the name Starhawk. The subtitle promised a rebirth of the ancient religion of the Great Goddess. With a few friends she was starting a small teaching collective in the city, Reclaiming, that is still at it, and she went on to spend the 1980s at blockades and in jails for the anti-nuclear movement, writing as she went: <em>Dreaming the Dark</em> in 1982, <em>Truth or Dare</em> in 1987. The book is still in print more than forty years on."
+   },
+   {
+    "k": "",
+    "t": "The ground she stood on had been laid by an archaeologist. Marija Gimbutas was born in Vilnius in 1921, left Lithuania during the war, finished her doctorate at Tübingen in 1946, and taught at Harvard and then for a quarter century at UCLA. From digs in southeastern Europe she argued, in three big books between 1974 and 1991, that before the horsemen came the farming villages of what she called Old Europe had been peaceful, settled, and centered on a goddess, and she read thousands of small clay figures as the proof. She died in 1994."
+   },
+   {
+    "k": "",
+    "t": "A fair word, because you deserve one. Most archaeologists never accepted her reading of Old Europe; the figurines may be goddesses, or ancestors, or dolls, and no one can ask. Her other great idea, that the languages of Europe came off the steppe with the horse, was borne out by ancient DNA in 2015, so she was right about something large. And the \"ancient religion\" of Starhawk's title is, by the best history we have, mostly a twentieth-century creation. The religion is young. The practice it carries is old, and the practice is what I want you to have."
+   },
+   {
+    "k": "",
+    "t": "Here it is in our words. It puts you in a circle, not in rows, so there is no front of the room and no one up there. It keys your year to the turning of the earth instead of the calendar on the wall: the two solstices, the two equinoxes, and the four old days between them, so that eight times a year you are made to notice where the sun is. And it says out loud that the ground is holy, which changes how you walk on it. Starhawk's best idea, to my mind, is a distinction she drew across two books in the 1980s: there is power over, there is power from within, and there is power with, and the circle is the one place the third kind lives. You don't have to call anything a goddess to use that. If you already have a faith, this is not a request to trade it; keep your own tradition's turning, and keep it with people."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the people who come back to the same hillside eight times a year end up keeping each other the rest of the year too. I spent a decade in restaurants in every role, and the honest calendar there was never the one in the office; it was the first asparagus and the last tomato, and the whole kitchen knew the day they came in. Your body already keeps that calendar. This key asks you to keep it with company."
+   }
+  ],
+  "n": 283,
+  "date": "November 20, 2026",
+  "iso": "2026-11-20",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "eat-what-is-good",
+  "title": "Eat what is good",
+  "dek": "Close to two billion people ask the same question before they eat.",
+  "day": 189,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Close to two billion people ask the same question before they eat. Is this permitted? The Qur'an answers it in four places, and the list is short: no carrion, no blood, no flesh of swine, and nothing killed in a name other than God's. The fifth chapter adds what was strangled, beaten, fallen, or gored. What is permitted is an animal killed with a sharp blade across the throat, the name of God spoken over it, the blood drained; the word for it, halal, just means lawful. The same chapter opens the table wider than people expect, because the food of the People of the Book, Jews and Christians, is declared lawful too. And the verse that forbids pork ends with a clause almost everyone forgets: whoever is driven by necessity, not wanting it and not going too far, carries no sin. It is a law with a door in it for the hungry."
+   },
+   {
+    "k": "",
+    "t": "Drink came in steps. First a verse that says there is some good in it and more harm; then, do not come to prayer drunk; then, at last, avoid it. The word for the forbidden drink, khamr, comes from a root that means to cover, and what it covers is the mind. The instruction is not drink less. It is don't. Beside the prohibitions sits a phrase that matters more to me: halalan tayyiban, lawful and good, which asks for food that is wholesome as well as permitted. And two sayings of the Prophet, carried in the hadith collections, round it out. One says a person fills no vessel worse than the stomach, and that if you must, then a third for food, a third for drink, a third for breath. The other says to eat together, because the blessing is in the company."
+   },
+   {
+    "k": "",
+    "t": "The fair word. There is no evidence to speak of that halal slaughter or skipping pork does anything for a body; pork is meat, said plainly, and the rule is about obedience and mercy, not nutrition. There is a real argument about whether the animal should be stunned first, and certifiers in different countries answer it differently; I won't settle it here. The one rule with evidence behind it is the one about drink. In January 2023 the World Health Organization said in so many words that no level of alcohol is safe for health, and the countries that drink least in the world are nearly all Muslim-majority. A billion and more people have run that experiment for fourteen centuries."
+   },
+   {
+    "k": "",
+    "t": "What it gives you is a question before every bite. Where did this come from, who killed it, in whose name, what is in it. I spent a decade in restaurants in every role, and the guest who asked what was in the stock before ordering the soup was never the difficult one; he was the one paying attention. It's a Circle key because lawful eating is personal but halal is kept at a shared table: the one butcher in town, the Friday meal after prayers, the restaurant with the sign in the window where everyone knows the owner. Vault Human coaches and doesn't treat; if you drink every day and this letter makes you want to stop, don't stop alone, because stopping suddenly can be dangerous, and the door is a physician. The fast of Ramadan is the next body letter, two days from now."
+   }
+  ],
+  "n": 284,
+  "date": "November 20, 2026",
+  "iso": "2026-11-20",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
