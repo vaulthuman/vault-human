@@ -6,8 +6,8 @@
   var me = document.currentScript || document.querySelector('script[src*="chat.js"]');
   var brand = (me && me.getAttribute('data-brand')) || (/vaulthuman/.test(location.host) ? 'vault' : 'tercet');
   var B = brand === 'vault'
-    ? { name: 'Vault Human', hello: 'Hi, I\'m the Vault Human assistant. What\'s on your mind? I can set up a free first conversation with Russ.', color: '#1f3b2d' }
-    : { name: 'Tercet Law', hello: 'Hi, I\'m the Tercet Law assistant. Tell me a little about your will, trust or probate question and I\'ll set up a free 15-minute call with Russ.', color: '#14213d' };
+    ? { name: 'Vault Human', hello: 'Hi, I\'m the Vault Human assistant. What\'s on your mind? I can set up a free consultation with Russ.', color: '#1f3b2d' }
+    : { name: 'Tercet Law', hello: 'Hi, I\'m the Tercet Law assistant. Tell me a little about your will, trust or probate question and I\'ll set up a free consultation with Russ.', color: '#14213d' };
   var sid; try { sid = sessionStorage.getItem('vh_chat_sid'); } catch (e) {}
   if (!sid) { sid = Math.random().toString(36).slice(2) + Date.now().toString(36); try { sessionStorage.setItem('vh_chat_sid', sid); } catch (e) {} }
   var msgs = [];
