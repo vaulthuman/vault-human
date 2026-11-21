@@ -9430,5 +9430,35 @@ export const letters=[
   "iso": "2026-11-20",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "have-the-hard-talk",
+  "title": "Have the hard talk",
+  "dek": "In 1999 three people from the Harvard Negotiation Project, Douglas Stone, Bruce Patton and Sheila Heen, published a book called <em>Difficult Conversations</em>.",
+  "day": 190,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In 1999 three people from the Harvard Negotiation Project, Douglas Stone, Bruce Patton and Sheila Heen, published a book called <em>Difficult Conversations</em>. Patton had helped write <em>Getting to Yes</em> the decade before, and the new book asked a narrower question: not how two sides reach a deal, but why the conversation you most need to have, with your sister, your boss, the person you married, is the one you keep putting off. Three years later four consultants out of Utah, Kerry Patterson, Joseph Grenny, Ron McMillan and Al Switzler, published <em>Crucial Conversations</em>, built, by their account, on years of watching the people in companies who could say the hard thing and still be trusted afterward. Between them the two books have sold millions of copies, and they say nearly the same thing from two directions. Today's key is what they share."
+   },
+   {
+    "k": "",
+    "t": "The Harvard three found that every hard conversation is really three at once. There is the argument about what happened, where each of us is sure we have the facts. Under it is a conversation about feelings, which we pretend is not happening. And under that is a conversation with ourselves about who we are: am I competent, am I a good person, am I worth loving. The fight on the surface is usually about the floor underneath. Their best move is a turn from certainty to curiosity: stop proving your story and ask for theirs, and begin from what they call the third story, the one a fair outsider would tell, in which nobody is the villain yet. Their second is to keep what someone intended apart from what it did to you. You know the second. You are guessing at the first."
+   },
+   {
+    "k": "",
+    "t": "The Utah four add the part about heat. A conversation turns crucial, in their definition, when the stakes are high, opinions differ and feelings run strong, and in that moment almost everyone goes one of two ways: silent or sharp. Both are a failure of safety. Their answer is that people will hear nearly anything if they believe you respect them and want something good for both of you, so when the air goes bad you stop talking about the subject and repair the safety first, out loud: here is what I don't mean, here is what I do. A fair word: neither book has been tested in a trial. They are frameworks from practice, and the practice is why they have lasted."
+   },
+   {
+    "k": "",
+    "t": "Here it is in our words. The conversation you are avoiding is already happening; it is just happening without you, in the other person's head and in yours, and both of those versions are worse than the real one would be. It's a Circle key because no circle survives a thing that cannot be said in it. I run an estate and elder law firm, and the families who come to the conference table in trouble are almost never the ones who fought; they are the ones who were polite for forty years. If the conversation you need is with someone who has hurt you and it isn't safe to have alone, Vault Human coaches and doesn't treat; the door is a therapist, or a mediator for the rest."
+   }
+  ],
+  "n": 285,
+  "date": "November 21, 2026",
+  "iso": "2026-11-21",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
