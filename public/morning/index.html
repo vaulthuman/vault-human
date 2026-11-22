@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Morning Vault · Vault Human</title><meta property="og:title" content="The Morning Vault"><meta property="og:description" content="Set your tone. Get your key."><link rel="icon" href="/favicon-32.png"><meta property="og:image" content="https://www.vaulthuman.com/morning/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta property="og:url" content="https://www.vaulthuman.com/morning/"><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{--ink:#f6f1e7;--soft:rgba(246,241,231,.78);--faint:rgba(246,241,231,.55);--gold:#e8c27a;--sage:#a9c294;--glass:rgba(20,24,30,.38);--line:rgba(246,241,231,.22);--d:"Fraunces",Georgia,serif;--b:"Inter",Arial,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#1b2230;color:var(--ink);font:16px/1.5 var(--b);overflow-x:hidden}
+.bg{position:fixed;inset:0;z-index:0;overflow:hidden;background:linear-gradient(180deg,#2b3550 0%,#c9876a 62%,#f0c58a 100%)}
+.bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.bg video.on{opacity:1}
+.bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,20,32,.35) 0%,rgba(15,20,32,.15) 40%,rgba(15,20,32,.55) 100%)}
+.wrap{position:relative;z-index:2;min-height:100vh;max-width:460px;margin:0 auto;padding:26px 20px 34px;display:flex;flex-direction:column;gap:16px}
+.mark{display:flex;align-items:center;font:800 17px var(--b);letter-spacing:-.04em;line-height:1}
+.mark i{font-style:normal;color:var(--ink)}.mark i+i{color:var(--sage)}
+.words{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.w{position:absolute;font:italic 400 22px var(--d);color:var(--ink);opacity:0;white-space:nowrap;text-shadow:0 2px 18px rgba(0,0,0,.35);animation:drift 5.2s ease-out forwards}
+@keyframes drift{0%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.9)}25%{opacity:.95}70%{opacity:.85}100%{opacity:0;transform:translate(0,0) scale(1.05)}}
+.hero{margin-top:auto;margin-bottom:auto;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
+.fade{opacity:0;transform:translateY(10px);transition:opacity 1.2s ease,transform 1.2s ease}
+.fade.in{opacity:1;transform:none}
+h1{font:600 44px/1.05 var(--d);margin:0;text-shadow:0 2px 24px rgba(0,0,0,.3)}
+.tag{font:500 italic 22px var(--d);color:var(--gold)}
+.go{background:var(--ink);color:#1b2230;border:0;border-radius:999px;padding:15px 34px;font:600 16px var(--b);cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.go:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.go[disabled]{opacity:.6}
+.panel{background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:22px;padding:22px 18px;display:flex;flex-direction:column;gap:14px;animation:rise .5s ease}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.q{font:600 23px/1.28 var(--d)}
+.note{font:italic 400 14.5px/1.45 var(--d);color:var(--soft)}
+.opts{display:grid;gap:9px}
+.opt{background:rgba(246,241,231,.1);border:1px solid var(--line);color:var(--ink);border-radius:14px;padding:14px;text-align:left;font:500 15px var(--b);cursor:pointer;transition:background .15s,border-color .15s}
+.opt:hover,.opt:focus-visible{background:rgba(246,241,231,.2);border-color:var(--gold);outline:none}
+.nums{display:grid;grid-template-columns:repeat(6,1fr);gap:7px}
+.nums.ten{grid-template-columns:repeat(5,1fr)}
+.nums .opt{text-align:center;padding:13px 0;font-weight:600}
+.ends{display:flex;justify-content:space-between;font-size:12px;color:var(--faint)}
+.dots{display:flex;gap:6px;justify-content:center}
+.dots b{width:6px;height:6px;border-radius:50%;background:var(--line)}.dots b.on{background:var(--gold)}
+label.f{display:grid;gap:5px;font-size:13px;color:var(--soft)}
+input[type=text],input[type=email],input[type=tel]{background:rgba(246,241,231,.12);border:1px solid var(--line);border-radius:12px;padding:13px;color:var(--ink);font:16px var(--b)}
+input::placeholder{color:var(--faint)}
+input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.c{display:flex;gap:9px;font-size:12px;color:var(--soft);align-items:flex-start}
+.err{color:#ffc4a8;font-size:13px;min-height:1em}
+.small{font-size:12px;color:var(--faint)}
+.lock{margin:auto;text-align:center;display:flex;flex-direction:column;gap:16px;align-items:center}
+.ring{position:relative;width:96px;height:96px;display:grid;place-items:center;font:600 28px var(--d);color:var(--gold);animation:glow 1.9s ease-in-out forwards}
+.ring:before{content:"";position:absolute;inset:0;border-radius:50%;border:2px dashed var(--gold);animation:turn 1.9s ease-in-out forwards}
+@keyframes turn{to{transform:rotate(300deg)}}
+@keyframes glow{0%,75%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.2)}}
+video.film{width:100%;border-radius:16px;background:#000;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.kicker{font:600 11px var(--b);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.site{position:fixed;left:0;right:0;bottom:28px;text-align:center;font:500 15px var(--b);letter-spacing:.08em;color:var(--soft);min-height:1.4em;z-index:3}
+.site a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
+.done{margin:auto;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+@media (prefers-reduced-motion:reduce){.w,.ring{animation:none}.fade{transition:none}}
+</style></head><body>
+<div class="bg"><video id="bgv" autoplay muted loop playsinline preload="auto" src="https://assets.mixkit.co/videos/31629/31629-720.mp4"></video></div>
+<div class="words" id="words" aria-hidden="true"></div>
+<div class="wrap" id="app"></div>
+<script>
+var API="https://script.google.com/macros/s/AKfycbxOqI38c2_q0oLnwkGPajWPsMtj_okrM8_bvBzrqWGs1FrtyQSXg5fagLPvDbNvwq0m/exec";
+function api(body){return fetch(API,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(body)}).then(function(r){return r.json();});}
+var FEEL=["hopeful","tired","grateful","restless","calm","curious","heavy","ready","brave","unsure","alive","stuck","light","seen","open","steady","quiet","free"];
+var FILM="https://www.vaulthuman.com/video/key01-go-outside.mp4";
+var Q=[
+ {q:"Looking back, what has carried you this far?",o:["My people","My faith","My grit","My hope"]},
+ {q:"What's taking most of your attention these days?",o:["My work","My relationships","My health","My family"]},
+ {q:"What helps you feel truly heard?",o:["Full attention","Good questions","Time to talk","Being understood"]},
+ {q:"What would you love to say more easily?",o:["What I feel","What I need","What I think","What I appreciate"]},
+ {q:"Right now, where do conversations feel hardest?",o:["At home","At work","With family","With myself"]},
+ {q:"Looking ahead, what would you love to vault to a new level?",o:["My listening","My calm","My health","My relationships"]},
+ {q:"Who do you most want to show up for?",o:["Myself","My partner","My family","The people I lead"]}
+];
+var WORDS=["Lighter","Awake","Grounded","Clear","Free","Calm","Alive","Still heavy"];
+var app=document.getElementById("app"),A=[],tone="",step=-1,uid="";
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function mark(){return '<div class="mark"><i>V</i><i>H</i></div>';}
+function dots(n){var h='<div class="dots">';for(var i=0;i<9;i++)h+='<b class="'+(i<=n?"on":"")+'"></b>';return h+"</div>";}
+var v=document.getElementById("bgv");v.addEventListener("canplay",function(){v.classList.add("on");});
+function flyWords(){var box=document.getElementById("words"),list=FEEL.slice().sort(function(){return Math.random()-.5;});
+ list.forEach(function(w,i){setTimeout(function(){var e=document.createElement("div");e.className="w";e.textContent=w;
+  var x=6+Math.random()*72,y=Math.random()<.5?(8+Math.random()*24):(64+Math.random()*26);e.style.left=x+"%";e.style.top=y+"%";
+  e.style.setProperty("--dx",((Math.random()<.5?-1:1)*(60+Math.random()*120))+"px");e.style.setProperty("--dy",((Math.random()<.5?-1:1)*(30+Math.random()*80))+"px");
+  e.style.fontSize=(18+Math.random()*14)+"px";box.appendChild(e);setTimeout(function(){e.remove();},5400);},i*380);});}
+function splash(){
+ app.innerHTML=mark()+'<div class="hero"><h1 class="fade" id="t1">The Morning Vault</h1><div class="tag fade" id="t2">Set your tone. Get your key.</div><button class="go fade" id="b" type="button">Begin</button></div>';
+ flyWords();
+ setTimeout(function(){document.getElementById("t1").classList.add("in");},2600);
+ setTimeout(function(){document.getElementById("t2").classList.add("in");},3800);
+ setTimeout(function(){document.getElementById("b").classList.add("in");},5200);
+ document.getElementById("b").onclick=function(){document.getElementById("words").innerHTML="";step=0;render();};
+}
+function nums(from){var h='<div class="nums'+(from===1?" ten":"")+'">';for(var n=from;n<=10;n++)h+='<button class="opt" type="button">'+n+'</button>';return h+"</div>";}
+function render(){
+ if(step===0){
+  app.innerHTML=mark()+dots(0)+'<div class="panel"><div class="q">If love and happiness were a 10, and fear and unhappiness were a 0, where are you right now?</div>'+nums(0)+'<div class="ends"><span>0 · fear</span><span>love · 10</span></div></div>';
+  bind(function(t){tone=t;step=1;render();});return;}
+ if(step>=1&&step<=Q.length){var it=Q[step-1],body;
+  if(it.k==="scale")body=nums(1)+'<div class="ends"><span>1 · '+esc(it.lo)+'</span><span>'+esc(it.hi)+' · 10</span></div>';
+  else body='<div class="opts">'+it.o.map(function(x){return '<button class="opt" type="button">'+esc(x)+'</button>';}).join("")+"</div>";
+  app.innerHTML=mark()+dots(step)+'<div class="panel"><div class="q">'+esc(it.q)+"</div>"+body+"</div>";
+  bind(function(t){A[step-1]=t;step++;render();});return;}
+ if(step===Q.length+1){
+  app.innerHTML=mark()+dots(8)+'<div class="panel"><div class="q">Your first key is ready.</div><div class="note">Unlock it below.</div>'+
+  '<form id="f" style="display:grid;gap:12px"><label class="f">First name<input type="text" id="fn" autocomplete="given-name" required></label>'+
+  '<label class="f">Email<input type="email" id="em" autocomplete="email" required></label>'+
+  '<label class="f">Phone<input type="tel" id="ph" autocomplete="tel" required></label>'+
+  '<label class="f">City, state or country<input type="text" id="loc" autocomplete="address-level2" required></label>'+
+  '<label class="c"><input type="checkbox" id="ok"> I\u2019d prefer my keys by text instead of email.</label>'+
+  '<button class="go" id="g" type="submit">Unlock my key</button><div class="err" id="er"></div></form></div>';
+  document.getElementById("f").onsubmit=submit;return;}
+}
+function bind(fn){app.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){fn(b.textContent);};});}
+function submit(e){e.preventDefault();var g=document.getElementById("g");g.disabled=true;g.textContent="Unlocking…";
+ var d={first:fn.value,city:loc.value,email:em.value,phone:ph.value,textOk:ok.checked,tone:tone,answers:A,tz:Intl.DateTimeFormat().resolvedOptions().timeZone};
+ d.op="signup";api(d).then(function(x){if(!x.ok){document.getElementById("er").textContent=x.msg||"Something went wrong. Please try again.";g.disabled=false;g.textContent="Unlock my key";return;}uid=x.id;unlock(x.first);})
+ .catch(function(){document.getElementById("er").textContent="Something went wrong. Please try again.";g.disabled=false;g.textContent="Unlock my key";});}
+function unlock(first){
+ app.innerHTML=mark()+'<div class="lock"><div class="ring">VH</div><div class="tag">Unlocking your first key, '+esc(first)+'</div></div>';
+ setTimeout(function(){
+  app.innerHTML=mark()+'<div class="panel"><div class="kicker">Key 1</div><div class="q">Go outside</div><video class="film" id="film" src="'+FILM+'" controls playsinline autoplay preload="auto"></video><div id="after" class="fade"></div></div>';
+  var f=document.getElementById("film");try{f.play();}catch(err){}
+  var shown=false;function after(){if(shown)return;shown=true;var a=document.getElementById("after");
+   a.innerHTML='<div class="q" style="font-size:20px;margin-bottom:10px">One word for how you feel now?</div><div class="grid2">'+WORDS.map(function(w){return '<button class="opt" type="button">'+esc(w)+'</button>';}).join("")+"</div>";
+   a.classList.add("in");bind(function(w){api({op:"word",id:uid,day:1,w:w});done();});}
+  f.addEventListener("ended",after);f.addEventListener("timeupdate",function(){if(f.duration&&f.duration-f.currentTime<0.4)after();});
+ },2000);}
+function done(){app.innerHTML=mark()+'<div class="done"><div class="kicker">Key 1 · complete</div><h1 style="font-size:34px">Thank you for completing your first Morning Vault.</h1><div class="tag" style="font-size:19px">We’ll send your next key tomorrow morning.</div></div><div class="site" id="site"></div>';typeSite();}
+function typeSite(){var t="www.vaulthuman.com",i=0,el=document.getElementById("site");var iv=setInterval(function(){i++;el.textContent=t.slice(0,i);if(i>=t.length){clearInterval(iv);el.innerHTML='<a href="https://www.vaulthuman.com">'+t+'</a>';}},95);}
+splash();
+</script></body></html>
