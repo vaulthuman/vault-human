@@ -9460,5 +9460,65 @@ export const letters=[
   "iso": "2026-11-21",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "be-witnessed",
+  "title": "Be witnessed",
+  "dek": "In the fall of 1967 a dozen or so women in New York began meeting in each other's apartments with a rule nobody had tried on purpose before.",
+  "day": 191,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In the fall of 1967 a dozen or so women in New York began meeting in each other's apartments with a rule nobody had tried on purpose before. They went around the room, each woman answered the same question from her own life, and no one interrupted, argued, or fixed. Anne Forer is usually credited with the phrase for it, consciousness-raising; Kathie Sarachild wrote the method down the next year and carried it to a national gathering outside Chicago. Within three years there were groups like it in living rooms across the country, and a line that came out of them, \"the personal is political,\" is still in use. The method was simpler than the slogan. When enough women say what actually happens to them, a private trouble turns out to be a shared one, and a shared one can be changed."
+   },
+   {
+    "k": "",
+    "t": "That is the root; the branches came later. In 1988 Char Tosi, married to one of the three men who had started the ManKind Project a few years before, began a weekend for women called Woman Within, built, by its own account, on the same bones as the men's: a few days away, the mask off, a group that keeps meeting after. In 1997 Anita Diamant published a novel, <em>The Red Tent</em>, that imagined the women of Genesis gathering in a tent of their own for their bleeding and their births. She has said plainly that she invented the tent. Women took the invented thing and made it real, setting up red tents in community halls and living rooms from the mid-2000s on, a monthly place to sit, rest and talk. And in 2012 Chris Maddox started the Wild Woman Project, which trains women to lead a circle at each new moon, so the same question gets asked on the same night in rooms across the country and beyond."
+   },
+   {
+    "k": "",
+    "t": "Four beginnings, one practice, and I'd put the practice in three lines. You sit in a circle, so no one is at the front. One speaks at a time, from her own life, and the rest witness: no advice, no cross-talk, no comforting her out of it. And you come back, because a circle is not an event; it's a seat. A fair word: no one has run a trial on any of this, and what the science of groups can say is only that being heard by people who keep showing up does people good, which you knew. Jean Shinoda Bolen, whose letter came nine days ago, called circles like these the oldest form of women's community there is, and Estés, whose letter came before that, is read aloud in half of them."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because this chamber's one sentence is that no one changes alone, and for most of history women did their changing in rooms like these, and most of it never made the record. I spent a decade in restaurants in every role, and the five minutes before the doors opened, when the women on the floor stood in a knot by the server station and said what kind of day it had already been, did more for the shift than any meeting I ever ran. Our thought on the teaching is this: you do not need a tent, a moon or a movement. You need three women, one question, and a rule against interrupting. If you want the initiation, the lineage has a door, and a Woman Within weekend is the one with nearly forty years behind it; for the monthly seat, a Wild Woman Project circle or a red tent near you. Vault Human coaches and doesn't treat; if what you would say in the circle is a crisis, the door is a therapist first and the circle after."
+   }
+  ],
+  "n": 286,
+  "date": "November 22, 2026",
+  "iso": "2026-11-22",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "fast-until-sunset",
+  "title": "Fast until sunset",
+  "dek": "One month a year, close to two billion people eat nothing between dawn and dark.",
+  "day": 191,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "One month a year, close to two billion people eat nothing between dawn and dark. Ramadan is the ninth month of the Islamic calendar, and its fast is one of the five pillars: from first light to sunset, no food, no drink, not even water, no smoking, no sex. The Qur'an gives the rule in its second chapter and the reason in the same breath, that fasting was prescribed for those before you too, so that you might become mindful of God; the word is taqwa, and it sits closer to attentiveness than to fear. The same passage names this as the month the Qur'an came down, and then opens the doors: whoever is ill or traveling makes up the days later, and whoever cannot fast at all feeds a poor person instead. Children, the old, the pregnant, the nursing and the menstruating are out of it. It is a hard rule with mercy written into the text."
+   },
+   {
+    "k": "",
+    "t": "The shape of the day is the part worth borrowing. Before dawn a meal, suhoor, often eaten half asleep. Then the long middle. Then at sunset the fast is broken, by old custom, with dates and water, because the Prophet broke his that way, and after that the iftar, the evening meal, which is almost never eaten alone: the family, the mosque, the neighbors, strangers at a long table in a parking lot. One saying of his, carried in Bukhari, cuts the whole thing to the bone: whoever does not give up false speech and acting on it, God has no need of his giving up food and drink. The fast is not a diet. It is a month of practicing hunger on purpose so that the hunger of the poor stops being an idea, and it ends with a required gift to them before the morning prayer of the feast. Because the calendar is lunar, the month walks backward through the seasons about eleven days a year, so a lifetime of fasting means every length of day there is, ten hours in a northern winter and nearly nineteen in a northern June."
+   },
+   {
+    "k": "",
+    "t": "The fair word. The studies that follow people through Ramadan find they lose about a kilogram and get most of it back within weeks; plenty gain, because iftar is a feast, and sleep runs short all month. For people with diabetes it is not a small thing: a large survey across thirteen countries, published in 2004, found that most Muslims with diabetes fast anyway, and that severe low blood sugar went up several-fold during the month, which is why the diabetes federations now put out a risk guide for it every year. None of that is an argument against the fast. It is an argument for doing it with a physician if you take medication, are carrying a child, or have a condition. Vault Human coaches and doesn't treat; that door is the physician, and if eating has ever been a battle for you, skip the fast and keep the table. I spent a decade in restaurants in every role, and the best meal served in any of them was the staff meal, eaten standing at the end of the shift by people who had been hungry together for six hours. That is iftar. Most of us have never had it."
+   },
+   {
+    "k": "",
+    "t": "It's a Circle key because the fast is private and the breaking of it is not. The Prophet's own line was that the one who fasts has two joys, the moment he breaks the fast and the day he meets his Lord, and the first of those is shared at a table. The next Ramadan begins in early February, give or take a day, since it starts when the new moon is sighted, and many mosques hold open iftars and will seat you. The next body letter, in two days, is Lent and the fasts of the Orthodox."
+   }
+  ],
+  "n": 287,
+  "date": "November 22, 2026",
+  "iso": "2026-11-22",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
