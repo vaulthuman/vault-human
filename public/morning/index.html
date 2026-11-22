@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Morning Vault · Vault Human</title><meta property="og:title" content="The Morning Vault"><meta property="og:description" content="Set your tone. Get your key."><link rel="icon" href="/favicon-32.png"><meta property="og:image" content="https://www.vaulthuman.com/morning/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta property="og:url" content="https://www.vaulthuman.com/morning/"><meta charset="utf-8">
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Morning Vault · Vault Human</title><meta property="og:title" content="Set your tone. Get your key."><meta property="og:description" content="A free key every morning from Vault Human."><link rel="icon" href="/favicon-32.png"><meta property="og:image" content="https://www.vaulthuman.com/morning/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta property="og:url" content="https://www.vaulthuman.com/morning/"><meta charset="utf-8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap">
 <style>
 :root{--ink:#f6f1e7;--soft:rgba(246,241,231,.78);--faint:rgba(246,241,231,.55);--gold:#e8c27a;--sage:#a9c294;--glass:rgba(20,24,30,.38);--line:rgba(246,241,231,.22);--d:"Fraunces",Georgia,serif;--b:"Inter",Arial,sans-serif}
@@ -127,7 +127,7 @@ function unlock(first){
    a.classList.add("in");bind(function(w){api({op:"word",id:uid,day:1,w:w});done();});}
   f.addEventListener("ended",after);f.addEventListener("timeupdate",function(){if(f.duration&&f.duration-f.currentTime<0.4)after();});
  },2000);}
-function done(){app.innerHTML=mark()+'<div class="done"><div class="kicker">Key 1 · complete</div><h1 style="font-size:34px">Thank you for completing your first Morning Vault.</h1><div class="tag" style="font-size:19px">We’ll send your next key tomorrow morning.</div></div><div class="site" id="site"></div>';typeSite();}
+function done(){app.innerHTML=mark()+'<div class="done"><div class="kicker">Key 1 · complete</div><h1 style="font-size:34px">Thank you for completing your first Morning Vault.</h1><div class="tag" style="font-size:19px">We’ll send your next key tomorrow morning.</div><a class="go" href="/morning/vault-human.vcf" style="text-decoration:none;margin-top:10px">Save Vault Human to your contacts</a></div><div class="site" id="site"></div>';typeSite();}
 function typeSite(){var t="www.vaulthuman.com",i=0,el=document.getElementById("site");var iv=setInterval(function(){i++;el.textContent=t.slice(0,i);if(i>=t.length){clearInterval(iv);el.innerHTML='<a href="https://www.vaulthuman.com">'+t+'</a>';}},95);}
 splash();
 </script></body></html>
