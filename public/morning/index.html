@@ -120,7 +120,7 @@ function submit(e){e.preventDefault();var g=document.getElementById("g");g.disab
 function unlock(first){
  app.innerHTML=mark()+'<div class="lock"><div class="ring">VH</div><div class="tag">Unlocking your first key, '+esc(first)+'</div></div>';
  setTimeout(function(){
-  app.innerHTML=mark()+'<div class="panel"><div class="kicker">Key 1</div><div class="q">Go outside</div><video class="film" id="film" src="'+FILM+'" controls playsinline autoplay preload="auto"></video><div id="after" class="fade"></div></div>';
+  app.innerHTML=mark()+'<div class="panel"><div class="kicker">Key 1</div><div class="q">Go Outside</div><video class="film" id="film" src="'+FILM+'" controls playsinline autoplay preload="auto"></video><div id="after" class="fade"></div></div>';
   var f=document.getElementById("film");try{f.play();}catch(err){}
   var shown=false;function after(){if(shown)return;shown=true;var a=document.getElementById("after");
    a.innerHTML='<div class="q" style="font-size:20px;margin-bottom:10px">One word for how you feel now?</div><div class="grid2">'+WORDS.map(function(w){return '<button class="opt" type="button">'+esc(w)+'</button>';}).join("")+"</div>";
