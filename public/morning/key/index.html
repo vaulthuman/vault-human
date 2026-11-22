@@ -43,7 +43,7 @@ var KEYS=[
  {title:"Choose your life",film:"/video/key01-choose-a-new-life.mp4",card:"Today I begin a new life.",line:"Say it out loud, outside. Then notice how it felt."},
  {title:"Read the label",film:"/video/key02-read-the-label.mp4",card:"Read the label.",line:"Look at what you are carrying, and who put it there."}
 ];
-var P=new URLSearchParams(location.search),id=P.get("i")||"",day=Math.max(1,parseInt(P.get("d")||"1",10)),key=KEYS[day-1]||KEYS[0],tone=P.get("v");
+var P=new URLSearchParams(location.search),id=P.get("i")||"",day=Math.max(1,parseInt(P.get("d")||(location.pathname.match(/\/key\/(\d+)/)||[0,"1"])[1],10)),key=KEYS[day-1]||KEYS[0],tone=P.get("v");
 var WORDSETS=[
  ["Lighter","Awake","Grounded","Clear","Free","Calm","Alive","Still heavy"],
  ["Ready","Hopeful","Brave","Decided","Open","Steady","Unsure","Still heavy"],
@@ -59,7 +59,7 @@ function bind(sel,fn){app.querySelectorAll(sel).forEach(function(b){b.onclick=fu
 function pick(first){
  app.innerHTML=MARK+'<div class="panel"><div class="kicker">Key '+day+'</div><div class="q">Good morning'+(first?', '+esc(first):'')+'. If love and happiness were a 10, and fear and unhappiness were a 0, where are you right now?</div><div class="dial"><div class="big" id="big">5</div></div><input type="range" id="rng" min="0" max="10" step="1" value="5"><div class="ends"><span>0 · fear</span><span>love · 10</span></div><button class="go" id="set" type="button">Set my tone</button></div>';
  var r=document.getElementById("rng"),b=document.getElementById("big");r.oninput=function(){b.textContent=r.value;};
- document.getElementById("set").onclick=function(){tone=r.value;history.replaceState(null,"","?i="+encodeURIComponent(id)+"&d="+day+"&v="+tone);film();};
+ document.getElementById("set").onclick=function(){this.disabled=true;tone=r.value;history.replaceState(null,"","?i="+encodeURIComponent(id)+"&v="+tone);film();};
 }
 function film(){
  api({op:"tone",id:id,day:day,v:tone});
