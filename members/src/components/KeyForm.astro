@@ -1,0 +1,70 @@
+---
+// A Key's own boxes, one per part of its step: a tick, a 1-to-10 number, a line, or a few lines.
+import { promptsOf, STATUS_WORD, type Status } from '../lib/answers';
+import type { Key } from '../lib/keys';
+interface Props { k: Key; values?: Record<string, string>; status: Status; saved?: boolean; error?: string; legacy?: string[] }
+const { k, values = {}, status, saved, error, legacy = [] } = Astro.props;
+const prompts = promptsOf(k);
+---
+<form method="post" class="card kf" id="form">
+  <div class="kf-head">
+    <p class="k">Your answers</p>
+    <span class:list={['pill', status]}>{STATUS_WORD[status]}</span>
+  </div>
+  <input type="hidden" name="key_id" value={k.id} />
+  <input type="hidden" name="tz" class="tz" />
+  {prompts.map((p) => (
+    <div class="q">
+      {p.kind === 'check' ? (
+        <label class="check"><input type="checkbox" name={`p_${p.id}`} value="yes" checked={values[p.id] === 'yes'} /><span>{p.label}</span></label>
+      ) : p.kind === 'scale' ? (
+        <fieldset class="scale">
+          <legend>{p.label}</legend>
+          <div class="nums">
+            {Array.from({ length: 10 }, (_, i) => String(i + 1)).map((n) => (
+              <label><input type="radio" name={`p_${p.id}`} value={n} checked={values[p.id] === n} /><span>{n}</span></label>
+            ))}
+          </div>
+        </fieldset>
+      ) : p.kind === 'long' ? (
+        <label class="field"><span>{p.label}</span><textarea name={`p_${p.id}`} rows="4" maxlength="1200">{values[p.id] ?? ''}</textarea></label>
+      ) : (
+        <label class="field"><span>{p.label}</span><input type="text" name={`p_${p.id}`} maxlength="280" value={values[p.id] ?? ''} autocomplete="off" /></label>
+      )}
+    </div>
+  ))}
+  {legacy.length > 0 && <p class="legacy">Earlier note: {legacy.join(' · ')}</p>}
+  {error && <p class="err">{error}</p>}
+  <div class="row">
+    <button class="btn" type="submit">Save</button>
+    {saved && <p class="ok" role="status">Saved. You can come back and add to it any time.</p>}
+  </div>
+</form>
+<script is:inline>
+  document.querySelectorAll('.tz').forEach(function (i) { try { i.value = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {} });
+</script>
+<style>
+  .kf-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+  .k{font:700 12px/1 Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin:0}
+  .pill{font:700 11px/1 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:999px;border:1px solid var(--line);color:var(--mute)}
+  .pill.done{background:var(--green);border-color:var(--green);color:#141A16}
+  .pill.started{border-color:var(--acc);color:var(--acc)}
+  .q{margin:0 0 18px}
+  .field span,.scale legend{display:block;color:var(--ink);font-size:16px;margin:0 0 8px;padding:0}
+  .field input,.field textarea{width:100%;background:#0f1411;color:var(--ink);border:1px solid #3a4a41;border-radius:8px;padding:13px 14px;font:17px/1.45 Inter,sans-serif}
+  .field textarea{resize:vertical;min-height:110px}
+  .field input:focus,.field textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
+  .check{display:flex;gap:12px;align-items:flex-start;cursor:pointer;color:var(--ink);font-size:16px}
+  .check input{width:24px;height:24px;flex:none;margin:0;accent-color:var(--green)}
+  .scale{border:0;margin:0;padding:0}
+  .nums{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
+  .nums label{position:relative}
+  .nums input{position:absolute;opacity:0;inset:0}
+  .nums span{display:grid;place-items:center;height:40px;border:1px solid #3a4a41;border-radius:8px;color:var(--soft);font:600 15px Inter,sans-serif;cursor:pointer}
+  .nums input:checked + span{background:var(--acc);border-color:var(--acc);color:#15190f}
+  .nums input:focus-visible + span{outline:2px solid var(--acc);outline-offset:1px}
+  .legacy{font-size:14px;color:var(--mute)}
+  .err{color:#e3a08a}
+  .row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+  .ok{margin:0;color:var(--green);font-size:15px}
+</style>

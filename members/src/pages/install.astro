@@ -1,0 +1,45 @@
+---
+// How to put the members' app on a phone's home screen. Public, so it can be linked from the welcome email.
+import Layout from '../layouts/Layout.astro';
+const member = Astro.locals.member;
+---
+<Layout title="Put the app on your phone">
+  <p class="eyebrow">Install</p>
+  <h1>Put the app on your phone</h1>
+  <p>Vault Human opens like any other app: its own icon, full screen, no browser bars. It takes about thirty seconds.</p>
+
+  <section class="b">
+    <h2>iPhone</h2>
+    <ol class="steps">
+      <li>Open <b>{Astro.url.origin.replace(/^https?:\/\//, '')}</b> in <b>Safari</b>.</li>
+      <li>Tap the <b>Share</b> button (the square with the arrow).</li>
+      <li>Scroll down and tap <b>Add to Home Screen</b>, then <b>Add</b>.</li>
+      <li>Open Vault Human from your home screen and sign in once.</li>
+      <li>On Today, tap <b>Turn on reminders</b> and allow notifications.</li>
+    </ol>
+    <p class="note">On iPhone, reminders only work from the home-screen app, not from a Safari tab.</p>
+  </section>
+
+  <section class="b">
+    <h2>Android</h2>
+    <ol class="steps">
+      <li>Open <b>{Astro.url.origin.replace(/^https?:\/\//, '')}</b> in <b>Chrome</b>.</li>
+      <li>Tap <b>Install app</b> when it appears, or the <b>&#8942;</b> menu, then <b>Add to Home screen</b>.</li>
+      <li>Open Vault Human from your home screen and sign in once.</li>
+      <li>On Today, tap <b>Turn on reminders</b> and allow notifications.</li>
+    </ol>
+  </section>
+
+  <section class="b">
+    <h2>Computer</h2>
+    <p>Sign in at <b>{Astro.url.origin.replace(/^https?:\/\//, '')}</b> in any browser. Chrome and Edge also show an install icon in the address bar.</p>
+    <p class="more">Same account, same keys and the same captures on every device.</p>
+  </section>
+
+  <p><a class="btn" href={member ? '/today' : '/signin'}>{member ? 'Back to Today' : 'Sign in'}</a></p>
+</Layout>
+<style>
+  .steps{margin:0 0 14px;padding-left:22px;color:var(--soft)}
+  .steps li{margin:0 0 8px}
+  .steps b{color:var(--ink)}
+</style>

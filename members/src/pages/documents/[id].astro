@@ -1,0 +1,39 @@
+---
+// One member document, page by page, with the member's email across each page. Read here; nothing to download.
+import Layout from '../../layouts/Layout.astro';
+import { documentById, signedPageUrl } from '../../lib/files';
+
+const env = Astro.locals.runtime.env;
+const member = Astro.locals.member!;
+const doc = documentById(Astro.params.id ?? '');
+if (!doc) return Astro.redirect('/documents');
+Astro.response.headers.set('Cache-Control', 'private, no-store');
+const pages = await Promise.all(Array.from({ length: doc.pages }, (_, i) => signedPageUrl(env.SESSION_SECRET, doc.id, i + 1, member.id)));
+const mark = member.email;
+---
+<Layout title={doc.title} nav="documents">
+  <p class="back"><a href="/documents">← Documents</a></p>
+  <p class="eyebrow">{doc.type}</p>
+  <h1>{doc.title}.</h1>
+  <div class="reader" oncontextmenu="return false">
+    {pages.map((src, i) => (
+      <figure class="page">
+        <img src={src} alt={`${doc.title}, page ${i + 1} of ${doc.pages}`} loading={i ? 'lazy' : 'eager'} draggable="false" />
+        <span class="mark" aria-hidden="true">{mark}</span>
+        <figcaption>Page {i + 1} of {doc.pages}</figcaption>
+      </figure>
+    ))}
+  </div>
+  <p class="legal">© Vault Human, LLC. All rights reserved. For your own use as a member; please don't copy, share or post it.</p>
+</Layout>
+<style>
+  .back{margin:0 0 14px}.back a{color:var(--acc);text-decoration:none;font-weight:600}
+  .reader{display:grid;gap:18px;margin-top:18px;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+  .page{position:relative;margin:0;border-radius:10px;overflow:hidden;background:#fff}
+  .page img{display:block;width:100%;height:auto;pointer-events:none}
+  .mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:rotate(-28deg);
+    font:600 clamp(14px,4vw,26px)/1 Inter,sans-serif;color:rgba(20,26,22,.13);letter-spacing:.06em;pointer-events:none;white-space:nowrap}
+  .page figcaption{position:absolute;right:10px;bottom:8px;font-size:12px;color:rgba(20,26,22,.55)}
+  .legal{margin-top:22px;font-size:13px;color:var(--mute)}
+  @media print{.reader{display:none}}
+</style>

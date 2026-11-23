@@ -1,0 +1,462 @@
+diff --git a/src/components/MemberLogin.astro b/src/components/MemberLogin.astro
+new file mode 100644
+index 0000000..347feb7
+--- /dev/null
++++ b/src/components/MemberLogin.astro
+@@ -0,0 +1,19 @@
++---
++// "Member login" in the top-right of the public site header, pointing to the members' app.
++// Hidden until the members' app goes live: while LIVE is false this renders nothing at all,
++// so the built pages are byte-for-byte what they were. Flip LIVE to true to show it everywhere.
++const LIVE = false;
++---
++{LIVE && (
++  <>
++    <a class="member-login" href="https://members.vaulthuman.com/">Member login</a>
++    <style is:inline>
++      .member-login{flex:none;display:inline-block;margin-left:14px;padding:8px 14px;border:1px solid rgba(201,162,74,.75);border-radius:999px;color:#F1EDE4 !important;font:600 14px/1 Inter,system-ui,sans-serif;text-decoration:none;white-space:nowrap}
++      .member-login:hover,.member-login:focus-visible{background:#C9A24A;color:#15190f !important;outline:none}
++      header.site .navlinks{margin-left:auto}
++      .top .member-login{margin-left:auto;margin-right:16px;align-self:center}
++      @media (max-width:1120px){header.site .member-login{margin-left:auto;margin-right:10px}}
++      @media (max-width:480px){.top{flex-wrap:wrap}.top .brand,.top .tel{white-space:nowrap}.top .member-login{order:3;margin:12px 0 0 auto}}
++    </style>
++  </>
++)}
+diff --git a/src/layouts/Base.astro b/src/layouts/Base.astro
+index f4e9b76..ff09106 100644
+--- a/src/layouts/Base.astro
++++ b/src/layouts/Base.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+ const { title = "Vault Human — Daily coaching for the whole of you", description = "Vault Human is daily coaching: a short video and one small step at 8 each morning and 8 each evening, and a coach who walks the year with you. From $99 a month.", beginHref = "/#begin" , image = "https://www.vaulthuman.com/og/vh.jpg"} = Astro.props;
+@@ -42,7 +43,7 @@ const year = new Date().getFullYear();
+ <body>
+   <header class="site"><div class="wrap bar">
+     <a class="brand" href="/">Vault <b>Human</b></a>
+-    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
++    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
+   </div></header>
+ 
+   <main>
+diff --git a/src/pages/as-learned.astro b/src/pages/as-learned.astro
+index e6b1fbf..566b0f5 100644
+--- a/src/pages/as-learned.astro
++++ b/src/pages/as-learned.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+ const year = new Date().getFullYear();
+@@ -23,7 +24,7 @@ const year = new Date().getFullYear();
+ <body data-time="past" class="tab-past" data-film="/img/russ/v2/learned-past-v2.mp4" data-film-poster="/img/russ/v2/learned-past-poster.jpg">
+   <header class="site"><div class="wrap bar">
+     <a class="brand" href="/">Vault <b>Human</b></a>
+-    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
++    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
+   </div></header>
+   <main>
+     <section class="hero hero-video"><video class="bgvid" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=1600&q=60&auto=format&fit=crop"><source src="https://assets.mixkit.co/videos/11022/11022-720.mp4" type="video/mp4"></video><div class="veil"></div>
+diff --git a/src/pages/as-lived.astro b/src/pages/as-lived.astro
+index 82b05d8..5636502 100644
+--- a/src/pages/as-lived.astro
++++ b/src/pages/as-lived.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+ const year = new Date().getFullYear();
+@@ -23,7 +24,7 @@ const year = new Date().getFullYear();
+ <body data-time="future" class="tab-future" data-film="/img/russ/v2/lived-future.mp4" data-film-poster="/img/russ/v2/lived-future-poster.jpg">
+   <header class="site"><div class="wrap bar">
+     <a class="brand" href="/">Vault <b>Human</b></a>
+-    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
++    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
+   </div></header>
+   <main>
+     <section class="hero hero-video"><video class="bgvid" autoplay muted loop playsinline poster="/video/desert-night-poster.jpg"><source src="/video/desert-night.mp4" type="video/mp4"></video><div class="veil"></div>
+diff --git a/src/pages/as-loved.astro b/src/pages/as-loved.astro
+index 4e481e6..afea2db 100644
+--- a/src/pages/as-loved.astro
++++ b/src/pages/as-loved.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+ const year = new Date().getFullYear();
+@@ -23,7 +24,7 @@ const year = new Date().getFullYear();
+ <body data-time="present" class="tab-present" data-film="/img/russ/v2/loved-present-v2.mp4" data-film-poster="/img/russ/v2/loved-present-poster.jpg">
+   <header class="site"><div class="wrap bar">
+     <a class="brand" href="/">Vault <b>Human</b></a>
+-    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
++    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
+   </div></header>
+   <main>
+     <section class="hero hero-video"><video class="bgvid" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1600&q=60&auto=format&fit=crop"><source src="https://assets.mixkit.co/videos/48525/48525-720.mp4" type="video/mp4"></video><div class="veil" style="background:linear-gradient(180deg,rgba(18,23,21,.72) 0%,rgba(18,23,21,.55) 45%,rgba(18,23,21,.95) 100%)"></div>
+diff --git a/src/pages/index.astro b/src/pages/index.astro
+index 634806e..5f42023 100755
+--- a/src/pages/index.astro
++++ b/src/pages/index.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import Voices from '../components/Voices.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+@@ -97,7 +98,7 @@ const year = new Date().getFullYear();
+ <body data-time="all">
+   <header class="site"><div class="wrap bar">
+     <a class="brand" href="/">Vault <b>Human</b></a>
+-    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
++    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
+   </div></header>
+ 
+   <main>
+diff --git a/src/pages/inside.astro b/src/pages/inside.astro
+index d39bc3b..50b41b4 100644
+--- a/src/pages/inside.astro
++++ b/src/pages/inside.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+ const year = new Date().getFullYear();
+@@ -22,7 +23,7 @@ const year = new Date().getFullYear();
+   <style is:inline>:root{--pagebg:url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1800&q=55&auto=format&fit=crop")}</style>
+ </head>
+ <body data-time="all">
+-  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
++  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+   <main>
+     <style is:inline>
+       .in-hero{position:relative;min-height:560px;display:flex;align-items:flex-end;background:#121715 url("https://images.unsplash.com/photo-1758272959140-e727ef77bbda?w=1800&q=65&auto=format&fit=crop") 50% 40%/cover}
+diff --git a/src/pages/key/b001.astro b/src/pages/key/b001.astro
+index 3aab06d..2eced0e 100644
+--- a/src/pages/key/b001.astro
++++ b/src/pages/key/b001.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../../components/MemberLogin.astro';
+ // https://www.vaulthuman.com/key/b001/ — where the B001 Go outside email's video opens (the sign-up welcome). Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
+ // The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+ const title = 'Go outside — Vault Human';
+@@ -69,7 +70,7 @@ const desc = 'A short video and one small step for today.';
+ <body>
+   <header class="top">
+     <a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a>
+-    <a class="tel" href="tel:+18888332510">(888) 833-2510</a>
++    <MemberLogin /><a class="tel" href="tel:+18888332510">(888) 833-2510</a>
+   </header>
+ 
+   <section class="hero">
+diff --git a/src/pages/key/b002.astro b/src/pages/key/b002.astro
+index 58e88a5..5e24dc8 100644
+--- a/src/pages/key/b002.astro
++++ b/src/pages/key/b002.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../../components/MemberLogin.astro';
+ // https://www.vaulthuman.com/key/b002/ — where the B002 Stretch before bed email's video opens (free week, Day 2 evening). Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
+ // The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+ const title = 'Stretch before bed — Vault Human';
+@@ -69,7 +70,7 @@ const desc = 'A short video and one small step for tonight.';
+ <body>
+   <header class="top">
+     <a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a>
+-    <a class="tel" href="tel:+18888332510">(888) 833-2510</a>
++    <MemberLogin /><a class="tel" href="tel:+18888332510">(888) 833-2510</a>
+   </header>
+ 
+   <section class="hero">
+diff --git a/src/pages/key/b003.astro b/src/pages/key/b003.astro
+index 71f01e3..e80884e 100644
+--- a/src/pages/key/b003.astro
++++ b/src/pages/key/b003.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../../components/MemberLogin.astro';
+ // https://www.vaulthuman.com/key/b003/ — where the B003 Thank your body email's video opens (free week evening). Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
+ // The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+ const title = 'Thank your body — Vault Human';
+@@ -69,7 +70,7 @@ const desc = 'A short video and one small step for tonight.';
+ <body>
+   <header class="top">
+     <a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a>
+-    <a class="tel" href="tel:+18888332510">(888) 833-2510</a>
++    <MemberLogin /><a class="tel" href="tel:+18888332510">(888) 833-2510</a>
+   </header>
+ 
+   <section class="hero">
+diff --git a/src/pages/key/h001.astro b/src/pages/key/h001.astro
+index 144304a..eedcf13 100644
+--- a/src/pages/key/h001.astro
++++ b/src/pages/key/h001.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../../components/MemberLogin.astro';
+ // https://www.vaulthuman.com/key/h001/ — where the H001 Stay in love email's video opens (free week, Day 1 evening). Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
+ // The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+ const title = 'Stay in love — Vault Human';
+@@ -69,7 +70,7 @@ const desc = 'A short video and one small step for tonight.';
+ <body>
+   <header class="top">
+     <a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a>
+-    <a class="tel" href="tel:+18888332510">(888) 833-2510</a>
++    <MemberLogin /><a class="tel" href="tel:+18888332510">(888) 833-2510</a>
+   </header>
+ 
+   <section class="hero">
+diff --git a/src/pages/key/h002.astro b/src/pages/key/h002.astro
+index 39fc2ee..db8ca3d 100644
+--- a/src/pages/key/h002.astro
++++ b/src/pages/key/h002.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../../components/MemberLogin.astro';
+ // https://www.vaulthuman.com/key/h002/ — where the H002 Squeeze the orange email's video opens (free week, Day 3 evening). Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
+ // The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+ const title = 'Squeeze the orange — Vault Human';
+@@ -69,7 +70,7 @@ const desc = 'A short video and one small step for tonight.';
+ <body>
+   <header class="top">
+     <a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a>
+-    <a class="tel" href="tel:+18888332510">(888) 833-2510</a>
++    <MemberLogin /><a class="tel" href="tel:+18888332510">(888) 833-2510</a>
+   </header>
+ 
+   <section class="hero">
+diff --git a/src/pages/key/m001.astro b/src/pages/key/m001.astro
+index 9dcf731..835f96d 100644
+--- a/src/pages/key/m001.astro
++++ b/src/pages/key/m001.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../../components/MemberLogin.astro';
+ // https://www.vaulthuman.com/key/m001/ — where the Day 1 email's video opens. Same design as /start and /thanks.
+ // The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+ const title = 'Choose your life — Vault Human';
+@@ -69,7 +70,7 @@ const desc = 'A short video and one small step for today.';
+ <body>
+   <header class="top">
+     <a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a>
+-    <a class="tel" href="tel:+18888332510">(888) 833-2510</a>
++    <MemberLogin /><a class="tel" href="tel:+18888332510">(888) 833-2510</a>
+   </header>
+ 
+   <section class="hero">
+diff --git a/src/pages/key/m002.astro b/src/pages/key/m002.astro
+index 960cff4..d8788d3 100644
+--- a/src/pages/key/m002.astro
++++ b/src/pages/key/m002.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../../components/MemberLogin.astro';
+ // https://www.vaulthuman.com/key/m002/ — where the Day 2 email's video opens. Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
+ // The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+ const title = 'Read the label — Vault Human';
+@@ -69,7 +70,7 @@ const desc = 'A short video and one small step for today.';
+ <body>
+   <header class="top">
+     <a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a>
+-    <a class="tel" href="tel:+18888332510">(888) 833-2510</a>
++    <MemberLogin /><a class="tel" href="tel:+18888332510">(888) 833-2510</a>
+   </header>
+ 
+   <section class="hero">
+diff --git a/src/pages/key/m003.astro b/src/pages/key/m003.astro
+index 1938bdf..05cf841 100644
+--- a/src/pages/key/m003.astro
++++ b/src/pages/key/m003.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../../components/MemberLogin.astro';
+ // https://www.vaulthuman.com/key/m003/ — where the Day 2 email's video opens. Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
+ // The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+ const title = 'Begin at the end — Vault Human';
+@@ -69,7 +70,7 @@ const desc = 'A short video and one small step for today.';
+ <body>
+   <header class="top">
+     <a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a>
+-    <a class="tel" href="tel:+18888332510">(888) 833-2510</a>
++    <MemberLogin /><a class="tel" href="tel:+18888332510">(888) 833-2510</a>
+   </header>
+ 
+   <section class="hero">
+diff --git a/src/pages/key/m004.astro b/src/pages/key/m004.astro
+index a2e0c97..4a39faa 100644
+--- a/src/pages/key/m004.astro
++++ b/src/pages/key/m004.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../../components/MemberLogin.astro';
+ // https://www.vaulthuman.com/key/m004/ — where the M004 Ask, then listen email's video opens (free week, Day 4 morning). Unlisted (noindex, not in sitemap). Same design as /start and /thanks.
+ // The video starts playing the moment the page opens (muted, as browsers require); one tap turns the sound on.
+ const title = 'Ask, then listen — Vault Human';
+@@ -69,7 +70,7 @@ const desc = 'A short video and one small step for today.';
+ <body>
+   <header class="top">
+     <a class="brand" href="/">Vault <b>Human</b><small>Online life coaching</small></a>
+-    <a class="tel" href="tel:+18888332510">(888) 833-2510</a>
++    <MemberLogin /><a class="tel" href="tel:+18888332510">(888) 833-2510</a>
+   </header>
+ 
+   <section class="hero">
+diff --git a/src/pages/method.astro b/src/pages/method.astro
+index d744400..d3b4de9 100644
+--- a/src/pages/method.astro
++++ b/src/pages/method.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+ const year = new Date().getFullYear();
+@@ -22,7 +23,7 @@ const year = new Date().getFullYear();
+   <style is:inline>:root{--pagebg:url("https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800&q=55&auto=format&fit=crop")}</style>
+ </head>
+ <body data-time="all">
+-  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
++  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+   <main>
+     <section class="hero hero-video"><video class="bgvid" style="object-position:60% 30%;filter:brightness(.42) saturate(.32) contrast(1.05)" autoplay muted loop playsinline preload="auto" poster="/img/russ/v2/approach-vault.jpg" aria-hidden="true"><source src="/img/russ/v2/approach-vault.mp4" type="video/mp4"></video><div class="veil"></div><div class="wrap hero-grid"><div class="hero-copy">
+       <div class="timeword"><span class="tw past">Past</span><span class="tw present">Present</span><span class="tw future">Future</span></div>
+diff --git a/src/pages/plans.astro b/src/pages/plans.astro
+index 6e09189..18f99be 100644
+--- a/src/pages/plans.astro
++++ b/src/pages/plans.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+ const year = new Date().getFullYear();
+@@ -22,7 +23,7 @@ const year = new Date().getFullYear();
+   <style is:inline>:root{--pagebg:url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1800&q=55&auto=format&fit=crop")}</style>
+ </head>
+ <body data-time="all">
+-  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
++  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+   <main>
+     <section class="hero hero-plain"><div class="wrap hero-grid"><div class="hero-copy">
+       <p class="eyebrow">Plans and pricing</p>
+diff --git a/src/pages/privacy.astro b/src/pages/privacy.astro
+index 1d32cfa..be43f35 100644
+--- a/src/pages/privacy.astro
++++ b/src/pages/privacy.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+ const year = new Date().getFullYear();
+@@ -22,7 +23,7 @@ const year = new Date().getFullYear();
+   <style is:inline>:root{--pagebg:url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1800&q=55&auto=format&fit=crop")}</style>
+ </head>
+ <body data-time="all">
+-  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
++  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+   <main>
+     <section class="hero hero-plain"><div class="wrap"><p class="eyebrow">Legal</p><h1>Privacy.</h1></div></section>
+     <section class="sec" style="padding-top:20px"><div class="wrap"><style is:inline>.pv{max-width:760px;margin:0 auto;text-align:left}.pv h3{margin:30px 0 10px}.pv p,.pv li{font-size:17px;line-height:1.7}.pv ul{padding-left:20px;margin:0 0 16px}</style><div class="pv"><p><b>Effective October 25, 2026.</b> Vault Human, LLC (&ldquo;Vault Human,&rdquo; &ldquo;we&rdquo;) runs vaulthuman.com and the daily coaching emails. This page says what we collect, why, and what you can ask us to do with it.</p><h3>What we collect</h3><ul><li><b>What you give us.</b> Your name and email when you ask for your first Key or join. Anything you choose to write in a form. If you book a call, the details you enter in Calendly.</li><li><b>Payments.</b> Memberships are paid through Stripe. Stripe handles your card; we never see or store the full card number. We receive your name, email and payment status.</li><li><b>How you use the site.</b> Pages visited, the link or ad that brought you here, device and browser type. We use Google Analytics and the Google Ads tag for this, through cookies.</li><li><b>Email activity.</b> Whether our daily emails arrive, so we can fix delivery problems.</li></ul><h3>Why we use it</h3><ul><li>To send the coaching emails and membership you asked for.</li><li>To answer you, and to book and hold calls.</li><li>To bill memberships and keep payment records.</li><li>To learn which pages and ads help people find us, so we spend less on the ones that don&rsquo;t.</li></ul><h3>What we don&rsquo;t do</h3><ul><li>We don&rsquo;t sell your information.</li><li>We don&rsquo;t share what you tell us in coaching with advertisers.</li><li>Vault Human is coaching, not therapy or medical care. Don&rsquo;t send us health records.</li></ul><h3>Who helps us run it</h3><p>These companies process data for us under their own privacy terms: HubSpot (contacts), Google (Analytics, Ads, Gmail), Stripe (payments), Calendly (scheduling), Cloudflare (website hosting).</p><h3>Cookies and ads</h3><p>Google Analytics and Google Ads set cookies to measure visits and ad results. You can block cookies in your browser. You can opt out of Google&rsquo;s ad personalization at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</p><h3>Your choices</h3><ul><li>Every email has an unsubscribe link.</li><li>Write to <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> to see, correct or delete what we hold about you. We answer within 30 days.</li><li>We keep payment records as long as tax law requires, and everything else only as long as you&rsquo;re a member or on the list.</li></ul><h3>Children</h3><p>The site and the program are for adults. We don&rsquo;t knowingly collect information from anyone under 18.</p><h3>Changes</h3><p>If this policy changes, we update the date at the top and note what changed.</p><h3>Contact</h3><p>Vault Human, LLC &middot; 1401 Lavaca St #211, Austin, Texas 78701 &middot; <a href="mailto:vault@vaulthuman.com">vault@vaulthuman.com</a> &middot; <a href="tel:+18888332510">(888) 833-2510</a></p></div></div></section>
+diff --git a/src/pages/speaking.astro b/src/pages/speaking.astro
+index 82e8008..7b0ce04 100644
+--- a/src/pages/speaking.astro
++++ b/src/pages/speaking.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import Voices from '../components/Voices.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+@@ -25,7 +26,7 @@ const year = new Date().getFullYear();
+ <body data-time="all" class="page-speaking">
+   <header class="site"><div class="wrap bar">
+     <a class="brand" href="/">Vault <b>Human</b></a>
+-    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
++    <nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button>
+   </div></header>
+   <main>
+     <section class="hero hero-video"><video class="bgvid" autoplay muted loop playsinline poster="/img/russ/v2/home-room-poster.jpg"><source src="/img/russ/v2/home-room.mp4" type="video/mp4"></video><div class="veil"></div>
+diff --git a/src/pages/the-180.astro b/src/pages/the-180.astro
+index a231417..76eb05e 100644
+--- a/src/pages/the-180.astro
++++ b/src/pages/the-180.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+ import chambers from '../data/chambers.json';
+@@ -24,7 +25,7 @@ const year = new Date().getFullYear();
+   <style is:inline>:root{--pagebg:url("https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1800&q=55&auto=format&fit=crop")}</style>
+ </head>
+ <body data-time="all">
+-  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
++  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+   <main>
+     <section class="hero hero-plain"><div class="wrap hero-grid"><div class="hero-copy">
+       <p class="eyebrow">The 180 · keys for the body</p>
+diff --git a/src/pages/the-360.astro b/src/pages/the-360.astro
+index 78e3649..bd73f7b 100644
+--- a/src/pages/the-360.astro
++++ b/src/pages/the-360.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+ import chambers from '../data/chambers.json';
+@@ -24,7 +25,7 @@ const year = new Date().getFullYear();
+   <style is:inline>:root{--pagebg:url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1800&q=55&auto=format&fit=crop")}</style>
+ </head>
+ <body data-time="all">
+-  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
++  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+   <main>
+     <section class="hero hero-plain"><div class="wrap hero-grid"><div class="hero-copy">
+       <p class="eyebrow">The 360 · keys for the mind</p>
+diff --git a/src/pages/the-88.astro b/src/pages/the-88.astro
+index 7574dc4..e431c2e 100644
+--- a/src/pages/the-88.astro
++++ b/src/pages/the-88.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../components/MemberLogin.astro';
+ import '../styles/home.css';
+ import '../styles/nature.css';
+ import chambers from '../data/chambers.json';
+@@ -26,7 +27,7 @@ const year = new Date().getFullYear();
+   <style is:inline>:root{--pagebg:url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1800&q=55&auto=format&fit=crop")}</style>
+ </head>
+ <body data-time="all">
+-  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
++  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a href="/plans/">Plans</a><a class="btn btn-acc" href="https://buy.stripe.com/fZu8wP9Jl9fO1d2dqU6Na00">Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+   <main>
+     <section class="hero hero-plain"><div class="wrap hero-grid"><div class="hero-copy">
+       <p class="eyebrow">The 88 · keys for the heart</p>
+diff --git a/src/pages/writing/index.astro b/src/pages/writing/index.astro
+index 71c1410..9f7bcca 100644
+--- a/src/pages/writing/index.astro
++++ b/src/pages/writing/index.astro
+@@ -1,4 +1,5 @@
+ ---
++import MemberLogin from '../../components/MemberLogin.astro';
+ import '../../styles/home.css';
+ import '../../styles/nature.css';
+ import { letters, BORN } from '../../data/letters.js';
+@@ -121,7 +122,7 @@ const desc = 'One short piece a day from Vault Human, in the order they came, fr
+   </style>
+ </head>
+ <body data-time="all">
+-  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a class="btn btn-acc" href="#" data-open-form>Begin</a></nav><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
++  <header class="site"><div class="wrap bar"><a class="brand" href="/">Vault <b>Human</b></a><nav class="navlinks" id="navlinks"><a href="/method/">The approach</a><div class="navdrop"><button class="navdrop__btn" type="button" aria-expanded="false" aria-haspopup="true">Your life <span aria-hidden="true">▾</span></button><div class="navdrop__menu"><a href="/as-learned/">Learning your past</a><a href="/as-loved/">Loving your present</a><a href="/as-lived/">Living your future</a></div></div><a href="/writing/">Writing</a><a href="/speaking/">About</a><a class="btn btn-acc" href="#" data-open-form>Begin</a></nav><MemberLogin /><button class="navtoggle" type="button" aria-label="Open menu" aria-controls="navlinks" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+   <main>
+     <section class="hero hero-video wr-hero"><video class="bgvid" autoplay muted loop playsinline poster="/img/writing-dusk-poster.jpg"><source src="https://assets.mixkit.co/videos/44496/44496-720.mp4" type="video/mp4"></video><div class="veil"></div>
+       <div class="wrap hero-grid"><div class="hero-copy">

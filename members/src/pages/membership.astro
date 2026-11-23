@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { stripeMode, portalUrl } from '../lib/stripe';
+
+const env = Astro.locals.runtime.env;
+const member = Astro.locals.member!;
+const key = env.STRIPE_SECRET_KEY;
+const portalReady = stripeMode(key) !== null;
+let error = '';
+
+if (Astro.request.method === 'POST') {
+  if (!portalReady) error = 'The membership portal isn’t connected yet. Email vault@vaulthuman.com and we’ll sort it out.';
+  else if (!member.stripe_customer_id) error = 'We couldn’t find a billing record for this account. Email vault@vaulthuman.com.';
+  else {
+    try {
+      const url = await portalUrl(key!, member.stripe_customer_id, `${Astro.url.origin}/membership`);
+      return Astro.redirect(url, 303);
+    } catch (e) {
+      console.error('[portal]', (e as Error).message);
+      error = 'The membership portal didn’t open. Try again in a minute.';
+    }
+  }
+}
+---
+<Layout title="Membership" nav="membership">
+  <p class="eyebrow">Membership</p>
+  <h1>Your membership.</h1>
+  <div class="card">
+    <p style="margin:0 0 4px;color:var(--ink)"><b>{member.email}</b></p>
+    <p style="margin:0">{member.access ? 'Your membership is active.' : member.subscription_status === 'canceled' ? 'Your membership has ended. You can rejoin any time to open your Keys again.' : 'Your membership is paused. Update your billing to open your Keys again.'}</p>
+    {!!member.access && member.subscription_status === 'past_due' && (
+      <p class="note" style="margin:12px 0 0">Your last payment didn’t go through. Stripe will try again, and your Keys stay open meanwhile. Updating your card below sorts it out.</p>
+    )}
+  </div>
+  <section class="b" style="margin-top:26px">
+    <p>Change your plan, update your card, see receipts or cancel. It all happens on Stripe's secure page.</p>
+    <form method="post">
+      <button class="btn" type="submit">Manage membership</button>
+    </form>
+    {error && <p class="note" style="margin-top:16px">{error}</p>}
+    {!portalReady && !error && <p class="more" style="margin-top:14px">Setup: no Stripe key is set yet, so this button is stubbed.</p>}
+  </section>
+  <section class="b">
+    <form method="post" action="/signout"><button class="btn ghost" type="submit">Sign out</button></form>
+  </section>
+</Layout>

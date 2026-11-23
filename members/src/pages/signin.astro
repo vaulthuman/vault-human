@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { deliverSignInLink } from '../lib/email';
+import { allowSignIn, hashIp } from '../lib/ratelimit';
+import { memberForSignIn, validEmail } from '../lib/signin';
+import { makeLinkToken } from '../lib/tokens';
+
+const env = Astro.locals.runtime.env;
+if (Astro.locals.member) return Astro.redirect('/today');
+
+let sent = false;
+let error = '';
+const devLog = env.DEV_LOG_LINKS === '1' && !env.RESEND_API_KEY;
+
+if (Astro.request.method === 'POST') {
+  const typed = String((await Astro.request.formData()).get('email') ?? '').trim();
+  const email = typed.toLowerCase();
+  if (!validEmail(email)) {
+    error = 'That email address doesn’t look right.';
+  } else if (!(await allowSignIn(env.DB, email, await hashIp(env.SESSION_SECRET, Astro.request.headers.get('cf-connecting-ip') ?? 'local')))) {
+    error = 'Too many sign-in requests. Wait a little while, then try again.';
+  } else {
+    const base = (env.APP_URL || Astro.url.origin).replace(/\/$/, '');
+    // Everything after this point runs after the response, so members and non-members get the same answer just as fast.
+    const work = (async () => {
+      const member = await memberForSignIn(env, typed);
+      if (!member) return;
+      const link = `${base}/auth/verify?token=${encodeURIComponent(await makeLinkToken(env.SESSION_SECRET, email))}`;
+      // Resend when RESEND_API_KEY is set; otherwise the dev console (DEV_LOG_LINKS=1).
+      await deliverSignInLink(env, email, link);
+    })().catch((e) => console.error('[signin] failed', (e as Error).message));
+    const ctx = Astro.locals.runtime.ctx;
+    if (ctx?.waitUntil) ctx.waitUntil(work);
+    else await work;
+    // Same answer whether or not the address belongs to a member.
+    sent = true;
+  }
+}
+---
+<Layout title="Sign in">
+  <p class="eyebrow">Members</p>
+  <h1>Sign in.</h1>
+  {sent ? (
+    <div class="card">
+      <p style="color:var(--ink);margin:0 0 8px"><b>Check your email.</b></p>
+      <p style="margin:0">If that address belongs to a member, a sign-in link is on its way. It works once, for 15 minutes.</p>
+      {devLog && <p class="more" style="margin:12px 0 0">Development: the link was printed to the server console. No email was sent.</p>}
+    </div>
+  ) : (
+    <form method="post" class="card">
+      <label class="k" for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+      {error && <p style="color:#e3a08a;margin:10px 0 0">{error}</p>}
+      <button class="btn" type="submit" style="margin-top:16px;width:100%">Send me a sign-in link</button>
+    </form>
+  )}
+  <p class="more" style="margin-top:20px">No password. We email you a link, you tap it, you're in.</p>
+</Layout>

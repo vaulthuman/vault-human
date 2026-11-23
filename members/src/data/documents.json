@@ -1,0 +1,10 @@
+[
+  {
+    "id": "guide",
+    "title": "The member guide",
+    "about": "A placeholder until the real guide is ready.",
+    "type": "Guide",
+    "pages": 1,
+    "folder": "documents/guide"
+  }
+]
