@@ -9,13 +9,13 @@ html,body{margin:0;height:100%;background:#1b2230;color:var(--ink);font:16px/1.5
 .bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
 .bg video.on{opacity:1}
 .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,20,32,.35) 0%,rgba(15,20,32,.15) 40%,rgba(15,20,32,.55) 100%)}
-.wrap{position:relative;z-index:2;min-height:100vh;max-width:460px;margin:0 auto;padding:26px 20px 34px;display:flex;flex-direction:column;gap:16px}
+.wrap{position:relative;z-index:2;min-height:100vh;min-height:100svh;max-width:460px;margin:0 auto;padding:26px 20px 34px;display:flex;flex-direction:column;gap:16px}
 .mark{display:flex;align-items:center;font:800 17px var(--b);letter-spacing:-.04em;line-height:1}
 .mark i{font-style:normal;color:var(--ink)}.mark i+i{color:var(--sage)}
 .words{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
 .w{position:absolute;font:italic 400 22px var(--d);color:var(--ink);opacity:0;white-space:nowrap;text-shadow:0 2px 18px rgba(0,0,0,.35);animation:drift 5.2s ease-out forwards}
 @keyframes drift{0%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.9)}25%{opacity:.95}70%{opacity:.85}100%{opacity:0;transform:translate(0,0) scale(1.05)}}
-.hero{margin-top:auto;margin-bottom:auto;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
+.hero{margin-top:auto;margin-bottom:auto;padding-bottom:9vh;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
 .fade{opacity:0;transform:translateY(10px);transition:opacity 1.2s ease,transform 1.2s ease}
 .fade.in{opacity:1;transform:none}
 h1{font:600 44px/1.05 var(--d);margin:0;text-shadow:0 2px 24px rgba(0,0,0,.3)}
