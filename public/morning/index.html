@@ -94,7 +94,9 @@ function splash(){
 }
 function nums(from,cur){var h='<div class="nums'+(from===1?" ten":"")+'">';for(var n=from;n<=10;n++)h+='<button class="opt'+(String(n)===String(cur)?" sel":"")+'" type="button">'+n+'</button>';return h+"</div>";}
 function back(){return '<button class="back" id="bk" type="button">\u2039 Back</button>';}
-function render(){draw();if(document.activeElement&&document.activeElement.blur)document.activeElement.blur();var k=document.getElementById("bk");if(k)k.onclick=function(){step--;render();};window.scrollTo(0,0);}
+var F={};function saveF(){['fn','em','ph','loc'].forEach(function(i){var e=document.getElementById(i);if(e)F[i]=e.value;});var c=document.getElementById('ok');if(c)F.ok=c.checked;}
+function loadF(){['fn','em','ph','loc'].forEach(function(i){var e=document.getElementById(i);if(e&&F[i])e.value=F[i];});var c=document.getElementById('ok');if(c&&F.ok)c.checked=true;}
+function render(){saveF();draw();loadF();if(document.activeElement&&document.activeElement.blur)document.activeElement.blur();var k=document.getElementById("bk");if(k)k.onclick=function(){step--;render();};window.scrollTo(0,0);}
 function draw(){
  if(step===0){
   app.innerHTML=mark()+dots(0)+'<div class="panel"><div class="q">If love and happiness were a 10, and fear and unhappiness were a 0, where are you right now?</div>'+nums(0,tone)+'<div class="ends"><span>0 · fear</span><span>love · 10</span></div></div>';
