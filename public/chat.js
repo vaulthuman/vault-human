@@ -18,7 +18,12 @@
     '#vhc-log{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:8px}.vhc-m{max-width:85%;padding:8px 11px;border-radius:12px;white-space:pre-wrap}.vhc-a{background:#f0f0f3;align-self:flex-start}.vhc-u{background:' + B.color + ';color:#fff;align-self:flex-end}' +
     '#vhc form{display:flex;border-top:1px solid #e5e5ea}#vhc input{flex:1;border:0;padding:12px;font:inherit;outline:none}#vhc form button{border:0;background:none;color:' + B.color + ';font-weight:700;padding:0 14px;cursor:pointer}' +
     '#vhc small{display:block;text-align:center;color:#888;font-size:11px;padding:4px}' +
-    '@media(max-width:760px){#vhc-btn{bottom:80px;right:14px;padding:11px 15px;font-size:14px}#vhc{bottom:132px;right:12px;height:420px}}';
+    '#vhc input{font-size:16px}' +
+    '@media(max-width:760px){#vhc-btn{bottom:80px;right:14px;padding:11px 15px;font-size:14px}' +
+    '#vhc{top:0;left:0;right:0;bottom:auto;width:100%;max-width:none;height:100%;max-height:none;border-radius:0;box-shadow:none}' +
+    '#vhc header{padding:16px 16px;font-size:16px}#vhc header button{font-size:26px;line-height:1;padding:0 4px}' +
+    '#vhc-log{padding:14px}.vhc-m{font-size:15px}#vhc form button{font-size:16px;padding:0 16px}' +
+    'html.vhc-lock,html.vhc-lock body{overflow:hidden}html.vhc-lock #vhc-btn{display:none}}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
   var btn = document.createElement('button'); btn.id = 'vhc-btn'; btn.textContent = 'Chat with us'; document.body.appendChild(btn);
   var box = document.createElement('div'); box.id = 'vhc';
@@ -27,9 +32,12 @@
   document.body.appendChild(box);
   var log = box.querySelector('#vhc-log'), input = box.querySelector('input');
   function add(role, text) { var d = document.createElement('div'); d.className = 'vhc-m ' + (role === 'user' ? 'vhc-u' : 'vhc-a'); d.textContent = text; log.appendChild(d); log.scrollTop = log.scrollHeight; return d; }
-  var opened = false;
-  btn.onclick = function () { box.style.display = box.style.display === 'flex' ? 'none' : 'flex'; if (!opened) { opened = true; add('assistant', B.hello); msgs.push({ role: 'assistant', content: B.hello }); } input.focus(); };
-  box.querySelector('header button').onclick = function () { box.style.display = 'none'; };
+  var opened = false, mob = function () { return window.matchMedia('(max-width:760px)').matches; };
+  function fit() { if (!mob() || box.style.display !== 'flex') { box.style.height = ''; box.style.top = ''; return; } var vv = window.visualViewport; if (vv) { box.style.height = vv.height + 'px'; box.style.top = vv.offsetTop + 'px'; } log.scrollTop = log.scrollHeight; }
+  if (window.visualViewport) { window.visualViewport.addEventListener('resize', fit); window.visualViewport.addEventListener('scroll', fit); }
+  function show(on) { box.style.display = on ? 'flex' : 'none'; document.documentElement.classList.toggle('vhc-lock', on && mob()); fit(); }
+  btn.onclick = function () { var on = box.style.display !== 'flex'; show(on); if (on && !opened) { opened = true; add('assistant', B.hello); msgs.push({ role: 'assistant', content: B.hello }); } if (on && !mob()) input.focus(); };
+  box.querySelector('header button').onclick = function () { show(false); };
   box.querySelector('form').onsubmit = function (e) {
     e.preventDefault(); var t = input.value.trim(); if (!t) return; input.value = '';
     add('user', t); msgs.push({ role: 'user', content: t });
