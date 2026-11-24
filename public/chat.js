@@ -28,7 +28,7 @@
   var btn = document.createElement('button'); btn.id = 'vhc-btn'; btn.textContent = 'Chat with us'; document.body.appendChild(btn);
   var box = document.createElement('div'); box.id = 'vhc';
   box.innerHTML = '<header><span>' + B.name + '</span><button aria-label="Close">×</button></header><div id="vhc-log"></div>' +
-    '<form><input placeholder="Type here…" aria-label="Message" maxlength="800"><button>Send</button></form><small>Or call/text (888) 833-2510</small>';
+    '<form><input placeholder="Type here…" aria-label="Message" maxlength="800"><button>Send</button></form><small>Or call/text (888) 768-6029</small>';
   document.body.appendChild(box);
   var log = box.querySelector('#vhc-log'), input = box.querySelector('input');
   function add(role, text) { var d = document.createElement('div'); d.className = 'vhc-m ' + (role === 'user' ? 'vhc-u' : 'vhc-a'); d.textContent = text; log.appendChild(d); log.scrollTop = log.scrollHeight; return d; }
@@ -45,7 +45,7 @@
     var send = msgs[0].role === 'assistant' ? msgs.slice(1) : msgs;
     fetch(ENGINE, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ action: 'chat', brand: brand, sid: sid, messages: send }) })
       .then(function (r) { return r.json(); })
-      .then(function (j) { wait.textContent = j.reply || 'Please call or text (888) 833-2510.'; msgs.push({ role: 'assistant', content: wait.textContent }); })
-      .catch(function () { wait.textContent = 'Sorry, the chat is down for a moment. Please call or text (888) 833-2510.'; });
+      .then(function (j) { wait.textContent = j.reply || 'Please call or text (888) 768-6029.'; msgs.push({ role: 'assistant', content: wait.textContent }); })
+      .catch(function () { wait.textContent = 'Sorry, the chat is down for a moment. Please call or text (888) 768-6029.'; });
   };
 })();
