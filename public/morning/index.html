@@ -74,6 +74,7 @@ var Q=[
  {q:"Who do you most want to show up for?",o:["Myself","My partner","My family","The people I lead"]}
 ];
 var WORDS=["Lighter","Awake","Grounded","Clear","Free","Calm","Alive","Still heavy"];
+var TQ=[["How present are you, right this second?","miles away","right here"],["How steady do you feel right now?","shaky","grounded"],["How kind are you being to yourself this morning?","harsh","gentle"],["How settled is your heart this morning?","unsettled","at peace"],["How much light are you carrying into today?","dim","bright"],["How clear is your intention for today?","foggy","clear"],["How open are you to what today brings?","guarded","open"]];
 var app=document.getElementById("app"),A=[],tone="",step=-1,uid="";
 function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
 function mark(){return '<div class="mark"><i>V</i><i>H</i></div>';}
@@ -99,7 +100,7 @@ function loadF(){['fn','em','ph','loc'].forEach(function(i){var e=document.getEl
 function render(){saveF();draw();loadF();if(document.activeElement&&document.activeElement.blur)document.activeElement.blur();var k=document.getElementById("bk");if(k)k.onclick=function(){step--;render();};window.scrollTo(0,0);}
 function draw(){
  if(step===0){
-  app.innerHTML=mark()+dots(0)+'<div class="panel"><div class="q">If love and happiness were a 10, and fear and unhappiness were a 0, where are you right now?</div>'+nums(0,tone)+'<div class="ends"><span>0 · fear</span><span>love · 10</span></div></div>';
+  app.innerHTML=mark()+dots(0)+'<div class="panel"><div class="q">'+TQ[0][0]+'</div>'+nums(1,tone)+'<div class="ends"><span>1 · '+TQ[0][1]+'</span><span>'+TQ[0][2]+' · 10</span></div></div>';
   bind(function(t){tone=t;step=1;render();});return;}
  if(step>=1&&step<=Q.length){var it=Q[step-1],body;
   if(it.k==="scale")body=nums(1,A[step-1])+'<div class="ends"><span>1 · '+esc(it.lo)+'</span><span>'+esc(it.hi)+' · 10</span></div>';
