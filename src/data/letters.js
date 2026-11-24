@@ -9550,5 +9550,65 @@ export const letters=[
   "iso": "2026-11-23",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "notice-out-loud",
+  "title": "Notice out loud",
+  "dek": "Sometime around 2005, in the San Francisco Bay Area, a man named Guy Sengstock began sitting people down in small groups with one strange instruction: forget the topic.",
+  "day": 193,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Sometime around 2005, in the San Francisco Bay Area, a man named Guy Sengstock began sitting people down in small groups with one strange instruction: forget the topic. Talk about what is happening right now, between us, in this room. He and a partner had been running a coaching practice, and by his account the most alive minutes of any session were the ones where someone stopped explaining and simply said what they were noticing: I feel myself pulling back from you; I notice I want you to like me; something in my chest got tight when you said that. They built a practice around those minutes and called it Circling. One person sits in the middle of the group's attention, and the rest say, out loud and as it happens, what it is like to be with them. No advice, no history, no fixing. The present, spoken."
+   },
+   {
+    "k": "",
+    "t": "By the 2010s it had spread, by the account of the people who carried it: a center in Boulder, Colorado, teachers in Europe who built a school of their own, and in Austin, Texas, around 2012, a young woman named Sara Ness who turned the same idea into games anyone could play on a weeknight and called it authentic relating. The games are simple to the point of embarrassment. You sit across from a stranger and take turns finishing one sentence: \"Being with you, I notice...\" You say what you imagine the other person is thinking, and they tell you whether you were right. You ask, \"What's it like being you right now?\" and then you do not fill the silence. Rooms that do this meet in most big cities now, often for free."
+   },
+   {
+    "k": "",
+    "t": "A fair word. None of it has been tested; there are no trials, only people who say it changed them, and the rooms are unregulated, so the quality of the one near you depends entirely on who is running it. Some of what comes up in a circle is not for a circle. Vault Human coaches and doesn't treat; if what surfaces is old and heavy, the door is a therapist, and a good circle leader will tell you the same."
+   },
+   {
+    "k": "",
+    "t": "Here it is in our words. Most conversation is about something: the weather, the game, the kids, the thing at work. Almost none of it is about the two people having it. This key asks you to say one true sentence about what is happening between you and the person in front of you, while it is happening. I spent a decade in restaurants in every role, and the managers worth working for could stop a cook mid-shift and say, \"You've been short with everyone since the ticket at seven. What happened?\" Ten seconds, and the whole night changed. That is circling without the word. It's a Circle key because this chamber's one sentence is that no one changes alone, and nothing joins two people faster than one of them saying what they notice. If you want the room, the real door is an authentic relating games night near you; for the deeper version, a weekend with a teacher who trained in the lineage and has years in it, not months."
+   }
+  ],
+  "n": 289,
+  "date": "November 24, 2026",
+  "iso": "2026-11-24",
+  "month": "November 2026",
+  "chamber": 6
+ },
+ {
+  "slug": "fast-twice-a-week",
+  "title": "Fast twice a week",
+  "dek": "A Christian who keeps the old rules is fasting as you read this.",
+  "day": 193,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "A Christian who keeps the old rules is fasting as you read this. The Nativity Fast began on November 15 and runs to Christmas Eve, forty days, and for the Orthodox, close to a quarter of a billion people, it is one of four fasting seasons in the year. The biggest is Great Lent, the seven weeks before Pascha, their word for Easter, and the rule is stricter than most people outside the church imagine: no meat, no eggs, no milk, cheese or butter, no fish, and on most days no wine or olive oil either. Add the Apostles' Fast in early summer, the two weeks before the Dormition in August, and every Wednesday and Friday outside the feasts, and an Orthodox Christian who keeps all of it eats this way close to half the days of the year. The Wednesday and Friday rule is the oldest piece. A short handbook for Christians written within a lifetime or two of the apostles, the Didache, already tells them to fast on those two days; the reasons given later were the betrayal and the cross."
+   },
+   {
+    "k": "",
+    "t": "The West had the same Lent once and kept less of it. The forty days are mentioned at the council at Nicaea in 325, and for a thousand years Lent in the West meant one meal a day with no meat, eggs or dairy, which is why the Tuesday before it became a day for pancakes, to use up the eggs and butter. Rome loosened the rule in 1966. A Catholic today is asked to fast on Ash Wednesday and Good Friday, to skip meat on the Fridays of Lent, and, by custom, to give up one thing for the forty days. Ash Wednesday falls on February 10 next year. The Orthodox begin on Clean Monday, March 15, which in Greece is a public holiday spent outdoors flying kites."
+   },
+   {
+    "k": "",
+    "t": "The fair word. The Orthodox fast is, in plain terms, a vegan diet without oil kept for months at a stretch, and the little research there is says what you would expect. A study of fasters on Crete, published in 2003, found total and LDL cholesterol lower during the fasting periods and back up after, and a handful of small studies of monks and lay fasters since have found roughly the same. These are small studies of people who chose to fast, not trials, and no one has shown that the fast itself lengthens a life. The usable part is the shape of it: two plain days a week, and a season every year when the whole community eats simply at the same time. Vault Human coaches and doesn't treat; if you take medication, carry a child, or have diabetes, the fast is a conversation with your physician first, and if eating has ever been a battle for you, keep the community and skip the fast."
+   },
+   {
+    "k": "",
+    "t": "I spent a decade in restaurants in every role, and every one of them knew Lent without a calendar: the fish orders doubled on Friday and the kitchen ran out of tartar sauce by eight. It's a Circle key because a fast kept alone is a diet and a fast kept together is a season; the Orthodox break Great Lent after midnight on Pascha with a lamb soup and red eggs at a table that has been waiting seven weeks for them. The next body letter, two days from now, is Yom Kippur and the Jewish fast days."
+   }
+  ],
+  "n": 290,
+  "date": "November 24, 2026",
+  "iso": "2026-11-24",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
