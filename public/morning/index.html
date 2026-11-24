@@ -29,7 +29,7 @@ h1{font:600 44px/1.05 var(--d);margin:0;text-shadow:0 2px 24px rgba(0,0,0,.3)}
 .note{font:italic 400 14.5px/1.45 var(--d);color:var(--soft)}
 .opts{display:grid;gap:9px}
 .opt{background:rgba(246,241,231,.1);border:1px solid var(--line);color:var(--ink);border-radius:14px;padding:14px;text-align:left;font:500 15px var(--b);cursor:pointer;transition:background .15s,border-color .15s}
-.opt:hover,.opt:focus-visible{background:rgba(246,241,231,.2);border-color:var(--gold);outline:none}
+.opt:focus-visible{background:rgba(246,241,231,.2);border-color:var(--gold);outline:none}@media (hover:hover){.opt:hover{background:rgba(246,241,231,.2);border-color:var(--gold)}}.opt.sel{background:rgba(246,241,231,.24);border-color:var(--gold)}.back{align-self:flex-start;background:none;border:0;color:var(--soft);font:500 14px var(--b);padding:4px 2px;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .nums{display:grid;grid-template-columns:repeat(6,1fr);gap:7px}
 .nums.ten{grid-template-columns:repeat(5,1fr)}
 .nums .opt{text-align:center;padding:13px 0;font-weight:600}
@@ -92,18 +92,20 @@ function splash(){
  setTimeout(function(){document.getElementById("b").classList.add("in");},5200);
  document.getElementById("b").onclick=function(){document.getElementById("words").innerHTML="";step=0;render();};
 }
-function nums(from){var h='<div class="nums'+(from===1?" ten":"")+'">';for(var n=from;n<=10;n++)h+='<button class="opt" type="button">'+n+'</button>';return h+"</div>";}
-function render(){
+function nums(from,cur){var h='<div class="nums'+(from===1?" ten":"")+'">';for(var n=from;n<=10;n++)h+='<button class="opt'+(String(n)===String(cur)?" sel":"")+'" type="button">'+n+'</button>';return h+"</div>";}
+function back(){return '<button class="back" id="bk" type="button">\u2039 Back</button>';}
+function render(){draw();if(document.activeElement&&document.activeElement.blur)document.activeElement.blur();var k=document.getElementById("bk");if(k)k.onclick=function(){step--;render();};window.scrollTo(0,0);}
+function draw(){
  if(step===0){
-  app.innerHTML=mark()+dots(0)+'<div class="panel"><div class="q">If love and happiness were a 10, and fear and unhappiness were a 0, where are you right now?</div>'+nums(0)+'<div class="ends"><span>0 · fear</span><span>love · 10</span></div></div>';
+  app.innerHTML=mark()+dots(0)+'<div class="panel"><div class="q">If love and happiness were a 10, and fear and unhappiness were a 0, where are you right now?</div>'+nums(0,tone)+'<div class="ends"><span>0 · fear</span><span>love · 10</span></div></div>';
   bind(function(t){tone=t;step=1;render();});return;}
  if(step>=1&&step<=Q.length){var it=Q[step-1],body;
-  if(it.k==="scale")body=nums(1)+'<div class="ends"><span>1 · '+esc(it.lo)+'</span><span>'+esc(it.hi)+' · 10</span></div>';
-  else body='<div class="opts">'+it.o.map(function(x){return '<button class="opt" type="button">'+esc(x)+'</button>';}).join("")+"</div>";
-  app.innerHTML=mark()+dots(step)+'<div class="panel"><div class="q">'+esc(it.q)+"</div>"+body+"</div>";
+  if(it.k==="scale")body=nums(1,A[step-1])+'<div class="ends"><span>1 · '+esc(it.lo)+'</span><span>'+esc(it.hi)+' · 10</span></div>';
+  else body='<div class="opts">'+it.o.map(function(x){return '<button class="opt'+(x===A[step-1]?" sel":"")+'" type="button">'+esc(x)+'</button>';}).join("")+"</div>";
+  app.innerHTML=mark()+back()+dots(step)+'<div class="panel"><div class="q">'+esc(it.q)+"</div>"+body+"</div>";
   bind(function(t){A[step-1]=t;step++;render();});return;}
  if(step===Q.length+1){
-  app.innerHTML=mark()+dots(8)+'<div class="panel"><div class="q">Your first key is ready.</div><div class="note">Unlock it below.</div>'+
+  app.innerHTML=mark()+back()+dots(8)+'<div class="panel"><div class="q">Your first key is ready.</div><div class="note">Unlock it below.</div>'+
   '<form id="f" style="display:grid;gap:12px"><label class="f">First name<input type="text" id="fn" autocomplete="given-name" required></label>'+
   '<label class="f">Email<input type="email" id="em" autocomplete="email" required></label>'+
   '<label class="f">Phone<input type="tel" id="ph" autocomplete="tel" required></label>'+
