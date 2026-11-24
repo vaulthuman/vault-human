@@ -22,18 +22,18 @@ video.film{width:100%;border-radius:16px;background:#000}
 .hide{display:none}.show{display:block}.show .opt{opacity:0;animation:var(--anim,rise) .6s ease forwards}
 @keyframes bloom{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
 @keyframes slide{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:none}}
-.dial{display:flex;flex-direction:column;align-items:center;gap:6px;margin:6px 0}
-.big{font:600 72px/1 Fraunces,Georgia,serif;color:var(--gold)}
-input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:10px;border-radius:6px;background:linear-gradient(90deg,#4a5d82,#c9876a,#e8c27a);outline:none}
-input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:32px;height:32px;border-radius:50%;background:#f6f1e7;border:3px solid #e8c27a;box-shadow:0 4px 14px rgba(0,0,0,.35)}
-input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;background:#f6f1e7;border:3px solid #e8c27a}
+
+
+
+
+
 .go{background:#f6f1e7;color:#1b2230;border:0;border-radius:999px;padding:15px;font:600 16px Inter,Arial;cursor:pointer}
 @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .tag{font:italic 400 19px Fraunces,Georgia,serif;color:var(--gold);text-align:center}
 .site{position:fixed;left:0;right:0;bottom:28px;text-align:center;font:500 15px Inter;letter-spacing:.08em;color:var(--soft);z-index:3;min-height:1.4em}
 .site a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
 .care{background:rgba(20,24,30,.45);border:1px solid var(--line);border-radius:14px;padding:14px;color:var(--soft);font-size:14px}.care a{color:var(--ink)}
-</style></head><body>
+.dial{display:flex;justify-content:center;margin:0}.big{font:600 22px/1 Inter,Arial,sans-serif;color:var(--gold);opacity:.9}input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:4px;border-radius:4px;background:linear-gradient(90deg,rgba(246,241,231,.25),rgba(232,194,122,.8));outline:none;margin:4px 0}input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#f6f1e7;border:2px solid #e8c27a;box-shadow:0 2px 6px rgba(0,0,0,.3)}input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#f6f1e7;border:2px solid #e8c27a}</style></head><body>
 <div class="bg"><video autoplay muted loop playsinline src="https://assets.mixkit.co/videos/31629/31629-720.mp4"></video></div>
 <div class="wrap" id="app"></div>
 <script>
@@ -44,6 +44,8 @@ var KEYS=[
  {title:"Read The Label",film:"/video/key02-read-the-label.mp4",card:"Read the label.",line:"Look at what you are carrying, and who put it there."}
 ];
 var P=new URLSearchParams(location.search),SL=location.pathname.match(/\/key(\d+)\/([A-Za-z0-9]+)/i),id=P.get("i")||(SL?SL[2]:""),day=Math.max(1,parseInt(P.get("d")||(SL?SL[1]:(location.pathname.match(/\/key\/(\d+)/)||[0,"1"])[1]),10)),key=KEYS[day-1]||KEYS[0],tone=P.get("v");
+var TQ=[["How present are you, right this second?","miles away","right here"],["How steady do you feel right now?","shaky","grounded"],["How kind are you being to yourself this morning?","harsh","gentle"],["How settled is your heart this morning?","unsettled","at peace"],["How much light are you carrying into today?","dim","bright"],["How clear is your intention for today?","foggy","clear"],["How open are you to what today brings?","guarded","open"]];
+var TQD=TQ[(day-1)%7];
 var WORDSETS=[
  ["Lighter","Awake","Grounded","Clear","Free","Calm","Alive","Still heavy"],
  ["Ready","Hopeful","Brave","Decided","Open","Steady","Unsure","Still heavy"],
@@ -57,7 +59,7 @@ function api(body){return fetch(API,{method:"POST",headers:{"Content-Type":"text
 var MARK='<div class="mark"><i>V</i><i>H</i></div>';
 function bind(sel,fn){app.querySelectorAll(sel).forEach(function(b){b.onclick=function(){fn(b.getAttribute("data-v"));};});}
 function pick(first){
- app.innerHTML=MARK+'<div class="panel"><div class="kicker">Key '+day+'</div><div class="q">Good morning'+(first?', '+esc(first):'')+'. If love and happiness were a 10, and fear and unhappiness were a 0, where are you right now?</div><div class="dial"><div class="big" id="big">5</div></div><input type="range" id="rng" min="0" max="10" step="1" value="5"><div class="ends"><span>0 · fear</span><span>love · 10</span></div><button class="go" id="set" type="button">Set my tone</button></div>';
+ app.innerHTML=MARK+'<div class="panel"><div class="kicker">Key '+day+'</div><div class="q">Good morning'+(first?', '+esc(first):'')+'. '+TQD[0]+'</div><div class="dial"><div class="big" id="big">5</div></div><input type="range" id="rng" min="1" max="10" step="1" value="5"><div class="ends"><span>1 · '+TQD[1]+'</span><span>'+TQD[2]+' · 10</span></div><button class="go" id="set" type="button">Set my tone</button></div>';
  var r=document.getElementById("rng"),b=document.getElementById("big");r.oninput=function(){b.textContent=r.value;};
  document.getElementById("set").onclick=function(){this.disabled=true;tone=r.value;history.replaceState(null,"","?i="+encodeURIComponent(id)+"&v="+tone);film();};
 }
