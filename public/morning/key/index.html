@@ -50,6 +50,8 @@ var WORDSETS=[
  ["Honest","Lighter","Seen","Clear","Thoughtful","Free","Tender","Still heavy"]
 ];
 var LOOKS=[{c:"#e8c27a",a:"rise"},{c:"#a9c294",a:"bloom"},{c:"#9cc3e6",a:"slide"}];
+var TQ=[["How present are you, right this second?","miles away","right here"],["How steady do you feel right now?","shaky","grounded"],["How kind are you being to yourself this morning?","harsh","gentle"],["How settled is your heart this morning?","unsettled","at peace"],["How much light are you carrying into today?","dim","bright"],["How clear is your intention for today?","foggy","clear"],["How open are you to what today brings?","guarded","open"]];
+var TQD=TQ[(day-1)%7];
 var WORDS=WORDSETS[(day-1)%WORDSETS.length],LOOK=LOOKS[(day-1)%LOOKS.length];
 var app=document.getElementById("app");
 function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
@@ -57,7 +59,7 @@ function api(body){return fetch(API,{method:"POST",headers:{"Content-Type":"text
 var MARK='<div class="mark"><i>V</i><i>H</i></div>';
 function bind(sel,fn){app.querySelectorAll(sel).forEach(function(b){b.onclick=function(){fn(b.getAttribute("data-v"));};});}
 function pick(first){
- app.innerHTML=MARK+'<div class="panel"><div class="kicker">Key '+day+'</div><div class="q">Good morning'+(first?', '+esc(first):'')+'. If love and happiness were a 10, and fear and unhappiness were a 0, where are you right now?</div><div class="dial"><div class="big" id="big">5</div></div><input type="range" id="rng" min="0" max="10" step="1" value="5"><div class="ends"><span>0 · fear</span><span>love · 10</span></div><button class="go" id="set" type="button">Set my tone</button></div>';
+ app.innerHTML=MARK+'<div class="panel"><div class="kicker">Key '+day+'</div><div class="q">Good morning'+(first?', '+esc(first):'')+'. '+TQD[0]+'</div><div class="dial"><div class="big" id="big">5</div></div><input type="range" id="rng" min="1" max="10" step="1" value="5"><div class="ends"><span>1 · '+TQD[1]+'</span><span>'+TQD[2]+' · 10</span></div><button class="go" id="set" type="button">Set my tone</button></div>';
  var r=document.getElementById("rng"),b=document.getElementById("big");r.oninput=function(){b.textContent=r.value;};
  document.getElementById("set").onclick=function(){this.disabled=true;tone=r.value;history.replaceState(null,"","?i="+encodeURIComponent(id)+"&v="+tone);film();};
 }
