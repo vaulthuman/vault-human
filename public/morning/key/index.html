@@ -41,7 +41,19 @@ var API="https://script.google.com/macros/s/AKfycbxOqI38c2_q0oLnwkGPajWPsMtj_okr
 var KEYS=[
  {title:"Go Outside",film:"/video/key01-go-outside.mp4",card:"Go outside.",line:"Twenty minutes. Come back with one thing you saw, heard and felt."},
  {title:"Choose Your Life",film:"/video/key01-choose-a-new-life.mp4",card:"Today I begin a new life.",line:"Say it out loud, outside. Then notice how it felt."},
- {title:"Read The Label",film:"/video/key02-read-the-label.mp4",card:"Read the label.",line:"Look at what you are carrying, and who put it there."}
+ {title:"Read The Label",film:"/video/key02-read-the-label.mp4",card:"Read the label.",line:"Look at what you are carrying, and who put it there."},
+ {title:"Squeeze The Orange",film:"/video/h002-squeeze-the-orange.mp4",card:"Squeeze the orange.",line:"Write one moment you got squeezed and what came out. Then what you'd want next time."},
+ {title:"Begin At The End",film:"/video/m003-begin-at-the-end.mp4",card:"Begin at the end.",line:"Write what you'd want four people to say about you three years from today."},
+ {title:"Stay In Love",film:"/video/h001-stay-in-love.mp4",card:"Stay in love.",line:"Before you walk into a room today, take one breath and drop into your heart."},
+ {title:"Ask, Then Listen",film:"/video/m004-ask-then-listen.mp4",card:"Ask, then listen.",line:"Ask one person three questions about themselves, and none about you."},
+ {title:"Thank Your Body",film:"/video/b003-thank-your-body.mp4",card:"Thank your body.",line:"Put a hand on your chest and thank your body for keeping you here."},
+ {title:"Keep The Streak",film:"/video/m005-keep-the-streak.mp4",card:"Keep the streak.",line:"Pick one small thing you did yesterday and do it again today."},
+ {title:"Find Where Love Is",film:"/video/h003-find-where-love-is.mp4",card:"Find where love is.",line:"Name one ordinary person today where love was, and write them one line of thanks."},
+ {title:"Credit Both Sides",film:"/video/m006-credit-both-sides.mp4",card:"Credit both sides.",line:"Write three people who helped make you, and one thing each one gave you."},
+ {title:"Stretch Before Bed",film:"/video/b002-stretch-before-bed.mp4",card:"Stretch before bed.",line:"Three slow stretches tonight, then one line of thanks for what your body did today."},
+ {title:"See It Differently",film:"/video/m007-see-it-differently.mp4",card:"See it differently.",line:"Take one thing you complained about and write its other side in three sentences."},
+ {title:"Honor Her Cycle",film:"/video/b004-honor-her-cycle.mp4",card:"Honor her cycle.",line:"Write one way you'll honor her rhythm this month, or your own."},
+ {title:"Be Love Now",film:"/video/h004-be-love-now.mp4",card:"Be love now.",line:"Find the moment you were most yourself and write it in one line."}
 ];
 var P=new URLSearchParams(location.search),SL=location.pathname.match(/\/key(\d+)\/([A-Za-z0-9]+)/i),id=P.get("i")||(SL?SL[2]:""),day=Math.max(1,parseInt(P.get("d")||(SL?SL[1]:(location.pathname.match(/\/key\/(\d+)/)||[0,"1"])[1]),10)),key=KEYS[day-1]||KEYS[0],tone=P.get("v");
 var TQ=[["How present are you, right this second?","miles away","right here"],["How steady do you feel right now?","shaky","grounded"],["How kind are you being to yourself this morning?","harsh","gentle"],["How settled is your heart this morning?","unsettled","at peace"],["How much light are you carrying into today?","dim","bright"],["How clear is your intention for today?","foggy","clear"],["How open are you to what today brings?","guarded","open"]];
