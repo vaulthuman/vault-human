@@ -9610,5 +9610,35 @@ export const letters=[
   "iso": "2026-11-24",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "get-out-of-the-way",
+  "title": "Get out of the way",
+  "dek": "Today a new month opens. For four weeks the letters have been about the circle, the people you change with.",
+  "day": 194,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Today a new month opens. For four weeks the letters have been about the circle, the people you change with. The seventh month is called Keeping a Rhythm, its gate is Repeating, and it has one sentence: rhythm beats intensity; the small thing, repeated. Eighteen keys come through this door, and the coach's rule for all of them is the same: one habit, tiny, held sixty days. The first key is about the thing that ends most habits before the third day, and it was found on a tennis court."
+   },
+   {
+    "k": "",
+    "t": "In the early 1970s Tim Gallwey was teaching tennis at a club. He had been captain of the Harvard team in 1960, then spent, by his own account, a decade away from the game in other work, and when he came back to it as a coach he noticed something that bothered him. The more he told a student, the worse she played. Bend your knees, racket back, watch the ball, follow through, and the student would tighten, hit it into the net, and then scold herself in the exact words he had just used. So he tried saying nothing. He asked students only to watch the seams of the ball, or to say \"bounce\" out loud when it bounced and \"hit\" when they hit it, and their strokes got better with no instruction at all. In 1974 he put what he had seen in a short book, <em>The Inner Game of Tennis</em>. It has sold well over a million copies, a surprising share of them to people who have never held a racket, and a Super Bowl–winning football coach has said for years that it shaped how he coaches."
+   },
+   {
+    "k": "",
+    "t": "Here is the idea. There are two of you on the court. Self 1 is the teller: the voice that instructs, judges and worries, that says \"don't miss this one\" and then \"you idiot\" when you do. Self 2 is the doer: the body and the deeper mind that learned to walk without a manual and can learn a serve the same way, by watching and trying. Nearly everything we call trying hard is Self 1 shouting at Self 2, and Self 2 plays worse when shouted at. Gallwey later boiled it down to a formula: performance equals potential minus interference. You don't need more potential. You need less interference, and the interference is yours. A fair word: the book is one coach's observation, not a study, and he was open that the quiet it asks for owes something to meditation. But the research that came later on skilled people choking under pressure points the same way: when an expert starts watching her own mechanics, she gets worse."
+   },
+   {
+    "k": "",
+    "t": "It's a Rhythm key, and the first one, because you cannot repeat a thing for sixty days while a voice grades every attempt. Most habits die not of difficulty but of commentary. I spent a decade in restaurants in every role, and the new cook who was thinking about every plate during a Friday rush was the one who went down; the hands that had plated the dish a thousand times were fine until a manager stood behind them and said \"focus.\" The best thing I ever learned to do on a line was watch the tickets and leave the hands alone. Our thought on the teaching is this: the small thing repeated needs a quiet to repeat in, and the quiet comes not from silencing the teller but from handing it a seam to watch."
+   }
+  ],
+  "n": 291,
+  "date": "November 25, 2026",
+  "iso": "2026-11-25",
+  "month": "November 2026",
+  "chamber": 7
  }
 ];
