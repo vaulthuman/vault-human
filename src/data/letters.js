@@ -9640,5 +9640,65 @@ export const letters=[
   "iso": "2026-11-25",
   "month": "November 2026",
   "chamber": 7
+ },
+ {
+  "slug": "start-tiny",
+  "title": "Start tiny",
+  "dek": "Yesterday's letter asked you to choose one tiny habit and hold it for sixty days.",
+  "day": 195,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Yesterday's letter asked you to choose one tiny habit and hold it for sixty days. Today is about why tiny is not a concession but the whole method, and the man who has done the most careful work on that says it comes down to three words: tiny, anchor, celebrate."
+   },
+   {
+    "k": "",
+    "t": "BJ Fogg is a behavior scientist at Stanford, where he has run a lab on how design changes what people do since the late 1990s. In 2009 he published a model that has since become the grammar of the field: a behavior happens when motivation, ability and a prompt arrive in the same moment, and if any one of the three is missing it doesn't happen, however badly you want it to. Most of us try to change by raising motivation, which is the one of the three that never holds. Fogg's move is to go after the other two. Make the thing so small that your ability is never in question, and hook it to a prompt that is already in your day. His own first habit, which he has told on every stage he has stood on, was two push-ups after every trip to the bathroom. Not twenty. Two. Within months, by his account, he was doing dozens a day, and the push-ups were never the point. From 2011 he taught the method free by email with volunteer coaches, and when the book, <em>Tiny Habits</em>, came out at the end of 2019 he said tens of thousands had been through it."
+   },
+   {
+    "k": "",
+    "t": "The recipe is one sentence long. After I do a thing I already do, I will do the tiny thing, and then I will feel good about it. The last clause is the one people skip and the one he says matters most. A habit, in his reading, is wired by the feeling of success, not by repetition, so you celebrate flossing one tooth the way you would celebrate a goal: on purpose and right away. He calls that feeling shine. A fair word: the model comes out of his lab and his own coaching rather than large trials, and the claim that emotion matters more than repetition is his reading of the evidence, not a settled finding. The same design is used by the apps built to keep you scrolling, and he has said, by his own account, that this troubles him. The practice holds either way."
+   },
+   {
+    "k": "",
+    "t": "Here it is in our words. You are not weak-willed. You have been setting the bar at the height of your best day and then living the other days under it. I spent a decade in restaurants in every role, and the cook whose station was still clean at the end of a Friday rush was never the one who cleaned it at the end; he was the one who wiped the board every time he reached for a new pan, two seconds hooked to a thing he did fifty times a night. It's a Rhythm key because the small thing, repeated, only gets repeated when it is too small to fail, and sixty days of that is how it becomes you."
+   }
+  ],
+  "n": 292,
+  "date": "November 26, 2026",
+  "iso": "2026-11-26",
+  "month": "November 2026",
+  "chamber": 7
+ },
+ {
+  "slug": "make-it-right",
+  "title": "Make it right",
+  "dek": "Once a year, for twenty-five hours, Jews around the world stop eating and drinking at the same time.",
+  "day": 195,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Once a year, for twenty-five hours, Jews around the world stop eating and drinking at the same time. Yom Kippur, the Day of Atonement, falls on the tenth day of the month of Tishrei, ten days after the new year, and the Torah's instruction for it in Leviticus is spare: afflict your souls, and do no work. The rabbis read afflict as five things set aside from before sundown to the next nightfall: no food or drink, not even water; no washing; no lotions or oils; no leather shoes; no sex. It begins with a meal eaten before the sun goes down and opens in the synagogue with Kol Nidre, an old Aramaic chant releasing vows. It closes the next evening with Ne'ilah, the one service of the year the whole congregation stands through, as the gates are said to be closing, and then a single long blast of the shofar. Then everyone goes to the break-fast, which in America usually means bagels."
+   },
+   {
+    "k": "",
+    "t": "Two things about the day matter more than the hunger. The first is a line from the Mishnah nearly two thousand years old: the day atones for what is between you and God; for what is between you and another person, it atones only once you have gone to that person and made it right. So the ten days before it are spent, by custom, on apologies, the phone calls, the letters, the knock on the door, and a fast with no apology ahead of it has, by the oldest reading, missed the point. The second is the passage from Isaiah read that morning, in which the prophet asks whether a day of bowed heads and sackcloth is the fast God wanted, and answers that the fast God wants is to share your bread with the hungry and bring the poor into your house. The congregation is hungry when it hears it. That is the design."
+   },
+   {
+    "k": "",
+    "t": "There are other fasts. Tisha B'Av, in high summer, is the second full one and mourns the destruction of both Temples in Jerusalem; four short fasts, dawn to dark, mark other dates of loss; and a sixth, for firstborn sons on the eve of Passover, is usually set aside by sitting in on a short study session that morning, which tells you how the tradition feels about hunger for its own sake. Children under thirteen, twelve for girls, don't fast at all. And the law of pikuach nefesh, the saving of a life, sits above the whole day: the sick, the pregnant at risk, anyone whose physician says so, is not merely permitted but told to eat, and a rabbi will say the same. The fair word on the science is short. Twenty-five hours without water is hard on the body, and the little research there is, mostly from Israel, finds headaches in about four in ten fasters, most of them from the missed coffee, and nothing lasting in the healthy. Vault Human coaches and doesn't treat; if you take medication or have diabetes, the door is your physician, and if eating has ever been a battle for you, keep the apology and skip the fast."
+   },
+   {
+    "k": "",
+    "t": "I spent a decade in restaurants in every role, and I know what the first bite tastes like after a double with no break; the people coming out of Ne'ilah know it better, because they went hungry on purpose and together. It's a Circle key because the fast is kept by a whole people on the same day, and the apology before it is kept one person at a time. This year's fell on September 21; next year's comes in the second week of October, beginning at sundown the night before, and most synagogues will seat a stranger for Kol Nidre if you ask. The next body letter, two days from now, is Ekadashi, the twice-a-month fast of Hindu India."
+   }
+  ],
+  "n": 293,
+  "date": "November 26, 2026",
+  "iso": "2026-11-26",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
