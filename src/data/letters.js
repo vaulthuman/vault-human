@@ -9700,5 +9700,35 @@ export const letters=[
   "iso": "2026-11-26",
   "month": "November 2026",
   "chamber": 6
+ },
+ {
+  "slug": "start-where-you-are",
+  "title": "Start where you are",
+  "dek": "In the late 1970s a psychologist at the University of Rhode Island named James Prochaska read his way through eighteen schools of therapy and asked what they had in…",
+  "day": 196,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "In the late 1970s a psychologist at the University of Rhode Island named James Prochaska read his way through eighteen schools of therapy and asked what they had in common. His reason, by his own account, was not academic. His father had died of alcoholism and depression without ever accepting help, and had thought little of psychologists; the son wanted to know how people change when they do. With a graduate student, Carlo DiClemente, he went looking for the answer not in clinics but in people who were quitting smoking on their own, close to nine hundred of them by the paper's count, and in 1983 the two published what they found. Nobody changes in a straight line. Everybody changes in stages."
+   },
+   {
+    "k": "",
+    "t": "Here are the stages as we'd say them. First, you don't think there's a problem; other people do. Second, you know, and you're weighing it, and you can weigh it for years. Third, you've decided and you're getting ready: a date, a plan, a word to someone. Fourth, you're doing it. Fifth, you're keeping it, which is quieter and longer. And then the slip, which they found was part of the road, not the end of it; the smokers who made it, by their count, had usually tried several times first. The finding that mattered most was about the first two stages. Nearly every program ever built was built for people in the fourth, ready to act, and at any given moment, by Prochaska's count, fewer than one in five of the people with a problem are there. The rest are handed a plan for a decision they haven't made, and told they lack willpower when it fails."
+   },
+   {
+    "k": "",
+    "t": "A fair word. The stages are a map, not a law. Some researchers have argued the lines between them are arbitrary, and a review of the smoking trials found that programs matched to a person's stage did about as well as programs that weren't. What has held is the plain part: readiness is real, it comes in degrees, and action asked for before it is mostly wasted."
+   },
+   {
+    "k": "",
+    "t": "Here it is in our words. The thing you have failed at three times is not proof that you are weak. It is more likely proof that you were acting from the second stage, still weighing, while dressed for the fourth. The should from the letter on the tyranny of the should, five weeks ago, lives in the second stage. I spent a decade in restaurants in every role, and every kitchen had a smoker on the back step who was quitting Monday. The ones who quit had set a date, bought the gum, told the line, and were sick of the argument with themselves; the rest were still having it. It's a Rhythm key because the small thing, repeated, needs you past the weighing before it starts; sixty days won't hold while the decision is still open. Vault Human coaches and doesn't treat; if the thing is drink or a drug, the door is a physician or an addiction counselor."
+   }
+  ],
+  "n": 294,
+  "date": "November 27, 2026",
+  "iso": "2026-11-27",
+  "month": "November 2026",
+  "chamber": 7
  }
 ];
