@@ -9730,5 +9730,65 @@ export const letters=[
   "iso": "2026-11-27",
   "month": "November 2026",
   "chamber": 7
+ },
+ {
+  "slug": "find-the-current",
+  "title": "Find the current",
+  "dek": "\"The best moments usually occur when a person's body or mind is stretched to its limits in a voluntary effort to accomplish something difficult and worthwhile.\"",
+  "day": 197,
+  "vault": "mind",
+  "body": [
+   {
+    "k": "lead",
+    "t": "\"The best moments usually occur when a person's body or mind is stretched to its limits in a voluntary effort to accomplish something difficult and worthwhile.\" The man who wrote that spent fifty years measuring those moments, and found them in the strangest place: not on vacation, not on the couch, but in the middle of a task that had taken everything you had."
+   },
+   {
+    "k": "",
+    "t": "Mihaly Csikszentmihalyi, who told audiences for decades to say it \"chick-sent-me-high,\" was born in 1934 in Fiume, on the Adriatic, to a Hungarian diplomat. The war took his childhood; by the usual accounts he spent part of it, as a boy, held in a camp in Italy, where he learned chess and found that the board was the one place the war could not reach. When the communists took Hungary in 1948 his father resigned his post in Rome, and the family opened a restaurant there to live, where the son worked instead of finishing school. On a ski trip to Switzerland the snow gave out, and with nothing to do he wandered into a free lecture by Carl Jung. He came to Chicago in 1956 with, by his own account, a dollar and a quarter, worked nights, and took a doctorate from the University of Chicago in 1965. In the 1970s he and his students gave people pagers that beeped at random through the week; at each beep you wrote down what you were doing and how you felt. Tens of thousands of those slips later, in 1990, he published <em>Flow</em>. He died in Claremont, California, in October 2021, at eighty-seven."
+   },
+   {
+    "k": "",
+    "t": "The word came from the people he interviewed, who kept describing the state as being carried by a current. It happens, he found, when the challenge in front of you sits just past your skill, so you can neither coast nor drown; when the goal is clear and you can tell at once whether you're getting it; and when the task takes all your attention, so the voice that comments on you goes quiet and the clock stops meaning anything. Too much challenge and you're anxious; too little and you're bored; and most of us, his beepers showed, spend our evenings bored on purpose in front of a screen. The odd finding, from a 1989 study with Judith LeFevre, was that people reported flow far more often at work than at home and still said they would rather be home. A fair word: the pager data is what people said about themselves at the moment of the beep, nothing more, and he was plain that the state is no virtue in itself; a gambler finds it too."
+   },
+   {
+    "k": "",
+    "t": "The letter on the inner game, three days ago, called it getting out of the way. This is what he measured when you do. I spent a decade in restaurants in every role, and I know the exact night this is: the tickets come at precisely the pace the hands can meet them, nobody speaks, and when you look up it is eleven and you have no memory of nine. One ticket a minute faster and the line goes down; one slower and the cooks start talking about their weekends. It's a Rhythm key because the small thing you hold for sixty days has to carry you some of the way, and a habit stays boring only when you leave it at the size you started it. Our thought on the teaching: when the tiny thing gets easy, that is not permission to quit; it is the signal to make it one notch harder."
+   }
+  ],
+  "n": 295,
+  "date": "November 28, 2026",
+  "iso": "2026-11-28",
+  "month": "November 2026",
+  "chamber": 7
+ },
+ {
+  "slug": "fast-with-the-moon",
+  "title": "Fast with the moon",
+  "dek": "Twice a month, on the eleventh day after the new moon and the eleventh after the full, millions of Hindus put down their rice and their lentils.",
+  "day": 197,
+  "vault": "body",
+  "body": [
+   {
+    "k": "lead",
+    "t": "Twice a month, on the eleventh day after the new moon and the eleventh after the full, millions of Hindus put down their rice and their lentils. The day is called Ekadashi, which just means eleventh, and the fast is kept most carefully by the devotees of Vishnu, from the temple towns of Tamil Nadu to the Krishna temples of the West. Because the calendar is lunar there are twenty-four a year, twenty-six when an extra month is added, and each has a name and a story. The rule most people keep is simple: no grains and no beans, nothing made of rice, wheat, barley or lentils, from sunrise that day until the morning after. Some eat fruit, milk, nuts and root vegetables; the strictest take nothing, not even water; and the morning after, called Dwadashi, the fast is broken in a short window after sunrise with a little grain eaten on purpose, because an Ekadashi that never ends is as much a breach as one never kept."
+   },
+   {
+    "k": "",
+    "t": "The story, as the Padma Purana tells it, is that a demon named Mura caught Vishnu asleep, and from the sleeping god's body a goddess stepped out and killed him. Vishnu gave her a name, Ekadashi, a day, and a promise: whoever fasts on it is forgiven. The devout will tell you the merit of it; the practical will tell you the body eats lighter on the eleventh day of the moon. A fair word on both: no one has shown that grain is any different on an Ekadashi than on a Tuesday, and the moon does nothing to your digestion. What the research on fasting a day or two a week can say, mostly from the last fifteen years, is that it takes weight off about as well as simply eating less every day, no better, and that a good share of people quit it, by the trials' own count. The usable part is older than any of that: a fixed day, twice a month, that the whole household keeps together."
+   },
+   {
+    "k": "",
+    "t": "And it is kept together. On the great one in June or July, when Vishnu is said to go to sleep for four months, hundreds of thousands walk for three weeks across Maharashtra to the town of Pandharpur, singing the old poems of Tukaram and Dnyaneshwar, and arrive on Ekadashi to fast in a crowd. On the one in December or January, the temples at Srirangam and Tirupati open a northern gate they keep shut all year, and the line to walk through it runs for miles. On the big nights people stay up till dawn chanting, so the hunger has company. And the one without water, in late spring, is the one the tradition gave to Bhima, the giant of the Mahabharata who could not go a day without eating; he was told to keep just that one and it would count for all twenty-four. A fast with a loophole for the hungriest man in the story tells you what the tradition thinks hunger is for."
+   },
+   {
+    "k": "",
+    "t": "I spent a decade in restaurants in every role, and the cook who ate nothing but fruit on a double, by his own choice, always swore the night went faster; he was right that a stomach with nothing to argue about leaves the mind free. It's a Circle key because a fast kept by one person is a diet and a fast kept by millions on the same day is a calendar. Vault Human coaches and doesn't treat; if you take medication or have diabetes, the day is a conversation with your physician first, and if eating has ever been a battle for you, keep the chanting and skip the fast. The next Ekadashi falls on December 4, give or take a day where you live, and it is Utpanna, the one that marks the goddess's birth; the one after is around December 20. The next body letter, two days from now, is the Jain table, the strictest plate in India."
+   }
+  ],
+  "n": 296,
+  "date": "November 28, 2026",
+  "iso": "2026-11-28",
+  "month": "November 2026",
+  "chamber": 6
  }
 ];
